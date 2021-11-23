@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-11-23 12:19+0900\n"
+"PO-Revision-Date: 2021-11-23 14:49+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -4577,121 +4577,121 @@ msgstr "@code{c-mode-hook}はCソースファイルの場合のみ実行され�
 #: ../../../../misc/efaq.texi:2188
 #, no-wrap
 msgid "Overwrite mode"
-msgstr ""
+msgstr "Overwrite mode"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2189
 #, no-wrap
 msgid "How do I make Emacs ``typeover'' or ``overwrite'' instead of inserting?"
-msgstr ""
+msgstr "How do I make Emacs ``typeover'' or ``overwrite'' instead of inserting?"
 
 #. type: key{#1}
 #: ../../../../misc/efaq.texi:2190
 #, no-wrap
 msgid "Insert"
-msgstr ""
+msgstr "Insert"
 
 #. type: code{#1}
 #: ../../../../misc/efaq.texi:2191
 #, no-wrap
 msgid "overwrite-mode"
-msgstr ""
+msgstr "overwrite-mode"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2192
 #, no-wrap
 msgid "Overwriting existing text"
-msgstr ""
+msgstr "Overwriting existing text"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2193
 #, no-wrap
 msgid "Toggling @code{overwrite-mode}"
-msgstr ""
+msgstr "Toggling @code{overwrite-mode}"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2198
 msgid "@kbd{M-x overwrite-mode} (a minor mode).  This toggles @code{overwrite-mode} on and off, so exiting from @code{overwrite-mode} is as easy as another @kbd{M-x overwrite-mode}."
-msgstr ""
+msgstr "@kbd{M-x overwrite-mode} (マイナーモード)です。これは@code{overwrite-mode}のオンオフを切り替えるのでもう一度@kbd{M-x overwrite-mode}で簡単に@code{overwrite-mode}からexitできます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2200
 msgid "On some systems, @key{Insert} toggles @code{overwrite-mode} on and off."
-msgstr ""
+msgstr "いくつかのシステムでは@key{Insert}で@code{overwrite-mode}のオンオフが切り替わります。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2201
 #, no-wrap
 msgid "Turning off beeping"
-msgstr ""
+msgstr "Turning off beeping"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2202
 #, no-wrap
 msgid "How do I stop Emacs from beeping on a terminal?"
-msgstr ""
+msgstr "How do I stop Emacs from beeping on a terminal?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2203
 #, no-wrap
 msgid "Beeping, turning off"
-msgstr ""
+msgstr "Beeping, turning off"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2204
 #, no-wrap
 msgid "Visible bell"
-msgstr ""
+msgstr "Visible bell"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2205
 #, no-wrap
 msgid "Bell, visible"
-msgstr ""
+msgstr "Bell, visible"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2209
 msgid "Martin R. Frank writes:"
-msgstr ""
+msgstr "Martin R. Frank(訳注: Texinfoファイルには\"martin@cc.gatech.edu\"とコメントされてました)は記しています:"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2212
 msgid "Tell Emacs to use the @dfn{visible bell} instead of the audible bell, and set the visible bell to nothing."
-msgstr ""
+msgstr "可聴ベル(audible bell)のかわりに@dfn{視覚的なベル(visible bell)}を使うように伝えて、その視覚的ベルには何もセットしません。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2215
 msgid "That is, put the following in your @code{TERMCAP} environment variable (assuming you have one):"
-msgstr ""
+msgstr "つまり(あなたがtermcapをもっていると仮定して)@code{TERMCAP}環境変数に以下を記述します:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:2218
 #, no-wrap
 msgid "... :vb=: ...\n"
-msgstr ""
+msgstr "... :vb=: ...\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2221
 msgid "And evaluate the following Lisp form:"
-msgstr ""
+msgstr "そして以下のLispフォームを評価してください:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:2224
 #, no-wrap
 msgid "(setq visible-bell t)\n"
-msgstr ""
+msgstr "(setq visible-bell t)\n"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2226
 #, no-wrap
 msgid "Turning the volume down"
-msgstr ""
+msgstr "Turning the volume down"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2227
 #, no-wrap
 msgid "How do I turn down the bell volume in Emacs running under X?"
-msgstr ""
+msgstr "How do I turn down the bell volume in Emacs running under X?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2228
