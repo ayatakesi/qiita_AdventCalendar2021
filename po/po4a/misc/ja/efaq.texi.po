@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-11-23 11:40+0900\n"
+"PO-Revision-Date: 2021-11-23 12:19+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -3921,7 +3921,7 @@ msgstr "プリント不可文字にたいするregexp: @samp{[^\\t\\n\\r\\f -~]}
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1915
 msgid "To type these special characters in an interactive argument to @code{isearch-forward-regexp} or @code{re-search-forward}, you need to use @kbd{C-q}.  (@samp{\\t}, @samp{\\n}, @samp{\\r}, and @samp{\\f} stand respectively for @key{TAB}, @key{LFD}, @key{RET}, and @kbd{C-l}.)  So, to search for unprintable characters using @code{re-search-forward}:"
-msgstr "@code{isearch-forward-regexp}や@code{re-search-forward}にたいするインタラクティブな引数としてこれらのスペシャル文字をタイプするには@kbd{C-q}を使う必要があります(@samp{\\t}、@samp{\\n}、@samp{\\r}、@samp{\\f}はそれぞれ@key{TAB}、@key{LFD}、@key{RET}、@kbd{C-l}を意味する)。したがって@code{re-search-forward}を使用してプリント不可文字を検索するには:"
+msgstr "@code{isearch-forward-regexp}や@code{re-search-forward}にたいする対話的な引数としてこれらのスペシャル文字をタイプするには@kbd{C-q}を使う必要があります(@samp{\\t}、@samp{\\n}、@samp{\\r}、@samp{\\f}はそれぞれ@key{TAB}、@key{LFD}、@key{RET}、@kbd{C-l}を意味する)。したがって@code{re-search-forward}を使用してプリント不可文字を検索するには:"
 
 #. type: kbd{#1}
 #: ../../../../misc/efaq.texi:1917
@@ -4406,148 +4406,148 @@ msgstr "(c-set-offset 'case-label '+)\n"
 #: ../../../../misc/efaq.texi:2104
 #, no-wrap
 msgid "Customizing C and C++ indentation"
-msgstr ""
+msgstr "Customizing C and C++ indentation"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2105
 #, no-wrap
 msgid "How to customize indentation in C, C@t{++}, and Java buffers?"
-msgstr ""
+msgstr "How to customize indentation in C, C@t{++}, and Java buffers?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2106
 #, no-wrap
 msgid "Indentation, how to customize"
-msgstr ""
+msgstr "Indentation, how to customize"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2107
 #, no-wrap
 msgid "Customize indentation"
-msgstr ""
+msgstr "Customize indentation"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2114
 msgid "The Emacs @code{cc-mode} features an interactive procedure for customizing the indentation style, which is fully explained in the @cite{CC Mode} manual that is part of the Emacs distribution, see @ref{Customizing Indentation, , Customization Indentation, ccmode, The CC Mode Manual}.  Here's a short summary of the procedure:"
-msgstr ""
+msgstr "Emacsの@code{cc-mode}はインデントスタイルのカスタマイズ用に対話的な手順を提供しています。これはEmacsディストリビューションに同梱されている@cite{CC Mode}マニュアルに完全な説明があります。@ref{Customizing Indentation, , Customization Indentation, ccmode, The CC Mode Manual}を参照してください。以下はそれの短い要約です:"
 
 #. type: enumerate
 #: ../../../../misc/efaq.texi:2120
 msgid "Go to the beginning of the first line where you don't like the indentation and type @kbd{C-c C-o}.  Emacs will prompt you for the syntactic symbol; type @key{RET} to accept the default it suggests."
-msgstr ""
+msgstr "気に召さないインデントの最初の行の先頭に移動して@kbd{C-c C-o}とタイプする。Emacsが構文シンボル(syntactic symbol)の入力を求めるので、デフォルトを受諾するために@key{RET}をタイプする。"
 
 #. type: enumerate
 #: ../../../../misc/efaq.texi:2125
 msgid "Emacs now prompts for the offset of this syntactic symbol, showing the default (the current definition) inside parentheses.  You can choose one of these:"
-msgstr ""
+msgstr "Emacsがその構文シンボルのオフセットの入力を求める。その際にはカッコ内にデフォルト(現在の定義)が表示される。ここで以下のいずれかを選択できる:"
 
 #. type: item
 #: ../../../../misc/efaq.texi:2127
 #, no-wrap
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #. type: table
 #: ../../../../misc/efaq.texi:2129
 msgid "No extra indentation."
-msgstr ""
+msgstr "追加のインデントなし。"
 
 #. type: item
 #: ../../../../misc/efaq.texi:2129
 #, no-wrap
 msgid "+"
-msgstr ""
+msgstr "+"
 
 #. type: table
 #: ../../../../misc/efaq.texi:2131
 msgid "Indent one basic offset."
-msgstr ""
+msgstr "基本オフセット1つ分インデントを加える。"
 
 #. type: item
 #: ../../../../misc/efaq.texi:2131
 #, no-wrap
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #. type: table
 #: ../../../../misc/efaq.texi:2133
 msgid "Outdent one basic offset."
-msgstr ""
+msgstr "基本オフセット1つ分インデントを戻す。"
 
 #. type: item
 #: ../../../../misc/efaq.texi:2133
 #, no-wrap
 msgid "++"
-msgstr ""
+msgstr "++"
 
 #. type: table
 #: ../../../../misc/efaq.texi:2135
 msgid "Indent two basic offsets"
-msgstr ""
+msgstr "基本オフセット2つ分インデントを加える。"
 
 #. type: item
 #: ../../../../misc/efaq.texi:2135
 #, no-wrap
 msgid "--"
-msgstr ""
+msgstr "--"
 
 #. type: table
 #: ../../../../misc/efaq.texi:2137
 msgid "Outdent two basic offsets."
-msgstr ""
+msgstr "基本オフセット2つ分インデントを戻す。"
 
 #. type: item
 #: ../../../../misc/efaq.texi:2137
 #, no-wrap
 msgid "*"
-msgstr ""
+msgstr "*"
 
 #. type: table
 #: ../../../../misc/efaq.texi:2139
 msgid "Indent half basic offset."
-msgstr ""
+msgstr "基本オフセットの半分インデントを加える。"
 
 #. type: item
 #: ../../../../misc/efaq.texi:2139
 #, no-wrap
 msgid "/"
-msgstr ""
+msgstr "/"
 
 #. type: table
 #: ../../../../misc/efaq.texi:2141
 msgid "Outdent half basic offset."
-msgstr ""
+msgstr "基本オフセットの半分インデントを戻す。"
 
 #. type: enumerate
 #: ../../../../misc/efaq.texi:2146
 msgid "After choosing one of these symbols, type @kbd{C-c C-q} to reindent the line or the block according to what you just specified."
-msgstr ""
+msgstr "これらのシンボルのいずれかを選んだ後に@kbd{C-c C-q}をタイプして、指定したインデントに行またはブロックを再インデントする。"
 
 #. type: enumerate
 #: ../../../../misc/efaq.texi:2150
 msgid "If you don't like the result, go back to step 1.  Otherwise, add the following line to your @file{.emacs}:"
-msgstr ""
+msgstr "結果が気に召さなければステップ1に戻る。そうでなければ以下の行を@file{.emacs}に追加する:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2153
 #, no-wrap
 msgid "(c-set-offset '@var{syntactic-symbol} @var{offset})\n"
-msgstr ""
+msgstr "(c-set-offset '@var{syntactic-symbol} @var{offset})\n"
 
 #. type: enumerate
 #: ../../../../misc/efaq.texi:2161
 msgid "where @var{syntactic-symbol} is the name Emacs shows in the minibuffer when you type @kbd{C-c C-o} at the beginning of the line, and @var{offset} is one of the indentation symbols listed above (@code{+}, @code{/}, @code{0}, etc.)@: that you've chosen during the interactive procedure."
-msgstr ""
+msgstr "ここで@var{syntactic-symbol}は行頭で@kbd{C-c C-o}をタイプした際にEmacsが表示した名前、@var{offset}は上記のインデントシンボル(@code{+}、@code{/}、@code{0}等)のいずれかのうち対話的手順の間に選択したシンボル。"
 
 #. type: enumerate
 #: ../../../../misc/efaq.texi:2165
 msgid "Go to the next line whose indentation is not to your liking and repeat the process there."
-msgstr ""
+msgstr "インデントが気に召さない次の行へ移動してこれらの手順を繰り返す。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2169
 msgid "It is recommended to put all the resulting @code{(c-set-offset ...)} customizations inside a C mode hook, like this:"
-msgstr ""
+msgstr "以下のように@code{(c-set-offset ...)}によるカスタマイズ結果すべてをCモードのフック内に記述することをお勧めします:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2175
@@ -4558,16 +4558,20 @@ msgid ""
 "  (c-set-offset ...))\n"
 "(add-hook 'c-mode-hook 'my-c-mode-hook)\n"
 msgstr ""
+"(defun my-c-mode-hook ()\n"
+"  (c-set-offset ...)\n"
+"  (c-set-offset ...))\n"
+"(add-hook 'c-mode-hook 'my-c-mode-hook)\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2181
 msgid "Using @code{c-mode-hook} avoids the need to put a @w{@code{(require 'cc-mode)}} into your @file{.emacs} file, because @code{c-set-offset} might be unavailable when @code{cc-mode} is not loaded."
-msgstr ""
+msgstr "@code{cc-mode}をロードしていなければ@code{c-set-offset}は利用できないので@file{.emacs}には@w{@code{(require 'cc-mode)}}を記述する必要がありますが、@code{c-mode-hook}を使用すればこれを避けることができます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2187
 msgid "Note that @code{c-mode-hook} runs for C source files only; use @code{c++-mode-hook} for C@t{++} sources, @code{java-mode-hook} for Java sources, etc.  If you want the same customizations to be in effect in @emph{all} languages supported by @code{cc-mode}, use @code{c-mode-common-hook}."
-msgstr ""
+msgstr "@code{c-mode-hook}はCソースファイルの場合のみ実行されることに注意してください。C@t{++}には@code{c++-mode-hook}、Javaソースには@code{java-mode-hook}を使う等してください。同一のカスタマイズが、@code{cc-mode}によってサポートされる@emph{すべて}の言語にたいして効力をもつようにしたければ@code{c-mode-common-hook}を使用してください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2188
