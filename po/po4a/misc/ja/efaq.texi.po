@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-11-23 18:07+0900\n"
+"PO-Revision-Date: 2021-11-23 22:36+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -5303,201 +5303,201 @@ msgstr "@kbd{C-z}はEmacsをXで実行中ならアイコン化、それ以外な
 #: ../../../../misc/efaq.texi:2491
 #, no-wrap
 msgid "Using regular expressions"
-msgstr ""
+msgstr "Using regular expressions"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2492
 #, no-wrap
 msgid "How do I use regexps (regular expressions) in Emacs?"
-msgstr ""
+msgstr "How do I use regexps (regular expressions) in Emacs?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2493
 #, no-wrap
 msgid "Regexps"
-msgstr ""
+msgstr "Regexps"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2494
 #, no-wrap
 msgid "Regular expressions"
-msgstr ""
+msgstr "Regular expressions"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2495
 #, no-wrap
 msgid "Differences between Unix and Emacs regexps"
-msgstr ""
+msgstr "Differences between Unix and Emacs regexps"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2496
 #, no-wrap
 msgid "Unix regexps, differences from Emacs"
-msgstr ""
+msgstr "Unix regexps, differences from Emacs"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2497
 #, no-wrap
 msgid "Text strings, putting regexps in"
-msgstr ""
+msgstr "Text strings, putting regexps in"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2500
 msgid "@xref{Regexp Backslash,,, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "@ref{Regexp Backslash,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2505
 msgid "The @code{or} operator is @samp{\\|}, not @samp{|}, and the grouping operators are @samp{\\(} and @samp{\\)}.  Also, the string syntax for a backslash is @samp{\\\\}.  To specify a regular expression like @samp{xxx\\(foo\\|bar\\)} in a Lisp string, use @samp{xxx\\\\(foo\\\\|bar\\\\)}."
-msgstr ""
+msgstr "演算子@code{or}は@samp{|}ではなく@samp{\\|}、グルーピング演算子は@samp{\\(}と@samp{\\)}です。更にバックスラッシュの文字列構文は@samp{\\\\}です。Lisp文字列で@samp{xxx\\(foo\\|bar\\)}のような正規表現を指定するには@samp{xxx\\\\(foo\\\\|bar\\\\)}を使用します。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2507
 msgid "Note the doubled backslashes!"
-msgstr ""
+msgstr "バックスラッシュを2回記述することに注意してください!"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2515
 msgid "Unlike in Unix @file{grep}, @file{sed}, etc., a complement character set (@samp{[^...]})  can match a newline character (@key{LFD} a.k.a.@: @kbd{C-j} a.k.a.@: @samp{\\n}), unless newline is mentioned as one of the characters not to match."
-msgstr ""
+msgstr "Unixの@file{grep}、@file{sed}などとは異なり文字の補集合(@samp{[^...]})にはマッチしない文字として改行文字(@key{LFD}または@kbd{C-j}あるいは@samp{\\n})が記述されていなければ改行文字はマッチする。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2520
 msgid "The character syntax regexps (e.g., @samp{\\sw}) are not meaningful inside character set regexps (e.g., @samp{[aeiou]}).  (This is actually typical for regexp syntax.)"
-msgstr ""
+msgstr "文字構文のregexp(たとえば@samp{\\sw})は文字セットにたいするregexp(たとえば@samp{[aeiou]})の内部では意味をもたない(これは実際にはregexp構文として典型的)。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2523
 #, no-wrap
 msgid "Replacing text across multiple files"
-msgstr ""
+msgstr "Replacing text across multiple files"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2524
 #, no-wrap
 msgid "How do I perform a replace operation across more than one file?"
-msgstr ""
+msgstr "How do I perform a replace operation across more than one file?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2525
 #, no-wrap
 msgid "Replacing strings across files"
-msgstr ""
+msgstr "Replacing strings across files"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2526
 #, no-wrap
 msgid "Multiple files, replacing across"
-msgstr ""
+msgstr "Multiple files, replacing across"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2527
 #, no-wrap
 msgid "Files, replacing strings across multiple"
-msgstr ""
+msgstr "Files, replacing strings across multiple"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2528
 #, no-wrap
 msgid "Recursive search/replace operations"
-msgstr ""
+msgstr "Recursive search/replace operations"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2533
 msgid "Dired mode (@kbd{M-x dired @key{RET}}, or @kbd{C-x d}) supports the command @code{dired-do-find-regexp-and-replace} (@kbd{Q}), which allows users to replace regular expressions in multiple files."
-msgstr ""
+msgstr "Diredモード(@kbd{M-x dired @key{RET}}または@kbd{C-x d})はコマンド@code{dired-do-find-regexp-and-replace} (@kbd{Q})をサポートしています。これは複数ファイルにおける正規表現の置換を可能にします。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2536
 msgid "You can use this command to perform search/replace operations on multiple files by following the following steps:"
-msgstr ""
+msgstr "以下のステップにしたがうことにより、このコマンドで複数ファイルにたいする検索/置換処理を行うことができます:"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2541
 msgid "Assemble a list of files you want to operate on with either @code{find-dired}, @code{find-name-dired} or @code{find-grep-dired}."
-msgstr ""
+msgstr "@code{find-dired}、@code{find-name-dired}、@code{find-grep-dired}のいずれかを使って、処理したいファイルのリストを用意する。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2544
 msgid "Mark all files in the resulting Dired buffer using @kbd{t}."
-msgstr ""
+msgstr "結果として得られたDiredバッファーで@kbd{t}を使用してすべてのファイルをマークする。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2548
 msgid "Use @kbd{Q} to start a @code{query-replace-regexp} session on the marked files."
-msgstr ""
+msgstr "@kbd{Q}を使用して、マーク済みファイルにたいする@code{query-replace-regexp}セッションを開始する。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2551
 msgid "To accept all replacements in each file, hit @kbd{!}."
-msgstr ""
+msgstr "それぞれのファイルにたいしてすべての置換を承諾するために@kbd{!}を打鍵する。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2557
 msgid "Another way to do the same thing is to use the ``tags'' feature of Emacs: it includes the command @code{tags-query-replace} which performs a query-replace across all the files mentioned in the @file{TAGS} file.  @xref{Identifier Search,,, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "Emacsの``tags''機能を使用して、別の方法で同じこと行うことができます。tags機能に含まれているコマンド@code{tags-query-replace}は@file{TAGS}ファイルに記述されたすべてのファイルを横断してquery-replace(問い合わせ付き置換)を行います。@ref{Identifier Search,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2558
 #, no-wrap
 msgid "Documentation for etags"
-msgstr ""
+msgstr "Documentation for etags"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2559
 #, no-wrap
 msgid "Where is the documentation for @code{etags}?"
-msgstr ""
+msgstr "Where is the documentation for @code{etags}?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2560
 #, no-wrap
 msgid "Documentation for @code{etags}"
-msgstr ""
+msgstr "Documentation for @code{etags}"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2561
 #, no-wrap
 msgid "@code{etags}, documentation for"
-msgstr ""
+msgstr "@code{etags}, documentation for"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2565
 msgid "The @code{etags} man page should be in the same place as the @code{emacs} man page."
-msgstr ""
+msgstr "@code{etags}のmanページは@code{emacs}のmanページと同じ場所にあるはずです。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2568
 msgid "Quick command-line switch descriptions are also available.  For example, @samp{etags -H}."
-msgstr ""
+msgstr "たとえば@samp{etags -H}のように、コマンドラインスイッチで手早く読める説明もあります。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2569 ../../../../misc/efaq.texi:2572
-#, no-wrap
+#, no-wrap, fuzzy
 msgid "Disabling backups"
-msgstr ""
+msgstr "Disabling backups"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2570
 #, no-wrap
 msgid "How do I disable backup files?"
-msgstr ""
+msgstr "How do I disable backup files?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2571
 #, no-wrap
 msgid "Backups, disabling"
-msgstr ""
+msgstr "Backups, disabling"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2576
 msgid "You probably don't want to do this, since backups are useful, especially when something goes wrong."
-msgstr ""
+msgstr "何か不幸な出来事が起こったとき等、バックアップは有用なので多分これを行いたいとは思わないでしょう。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2579
 msgid "To avoid seeing backup files (and other ``uninteresting'' files) in Dired, load @code{dired-x} by adding the following to your @file{.emacs} file:"
-msgstr ""
+msgstr "Diredでバックアップファイル(およびその他の``興味がない''ファイル)を目にすることを避けるには、@file{.emacs}ファイルに以下を追加して@code{dired-x}をロードしてください:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2584
@@ -5507,17 +5507,26 @@ msgid ""
 "          (lambda ()\n"
 "           (require 'dired-x)))\n"
 msgstr ""
+"(add-hook 'dired-load-hook\n"
+"          (lambda ()\n"
+"           (require 'dired-x)))\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2589
 msgid "With @code{dired-x} loaded, @kbd{M-o} toggles omitting in each dired buffer.  You can make omitting the default for new dired buffers by putting the following in your @file{.emacs}:"
-msgstr ""
+msgstr "@code{dired-x}のロードにより、@kbd{M-o}でそれぞれのdiredバッファーでの(興味がないファイルの表示)の省略が切り替わります。以下を@file{.emacs}に記述すれば、新たなdiredバッファーで省略をデフォルトにできます:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2592
 #, no-wrap
 msgid "(add-hook 'dired-mode-hook 'dired-omit-toggle)\n"
 msgstr ""
+"; 訳注\n"
+"; FAQ執筆時以降実装が更新されているので以下のように読み変えてください。\n"
+"; (現時点最新開発版28.0.??にバグレポート投げときます)\n"
+";   dired-omit-toggle -> dired-omit-mode\n"
+";   M-o               -> C-x M-o\n"
+"(add-hook 'dired-mode-hook 'dired-omit-toggle)\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2598
