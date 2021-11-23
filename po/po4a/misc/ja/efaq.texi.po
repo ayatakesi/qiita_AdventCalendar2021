@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-11-23 14:49+0900\n"
+"PO-Revision-Date: 2021-11-23 18:07+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -4697,23 +4697,23 @@ msgstr "How do I turn down the bell volume in Emacs running under X?"
 #: ../../../../misc/efaq.texi:2228
 #, no-wrap
 msgid "Bell, volume of"
-msgstr ""
+msgstr "Bell, volume of"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2229
 #, no-wrap
 msgid "Volume of bell"
-msgstr ""
+msgstr "Volume of bell"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2233
 msgid "On X Window system, you can adjust the bell volume and duration for all programs with the shell command @code{xset}."
-msgstr ""
+msgstr "Xウィンドウシステムではシェルコマンド@code{xset}のより、すべてのプログラムでベルの音量および間隔を調節できます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2236
 msgid "Invoking @code{xset} without any arguments produces some basic information, including the following:"
-msgstr ""
+msgstr "引数なしで@code{xset}を呼び出すことによって、以下を含むいくつかの基本的な情報が生成されます:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:2243
@@ -4725,47 +4725,52 @@ msgid ""
 "  To set bell volume, pitch and duration:\n"
 "       b [vol [pitch [dur]]]          b on\n"
 msgstr ""
+"usage:  xset [-display host:dpy] option ...\n"
+"  To turn bell off:\n"
+"      -b                b off               b 0\n"
+"  To set bell volume, pitch and duration:\n"
+"       b [vol [pitch [dur]]]          b on\n"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2245
 #, no-wrap
 msgid "Automatic indentation"
-msgstr ""
+msgstr "Automatic indentation"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2246
 #, no-wrap
 msgid "How do I tell Emacs to automatically indent a new line to the indentation of the previous line?"
-msgstr ""
+msgstr "How do I tell Emacs to automatically indent a new line to the indentation of the previous line?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2247
 #, no-wrap
 msgid "Indenting new lines"
-msgstr ""
+msgstr "Indenting new lines"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2248
 #, no-wrap
 msgid "New lines, indenting of"
-msgstr ""
+msgstr "New lines, indenting of"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2249
 #, no-wrap
 msgid "Previous line, indenting according to"
-msgstr ""
+msgstr "Previous line, indenting according to"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2250
 #, no-wrap
 msgid "Text indentation"
-msgstr ""
+msgstr "Text indentation"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2254
 msgid "Such behavior is automatic (in Text mode) in Emacs 20 and later.  From the @file{etc/NEWS} file for Emacs 20.2:"
-msgstr ""
+msgstr "このような振る舞いはEmacs 20以降では(Textモードでは)自動で行われます。Emacs 20.2の@file{etc/NEWS}ファイルからの引用します:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:2261
@@ -4777,7 +4782,7 @@ msgid ""
 "mode now runs the command @code{indent-relative}; this makes a practical\n"
 "difference only when you use indented paragraphs.\n"
 "\n"
-msgstr ""
+msgstr "** Textでパラグラフを分割するのは空行のみとなった。これによってAdaptive FillモードからTextモードやその他Textモードから派生した(Mailモードのような)モードが受ける恩恵を最大にすることが可能になる。Textモードでの@key{TAB}によって@code{indent-relative}コマンドが実行されるようになった。これによって実際に違いが生じるのは、インデントされたパラグラフを使用している場合だけである。\n\n"
 
 #. type: example
 #: ../../../../misc/efaq.texi:2264
@@ -4785,107 +4790,107 @@ msgstr ""
 msgid ""
 "If you want spaces at the beginning of a line to start a paragraph, use\n"
 "the new mode, Paragraph Indent Text mode.\n"
-msgstr ""
+msgstr "パラグラフ開始行の先頭にスペースが欲しければ、新しいモードのParagraph Indent Textモードを使用すること。\n"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2266
 #, no-wrap
 msgid "Prefixing lines"
-msgstr ""
+msgstr "Prefixing lines"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2267
 #, no-wrap
 msgid "Fill prefix"
-msgstr ""
+msgstr "Fill prefix"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2276
 msgid "If you have @code{auto-fill-mode} turned on (@pxref{Turning on auto-fill by default}), you can tell Emacs to prefix every line with a certain character sequence, the @dfn{fill prefix}.  Type the prefix at the beginning of a line, position point after it, and then type @kbd{C-x .} (@code{set-fill-prefix}) to set the fill prefix.  Thereafter, auto-filling will automatically put the fill prefix at the beginning of new lines, and @kbd{M-q} (@code{fill-paragraph}) will maintain any fill prefix when refilling the paragraph."
-msgstr ""
+msgstr "@code{auto-fill-mode} (@ref{Turning on auto-fill by default}を参照)をオンに切り替えている場合には、@dfn{フィルプレフィクス(fill prefix)}として特定の文字シーケンスをすべての行のプレフィクスとするようEmacsに指示することができます。行頭でプレフィクスをタイプしてポイントをタイプしたプレフィクスの後に移動、それから@kbd{C-x .} (@code{set-fill-prefix})とタイプしてフィルプレフィクスをセットします。それ以降はオートフィル新たな行の先頭に自動的にフィルプレフィクスを配置するとともに、@kbd{M-q} (@code{fill-paragraph})でパラグラフを再フィルする際にはすべてのフィルプレフィクスを保守するようになります。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2282
 msgid "If you have paragraphs with different levels of indentation, you will have to set the fill prefix to the correct value each time you move to a new paragraph.  There are many packages available to deal with this (@pxref{Packages that do not come with Emacs}).  Look for ``fill'' and ``indent'' keywords for guidance."
-msgstr ""
+msgstr "異なるレベルのインデントをもつパラグラフがある場合には、新たなパラグラフに移動するたびにフィルプレフィクスを正しい値にセットすることが必要になるでしょう。これを取り扱うためのパッケージが多数存在します(@ref{Packages that do not come with Emacs}を参照)。手引きとして``fill''、および``indent''のキーワードを調べてください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2283 ../../../../misc/efaq.texi:2289
 #, no-wrap
 msgid "Matching parentheses"
-msgstr ""
+msgstr "Matching parentheses"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2284
 #, no-wrap
 msgid "How do I show which parenthesis matches the one I'm looking at?"
-msgstr ""
+msgstr "How do I show which parenthesis matches the one I'm looking at?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2285
 #, no-wrap
 msgid "Parentheses, matching"
-msgstr ""
+msgstr "Parentheses, matching"
 
 #. type: file{#1}
 #: ../../../../misc/efaq.texi:2286
 #, no-wrap
 msgid "paren.el"
-msgstr ""
+msgstr "paren.el"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2287
 #, no-wrap
 msgid "Highlighting matching parentheses"
-msgstr ""
+msgstr "Highlighting matching parentheses"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2288
 #, no-wrap
 msgid "Pairs of parentheses, highlighting"
-msgstr ""
+msgstr "Pairs of parentheses, highlighting"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2292
 msgid "Call @code{show-paren-mode} in your @file{.emacs} file:"
-msgstr ""
+msgstr "@file{.emacs}ファイルで@code{show-paren-mode}を呼び出します。"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2295
 #, no-wrap
 msgid "(show-paren-mode 1)\n"
-msgstr ""
+msgstr "(show-paren-mode 1)\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2300
 msgid "You can also enable this mode by selecting the @samp{Paren Match Highlighting} option from the @samp{Options} menu of the Emacs menu bar at the top of any Emacs frame."
-msgstr ""
+msgstr "任意のEmacsフレーム上端にあるEmacsメニューバーの@samp{Options}メニューからオプション@samp{Paren Match Highlighting}を選択してこのモードを有効にすることもできます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2302
 msgid "Alternatives to this mode include:"
-msgstr ""
+msgstr "このようなモードの代替案手段としては以下が含まれます:"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2309
 msgid "If you're looking at a right parenthesis (or brace or bracket) you can delete it and reinsert it.  Emacs will momentarily move the cursor to the matching parenthesis."
-msgstr ""
+msgstr "右カッコ(または大カッコや角カッコ)に着目していたら、それを削除してからしで挿入する。Emacsは瞬時の間、マッチするカッコにカーソル和移動するだろう。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2315
 msgid "@kbd{C-M-f} (@code{forward-sexp}) and @kbd{C-M-b} (@code{backward-sexp})  will skip over one set of balanced parentheses, so you can see which parentheses match.  (You can train it to skip over balanced brackets and braces at the same time by modifying the syntax table.)"
-msgstr ""
+msgstr "@kbd{C-M-f} (@code{forward-sexp})および@kbd{C-M-b} (@code{backward-sexp})はバランスのとれたカッコを1セット分スキップするので、どのカッコがマッチするか確認できる(構文テーブルを修整してバランスのとれた大カッコおよび角カッコもスキップするよう洗練することも可能)。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2316
 #, no-wrap
 msgid "Show matching paren as in @code{vi}"
-msgstr ""
+msgstr "Show matching paren as in @code{vi}"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2321
 msgid "Here is some Emacs Lisp that will make the @kbd{%} key show the matching parenthesis, like in @code{vi}.  In addition, if the cursor isn't over a parenthesis, it simply inserts a % like normal."
-msgstr ""
+msgstr "以下は@code{vi}のように@kbd{%}キーでマッチするカッコを表示させるEmacs Lispコード。更にカーソルがカッコ上になければ通常通り単に%を挿入する。"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2324
@@ -4893,7 +4898,7 @@ msgstr ""
 msgid ""
 ";; By an unknown contributor\n"
 "\n"
-msgstr ""
+msgstr ";; 名無しの貢献者より\n\n"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2326
@@ -4901,7 +4906,7 @@ msgstr ""
 msgid ""
 "(global-set-key \"%\" 'match-paren)\n"
 "\n"
-msgstr ""
+msgstr "(global-set-key \"%\" 'match-paren)\n\n"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2333
@@ -4914,379 +4919,385 @@ msgid ""
 "        ((looking-at \"\\\\s)\") (forward-char 1) (backward-list 1))\n"
 "        (t (self-insert-command (or arg 1)))))\n"
 msgstr ""
+"(defun match-paren (arg)\n"
+"  \"カッコ上ならマッチするカッコへ移動、それ以外は%を挿入\"\n"
+"  (interactive \"p\")\n"
+"  (cond ((looking-at \"\\\\s(\") (forward-list 1) (backward-char 1))\n"
+"        ((looking-at \"\\\\s)\") (forward-char 1) (backward-list 1))\n"
+"        (t (self-insert-command (or arg 1)))))\n"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2337
 #, no-wrap
 msgid "Hiding #ifdef lines"
-msgstr ""
+msgstr "Hiding #ifdef lines"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2338
 #, no-wrap
 msgid "In C mode, can I show just the lines that will be left after @code{#ifdef} commands are handled by the compiler?"
-msgstr ""
+msgstr "In C mode, can I show just the lines that will be left after @code{#ifdef} commands are handled by the compiler?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2339
 #, no-wrap
 msgid "@code{#ifdef}, selective display of"
-msgstr ""
+msgstr "@code{#ifdef}, selective display of"
 
 #. type: code{#1}
 #: ../../../../misc/efaq.texi:2340
 #, no-wrap
 msgid "hide-ifdef-mode"
-msgstr ""
+msgstr "hide-ifdef-mode"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2341
 #, no-wrap
 msgid "Hiding @code{#ifdef} text"
-msgstr ""
+msgstr "Hiding @code{#ifdef} text"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2342
 #, no-wrap
 msgid "Selectively displaying @code{#ifdef} code"
-msgstr ""
+msgstr "Selectively displaying @code{#ifdef} code"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2346
 msgid "@kbd{M-x hide-ifdef-mode}.  (This is a minor mode.)  You might also want to investigate @file{cpp.el}, which is distributed with Emacs."
-msgstr ""
+msgstr "@kbd{M-x hide-ifdef-mode} (マイナーモード)です。Emacsに同梱されている@file{cpp.el}も調査したいと思うかもしれません。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2347
 #, no-wrap
 msgid "Repeating commands"
-msgstr ""
+msgstr "Repeating commands"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2348
 #, no-wrap
 msgid "How do I repeat a command as many times as possible?"
-msgstr ""
+msgstr "How do I repeat a command as many times as possible?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2349
 #, no-wrap
 msgid "Repeating commands many times"
-msgstr ""
+msgstr "Repeating commands many times"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2350
 #, no-wrap
 msgid "Commands, repeating many times"
-msgstr ""
+msgstr "Commands, repeating many times"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2351
 #, no-wrap
 msgid "@code{.}, equivalent to @code{vi} command"
-msgstr ""
+msgstr "@code{.}, equivalent to @code{vi} command"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2356
 msgid "Use the @code{repeat} command (@kbd{C-x z}) to repeat the last command.  If you preface it with a prefix argument, the prefix arg is applied to the command."
-msgstr ""
+msgstr "最後のコマンドを繰り返すには@code{repeat}コマンド(@kbd{C-x z})を使用します。プレフィクス引数を前置すると、そのプレフィクスは繰り返すコマンドに適用されます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2363
 msgid "You can also type @kbd{C-x @key{ESC} @key{ESC}} (@code{repeat-complex-command}) to reinvoke commands that used the minibuffer to get arguments.  In @code{repeat-complex-command} you can type @kbd{M-p} and @kbd{M-n} (and also up-arrow and down-arrow, if your keyboard has these keys) to scan through all the different complex commands you've typed."
-msgstr ""
+msgstr "引き起こしを取得するためにミニバッファーを使用するコマンドは、@kbd{C-x @key{ESC} @key{ESC}} (@code{repeat-complex-command})とタイプしても再呼び出しができます。@code{repeat-complex-command}では@kbd{M-p}と@kbd{M-n}(キーボードにあれば上矢印と下矢印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたものを走査することができます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2367
 msgid "To repeat a set of commands, use keyboard macros.  Use @kbd{C-x (} and @kbd{C-x )} to make a keyboard macro that invokes the command and then type @kbd{C-x e}.  @xref{Keyboard Macros,,, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "一連のコマンドを繰り返すにはキーボードマクロを使用します。コマンドを呼び出すキーボードマクロの作成には@kbd{C-x (}と@kbd{C-x )}を使い、その後に@kbd{C-x e}とタイプします。@ref{Keyboard Macros,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2371
 msgid "If you're really desperate for the @code{.} command in @code{vi} that redoes the last insertion/deletion, use VIPER, a @code{vi} emulation mode which comes with Emacs, and which appears to support it."
-msgstr ""
+msgstr "最後の挿入/削除を再実行する@code{vi}の@code{.}コマンドが本当に欲しくて堪らなければ、それをサポートしているよう思われる、VIPERというEmacsに同梱の@code{vi}エミュレーションモードを使ってください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2372
 #, no-wrap
 msgid "Valid X resources"
-msgstr ""
+msgstr "Valid X resources"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2373
 #, no-wrap
 msgid "What are the valid X resource settings (i.e., stuff in .Xdefaults)?"
-msgstr ""
+msgstr "What are the valid X resource settings (i.e., stuff in .Xdefaults)?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2374
 #, no-wrap
 msgid "Resources, X"
-msgstr ""
+msgstr "Resources, X"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2375
 #, no-wrap
 msgid "X resources"
-msgstr ""
+msgstr "X resources"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2376
 #, no-wrap
 msgid "Setting X resources"
-msgstr ""
+msgstr "Setting X resources"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2379
 msgid "@xref{X Resources,,, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "@ref{X Resources,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2383
 msgid "You can also use a resource editor, such as editres (for X11R5 and onwards), to look at the resource names for the menu bar, assuming Emacs was compiled with the X toolkit."
-msgstr ""
+msgstr "EmacsがXツールキットとともにコンパイルされていると仮定して、メニューバーのリソース名を確認するためにeditres(X11R5以降)のようなリソースエディターを使用することもできます。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2384
 #, no-wrap
 msgid "Evaluating Emacs Lisp code"
-msgstr ""
+msgstr "Evaluating Emacs Lisp code"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2385
 #, no-wrap
 msgid "How do I execute (``evaluate'') a piece of Emacs Lisp code?"
-msgstr ""
+msgstr "How do I execute (``evaluate'') a piece of Emacs Lisp code?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2386
 #, no-wrap
 msgid "Evaluating Lisp code"
-msgstr ""
+msgstr "Evaluating Lisp code"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2387
 #, no-wrap
 msgid "Lisp forms, evaluating"
-msgstr ""
+msgstr "Lisp forms, evaluating"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2391
 msgid "There are a number of ways to execute (@dfn{evaluate}, in Lisp lingo) an Emacs Lisp @dfn{form}:"
-msgstr ""
+msgstr "Emacs Lispの@dfn{フォーム(form)}を実行(Lispスラングでは@dfn{evaluate: 評価})するには:"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2398
 msgid "If you want it evaluated every time you run Emacs, put it in a file named @file{.emacs} in your home directory.  This is known as ``your @file{.emacs} file,'' and contains all of your personal customizations."
-msgstr ""
+msgstr "Emacsを実行する際に毎回評価させたければ、ホームディレクトリーにある@file{.emacs}という名前のファイルにそれを記述する。これは``あなたの@file{.emacs}ファイル''と呼ばれるものであり、あなたの個人的なカスタマイズがすべて含まれている。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2403
 msgid "You can type the form in the @file{*scratch*} buffer, and then type @key{LFD} (or @kbd{C-j}) after it.  The result of evaluating the form will be inserted in the buffer."
-msgstr ""
+msgstr "@file{*scratch*}バッファーでフォームをタイプしてから、それの後で@key{LFD} (または@kbd{C-j})をタイプできる。フォームの評価結果はそのままバッファーに挿入される。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2407
 msgid "In @code{emacs-lisp-mode}, typing @kbd{C-M-x} evaluates a top-level form before or around point."
-msgstr ""
+msgstr "@code{emacs-lisp-mode}では@kbd{C-M-x}とタイプすることでポイントの前、または周辺にあるトップレベルのフォームを評価する。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2411
 msgid "Typing @kbd{C-x C-e} in any buffer evaluates the Lisp form immediately before point and prints its value in the echo area."
-msgstr ""
+msgstr "任意のバッファーにおいて@kbd{C-x C-e}とタイプするとポイント直前にあるLispフォームを評価して、その値をエコーエリアにプリントする。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2415
 msgid "Typing @kbd{M-:} or @kbd{M-x eval-expression} allows you to type a Lisp form in the minibuffer which will be evaluated once you press @key{RET}."
-msgstr ""
+msgstr "@kbd{M-:}または@kbd{M-x eval-expression}とタイプすることによりミニバッファーでLispフォームをタイプして、@key{RET}の押下することでそれが1回評価される。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2420
 msgid "You can use @kbd{M-x load-file} to have Emacs evaluate all the Lisp forms in a file.  (To do this from Lisp use the function @code{load} instead.)"
-msgstr ""
+msgstr "ファイル内のすべてのLispフォームをEmacsにすべて評価させるには@kbd{M-x load-file}を使用できる(これをLispから行うにはかわりに関数@code{load}を使う)。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2425
 msgid "The functions @code{load-library}, @code{eval-region}, @code{eval-buffer}, @code{require}, and @code{autoload} are also useful; see @ref{Emacs Lisp documentation}, if you want to learn more about them."
-msgstr ""
+msgstr "関数@code{load-library}、@code{eval-region}、@code{eval-buffer}、@code{require}、@code{autoload}も有用。これらについての詳細は@ref{Emacs Lisp documentation}を参照のこと。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2428
 #, no-wrap
 msgid "Changing the length of a Tab"
-msgstr ""
+msgstr "Changing the length of a Tab"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2429
 #, no-wrap
 msgid "How do I change Emacs's idea of the @key{TAB} character's length?"
-msgstr ""
+msgstr "How do I change Emacs's idea of the @key{TAB} character's length?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2430
 #, no-wrap
 msgid "Tab length"
-msgstr ""
+msgstr "Tab length"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2431
 #, no-wrap
 msgid "Length of tab character"
-msgstr ""
+msgstr "Length of tab character"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2436
 msgid "Set the default value of the variable @code{tab-width}.  For example, to set @key{TAB} stops every 10 characters, insert the following in your @file{.emacs} file:"
-msgstr ""
+msgstr "変数@code{tab-width}のデフォルト値をセットします。たとえば10文字ごとに@key{TAB}ストップをセットするには、@file{.emacs}ファイルに以下を挿入してください:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2439
 #, no-wrap
 msgid "(setq-default tab-width 10)\n"
-msgstr ""
+msgstr "(setq-default tab-width 10)\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2445
 msgid "Do not confuse variable @code{tab-width} with variable @code{tab-stop-list}.  The former is used for the display of literal @key{TAB} characters.  The latter controls what characters are inserted when you press the @key{TAB} character in certain modes."
-msgstr ""
+msgstr "変数@code{tab-width}と変数@code{tab-stop-list}を混同しないでください。前者はリテラルの@key{TAB}文字の表示に使用されます。一方後者は特定のモードにおいて@key{TAB}文字を押下した際にどの文字が挿入されるかを制御します。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2446
 #, no-wrap
 msgid "Inserting text at the beginning of each line"
-msgstr ""
+msgstr "Inserting text at the beginning of each line"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2447
 #, no-wrap
 msgid "How do I insert <some text> at the beginning of every line?"
-msgstr ""
+msgstr "How do I insert <some text> at the beginning of every line?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2448
 #, no-wrap
 msgid "Prefixing a region with some text"
-msgstr ""
+msgstr "Prefixing a region with some text"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2449
 #, no-wrap
 msgid "Prefix character, inserting in mail/news replies"
-msgstr ""
+msgstr "Prefix character, inserting in mail/news replies"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2450
 #, no-wrap
 msgid "Replies to mail/news, inserting a prefix character"
-msgstr ""
+msgstr "Replies to mail/news, inserting a prefix character"
 
 #. type: code{#1}
 #: ../../../../misc/efaq.texi:2451
 #, no-wrap
 msgid "mail-yank-prefix"
-msgstr ""
+msgstr "mail-yank-prefix"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2452
 #, no-wrap
 msgid "Mail replies, inserting a prefix character"
-msgstr ""
+msgstr "Mail replies, inserting a prefix character"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2453
 #, no-wrap
 msgid "News replies, inserting a prefix character"
-msgstr ""
+msgstr "News replies, inserting a prefix character"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2457
 msgid "To do this to an entire buffer, type @kbd{M-< M-x replace-regexp @key{RET} ^ @key{RET} your text @key{RET}}."
-msgstr ""
+msgstr "これをバッファー全体にたいして行う場合には@kbd{M-< M-x replace-regexp @key{RET} ^ @key{RET} your text @key{RET}}とタイプします。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2463
 msgid "To do this to a region, use @code{string-insert-rectangle}.  Set the mark (@kbd{C-@key{SPC}}) at the beginning of the first line you want to prefix, move the cursor to last line to be prefixed, and type @kbd{M-x string-insert-rectangle @key{RET}}.  To do this for the whole buffer, type @kbd{C-x h M-x string-insert-rectangle @key{RET}}."
-msgstr ""
+msgstr "リージョンにたいして行う場合には@code{string-insert-rectangle}を使用します。プレフィクスを付加したい1行目の先頭にマークをセット(@kbd{C-@key{SPC}})して、付加したい最後の行へカーソルを移動、それから@kbd{M-x string-insert-rectangle @key{RET}}とタイプしてください。バッファー全体に行う場合には@kbd{C-x h M-x string-insert-rectangle @key{RET}}とタイプします。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2469
 msgid "If you are trying to prefix a yanked mail message with @samp{>}, you might want to set the variable @code{mail-yank-prefix}.  In Message buffers, you can even use @kbd{M-;} to cite yanked messages (@kbd{M-;} runs the function @code{comment-region}, it is a general-purpose mechanism to comment regions) (@pxref{Changing the included text prefix})."
-msgstr ""
+msgstr "yankしたメールメッセージにプレフィクスとして@samp{>}の付加を試みているなら、変数@code{mail-yank-prefix}をセットしたいと思うかもしれません。Messageバッファーではyankしたメッセージのメッセージの引用に@kbd{M-;} (こはリージョンのコメントアウトという汎用目的のためのメカニズムである関数@code{comment-region}を実行する)を使うことさえできます(@ref{Changing the included text prefix}を参照)。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2470
 #, no-wrap
 msgid "Forcing the cursor to remain in the same column"
-msgstr ""
+msgstr "Forcing the cursor to remain in the same column"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2471
 #, no-wrap
 msgid "How do I make Emacs behave like this: when I go up or down, the cursor should stay in the same column even if the line is too short?"
-msgstr ""
+msgstr "How do I make Emacs behave like this: when I go up or down, the cursor should stay in the same column even if the line is too short?"
 
 #. type: code{#1}
 #: ../../../../misc/efaq.texi:2472
 #, no-wrap
 msgid "picture-mode"
-msgstr ""
+msgstr "picture-mode"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2473
 #, no-wrap
 msgid "Remaining in the same column, regardless of contents"
-msgstr ""
+msgstr "Remaining in the same column, regardless of contents"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2474
 #, no-wrap
 msgid "Vertical movement in empty documents"
-msgstr ""
+msgstr "Vertical movement in empty documents"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2477
 msgid "Use @kbd{M-x picture-mode}."
-msgstr ""
+msgstr "@kbd{M-x picture-mode}を使用します。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2481
 msgid "See also the variable @code{track-eol} and the command @code{set-goal-column} bound to @kbd{C-x C-n} (@pxref{Moving Point, , , emacs, The GNU Emacs Manual})."
-msgstr ""
+msgstr "変数@code{track-eol}、および@kbd{C-x C-n}にバインドされているコマンド@code{set-goal-column} (@ref{Moving Point, , , emacs, The GNU Emacs Manual}を参照)も確認してください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2482
 #, no-wrap
 msgid "Forcing Emacs to iconify itself"
-msgstr ""
+msgstr "Forcing Emacs to iconify itself"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2483
 #, no-wrap
 msgid "How do I tell Emacs to iconify itself?"
-msgstr ""
+msgstr "How do I tell Emacs to iconify itself?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2484
 #, no-wrap
 msgid "Iconification under the X Window System"
-msgstr ""
+msgstr "Iconification under the X Window System"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2485
 #, no-wrap
 msgid "X Window System and iconification"
-msgstr ""
+msgstr "X Window System and iconification"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2486
 #, no-wrap
 msgid "Suspending Emacs"
-msgstr ""
+msgstr "Suspending Emacs"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2490
 msgid "@kbd{C-z} iconifies Emacs when running under X and suspends Emacs otherwise.  @xref{Frame Commands,,, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "@kbd{C-z}はEmacsをXで実行中ならアイコン化、それ以外ならEmacsをサスペンドします。@ref{Frame Commands,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2491
