@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-11-23 22:36+0900\n"
+"PO-Revision-Date: 2021-11-24 23:56+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -5473,7 +5473,7 @@ msgstr "たとえば@samp{etags -H}のように、コマンドラインスイッ
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2569 ../../../../misc/efaq.texi:2572
-#, no-wrap, fuzzy
+#, no-wrap
 msgid "Disabling backups"
 msgstr "Disabling backups"
 
@@ -5492,7 +5492,7 @@ msgstr "Backups, disabling"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2576
 msgid "You probably don't want to do this, since backups are useful, especially when something goes wrong."
-msgstr "何か不幸な出来事が起こったとき等、バックアップは有用なので多分これを行いたいとは思わないでしょう。"
+msgstr "特に何か不幸な出来事が起こったとき等、バックアップ特は役に立つので多分これを行いたいとは思わないでしょう。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2579
@@ -5531,164 +5531,164 @@ msgstr ""
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2598
 msgid "If you're tired of seeing backup files whenever you do an @samp{ls} at the Unix shell, try GNU @code{ls} with the @samp{-B} option.  GNU @code{ls} is part of the GNU Fileutils package, available from @url{https://ftp.gnu.org} and its mirrors (@pxref{Current GNU distributions})."
-msgstr ""
+msgstr "Unixシェルで@samp{ls}するたびにバックアップファイルが目につきうんざりしていたら、@samp{-B}オプションでGNU @code{ls}を試してみてください。GNU @code{ls}はGNU Fileutilsパッケージの一部であり、@url{https://ftp.gnu.org}およびそのミラーサイトで利用可能です(@ref{Current GNU distributions}を参照)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2601
 msgid "To disable or change the way backups are made, @pxref{Backup Names,,, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "バックアップ作成を無効にしたり作成方法を変更する場合には、@ref{Backup Names,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2602
 #, no-wrap
 msgid "Backup files in a single directory"
-msgstr ""
+msgstr "Backup files in a single directory"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2609
 msgid "Beginning with Emacs 21.1, you can control where Emacs puts backup files by customizing the variable @code{backup-directory-alist}.  This variable's value specifies that files whose names match specific patters should have their backups put in certain directories.  A typical use is to add the element @code{(\".\" . @var{dir})} to force Emacs to put @strong{all} backup files in the directory @file{dir}."
-msgstr ""
+msgstr "Emacs 21.1から変数@code{backup-directory-alist}をカスタマイズして、Emacsがバックアップファイルを置く場所を制御できるようになりました。この変数の値は特定のパターンの名前をもつファイルにたいして、バックアップファイルを特定のディレクトリーに置くように指定します。@strong{すべて}のバックアップファイルをディレクトリー@file{dir}に置くことをEmacsに強制する要素@code{(\".\" . @var{dir})}を追加する等が典型的な使い方です。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2610
 #, no-wrap
 msgid "Disabling auto-save-mode"
-msgstr ""
+msgstr "Disabling auto-save-mode"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2611
 #, no-wrap
 msgid "How do I disable @code{auto-save-mode}?"
-msgstr ""
+msgstr "How do I disable @code{auto-save-mode}?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2612
 #, no-wrap
 msgid "Disabling @code{auto-save-mode}"
-msgstr ""
+msgstr "Disabling @code{auto-save-mode}"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2613
 #, no-wrap
 msgid "Auto-saving"
-msgstr ""
+msgstr "Auto-saving"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2614
 #, no-wrap
 msgid "Saving at frequent intervals"
-msgstr ""
+msgstr "Saving at frequent intervals"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2619
 msgid "You probably don't want to do this, since auto-saving is useful, especially when Emacs or your computer crashes while you are editing a document."
-msgstr ""
+msgstr "特にドキュメント編集中にEmacsやコンピューターがクラッシュしたとき等、オートセーブは役に立つので多分これを行いたいとは思わないでしょう。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2624
 msgid "Instead, you might want to change the variable @code{auto-save-interval}, which specifies how many keystrokes Emacs waits before auto-saving.  Increasing this value forces Emacs to wait longer between auto-saves, which might annoy you less."
-msgstr ""
+msgstr "そのかわりにEmacsがオートセーブを行う前に待機するキーストローク数を指定する変数@code{auto-save-interval}を変更したいと思うかもしれません。この値を増加させることによって、その長さの間はEmacsにオートセーブの待機を強制します。これによって煩わしさが減るかもしれません。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2629
 msgid "You might also want to look into Sebastian Kremer's @code{auto-save} package (@pxref{Packages that do not come with Emacs}).  This package also allows you to place all auto-save files in one directory, such as @file{/tmp}."
-msgstr ""
+msgstr "Sebastian Kremerの@code{auto-save}パッケージも調べたいと思うかもしれません(@ref{Packages that do not come with Emacs}を参照)。このパッケージではすべてのauto-saveファイルを@file{/tmp}のような1つのディレクトリーに置くこともできます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2632
 msgid "To disable or change how @code{auto-save-mode} works, @pxref{Auto Save,,, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "@code{auto-save-mode}を無効にしたり動作を変更するには、@ref{Auto Save,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2633 ../../../../misc/efaq.texi:2635
 #, no-wrap
 msgid "Going to a line by number"
-msgstr ""
+msgstr "Going to a line by number"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2634
 #, no-wrap
 msgid "How can I go to a certain line given its number?"
-msgstr ""
+msgstr "How can I go to a certain line given its number?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2636
 #, no-wrap
 msgid "Compilation error messages"
-msgstr ""
+msgstr "Compilation error messages"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2637
 #, no-wrap
 msgid "Recompilation"
-msgstr ""
+msgstr "Recompilation"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2652
 msgid "Are you sure you indeed need to go to a line by its number? Perhaps all you want is to display a line in your source file for which a compiler printed an error message? If so, compiling from within Emacs using the @kbd{M-x compile} and @kbd{M-x recompile} commands is a much more effective way of doing that.  Emacs automatically intercepts the compile error messages, inserts them into a special buffer called @file{*compilation*}, and lets you visit the locus of each message in the source.  Type @kbd{C-x `} to step through the offending lines one by one (starting with Emacs 22, you can also use @kbd{M-g M-p} and @kbd{M-g M-n} to go to the previous and next matches directly).  Click @kbd{mouse-2} or press @key{RET} on a message text in the @file{*compilation*} buffer to go to the line whose number is mentioned in that message."
-msgstr ""
+msgstr "行番号で行に移動する必要があるのは確かですか? もしかしたらコンパイラーがエラーメッセージをプリントしたソースファイル行を表示するのがあなたの望んでいることではありませんか? もしそうならEmacsからコマンド@kbd{M-x compile}および@kbd{M-x recompile}を使用してコンパイルすることで、より効率的にこれを行うことができます。Emacsはコンパイルエラーメッセージを自動的にインターセプトして、@file{*compilation*}と呼ばれる特別なバッファーに挿入ます。あなたはソース内の、各メッセージに対応する場所をvisitできます。問題のある行を1つずつステップスルーするには@kbd{C-x `}とタイプします(Emacs 22からは前または次のマッチへ直接移動する@kbd{M-g M-p}および@kbd{M-g M-n}でも使用できる。@file{*compilation*}バッファーのメッセージテキスト上で@kbd{mouse-2}をクリックするか@key{RET}を押下することによって、そのメッセージ中に記されている番号の行へ移動します。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2657
 msgid "But if you indeed need to go to a certain text line, type @kbd{M-g M-g} (which is the default binding of the @code{goto-line} function starting with Emacs 22).  Emacs will prompt you for the number of the line and go to that line."
-msgstr ""
+msgstr "しかし特定のテキスト行へ移動する必要が本当にあるなら@kbd{M-g M-g} (Emacs 22からは@code{goto-line}関数のデフォルトバインディング)をタイプしてください。Emacsは行番号の入力を求めてその行に移動するでしょう。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2661
 msgid "You can do this faster by invoking @code{goto-line} with a numeric argument that is the line's number.  For example, @kbd{C-u 286 M-g M-g} will jump to line number 286 in the current buffer."
-msgstr ""
+msgstr "行番号を数引数として@code{goto-line}を呼び出せば、これをより高速に行うことができます。たとえば@kbd{C-u 286 M-g M-g}はカレントバッファーの行番号286へジャンプします。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2662 ../../../../misc/efaq.texi:2667
 #, no-wrap
 msgid "Modifying pull-down menus"
-msgstr ""
+msgstr "Modifying pull-down menus"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2663
 #, no-wrap
 msgid "How can I create or modify new pull-down menu options?"
-msgstr ""
+msgstr "How can I create or modify new pull-down menu options?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2664
 #, no-wrap
 msgid "Pull-down menus, creating or modifying"
-msgstr ""
+msgstr "Pull-down menus, creating or modifying"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2665
 #, no-wrap
 msgid "Menus, creating or modifying"
-msgstr ""
+msgstr "Menus, creating or modifying"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2666
 #, no-wrap
 msgid "Creating new menu options"
-msgstr ""
+msgstr "Creating new menu options"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2668
 #, no-wrap
 msgid "Menus and keymaps"
-msgstr ""
+msgstr "Menus and keymaps"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2669
 #, no-wrap
 msgid "Keymaps and menus"
-msgstr ""
+msgstr "Keymaps and menus"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2674
 msgid "Each menu title (e.g., @samp{File}, @samp{Edit}, @samp{Buffers})  represents a local or global keymap.  Selecting a menu title with the mouse displays that keymap's non-@code{nil} contents in the form of a menu."
-msgstr ""
+msgstr "メニュータイトル(@samp{File}、@samp{Edit}、@samp{Buffers}など)はそれぞれローカルキーマップおよびグローバルキーマップを表しています。メニュータイトルをマウスで選択することによって、メニューのフォーム内にそのキーマップの非@code{nil}のコンテンツが表示されます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2678
 msgid "So to add a menu option to an existing menu, all you have to do is add a new definition to the appropriate keymap.  Adding a @samp{Forward Word} item to the @samp{Edit} menu thus requires the following Lisp code:"
-msgstr ""
+msgstr "したがって既存メニューにメニューオプションを追加するために行う必要があるのは、適切なキーマップへの新たな定義の追加だけです。つまり@samp{Edit}メニューに@samp{Forward Word}アイテムを追加するためには、以下のLispコードが必要です:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2683
@@ -5698,26 +5698,29 @@ msgid ""
 "  [menu-bar edit forward]\n"
 "  '(\"Forward word\" . forward-word))\n"
 msgstr ""
+"(define-key global-map\n"
+"  [menu-bar edit forward]\n"
+"  '(\"Forward word\" . forward-word))\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2690
 msgid "The first line adds the entry to the global keymap, which includes global menu bar entries.  Replacing the reference to @code{global-map} with a local keymap would add this menu option only within a particular mode."
-msgstr ""
+msgstr "1行目ではグローバルメニューバーエントリーを含むグローバルキーマップにエントリーを追加しています。@code{global-map}への参照をローカルキーマップに置き換えることにより、特定のモードだけにメニューオプションが追加されます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2694
 msgid "The second line describes the path from the menu-bar to the new entry.  Placing this menu entry underneath the @samp{File} menu would mean changing the word @code{edit} in the second line to @code{file}."
-msgstr ""
+msgstr "2行目ではメニューバーから新エントリーへのパスを記述しています。これはこのメニューエントリーを@samp{File}メニューの下に配置するには、2行目の@code{edit}という単語を@code{file}に変更すればよいことを意味します。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2698
 msgid "The third line is a cons cell whose first element is the title that will be displayed, and whose second element is the function that will be called when that menu option is invoked."
-msgstr ""
+msgstr "3行目は1つ目の要素が表示されるタイトル、2つ目の要素がメニューオプション呼び出し時に呼び出される関数であるようなコンスセルです。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2701
 msgid "To add a new menu, rather than a new option to an existing menu, we must define an entirely new keymap:"
-msgstr ""
+msgstr "既存メニューへの新オプション追加デ新たなメニューを追加するためには新たにキーマップ全体を定義しなければなりません。"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2705
@@ -5726,11 +5729,13 @@ msgid ""
 "(define-key global-map [menu-bar words]\n"
 "  (cons \"Words\" (make-sparse-keymap \"Words\")))\n"
 msgstr ""
+"(define-key global-map [menu-bar words]\n"
+"  (cons \"Words\" (make-sparse-keymap \"Words\")))\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2711
 msgid "The above code creates a new sparse keymap, gives it the name @samp{Words}, and attaches it to the global menu bar.  Adding the @samp{Forward Word} item to this new menu would thus require the following code:"
-msgstr ""
+msgstr "上記のコードは新たに疎キーマップ(sparse keymap)を追加して名前@samp{Words}を付与、それをグローバルメニューバーにアタッチします。したがってこの新メニューへの、@samp{Forward Word}アイテム追加には以下のようなコードが必要になるでしょう:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2716
@@ -5740,6 +5745,9 @@ msgid ""
 "  [menu-bar words forward]\n"
 "  '(\"Forward word\" . forward-word))\n"
 msgstr ""
+"(define-key global-map\n"
+"  [menu-bar words forward]\n"
+"  '(\"Forward word\" . forward-word))\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2724
