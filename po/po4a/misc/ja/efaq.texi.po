@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-11-24 23:56+0900\n"
+"PO-Revision-Date: 2021-11-25 23:03+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -5752,12 +5752,12 @@ msgstr ""
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2724
 msgid "Note that because of the way keymaps work, menu options are displayed with the more recently defined items at the top.  Thus if you were to define menu options @samp{foo}, @samp{bar}, and @samp{baz} (in that order), the menu option @samp{baz} would appear at the top, and @samp{foo} would be at the bottom."
-msgstr ""
+msgstr "キーマップが機能する方法により、メニューオプションはより新しく定義されたアイテムがトップになるように表示されることに注意してください。したがってメニューオプション@samp{foo}、@samp{bar}、@samp{baz}を(この順番で)定義するとメニューオプションは@samp{baz}がトップ、@samp{foo}がボトムに表示されます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2729
 msgid "One way to avoid this problem is to use the function @code{define-key-after}, which works the same as @code{define-key}, but lets you modify where items appear.  The following Lisp code would insert the @samp{Forward Word} item in the @samp{Edit} menu immediately following the @samp{Undo} item:"
-msgstr ""
+msgstr "これを回避する1つの方法として関数@code{define-key-after}の使用があります。これは@code{define-key}と同様ですが、アイテムが出現しる位置を変更することができます。以下は@samp{Edit}メニューの@samp{Undo}アイテムの直後になるように@samp{Forward Word}アイテムを挿入します。"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2736
@@ -5769,257 +5769,262 @@ msgid ""
 "  '(\"Forward word\" . forward-word)\n"
 "  'undo)\n"
 msgstr ""
+"(define-key-after\n"
+"  (lookup-key global-map [menu-bar edit])\n"
+"  [forward]\n"
+"  '(\"Forward word\" . forward-word)\n"
+"  'undo)\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2742
 msgid "Note how the second and third arguments to @code{define-key-after} are different from those of @code{define-key}, and that we have added a new (final) argument, the function after which our new key should be defined."
-msgstr ""
+msgstr "@code{define-key-after}にたいする2つ目と3つ目の引数が@code{define-key}の場合とは異なること、そして追加した新しい(3つ目の)引数がこの関数によってどのように定義されるかに注意してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2745
 msgid "To move a menu option from one position to another, simply evaluate @code{define-key-after} with the appropriate final argument."
-msgstr ""
+msgstr "ある場所から別の場所にメニューオプションを移動するには、最後の引数を適切に指定して@code{define-key-after}を評価するだけです。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2750
 msgid "More detailed information---and more examples of how to create and modify menu options---are in the @cite{Emacs Lisp Reference Manual}, under ``Menu Keymaps.'' (@xref{Emacs Lisp documentation}, for information on this manual.)"
-msgstr ""
+msgstr "より詳細な情報、およびメニューオプションの作成と行うより多くの例については、@cite{Emacs Lisp Reference Manual}の``Menu Keymaps''にあります(このマニュアル内の情報については@ref{Emacs Lisp documentation}を参照)。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2751 ../../../../misc/efaq.texi:2753
 #, no-wrap
 msgid "Deleting menus and menu options"
-msgstr ""
+msgstr "Deleting menus and menu options"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2752
 #, no-wrap
 msgid "How do I delete menus and menu options?"
-msgstr ""
+msgstr "How do I delete menus and menu options?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2754
 #, no-wrap
 msgid "Menus, deleting"
-msgstr ""
+msgstr "Menus, deleting"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2759
 msgid "The simplest way to remove a menu is to set its keymap to @samp{nil}.  For example, to delete the @samp{Words} menu (@pxref{Modifying pull-down menus}), use:"
-msgstr ""
+msgstr "メニューを削除するもっともシンプルな方法は、そのキーマップに@samp{nil}をセットします。たとえば@samp{Words}メニュー(@ref{Modifying pull-down menus}を参照)を削除するには以下を使用します:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2762
 #, no-wrap
 msgid "(define-key global-map [menu-bar words] nil)\n"
-msgstr ""
+msgstr "(define-key global-map [menu-bar words] nil)\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2768
 msgid "Similarly, removing a menu option requires redefining a keymap entry to @code{nil}.  For example, to delete the @samp{Forward word} menu option from the @samp{Edit} menu (we added it in @ref{Modifying pull-down menus}), use:"
-msgstr ""
+msgstr "同じように、メニューオプションを削除するには、キーマップエントリーを@code{nil}に再定義する必要があります。たとえば@samp{Edit}メニューから(@ref{Modifying pull-down menus}で追加した)@samp{Forward word}メニューオプションを削除するには以下を使用します:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2771
 #, no-wrap
 msgid "(define-key global-map [menu-bar edit forward] nil)\n"
-msgstr ""
+msgstr "(define-key global-map [menu-bar edit forward] nil)\n"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2773
 #, no-wrap
 msgid "Turning on syntax highlighting"
-msgstr ""
+msgstr "Turning on syntax highlighting"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2774
 #, no-wrap
 msgid "How do I turn on syntax highlighting?"
-msgstr ""
+msgstr "How do I turn on syntax highlighting?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2775
 #, no-wrap
 msgid "Syntax highlighting"
-msgstr ""
+msgstr "Syntax highlighting"
 
 #. type: code{#1}
 #: ../../../../misc/efaq.texi:2776
 #, no-wrap
 msgid "font-lock-mode"
-msgstr ""
+msgstr "font-lock-mode"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2777
 #, no-wrap
 msgid "Highlighting based on syntax"
-msgstr ""
+msgstr "Highlighting based on syntax"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2778
 #, no-wrap
 msgid "Colorizing text"
-msgstr ""
+msgstr "Colorizing text"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2779
 #, no-wrap
 msgid "FAQ, @code{font-lock-mode}"
-msgstr ""
+msgstr "FAQ, @code{font-lock-mode}"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2784
 msgid "@code{font-lock-mode} is the standard way to have Emacs perform syntax highlighting in the current buffer.  It is enabled by default in Emacs 22.1 and later."
-msgstr ""
+msgstr "@code{font-lock-mode}はEmacsがカレントバッファーでシンタックスハイライト和行う標準的な方法です。これはEmacs 22.1以降ではデフォルトで有効になっています。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2789
 msgid "With @code{font-lock-mode} turned on, different types of text will appear in different colors.  For instance, in a programming mode, variables will appear in one face, keywords in a second, and comments in a third."
-msgstr ""
+msgstr "@code{font-lock-mode}をオンに切り替えると、異なるタイプのテキストは違うカラーで表示されます。たとえばプログラミング用のモードでは変数はあるフェイスで、キーワードはそれとは異なるフェイス、コメントは更に違うフェイスで表示されるでしょう。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2792
 msgid "To turn @code{font-lock-mode} off within an existing buffer, use @kbd{M-x font-lock-mode @key{RET}}."
-msgstr ""
+msgstr "既存バッファーで@code{font-lock-mode}をオフに切り替えるには@kbd{M-x font-lock-mode @key{RET}}を使用してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2795
 msgid "In Emacs 21 and earlier versions, you could use the following code in your @file{.emacs} file to turn on @code{font-lock-mode} globally:"
-msgstr ""
+msgstr "Emacs 21以前では以下のコードを@file{.emacs}ファイルに記述して、@code{font-lock-mode}をグローバルにオンに切り替えることができます。"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2798
 #, no-wrap
 msgid "(global-font-lock-mode 1)\n"
-msgstr ""
+msgstr "(global-font-lock-mode 1)\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2803
 msgid "Highlighting a buffer with @code{font-lock-mode} can take quite a while, and cause an annoying delay in display, so several features exist to work around this."
-msgstr ""
+msgstr "@code{font-lock-mode}によるバッファーのハイライトにはかなり時間がかかり、苛立たしい表示の遅延を引き起こすので、これに対処するための機能がいくつかあります。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2804
 #, no-wrap
 msgid "Just-In-Time syntax highlighting"
-msgstr ""
+msgstr "Just-In-Time syntax highlighting"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2812
 msgid "In Emacs 21 and later, turning on @code{font-lock-mode} automatically activates the new @dfn{Just-In-Time fontification} provided by @code{jit-lock-mode}.  @code{jit-lock-mode} defers the fontification of portions of buffer until you actually need to see them, and can also fontify while Emacs is idle.  This makes display of the visible portion of a buffer almost instantaneous.  For details about customizing @code{jit-lock-mode}, type @kbd{C-h f jit-lock-mode @key{RET}}."
-msgstr ""
+msgstr "Emacs 21では@code{font-lock-mode}をオンに切り替えることによって、@code{jit-lock-mode}が提供する新たな@dfn{JITフォント表示(Just-In-Time fontification)}が自動的にアクティブになります。@code{jit-lock-mode}はバッファーをユーザーに実際に見せる必要が生じるまで、そのバッファー範囲のフォント表示を遅延させるとともに、EmacsがIdol中にもフォント表示を行えます。これによってバッファーの可視範囲はほとんど瞬時に表示されるようになります。@code{jit-lock-mode}のカスタマイズの詳細については@kbd{C-h f jit-lock-mode @key{RET}}とタイプしてください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2813
 #, no-wrap
 msgid "Levels of syntax highlighting"
-msgstr ""
+msgstr "Levels of syntax highlighting"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2814
 #, no-wrap
 msgid "Decoration level, in @code{font-lock-mode}"
-msgstr ""
+msgstr "Decoration level, in @code{font-lock-mode}"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2823
 msgid "In versions of Emacs before 21, different levels of decoration are available, from slight to gaudy.  More decoration means you need to wait more time for a buffer to be fontified (or a faster machine).  To control how decorated your buffers should become, set the value of @code{font-lock-maximum-decoration} in your @file{.emacs} file, with a @code{nil} value indicating default (usually minimum) decoration, and a @code{t} value indicating the maximum decoration.  For the gaudiest possible look, then, include the line"
-msgstr ""
+msgstr "21より前のバージョンのEmacsではささやかなものから派手なものまで、異なるレベルの装飾が利用可能です。より多くの装飾にはバッファーがフォント表示されるまで、より長い時間待機する必要があることを意味しています。バッファーがどのように装飾されるべきかを制御するためには、@file{.emacs}ファイルで@code{font-lock-maximum-decoration}に値をセットします。@code{nil}値はデフォルトの(通常は最低限の)装飾、@code{t}は最大限の装飾をも意味します。できるだけ派手な外観にするには、@file{.emacs}ファイルに以下の行を含めてください。"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2826
 #, no-wrap
 msgid "(setq font-lock-maximum-decoration t)\n"
-msgstr ""
+msgstr "(setq font-lock-maximum-decoration t)\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2834
 msgid "in your @file{.emacs} file.  You can also set this variable such that different modes are highlighted in a different ways; for more information, see the documentation for @code{font-lock-maximum-decoration} with @kbd{C-h v} (or @kbd{M-x describe-variable @key{RET}})."
-msgstr ""
+msgstr "異なるモードでは違う方法でハイライトするようにこの変数をセットすることもできます。詳細については@kbd{C-h v} (または@kbd{M-x describe-variable @key{RET}})で@code{font-lock-maximum-decoration}のドキュメントを確認してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2838
 msgid "Also see the documentation for the function @code{font-lock-mode}, available by typing @kbd{C-h f font-lock-mode} (@kbd{M-x describe-function @key{RET} font-lock-mode @key{RET}})."
-msgstr ""
+msgstr "更に@kbd{C-h f font-lock-mode} (@kbd{M-x describe-function @key{RET} font-lock-mode @key{RET}})で利用できる、関数@code{font-lock-mode}のドキュメントも参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2845
 msgid "To print buffers with the faces (i.e., colors and fonts) intact, use @kbd{M-x ps-print-buffer-with-faces} or @kbd{M-x ps-print-region-with-faces}.  You will need a way to send text to a PostScript printer, or a PostScript interpreter such as Ghostscript; consult the documentation of the variables @code{ps-printer-name}, @code{ps-lpr-command}, and @code{ps-lpr-switches} for more details."
-msgstr ""
+msgstr "バッファーをフェイス(カラーとフォント)付きでそのままプリントするためには、@kbd{M-x ps-print-buffer-with-faces}または@kbd{M-x ps-print-region-with-faces}を使用します。あなたにはPostScriptプリンターにテキストを送信する方法、あるいはGhostscriptのようなPostScriptインタープリターが必要になるでしょう。詳細については変数@code{ps-printer-name}、@code{ps-lpr-command}、@code{ps-lpr-switches}のドキュメントを参照してください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2846 ../../../../misc/efaq.texi:2848
 #, no-wrap
 msgid "Scrolling only one line"
-msgstr ""
+msgstr "Scrolling only one line"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2847
 #, no-wrap
 msgid "How can I force Emacs to scroll only one line when I move past the bottom of the screen?"
-msgstr ""
+msgstr "How can I force Emacs to scroll only one line when I move past the bottom of the screen?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2849
 #, no-wrap
 msgid "Reducing the increment when scrolling"
-msgstr ""
+msgstr "Reducing the increment when scrolling"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2855
 msgid "Customize the @code{scroll-conservatively} variable with @kbd{M-x customize-variable @key{RET} scroll-conservatively @key{RET}} and set it to a large value like, say, 10000.  For an explanation of what this means, @pxref{Auto Scrolling,,, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "@kbd{M-x customize-variable @key{RET} scroll-conservatively @key{RET}}で@code{scroll-conservatively}をカスタマイズして大きな値、たとえば10000にセットしてください。これが何を意味するかについては、@ref{Auto Scrolling,,, emacs, The GNU Emacs Manual}の説明を参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2857
 msgid "Alternatively, use the following Lisp form in your @file{.emacs}:"
-msgstr ""
+msgstr "かわりに@file{.emacs}で以下のLispフォームを使うこともできます:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2860
 #, no-wrap
 msgid "(setq scroll-conservatively most-positive-fixnum)\n"
-msgstr ""
+msgstr "(setq scroll-conservatively most-positive-fixnum)\n"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2862 ../../../../misc/efaq.texi:2864
 #, no-wrap
 msgid "Editing MS-DOS files"
-msgstr ""
+msgstr "Editing MS-DOS files"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2863
 #, no-wrap
 msgid "How can I edit MS-DOS files using Emacs?"
-msgstr ""
+msgstr "How can I edit MS-DOS files using Emacs?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2865
 #, no-wrap
 msgid "MS-DOS files, editing"
-msgstr ""
+msgstr "MS-DOS files, editing"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2866
 #, no-wrap
 msgid "Microsoft files, editing"
-msgstr ""
+msgstr "Microsoft files, editing"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2867
 #, no-wrap
 msgid "Windows files, editing"
-msgstr ""
+msgstr "Windows files, editing"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2872
 msgid "Detection and handling of MS-DOS (and Windows) files is performed transparently.  You can open MS-DOS files on a Unix system, edit it, and save it without having to worry about the file format."
-msgstr ""
+msgstr "MS-DOS (およびWindows)のファイルの検出と処理は透過的に行われます。Unixシステム上でファイルフォーマットについて心配するなくMS-DOSファイルのオープン、編集、保存を行うことができます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2878
 msgid "When editing an MS-DOS style file, the mode line will indicate that it is a DOS file.  On Unix and GNU/Linux systems, and also on a Macintosh, the string @samp{(DOS)} will appear near the left edge of the mode line; on DOS and Windows, where the DOS end-of-line (EOL) format is the default, a backslash (@samp{\\}) will appear in the mode line."
-msgstr ""
+msgstr "MS-DOS形式ファイルの編集時には、それがDOSファイルであることが示されます。UnixおよびGNU/Linuxシステム、およびMacintoshでもモードライン左端付近に文字列@samp{(DOS)}が表示されるでしょう。DOSのEOLフォーマットをデフォルトとして使用するDOSおよびWindowsでは、モードラインにバックスラッシュ(@samp{\\})が表示されます。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2879
