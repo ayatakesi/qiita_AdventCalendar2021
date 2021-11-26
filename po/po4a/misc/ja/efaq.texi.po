@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-11-25 23:03+0900\n"
+"PO-Revision-Date: 2021-11-27 00:13+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -6030,105 +6030,105 @@ msgstr "MS-DOS形式ファイルの編集時には、それがDOSファイルで
 #: ../../../../misc/efaq.texi:2879
 #, no-wrap
 msgid "Filling paragraphs with a single space"
-msgstr ""
+msgstr "Filling paragraphs with a single space"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2880
 #, no-wrap
 msgid "How can I tell Emacs to fill paragraphs with a single space after each period?"
-msgstr ""
+msgstr "How can I tell Emacs to fill paragraphs with a single space after each period?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2881
 #, no-wrap
 msgid "One space following periods"
-msgstr ""
+msgstr "One space following periods"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2882
 #, no-wrap
 msgid "Single space following periods"
-msgstr ""
+msgstr "Single space following periods"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2883
 #, no-wrap
 msgid "Periods, one space following"
-msgstr ""
+msgstr "Periods, one space following"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2886
 msgid "Add the following line to your @file{.emacs} file:"
-msgstr ""
+msgstr "以下の行を@file{.emacs}ファイルに追加してください:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2889
 #, no-wrap
 msgid "(setq sentence-end-double-space nil)\n"
-msgstr ""
+msgstr "(setq sentence-end-double-space nil)\n"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2891
 #, no-wrap
 msgid "Escape sequences in shell output"
-msgstr ""
+msgstr "Escape sequences in shell output"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2892
 #, no-wrap
 msgid "Why these strange escape sequences from @code{ls} from the Shell mode?"
-msgstr ""
+msgstr "Why these strange escape sequences from @code{ls} from the Shell mode?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2893
 #, no-wrap
 msgid "Escape sequences in @code{ls} output"
-msgstr ""
+msgstr "Escape sequences in @code{ls} output"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2894
 #, no-wrap
 msgid "@code{ls} in Shell mode"
-msgstr ""
+msgstr "@code{ls} in Shell mode"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2904
 msgid "In many systems, @code{ls} is aliased to @samp{ls --color}, which prints using ANSI color escape sequences.  Emacs version 21.1 and later includes the @code{ansi-color} package, which lets Shell mode recognize these escape sequences.  In Emacs 23.2 and later, the package is enabled by default; in earlier versions you can enable it by typing @kbd{M-x ansi-color-for-comint-mode} in the Shell buffer, or by adding @code{(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)} to your init file."
-msgstr ""
+msgstr "多くのシステムでは、@code{ls}はANSIカラーエスケープシーケンスを使用してプリントを行う@samp{ls --color}にエイリアスされています。Emacsのバージョン21.1以降には、これらのエスケープシーケンスをShellモードに認識させる@code{ansi-color}パッケージが含まれています。Emacs 23.2以降では、このパッケージはデフォルトで有効になっています。これより前のバージョンではShellバッファーで@kbd{M-x ansi-color-for-comint-mode}とタイプするか、あるいはinitファイルに@code{(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)}を追加することで有効にできます。"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2906
 #, no-wrap
 msgid "How can I start Emacs in fullscreen mode on MS-Windows?"
-msgstr ""
+msgstr "How can I start Emacs in fullscreen mode on MS-Windows?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2907
 #, no-wrap
 msgid "Maximize frame"
-msgstr ""
+msgstr "Maximize frame"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2908
 #, no-wrap
 msgid "Fullscreen mode"
-msgstr ""
+msgstr "Fullscreen mode"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2913
 msgid "Beginning with Emacs 24.4 either run Emacs with the @samp{--maximized} command-line option or put the following form in your @file{.emacs} file:"
-msgstr ""
+msgstr "Emacs 24からはコマンドラインオプション@samp{--maximized}でEmacsを開始するか、あるいは@file{.emacs}ファイルに以下のフォームを記述します:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2916
 #, no-wrap
 msgid "(add-hook 'emacs-startup-hook 'toggle-frame-maximized)\n"
-msgstr ""
+msgstr "(add-hook 'emacs-startup-hook 'toggle-frame-maximized)\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2920
 msgid "With older versions use the function @code{w32-send-sys-command}.  For example, you can put the following in your @file{.emacs} file:"
-msgstr ""
+msgstr "これより古いバージョンでは関数@code{w32-send-sys-command}を使用してください。たとえば以下を@file{.emacs}ファイルに記述できます:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2924
@@ -6137,184 +6137,186 @@ msgid ""
 "(add-hook 'emacs-startup-hook\n"
 "          (lambda () (w32-send-sys-command ?\\xF030)))\n"
 msgstr ""
+"(add-hook 'emacs-startup-hook\n"
+"          (lambda () (w32-send-sys-command ?\\xF030)))\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2930
 msgid "To avoid the slightly distracting visual effect of Emacs starting with its default frame size and then growing to fullscreen, you can add an @samp{Emacs.Geometry} entry to the Windows registry settings.  @xref{X Resources,,, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "Emacsの開始においてデフォルトのフレームサイズからフルスクリーンに拡がる若干惑わされる視覚効果を回避するには、Windowsのレジストリ文字列に@samp{Emacs.Geometry}エントリーを追加できます。@ref{X Resources,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2934
 msgid "To compute the correct values for width and height, first maximize the Emacs frame and then evaluate @code{(frame-height)} and @code{(frame-width)} with @kbd{M-:}."
-msgstr ""
+msgstr "幅と高さの正しい値を計算するためには、まずEmacsフレームを最大化してから@kbd{M-:}で@code{(frame-height)}および@code{(frame-width)}を評価してください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2936 ../../../../misc/efaq.texi:2937 ../../../../misc/efaq.texi:2938
 #, no-wrap
 msgid "Bugs and problems"
-msgstr ""
+msgstr "Bugs and problems"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2946
 msgid "The Emacs manual lists some common kinds of trouble users could get into, see @ref{Lossage, , Dealing with Emacs Trouble, emacs, The GNU Emacs Manual}, so you might look there if the problem you encounter isn't described in this chapter.  If you decide you've discovered a bug, see @ref{Bugs, , Reporting Bugs, emacs, The GNU Emacs Manual}, for instructions how to do that."
-msgstr ""
+msgstr "Emacsマニュアルにはユーザーが陥りやすい類の一般的なトラブルのリストがあるので、このチャプターに記述されていない問題に遭遇したら、@ref{Lossage, , Dealing with Emacs Trouble, emacs, The GNU Emacs Manual}を参照してください。バグを見つけたと判断したら、それをどうすればよいかについては@ref{Bugs, , Reporting Bugs, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2950
 msgid "The file @file{etc/PROBLEMS} in the Emacs distribution lists various known problems with building and using Emacs on specific platforms; type @kbd{C-h C-p} to read it."
-msgstr ""
+msgstr "Emacsディストリビューションに同梱されているファイル@file{etc/PROBLEMS}は特定プラットフォームでのEmacsのビルド、使用にたいする既知の様々な問題のリストがあります。これを読むには@kbd{C-h C-p}とタイプしてください。"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:2963
 msgid "Problems with very large files::"
-msgstr ""
+msgstr "Problems with very large files::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:2963
 msgid "^M in the shell buffer::"
-msgstr ""
+msgstr "^M in the shell buffer::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:2963
 msgid "Problems with Shell Mode::"
-msgstr ""
+msgstr "Problems with Shell Mode::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:2963
 msgid "Termcap/Terminfo entries for Emacs::"
-msgstr ""
+msgstr "Termcap/Terminfo entries for Emacs::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:2963
 msgid "Errors with init files::"
-msgstr ""
+msgstr "Errors with init files::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:2963
 msgid "Emacs ignores X resources::"
-msgstr ""
+msgstr "Emacs ignores X resources::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:2963
 msgid "Emacs ignores frame parameters::"
-msgstr ""
+msgstr "Emacs ignores frame parameters::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:2963
 msgid "Editing files with $ in the name::"
-msgstr ""
+msgstr "Editing files with $ in the name::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:2963
 msgid "Shell mode loses the current directory::"
-msgstr ""
+msgstr "Shell mode loses the current directory::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:2963
 msgid "Security risks with Emacs::"
-msgstr ""
+msgstr "Security risks with Emacs::"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2963 ../../../../misc/efaq.texi:3345
 #, no-wrap
 msgid "Dired claims that no file is on this line"
-msgstr ""
+msgstr "Dired claims that no file is on this line"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2965
 #, no-wrap
 msgid "Problems with very large files"
-msgstr ""
+msgstr "Problems with very large files"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2966
 #, no-wrap
 msgid "Does Emacs have problems with large files?"
-msgstr ""
+msgstr "Does Emacs have problems with large files?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2967
 #, no-wrap
 msgid "Very large files, opening"
-msgstr ""
+msgstr "Very large files, opening"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2968
 #, no-wrap
 msgid "Large files, opening"
-msgstr ""
+msgstr "Large files, opening"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2969
 #, no-wrap
 msgid "Opening very large files"
-msgstr ""
+msgstr "Opening very large files"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2970
 #, no-wrap
 msgid "Maximum file size"
-msgstr ""
+msgstr "Maximum file size"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2971
 #, no-wrap
 msgid "Files, maximum size"
-msgstr ""
+msgstr "Files, maximum size"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2976
 msgid "Emacs has an inherent fixed limitation on the size of buffers.  This limit is stricter than the maximum size of objects supported by other programs on the same architecture."
-msgstr ""
+msgstr "Emacsのバッファーサイズには先天的に固定された制限があります。これは同一プラットフォームで他のプログラムがサポートするオブジェクトの最大サイズと比較すると厳しい制限です。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2981
 msgid "The maximum buffer size on 32-bit machines is 512 MBytes beginning with version 23.2.  If Emacs was built using the @code{--with-wide-int} flag, the maximum buffer size on 32-bit machines is 2 GB."
-msgstr ""
+msgstr "バッファーの最大サイズはバージョン23.2からは32ビットマシンで512MBです。@code{--with-wide-int}フラグを使用してEmacsをビルドした場合には、バッファーの最大サイズは32ビットマシンで2GBです。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2984
 msgid "Emacs compiled on a 64-bit machine can handle much larger buffers; up to @code{most-positive-fixnum} (2.3 exabytes)."
-msgstr ""
+msgstr "64ビットマシンでコンパイルしたEmacsはより大きい@code{most-positive-fixnum} (2.3EB)までのバッファーを扱うことができます(訳注: 1E=1exaは10の18乗)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2989
 msgid "Due to things like decoding of multibyte characters, you can only visit files with a size that is roughly half the buffer size limit.  When visiting compressed archives, the file size limit will be smaller than that due to decompression."
-msgstr ""
+msgstr "マルチバイト文字のデコーディングのような事柄のために、visitできるのはバッファーのサイズ制限の概ね半分のサイズのファイルだけです。圧縮されたアーカイブをvisitする際には、解凍のためにファイルサイズの制限はより小さくなります。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2990
 #, no-wrap
 msgid "^M in the shell buffer"
-msgstr ""
+msgstr "^M in the shell buffer"
 
 #. type: section
 #: ../../../../misc/efaq.texi:2991
 #, no-wrap
 msgid "How do I get rid of @samp{^M} or echoed commands in my shell buffer?"
-msgstr ""
+msgstr "How do I get rid of @samp{^M} or echoed commands in my shell buffer?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2992
 #, no-wrap
 msgid "Shell buffer, echoed commands and @samp{^M} in"
-msgstr ""
+msgstr "Shell buffer, echoed commands and @samp{^M} in"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2993
 #, no-wrap
 msgid "Echoed commands in @code{shell-mode}"
-msgstr ""
+msgstr "Echoed commands in @code{shell-mode}"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2997
 msgid "Try typing @kbd{M-x comint-strip-ctrl-m @key{RET}} while in @code{shell-mode} to make them go away.  If that doesn't work, you have several options:"
-msgstr ""
+msgstr "それらを取り除くには@kbd{M-x comint-strip-ctrl-m @key{RET}}を試してください。これが機能しない場合には、いくつかのオプションがあります。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3000
 msgid "For @code{tcsh}, put this in your @file{.cshrc} (or @file{.tcshrc})  file:"
-msgstr ""
+msgstr "@code{tcsh}では以下を@file{.cshrc} (または@file{.tcshrc})ファイルに記述してください:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3006
@@ -6325,11 +6327,15 @@ msgid ""
 "    stty -icrnl -onlcr -echo susp ^Z\n"
 "endif\n"
 msgstr ""
+"if ($?INSIDE_EMACS && $?tcsh)\n"
+"    unset edit\n"
+"    stty -icrnl -onlcr -echo susp ^Z\n"
+"endif\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3009
 msgid "Or put this in your @file{.emacs_tcsh} or @file{~/.emacs.d/init_tcsh.sh} file:"
-msgstr ""
+msgstr "あるいは以下をファイル@file{.emacs_tcsh}または@file{~/.emacs.d/init_tcsh.sh}に記述してください:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3013
@@ -6338,147 +6344,149 @@ msgid ""
 "unset edit\n"
 "stty -icrnl -onlcr -echo susp ^Z\n"
 msgstr ""
+"unset edit\n"
+"stty -icrnl -onlcr -echo susp ^Z\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3017
 msgid "Alternatively, use @code{csh} in your shell buffers instead of @code{tcsh}.  One way is:"
-msgstr ""
+msgstr "Shellバッファーで@code{tcsh}のかわりに@code{csh}を使用してください。1つ目の方法は:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3020
 #, no-wrap
 msgid "(setq explicit-shell-file-name \"/bin/csh\")\n"
-msgstr ""
+msgstr "(setq explicit-shell-file-name \"/bin/csh\")\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3025
 msgid "and another is to do this in your @file{.cshrc} (or @file{.tcshrc})  file:"
-msgstr ""
+msgstr "別の方法としては@file{.cshrc} (または@file{.tcshrc})ファイルでこれを行う方法です:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3028
 #, no-wrap
 msgid "setenv ESHELL /bin/csh\n"
-msgstr ""
+msgstr "setenv ESHELL /bin/csh\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3033
 msgid "(You must start Emacs over again with the environment variable properly set for this to take effect.)"
-msgstr ""
+msgstr "(これが効果をもつように環境変数を正しくセットした後にEmacsを再起動しなければなりません。)"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3036
 msgid "You can also set the @code{ESHELL} environment variable in Emacs Lisp with the following Lisp form,"
-msgstr ""
+msgstr "以下のLispフォームでEmacs Lispにより@code{ESHELL}環境変数をセットすることもできます:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3039
 #, no-wrap
 msgid "(setenv \"ESHELL\" \"/bin/csh\")\n"
-msgstr ""
+msgstr "(setenv \"ESHELL\" \"/bin/csh\")\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3046
 msgid "The above solutions try to prevent the shell from producing the @samp{^M} characters in the first place.  If this is not possible (e.g., if you use a Windows shell), you can get Emacs to remove these characters from the buffer by adding this to your @file{.emacs} init file:"
-msgstr ""
+msgstr "上記の解決策は最初にシェルが@samp{^M}文字を生成するのを防ぐ試みです。これが不可能(たとえばWindowsシェルを使用している)なら、@file{.emacs}に追加することによって、Emacsにそれらの文字をバッファーから削除させることができます。"
 
 #. type: smalllisp
 #: ../../../../misc/efaq.texi:3049
 #, no-wrap
 msgid "(add-hook 'comint-output-filter-functions #'comint-strip-ctrl-m)\n"
-msgstr ""
+msgstr "(add-hook 'comint-output-filter-functions #'comint-strip-ctrl-m)\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3055
 msgid "On a related note: if your shell is echoing your input line in the shell buffer, you might want to customize the @code{comint-process-echoes} variable in your shell buffers, or try the following command in your shell start-up file:"
-msgstr ""
+msgstr "関連する注意: あなたのシェルが入力行をShellバッファーでエンコードする場合には、Shellバッファーで@code{comint-process-echoes}変数をカスタマイズするか、あるいはシェルの起動ファイルで以下のコマンドの実行を試みたいと思うかもしれません:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3058
 #, no-wrap
 msgid "stty -icrnl -onlcr -echo susp ^Z\n"
-msgstr ""
+msgstr "stty -icrnl -onlcr -echo susp ^Z\n"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3060
 #, no-wrap
 msgid "Problems with Shell Mode"
-msgstr ""
+msgstr "Problems with Shell Mode"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3061
 #, no-wrap
 msgid "Why do I get an error message when I try to run @kbd{M-x shell}?"
-msgstr ""
+msgstr "Why do I get an error message when I try to run @kbd{M-x shell}?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3063
 #, no-wrap
 msgid "Shell Mode, problems"
-msgstr ""
+msgstr "Shell Mode, problems"
 
 #. type: code{#1}
 #: ../../../../misc/efaq.texi:3064
 #, no-wrap
 msgid "explicit-shell-file-name"
-msgstr ""
+msgstr "explicit-shell-file-name"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3069
 msgid "This might happen because Emacs tries to look for the shell in a wrong place.  If you know where your shell executable is, set the variable @code{explicit-shell-file-name} in your @file{.emacs} file to point to its full file name."
-msgstr ""
+msgstr "これはEmacsが間違った場所でシェルを探そうとして起こるかもしれません。シェル実行形式の場所をあなたが知っていたら、@file{.emacs}ファイルで変数@code{explicit-shell-file-name}がそのフルファイル名を指し示すようにセットしてください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3070
 #, no-wrap
 msgid "Antivirus programs, and Shell Mode"
-msgstr ""
+msgstr "Antivirus programs, and Shell Mode"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3074
 msgid "Some people have trouble with Shell Mode on MS-Windows because of intrusive antivirus software; disabling the resident antivirus program solves the problems in those cases."
-msgstr ""
+msgstr "MS-Windows上のShellモードで差し出がましいアンチウイルスソフトウェアによりトラブルに遭う人がいます。このようなケースでは常駐アンチウイルスプログラムを無効にすると問題は解決するでしょう。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3075
 #, no-wrap
 msgid "Termcap/Terminfo entries for Emacs"
-msgstr ""
+msgstr "Termcap/Terminfo entries for Emacs"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3076
 #, no-wrap
 msgid "Where is the termcap/terminfo entry for terminal type @samp{emacs}?"
-msgstr ""
+msgstr "Where is the termcap/terminfo entry for terminal type @samp{emacs}?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3077
 #, no-wrap
 msgid "Termcap"
-msgstr ""
+msgstr "Termcap"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3078
 #, no-wrap
 msgid "Terminfo"
-msgstr ""
+msgstr "Terminfo"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3079
 #, no-wrap
 msgid "Emacs entries for termcap/terminfo"
-msgstr ""
+msgstr "Emacs entries for termcap/terminfo"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3086
 msgid "The termcap entry for terminal type @samp{emacs} is ordinarily put in the @samp{TERMCAP} environment variable of subshells.  It may help in certain situations (e.g., using rlogin from shell buffer) to add an entry for @samp{emacs} to the system-wide termcap file.  Here is a correct termcap entry for @samp{emacs}:"
-msgstr ""
+msgstr "ターミナルタイプ@samp{emacs}にたいするtermcapエントリーは、通常はサブシェルの環境変数@samp{TERMCAP}にセットされます。これは特定の状況下(たとえばShellバッファーからのrlogin)において、システムワイドなtermcapファイルにエントリーを追加する助けになるかもしれません。以下は@samp{emacs}にたいする正しいtermcapエントリーです:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3089
 #, no-wrap
 msgid "emacs:tc=unknown:\n"
-msgstr ""
+msgstr "emacs:tc=unknown:\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3095
