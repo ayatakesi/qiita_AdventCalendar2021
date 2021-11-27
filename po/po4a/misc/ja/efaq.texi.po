@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-11-27 00:13+0900\n"
+"PO-Revision-Date: 2021-11-27 22:45+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -4652,7 +4652,7 @@ msgstr "Bell, visible"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2209
 msgid "Martin R. Frank writes:"
-msgstr "Martin R. Frank(訳注: Texinfoファイルには\"martin@cc.gatech.edu\"とコメントされてました)は記しています:"
+msgstr "Martin R. Frank(訳注: Texinfoファイルには\"martin@@cc.gatech.edu\"とコメントされてました)は記しています:"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2212
@@ -6491,436 +6491,436 @@ msgstr "emacs:tc=unknown:\n"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3095
 msgid "To make a terminfo entry for @samp{emacs}, use @code{tic} or @code{captoinfo}.  You need to generate @file{/usr/lib/terminfo/e/emacs}.  It may work to simply copy @file{/usr/lib/terminfo/d/dumb} to @file{/usr/lib/terminfo/e/emacs}."
-msgstr ""
+msgstr "@samp{emacs}にたいするterminfoエントリーを作成するには@code{tic}または@code{captoinfo}を使用します。@file{/usr/lib/terminfo/e/emacs}を生成する必要がありますが、これは単に@file{/usr/lib/terminfo/d/dumb}を@file{/usr/lib/terminfo/e/emacs}にコピーすれば大丈夫です。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3098
 msgid "Having a termcap/terminfo entry will not enable the use of full screen programs in shell buffers.  Use @kbd{M-x term} for that instead."
-msgstr ""
+msgstr "termcap/terminfoエントリーがあってもShellバッファーでのフルスクリーンプログラムの使用は有効になりません。かわりに@kbd{M-x term}を使用してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3103
 msgid "A workaround to the problem of missing termcap/terminfo entries is to change terminal type @samp{emacs} to type @samp{dumb} or @samp{unknown} in your shell start up file.  @code{csh} users could put this in their @file{.cshrc} files:"
-msgstr ""
+msgstr "termcap/terminfo欠落による問題を回避するためには、シェルのスタートアップファイルで端末タイプを@samp{emacs}から@samp{dumb}か@samp{unknown}に変更します。@code{csh}ユーザーは以下を@file{.cshrc}ファイルに記述できます:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3106
 #, no-wrap
 msgid "if (\"$term\" == emacs) set term=dumb\n"
-msgstr ""
+msgstr "if (\"$term\" == emacs) set term=dumb\n"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3108
 #, no-wrap
 msgid "Errors with init files"
-msgstr ""
+msgstr "Errors with init files"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3109
 #, no-wrap
 msgid "Why does Emacs say @samp{Error in init file}?"
-msgstr ""
+msgstr "Why does Emacs say @samp{Error in init file}?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3110
 #, no-wrap
 msgid "Error in @file{.emacs}"
-msgstr ""
+msgstr "Error in @file{.emacs}"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3111
 #, no-wrap
 msgid "Error in init file"
-msgstr ""
+msgstr "Error in init file"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3112
 #, no-wrap
 msgid "Init file, errors in"
-msgstr ""
+msgstr "Init file, errors in"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3113
 #, no-wrap
 msgid "@file{.emacs} file, errors in"
-msgstr ""
+msgstr "@file{.emacs} file, errors in"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3120
 msgid "An error occurred while loading either your @file{.emacs} file or the system-wide file @file{site-lisp/default.el}.  Emacs 21.1 and later pops the @file{*Messages*} buffer, and puts there some additional information about the error, to provide some hints for debugging."
-msgstr ""
+msgstr "あなたの@file{.emacs}ファイル、あるいはシステムワイドファイル@file{site-lisp/default.el}のロード中にエラーが発生したためです。Emacs 21.1以降では@file{*Messages*}バッファーがポップアップして、そこにデバッグ用のヒントを与えるためのエラーに関する追加情報を書き込みます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3123
 msgid "For information on how to debug your @file{.emacs} file, see @ref{Debugging a customization file}."
-msgstr ""
+msgstr "あなたの@file{.emacs}ファイルをデバッグする方法については@ref{Debugging a customization file}を参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3128
 msgid "It may be the case that you need to load some package first, or use a hook that will be evaluated after the package is loaded.  A common case of this is explained in @ref{Terminal setup code works after Emacs has begun}."
-msgstr ""
+msgstr "まず何らかのパッケージのロードが必要だったり、そあるいはパッケージのロード後に評価されるフックを使用したのかもしれません。これのよくあるケースについては@ref{Terminal setup code works after Emacs has begun}に記述があります。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3129
 #, no-wrap
 msgid "Emacs ignores X resources"
-msgstr ""
+msgstr "Emacs ignores X resources"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3130
 #, no-wrap
 msgid "Why does Emacs ignore my X resources (my .Xdefaults file)?"
-msgstr ""
+msgstr "Why does Emacs ignore my X resources (my .Xdefaults file)?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3131
 #, no-wrap
 msgid "X resources being ignored"
-msgstr ""
+msgstr "X resources being ignored"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3132
 #, no-wrap
 msgid "Ignored X resources"
-msgstr ""
+msgstr "Ignored X resources"
 
 #. type: file{#1}
 #: ../../../../misc/efaq.texi:3133
 #, no-wrap
 msgid ".Xdefaults"
-msgstr ""
+msgstr ".Xdefaults"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3137
 msgid "Emacs searches for X resources in the files specified by the following environment variables:"
-msgstr ""
+msgstr "Emacsは以下の環境変数が指定するファイルからXリソースを検索します。"
 
 #. type: code{#1}
 #: ../../../../misc/efaq.texi:3140
 #, no-wrap
 msgid "XFILESEARCHPATH"
-msgstr ""
+msgstr "XFILESEARCHPATH"
 
 #. type: code{#1}
 #: ../../../../misc/efaq.texi:3141
 #, no-wrap
 msgid "XUSERFILESEARCHPATH"
-msgstr ""
+msgstr "XUSERFILESEARCHPATH"
 
 #. type: code{#1}
 #: ../../../../misc/efaq.texi:3142
 #, no-wrap
 msgid "XAPPLRESDIR"
-msgstr ""
+msgstr "XAPPLRESDIR"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3148
 msgid "This emulates the functionality provided by programs written using the Xt toolkit."
-msgstr ""
+msgstr "これはXツールキットを使用して記述されたプログラムが提供する機能をエミュレートします。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3152
 msgid "@code{XFILESEARCHPATH} and @code{XUSERFILESEARCHPATH} should be a list of file names separated by colons.  @code{XAPPLRESDIR} should be a list of directories separated by colons."
-msgstr ""
+msgstr "@code{XFILESEARCHPATH}と@code{XUSERFILESEARCHPATH}はコロンで区切られたファイル名のリスト、@code{XAPPLRESDIR}はコロンで区切られたディレクトリーのリストです。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3154
 msgid "Emacs searches for X resources:"
-msgstr ""
+msgstr "Emacsは以下のようにXリソースを検索します:"
 
 #. type: enumerate
 #: ../../../../misc/efaq.texi:3159
 msgid "specified on the command line, with the @samp{-xrm RESOURCESTRING} option,"
-msgstr ""
+msgstr "コマンドラインで@samp{-xrm RESOURCESTRING}オプションによって指定された値"
 
 #. type: enumerate
 #: ../../../../misc/efaq.texi:3162
 msgid "then in the value of the @samp{XENVIRONMENT} environment variable,"
-msgstr ""
+msgstr "環境変数@samp{XENVIRONMENT}の値"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3169
 msgid "or if that is unset, in the file named @file{~/.Xdefaults-@var{hostname}} if it exists (where @var{hostname} is the name of the machine Emacs is running on),"
-msgstr ""
+msgstr "これがセットされていなければ、@file{~/.Xdefaults-@var{hostname}}という名前のファイルがあればその中から(@var{hostname}はEmacsが実行中のマシンの名前)"
 
 #. type: enumerate
 #: ../../../../misc/efaq.texi:3175
 msgid "then in the screen-specific and server-wide resource properties provided by the server,"
-msgstr ""
+msgstr "サーバーが提供するスクリーン固有のシステムワイドなリソースプロパティ"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3181
 msgid "or if those properties are unset, in the file named @file{~/.Xdefaults} if it exists,"
-msgstr ""
+msgstr "これがセットされていなければ、@file{~/.Xdefaults}という名前のファイルがあればその中から"
 
 #. type: enumerate
 #: ../../../../misc/efaq.texi:3186
 msgid "then in the files listed in @samp{XUSERFILESEARCHPATH},"
-msgstr ""
+msgstr "@samp{XUSERFILESEARCHPATH}にリストされたファイル"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3193
 msgid "or in files named @file{@var{lang}/Emacs} in directories listed in @samp{XAPPLRESDIR} (where @var{lang} is the value of the @code{LANG} environment variable), if the @samp{LANG} environment variable is set,"
-msgstr ""
+msgstr "環境変数@samp{LANG}がセットされていれば@samp{XAPPLRESDIR}にリストされたディレクトリーにある@file{@var{lang}/Emacs}という名前のファイルの中から(@var{lang}は環境変数@code{LANG}の値)"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3195
 msgid "or in files named Emacs in the directories listed in @samp{XAPPLRESDIR}"
-msgstr ""
+msgstr "@samp{XAPPLRESDIR}にリストされたディレクトリーにあるEmacsという名前のファイルの中から"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3198
 msgid "or in @file{~/@var{lang}/Emacs} (if the @code{LANG} environment variable is set),"
-msgstr ""
+msgstr "(環境変数@code{LANG}がセットされていれば) @file{~/@var{lang}/Emacs}の中から"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3200
 msgid "or in @file{~/Emacs},"
-msgstr ""
+msgstr "@file{~/Emacs}の中から"
 
 #. type: enumerate
 #: ../../../../misc/efaq.texi:3205
 msgid "then in the files listed in @code{XFILESEARCHPATH}."
-msgstr ""
+msgstr "@code{XFILESEARCHPATH}にリストされたファイルの中から"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3208
 #, no-wrap
 msgid "Emacs ignores frame parameters"
-msgstr ""
+msgstr "Emacs ignores frame parameters"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3209
 #, no-wrap
 msgid "Why don't my customizations of the frame parameters work?"
-msgstr ""
+msgstr "Why don't my customizations of the frame parameters work?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3210
 #, no-wrap
 msgid "Frame parameters"
-msgstr ""
+msgstr "Frame parameters"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3217
 msgid "This probably happens because you have set the frame parameters in the variable @code{initial-frame-alist}.  That variable holds parameters used only for the first frame created when Emacs starts.  To customize the parameters of all frames, change the variable @code{default-frame-alist} instead."
-msgstr ""
+msgstr "これが発生したのは恐らく変数@code{initial-frame-alist}でフレームパラメーターをセットしたからです。この変数にはEmacs起動時に作成された最初のフレームに使用されたパラメーターだけが保持されています。すべてのフレームのパラメーターをカスタマイズするためには、かわりに@code{default-frame-alist}を変更してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3222
 msgid "These two variables exist because many users customize the initial frame in a special way.  For example, you could determine the position and size of the initial frame, but would like to control the geometry of the other frames by individually positioning each one of them."
-msgstr ""
+msgstr "これらの2つの変数が存在するのは、多くのユーザーが特別な方法で初期フレームをカスタマイズするからです。たとえば初期フレームの位置とサイズを判断することができ、かつ他のフレームについてはそれぞれを個別に配置してジオメトリを制御したいような場合です。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3224
 #, no-wrap
 msgid "Editing files with $ in the name"
-msgstr ""
+msgstr "Editing files with $ in the name"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3225
 #, no-wrap
 msgid "How do I edit a file with a @samp{$} in its name?"
-msgstr ""
+msgstr "How do I edit a file with a @samp{$} in its name?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3226
 #, no-wrap
 msgid "Editing files with @samp{$} in the name"
-msgstr ""
+msgstr "Editing files with @samp{$} in the name"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3227
 #, no-wrap
 msgid "@samp{$} in file names"
-msgstr ""
+msgstr "@samp{$} in file names"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3228
 #, no-wrap
 msgid "File names containing @samp{$}, editing"
-msgstr ""
+msgstr "File names containing @samp{$}, editing"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3233
 msgid "When entering a file name in the minibuffer, Emacs will attempt to expand a @samp{$} followed by a word as an environment variable.  To suppress this behavior, type @kbd{$$} instead."
-msgstr ""
+msgstr "ミニバッファーでファイル名を入力する際には、単語の前に@samp{$}があるとEmacsは環境変数としてそれの展開を試みます。この挙動を抑止するには、かわりに@kbd{$$}とタイプしてください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3234
 #, no-wrap
 msgid "Shell mode loses the current directory"
-msgstr ""
+msgstr "Shell mode loses the current directory"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3235
 #, no-wrap
 msgid "Why does shell mode lose track of the shell's current directory?"
-msgstr ""
+msgstr "Why does shell mode lose track of the shell's current directory?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3236
 #, no-wrap
 msgid "Current directory and @code{shell-mode}"
-msgstr ""
+msgstr "Current directory and @code{shell-mode}"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3237
 #, no-wrap
 msgid "@code{shell-mode} and current directory"
-msgstr ""
+msgstr "@code{shell-mode} and current directory"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3238
 #, no-wrap
 msgid "Directory, current in @code{shell-mode}"
-msgstr ""
+msgstr "Directory, current in @code{shell-mode}"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3249
 msgid "Emacs has no way of knowing when the shell actually changes its directory.  This is an intrinsic limitation of Unix.  So it tries to guess by recognizing @samp{cd} commands.  If you type @kbd{cd} followed by directory with a variable reference (@kbd{cd $HOME/bin}) or with a shell metacharacter (@kbd{cd ../lib*}), Emacs will fail to correctly guess the shell's new current directory.  A huge variety of fixes and enhancements to shell mode for this problem have been written to handle this problem (@pxref{Finding a package with particular functionality})."
-msgstr ""
+msgstr "Emacsには実際にシェルが自身のディレクトリーを変更したタイミングを知る手段がありません。これはUnixに内在する制限です。そのためにEmacsは@samp{cd}コマンドを識別して推測を試みます。変数リファレンスを含むディレクトリーが後に続く@kbd{cd} (@kbd{cd $HOME/bin})やシェルのメタ文字を含むディレクトリー(@kbd{cd ../lib*})をタイプすると、Emacsはシェルの新たなカレントディレクトリーの正確な推測に失敗するでしょう。Shellモードにおけるこの問題を処理するために、膨大な数の様々な訂正および改善が記述されてきました(@ref{Finding a package with particular functionality}を参照)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3252
 msgid "You can tell Emacs the shell's current directory with the command @kbd{M-x dirs}."
-msgstr ""
+msgstr "コマンド@kbd{M-x dirs}でシェルのカレントディレクトリーをEmacsに伝えることができます。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3253
 #, no-wrap
 msgid "Security risks with Emacs"
-msgstr ""
+msgstr "Security risks with Emacs"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3254
 #, no-wrap
 msgid "Are there any security risks in Emacs?"
-msgstr ""
+msgstr "Are there any security risks in Emacs?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3255
 #, no-wrap
 msgid "Security with Emacs"
-msgstr ""
+msgstr "Security with Emacs"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3256
 #, no-wrap
 msgid "@samp{movemail} and security"
-msgstr ""
+msgstr "@samp{movemail} and security"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3257
 #, no-wrap
 msgid "@code{file-local-variable} and security"
-msgstr ""
+msgstr "@code{file-local-variable} and security"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3258
 #, no-wrap
 msgid "Synthetic X events and security"
-msgstr ""
+msgstr "Synthetic X events and security"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3259
 #, no-wrap
 msgid "X events and security"
-msgstr ""
+msgstr "X events and security"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3265
 msgid "Third party packages."
-msgstr ""
+msgstr "サードパーティのパッケージ。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3270
 msgid "Any package you install into Emacs can run arbitrary code with the same privileges as the Emacs process itself.  Be aware of this when you use the package system (e.g. @code{M-x list-packages}) with third party archives.  Use only third parties that you can trust!"
-msgstr ""
+msgstr "Emacsにインストールされた任意のパッケージはEmacs自身のプロセスと同じ権限で任意のコードを実行できる。サードパーティのアーカイブをパッケージシステム(@code{M-x list-packages}など)で使用する際には注意を要する。信頼可能なサードパーティだけを使用すること!"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3274
 msgid "The @code{file-local-variable} feature.  (Yes, a risk, but easy to change.)"
-msgstr ""
+msgstr "@code{file-local-variable}機能(危険ではあるが容易に変更できる)。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3281
 msgid "There is an Emacs feature that allows the setting of local values for variables when editing a file by including specially formatted text near the end of the file.  This feature also includes the ability to have arbitrary Emacs Lisp code evaluated when the file is visited.  Obviously, there is a potential for Trojan horses to exploit this feature."
-msgstr ""
+msgstr "Emacsにはファイル終端付近に特別にフォーマットされたテキストを含むファイルを編集する際に、変数にたいするローカル値のセットを許す機能がある。この機能にはファイルをvisitする際に任意のEmacs Lispコードを評価する能力も含まれる。当然、トロイの木馬がこの機能を悪用する可能性がある。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3288
 msgid "As of Emacs 22, Emacs has a list of local variables that are known to be safe to set.  If a file tries to set any variable outside this list, it asks the user to confirm whether the variables should be set.  You can also tell Emacs whether to allow the evaluation of Emacs Lisp code found at the bottom of files by setting the variable @code{enable-local-eval}."
-msgstr ""
+msgstr "Emacsにはバージョン22の時点において、セットしても安全だと判っているローカル変数のリストがある。このリスト以外の変数のセットをファイルが試みると、その変数をセットするべきかどうかユーザーに確認を求める。変数@code{enable-local-eval}をセットすることにより、ファイル下部で見つけたEmacs Lispコードの評価を許すか否かを▽えまに伝えることもできる。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3290
 msgid "@xref{File Variables,,, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "@ref{File Variables,,, emacs, The GNU Emacs Manual}を参照のこと。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3294
 msgid "Synthetic X events.  (Yes, a risk; use @samp{MIT-MAGIC-COOKIE-1} or better.)"
-msgstr ""
+msgstr "合成Xイベント(危険であり@samp{MIT-MAGIC-COOKIE-1}以上を使用すること)。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3300
 msgid "Emacs accepts synthetic X events generated by the @code{SendEvent} request as though they were regular events.  As a result, if you are using the trivial host-based authentication, other users who can open X connections to your X workstation can make your Emacs process do anything, including run other processes with your privileges."
-msgstr ""
+msgstr "Emacsは@code{SendEvent}リクエストが生成した合成Xイベント(synthetic X event)が通常イベントであるかのように受け入れる。結果として簡単なホストベースの認証を使用していると、XワークステーションへのX接続をオープン可能な他のユーザーは、Emacsプロセスに(特権での他プロセス実行を含む)何でも実行させることができる。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3307
 msgid "The only fix for this is to prevent other users from being able to open X connections.  The standard way to prevent this is to use a real authentication mechanism, such as @samp{MIT-MAGIC-COOKIE-1}.  If using the @code{xauth} program has any effect, then you are probably using @samp{MIT-MAGIC-COOKIE-1}.  Your site may be using a superior authentication method; ask your system administrator."
-msgstr ""
+msgstr "他のユーザーによるX接続のオープンができないように防ぐことが、これにたいする唯一の修整である。@samp{MIT-MAGIC-COOKIE-1}のような本物の認証メカニズムを使用することが、これを防ぐ標準的な方法である。@code{xauth}プログラムの使用に何らかの効果があるなら、恐らく@samp{MIT-MAGIC-COOKIE-1}を使用しているだろう。あなたのサイトは上位の認証方式を使用しているかもしれない。システム管理者に尋ねてみて欲しい。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3313
 msgid "If real authentication is not a possibility, you may be satisfied by just allowing hosts access for brief intervals while you start your X programs, then removing the access.  This reduces the risk somewhat by narrowing the time window when hostile users would have access, but @emph{does not eliminate the risk}."
-msgstr ""
+msgstr "本物の認証が利用できなければ、Xプログラム起動中の短い時間内だけホストへのアクセスを許可して、その後にアクセスを削除することで満足できるかもしれない。これは敵対的ユーザーがアクセス可能な時間枠が縮小されるのでリスクは幾分低減するものの、@emph{排除はされていない}。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3317
 msgid "On most computers running Unix and X, you enable and disable access using the @code{xhost} command.  To allow all hosts access to your X server, use"
-msgstr ""
+msgstr "UnixおよびXを実行中のコンピューターのほとんどでは@code{xhost}コマンドを使用してアクセスを有効または無効にできる。すべてのホストにXサーバーへのアクセスを許可するには、"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3320
 #, no-wrap
 msgid "xhost +\n"
-msgstr ""
+msgstr "xhost +\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3325
 msgid "at the shell prompt, which (on an HP machine, at least) produces the following message:"
-msgstr ""
+msgstr "をシェルプロンプトで使用する。これは(少なくともHPマシンでは)以下のメッセージを生成する:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3328
 #, no-wrap
 msgid "access control disabled, clients can connect from any host\n"
-msgstr ""
+msgstr "access control disabled, clients can connect from any host\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3332
 msgid "To deny all hosts access to your X server (except those explicitly allowed by name), use"
-msgstr ""
+msgstr "(名前により明示的に許可されたホストを除き)すべてのホストにたいしてXサーバーへのアクセスを拒絶するには以下を使用する"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3335
 #, no-wrap
 msgid "xhost -\n"
-msgstr ""
+msgstr "xhost -\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3338
 msgid "On the test HP computer, this command generated the following message:"
-msgstr ""
+msgstr "HPのテスト機では、このコマンドは以下のメッセージを生成した:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3341
 #, no-wrap
 msgid "access control enabled, only authorized clients can connect\n"
-msgstr ""
+msgstr "access control enabled, only authorized clients can connect\n"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3346
