@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-11-27 22:45+0900\n"
+"PO-Revision-Date: 2021-11-28 18:57+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -6926,132 +6926,132 @@ msgstr "access control enabled, only authorized clients can connect\n"
 #: ../../../../misc/efaq.texi:3346
 #, no-wrap
 msgid "Dired says, @samp{no file on this line} when I try to do something."
-msgstr ""
+msgstr "Dired says, @samp{no file on this line} when I try to do something."
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3347
 #, no-wrap
 msgid "Dired does not see a file"
-msgstr ""
+msgstr "Dired does not see a file"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3355
 msgid "Dired uses a regular expression to find the beginning of a file name.  In a long Unix-style directory listing (@samp{ls -l}), the file name starts after the date.  The regexp has thus been written to look for the date.  By default, it should understand dates and times regardless of the language, but if your directory listing has an unusual format, Dired may get confused."
-msgstr ""
+msgstr "Diredはファイル名の先頭を見つけるために正規表現を使用します。Unix形式の長いディレクトリーリスト(@samp{ls -l})では、ファイル名は日時の後で始まります。したがってこのregexpは日時を探すように記述されています。デフォルトでは言語に関わらず日付と時刻を認識して然るべきですが、あなたのディレクトリーリストが通常のフォーマットでなければDiredが混乱するかもしれません。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3359
 msgid "There are two approaches to solving this.  The first one involves setting things up so that @samp{ls -l} outputs a more standard format.  See your OS manual for more information."
-msgstr ""
+msgstr "これを解決するには2つのアプローチがあります。1つ目には@samp{ls -l}の出力がより標準的なフォーマットになるように設定を行うことです。詳細はあなたのOSのマニュアルを参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3362
 msgid "The second approach involves changing the regular expression used by dired, @code{directory-listing-before-filename-regexp}."
-msgstr ""
+msgstr "2つ目のアプローチはDiredが使用する正規表現@code{directory-listing-before-filename-regexp}を変更することです。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3364 ../../../../misc/efaq.texi:3365 ../../../../misc/efaq.texi:3366
 #, no-wrap
 msgid "Compiling and installing Emacs"
-msgstr ""
+msgstr "Compiling and installing Emacs"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3371
 msgid "Installing Emacs::"
-msgstr ""
+msgstr "Installing Emacs::"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3371 ../../../../misc/efaq.texi:3447 ../../../../misc/efaq.texi:3449
 #, no-wrap
 msgid "Problems building Emacs"
-msgstr ""
+msgstr "Problems building Emacs"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3373 ../../../../misc/efaq.texi:3375
 #, no-wrap
 msgid "Installing Emacs"
-msgstr ""
+msgstr "Installing Emacs"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3374
 #, no-wrap
 msgid "How do I install Emacs?"
-msgstr ""
+msgstr "How do I install Emacs?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3376
 #, no-wrap
 msgid "Unix systems, installing Emacs on"
-msgstr ""
+msgstr "Unix systems, installing Emacs on"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3377
 #, no-wrap
 msgid "Downloading and installing Emacs"
-msgstr ""
+msgstr "Downloading and installing Emacs"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3378
 #, no-wrap
 msgid "Building Emacs from source"
-msgstr ""
+msgstr "Building Emacs from source"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3379
 #, no-wrap
 msgid "Source code, building Emacs from"
-msgstr ""
+msgstr "Source code, building Emacs from"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3385
 msgid "This answer is meant for users of Unix and Unix-like systems.  Users of other operating systems should see the series of questions beginning with @ref{Emacs for MS-DOS}, which describe where to get non-Unix source and binaries, and how to install Emacs on those systems."
-msgstr ""
+msgstr "この回答はUnixおよびUnix風システムを使用するユーザーを意図しています。他のオペレーティングシステムのユーザーは@ref{Emacs for MS-DOS}で始まる一連の問いを確認する必要があります。これらにはUnix以外のソースおよびバイナリーを取得する場所、それらのシステムでEmacsをインストールする方法が記されています。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3391
 msgid "Most GNU/Linux distributions provide pre-built Emacs packages.  If Emacs is not installed already, you can install it by running (as root) a command such as @samp{dnf install emacs} (Red Hat and derivatives; use @samp{yum} in older distributions) or @samp{apt-get install emacs} (Debian and derivatives)."
-msgstr ""
+msgstr "GNU/Linuxディストリビューションのほとんどでは、事前ビルドされたEmacsパッケージが提供されています。Emacsがすでにインストール済みでなければ@samp{dnf install emacs} (Red Hatとその派生物の場合。古いディストリビューションは@samp{yum}を使用)、または@samp{apt-get install emacs} (Debianとその派生物の場合)のようなコマンドを(rootとして)実行することでインストールできます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3394
 msgid "If you want to compile Emacs yourself, read the file @file{INSTALL} in the source distribution.  In brief:"
-msgstr ""
+msgstr "自分でEmacsをコンパイルしたい場合には、ソースディストリビューションのファイル@file{INSTALL}を読んでください。要約すると:"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3401
 msgid "First download the Emacs sources.  @xref{Current GNU distributions}, for a list of sites that make them available.  On @url{https://ftp.gnu.org}, the main GNU distribution site, sources are available as"
-msgstr ""
+msgstr "まずEmacsのソースをダウンロードする。ダウンロードできるサイトのリストは@ref{Current GNU distributions}を参照のこと。GNUディストリビューションのメインサイト@url{https://ftp.gnu.org}では以下からダウンロード可能"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3404
 msgid "@uref{https://ftp.gnu.org/pub/gnu/emacs/emacs-VERSION.tar.gz}"
-msgstr ""
+msgstr "@uref{https://ftp.gnu.org/pub/gnu/emacs/emacs-VERSION.tar.gz}"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3406
 msgid "(Replace @samp{VERSION} with the relevant version number, e.g., @samp{23.1}.)"
-msgstr ""
+msgstr "(@samp{VERSION}は@samp{23.1}のように適切なバージョン番号に置き換えること。)"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3412
 msgid "Next uncompress and extract the source files.  This requires the @code{gzip} and @code{tar} programs, which are standard utilities.  If your system does not have them, these can also be downloaded from @url{https://ftp.gnu.org}."
-msgstr ""
+msgstr "次にソースファイルを解凍、抽出する。これには標準ユーティリティー@code{gzip}および@code{tar}が必要。これらがシステムになければ@url{https://ftp.gnu.org}からダウンロードできる。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3414
 msgid "GNU @code{tar} can uncompress and extract in a single-step:"
-msgstr ""
+msgstr "GNU @code{tar}なら一度に解凍抽出ができる:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3417
 #, no-wrap
 msgid "tar -zxvf emacs-VERSION.tar.gz\n"
-msgstr ""
+msgstr "tar -zxvf emacs-VERSION.tar.gz\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3423
 msgid "At this point, the Emacs sources should be sitting in a directory called @file{emacs-VERSION}.  On most common Unix and Unix-like systems, you should be able to compile Emacs with the following commands:"
-msgstr ""
+msgstr "この時点でEmacsのソースファイルは@file{emacs-VERSION}というディレクトリーにあるはず。UnixおよびUnix風システムのほとんどでは、以下のコマンドでEmacsをコンパイルできるだろう。"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3428
@@ -7061,596 +7061,599 @@ msgid ""
 "./configure         # configure Emacs for your particular system\n"
 "make                # use Makefile to build components, then Emacs\n"
 msgstr ""
+"cd emacs-VERSION\n"
+"./configure         # 特定システム向けにEmacsをconfigure\n"
+"make                # Makefileを使ってコンポーネントをビルド、Emacsを使用する\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3433
 msgid "If the @code{make} completes successfully, the odds are fairly good that the build has gone well.  (@xref{Problems building Emacs}, if you weren't successful.)"
-msgstr ""
+msgstr "@code{make}が正常に完了したら、ビルドがうまくいった公算はかなり高い(不成功なら@ref{Problems building Emacs}を参照)。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3437
 msgid "By default, Emacs is installed in @file{/usr/local}.  To actually install files, become the superuser and type"
-msgstr ""
+msgstr "デフォルトではEmacsは@file{/usr/local}にインストールされる。実際にファイルをインストールするには特権ユーザーになって以下をタイプする"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3440
 #, no-wrap
 msgid "make install\n"
-msgstr ""
+msgstr "make install\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3444
 msgid "Note that @samp{make install} will overwrite @file{/usr/local/bin/emacs} and any Emacs Info files that might be in @file{/usr/local/share/info/}."
-msgstr ""
+msgstr "@samp{make install}によって@file{/usr/local/bin/emacs}、および@file{/usr/local/share/info/}にあるかもしれないEmacs Infoファイルは上書きされることに注意。"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3448
 #, no-wrap
 msgid "What should I do if I have trouble building Emacs?"
-msgstr ""
+msgstr "What should I do if I have trouble building Emacs?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3450
 #, no-wrap
 msgid "Errors when building Emacs"
-msgstr ""
+msgstr "Errors when building Emacs"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3456
 msgid "First look in the file @file{etc/PROBLEMS} (where you unpack the Emacs source) to see if there is already a solution for your problem.  Next, look for other questions in this FAQ that have to do with Emacs installation and compilation problems."
-msgstr ""
+msgstr "まずはあなたの問題にたいする解決策があるかを確認するために、(Emacsソースを解凍した場所にある)ファイル@file{etc/PROBLEMS}調べてください。次にこのFAQからEmacsのインストールやコンパイルの問題に関連する他の問答を探してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3459
 msgid "If you'd like to have someone look at your problem and help solve it, see @ref{Help installing Emacs}."
-msgstr ""
+msgstr "あなたの問題を誰かに見てもらって解決の助けとしたいなら、@ref{Help installing Emacs}を参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3462
 msgid "If you cannot find a solution in the documentation, please report the problem (@pxref{Reporting bugs})."
-msgstr ""
+msgstr "ドキュメントから解決策が見つからない場合には、どうかその問題をレポートしてください(@ref{Reporting bugs}を参照)。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3465 ../../../../misc/efaq.texi:3466 ../../../../misc/efaq.texi:3467
 #, no-wrap
 msgid "Finding Emacs and related packages"
-msgstr ""
+msgstr "Finding Emacs and related packages"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3481
 msgid "Finding Emacs on the Internet::"
-msgstr ""
+msgstr "Finding Emacs on the Internet::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3481
 msgid "Finding a package with particular functionality::"
-msgstr ""
+msgstr "Finding a package with particular functionality::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3481
 msgid "Packages that do not come with Emacs::"
-msgstr ""
+msgstr "Packages that do not come with Emacs::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3481
 msgid "Spell-checkers::"
-msgstr ""
+msgstr "Spell-checkers::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3481
 msgid "Current GNU distributions::"
-msgstr ""
+msgstr "Current GNU distributions::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3481
 msgid "Difference between Emacs and XEmacs::"
-msgstr ""
+msgstr "Difference between Emacs and XEmacs::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3481
 msgid "Emacs for minimalists::"
-msgstr ""
+msgstr "Emacs for minimalists::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3481
 msgid "Emacs for MS-DOS::"
-msgstr ""
+msgstr "Emacs for MS-DOS::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3481
 msgid "Emacs for MS-Windows::"
-msgstr ""
+msgstr "Emacs for MS-Windows::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3481
 msgid "Emacs for GNUstep::"
-msgstr ""
+msgstr "Emacs for GNUstep::"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3481 ../../../../misc/efaq.texi:3713
 #, no-wrap
 msgid "Emacs for macOS"
-msgstr ""
+msgstr "Emacs for macOS"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3483 ../../../../misc/efaq.texi:3485
 #, no-wrap
 msgid "Finding Emacs on the Internet"
-msgstr ""
+msgstr "Finding Emacs on the Internet"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3484
 #, no-wrap
 msgid "Where can I get Emacs on the net?"
-msgstr ""
+msgstr "Where can I get Emacs on the net?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3486
 #, no-wrap
 msgid "Downloading Emacs"
-msgstr ""
+msgstr "Downloading Emacs"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3490
 msgid "Information on downloading Emacs is available at @uref{https://www.gnu.org/software/emacs/, the Emacs home-page}."
-msgstr ""
+msgstr "Emacsのダウンロードに関する情報は@uref{https://www.gnu.org/software/emacs/, the Emacs home-page}で利用可能です。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3494
 msgid "@xref{Installing Emacs}, for information on how to obtain and build the latest version of Emacs, and see @ref{Current GNU distributions}, for a list of archive sites that make GNU software available."
-msgstr ""
+msgstr "Emacsの入手およびEmacs最新バージョンをビルドする方法については@ref{Installing Emacs}、GNUソフトウェアが利用可能なアーカイブサイトのリストは@ref{Current GNU distributions}を参照してください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3495
 #, no-wrap
 msgid "Finding a package with particular functionality"
-msgstr ""
+msgstr "Finding a package with particular functionality"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3496
 #, no-wrap
 msgid "How do I find an Emacs Lisp package that does XXX?"
-msgstr ""
+msgstr "How do I find an Emacs Lisp package that does XXX?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3497
 #, no-wrap
 msgid "Package, finding"
-msgstr ""
+msgstr "Package, finding"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3498
 #, no-wrap
 msgid "Finding an Emacs Lisp package"
-msgstr ""
+msgstr "Finding an Emacs Lisp package"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3499
 #, no-wrap
 msgid "Functionality, finding a particular package"
-msgstr ""
+msgstr "Functionality, finding a particular package"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3505
 msgid "First of all, you should check to make sure that the package isn't already available.  For example, typing @kbd{M-x apropos @key{RET} python @key{RET}} lists all functions and variables containing the string @samp{python}."
-msgstr ""
+msgstr "何よりまずはパッケージが本当にまだ利用できないか確認しましょう。たとえば@kbd{M-x apropos @key{RET} python @key{RET}}とタイプすれば、文字列@samp{python}を含むすべての関数と変数が一覧されます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3513
 msgid "It is also possible that the package is on your system, but has not been loaded.  To see which packages are available for loading, look through your computer's lisp directory (@pxref{File-name conventions}).  The Lisp source to most packages contains a short description of how they should be loaded, invoked, and configured---so before you use or modify a Lisp package, see if the author has provided any hints in the source code."
-msgstr ""
+msgstr "パッケージはシステム上にあってもロードされていない可能性もあります。ロード用に利用できるパッケージを確認するために、あなたのコンピューターのlispディレクトリーを見てみましょう(@ref{File-name conventions}を参照)。ほとんどのパッケージのLispソースには、それらをどのようにロード、呼び出し、設定するべきかに関する短い説明が含まれているので、作成者がソースコード内でヒントを提供していたら、Lispパッケージの使用や変更を行う前に確認しましょう。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3516
 msgid "The command @kbd{C-h p} (@code{finder-by-keyword}) allows you to browse the constituent Emacs packages."
-msgstr ""
+msgstr "コマンド@kbd{C-h p} (@code{finder-by-keyword})でEmacsのパッケージ構成をブラウズできます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3519
 msgid "For advice on how to find extra packages that are not part of Emacs, see @ref{Packages that do not come with Emacs}."
-msgstr ""
+msgstr "Emacsの一部ではない追加パッケージを探す方法についての助言は@ref{Packages that do not come with Emacs}を参照してください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3521
 #, no-wrap
 msgid "Packages that do not come with Emacs"
-msgstr ""
+msgstr "Packages that do not come with Emacs"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3522
 #, no-wrap
 msgid "Where can I get Emacs Lisp packages that don't come with Emacs?"
-msgstr ""
+msgstr "Where can I get Emacs Lisp packages that don't come with Emacs?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3523
 #, no-wrap
 msgid "Unbundled packages"
-msgstr ""
+msgstr "Unbundled packages"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3524
 #, no-wrap
 msgid "Finding other packages"
-msgstr ""
+msgstr "Finding other packages"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3525
 #, no-wrap
 msgid "Lisp packages that do not come with Emacs"
-msgstr ""
+msgstr "Lisp packages that do not come with Emacs"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3526
 #, no-wrap
 msgid "Packages, those that do not come with Emacs"
-msgstr ""
+msgstr "Packages, those that do not come with Emacs"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3527
 #, no-wrap
 msgid "Emacs Lisp List"
-msgstr ""
+msgstr "Emacs Lisp List"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3528
 #, no-wrap
 msgid "Emacs Lisp Archive"
-msgstr ""
+msgstr "Emacs Lisp Archive"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3539
 msgid "The easiest way to add more features to your Emacs is to use the command @kbd{M-x list-packages}.  This contacts the @uref{https://elpa.gnu.org, GNU ELPA} (``Emacs Lisp Package Archive'')  server and fetches the list of additional packages that it offers.  These are GNU packages that are available for use with Emacs, but are distributed separately from Emacs itself, for reasons of space, etc.  You can browse the resulting @file{*Packages*} buffer to see what is available, and then Emacs can automatically download and install the packages that you select.  @xref{Packages,,, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "あなたのEmacsに更に機能を追加するには、コマンド@kbd{M-x list-packages}を使用するのがもっとも簡単な方法です。これは@uref{https://elpa.gnu.org, GNU ELPA} (``Emacs Lisp Package Archive'')サーバーに接続して、それが提案する追加パッケージのリストを取得します。これらはEmacsでの使用が可能ですが、スペース等の理由によりEmacs自体とは別に配布されているGNUパッケージです。コマンドの結果ト得られた@file{*Packages*}を閲覧して何が利用可能なのか確認して、それからあなたが選択したパッケージのダウンロードとインストールを自動的に行います。@ref{Packages,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3546
 msgid "There are other Emacs Lisp package archives.  To use additional archives, you can customize the @code{package-archives} variable.  Those archives have no affiliation with GNU Emacs, and we do not monitor how they are maintained.  They may pay close attention to correctness and safety of the code, or they may give only cursory attention."
-msgstr ""
+msgstr "Emacs Lispパッケージアーカイブは他にもあります。追加アーカイブを使用するには変数@code{package-archives}をカスタマイズしてください。これらのアーカイブはGNU Emacsとは提携しておらず、わたしたちはそれらがどのように保守されているかを監視していません。彼らはコードの正確さち安全性に最新の注意を払うかもしれないし、あるいはぞんざいに注意するだけかもしれません。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3552
 msgid "Also, packages hosted on these other archives may encourage or require you to install and use other nonfree programs.  Unless you can verify that a package is free software, and that it functions without installing any nonfree software, we recommend for your freedom's sake that you stay away from it."
-msgstr ""
+msgstr "更にこれらの他のアーカイブでホストされるパッケージは、他の非フリーなプログラムのインストールや使用を推奨、あるいは必須としているかもしれません。パッケージがフリーソフトウェアであり、非フリーなソフトウェアをインストールせずに機能するか検証できないのであれば、あなたの自由を危うくしないために近寄らないことを推奨します。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3558
 msgid "The @uref{https://lists.gnu.org/mailman/listinfo/gnu-emacs-sources, GNU Emacs sources mailing list}, which is gatewayed to the @uref{news:gnu.emacs.sources, Emacs sources newsgroup} (although the connection between the two can be unreliable) is an official place where people can post or announce their extensions to Emacs."
-msgstr ""
+msgstr "@uref{news:gnu.emacs.sources, Emacs sources newsgroup}にゲートウェイされている@uref{https://lists.gnu.org/mailman/listinfo/gnu-emacs-sources, GNU Emacs sources mailing list}は、(たとえ2点間の通信が不確かであっても)人々が彼らのEmacs拡張をアナウンスする公の場です。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3562
 msgid "The @uref{https://emacswiki.org, Emacs Wiki} contains pointers to some additional extensions.  @uref{https://wikemacs.org, WikEmacs} is an alternative wiki for Emacs."
-msgstr ""
+msgstr "@uref{https://emacswiki.org, Emacs Wiki}にはいくつかの追加拡張への指標が含まれています。@uref{https://wikemacs.org, WikEmacs}はEmacs用の代替えwikiです。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3566
 msgid "@uref{http://www.damtp.cam.ac.uk/user/sje30/emacs/ell.html, The Emacs Lisp List (ELL)}, has pointers to many Emacs Lisp files, but at time of writing it is no longer being updated."
-msgstr ""
+msgstr "@uref{http://www.damtp.cam.ac.uk/user/sje30/emacs/ell.html, The Emacs Lisp List (ELL)}には多くのEmacs Lispファイルへの指標がありますが、これを記述している時点ではすでに更新されていません。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3571
 msgid "It is impossible for us to list here all the sites that offer Emacs Lisp packages.  If you are interested in a specific feature, then after checking Emacs itself and GNU ELPA, a web search is often the best way to find results."
-msgstr ""
+msgstr "Emacs Lispパッケージを提供するすべてのサイトをここで一覧することは、わたしたちには不可能です。もしも特定の機能に興味があるならEmacs自身とGNU ELPAをチェックした後は、ウェブ検索が結果を見い出す最良の手段であることが多々あります。"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3572 ../../../../misc/efaq.texi:3573
 #, no-wrap
 msgid "Spell-checkers"
-msgstr ""
+msgstr "Spell-checkers"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3574
 #, no-wrap
 msgid "Spell-checker"
-msgstr ""
+msgstr "Spell-checker"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3575
 #, no-wrap
 msgid "Checking spelling"
-msgstr ""
+msgstr "Checking spelling"
 
 #. type: item
 #: ../../../../misc/efaq.texi:3576 ../../../../misc/efaq.texi:3585
 #, no-wrap
 msgid "Hunspell"
-msgstr ""
+msgstr "Hunspell"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3577
 #, no-wrap
 msgid "Aspell"
-msgstr ""
+msgstr "Aspell"
 
 #. type: item
 #: ../../../../misc/efaq.texi:3578 ../../../../misc/efaq.texi:3591
 #, no-wrap
 msgid "Ispell"
-msgstr ""
+msgstr "Ispell"
 
 #. type: item
 #: ../../../../misc/efaq.texi:3579 ../../../../misc/efaq.texi:3594
 #, no-wrap
 msgid "Enchant"
-msgstr ""
+msgstr "Enchant"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3582
 msgid "Various spell-checkers are compatible with Emacs, including:"
-msgstr ""
+msgstr "以下を含む様々なスペルチェッカーはEmacsと互換性があります:"
 
 #. type: table
 #: ../../../../misc/efaq.texi:3587
 msgid "@uref{http://hunspell.sourceforge.net/}"
-msgstr ""
+msgstr "@uref{http://hunspell.sourceforge.net/}"
 
 #. type: item
 #: ../../../../misc/efaq.texi:3588
 #, no-wrap
 msgid "GNU Aspell"
-msgstr ""
+msgstr "GNU Aspell"
 
 #. type: table
 #: ../../../../misc/efaq.texi:3590
 msgid "@uref{http://aspell.net/}"
-msgstr ""
+msgstr "@uref{http://aspell.net/}"
 
 #. type: table
 #: ../../../../misc/efaq.texi:3593
 msgid "@uref{http://fmg-www.cs.ucla.edu/geoff/ispell.html}"
-msgstr ""
+msgstr "@uref{http://fmg-www.cs.ucla.edu/geoff/ispell.html}"
 
 #. type: table
 #: ../../../../misc/efaq.texi:3596
 msgid "@uref{https://abiword.github.io/enchant/}"
-msgstr ""
+msgstr "@uref{https://abiword.github.io/enchant/}"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3599 ../../../../misc/efaq.texi:3601
 #, no-wrap
 msgid "Current GNU distributions"
-msgstr ""
+msgstr "Current GNU distributions"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3600
 #, no-wrap
 msgid "Where can I get other up-to-date GNU stuff?"
-msgstr ""
+msgstr "Where can I get other up-to-date GNU stuff?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3602
 #, no-wrap
 msgid "Sources for current GNU distributions"
-msgstr ""
+msgstr "Sources for current GNU distributions"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3603
 #, no-wrap
 msgid "Stuff, current GNU"
-msgstr ""
+msgstr "Stuff, current GNU"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3604
 #, no-wrap
 msgid "Up-to-date GNU stuff"
-msgstr ""
+msgstr "Up-to-date GNU stuff"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3605
 #, no-wrap
 msgid "Finding current GNU software"
-msgstr ""
+msgstr "Finding current GNU software"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3606
 #, no-wrap
 msgid "Official GNU software sites"
-msgstr ""
+msgstr "Official GNU software sites"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3609
 msgid "The most up-to-date official GNU software is normally kept at"
-msgstr ""
+msgstr "GNU公式ソフトウェアのほとんどは通常は以下に保持されています "
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3611
 msgid "@uref{https://ftp.gnu.org/pub/gnu}"
-msgstr ""
+msgstr "@uref{https://ftp.gnu.org/pub/gnu}"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3613
 msgid "A list of sites mirroring @samp{ftp.gnu.org} can be found at"
-msgstr ""
+msgstr "@samp{ftp.gnu.org}のミラーサイト一覧は以下で見つけられます"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3615
 msgid "@uref{https://www.gnu.org/prep/ftp}"
-msgstr ""
+msgstr "@uref{https://www.gnu.org/prep/ftp}"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3616
 #, no-wrap
 msgid "Difference between Emacs and XEmacs"
-msgstr ""
+msgstr "Difference between Emacs and XEmacs"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3617
 #, no-wrap
 msgid "What is the difference between Emacs and XEmacs (formerly Lucid Emacs)?"
-msgstr ""
+msgstr "What is the difference between Emacs and XEmacs (formerly Lucid Emacs)?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3618
 #, no-wrap
 msgid "XEmacs"
-msgstr ""
+msgstr "XEmacs"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3619
 #, no-wrap
 msgid "Difference Emacs and XEmacs"
-msgstr ""
+msgstr "Difference Emacs and XEmacs"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3620
 #, no-wrap
 msgid "Lucid Emacs"
-msgstr ""
+msgstr "Lucid Emacs"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3621
 #, no-wrap
 msgid "Epoch"
-msgstr ""
+msgstr "Epoch"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3627
 msgid "XEmacs was a branch version of Emacs that is no longer actively developed.  XEmacs was first called Lucid Emacs, and was initially derived from a prerelease version of Emacs 19.  In this FAQ, we use the name ``Emacs'' only for the official version."
-msgstr ""
+msgstr "XEmacsとはもはや活発に開発されなくなったEmacsのブランチバージョンです。当初XEmacsはLucid Emacsと呼ばれており、初版はEmacs 19のプレリリースバージョンから派生しました。このFAQでは公式バージョンにたいしてのみ``Emacs''という名前を使用します。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3635
 msgid "XEmacs last released a new version on January 30, 2009, and it lacks many important features that exists in Emacs.  In the past, it was not uncommon for Emacs packages to include code for compatibility with XEmacs.  Nowadays, although some packages still maintain such compatibility code, several of the more popular built-in and third party packages have either stopped supporting XEmacs or were developed exclusively for Emacs."
-msgstr ""
+msgstr "XEmacsは2009年1月30にリリースされた新バージョンが最新であり、それにはEmacsに存在する多くの重要な機能が欠落していました。過去においては、EmacsパッケージにXEmacsとの互換性のためのコードを含めるのは珍しいことではありませんでした。現在ではたとえそのような互換性コードをまだ保守しているパッケージがあったとしても、より人気のあるビルトインおよびサードパーティーのパッケージのいくつかはXEmacsのサポートを止めるか、あるいはEmacs専用に開発されています。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3644
 msgid "Some XEmacs code has been contributed to Emacs, and we would like to use other parts, but the earlier XEmacs maintainers did not always keep track of the authors of contributed code, which makes it impossible for the FSF to get copyright papers signed for that code.  (The FSF requires these papers for all the code included in the Emacs release, aside from generic C support packages that retain their separate identity and are not integrated into the code of Emacs proper.)"
-msgstr ""
+msgstr "いくつかのXEmacsコードはEmacsに提供されており、他の部分についてもわたしたちは使用したいと考えていまづが、初期のXEmacsメンテナーは提供されたコードの作成者を常に追跡はしておらず、FSFがそのコードにたいする署名済みのコピーライトペーパーを取得することを不可能にしています(FSFは個別の身元を保つEmacsのコードに正しく統合されていない汎用Cサポートパッケージは除き。Emacsリリースに含まれるすべてのコードにたいしてこれらのペーパーを要求している)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3651
 msgid "If you want to talk about these two versions and distinguish them, please call them ``Emacs'' and ``XEmacs.'' To contrast ``XEmacs'' with ``GNU Emacs'' would be misleading, since XEmacs too has its origin in the work of the GNU Project.  Terms such as ``Emacsen'' and ``(X)Emacs'' are not wrong, but they are not very clear, so it is better to write ``Emacs and XEmacs.''"
-msgstr ""
+msgstr "これらの2つのバージョンを区別して議論をする場合には、どうかそれらを``Emacs''および``XEmacs''と呼ぶようにしてください。XEmacsもまたGNUプロジェクトの作業を元としているので、``XEmacs''と``GNU Emacs''の対比は誤解を招きかねません。``Emacsen''や``(X)Emacs''のような用語も悪くはありませんが、非常に明快とは言えないので``Emacs and XEmacs''と記述するほうが良いでしょう。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3652
 #, no-wrap
 msgid "Emacs for minimalists"
-msgstr ""
+msgstr "Emacs for minimalists"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3653
 #, no-wrap
 msgid "I don't have enough disk space to install Emacs"
-msgstr ""
+msgstr "I don't have enough disk space to install Emacs"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3654
 #, no-wrap
 msgid "Zile"
-msgstr ""
+msgstr "Zile"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3655
 #, no-wrap
 msgid "Not enough disk space to install Emacs"
-msgstr ""
+msgstr "Not enough disk space to install Emacs"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3662
 msgid "GNU Zile is a lightweight Emacs clone.  Zile is short for @samp{Zile Is Lossy Emacs}.  It has all of Emacs's basic editing features.  The Zile binary typically has a size of about 130 kbytes, so this can be useful if you are in an extremely space-restricted environment.  More information is available from"
-msgstr ""
+msgstr "GNU ZileはEmacsの軽量クローンです。Zileは@samp{Zile Is Lossy Emacs}を短縮したものです。これにはEmacsの基本的な編集機能すべてが含まれています。Zileのバイナリーは通常は約130kBのサイズなので、非常にスペースに制限がある環境で有用かもしれません。詳細は以下で理由できます"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3664
 msgid "@uref{https://www.gnu.org/software/zile/}"
-msgstr ""
+msgstr "@uref{https://www.gnu.org/software/zile/}"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3666 ../../../../misc/efaq.texi:3671
 #, no-wrap
 msgid "Emacs for MS-DOS"
-msgstr ""
+msgstr "Emacs for MS-DOS"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3667
 #, no-wrap
 msgid "Where can I get Emacs for MS-DOS?"
-msgstr ""
+msgstr "Where can I get Emacs for MS-DOS?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3668
 #, no-wrap
 msgid "MS-DOS, Emacs for"
-msgstr ""
+msgstr "MS-DOS, Emacs for"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3669
 #, no-wrap
 msgid "DOS, Emacs for"
-msgstr ""
+msgstr "DOS, Emacs for"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3670
 #, no-wrap
 msgid "Compiling Emacs for DOS"
-msgstr ""
+msgstr "Compiling Emacs for DOS"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3677
 msgid "To build Emacs from source for MS-DOS, see the instructions in the file @file{msdos/INSTALL} in the distribution.  The DOS port builds and runs on plain DOS, and also on all versions of MS-Windows from version 3.X onwards, including Windows XP and Vista."
-msgstr ""
+msgstr "MS-DOS用のEmacsをソースからビルドするには、ディストリビューションに同梱のファイル@file{msdos/INSTALL}の手順を参照してください。DOSポートはプレーンDOS、更にWindows XPとVistaを含むバージョン3.X以降のすべてのバージョンのMS-Windowsでビルド、実行されています。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3680
 msgid "The file @file{etc/PROBLEMS} contains some additional information regarding Emacs under MS-DOS."
-msgstr ""
+msgstr "ファイル@file{etc/PROBLEMS}にはMS-DOS下のEmacsに関する追加情報が含まれています。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3683
 msgid "A pre-built binary distribution of the old Emacs 24 is available, as described at"
-msgstr ""
+msgstr "Emacs 24の事前ビルドされたバイナリーの配布は以下から利用できます"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3685
 msgid "@uref{http://www.delorie.com/pub/djgpp/current/v2gnu/emacs.README}"
-msgstr ""
+msgstr "@uref{http://www.delorie.com/pub/djgpp/current/v2gnu/emacs.README}"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3689
 msgid "For a list of other MS-DOS implementations of Emacs (and Emacs look-alikes), consult the list of ``Emacs implementations and literature,'' available at"
-msgstr ""
+msgstr "Emacs(およびEmacs類似物)のその他のMS-DOS実装については、以下で利用可能な``Emacs implementations and literature,''のリストを参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3691
 msgid "@uref{http://www.finseth.com/emacs.html}"
-msgstr ""
+msgstr "@uref{http://www.finseth.com/emacs.html}"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3694
 msgid "Note that while many of these programs look similar to Emacs, they often lack certain features, such as the Emacs Lisp extension language."
-msgstr ""
+msgstr "これらのプログラムの多くはEmacsと同じように見えますが、それらにはEmacs Lisp拡張言語のような特定の機能が欠落していることが多々あります。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3695 ../../../../misc/efaq.texi:3698
 #, no-wrap
 msgid "Emacs for MS-Windows"
-msgstr ""
+msgstr "Emacs for MS-Windows"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3696
 #, no-wrap
 msgid "Where can I get Emacs for Microsoft Windows?"
-msgstr ""
+msgstr "Where can I get Emacs for Microsoft Windows?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3697
 #, no-wrap
 msgid "FAQ for Emacs on MS-Windows"
-msgstr ""
+msgstr "FAQ for Emacs on MS-Windows"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3699
 #, no-wrap
 msgid "Microsoft Windows, Emacs for"
-msgstr ""
+msgstr "Microsoft Windows, Emacs for"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3704
 msgid "There is a separate FAQ for Emacs on MS-Windows, @pxref{Top,,,efaq-w32,FAQ for Emacs on MS Windows}.  For MS-DOS, @pxref{Emacs for MS-DOS}."
-msgstr ""
+msgstr "MS-WindowsでのEmacsには別個にFAQがあります。@ref{Top,,,efaq-w32,FAQ for Emacs on MS Windows}を参照してください。MS-DOSの場合には@ref{Emacs for MS-DOS}を参照してください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3706
