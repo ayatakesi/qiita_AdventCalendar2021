@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-11-28 18:57+0900\n"
+"PO-Revision-Date: 2021-11-29 21:18+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -7659,190 +7659,190 @@ msgstr "MS-WindowsでのEmacsには別個にFAQがあります。@ref{Top,,,efaq
 #: ../../../../misc/efaq.texi:3706
 #, no-wrap
 msgid "Emacs for GNUstep"
-msgstr ""
+msgstr "Emacs for GNUstep"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3707
 #, no-wrap
 msgid "Where can I get Emacs for GNUstep?"
-msgstr ""
+msgstr "Where can I get Emacs for GNUstep?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3708
 #, no-wrap
 msgid "GNUstep, Emacs for"
-msgstr ""
+msgstr "GNUstep, Emacs for"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3712
 msgid "Beginning with version 23.1, Emacs supports GNUstep natively.  See the file @file{nextstep/INSTALL} in the distribution."
-msgstr ""
+msgstr "バージョン23.1からEmacsはGNUstepをネイティブでサポートしています。ディストリビューション内のファイル@file{nextstep/INSTALL}を参照してください。"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3714
 #, no-wrap
 msgid "Where can I get Emacs for macOS?"
-msgstr ""
+msgstr "Where can I get Emacs for macOS?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3715
 #, no-wrap
 msgid "Apple computers, Emacs for"
-msgstr ""
+msgstr "Apple computers, Emacs for"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3716
 #, no-wrap
 msgid "Macintosh, Emacs for"
-msgstr ""
+msgstr "Macintosh, Emacs for"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3717
 #, no-wrap
 msgid "macOS, Emacs for"
-msgstr ""
+msgstr "macOS, Emacs for"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3721
 msgid "Beginning with version 22.1, Emacs supports macOS natively.  See the file @file{nextstep/INSTALL} in the distribution."
-msgstr ""
+msgstr "バージョン22.1からEmacsはmacOSをネイティブでサポートしています。ディストリビューション内のファイル@file{nextstep/INSTALL}を参照してください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3723 ../../../../misc/efaq.texi:3724 ../../../../misc/efaq.texi:3725
 #, no-wrap
 msgid "Key bindings"
-msgstr ""
+msgstr "Key bindings"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3743
 msgid "Binding keys to commands::"
-msgstr ""
+msgstr "Binding keys to commands::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3743
 msgid "Invalid prefix characters::"
-msgstr ""
+msgstr "Invalid prefix characters::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3743
 msgid "Terminal setup code works after Emacs has begun::"
-msgstr ""
+msgstr "Terminal setup code works after Emacs has begun::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3743
 msgid "Working with function and arrow keys::"
-msgstr ""
+msgstr "Working with function and arrow keys::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3743
 msgid "X key translations for Emacs::"
-msgstr ""
+msgstr "X key translations for Emacs::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3743
 msgid "Backspace invokes help::"
-msgstr ""
+msgstr "Backspace invokes help::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3743
 msgid "Swapping keys::"
-msgstr ""
+msgstr "Swapping keys::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3743
 msgid "Producing C-XXX with the keyboard::"
-msgstr ""
+msgstr "Producing C-XXX with the keyboard::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3743
 msgid "No Meta key::"
-msgstr ""
+msgstr "No Meta key::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3743
 msgid "No Escape key::"
-msgstr ""
+msgstr "No Escape key::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3743
 msgid "Compose Character::"
-msgstr ""
+msgstr "Compose Character::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3743
 msgid "Binding combinations of modifiers and function keys::"
-msgstr ""
+msgstr "Binding combinations of modifiers and function keys::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3743
 msgid "Meta key does not work in xterm::"
-msgstr ""
+msgstr "Meta key does not work in xterm::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:3743
 msgid "ExtendChar key does not work as Meta::"
-msgstr ""
+msgstr "ExtendChar key does not work as Meta::"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3743 ../../../../misc/efaq.texi:4240
 #, no-wrap
 msgid "SPC no longer completes file names"
-msgstr ""
+msgstr "SPC no longer completes file names"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3745 ../../../../misc/efaq.texi:3747
 #, no-wrap
 msgid "Binding keys to commands"
-msgstr ""
+msgstr "Binding keys to commands"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3746
 #, no-wrap
 msgid "How do I bind keys (including function keys) to commands?"
-msgstr ""
+msgstr "How do I bind keys (including function keys) to commands?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3748
 #, no-wrap
 msgid "Keys, binding to commands"
-msgstr ""
+msgstr "Keys, binding to commands"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3749
 #, no-wrap
 msgid "Commands, binding keys to"
-msgstr ""
+msgstr "Commands, binding keys to"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3754
 msgid "Keys can be bound to commands either interactively or in your @file{.emacs} file.  To interactively bind keys for all modes, type @kbd{M-x global-set-key @key{RET} @var{key} @var{cmd} @key{RET}}."
-msgstr ""
+msgstr "対話的、または@file{.emacs}ファイルでキーをコマンドにバインドできます。すべてのモードにたいしてキーを対話的にバインドするには、@kbd{M-x global-set-key @key{RET} @var{key} @var{cmd} @key{RET}}とタイプします。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3757
 msgid "To bind a key just in the current major mode, type @kbd{M-x local-set-key @key{RET} @var{key} @var{cmd} @key{RET}}."
-msgstr ""
+msgstr "カレントのメジャーモードだけでキーをバインドするには@kbd{M-x local-set-key @key{RET} @var{key} @var{cmd} @key{RET}}とタイプします。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3759
 msgid "@xref{Key Bindings,,, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "@ref{Key Bindings,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3766
 msgid "To make the process of binding keys interactively easier, use the following ``trick'': First bind the key interactively, then immediately type @kbd{C-x @key{ESC} @key{ESC} C-a C-k C-g}.  Now, the command needed to bind the key is in the kill ring, and can be yanked into your @file{.emacs} file.  If the key binding is global, no changes to the command are required.  For example,"
-msgstr ""
+msgstr "対話的にキーをバインドするプログレを容易にするために、次の``trick''を使用できます: @*まず対話的にキーをバインドしてからすぐに@kbd{C-x @key{ESC} @key{ESC} C-a C-k C-g}とタイプ、@*これでキーバインドを要するコマンドがkillリングに取り込まれたので@file{.emacs}ファイルにyankできるようになった。@*@*グローバルなキーバインディングの場合には、コマンドの変更は不要です。たとえば、"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3769
 #, no-wrap
 msgid "(global-set-key [f1] 'help-for-help)\n"
-msgstr ""
+msgstr "(global-set-key [f1] 'help-for-help)\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3775
 msgid "can be placed directly into the @file{.emacs} file.  If the key binding is local, the command is used in conjunction with the @samp{add-hook} function.  For example, in TeX mode, a local binding might be"
-msgstr ""
+msgstr "これは@file{.emacs}ファイルに直後記述できます。ローカルなキーバインディングの場合には、、コマンドは@samp{add-hook}関数と組み合わせて使用されます。たとえばTeXモードでのローカルバインディングは以下のようになるでしょう"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3780
@@ -7852,16 +7852,19 @@ msgid ""
 "  (lambda ()\n"
 "   (local-set-key [f1] 'help-for-help)))\n"
 msgstr ""
+"(add-hook 'tex-mode-hook\n"
+"  (lambda ()\n"
+"   (local-set-key [f1] 'help-for-help)))\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3790
 msgid "Control characters in key sequences, in the form yanked from the kill ring are given in their graphic form---i.e., @key{CTRL} is shown as @samp{^}, @key{TAB} as a set of spaces (usually 8), etc.  You may want to convert these into their vector or string forms."
-msgstr ""
+msgstr "killリングからyankしたキーシーケンス内でのコントロール文字の形式はグラフィック形式 --- つまり@key{CTRL}は@samp{^}、@key{TAB}はいくつかのスペース(通常は8)で示されるでしょう。これらをベクターや文字列形式に変換したいと思うかもしれません。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3795
 msgid "If a prefix key of the character sequence to be bound is already bound as a complete key, then you must unbind it before the new binding.  For example, if @kbd{ESC @{} is previously bound:"
-msgstr ""
+msgstr "プレフィクスキーとしてある文字シーケンスをバインドする場合に、それがすでにコンプリートキーワードとしてバインドされていたら、新しいバインディングの前にコンプリートキーのバインドを解除しなければならない。たとえば@kbd{ESC @{}がバインド済みなら:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3799
@@ -7870,11 +7873,13 @@ msgid ""
 "(global-unset-key [?\\e ?@{])   ;;   or\n"
 "(local-unset-key [?\\e ?@{])\n"
 msgstr ""
+"(global-unset-key [?\\e ?@{])   ;; または\n"
+"(local-unset-key [?\\e ?@{])\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3804
 msgid "Aside from commands and ``lambda lists,'' a vector or string also can be bound to a key and thus treated as a macro.  For example:"
-msgstr ""
+msgstr "コマンドや``lambdaリスト''は別として、ベクターや文字列もキーにバインドできるのでマクロとして扱うことができる。たとえば:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3808
@@ -7883,35 +7888,37 @@ msgid ""
 "(global-set-key [f10] [?\\C-x?\\e?\\e?\\C-a?\\C-k?\\C-g])  ;;  or\n"
 "(global-set-key [f10] \"\\C-x\\e\\e\\C-a\\C-k\\C-g\")\n"
 msgstr ""
+"(global-set-key [f10] [?\\C-x?\\e?\\e?\\C-a?\\C-k?\\C-g])  ;; または\n"
+"(global-set-key [f10] \"\\C-x\\e\\e\\C-a\\C-k\\C-g\")\n"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3812 ../../../../misc/efaq.texi:3815
 #, no-wrap
 msgid "Invalid prefix characters"
-msgstr ""
+msgstr "Invalid prefix characters"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3813
 #, no-wrap
 msgid "Why does Emacs say @samp{Key sequence XXX uses invalid prefix characters}?"
-msgstr ""
+msgstr "Why does Emacs say @samp{Key sequence XXX uses invalid prefix characters}?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3814
 #, no-wrap
 msgid "Prefix characters, invalid"
-msgstr ""
+msgstr "Prefix characters, invalid"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3816
 #, no-wrap
 msgid "Misspecified key sequences"
-msgstr ""
+msgstr "Misspecified key sequences"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3825
 msgid "Usually, one of two things has happened.  In one case, the control character in the key sequence has been misspecified (e.g., @samp{C-f} used instead of @samp{\\C-f} within a Lisp expression).  In the other case, a @dfn{prefix key} in the keystroke sequence you were trying to bind was already bound as a @dfn{complete key}.  Historically, the @samp{ESC [} prefix was usually the problem, in which case you should evaluate either of these forms before attempting to bind the key sequence:"
-msgstr ""
+msgstr "通常は2つのうちいずれかが発生したからです。1つ目はキーシーケンス内のコントロール文字の指定誤りです(Lisp式で@samp{\\C-f}のかわりに@samp{C-f}を使用した)。2つ目はバインドを試みているキーストロークシーケンス内の@dfn{プレフィクスキー(prefix key)}がすでに@dfn{コンプリートキー(complete key)}としてバインドされているからです。歴史的な理由により@samp{ESC [}は通常は問題になります。この場合にはキーシーケンスのバインドを試みる前に、以下のフォームのいずれかを評価する必要があります:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3829
@@ -7920,34 +7927,36 @@ msgid ""
 "(global-unset-key [?\\e ?[])  ;;  or\n"
 "(global-unset-key \"\\e[\")\n"
 msgstr ""
+"(global-unset-key [?\\e ?[])  ;; または\n"
+"(global-unset-key \"\\e[\")\n"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3831
 #, no-wrap
 msgid "Terminal setup code works after Emacs has begun"
-msgstr ""
+msgstr "Terminal setup code works after Emacs has begun"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3832
 #, no-wrap
 msgid "Why doesn't this [terminal or window-system setup] code work in my @file{.emacs} file, but it works just fine after Emacs starts up?"
-msgstr ""
+msgstr "Why doesn't this [terminal or window-system setup] code work in my @file{.emacs} file, but it works just fine after Emacs starts up?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3833
 #, no-wrap
 msgid "Terminal setup code in @file{.emacs}"
-msgstr ""
+msgstr "Terminal setup code in @file{.emacs}"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3840
 msgid "During startup, Emacs initializes itself according to a given code/file order.  If some of the code executed in your @file{.emacs} file needs to be postponed until the initial terminal or window-system setup code has been executed but is not, then you will experience this problem (this code/file execution order is not enforced after startup)."
-msgstr ""
+msgstr "スタートアップの間、Emacsは与えられたコード/ファイルの順番に応じて自身を初期化します。@file{.emacs}ファイルの中のあるコードを、端末またはウィンドウシステムのセットアップコードが実行されるまで延期する必要があるのにセットアップが終わっていないと、この問題を体験することになるでしょう(このコード/ファイルの実行順はスタートアップ後は強制されない)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3845
 msgid "To postpone the execution of Emacs Lisp code until after terminal or window-system setup, treat the code as a @dfn{lambda list} and add it to @code{emacs-startup-hook} (or @code{tty-setup-hook} in Emacs 24.4 and newer).  For example,"
-msgstr ""
+msgstr "端末またはウィンドウシステムのセットアップ後までEmacs Lispコードの実行を延期するには、コードを@dfn{lambdaリスト(lambda list)}として@code{emacs-startup-hook} (またはEmacs 24.4は@code{tty-setup-hook})に追加してください。たとえば、"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3852
@@ -7959,217 +7968,222 @@ msgid ""
 "             ;; Make vt220's \"Do\" key behave like M-x:\n"
 "             (global-set-key [do] 'execute-extended-command))))\n"
 msgstr ""
+"(add-hook 'emacs-startup-hook\n"
+"          (lambda ()\n"
+"           (when (string-match \"\\\\`vt220\" (or (getenv \"TERM\") \"\"))\n"
+"             ;; vt220の\"Do\"キーをM-xのように振る舞わせる:\n"
+"             (global-set-key [do] 'execute-extended-command))))\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3856
 msgid "For information on what Emacs does every time it is started, see the @file{lisp/startup.el} file."
-msgstr ""
+msgstr "起動のたびにEmacsが何を行っているかについては@file{lisp/startup.el}を参照してください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3857
 #, no-wrap
 msgid "Working with function and arrow keys"
-msgstr ""
+msgstr "Working with function and arrow keys"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3858
 #, no-wrap
 msgid "How do I tell what characters or symbols my function or arrow keys emit?"
-msgstr ""
+msgstr "How do I tell what characters or symbols my function or arrow keys emit?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3859
 #, no-wrap
 msgid "Working with arrow keys"
-msgstr ""
+msgstr "Working with arrow keys"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3860
 #, no-wrap
 msgid "Arrow keys, symbols generated by"
-msgstr ""
+msgstr "Arrow keys, symbols generated by"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3861
 #, no-wrap
 msgid "Working with function keys"
-msgstr ""
+msgstr "Working with function keys"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3862
 #, no-wrap
 msgid "Function keys, symbols generated by"
-msgstr ""
+msgstr "Function keys, symbols generated by"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3863
 #, no-wrap
 msgid "Symbols generated by function keys"
-msgstr ""
+msgstr "Symbols generated by function keys"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3869
 msgid "Type @kbd{C-h c} then the function or arrow keys.  The command will return either a function key symbol or character sequence (see the Emacs documentation for an explanation).  This works for other keys as well."
-msgstr ""
+msgstr "@kbd{C-h c}の後にファンクションキーか矢印キーをタイプしてください。コマンドはファンクションキーシンボルか文字シーケンスをリターンするでしょう(説明はEmacsドキュメントを参照)。これは他のキーでも同様に機能します。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3870
 #, no-wrap
 msgid "X key translations for Emacs"
-msgstr ""
+msgstr "X key translations for Emacs"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3871
 #, no-wrap
 msgid "How do I set the X key ``translations'' for Emacs?"
-msgstr ""
+msgstr "How do I set the X key ``translations'' for Emacs?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3872
 #, no-wrap
 msgid "X key translations"
-msgstr ""
+msgstr "X key translations"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3873
 #, no-wrap
 msgid "Key translations under X"
-msgstr ""
+msgstr "Key translations under X"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3874
 #, no-wrap
 msgid "Translations for keys under X"
-msgstr ""
+msgstr "Translations for keys under X"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3879
 msgid "Emacs is not written using the Xt library by default, so there are no ``translations'' to be set.  (We aren't sure how to set such translations if you do build Emacs with Xt; please let us know if you've done this!)"
-msgstr ""
+msgstr "EmacsはデフォルトではXtライブラリーを使用するようには記述されていないので、何の``変換(translation)''もセットされていません(XtとともにEmacsをビルドした場合にそのような変換をどのようにセットするかわたしたちには定かではないので、これを行うことができたらどうか知らせてください!)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3884
 msgid "The only way to affect the behavior of keys within Emacs is through @code{xmodmap} (outside Emacs) or @code{define-key} (inside Emacs).  The @code{define-key} command should be used in conjunction with the @code{local-function-key-map} map.  For instance,"
-msgstr ""
+msgstr "Emacs内でのキーの挙動に影響を与えるには@code{xmodmap} (Emacs外部)、あるいは@code{define-key} (Emacs内部)を通じて行う方法だけです。@code{define-key}コマンドは@code{local-function-key-map}と組み合わせて使用する必要があります。たとえば、"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3887
 #, no-wrap
 msgid "(define-key function-key-map [M-@key{TAB}] [?\\M-\\t])\n"
-msgstr ""
+msgstr "(define-key function-key-map [M-@key{TAB}] [?\\M-\\t])\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3891
 msgid "defines the @kbd{M-@key{TAB}} key sequence."
-msgstr ""
+msgstr "これはキーシーケンス@kbd{M-@key{TAB}}を定義します。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3892
 #, no-wrap
 msgid "Backspace invokes help"
-msgstr ""
+msgstr "Backspace invokes help"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3893
 #, no-wrap
 msgid "Why does the @key{Backspace} key invoke help?"
-msgstr ""
+msgstr "Why does the @key{Backspace} key invoke help?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3894
 #, no-wrap
 msgid "@key{Backspace} key invokes help"
-msgstr ""
+msgstr "@key{Backspace} key invokes help"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3895
 #, no-wrap
 msgid "Help invoked by @key{Backspace}"
-msgstr ""
+msgstr "Help invoked by @key{Backspace}"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:3896
 #, no-wrap
 msgid "@key{DEL} key does not delete"
-msgstr ""
+msgstr "@key{DEL} key does not delete"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3904
 msgid "The @key{Backspace} key (on most keyboards) generates @acronym{ASCII} code 8.  @kbd{C-h} sends the same code.  In Emacs by default @kbd{C-h} invokes help-command.  This is intended to be easy to remember since the first letter of @samp{help} is @samp{h}.  The easiest solution to this problem is to use @kbd{C-h} (and @key{Backspace}) for help and @key{DEL} (the @key{Delete} key) for deleting the previous character."
-msgstr ""
+msgstr "(ほとんどのキーボードでは)@key{Backspace}キーは@acronym{ASCII}コードの8を生成します。@kbd{C-h}が送信するコードも同じです。Emacsではデフォルトでは@kbd{C-h}はhelp-commandを呼び出します。これは@samp{help}の最初の文字が@samp{h}なので簡単に覚えられることを意図したものです。この問題のもっとも簡単な解決策はヘルプには@kbd{C-h} (と@key{Backspace})を使い、前の文字の削除には@key{DEL}(@key{Delete}キー)を使うことです。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3906
 msgid "For many people this solution may be problematic:"
-msgstr ""
+msgstr "多くの人たちにとって、この解決策は問題があるかもしれません:"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3914
 msgid "They normally use @key{Backspace} outside of Emacs for deleting the previous character.  This can be solved by making @key{DEL} the command for deleting the previous character outside of Emacs.  On many Unix systems, this command will remap @key{DEL}:"
-msgstr ""
+msgstr "彼らはEmacs外部では前の文字の削除に通常は@key{Backspace}を使用する。これはEmacs外部で前の文字を削除するコマンドを@key{DEL}にすれば解決できる。多くのUnixシステムでは、以下のコマンドは@key{DEL}をリマップするだろう:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3917
 #, no-wrap
 msgid "stty erase '^?'\n"
-msgstr ""
+msgstr "stty erase '^?'\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3925
 msgid "The user may prefer the @key{Backspace} key for deleting the previous character because it is more conveniently located on their keyboard or because they don't even have a separate @key{Delete} key.  In this case, the @key{Backspace} key should be made to behave like @key{Delete}.  There are several methods."
-msgstr ""
+msgstr "ユーザーはキーボード上でより使いやすい位置にある、あるいは別個に@key{Delete}キーがないという理由によって、前の文字の削除に@key{Backspace}キーを使うことを好むかもしれない。この場合には@key{Backspace}キーに@key{Delete}のように振る舞わせる必要がある。いくつかの方法がある。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3931
 msgid "Some terminals (e.g., VT3## terminals) and terminal emulators (e.g., TeraTerm) allow the character generated by the @key{Backspace} key to be changed from a setup menu."
-msgstr ""
+msgstr "いくつかの端末(例: VT3##端末)や端末エミュレータ(例: TeraTerm)では、セットアップメニューから@key{Backspace}キーが生成する文字を変更できる。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3935
 msgid "You may be able to get a keyboard that is completely programmable, or a terminal emulator that supports remapping of any key to any other key."
-msgstr ""
+msgstr "完全にプログラム可能なキーボードや、任意のキーから別の任意のキーへのリマップをサポートする端末エミュレータを入手できるかもしれない。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3943
 msgid "With Emacs 21.1 and later, you can control the effect of the @key{Backspace} and @key{Delete} keys, on both dumb terminals and a windowed displays, by customizing the option @code{normal-erase-is-backspace-mode}, or by invoking @kbd{M-x normal-erase-is-backspace}.  See the documentation of these symbols (@pxref{Emacs Lisp documentation}) for more info."
-msgstr ""
+msgstr "Emacs 21.1以降ではオプション@code{normal-erase-is-backspace-mode}のカスタマイズ、または@kbd{M-x normal-erase-is-backspace}呼び出しにより、ダム端末およびウィンドウ化されたディスプレーの両方において、@key{Backspace}キーおよび@key{Delete}キーの効果を制御できる。詳細についてはこれらのシンボルのドキュメントについては、@ref{Emacs Lisp documentation}を参照のこと。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3947
 msgid "It is possible to swap the @key{Backspace} and @key{DEL} keys inside Emacs:"
-msgstr ""
+msgstr "Emacs内部では@key{Backspace}キーと@key{DEL}キーを交換できる:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3950
 #, no-wrap
 msgid "(keyboard-translate ?\\C-h ?\\C-?)\n"
-msgstr ""
+msgstr "(keyboard-translate ?\\C-h ?\\C-?)\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3956
 msgid "This is the recommended method of forcing @key{Backspace} to act as @key{DEL}, because it works even in modes which bind @key{DEL} to something other than @code{delete-backward-char}."
-msgstr ""
+msgstr "これはたとえ@key{DEL}を@code{delete-backward-char}以外の何かにバインドするモードでも機能するので、@key{Backspace}を@key{DEL}のように動作させる際の推奨方法である。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3959
 msgid "Similarly, you could remap @key{DEL} to act as @kbd{C-d}, which by default deletes forward:"
-msgstr ""
+msgstr "同じように@key{DEL}が@kbd{C-d} (デフォルトでは前方に削除)のように振る舞うようにリマップできる:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3962
 #, no-wrap
 msgid "(keyboard-translate ?\\C-? ?\\C-d)\n"
-msgstr ""
+msgstr "(keyboard-translate ?\\C-? ?\\C-d)\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3965
 msgid "@xref{Swapping keys}, for further details about @code{keyboard-translate}."
-msgstr ""
+msgstr "@code{keyboard-translate}についての詳細は@ref{Swapping keys}を参照のこと。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3969
 msgid "Another approach is to switch key bindings and put help on @kbd{C-x h} instead:"
-msgstr ""
+msgstr "別のアプローチとしてはキーバインディングを切り替えて、かわりに@kbd{C-x h}をヘルプにする:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3972
@@ -8177,7 +8191,7 @@ msgstr ""
 msgid ""
 "(global-set-key \"\\C-h\" 'delete-backward-char)\n"
 "\n"
-msgstr ""
+msgstr "(global-set-key \"\\C-h\" 'delete-backward-char)\n\n"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3975
@@ -8186,31 +8200,33 @@ msgid ""
 ";; overrides mark-whole-buffer\n"
 "(global-set-key \"\\C-xh\" 'help-command)\n"
 msgstr ""
+";; mark-whole-bufferをオーバーライドする\n"
+"(global-set-key \"\\C-xh\" 'help-command)\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3984
 msgid "This method is not recommended, though: it only solves the problem for those modes which bind @key{DEL} to @code{delete-backward-char}.  Modes which bind @key{DEL} to something else, such as @code{view-mode}, will not work as you expect when you press the @key{Backspace} key.  For this reason, we recommend the @code{keyboard-translate} method, shown above."
-msgstr ""
+msgstr "とはいえこの手法は推奨しない。これは@key{DEL}を@code{delete-backward-char}にバインドするモードにたいしてのみ問題を解決する。@code{view-mode}モードのように@key{DEL}を別の何かにバインドするモードは、@key{Backspace}キーを押下した際に期待通り動作しないだろう。この理由により、えわたしたちは上述した@code{keyboard-translate}手法をお勧めする。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3986
 msgid "Other popular key bindings for help are @kbd{M-?} and @kbd{C-x ?}."
-msgstr ""
+msgstr "ヘルプ用として他に人気のあるキーバインディングは@kbd{M-?}と@kbd{C-x ?}である。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3990
 msgid "Don't try to bind @key{DEL} to @code{help-command}, because there are many modes that have local bindings of @key{DEL} that will interfere."
-msgstr ""
+msgstr "@key{DEL}にたいしてローカルバインディングをもちモードが多数あり、それらと干渉するかもしれないので、@key{DEL}に@code{help-command}をバインドしようとしてはならない。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3996
 msgid "When Emacs 21 or later runs on a windowed display, it binds the @key{Delete} key to a command which deletes the character at point, to make Emacs more consistent with keyboard operation on these systems."
-msgstr ""
+msgstr "ウィンドウ化されたディスプレーでEmacs 21以降を実行する場合には、これらのシステムでのキーボード操作とEmacsの矛盾が少なくなるように、@key{Delete}をポイント位置の文字を削除するコマンドにバインドします。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4000
 msgid "For more information about troubleshooting this problem, see @ref{DEL Does Not Delete, , If @key{DEL} Fails to Delete, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "この問題の解決についての詳細は@ref{DEL Does Not Delete, , If @key{DEL} Fails to Delete, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4001 ../../../../misc/efaq.texi:4003
