@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-11-29 21:18+0900\n"
+"PO-Revision-Date: 2021-11-30 21:36+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -8232,30 +8232,30 @@ msgstr "この問題の解決についての詳細は@ref{DEL Does Not Delete, ,
 #: ../../../../misc/efaq.texi:4001 ../../../../misc/efaq.texi:4003
 #, no-wrap
 msgid "Swapping keys"
-msgstr ""
+msgstr "Swapping keys"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4002
 #, no-wrap
 msgid "How do I swap two keys?"
-msgstr ""
+msgstr "How do I swap two keys?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4004
 #, no-wrap
 msgid "Keys, swapping"
-msgstr ""
+msgstr "Keys, swapping"
 
 #. type: code{#1}
 #: ../../../../misc/efaq.texi:4005
 #, no-wrap
 msgid "keyboard-translate"
-msgstr ""
+msgstr "keyboard-translate"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4010
 msgid "You can swap two keys (or key sequences) by using the @code{keyboard-translate} function.  For example, to turn @kbd{C-h} into @key{DEL} and @key{DEL} to @kbd{C-h}, use"
-msgstr ""
+msgstr "@code{keyboard-translate}を使用して2つのキー(またはキーシーケンス)を交換できます。たとえば@kbd{C-h}を@key{DEL}、@key{DEL}を@kbd{C-h}にするには、"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4014
@@ -8264,190 +8264,192 @@ msgid ""
 "(keyboard-translate ?\\C-h ?\\C-?)  ; translate 'C-h' to DEL\n"
 "(keyboard-translate ?\\C-? ?\\C-h)  ; translate DEL to 'C-h'.\n"
 msgstr ""
+"(keyboard-translate ?\\C-h ?\\C-?)  ; 'C-h'をDELに変換\n"
+"(keyboard-translate ?\\C-? ?\\C-h)  ; DELを'C-h'に変換\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4020
 msgid "The first key sequence of the pair after the function identifies what is produced by the keyboard; the second, what is matched for in the keymaps."
-msgstr ""
+msgstr "関数の後のキーシーケンスの1つ目はキーボードが何を生成するかを識別、2つ目はキーマップでそれが何にマッチするかを指定します。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4025
 msgid "However, in the specific case of @kbd{C-h} and @key{DEL}, you should toggle @code{normal-erase-is-backspace-mode} instead of calling @code{keyboard-translate}.  @xref{DEL Does Not Delete,,, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "しかし@kbd{C-h}と@key{DEL}の特別なケースにおいては、@code{keyboard-translate}呼び出しではなく@code{normal-erase-is-backspace-mode}を切り替えるべきです。@ref{DEL Does Not Delete,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4033
 msgid "Keyboard translations are not the same as key bindings in keymaps.  Emacs contains numerous keymaps that apply in different situations, but there is only one set of keyboard translations, and it applies to every character that Emacs reads from the terminal.  Keyboard translations take place at the lowest level of input processing; the keys that are looked up in keymaps contain the characters that result from keyboard translation."
-msgstr ""
+msgstr "キーボードの変換(translation)はキーマップのキーバインディングと同じではありません。Emacsには異なる状況に適用するために数々のキーマップがありますが、キーボード変換は1セットしかなく、Emacsが端末から文字を読み取るたびにそれが適用されます。キーボード変換は入力プロセスのもっとも低いレベルで行われます。キーマップに照合される文字にはキーボード変換された結果の文字が含まれています。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4034
 #, no-wrap
 msgid "Producing C-XXX with the keyboard"
-msgstr ""
+msgstr "Producing C-XXX with the keyboard"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4035
 #, no-wrap
 msgid "How do I produce C-XXX with my keyboard?"
-msgstr ""
+msgstr "How do I produce C-XXX with my keyboard?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4036
 #, no-wrap
 msgid "Producing control characters"
-msgstr ""
+msgstr "Producing control characters"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4037
 #, no-wrap
 msgid "Generating control characters"
-msgstr ""
+msgstr "Generating control characters"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4038
 #, no-wrap
 msgid "Control characters, generating"
-msgstr ""
+msgstr "Control characters, generating"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4041
 msgid "On terminals (but not under X), some common ``aliases'' are:"
-msgstr ""
+msgstr "(X配下ではない)端末で一般的ないくつかの``エイリアス''です:"
 
 #. type: item
 #: ../../../../misc/efaq.texi:4044
 #, no-wrap
 msgid "@kbd{C-2}  or  @kbd{C-@key{SPC}}"
-msgstr ""
+msgstr "@kbd{C-2}や@kbd{C-@key{SPC}}"
 
 #. type: kbd{#1}
 #: ../../../../misc/efaq.texi:4046
 msgid "C-@@"
-msgstr ""
+msgstr "C-@@"
 
 #. type: kbd{#1}
 #: ../../../../misc/efaq.texi:4047
 #, no-wrap
 msgid "C-6"
-msgstr ""
+msgstr "C-6"
 
 #. type: kbd{#1}
 #: ../../../../misc/efaq.texi:4049
 msgid "C-^"
-msgstr ""
+msgstr "C-^"
 
 #. type: item
 #: ../../../../misc/efaq.texi:4050
 #, no-wrap
 msgid "@kbd{C-7}  or  @kbd{C-S--}"
-msgstr ""
+msgstr "@kbd{C-7}や @kbd{C-S--}"
 
 #. type: kbd{#1}
 #: ../../../../misc/efaq.texi:4052
 msgid "C-_"
-msgstr ""
+msgstr "C-_"
 
 #. type: kbd{#1}
 #: ../../../../misc/efaq.texi:4053
 #, no-wrap
 msgid "C-4"
-msgstr ""
+msgstr "C-4"
 
 #. type: kbd{#1}
 #: ../../../../misc/efaq.texi:4055
 msgid "C-\\"
-msgstr ""
+msgstr "C-\\"
 
 #. type: kbd{#1}
 #: ../../../../misc/efaq.texi:4056
 #, no-wrap
 msgid "C-5"
-msgstr ""
+msgstr "C-5"
 
 #. type: kbd{#1}
 #: ../../../../misc/efaq.texi:4058
 msgid "C-]"
-msgstr ""
+msgstr "C-]"
 
 #. type: kbd{#1}
 #: ../../../../misc/efaq.texi:4059
 #, no-wrap
 msgid "C-/"
-msgstr ""
+msgstr "C-/"
 
 #. type: kbd{#1}
 #: ../../../../misc/efaq.texi:4061
 msgid "C-?"
-msgstr ""
+msgstr "C-?"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4068
 msgid "Often other aliases exist; use the @kbd{C-h c} command and try @key{CTRL} with all of the digits on your keyboard to see what gets generated.  You can also try the @kbd{C-h w} command if you know the name of the command."
-msgstr ""
+msgstr "多くの場合は他にもエイリアスが存在します。あなたのキーボードで@kbd{C-h c}コマンドを使って、@key{CTRL}とすべての数字を試して何が生成されるか確認してみてください。コマンド名が判っていれば@kbd{C-h w}コマンドを試してみることもできます。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4069
 #, no-wrap
 msgid "No Meta key"
-msgstr ""
+msgstr "No Meta key"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4070
 #, no-wrap
 msgid "What if I don't have a @key{Meta} key?"
-msgstr ""
+msgstr "What if I don't have a @key{Meta} key?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4071
 #, no-wrap
 msgid "No @key{Meta} key"
-msgstr ""
+msgstr "No @key{Meta} key"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4072
 #, no-wrap
 msgid "@key{Meta} key, what to do if you lack it"
-msgstr ""
+msgstr "@key{Meta} key, what to do if you lack it"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4075
 msgid "On many keyboards, the @key{Alt} key acts as @key{Meta}, so try it."
-msgstr ""
+msgstr "多くのキーボードでは、@key{Alt}キーは@key{Meta}のように振る舞うので試してみてください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4081
 msgid "Instead of typing @kbd{M-a}, you can type @kbd{@key{ESC} a}.  In fact, Emacs converts @kbd{M-a} internally into @kbd{@key{ESC} a} anyway (depending on the value of @code{meta-prefix-char}).  Note that you press @key{Meta} and @kbd{a} together, but with @key{ESC}, you press @key{ESC}, release it, and then press @kbd{a}."
-msgstr ""
+msgstr "@kbd{M-a}のかわりに@kbd{@key{ESC} a}とタイプすることができます。実際のところ、いずれにせよEmacsｈｓ内部で@kbd{M-a}を@kbd{@key{ESC} a}に変換しています(@code{meta-prefix-char}の値による)。@key{Meta}と@kbd{a}は一緒に押しますが、@key{ESC}の場合には@key{ESC}を押して、離した後に@kbd{a}を押下することに注意してください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4082 ../../../../misc/efaq.texi:4084
 #, no-wrap
 msgid "No Escape key"
-msgstr ""
+msgstr "No Escape key"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4083
 #, no-wrap
 msgid "What if I don't have an @key{Escape} key?"
-msgstr ""
+msgstr "What if I don't have an @key{Escape} key?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4085
 #, no-wrap
 msgid "Lacking an Escape key"
-msgstr ""
+msgstr "Lacking an Escape key"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4086
 #, no-wrap
 msgid "Escape key, lacking"
-msgstr ""
+msgstr "Escape key, lacking"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4092
 msgid "Type @kbd{C-[} instead.  This should send @acronym{ASCII} code 27 just like an Escape key would.  @kbd{C-3} may also work on some terminal (but not under X).  For many terminals (notably DEC terminals) @key{F11} generates @key{ESC}.  If not, the following form can be used to bind it:"
-msgstr ""
+msgstr "かわりに@kbd{C-[}をタイプしてください。これはエスケープキーのように@acronym{ASCII}コードの27を送信するはずです。@kbd{C-3}でも機能する端末もあります(X配下でないこと)。多くの端末(特にDEC)では、@key{F11}が@key{ESC}を生成します。そうでなければ、以下のフォームを使用してこれをバインドできます:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4096
@@ -8456,146 +8458,148 @@ msgid ""
 ";; F11 is the documented ESC replacement on DEC terminals.\n"
 "(define-key function-key-map [f11] [?\\e])\n"
 msgstr ""
+";; DEC端末ではF11はESCの置き換えとドキュメントされている\n"
+"(define-key function-key-map [f11] [?\\e])\n"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4098
 #, no-wrap
 msgid "Compose Character"
-msgstr ""
+msgstr "Compose Character"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4099
 #, no-wrap
 msgid "Can I make my @key{Compose Character} key behave like a @key{Meta} key?"
-msgstr ""
+msgstr "Can I make my @key{Compose Character} key behave like a @key{Meta} key?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4100
 #, no-wrap
 msgid "@key{Compose Character} key, using as @key{Meta}"
-msgstr ""
+msgstr "@key{Compose Character} key, using as @key{Meta}"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4101
 #, no-wrap
 msgid "@key{Meta}, using @key{Compose Character} for"
-msgstr ""
+msgstr "@key{Meta}, using @key{Compose Character} for"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4107
 msgid "On a dumb terminal such as a VT220, no.  It is rumored that certain VT220 clones could have their @key{Compose} key configured this way.  If you're using X, you might be able to do this with the @code{xmodmap} command."
-msgstr ""
+msgstr "VT220のようなダム端末ではできません。噂では特定のVT220クローンは、この方法で設定することによって独自に@key{Compose}キーをもてるようです。Xを使用していれば、@code{xmodmap}コマンドでこれを行うことができるかもしれません。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4108
 #, no-wrap
 msgid "Binding combinations of modifiers and function keys"
-msgstr ""
+msgstr "Binding combinations of modifiers and function keys"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4109
 #, no-wrap
 msgid "How do I bind a combination of modifier key and function key?"
-msgstr ""
+msgstr "How do I bind a combination of modifier key and function key?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4110
 #, no-wrap
 msgid "Modifiers and function keys"
-msgstr ""
+msgstr "Modifiers and function keys"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4111
 #, no-wrap
 msgid "Function keys and modifiers"
-msgstr ""
+msgstr "Function keys and modifiers"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4112
 #, no-wrap
 msgid "Binding modifiers and function keys"
-msgstr ""
+msgstr "Binding modifiers and function keys"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4117
 msgid "You can represent modified function keys in vector format by adding prefixes to the function key symbol.  For example (from the Emacs documentation):"
-msgstr ""
+msgstr "ファンクションキーのシンボルにプレフィクスを追加することによって、ベクターフォーマットで修飾されたファンクションキーを表すことができます。たとえば(Emacsドキュメントより):"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4120
 #, no-wrap
 msgid "(global-set-key [?\\C-x right] 'forward-page)\n"
-msgstr ""
+msgstr "(global-set-key [?\\C-x right] 'forward-page)\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4124
 msgid "where @samp{?\\C-x} is the Lisp character constant for the character @kbd{C-x}."
-msgstr ""
+msgstr "ここで@samp{?\\C-x}は文字@kbd{C-x}にたいするLisp文字定数です。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4130
 msgid "You can use the modifier keys @key{Control}, @key{Meta}, @key{Hyper}, @key{Super}, @key{Alt}, and @key{Shift} with function keys.  To represent these modifiers, prepend the strings @samp{C-}, @samp{M-}, @samp{H-}, @samp{s-}, @samp{A-}, and @samp{S-} to the symbol name.  Here is how to make @kbd{H-M-RIGHT} move forward a word:"
-msgstr ""
+msgstr "ファンクションキーとともに@key{Control}、@key{Meta}、@key{Hyper}、@key{Super}、@key{Alt}、@key{Shift}の修飾キーが使用できます。これらの修飾キーを表現するにはシンボル名の前に@samp{C-}、@samp{M-}、@samp{H-}、@samp{s-}、@samp{A-}@samp{S-}を前置します。以下は@kbd{H-M-RIGHT}を単語1つ前方に移動にする方法です:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4133
 #, no-wrap
 msgid "(global-set-key [H-M-right] 'forward-word)\n"
-msgstr ""
+msgstr "(global-set-key [H-M-right] 'forward-word)\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4142
 msgid "Not all modifiers are permitted in all situations.  @key{Hyper}, @key{Super}, and @key{Alt} are not available on Unix character terminals.  Non-@acronym{ASCII} keys and mouse events (e.g., @kbd{C-=} and @kbd{mouse-1}) also fall under this category."
-msgstr ""
+msgstr "すべての修飾キーがどんな状況でも許されている訳ではありません。Unix文字端末では@key{Hyper}、@key{Super}、@key{Alt}は利用できません。この種の状況下では非@acronym{ASCII}キーとマウスイベント(たとえば@kbd{C-=}や@kbd{mouse-1})も失敗します。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4146
 msgid "@xref{Binding keys to commands}, for general key binding instructions."
-msgstr ""
+msgstr "キーバインディングについての一般的な説明については@ref{Binding keys to commands}を参照してください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4147
 #, no-wrap
 msgid "Meta key does not work in xterm"
-msgstr ""
+msgstr "Meta key does not work in xterm"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4148
 #, no-wrap
 msgid "Why doesn't my @key{Meta} key work in an @code{xterm} window?"
-msgstr ""
+msgstr "Why doesn't my @key{Meta} key work in an @code{xterm} window?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4149
 #, no-wrap
 msgid "@key{Meta} key and @code{xterm}"
-msgstr ""
+msgstr "@key{Meta} key and @code{xterm}"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4150
 #, no-wrap
 msgid "Xterm and @key{Meta} key"
-msgstr ""
+msgstr "Xterm and @key{Meta} key"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4153
 msgid "@xref{Unibyte Mode,, Single-Byte Character Set Support, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "@ref{Unibyte Mode,, Single-Byte Character Set Support, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4156
 msgid "If the advice in the Emacs manual fails, try all of these methods before asking for further help:"
-msgstr ""
+msgstr "Emacsマニュアルのアドバイスが失敗した場合には、更なる助けを求める前に以下の方法すべてを試してみてください:"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4163
 msgid "You may have big problems using @code{mwm} as your window manager.  (Does anyone know a good generic solution to allow the use of the @key{Meta} key in Emacs with @file{mwm}?)"
-msgstr ""
+msgstr "ウィンドウマネージャーに@code{mwm}を使用することによって大きな問題を抱えているのかもしれない(@file{mwm}のEmacsで@key{Meta}キーが使用できるようにする汎用的で優れた解決策を知る人は居ないだろうか?)。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4171
 msgid "For X11: Make sure it really is a @key{Meta} key.  Use @code{xev} to find out what keysym your @key{Meta} key generates.  It should be either @code{Meta_L} or @code{Meta_R}.  If it isn't, use @file{xmodmap} to fix the situation.  If @key{Meta} does generate @code{Meta_L} or @code{Meta_R}, but @kbd{M-x} produces a non-@acronym{ASCII} character, put this in your @file{~/.Xdefaults} file:"
-msgstr ""
+msgstr "X11ではそれが本当に@key{Meta}キーなのか確認してほしい。あなたの@key{Meta}キーがどんなを生成するかを確認するには@code{xev}を使用する。@code{Meta_L}か@code{Meta_R}のいずれかのはずだが、もし違うならこの状況を修整するために@file{xmodmap}を使用できる。@key{Meta}は@code{Meta_L}や@code{Meta_R}を生成しないものの@kbd{M-x}は非@acronym{ASCII}文字を生成するようなら、以下を@file{~/.Xdefaults}ファイルに記述する:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:4175
@@ -8604,42 +8608,44 @@ msgid ""
 " XTerm*eightBitInput:   false\n"
 " XTerm*eightBitOutput:  true\n"
 msgstr ""
+" XTerm*eightBitInput:   false\n"
+" XTerm*eightBitOutput:  true\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4182
 msgid "Make sure the @code{pty} the @code{xterm} is using is passing 8 bit characters.  @samp{stty -a} (or @samp{stty everything}) should show @samp{cs8} somewhere.  If it shows @samp{cs7} instead, use @samp{stty cs8 -istrip} (or @samp{stty pass8}) to fix it."
-msgstr ""
+msgstr "@code{xterm}が使用している@code{pty}は8ビット文字を通すか確認すること。@samp{stty -a} (あるいは@samp{stty everything})がどこかに@samp{cs8}と表示するはずである。かわりに@samp{cs7}が表示されたら、これを修整するために@samp{stty cs8 -istrip} (あるいは@samp{stty pass8})を使用する。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4187
 msgid "If there is an @code{rlogin} connection between @code{xterm} and Emacs, the @samp{-8} argument may need to be given to rlogin to make it pass all 8 bits of every character."
-msgstr ""
+msgstr "@code{xterm}とEmacsの間に@code{rlogin}接続が存在する場合には、各文字の8ビット目をすべて渡すように、rloginに@samp{-8}引数を与える必要があるかもしれない。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4191
 msgid "If Emacs is running on Ultrix, it is reported that evaluating @code{(set-input-mode t nil)} helps."
-msgstr ""
+msgstr "UltrixでEmacsを実行しているなら、@code{(set-input-mode t nil)}の評価が助けになると報告されている。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4197
 msgid "If all else fails, you can make @code{xterm} generate @kbd{@key{ESC} W} when you type @kbd{M-W}, which is the same conversion Emacs would make if it got the @kbd{M-W} anyway.  In X11R4, the following resource specification will do this:"
-msgstr ""
+msgstr "他のすべてが失敗したら、@kbd{M-W}のタイプ時に@code{xterm}に@kbd{@key{ESC} W}を生成させることができる。これはいずれにせよ@kbd{M-W}を受け取ったときにEmacsが行うであろう変換と同じである。X11R4では以下のリソース仕様でこれを行うことができるだろう:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:4200
 #, no-wrap
 msgid "XTerm.VT100.EightBitInput: false\n"
-msgstr ""
+msgstr "XTerm.VT100.EightBitInput: false\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4204
 msgid "(This changes the behavior of the @code{insert-eight-bit} action.)"
-msgstr ""
+msgstr "(これは@code{insert-eight-bit}アクションの振る舞いを変更する。)"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4206
 msgid "With older @code{xterm}s, you can specify this behavior with a translation:"
-msgstr ""
+msgstr "古い@code{xterm}ではtranslationでこの挙動を指定できる:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:4210
@@ -8648,79 +8654,81 @@ msgid ""
 "XTerm.VT100.Translations: #override \\\n"
 "  Meta<KeyPress>: string(0x1b) insert()\n"
 msgstr ""
+"XTerm.VT100.Translations: #override \\\n"
+"  Meta<KeyPress>: string(0x1b) insert()\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4214
 msgid "You might have to replace @samp{Meta} with @samp{Alt}."
-msgstr ""
+msgstr "@samp{Meta}を@samp{Alt}に置き換える必要があるかもしれない。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4217
 #, no-wrap
 msgid "ExtendChar key does not work as Meta"
-msgstr ""
+msgstr "ExtendChar key does not work as Meta"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4218
 #, no-wrap
 msgid "Why doesn't my @key{ExtendChar} key work as a @key{Meta} key under HP-UX 8.0 and 9.x?"
-msgstr ""
+msgstr "Why doesn't my @key{ExtendChar} key work as a @key{Meta} key under HP-UX 8.0 and 9.x?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4219
 #, no-wrap
 msgid "@key{ExtendChar} key as @key{Meta}"
-msgstr ""
+msgstr "@key{ExtendChar} key as @key{Meta}"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4220
 #, no-wrap
 msgid "@key{Meta}, using @key{ExtendChar} for"
-msgstr ""
+msgstr "@key{Meta}, using @key{ExtendChar} for"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4221
 #, no-wrap
 msgid "HP-UX, the @key{ExtendChar} key"
-msgstr ""
+msgstr "HP-UX, the @key{ExtendChar} key"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4229
 msgid "This is a result of an internationalization extension in X11R4 and the fact that HP is now using this extension.  Emacs assumes that the @code{XLookupString} function returns the same result regardless of the @key{Meta} key state which is no longer necessarily true.  Until Emacs is fixed, the temporary kludge is to run this command after each time the X server is started but preferably before any xterm clients are:"
-msgstr ""
+msgstr "これはX11R4における国際家拡張の結果であるとともに、HPが現在はこの拡張を使用しているという事実を示しています。Emacsは@key{Meta}キーの状態に関わらず@code{XLookupString}関数が同じ結果をリターンするという、もはや必ずしも真とは言えない前提にもとづいています。Emacsが修整されるまでは、その場しのぎの一時的な修整ですがXサーバー起動後に毎回、できればxtermクライアント開始前に以下のコマンドを実行してください:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:4232
 #, no-wrap
 msgid "xmodmap -e 'remove mod1 = Mode_switch'\n"
-msgstr ""
+msgstr "xmodmap -e 'remove mod1 = Mode_switch'\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4239
 msgid "This will disable the use of the extra keysyms systemwide, which may be undesirable if you actually intend to use them."
-msgstr ""
+msgstr "これはシステムワイドで追加のkeysymを無効にします。これはあなたが実際にそれらを使用つもりなら不本意かもしれません。"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4241
 #, no-wrap
 msgid "Why doesn't @key{SPC} complete file names anymore?"
-msgstr ""
+msgstr "Why doesn't @key{SPC} complete file names anymore?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4242
 #, no-wrap
 msgid "@kbd{SPC} file name completion"
-msgstr ""
+msgstr "@kbd{SPC} file name completion"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4247
 msgid "Starting with Emacs 22.1, @kbd{SPC} no longer completes file names in the minibuffer, so that file names with embedded spaces could be typed without the need to quote the spaces."
-msgstr ""
+msgstr "Emacs 22.1から@kbd{SPC}はミニバッファーでファイル名の補完を行わなくなったので、スペースが埋め込まれたファイル名のタイプにおいてスペースをクォートする必要がなくなりました。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4250
 msgid "You can get the old behavior by binding @kbd{SPC} to @code{minibuffer-complete-word} in the minibuffer, as follows:"
-msgstr ""
+msgstr "以下のようにミニバッファーで@kbd{SPC}を@code{minibuffer-complete-word}にバインドすることによって古い挙動を取り戻すことができます:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4254
@@ -8730,6 +8738,9 @@ msgid ""
 "  'minibuffer-complete-word)\n"
 "\n"
 msgstr ""
+"(define-key minibuffer-local-filename-completion-map (kbd \"SPC\")\n"
+"  'minibuffer-complete-word)\n"
+"\n"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4257
@@ -8738,6 +8749,8 @@ msgid ""
 "(define-key minibuffer-local-must-match-filename-map (kbd \"SPC\")\n"
 "  'minibuffer-complete-word)\n"
 msgstr ""
+"(define-key minibuffer-local-must-match-filename-map (kbd \"SPC\")\n"
+"  'minibuffer-complete-word)\n"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4260 ../../../../misc/efaq.texi:4261 ../../../../misc/efaq.texi:4262
