@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-11-30 21:36+0900\n"
+"PO-Revision-Date: 2021-12-01 22:42+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -8756,167 +8756,167 @@ msgstr ""
 #: ../../../../misc/efaq.texi:4260 ../../../../misc/efaq.texi:4261 ../../../../misc/efaq.texi:4262
 #, no-wrap
 msgid "Alternate character sets"
-msgstr ""
+msgstr "Alternate character sets"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:4269
 msgid "Emacs does not display 8-bit characters::"
-msgstr ""
+msgstr "Emacs does not display 8-bit characters::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:4269
 msgid "Inputting eight-bit characters::"
-msgstr ""
+msgstr "Inputting eight-bit characters::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:4269
 msgid "Right-to-left alphabets::"
-msgstr ""
+msgstr "Right-to-left alphabets::"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4269 ../../../../misc/efaq.texi:4311
 #, no-wrap
 msgid "How to add fonts"
-msgstr ""
+msgstr "How to add fonts"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4271
 #, no-wrap
 msgid "Emacs does not display 8-bit characters"
-msgstr ""
+msgstr "Emacs does not display 8-bit characters"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4272
 #, no-wrap
 msgid "How do I make Emacs display 8-bit characters?"
-msgstr ""
+msgstr "How do I make Emacs display 8-bit characters?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4273
 #, no-wrap
 msgid "Displaying eight-bit characters"
-msgstr ""
+msgstr "Displaying eight-bit characters"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4274
 #, no-wrap
 msgid "Eight-bit characters, displaying"
-msgstr ""
+msgstr "Eight-bit characters, displaying"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4285
 msgid "@xref{Unibyte Mode,, Single-byte Character Set Support, emacs, The GNU Emacs Manual}.  On a Unix, when Emacs runs on a text-only terminal display or is invoked with @samp{emacs -nw}, you typically need to use @code{set-terminal-coding-system} to tell Emacs what the terminal can display, even after setting the language environment; otherwise non-@acronym{ASCII} characters will display as @samp{?}.  On other operating systems, such as MS-DOS and MS-Windows, Emacs queries the OS about the character set supported by the display, and sets up the required terminal coding system automatically."
-msgstr ""
+msgstr "@ref{Unibyte Mode,, Single-byte Character Set Support, emacs, The GNU Emacs Manual}を参照してください。Unixのテキストのみの端末ディスプレー、あるいは@samp{emacs -nw}呼び出しでEmacsを実行する際には、たとえ言語環境を設定後であっても、通常は@code{set-terminal-coding-system}を使用してその端末で表示可能なものをEmacsに伝える必要があります。さもないと非@acronym{ASCII}文字は@samp{?}と表示されるでしょう。他のMS-DOSやMS-Windowsのようなオペレーティングシステムでは、ディスプレーがサポートする文字についてEmacsがOSに問い合わせて、必要となる端末コーディングシステムを自動的にセットアップします。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4286
 #, no-wrap
 msgid "Inputting eight-bit characters"
-msgstr ""
+msgstr "Inputting eight-bit characters"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4287
 #, no-wrap
 msgid "How do I input eight-bit characters?"
-msgstr ""
+msgstr "How do I input eight-bit characters?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4288
 #, no-wrap
 msgid "Entering eight-bit characters"
-msgstr ""
+msgstr "Entering eight-bit characters"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4289
 #, no-wrap
 msgid "Eight-bit characters, entering"
-msgstr ""
+msgstr "Eight-bit characters, entering"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4290
 #, no-wrap
 msgid "Input, 8-bit characters"
-msgstr ""
+msgstr "Input, 8-bit characters"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4296
 msgid "Various methods are available for input of eight-bit characters.  @xref{Unibyte Mode,, Single-byte Character Set Support, emacs, The GNU Emacs Manual}.  For more sophisticated methods, @pxref{Input Methods,,, emacs, The GNU Emacs Manual}."
-msgstr ""
+msgstr "8ビット文字の入力には様々なメソッドが利用できます。@ref{Unibyte Mode,, Single-byte Character Set Support, emacs, The GNU Emacs Manual}を参照してください。より洗練されたメソッドについては@ref{Input Methods,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4297 ../../../../misc/efaq.texi:4299
 #, no-wrap
 msgid "Right-to-left alphabets"
-msgstr ""
+msgstr "Right-to-left alphabets"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4298
 #, no-wrap
 msgid "Where is an Emacs that can handle Semitic (right-to-left) alphabets?"
-msgstr ""
+msgstr "Where is an Emacs that can handle Semitic (right-to-left) alphabets?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4300
 #, no-wrap
 msgid "Hebrew, handling with Emacs"
-msgstr ""
+msgstr "Hebrew, handling with Emacs"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4301
 #, no-wrap
 msgid "Semitic alphabets"
-msgstr ""
+msgstr "Semitic alphabets"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4302
 #, no-wrap
 msgid "Arabic"
-msgstr ""
+msgstr "Arabic"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4303
 #, no-wrap
 msgid "Farsi"
-msgstr ""
+msgstr "Farsi"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4304
 #, no-wrap
 msgid "bidirectional scripts"
-msgstr ""
+msgstr "bidirectional scripts"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4309
 msgid "Emacs supports display and editing of bidirectional scripts, such as Arabic, Farsi, and Hebrew, since version 24.1.  @xref{New in Emacs 24, bidirectional display}."
-msgstr ""
+msgstr "バージョン24.1以降のEmacsではアラビア語、ペルシア語、ヘブライ語のような双方向スクリプト(bidirectional script)の表示と編集がサポートされています。@ref{New in Emacs 24, bidirectional display}を参照してください。"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4312
 #, no-wrap
 msgid "How do I add fonts for use with Emacs?"
-msgstr ""
+msgstr "How do I add fonts for use with Emacs?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4313
 #, no-wrap
 msgid "add fonts for use with Emacs"
-msgstr ""
+msgstr "add fonts for use with Emacs"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4314
 #, no-wrap
 msgid "intlfonts"
-msgstr ""
+msgstr "intlfonts"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4320
 msgid "First, download and install the BDF font files and any auxiliary packages they need.  The GNU Intlfonts distribution can be found on @uref{https://directory.fsf.org/localization/intlfonts.html, the GNU Software Directory Web site}."
-msgstr ""
+msgstr "まずBDFフォントファイル、およびそれらが必要とするすべての補助パッケージをダウンロードしてインストールしてください。GNU Intlfontsディストリビューションは@uref{https://directory.fsf.org/localization/intlfonts.html, the GNU Software Directory Web site}で見つけることができます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4323
 msgid "Next, if you are on X Window system, issue the following two commands from the shell's prompt:"
-msgstr ""
+msgstr "次にXウィンドウシステムの場合には、シェルプロンプトから以下の2つのコマンドを実行してください:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:4327
@@ -8925,48 +8925,50 @@ msgid ""
 "  xset +fp /usr/local/share/emacs/fonts\n"
 "  xset fp rehash\n"
 msgstr ""
+"  xset +fp /usr/local/share/emacs/fonts\n"
+"  xset fp rehash\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4335
 msgid "(Modify the first command if you installed the fonts in a directory that is not @file{/usr/local/share/emacs/fonts}.)  You also need to arrange for these two commands to run whenever you log in, e.g., by adding them to your window-system startup file, such as @file{~/.xsessionrc} or @file{~/.gnomerc}."
-msgstr ""
+msgstr "(@file{/usr/local/share/emacs/fonts}以外の場所にフォントをインストールしていたら1つ目のコマンドは変更が必要。) たとえば@file{~/.xsessionrc}や@file{~/.gnomerc}のようなウィンドウシステムのスタートアップファイルに追加する等、ログイン時いつでもこれら2つのコマンドが実行されるようにアレンジも必要でしょう。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4337
 msgid "Now, add the following line to your @file{~/.emacs} init file:"
-msgstr ""
+msgstr "それでは以下の行をinitファイル@file{~/.emacs}に追加してください:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4340
 #, no-wrap
 msgid "  (add-to-list 'bdf-directory-list \"/usr/share/emacs/fonts/bdf\")\n"
-msgstr ""
+msgstr "  (add-to-list 'bdf-directory-list \"/usr/share/emacs/fonts/bdf\")\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4344
 msgid "(Again, modify the file name if you installed the fonts elsewhere.)"
-msgstr ""
+msgstr "(繰り返しになるが、別の場所にフォントをインストールしていたらファイル名は変更すること。)"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4347
 msgid "Finally, if you wish to use the installed fonts with @code{ps-print}, add the following line to your @file{~/.emacs}:"
-msgstr ""
+msgstr "最後に@code{ps-print}でインストール済みフォントを使用したければ、以下の行を@file{~/.emacs}に追加してください:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4350
 #, no-wrap
 msgid "  (setq ps-multibyte-buffer 'bdf-font-except-latin)\n"
-msgstr ""
+msgstr "  (setq ps-multibyte-buffer 'bdf-font-except-latin)\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4354
 msgid "A few additional steps are necessary for MS-Windows; they are listed below."
-msgstr ""
+msgstr "MS-Windowsでは追加でいくつかのステップが必要です。以下にリストします。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4363
 msgid "First, make sure @emph{all} the directories with BDF font files are mentioned in @code{bdf-directory-list}.  On Unix and GNU/Linux systems, one normally runs @kbd{make install} to install the BDF fonts in the same directory.  By contrast, Windows users typically don't run the Intlfonts installation command, but unpack the distribution in some directory, which leaves the BDF fonts in its subdirectories.  For example, assume that you unpacked Intlfonts in @file{C:/Intlfonts}; then you should set @code{bdf-directory-list} as follows:"
-msgstr ""
+msgstr "まずBDFフォントファイルがある@emph{すべて}のディレクトリーが@code{bdf-directory-list}に記述されていることを確認してください。UnixおよびGNU/Linuxシステムでは同一ディレクトリーにBDFフォントをインストールするために@kbd{make install}を実行します。それとは対照的にWindowsユーザーは通常はIntlfontsインストールコマンドは実行せずに、どこかのディレクトリーにディストリビューションを解凍してください。このディレクトリーにはBDFフォントがあるサブディレクトリーが含まれています。たとえば@file{C:/Intlfonts}にIntlfontsを解凍したとすると、以下のように@code{bdf-directory-list}をセットする必要があります:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4373
@@ -8981,23 +8983,31 @@ msgid ""
 "      \"C:/Intlfonts/Japanese.BIG\" \"C:/Intlfonts/Korean.X\"\n"
 "      \"C:/Intlfonts/Misc\"))\n"
 msgstr ""
+"  (setq bdf-directory-list\n"
+"    '(\"C:/Intlfonts/Asian\"\n"
+"      \"C:/Intlfonts/Chinese\" \"C:/Intlfonts/Chinese.X\"\n"
+"      \"C:/Intlfonts/Chinese.BIG\" \"C:/Intlfonts/Ethiopic\"\n"
+"      \"C:/Intlfonts/European\" \"C:/Intlfonts/European.BIG\"\n"
+"      \"C:/Intlfonts/Japanese\" \"C:/Intlfonts/Japanese.X\"\n"
+"      \"C:/Intlfonts/Japanese.BIG\" \"C:/Intlfonts/Korean.X\"\n"
+"      \"C:/Intlfonts/Misc\"))\n"
 
 #. type: code{#1}
 #: ../../../../misc/efaq.texi:4375
 #, no-wrap
 msgid "w32-bdf-filename-alist"
-msgstr ""
+msgstr "w32-bdf-filename-alist"
 
 #. type: code{#1}
 #: ../../../../misc/efaq.texi:4376
 #, no-wrap
 msgid "w32-find-bdf-fonts"
-msgstr ""
+msgstr "w32-find-bdf-fonts"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4382
 msgid "Next, you need to set up the variable @code{w32-bdf-filename-alist} to an alist of the BDF fonts and their corresponding file names.  Assuming you have set @code{bdf-directory-list} to name all the directories with the BDF font files, the following Lisp snippet will set up @code{w32-bdf-filename-alist}:"
-msgstr ""
+msgstr "次は変数@code{w32-bdf-filename-alist}にBDFフォントのエイリアスとそれらに応じたファイル名をセットする必要があります。BDFフォントファイルのすべてのディレクトリーを@code{bdf-directory-list}にセットしたとすると、以下のLispコードで@code{w32-bdf-filename-alist}がセットアップされるはずです:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4386
@@ -9006,11 +9016,13 @@ msgid ""
 "  (setq w32-bdf-filename-alist\n"
 "     (w32-find-bdf-fonts bdf-directory-list))\n"
 msgstr ""
+"  (setq w32-bdf-filename-alist\n"
+"     (w32-find-bdf-fonts bdf-directory-list))\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4389
 msgid "Now, create fontsets for the BDF fonts:"
-msgstr ""
+msgstr "今度はBDFフォント用にフォントセットを作成します:"
 
 #. type: smallexample
 #: ../../../../misc/efaq.texi:4402
@@ -9028,11 +9040,22 @@ msgid ""
 "   ethiopic:-Admas-Ethiomx16f-Medium-R-Normal--16-150-100-100-M-160-Ethiopic-Unicode,\n"
 "   tibetan:-TibMdXA-fixed-medium-r-normal--16-160-72-72-m-160-MuleTibetan-0\")\n"
 msgstr ""
+"  (create-fontset-from-fontset-spec\n"
+"   \"-*-fixed-medium-r-normal-*-16-*-*-*-c-*-fontset-bdf,\n"
+"   japanese-jisx0208:-*-*-medium-r-normal-*-16-*-*-*-c-*-jisx0208.1983-*,\n"
+"   katakana-jisx0201:-*-*-medium-r-normal-*-16-*-*-*-c-*-jisx0201*-*,\n"
+"   latin-jisx0201:-*-*-medium-r-normal-*-16-*-*-*-c-*-jisx0201*-*,\n"
+"   japanese-jisx0208-1978:-*-*-medium-r-normal-*-16-*-*-*-c-*-jisx0208.1978-*,\n"
+"   thai-tis620:-misc-fixed-medium-r-normal--16-160-72-72-m-80-tis620.2529-1,\n"
+"   lao:-misc-fixed-medium-r-normal--16-160-72-72-m-80-MuleLao-1,\n"
+"   tibetan-1-column:-TibMdXA-fixed-medium-r-normal--16-160-72-72-m-80-MuleTibetan-1,\n"
+"   ethiopic:-Admas-Ethiomx16f-Medium-R-Normal--16-150-100-100-M-160-Ethiopic-Unicode,\n"
+"   tibetan:-TibMdXA-fixed-medium-r-normal--16-160-72-72-m-160-MuleTibetan-0\")\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4406
 msgid "Many of the international bdf fonts from Intlfonts are type 0, and therefore need to be added to font-encoding-alist:"
-msgstr ""
+msgstr "Intlfontsの国際化BDFフォントの多くはタイプ0なので、font-encoding-alistに追加する必要があります:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4419
@@ -9050,367 +9073,378 @@ msgid ""
 "                  (\"MuleArabic-2\"  (arabic-2-column . 0)))\n"
 "                font-encoding-alist))\n"
 msgstr ""
+"  (setq font-encoding-alist\n"
+"        (append '((\"MuleTibetan-0\" (tibetan . 0))\n"
+"                  (\"GB2312\"        (chinese-gb2312 . 0))\n"
+"                  (\"JISX0208\"      (japanese-jisx0208 . 0))\n"
+"                  (\"JISX0212\"      (japanese-jisx0212 . 0))\n"
+"                  (\"VISCII\"        (vietnamese-viscii-lower . 0))\n"
+"                  (\"KSC5601\"       (korean-ksc5601 . 0))\n"
+"                  (\"MuleArabic-0\"  (arabic-digit . 0))\n"
+"                  (\"MuleArabic-1\"  (arabic-1-column . 0))\n"
+"                  (\"MuleArabic-2\"  (arabic-2-column . 0)))\n"
+"                font-encoding-alist))\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4424
 msgid "You can now use the Emacs font menu to select the @samp{bdf: 16-dot medium} fontset, or you can select it by setting the default font in your @file{~/.emacs}:"
-msgstr ""
+msgstr "これでEmacsのフォントメニュー、あるいは@file{~/.emacs}でデフォルトフォントを設定することにより、@samp{bdf: 16-dot medium}の選択ができるようになりました。 "
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4427
 #, no-wrap
 msgid "  (set-frame-font \"fontset-bdf\")\n"
-msgstr ""
+msgstr "  (set-frame-font \"fontset-bdf\")\n"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4431 ../../../../misc/efaq.texi:4432 ../../../../misc/efaq.texi:4433
 #, no-wrap
 msgid "Mail and news"
-msgstr ""
+msgstr "Mail and news"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:4446
 msgid "Changing the included text prefix::"
-msgstr ""
+msgstr "Changing the included text prefix::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:4446
 msgid "Saving a copy of outgoing mail::"
-msgstr ""
+msgstr "Saving a copy of outgoing mail::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:4446
 msgid "Expanding aliases when sending mail::"
-msgstr ""
+msgstr "Expanding aliases when sending mail::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:4446
 msgid "Sorting the messages in an Rmail folder::"
-msgstr ""
+msgstr "Sorting the messages in an Rmail folder::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:4446
 msgid "Rmail writes to /var/spool/mail::"
-msgstr ""
+msgstr "Rmail writes to /var/spool/mail::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:4446
 msgid "Replying to the sender of a message::"
-msgstr ""
+msgstr "Replying to the sender of a message::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:4446
 msgid "Automatically starting a mail or news reader::"
-msgstr ""
+msgstr "Automatically starting a mail or news reader::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:4446
 msgid "Reading news with Emacs::"
-msgstr ""
+msgstr "Reading news with Emacs::"
 
 #. type: menuentry
 #: ../../../../misc/efaq.texi:4446
 msgid "Making Gnus faster::"
-msgstr ""
+msgstr "Making Gnus faster::"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4446 ../../../../misc/efaq.texi:4660
 #, no-wrap
 msgid "Catching up in all newsgroups"
-msgstr ""
+msgstr "Catching up in all newsgroups"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4448
 #, no-wrap
 msgid "Changing the included text prefix"
-msgstr ""
+msgstr "Changing the included text prefix"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4449
 #, no-wrap
 msgid "How do I change the included text prefix in mail/news followups?"
-msgstr ""
+msgstr "How do I change the included text prefix in mail/news followups?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4450
 #, no-wrap
 msgid "Prefix in mail/news followups, changing"
-msgstr ""
+msgstr "Prefix in mail/news followups, changing"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4451
 #, no-wrap
 msgid "Included text prefix, changing"
-msgstr ""
+msgstr "Included text prefix, changing"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4452
 #, no-wrap
 msgid "Setting the included text character"
-msgstr ""
+msgstr "Setting the included text character"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4453
 #, no-wrap
 msgid "Quoting in mail messages"
-msgstr ""
+msgstr "Quoting in mail messages"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4458
 msgid "If you read mail with Rmail, set the variable @code{mail-yank-prefix}.  For Gnus, set @code{message-yank-prefix}.  For VM, set @code{vm-included-text-prefix}.  For mh-e, set @code{mh-ins-buf-prefix}."
-msgstr ""
+msgstr "メールをRmailで読んでいる場合には変数@code{mail-yank-prefix}、Gnusなら@code{message-yank-prefix}、VMなら@code{vm-included-text-prefix}、mh-eなら@code{mh-ins-buf-prefix}をセットしてください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4461
 msgid "For fancier control of citations, use Supercite (@pxref{Top,, the Supercite Manual, sc, The Supercite Manual})."
-msgstr ""
+msgstr "より装飾的に引用を制御するにはSupercite(@ref{Top,, the Supercite Manual, sc, The Supercite Manual}を参照)を使用してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4465
 msgid "To prevent Emacs from including various headers of the replied-to message, set the value of @code{mail-yank-ignored-headers} to an appropriate regexp."
-msgstr ""
+msgstr "Emacsが返信先メッセージの様々なヘッダーを含めないようにするには、@code{mail-yank-ignored-headers}の値に適切な正規表現をセットしてください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4466 ../../../../misc/efaq.texi:4468
 #, no-wrap
 msgid "Saving a copy of outgoing mail"
-msgstr ""
+msgstr "Saving a copy of outgoing mail"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4467
 #, no-wrap
 msgid "How do I save a copy of outgoing mail?"
-msgstr ""
+msgstr "How do I save a copy of outgoing mail?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4469
 #, no-wrap
 msgid "Copying outgoing mail to a file"
-msgstr ""
+msgstr "Copying outgoing mail to a file"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4470
 #, no-wrap
 msgid "Filing outgoing mail"
-msgstr ""
+msgstr "Filing outgoing mail"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4471
 #, no-wrap
 msgid "Automatic filing of outgoing mail"
-msgstr ""
+msgstr "Automatic filing of outgoing mail"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4472
 #, no-wrap
 msgid "Mail, saving outgoing automatically"
-msgstr ""
+msgstr "Mail, saving outgoing automatically"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4477
 msgid "You can either mail yourself a copy by including a @samp{BCC} header in the mail message, or store a copy of the message directly to a file by including an @samp{FCC} header."
-msgstr ""
+msgstr "メールメッセージの@samp{BCC}ヘッダーに自分を含めて自分にコピーをメールしたり、あるいは@samp{FCC}ヘッダーにファイルを含めてメッセージのコピーを直接保存できます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4480
 msgid "If you use standard mail, you can automatically create a @samp{BCC} to yourself by putting"
-msgstr ""
+msgstr "標準的なメールを使用しているなら、以下を@file{.emacs}ファイル記述して自分への@samp{BCC}を自動的に作成できます。"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4483
 #, no-wrap
 msgid "(setq mail-self-blind t)\n"
-msgstr ""
+msgstr "(setq mail-self-blind t)\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4489
 msgid "in your @file{.emacs} file.  You can automatically include an @samp{FCC} field by putting something like the following in your @file{.emacs} file:"
-msgstr ""
+msgstr "以下のような行を@file{.emacs}ファイルに記述すれば、自動的に@samp{FCC}フィールドを含めることができます:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4492
 #, no-wrap
 msgid "(setq mail-archive-file-name (expand-file-name \"~/outgoing\"))\n"
-msgstr ""
+msgstr "(setq mail-archive-file-name (expand-file-name \"~/outgoing\"))\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4495
 msgid "The output file will be in Unix mail format."
-msgstr ""
+msgstr "出力ファイルは Unixのメール形式になります。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4498
 msgid "If you use @code{mh-e}, add an @samp{FCC} or @samp{BCC} field to your components file."
-msgstr ""
+msgstr "@code{mh-e}を使用しているなら@samp{FCC}と@samp{BCC}のフィールドをコンポーネントファイルに加えてください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4501
 msgid "It does not work to put @samp{set record filename} in the @file{.mailrc} file."
-msgstr ""
+msgstr "@file{.mailrc}に@samp{set record filename}を記述しても機能しません。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4502 ../../../../misc/efaq.texi:4504
 #, no-wrap
 msgid "Expanding aliases when sending mail"
-msgstr ""
+msgstr "Expanding aliases when sending mail"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4503
 #, no-wrap
 msgid "Why doesn't Emacs expand my aliases when sending mail?"
-msgstr ""
+msgstr "Why doesn't Emacs expand my aliases when sending mail?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4505
 #, no-wrap
 msgid "Mail alias expansion"
-msgstr ""
+msgstr "Mail alias expansion"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4506
 #, no-wrap
 msgid "Sending mail with aliases"
-msgstr ""
+msgstr "Sending mail with aliases"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4509
 msgid "@xref{Mail Aliases,, The Emacs Manual, emacs, The Emacs Manual}."
-msgstr ""
+msgstr "@ref{Mail Aliases,, The Emacs Manual, emacs, The Emacs Manual}を参照してください。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4515
 msgid "Normally, Emacs expands aliases when you send the message.  To expand them before this, use @kbd{M-x expand-mail-aliases}."
-msgstr ""
+msgstr " Emacsは通常はメール送信の際にエイリアスを展開する。送信前に展開するには@kbd{M-x expand-mail-aliases}を使用する。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4522
 msgid "Emacs normally only reads the @file{.mailrc} file once per session, when you start to compose your first mail message.  If you edit the file after this, you can use @kbd{M-x build-mail-aliases} to make Emacs reread it.  Prior to Emacs 24.1, this is not an interactive command, so you must instead type @kbd{M-: (build-mail-aliases) @key{RET}}."
-msgstr ""
+msgstr "Emacsは通常はセッションごとに1回、最初のメールメッセージを作成するときしか@file{.mailrc}ファイルを読み込まない。その後にファイルを編集したら@kbd{M-x build-mail-aliases}を使用してEmacsに再読み込みさせることができる。これはEmacs 24.1以前は対話的なコマンドではないので、かわりに@kbd{M-: (build-mail-aliases) @key{RET}}とタイプしなければならない。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4526
 msgid "If you like, you can expand mail aliases as abbrevs, as soon as you type them in.  To enable this feature, execute the following:"
-msgstr ""
+msgstr "もしも望むならabbrevとしてタイプすればすぐにメールエイリアスを展開できる。この機能を有効にするには以下を実行する:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4529
 #, no-wrap
 msgid "(add-hook 'mail-mode-hook 'mail-abbrevs-setup)\n"
-msgstr ""
+msgstr "(add-hook 'mail-mode-hook 'mail-abbrevs-setup)\n"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4535
 msgid "Note that the aliases are expanded automatically only after you type a word-separator character (e.g., @key{RET} or @kbd{,}).  You can force their expansion by moving point to the end of the alias and typing @kbd{C-x a e} (@kbd{M-x expand-abbrev})."
-msgstr ""
+msgstr "エイリアスは単語区切り文字(@key{RET}や@kbd{,})をタイプした後でのみ自動的に展開される。エイリアス終端にポイントを移動して@kbd{C-x a e} (@kbd{M-x expand-abbrev})をタイプして強制的に展開させることができる。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4537
 #, no-wrap
 msgid "Sorting the messages in an Rmail folder"
-msgstr ""
+msgstr "Sorting the messages in an Rmail folder"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4538
 #, no-wrap
 msgid "How can I sort the messages in my Rmail folder?"
-msgstr ""
+msgstr "How can I sort the messages in my Rmail folder?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4539
 #, no-wrap
 msgid "Rmail, sorting messages in"
-msgstr ""
+msgstr "Rmail, sorting messages in"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4540
 #, no-wrap
 msgid "Folder, sorting messages in an Rmail"
-msgstr ""
+msgstr "Folder, sorting messages in an Rmail"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4541
 #, no-wrap
 msgid "Sorting messages in an Rmail folder"
-msgstr ""
+msgstr "Sorting messages in an Rmail folder"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4545
 msgid "In Rmail, type @kbd{C-c C-s C-h} to get a list of sorting functions and their key bindings."
-msgstr ""
+msgstr "Rmailでソート関数とそれらのキーバインディングのリストを得るには@kbd{C-c C-s C-h}とタイプします。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4546
 #, no-wrap
 msgid "Rmail writes to /var/spool/mail"
-msgstr ""
+msgstr "Rmail writes to /var/spool/mail"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4547
 #, no-wrap
 msgid "Why does Rmail need to write to @file{/var/spool/mail}?"
-msgstr ""
+msgstr "Why does Rmail need to write to @file{/var/spool/mail}?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4548
 #, no-wrap
 msgid "Rmail and @file{/var/spool/mail}"
-msgstr ""
+msgstr "Rmail and @file{/var/spool/mail}"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4549
 #, no-wrap
 msgid "@file{/var/spool/mail} and Rmail"
-msgstr ""
+msgstr "@file{/var/spool/mail} and Rmail"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4553
 msgid "This is the behavior of the @code{movemail} program which Rmail uses.  This indicates that @code{movemail} is configured to use lock files."
-msgstr ""
+msgstr "これはRmailが使用する@code{movemail}プログラムの振る舞いです。これは@code{movemail}がロックファイルを使うように設定されていることを示しています。"
 
 #. type: quotation
 #: ../../../../misc/efaq.texi:4560
 msgid "Certain systems require lock files to interlock access to mail files.  On these systems, @code{movemail} must write lock files, or you risk losing mail.  You simply must arrange to let @code{movemail} write them."
-msgstr ""
+msgstr "特定のシステムではメールファイルへのアクセスをインターロックするためにロックファイルが必要です。これらのシステムでは@code{movemail}はロックファイルに書き込まなければなりません。さもないとメールを失うリスクがあるからです。あなたはただ@code{movemail}にロックファイルを書き込ませるようアレンジしなければなりません。"
 
 #. type: quotation
 #: ../../../../misc/efaq.texi:4563
 msgid "Other systems use the @code{flock} system call to interlock access.  On these systems, you should configure @code{movemail} to use @code{flock}."
-msgstr ""
+msgstr "他のシステムではインターロックアクセスのために@code{flock}システムコールを使用します。これらのシステムでは@code{flock}を使用するように@code{movemail}を設定するべきです。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4565
 #, no-wrap
 msgid "Replying to the sender of a message"
-msgstr ""
+msgstr "Replying to the sender of a message"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4566
 #, no-wrap
 msgid "How can I force Rmail to reply to the sender of a message, but not the other recipients?"
-msgstr ""
+msgstr "How can I force Rmail to reply to the sender of a message, but not the other recipients?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4567
 #, no-wrap
 msgid "Replying only to the sender of a message"
-msgstr ""
+msgstr "Replying only to the sender of a message"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4568
 #, no-wrap
 msgid "Sender, replying only to"
-msgstr ""
+msgstr "Sender, replying only to"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4569
 #, no-wrap
 msgid "Rmail, replying to the sender of a message in"
-msgstr ""
+msgstr "Rmail, replying to the sender of a message in"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4579
 msgid "Ron Isaacson says: When you hit @kbd{r} to reply in Rmail, by default it Ccs all of the original recipients (everyone on the original @samp{To} and @samp{CC} lists). With a prefix argument (i.e., typing @kbd{C-u} before @kbd{r}), it replies only to the sender.  However, going through the whole @kbd{C-u} business every time you want to reply is a pain.  This is the best fix I've been able to come up with:"
-msgstr ""
+msgstr "Ron Isaacsonは述べています: Rmailで返信するために@kbd{r}をタイプすると、デフォルトでは元の受信者すべて(元の@samp{To}と@samp{CC}のリスト全員)にCCされます。(@kbd{r}の前に@kbd{C-u}をタイプして)プレフィクス引数を指定すると、送信者だけに返信します。とはいえ返信したいときに全体を通して@kbd{C-u}作業を行うのは苦痛です。以下はわたしがこれに対処した中では最良の修整です。"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4585
@@ -9422,6 +9456,11 @@ msgid ""
 "  (rmail-reply t))\n"
 "\n"
 msgstr ""
+"(defun rmail-reply-t ()\n"
+"  \"カレントメッセージの送信者だけに返信する(rmail-replyを参照)\"\n"
+"  (interactive)\n"
+"  (rmail-reply t))\n"
+"\n"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4590
@@ -9432,6 +9471,10 @@ msgid ""
 "    (define-key rmail-mode-map \"r\" 'rmail-reply-t)\n"
 "    (define-key rmail-mode-map \"R\" 'rmail-reply)))\n"
 msgstr ""
+"(add-hook 'rmail-mode-hook\n"
+"  (lambda ()\n"
+"    (define-key rmail-mode-map \"r\" 'rmail-reply-t)\n"
+"    (define-key rmail-mode-map \"R\" 'rmail-reply)))\n"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4592
