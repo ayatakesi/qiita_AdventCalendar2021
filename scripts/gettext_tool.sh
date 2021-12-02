@@ -175,7 +175,7 @@ msgstr ""
 
 EOT
     grep -E ${GREP_STRING} ${TEXI_FILE} |
-	perl -pe 's/\"/\\\"/g' | sort | uniq |
+	perl -pe 's/\"/\\\"/g' |
 	perl -ne 'chomp; print "msgid \"$_\"\nmsgstr \"\"\n\n";' >>${POT_FILE};
     echo "done";
     
