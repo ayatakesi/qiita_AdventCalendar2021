@@ -107,7 +107,7 @@ function main () {
 				     /dev/null ${NEW_POT_FILE} |
 				msgcat --no-wrap - > ${MERGED_PO};
 			    
-A			    cp -pf ${MERGED_PO} ${OLD_PO_FILE};
+			    cp -pf ${MERGED_PO} ${OLD_PO_FILE};
 			    rm -f ${MERGED_PO};
 			    echo "done.";
 			    ;;
