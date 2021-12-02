@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: XXXX-XX.X\n"
 "POT-Creation-Date: 2021-12-02 12:06\n"
-"PO-Revision-Date: 2021-12-02 21:03+0900\n"
+"PO-Revision-Date: 2021-12-03 07:43+0900\n"
 "Last-Translator: XXXX#translator\n"
 "Language-Team: XXXX#translators\n"
 "Language: ja\n"
@@ -116,7 +116,7 @@ msgid "@section What is different about Emacs 20?"
 msgstr "@section Emacs 20は何が違う?"
 
 msgid "@chapter Common requests"
-msgstr "@chapter よくある質問"
+msgstr "@chapter よくある要望"
 
 msgid "@section How do I set up a @file{.emacs} file properly?"
 msgstr "@section @file{.emacs}ファイルを正しくセットアップするには?"
@@ -131,85 +131,85 @@ msgid "@section How do I debug a @file{.emacs} file?"
 msgstr "@section @file{.emacs}ファイルをデバッグするには?"
 
 msgid "@section How do I make Emacs display the current line (or column) number?"
-msgstr ""
+msgstr "@section Emacsに現在の行(や列)の番号を表示させるには?"
 
 msgid "@section How can I modify the titlebar to contain the current file name?"
-msgstr ""
+msgstr "@section 現在のファイル名をタイトルバーに含めるには?"
 
 msgid "@section How do I turn on abbrevs by default just in mode @var{mymode}?"
-msgstr ""
+msgstr "@section モード@var{mymode}でデフォルトでabbrevをオンにするには?"
 
 msgid "@section How do I make Emacs use a certain major mode for certain files?"
-msgstr ""
+msgstr "@section 特定のファイルに特定のモードをEmacsに使用させるには?"
 
 msgid "@section How can I replace highlighted text with what I type?"
-msgstr ""
+msgstr "@section ハイライトされたテキストをタイプしたテキストで置き換えるには?"
 
 msgid "@section How do I control Emacs's case-sensitivity when searching/replacing?"
-msgstr ""
+msgstr "@section 検索や置換の際にEmacsによる大文字小文字の区別を制御するには?"
 
 msgid "@section How do I search for, delete, or replace unprintable (eight-bit or control) characters?"
-msgstr ""
+msgstr "@section プリント不可文字(8ビット文字やコントロール文字)の検索、削除、置換を行うには?"
 
 msgid "@section How do I input a newline character in isearch or query-replace?"
-msgstr ""
+msgstr "@section isearchやquery-replaceで改行を入力するには?"
 
 msgid "@section How do I copy text from the kill ring into the search string?"
-msgstr ""
+msgstr "@section killリングから検索文字列にテキストをコピーするには?"
 
 msgid "@section How do I make Emacs wrap words for me?"
-msgstr ""
+msgstr "@section 自分用にEmacsに単語を折り返させるには?"
 
 msgid "@section How do I turn on @code{auto-fill-mode} by default?"
-msgstr ""
+msgstr "@section デフォルトで@code{auto-fill-mode}をオンにするには?"
 
 msgid "@section How do I change @code{load-path}?"
-msgstr ""
+msgstr "@section @code{load-path}を変更するには?"
 
 msgid "@section How do I use an already running Emacs from another window?"
-msgstr ""
+msgstr "@section 別ウィンドウですでに実行中のEmacsを使用するには?"
 
 msgid "@section How do I make Emacs recognize my compiler's funny error messages?"
-msgstr ""
+msgstr "@section わたしのコンパイラーの変なエラーメッセージをEmacsに認識させるには?"
 
 msgid "@section How do I change the indentation for @code{switch}?"
-msgstr ""
+msgstr "@section @code{switch}のインデントを変更するには?"
 
 msgid "@section How to customize indentation in C, C@t{++}, and Java buffers?"
-msgstr ""
+msgstr "@section C、C@t{++}、Javaのバッファーのインデントをカスタマイズするには?"
 
 msgid "@section How do I make Emacs ``typeover'' or ``overwrite'' instead of inserting?"
-msgstr ""
+msgstr "@section Emacsに挿入ではなく``上書き''させるには?"
 
 msgid "@section How do I stop Emacs from beeping on a terminal?"
-msgstr ""
+msgstr "@section 端末でEmacsのビープ音を止めるには?"
 
 msgid "@section How do I turn down the bell volume in Emacs running under X?"
-msgstr ""
+msgstr "@section XでEmacsを実行中にベル音量を下げるには?"
 
 msgid "@section How do I tell Emacs to automatically indent a new line to the indentation of the previous line?"
-msgstr ""
+msgstr "@section 新しい行を前の行に合わせて自動的にインデントするようEmacsに伝えるには?"
 
 msgid "@section How do I show which parenthesis matches the one I'm looking at?"
-msgstr ""
+msgstr "@section 自分が注目中のカッコに対応するカッコを表示するには?"
 
 msgid "@section In C mode, can I show just the lines that will be left after @code{#ifdef} commands are handled by the compiler?"
-msgstr ""
+msgstr "@section Cモードでコンパイラーが@code{#ifdef}処理後に残る行だけを表示するには?"
 
 msgid "@section How do I repeat a command as many times as possible?"
-msgstr ""
+msgstr "@section できるだけ沢山コマンドを繰り返すには?"
 
 msgid "@section What are the valid X resource settings (i.e., stuff in .Xdefaults)?"
-msgstr ""
+msgstr "@section 有効なXリソース(.Xdefaults内の項目)は?"
 
 msgid "@section How do I execute (``evaluate'') a piece of Emacs Lisp code?"
-msgstr ""
+msgstr "@section Emacs Lispのコード片を実行(``evaluate'')するには?"
 
 msgid "@section How do I change Emacs's idea of the @key{TAB} character's length?"
-msgstr ""
+msgstr "@section @key{TAB}文字の長さにたいするEmacsの解釈を変更するには?"
 
 msgid "@section How do I insert <some text> at the beginning of every line?"
-msgstr ""
+msgstr "@section 各行の先頭に<何らかのテキスト>を挿入するには?"
 
 msgid "@section How do I make Emacs behave like this: when I go up or down, the cursor should stay in the same column even if the line is too short?"
 msgstr ""

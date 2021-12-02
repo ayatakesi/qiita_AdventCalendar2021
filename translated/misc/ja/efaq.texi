@@ -1168,7 +1168,7 @@ Emacsのバージョン19と20の間にも同様に差はあるものの多く�
 
 @c ------------------------------------------------------------
 @node Common requests
-@chapter よくある質問
+@chapter よくある要望
 @cindex Common requests
 
 @menu
@@ -1341,7 +1341,7 @@ eval-last-sexp})をタイプすれば、関数や関数の引数を個別に評�
 セットまたは使用を試みている変数の値をチェックするには@kbd{C-h v} (@kbd{M-x describe-variable})を使用できます。
 
 @node Displaying the current line or column
-@section How do I make Emacs display the current line (or column) number?
+@section Emacsに現在の行(や列)の番号を表示させるには?
 @cindex @code{line-number-mode}
 @cindex Displaying the current line or column
 @cindex Line number, displaying the current
@@ -1370,7 +1370,7 @@ number''機能のように、各行の前のテキストエリアに行番号を
 @samp{linum}パッケージ(バージョン23.1以降のEmacsに同梱)もありますが今後配送されます。ユーザーおよび開発者にはかわりに@samp{display-line-numbers}の使用をお勧めします。(Emacsには同梱されていないパッケージ)@samp{setnu}と@samp{wb-line-number}もこの機能を実装しています。
 
 @node Displaying the current file name in the titlebar
-@section How can I modify the titlebar to contain the current file name?
+@section 現在のファイル名をタイトルバーに含めるには?
 @cindex Titlebar, displaying the current file name in
 @cindex File name, displaying in the titlebar
 @cindex @code{frame-title-format}
@@ -1391,7 +1391,7 @@ v}または@kbd{M-x describe-variable}を使用する)。
 @end lisp
 
 @node Turning on abbrevs by default
-@section How do I turn on abbrevs by default just in mode @var{mymode}?
+@section モード@var{mymode}でデフォルトでabbrevをオンにするには?
 @cindex Abbrevs, turning on by default
 
 Abbrevモードは略語をタイプするとそれを展開します。特定のバッファーでこれをオンにするには@kbd{M-x
@@ -1418,7 +1418,7 @@ abbrev-mode}を使用します。デフォルトですべてのバッファー�
 @end lisp
 
 @node Associating modes with files
-@section How do I make Emacs use a certain major mode for certain files?
+@section 特定のファイルに特定のモードをEmacsに使用させるには?
 @cindex Associating modes with files
 @cindex File extensions and modes
 @cindex @code{auto-mode-alist}, modifying
@@ -1441,7 +1441,7 @@ abbrev-mode}を使用します。デフォルトですべてのバッファー�
 v} (または@kbd{M-x describe-variable})を使用して調べてください。
 
 @node Replacing highlighted text
-@section How can I replace highlighted text with what I type?
+@section ハイライトされたテキストをタイプしたテキストで置き換えるには?
 @cindex @code{delete-selection-mode}
 @cindex Replacing highlighted text
 @cindex Highlighting and replacing text
@@ -1463,7 +1463,7 @@ Selectionモードが有効な場合には選択がアクティブのときに�
 このモードにより@key{DEL}を押下してハイライトされているリージョンを削除(killではない)することもできます。
 
 @node Controlling case sensitivity
-@section How do I control Emacs's case-sensitivity when searching/replacing?
+@section 検索や置換の際にEmacsによる大文字小文字の区別を制御するには?
 @cindex @code{case-fold-search}
 @cindex Case sensitivity of searches
 @cindex Searching without case sensitivity
@@ -1493,7 +1493,7 @@ isearchでは@kbd{M-c}で自由にcaseの区別を切り替えることもでき
 @end lisp
 
 @node Working with unprintable characters
-@section How do I search for, delete, or replace unprintable (eight-bit or control) characters?
+@section プリント不可文字(8ビット文字やコントロール文字)の検索、削除、置換を行うには?
 @cindex Unprintable characters, working with
 @cindex Working with unprintable characters
 @cindex Control characters, working with
@@ -1534,7 +1534,7 @@ M-x replace-regexp @key{RET} [^ @key{TAB} C-q @key{LFD} C-q @key{RET} C-q
 C-l @key{SPC} -~] @key{RET} : @key{RET}
 
 @node Searching for/replacing newlines
-@section How do I input a newline character in isearch or query-replace?
+@section isearchやquery-replaceで改行を入力するには?
 @cindex Searching for newlines
 @cindex Replacing newlines
 
@@ -1542,7 +1542,7 @@ C-l @key{SPC} -~] @key{RET} : @key{RET}
 Incremental Search, emacs, The GNU Emacs Manual}を参照してください。
 
 @node Yanking text in isearch
-@section How do I copy text from the kill ring into the search string?
+@section killリングから検索文字列にテキストをコピーするには?
 @cindex Yanking text into the search string
 @cindex isearch yanking
 
@@ -1550,7 +1550,7 @@ Incremental Search, emacs, The GNU Emacs Manual}を参照してください。
 Manual}を参照してください。
 
 @node Wrapping words automatically
-@section How do I make Emacs wrap words for me?
+@section 自分用にEmacsに単語を折り返させるには?
 @cindex Wrapping word automatically
 @cindex Wrapping lines
 @cindex Line wrap
@@ -1563,7 +1563,7 @@ auto-fill-mode}とタイプして@code{auto-fill-mode}を有効にして使用�
 on auto-fill by default}を参照してください。
 
 @node Turning on auto-fill by default
-@section How do I turn on @code{auto-fill-mode} by default?
+@section デフォルトで@code{auto-fill-mode}をオンにするには?
 @cindex @code{auto-fill-mode}, activating automatically
 @cindex Filling automatically
 @cindex Automatic entry to @code{auto-fill-mode}
@@ -1583,7 +1583,7 @@ on auto-fill by default}を参照してください。
 @end lisp
 
 @node Changing load-path
-@section How do I change @code{load-path}?
+@section @code{load-path}を変更するには?
 @cindex @code{load-path}, modifying
 @cindex Modifying @code{load-path}
 @cindex Adding to @code{load-path}
@@ -1601,7 +1601,7 @@ on auto-fill by default}を参照してください。
 @end lisp
 
 @node Using an already running Emacs process
-@section How do I use an already running Emacs from another window?
+@section 別ウィンドウですでに実行中のEmacsを使用するには?
 @cindex @code{emacsclient}
 @cindex Emacs server functions
 @cindex Using an existing Emacs process
@@ -1651,7 +1651,7 @@ server-edit})とタイプしてそれを示すことができる。@code{emacscl
 詳細については@ref{Emacs Server,,, emacs, The GNU Emacs Manual}を参照してください。
 
 @node Compiler error messages
-@section How do I make Emacs recognize my compiler's funny error messages?
+@section わたしのコンパイラーの変なエラーメッセージをEmacsに認識させるには?
 @cindex Compiler error messages, recognizing
 @cindex Recognizing non-standard compiler errors
 @cindex Regexps for recognizing compiler errors
@@ -1660,7 +1660,7 @@ server-edit})とタイプしてそれを示すことができる。@code{emacscl
 @code{compilation-error-regexp-alist}変数をカスタマイズしてください。
 
 @node Indenting switch statements
-@section How do I change the indentation for @code{switch}?
+@section @code{switch}のインデントを変更するには?
 @cindex @code{switch}, indenting
 @cindex Indenting of @code{switch}
 
@@ -1689,7 +1689,7 @@ f()
 @end lisp
 
 @node Customizing C and C++ indentation
-@section How to customize indentation in C, C@t{++}, and Java buffers?
+@section C、C@t{++}、Javaのバッファーのインデントをカスタマイズするには?
 @cindex Indentation, how to customize
 @cindex Customize indentation
 
@@ -1756,7 +1756,7 @@ C-o}をタイプした際にEmacsが表示した名前、@var{offset}は上記�
 @code{c-mode-hook}はCソースファイルの場合のみ実行されることに注意してください。C@t{++}には@code{c++-mode-hook}、Javaソースには@code{java-mode-hook}を使う等してください。同一のカスタマイズが、@code{cc-mode}によってサポートされる@emph{すべて}の言語にたいして効力をもつようにしたければ@code{c-mode-common-hook}を使用してください。
 
 @node Overwrite mode
-@section How do I make Emacs ``typeover'' or ``overwrite'' instead of inserting?
+@section Emacsに挿入ではなく``上書き''させるには?
 @cindex @key{Insert}
 @cindex @code{overwrite-mode}
 @cindex Overwriting existing text
@@ -1769,7 +1769,7 @@ overwrite-mode}で簡単に@code{overwrite-mode}からexitできます。
 いくつかのシステムでは@key{Insert}で@code{overwrite-mode}のオンオフが切り替わります。
 
 @node Turning off beeping
-@section How do I stop Emacs from beeping on a terminal?
+@section 端末でEmacsのビープ音を止めるには?
 @cindex Beeping, turning off
 @cindex Visible bell
 @cindex Bell, visible
@@ -1793,7 +1793,7 @@ bell)}を使うように伝えて、その視覚的ベルには何もセット�
 @end example
 
 @node Turning the volume down
-@section How do I turn down the bell volume in Emacs running under X?
+@section XでEmacsを実行中にベル音量を下げるには?
 @cindex Bell, volume of
 @cindex Volume of bell
 
@@ -1810,7 +1810,7 @@ usage:  xset [-display host:dpy] option ...
 @end example
 
 @node Automatic indentation
-@section How do I tell Emacs to automatically indent a new line to the indentation of the previous line?
+@section 新しい行を前の行に合わせて自動的にインデントするようEmacsに伝えるには?
 @cindex Indenting new lines
 @cindex New lines, indenting of
 @cindex Previous line, indenting according to
@@ -1838,7 +1838,7 @@ prefix)}として特定の文字シーケンスをすべての行のプレフィ
 that do not come with Emacs}を参照)。手引きとして``fill''、および``indent''のキーワードを調べてください。
 
 @node Matching parentheses
-@section How do I show which parenthesis matches the one I'm looking at?
+@section 自分が注目中のカッコに対応するカッコを表示するには?
 @cindex Parentheses, matching
 @cindex @file{paren.el}
 @cindex Highlighting matching parentheses
@@ -1886,7 +1886,7 @@ Lispコード。更にカーソルがカッコ上になければ通常通り単�
 @end itemize
 
 @node Hiding #ifdef lines
-@section In C mode, can I show just the lines that will be left after @code{#ifdef} commands are handled by the compiler?
+@section Cモードでコンパイラーが@code{#ifdef}処理後に残る行だけを表示するには?
 @cindex @code{#ifdef}, selective display of
 @cindex @code{hide-ifdef-mode}
 @cindex Hiding @code{#ifdef} text
@@ -1896,7 +1896,7 @@ Lispコード。更にカーソルがカッコ上になければ通常通り単�
 (マイナーモード)です。Emacsに同梱されている@file{cpp.el}も調査したいと思うかもしれません。
 
 @node Repeating commands
-@section How do I repeat a command as many times as possible?
+@section できるだけ沢山コマンドを繰り返すには?
 @cindex Repeating commands many times
 @cindex Commands, repeating many times
 @cindex @code{.}, equivalent to @code{vi} command
@@ -1904,7 +1904,7 @@ Lispコード。更にカーソルがカッコ上になければ通常通り単�
 最後のコマンドを繰り返すには@code{repeat}コマンド(@kbd{C-x
 z})を使用します。プレフィクス引数を前置すると、そのプレフィクスは繰り返すコマンドに適用されます。
 
-引き起こしを取得するためにミニバッファーを使用するコマンドは、@kbd{C-x @key{ESC} @key{ESC}}
+引数を取得するためにミニバッファーを使用するコマンドは、@kbd{C-x @key{ESC} @key{ESC}}
 (@code{repeat-complex-command})とタイプしても再呼び出しができます。@code{repeat-complex-command}では@kbd{M-p}と@kbd{M-n}(キーボードにあれば上矢印と下矢印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたものを走査することができます。
 
 一連のコマンドを繰り返すにはキーボードマクロを使用します。コマンドを呼び出すキーボードマクロの作成には@kbd{C-x (}と@kbd{C-x
@@ -1914,7 +1914,7 @@ Manual}を参照してください。
 最後の挿入/削除を再実行する@code{vi}の@code{.}コマンドが本当に欲しくて堪らなければ、それをサポートしているよう思われる、VIPERというEmacsに同梱の@code{vi}エミュレーションモードを使ってください。
 
 @node Valid X resources
-@section What are the valid X resource settings (i.e., stuff in .Xdefaults)?
+@section 有効なXリソース(.Xdefaults内の項目)は?
 @cindex Resources, X
 @cindex X resources
 @cindex Setting X resources
@@ -1924,7 +1924,7 @@ Manual}を参照してください。
 EmacsがXツールキットとともにコンパイルされていると仮定して、メニューバーのリソース名を確認するためにeditres(X11R5以降)のようなリソースエディターを使用することもできます。
 
 @node Evaluating Emacs Lisp code
-@section How do I execute (``evaluate'') a piece of Emacs Lisp code?
+@section Emacs Lispのコード片を実行(``evaluate'')するには?
 @cindex Evaluating Lisp code
 @cindex Lisp forms, evaluating
 
@@ -1959,7 +1959,7 @@ Lisp documentation}を参照のこと。
 @end itemize
 
 @node Changing the length of a Tab
-@section How do I change Emacs's idea of the @key{TAB} character's length?
+@section @key{TAB}文字の長さにたいするEmacsの解釈を変更するには?
 @cindex Tab length
 @cindex Length of tab character
 
@@ -1972,7 +1972,7 @@ Lisp documentation}を参照のこと。
 変数@code{tab-width}と変数@code{tab-stop-list}を混同しないでください。前者はリテラルの@key{TAB}文字の表示に使用されます。一方後者は特定のモードにおいて@key{TAB}文字を押下した際にどの文字が挿入されるかを制御します。
 
 @node Inserting text at the beginning of each line
-@section How do I insert <some text> at the beginning of every line?
+@section 各行の先頭に<何らかのテキスト>を挿入するには?
 @cindex Prefixing a region with some text
 @cindex Prefix character, inserting in mail/news replies
 @cindex Replies to mail/news, inserting a prefix character

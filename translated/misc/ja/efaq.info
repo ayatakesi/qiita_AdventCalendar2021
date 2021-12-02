@@ -1197,7 +1197,7 @@ Emacsのバージョン18と19の差はよりダイナミックなものでし�
 
 File: efaq.info,  Node: Common requests,  Next: Bugs and problems,  Prev: Status of Emacs,  Up: Top
 
-5 よくある質問
+5 よくある要望
 **************
 
 * Menu:
@@ -1395,8 +1395,8 @@ describe-variable’)を使用できます。
 
 File: efaq.info,  Node: Displaying the current line or column,  Next: Displaying the current file name in the titlebar,  Prev: Debugging a customization file,  Up: Common requests
 
-5.5 How do I make Emacs display the current line (or column) number?
-====================================================================
+5.5 Emacsに現在の行(や列)の番号を表示させるには?
+================================================
 
 デフォルトではEmacsはポイント位置のカレント行番号をモードラインに表示し
 ます。コマンド‘M-x line-number-mode’、または変数‘line-number-mode’でこの
@@ -1433,8 +1433,8 @@ mode-line-format <RET>’を使用する)。
 
 File: efaq.info,  Node: Displaying the current file name in the titlebar,  Next: Turning on abbrevs by default,  Prev: Displaying the current line or column,  Up: Common requests
 
-5.6 How can I modify the titlebar to contain the current file name?
-===================================================================
+5.6 現在のファイル名をタイトルバーに含めるには?
+===============================================
 
 Emacsフレームのタイトルバーのコンテンツは、変数‘mode-line-format’と同じ
 構造をもつ変数‘frame-title-format’によって制御されます(これらの変数につ
@@ -1456,8 +1456,8 @@ Emacsフレームのタイトルバーのコンテンツは、変数‘mode-line
 
 File: efaq.info,  Node: Turning on abbrevs by default,  Next: Associating modes with files,  Prev: Displaying the current file name in the titlebar,  Up: Common requests
 
-5.7 How do I turn on abbrevs by default just in mode MYMODE?
-============================================================
+5.7 モードMYMODEでデフォルトでabbrevをオンにするには?
+=====================================================
 
 Abbrevモードは略語をタイプするとそれを展開します。特定のバッファーでこれ
 をオンにするには‘M-x abbrev-mode’を使用します。デフォルトですべてのバッ
@@ -1480,8 +1480,8 @@ If your Emacs version is older then 22.1, you will also need to use:
 
 File: efaq.info,  Node: Associating modes with files,  Next: Replacing highlighted text,  Prev: Turning on abbrevs by default,  Up: Common requests
 
-5.8 How do I make Emacs use a certain major mode for certain files?
-===================================================================
+5.8 特定のファイルに特定のモードをEmacsに使用させるには?
+========================================================
 
 名前が拡張子‘.BAR’で終わるファイルすべてにたいして特定のモードFOOを使用
 したければ、以下でこれを行うことができるでしょう:
@@ -1502,8 +1502,8 @@ describe-variable’)を使用して調べてください。
 
 File: efaq.info,  Node: Replacing highlighted text,  Next: Controlling case sensitivity,  Prev: Associating modes with files,  Up: Common requests
 
-5.9 How can I replace highlighted text with what I type?
-========================================================
+5.9 ハイライトされたテキストをタイプしたテキストで置き換えるには?
+=================================================================
 
 以下のLispフォームを‘.emacs’ファイルに記述することにより自動的に開始でき
 る‘delete-selection-mode’を使用します。
@@ -1523,8 +1523,8 @@ File: efaq.info,  Node: Replacing highlighted text,  Next: Controlling case sens
 
 File: efaq.info,  Node: Controlling case sensitivity,  Next: Working with unprintable characters,  Prev: Replacing highlighted text,  Up: Common requests
 
-5.10 How do I control Emacs’s case-sensitivity when searching/replacing?
-========================================================================
+5.10 検索や置換の際にEmacsによる大文字小文字の区別を制御するには?
+=================================================================
 
 変数‘case-fold-search’の値は検索がcase(大文字小文字)を区別するかどうかを
 決定します:
@@ -1547,8 +1547,8 @@ File: efaq.info,  Node: Controlling case sensitivity,  Next: Working with unprin
 
 File: efaq.info,  Node: Working with unprintable characters,  Next: Searching for/replacing newlines,  Prev: Controlling case sensitivity,  Up: Common requests
 
-5.11 How do I search for, delete, or replace unprintable (eight-bit or control) characters?
-===========================================================================================
+5.11 プリント不可文字(8ビット文字やコントロール文字)の検索、削除、置換を行うには?
+=================================================================================
 
 たとえばバッファーには‘\237’のように出現する単一文字は‘C-s C-q 2 3 7’と
 タイプして検索できます。プリントできない*すべて*の文字を検索するには正規
@@ -1585,8 +1585,8 @@ File: efaq.info,  Node: Working with unprintable characters,  Next: Searching fo
 
 File: efaq.info,  Node: Searching for/replacing newlines,  Next: Yanking text in isearch,  Prev: Working with unprintable characters,  Up: Common requests
 
-5.12 How do I input a newline character in isearch or query-replace?
-====================================================================
+5.12 isearchやquery-replaceで改行を入力するには?
+================================================
 
 ‘C-q C-j’を使用してください。詳細については*note Special Input for
 Incremental Search: (emacs)Special Isearch.を参照してください。
@@ -1594,15 +1594,15 @@ Incremental Search: (emacs)Special Isearch.を参照してください。
 
 File: efaq.info,  Node: Yanking text in isearch,  Next: Wrapping words automatically,  Prev: Searching for/replacing newlines,  Up: Common requests
 
-5.13 How do I copy text from the kill ring into the search string?
-==================================================================
+5.13 killリングから検索文字列にテキストをコピーするには?
+========================================================
 
 ‘M-y’を使用してください。*note (emacs)Isearch Yank::を参照してください。
 
 
 File: efaq.info,  Node: Wrapping words automatically,  Next: Turning on auto-fill by default,  Prev: Yanking text in isearch,  Up: Common requests
 
-5.14 How do I make Emacs wrap words for me?
+5.14 自分用にEmacsに単語を折り返させるには?
 ===========================================
 
 ‘M-x auto-fill-mode’とタイプして‘auto-fill-mode’を有効にして使用してくだ
@@ -1613,7 +1613,7 @@ auto-fill by default::を参照してください。
 
 File: efaq.info,  Node: Turning on auto-fill by default,  Next: Changing load-path,  Prev: Wrapping words automatically,  Up: Common requests
 
-5.15 How do I turn on ‘auto-fill-mode’ by default?
+5.15 デフォルトで‘auto-fill-mode’をオンにするには?
 ==================================================
 
 1つのバッファーだけで‘auto-fill-mode’をオンに切り替えるには‘M-x
@@ -1634,8 +1634,8 @@ auto-fill-mode’を使用します。
 
 File: efaq.info,  Node: Changing load-path,  Next: Using an already running Emacs process,  Prev: Turning on auto-fill by default,  Up: Common requests
 
-5.16 How do I change ‘load-path’?
-=================================
+5.16 ‘load-path’を変更するには?
+===============================
 
 一般的には‘load-path’へは追加のみにするべきです。以下のようにしてディレ
 クトリー/DIR/SUBDIRをロードパスに追加できます:
@@ -1649,8 +1649,8 @@ File: efaq.info,  Node: Changing load-path,  Next: Using an already running Emac
 
 File: efaq.info,  Node: Using an already running Emacs process,  Next: Compiler error messages,  Prev: Changing load-path,  Up: Common requests
 
-5.17 How do I use an already running Emacs from another window?
-===============================================================
+5.17 別ウィンドウですでに実行中のEmacsを使用するには?
+=====================================================
 
 Emacsに同梱されている‘emacsclient’は新たなEmacsを開始せずに、すでに実行
 中のEmacsを使用してファイルを編集するためのものです。これはすでに実行中
@@ -1699,16 +1699,16 @@ Emacsに同梱されている‘emacsclient’は新たなEmacsを開始せず�
 
 File: efaq.info,  Node: Compiler error messages,  Next: Indenting switch statements,  Prev: Using an already running Emacs process,  Up: Common requests
 
-5.18 How do I make Emacs recognize my compiler’s funny error messages?
-======================================================================
+5.18 わたしのコンパイラーの変なエラーメッセージをEmacsに認識させるには?
+=======================================================================
 
 ‘compilation-error-regexp-alist’変数をカスタマイズしてください。
 
 
 File: efaq.info,  Node: Indenting switch statements,  Next: Customizing C and C++ indentation,  Prev: Compiler error messages,  Up: Common requests
 
-5.19 How do I change the indentation for ‘switch’?
-==================================================
+5.19 ‘switch’のインデントを変更するには?
+========================================
 
 以下のように‘switch’ステートメントをインデントしたいと思う人は大勢います
 :
@@ -1734,8 +1734,8 @@ To achieve this, add the following line to your ‘.emacs’:
 
 File: efaq.info,  Node: Customizing C and C++ indentation,  Next: Overwrite mode,  Prev: Indenting switch statements,  Up: Common requests
 
-5.20 How to customize indentation in C, C++, and Java buffers?
-==============================================================
+5.20 C、C++、Javaのバッファーのインデントをカスタマイズするには?
+================================================================
 
 Emacsの‘cc-mode’はインデントスタイルのカスタマイズ用に対話的な手順を提供
 しています。これはEmacsディストリビューションに同梱されている‘CC Mode’マ
@@ -1801,8 +1801,8 @@ _の言語にたいして効力をもつようにしたければ‘c-mode-common
 
 File: efaq.info,  Node: Overwrite mode,  Next: Turning off beeping,  Prev: Customizing C and C++ indentation,  Up: Common requests
 
-5.21 How do I make Emacs “typeover” or “overwrite” instead of inserting?
-========================================================================
+5.21 Emacsに挿入ではなく“上書き”させるには?
+===========================================
 
 ‘M-x overwrite-mode’ (マイナーモード)です。これは‘overwrite-mode’のオン
 オフを切り替えるのでもう一度‘M-x overwrite-mode’で簡単に
@@ -1814,8 +1814,8 @@ File: efaq.info,  Node: Overwrite mode,  Next: Turning off beeping,  Prev: Custo
 
 File: efaq.info,  Node: Turning off beeping,  Next: Turning the volume down,  Prev: Overwrite mode,  Up: Common requests
 
-5.22 How do I stop Emacs from beeping on a terminal?
-====================================================
+5.22 端末でEmacsのビープ音を止めるには?
+=======================================
 
 Martin R. Frank(訳注: Texinfoファイルには"martin@cc.gatech.edu"とコメン
 トされてました)は記しています:
@@ -1835,8 +1835,8 @@ Martin R. Frank(訳注: Texinfoファイルには"martin@cc.gatech.edu"とコメ
 
 File: efaq.info,  Node: Turning the volume down,  Next: Automatic indentation,  Prev: Turning off beeping,  Up: Common requests
 
-5.23 How do I turn down the bell volume in Emacs running under X?
-=================================================================
+5.23 XでEmacsを実行中にベル音量を下げるには?
+============================================
 
 Xウィンドウシステムではシェルコマンド‘xset’のより、すべてのプログラムで
 ベルの音量および間隔を調節できます。
@@ -1853,8 +1853,8 @@ Xウィンドウシステムではシェルコマンド‘xset’のより、す
 
 File: efaq.info,  Node: Automatic indentation,  Next: Matching parentheses,  Prev: Turning the volume down,  Up: Common requests
 
-5.24 How do I tell Emacs to automatically indent a new line to the indentation of the previous line?
-====================================================================================================
+5.24 新しい行を前の行に合わせて自動的にインデントするようEmacsに伝えるには?
+===========================================================================
 
 このような振る舞いはEmacs 20以降では(Textモードでは)自動で行われます。
 Emacs 20.2の‘etc/NEWS’ファイルからの引用します:
@@ -1881,8 +1881,8 @@ Packages that do not come with Emacs::を参照)。手引きとして“fill”�
 
 File: efaq.info,  Node: Matching parentheses,  Next: Hiding #ifdef lines,  Prev: Automatic indentation,  Up: Common requests
 
-5.25 How do I show which parenthesis matches the one I’m looking at?
-====================================================================
+5.25 自分が注目中のカッコに対応するカッコを表示するには?
+========================================================
 
 ‘.emacs’ファイルで‘show-paren-mode’を呼び出します。
 
@@ -1920,8 +1920,8 @@ File: efaq.info,  Node: Matching parentheses,  Next: Hiding #ifdef lines,  Prev:
 
 File: efaq.info,  Node: Hiding #ifdef lines,  Next: Repeating commands,  Prev: Matching parentheses,  Up: Common requests
 
-5.26 In C mode, can I show just the lines that will be left after ‘#ifdef’ commands are handled by the compiler?
-================================================================================================================
+5.26 Cモードでコンパイラーが‘#ifdef’処理後に残る行だけを表示するには?
+=====================================================================
 
 ‘M-x hide-ifdef-mode’ (マイナーモード)です。Emacsに同梱されている
 ‘cpp.el’も調査したいと思うかもしれません。
@@ -1929,18 +1929,18 @@ File: efaq.info,  Node: Hiding #ifdef lines,  Next: Repeating commands,  Prev: M
 
 File: efaq.info,  Node: Repeating commands,  Next: Valid X resources,  Prev: Hiding #ifdef lines,  Up: Common requests
 
-5.27 How do I repeat a command as many times as possible?
-=========================================================
+5.27 できるだけ沢山コマンドを繰り返すには?
+==========================================
 
 最後のコマンドを繰り返すには‘repeat’コマンド(‘C-x z’)を使用します。プレ
 フィクス引数を前置すると、そのプレフィクスは繰り返すコマンドに適用されま
 す。
 
-   引き起こしを取得するためにミニバッファーを使用するコマンドは、‘C-x
-<ESC> <ESC>’ (‘repeat-complex-command’)とタイプしても再呼び出しができま
-す。‘repeat-complex-command’では‘M-p’と‘M-n’(キーボードにあれば上矢印と
-下矢印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプした
-ものを走査することができます。
+   引数を取得するためにミニバッファーを使用するコマンドは、‘C-x <ESC>
+<ESC>’ (‘repeat-complex-command’)とタイプしても再呼び出しができます。
+‘repeat-complex-command’では‘M-p’と‘M-n’(キーボードにあれば上矢印と下矢
+印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたもの
+を走査することができます。
 
    一連のコマンドを繰り返すにはキーボードマクロを使用します。コマンドを
 呼び出すキーボードマクロの作成には‘C-x (’と‘C-x )’を使い、その後に‘C-x
@@ -1953,8 +1953,8 @@ e’とタイプします。*note (emacs)Keyboard Macros::を参照してくだ�
 
 File: efaq.info,  Node: Valid X resources,  Next: Evaluating Emacs Lisp code,  Prev: Repeating commands,  Up: Common requests
 
-5.28 What are the valid X resource settings (i.e., stuff in .Xdefaults)?
-========================================================================
+5.28 有効なXリソース(.Xdefaults内の項目)は?
+===========================================
 
 *note (emacs)X Resources::を参照してください。
 
@@ -1965,8 +1965,8 @@ File: efaq.info,  Node: Valid X resources,  Next: Evaluating Emacs Lisp code,  P
 
 File: efaq.info,  Node: Evaluating Emacs Lisp code,  Next: Changing the length of a Tab,  Prev: Valid X resources,  Up: Common requests
 
-5.29 How do I execute (“evaluate”) a piece of Emacs Lisp code?
-==============================================================
+5.29 Emacs Lispのコード片を実行(“evaluate”)するには?
+====================================================
 
 Emacs Lispの“フォーム(form)”を実行(Lispスラングでは“evaluate: 評価”)する
 には:
@@ -2001,8 +2001,8 @@ Emacs Lispの“フォーム(form)”を実行(Lispスラングでは“evaluate
 
 File: efaq.info,  Node: Changing the length of a Tab,  Next: Inserting text at the beginning of each line,  Prev: Evaluating Emacs Lisp code,  Up: Common requests
 
-5.30 How do I change Emacs’s idea of the <TAB> character’s length?
-==================================================================
+5.30 <TAB>文字の長さにたいするEmacsの解釈を変更するには?
+========================================================
 
 変数‘tab-width’のデフォルト値をセットします。たとえば10文字ごとに<TAB>ス
 トップをセットするには、‘.emacs’ファイルに以下を挿入してください:
@@ -2016,8 +2016,8 @@ File: efaq.info,  Node: Changing the length of a Tab,  Next: Inserting text at t
 
 File: efaq.info,  Node: Inserting text at the beginning of each line,  Next: Forcing the cursor to remain in the same column,  Prev: Changing the length of a Tab,  Up: Common requests
 
-5.31 How do I insert <some text> at the beginning of every line?
-================================================================
+5.31 各行の先頭に<何らかのテキスト>を挿入するには?
+==================================================
 
 これをバッファー全体にたいして行う場合には‘M-< M-x replace-regexp <RET>
 ^ <RET> your text <RET>’とタイプします。
@@ -4841,108 +4841,108 @@ Node: Using Customize67743
 Node: Colors on a TTY68795
 Node: Debugging a customization file73018
 Node: Displaying the current line or column74111
-Node: Displaying the current file name in the titlebar76550
-Node: Turning on abbrevs by default77979
-Node: Associating modes with files78912
-Node: Replacing highlighted text80087
-Node: Controlling case sensitivity81169
-Node: Working with unprintable characters82193
-Node: Searching for/replacing newlines84157
-Node: Yanking text in isearch84617
-Node: Wrapping words automatically85001
-Node: Turning on auto-fill by default85586
-Node: Changing load-path86538
-Node: Using an already running Emacs process87112
-Node: Compiler error messages89658
-Node: Indenting switch statements90045
-Node: Customizing C and C++ indentation90699
-Node: Overwrite mode94123
-Node: Turning off beeping94746
-Node: Turning the volume down95516
-Node: Automatic indentation96304
-Node: Matching parentheses98764
-Node: Hiding #ifdef lines100717
-Node: Repeating commands101226
-Node: Valid X resources102718
-Node: Evaluating Emacs Lisp code103304
-Node: Changing the length of a Tab105295
-Node: Inserting text at the beginning of each line106128
-Node: Forcing the cursor to remain in the same column107571
-Node: Forcing Emacs to iconify itself108268
-Node: Using regular expressions108700
-Node: Replacing text across multiple files109920
-Node: Documentation for etags111557
-Node: Disabling backups112017
-Node: Disabling auto-save-mode114434
-Node: Going to a line by number115679
-Node: Modifying pull-down menus117617
-Node: Deleting menus and menu options121836
-Node: Turning on syntax highlighting122783
-Node: Scrolling only one line126680
-Node: Editing MS-DOS files127458
-Node: Filling paragraphs with a single space128394
-Node: Escape sequences in shell output128833
-Node: Fullscreen mode on MS-Windows129870
-Node: Bugs and problems131145
-Node: Problems with very large files132420
-Node: ^M in the shell buffer133674
-Node: Problems with Shell Mode135882
-Node: Termcap/Terminfo entries for Emacs136763
-Node: Errors with init files138376
-Node: Emacs ignores X resources139460
-Node: Emacs ignores frame parameters141605
-Node: Editing files with $ in the name142700
-Node: Shell mode loses the current directory143228
-Node: Security risks with Emacs144434
-Node: Dired claims that no file is on this line148640
-Node: Compiling and installing Emacs149840
-Node: Installing Emacs150103
-Node: Problems building Emacs153276
-Node: Finding Emacs and related packages154136
-Node: Finding Emacs on the Internet154683
-Node: Finding a package with particular functionality155306
-Node: Packages that do not come with Emacs156796
-Node: Spell-checkers159959
-Node: Current GNU distributions160445
-Node: Difference between Emacs and XEmacs160943
-Node: Emacs for minimalists163425
-Node: Emacs for MS-DOS164105
-Node: Emacs for MS-Windows165384
-Node: Emacs for GNUstep165810
-Node: Emacs for macOS166227
-Node: Key bindings166609
-Node: Binding keys to commands167272
-Node: Invalid prefix characters170072
-Node: Terminal setup code works after Emacs has begun171135
-Node: Working with function and arrow keys172792
-Node: X key translations for Emacs173433
-Node: Backspace invokes help174526
-Node: Swapping keys179383
-Node: Producing C-XXX with the keyboard180875
-Node: No Meta key181697
-Node: No Escape key182412
-Node: Compose Character183127
-Node: Binding combinations of modifiers and function keys183719
-Node: Meta key does not work in xterm185280
-Node: ExtendChar key does not work as Meta188226
-Node: SPC no longer completes file names189355
-Node: Alternate character sets190227
-Node: Emacs does not display 8-bit characters190527
-Node: Inputting eight-bit characters191524
-Node: Right-to-left alphabets192054
-Node: How to add fonts192630
-Node: Mail and news198046
-Node: Changing the included text prefix198564
-Node: Saving a copy of outgoing mail199382
-Node: Expanding aliases when sending mail200564
-Node: Sorting the messages in an Rmail folder202119
-Node: Rmail writes to /var/spool/mail202532
-Node: Replying to the sender of a message203783
-Node: Automatically starting a mail or news reader204989
-Node: Reading news with Emacs205819
-Node: Making Gnus faster206220
-Node: Catching up in all newsgroups207041
-Node: Concept index207511
+Node: Displaying the current file name in the titlebar76528
+Node: Turning on abbrevs by default77938
+Node: Associating modes with files78875
+Node: Replacing highlighted text80051
+Node: Controlling case sensitivity81181
+Node: Working with unprintable characters82216
+Node: Searching for/replacing newlines84196
+Node: Yanking text in isearch84627
+Node: Wrapping words automatically85014
+Node: Turning on auto-fill by default85615
+Node: Changing load-path86581
+Node: Using an already running Emacs process87158
+Node: Compiler error messages89705
+Node: Indenting switch statements90122
+Node: Customizing C and C++ indentation90769
+Node: Overwrite mode94222
+Node: Turning off beeping94798
+Node: Turning the volume down95556
+Node: Automatic indentation96318
+Node: Matching parentheses98760
+Node: Hiding #ifdef lines100712
+Node: Repeating commands101162
+Node: Valid X resources102633
+Node: Evaluating Emacs Lisp code103173
+Node: Changing the length of a Tab105156
+Node: Inserting text at the beginning of each line105985
+Node: Forcing the cursor to remain in the same column107421
+Node: Forcing Emacs to iconify itself108118
+Node: Using regular expressions108550
+Node: Replacing text across multiple files109770
+Node: Documentation for etags111407
+Node: Disabling backups111867
+Node: Disabling auto-save-mode114284
+Node: Going to a line by number115529
+Node: Modifying pull-down menus117467
+Node: Deleting menus and menu options121686
+Node: Turning on syntax highlighting122633
+Node: Scrolling only one line126530
+Node: Editing MS-DOS files127308
+Node: Filling paragraphs with a single space128244
+Node: Escape sequences in shell output128683
+Node: Fullscreen mode on MS-Windows129720
+Node: Bugs and problems130995
+Node: Problems with very large files132270
+Node: ^M in the shell buffer133524
+Node: Problems with Shell Mode135732
+Node: Termcap/Terminfo entries for Emacs136613
+Node: Errors with init files138226
+Node: Emacs ignores X resources139310
+Node: Emacs ignores frame parameters141455
+Node: Editing files with $ in the name142550
+Node: Shell mode loses the current directory143078
+Node: Security risks with Emacs144284
+Node: Dired claims that no file is on this line148490
+Node: Compiling and installing Emacs149690
+Node: Installing Emacs149953
+Node: Problems building Emacs153126
+Node: Finding Emacs and related packages153986
+Node: Finding Emacs on the Internet154533
+Node: Finding a package with particular functionality155156
+Node: Packages that do not come with Emacs156646
+Node: Spell-checkers159809
+Node: Current GNU distributions160295
+Node: Difference between Emacs and XEmacs160793
+Node: Emacs for minimalists163275
+Node: Emacs for MS-DOS163955
+Node: Emacs for MS-Windows165234
+Node: Emacs for GNUstep165660
+Node: Emacs for macOS166077
+Node: Key bindings166459
+Node: Binding keys to commands167122
+Node: Invalid prefix characters169922
+Node: Terminal setup code works after Emacs has begun170985
+Node: Working with function and arrow keys172642
+Node: X key translations for Emacs173283
+Node: Backspace invokes help174376
+Node: Swapping keys179233
+Node: Producing C-XXX with the keyboard180725
+Node: No Meta key181547
+Node: No Escape key182262
+Node: Compose Character182977
+Node: Binding combinations of modifiers and function keys183569
+Node: Meta key does not work in xterm185130
+Node: ExtendChar key does not work as Meta188076
+Node: SPC no longer completes file names189205
+Node: Alternate character sets190077
+Node: Emacs does not display 8-bit characters190377
+Node: Inputting eight-bit characters191374
+Node: Right-to-left alphabets191904
+Node: How to add fonts192480
+Node: Mail and news197896
+Node: Changing the included text prefix198414
+Node: Saving a copy of outgoing mail199232
+Node: Expanding aliases when sending mail200414
+Node: Sorting the messages in an Rmail folder201969
+Node: Rmail writes to /var/spool/mail202382
+Node: Replying to the sender of a message203633
+Node: Automatically starting a mail or news reader204839
+Node: Reading news with Emacs205669
+Node: Making Gnus faster206070
+Node: Catching up in all newsgroups206891
+Node: Concept index207361
 
 End Tag Table
 
