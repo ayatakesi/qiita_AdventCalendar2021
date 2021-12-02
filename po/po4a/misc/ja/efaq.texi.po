@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-12-02 20:18+0900\n"
+"PO-Revision-Date: 2021-12-03 07:35+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -5005,7 +5005,7 @@ msgstr "最後のコマンドを繰り返すには@code{repeat}コマンド(@kbd
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2363
 msgid "You can also type @kbd{C-x @key{ESC} @key{ESC}} (@code{repeat-complex-command}) to reinvoke commands that used the minibuffer to get arguments.  In @code{repeat-complex-command} you can type @kbd{M-p} and @kbd{M-n} (and also up-arrow and down-arrow, if your keyboard has these keys) to scan through all the different complex commands you've typed."
-msgstr "引き起こしを取得するためにミニバッファーを使用するコマンドは、@kbd{C-x @key{ESC} @key{ESC}} (@code{repeat-complex-command})とタイプしても再呼び出しができます。@code{repeat-complex-command}では@kbd{M-p}と@kbd{M-n}(キーボードにあれば上矢印と下矢印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたものを走査することができます。"
+msgstr "引数を取得するためにミニバッファーを使用するコマンドは、@kbd{C-x @key{ESC} @key{ESC}} (@code{repeat-complex-command})とタイプしても再呼び出しができます。@code{repeat-complex-command}では@kbd{M-p}と@kbd{M-n}(キーボードにあれば上矢印と下矢印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたものを走査することができます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2367
