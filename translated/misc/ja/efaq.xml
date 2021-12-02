@@ -1,0 +1,3323 @@
+<?xml version="1.0"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN" "http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd" [
+  <!ENTITY tex "TeX">
+  <!ENTITY latex "LaTeX">
+]>
+<book id="efaq.xml" lang="en">
+<title>GNU Emacs FAQ</title>
+<!-- =========================================================================== -->
+<!-- -->
+<!-- This file was generated with po4a. Translate the source file. -->
+<!-- -->
+<!-- =========================================================================== -->
+<!-- Emacs documentation style settings -->
+<!-- These two require Texinfo 5.0 or later, so we use the older -->
+<!-- equivalent @set variables supported in 4.11 and hence -->
+<!-- %**end of header -->
+
+<!-- =========================================================================== -->
+<!-- -->
+<!-- This file was generated with po4a. Translate the source file. -->
+<!-- -->
+<!-- =========================================================================== -->
+<!-- configure generates emacsver.texi from emacsver.texi.in via a Makefile rule -->
+
+<!-- This file is maintained by Romain Francoise <rfrancoise@gnu.org>. -->
+<!-- Feel free to install changes without prior permission (but I'd -->
+<!-- appreciate a notice if you do). -->
+
+<bookinfo><legalnotice><para>Copyright &#169; 2001&#8211;2021 Free Software Foundation, Inc.
+ Copyright
+&#169; 1994, 1995, 1996, 1997, 1998, 1999, 2000 Reuven M. Lerner
+
+Copyright &#169; 1992, 1993 Steven Byrnes
+ Copyright &#169;
+1990, 1991, 1992 Joseph Brian Wells
+
+</para>
+<blockquote><para>This list of frequently asked questions about GNU Emacs with answers
+(&#8220;FAQ&#8221;) may be translated into other languages, transformed into other
+formats (e.g., Texinfo, Info, HTML, PDF), and updated with new information.
+</para>
+<para>The same conditions apply to any derivative of the FAQ as apply to the FAQ
+itself.  Every copy of the FAQ must include this notice or an approved
+translation, information on who is currently maintaining the FAQ and how to
+contact them (including their e-mail address), and information on where the
+latest version of the FAQ is archived (including FTP information).
+</para>
+<para>The FAQ may be copied and redistributed under these conditions, except that
+the FAQ may not be embedded in a larger literary work unless that work
+itself allows free copying and redistribution.
+</para>
+<para>[This version has been heavily edited since it was included in the Emacs
+distribution in 1999.]
+</para></blockquote></legalnotice></bookinfo>
+
+<!-- The @titlepage stuff only appears in the printed version -->
+GNU Emacs FAQ
+
+<!-- The following two commands start the copyright page. -->
+<para>Copyright &#169; 2001&#8211;2021 Free Software Foundation, Inc.
+ Copyright
+&#169; 1994, 1995, 1996, 1997, 1998, 1999, 2000 Reuven M. Lerner
+
+Copyright &#169; 1992, 1993 Steven Byrnes
+ Copyright &#169;
+1990, 1991, 1992 Joseph Brian Wells
+
+</para>
+<blockquote><para>This list of frequently asked questions about GNU Emacs with answers
+(&#8220;FAQ&#8221;) may be translated into other languages, transformed into other
+formats (e.g., Texinfo, Info, HTML, PDF), and updated with new information.
+</para>
+<para>The same conditions apply to any derivative of the FAQ as apply to the FAQ
+itself.  Every copy of the FAQ must include this notice or an approved
+translation, information on who is currently maintaining the FAQ and how to
+contact them (including their e-mail address), and information on where the
+latest version of the FAQ is archived (including FTP information).
+</para>
+<para>The FAQ may be copied and redistributed under these conditions, except that
+the FAQ may not be embedded in a larger literary work unless that work
+itself allows free copying and redistribution.
+</para>
+<para>[This version has been heavily edited since it was included in the Emacs
+distribution in 1999.]
+</para></blockquote>
+
+<chapter label="" id="Top">
+<title>The GNU Emacs FAQ</title>
+
+<para>これはGNU EmacsのFAQ(Frequently Asked Questions: よくある質問)です。
+</para>
+<para>このFAQはGNU Emacsの一部として保守されています。何か間違いを見つけたり提案がある場合には、それらを報告するために<userinput>M-x
+report-emacs-bug</userinput>を使うようお願いします。
+</para>
+<para>これはEmacs
+27.2とともに配布されているバージョンのFAQであり、主にそのバージョンについて記述しています。それより古いバージョンについての情報があったとしても、(今となっては歴史的な関心のためだけとなった)非常に古いリリースに関する詳細は削除されています。これらに興味がある場合には古いバージョンのEmacsに同梱されているバージョンのFAQ、あるいはこのドキュメントのEmacsソースレポジトリのヒストリーを参照してください。
+</para>
+<para>Emacsのリリースバージョンはとても安定しているので、常に最新リリースの実行をお勧めします。
+</para>
+<para>このFAQは非常に頻繁に更新されている訳ではありません。Emacsについての疑問がある場合には、Emacsマニュアルが最良の出発点であることが多々あります。
+</para>
+<para>Copyright &#169; 2001&#8211;2021 Free Software Foundation, Inc.
+ Copyright
+&#169; 1994, 1995, 1996, 1997, 1998, 1999, 2000 Reuven M. Lerner
+
+Copyright &#169; 1992, 1993 Steven Byrnes
+ Copyright &#169;
+1990, 1991, 1992 Joseph Brian Wells
+
+</para>
+<blockquote><para>This list of frequently asked questions about GNU Emacs with answers
+(&#8220;FAQ&#8221;) may be translated into other languages, transformed into other
+formats (e.g., Texinfo, Info, HTML, PDF), and updated with new information.
+</para>
+<para>The same conditions apply to any derivative of the FAQ as apply to the FAQ
+itself.  Every copy of the FAQ must include this notice or an approved
+translation, information on who is currently maintaining the FAQ and how to
+contact them (including their e-mail address), and information on where the
+latest version of the FAQ is archived (including FTP information).
+</para>
+<para>The FAQ may be copied and redistributed under these conditions, except that
+the FAQ may not be embedded in a larger literary work unless that work
+itself allows free copying and redistribution.
+</para>
+<para>[This version has been heavily edited since it was included in the Emacs
+distribution in 1999.]
+</para></blockquote>
+
+<!-- - -->
+</chapter>
+<chapter label="1" id="FAQ-notation">
+<title>FAQ notation</title>
+<indexterm role="cp"><primary>FAQ notation</primary></indexterm>
+
+<para>このチャプターではGNU Emacs
+FAQ、並びにEmacsドキュメントで使用する表記について説明します。これがFAQを読む最初の機会の場合、あるいはFAQで使用されている表記や用語について混乱したらこのセクションを参照してください。
+</para>
+
+<sect1 label="1.1" id="Basic-keys">
+<title>What do these mean: <userinput>C-h</userinput>, <userinput>C-M-a</userinput>, <keycap>RET</keycap>, <userinput><keycap>ESC</keycap> a</userinput>, etc.?</title>
+<indexterm role="cp"><primary>Basic keys</primary></indexterm>
+<indexterm role="cp"><primary>Control key, notation for</primary></indexterm>
+<indexterm role="cp"><primary><keycap>Meta</keycap> key, notation for</primary></indexterm>
+<indexterm role="cp"><primary>Control-Meta characters, notation for</primary></indexterm>
+<indexterm role="cp"><primary><userinput>C-h</userinput>, definition of</primary></indexterm>
+<indexterm role="cp"><primary><userinput>C-M-h</userinput>, definition of</primary></indexterm>
+<indexterm role="cp"><primary><keycap>DEL</keycap>, definition of</primary></indexterm>
+<indexterm role="cp"><primary><keycap>ESC</keycap>, definition of</primary></indexterm>
+<indexterm role="cp"><primary><keycap>LFD</keycap>, definition of</primary></indexterm>
+<indexterm role="cp"><primary><keycap>RET</keycap>, definition of</primary></indexterm>
+<indexterm role="cp"><primary><keycap>SPC</keycap>, definition of</primary></indexterm>
+<indexterm role="cp"><primary><keycap>TAB</keycap>, definition of</primary></indexterm>
+<indexterm role="cp"><primary>Notation for keys</primary></indexterm>
+
+<itemizedlist>
+<listitem><para><userinput>C-x</userinput>:<keycap>Control</keycap>キーを押したまま<userinput>x</userinput>キーを押下する
+</para>
+</listitem><listitem><para><userinput>M-x</userinput>: <keycap>Meta</keycap>キー(コンピューターに<keycap>Meta</keycap>キーがなければsee <link linkend="No-Meta-key">No Meta
+key</link>を参照)を押したまま<userinput>x</userinput>キーを押下する
+</para>
+</listitem><listitem><para><userinput>M-C-x</userinput>: <keycap>Control</keycap>と<keycap>Meta</keycap>の両方を押したまま<userinput>x</userinput>キーを押下する
+</para>
+</listitem><listitem><para><userinput>C-M-x</userinput>: 上記と同義
+</para>
+</listitem><listitem><para><keycap>LFD</keycap>: ラインフィードまたは改行; <userinput>C-j</userinput>と同じ
+</para>
+</listitem><listitem><para><keycap>RET</keycap>: <keycap>Return</keycap>のこと、<keycap>Enter</keycap>と記される場合もあり; <userinput>C-m</userinput>と同じ
+</para>
+</listitem><listitem><para><keycap>DEL</keycap>: <keycap>Delete</keycap>のこと、通常は<keycap>Backspace</keycap>と<emphasis role="bold">同じではない</emphasis>; <userinput>C-?</userinput>と同じ
+(deleteでEmacsのヘルプが呼び出される場合には<link linkend="Backspace-invokes-help">Backspace invokes help</link>を参照)
+</para>
+</listitem><listitem><para><keycap>ESC</keycap>: Escapeのこと; <userinput>C-[</userinput>と同じ
+</para>
+</listitem><listitem><para><keycap>TAB</keycap>: Tabのこと; <userinput>C-i</userinput>と同じ
+</para>
+</listitem><listitem><para><keycap>SPC</keycap>: Spaceバー
+</para>
+</listitem></itemizedlist>
+<para>1つのキー(およびいくつかの単一キーシーケンス)より長いキーシーケンスは以下のようにクォート内部や行にその文字自体を記述します:
+</para>
+<literallayout>  <userinput>M-x frobnicate-while-foo <keycap>RET</keycap></userinput>
+</literallayout>
+<para>このようなキーシーケンス内にある実際のスペースはすべて無視する必要があります; 実際にスペースキーの押下を意味するのは<keycap>SPC</keycap>だけです。
+</para>
+<para><userinput>C-x</userinput>
+(<userinput>C-?</userinput>は例外)により送信される<acronym>ASCII</acronym>コードは単に<userinput>x</userinput>を押下時に送信される値から96(大文字の<userinput>X</userinput>では64)を減じた値であり、これは0から31になるでしょう。UnixおよびGNU/Linuxの端末においては、<userinput>M-x</userinput>が送信する<acronym>ASCII</acronym>コードは単に<userinput>x</userinput>を押下時に送信される値に128を加えた値になります。基本的には<keycap>Control</keycap>はビット5とビット6をオフにして、<keycap>Meta</keycap>はビット7をオンにします<footnote><para>DOSおよびWindowsの端末では<keycap>Meta</keycap>キー押下時にビット7をセットしません。</para></footnote>。
+</para>
+<!-- FIXME I cannot understand the previous sentence. -->
+<para><userinput>C-?</userinput>
+(別名<keycap>DEL</keycap>)は<acronym>ASCII</acronym>コードの127です。127はビットの5と6がどちらもオンなので、<userinput>C-?</userinput>を&#8220;control&#8221;キーと呼ぶのは誤った呼び方です。更にほとんどありませんが<userinput>C-?</userinput>が<acronym>ASCII</acronym>コードの127を生成するキーボードも存在します。
+</para>
+<para>section &#8220;Keys&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+</sect1>
+<sect1 label="1.2" id="Extended-commands">
+<title>What does <filename>M-x <replaceable>command</replaceable></filename> mean?</title>
+<indexterm role="cp"><primary>Extended commands</primary></indexterm>
+<indexterm role="cp"><primary>Commands, extended</primary></indexterm>
+<indexterm role="cp"><primary><userinput>M-x</userinput>, meaning of</primary></indexterm>
+
+<para><userinput>M-x
+<replaceable>command</replaceable></userinput>は<userinput>M-x</userinput>をタイプしてからコマンドの名前、その後に<keycap>RET</keycap>をタイプする(<userinput>M-x</userinput>や<keycap>RET</keycap>の意味があやふやならSee <link linkend="Basic-keys">Basic
+keys</link>を参照)。
+</para>
+<para>(デフォルトでは)<userinput>M-x</userinput>はコマンド<literal>execute-extended-command</literal>を呼び出します。このコマンドによってコマンド名を覚えていれば任意のEmacsコマンドを実行できます。コマンド名を覚えることができなければ補完には<keycap>TAB</keycap>や<keycap>SPC</keycap>、利用可能なコマンドの一覧は<userinput>?</userinput>、以前に入力したコマンドの確認には<userinput>M-p</userinput>と<userinput>M-n</userinput>(または上下の矢印)をタイプできます。Emacsの<firstterm>コマンド(command)</firstterm>とは<firstterm>インタラクティブ(interactive:
+対話的)</firstterm>なEmacs関数のことです。
+</para>
+<indexterm role="cp"><primary><keycap>Do</keycap> key</primary></indexterm>
+<para>システム管理者によって<literal>execute-extended-command</literal>呼び出しが別のキーにバインドされているかもしれません。<userinput>Do</userinput>とラベル付けされたキーをもつようなキーボードなら、これを行うための良い候補になります。
+</para>
+<para>非インタラクティブなEmacs関数の実行が必要なら<link linkend="Evaluating-Emacs-Lisp-code">Evaluating Emacs Lisp code</link>を参照してください。
+</para>
+</sect1>
+<sect1 label="1.3" id="Emacs-manual">
+<title>How do I read topic XXX in the Emacs manual?</title>
+<indexterm role="cp"><primary>Emacs manual, reading topics in</primary></indexterm>
+<indexterm role="cp"><primary>Reading topics in the Emacs manual</primary></indexterm>
+<indexterm role="cp"><primary>Finding topics in the Emacs manual</primary></indexterm>
+<indexterm role="cp"><primary>Info, finding topics in</primary></indexterm>
+
+<para>わたしたちがEmacsマニュアル内のある<replaceable>topic</replaceable>を参照する際には、<userinput>C-h i m emacs <keycap>RET</keycap> m
+<replaceable>topic</replaceable> <keycap>RET</keycap></userinput>とタイプすれば(壊れていなければ)そのマニュアルノードの中を読むことができます。
+</para>
+<para>これはInfo、つまりGNUハイパーテキストドキュメントブラウザを呼び出します。Infoの使用方法をまだご存知なければ、Info内で<userinput>?</userinput>をタイプしてください。
+</para>
+<para>わたしたちが<replaceable>topic</replaceable>:<replaceable>subtopic</replaceable>で参照する場合には<userinput>C-h i m emacs <keycap>RET</keycap> m
+<replaceable>topic</replaceable> <keycap>RET</keycap> m <replaceable>subtopic</replaceable> <keycap>RET</keycap></userinput>とタイプしてください。
+</para>
+<para>これらのコマンドが期待した通りに機能しなければ、システム管理者がInfoファイルをインストールしていないか、正しくインストールされていないかもしれません。この場合には苦情を申し立てるべきでしょう。
+</para>
+<para>Info内でこのFAQを読んでいるなら、リファレンス上で単に<keycap>RET</keycap>を押下すればフォローできます。
+</para>
+<para>Emacsマニュアルのハードコードをご所望ならSee <link linkend="Getting-a-printed-manual">Getting a printed manual</link>を参照してください。
+</para>
+</sect1>
+<sect1 label="1.4" id="File_002dname-conventions">
+<title>What are <filename>src/config.h</filename>, <filename>site-lisp/default.el</filename>, etc.?</title>
+<indexterm role="cp"><primary>File-name conventions</primary></indexterm>
+<indexterm role="cp"><primary>Conventions for file names</primary></indexterm>
+<indexterm role="cp"><primary>Directories and files that come with Emacs</primary></indexterm>
+
+<para>これらはEmacsとともに配布されるファイルです。Emacsディストリビューションは<filename>etc</filename>、<filename>lisp</filename>、<filename>src</filename>等のサブディレクトリーに分かれています。これらの内のいくつか(<filename>etc</filename>や<filename>lisp</filename>など)はインストール済みEmacsとソースの両方に存在しますが、ソース内でのみ見いだせるものもあります(<filename>src</filename>など)。
+</para>
+<para>ineEmacsを使っているもののシステム上のどこにあるか判らない場合には、Emacsを起動して<userinput>C-h v data-directory
+<keycap>RET</keycap></userinput>とタイプしてください。表示されるディレクトリー名は、<filename>etc</filename>ディレクトリーがインストールされたフルパスになるでしょう(このフルパスはEmacs変数<literal>data-directory</literal>に記録されており、<userinput>C-h
+v</userinput>でこの値と変数のドキュメントが表示される)。
+</para>
+<para>Infoディレクトリーはの場所(Infoドキュメントが格納されている場所)変数<literal>Info-default-directory-list</literal>に保持されています。この変数の値(ディレクトリー名のリスト)を確認するには<userinput>C-h
+v Info-default-directory-list
+<keycap>RET</keycap></userinput>を使用してください。このリスト内にある最後のディレクトリーに、恐らくもっとも多くのInfoファイルが格納されているでしょう。デフォルトではEmacsのInfoドキュメントは<filename>/usr/local/share/info</filename>にあります。
+</para>
+<para><filename>etc</filename>ディレクトリー内にあるいくつかのファイルに関する情報については<link linkend="Informational-files-for-Emacs">Informational files for
+Emacs</link>を参照してください。
+</para>
+</sect1>
+<sect1 label="1.5" id="Common-acronyms">
+<title>What are FSF, GNU, RMS, and GPL?</title>
+<indexterm role="cp"><primary>FSF, definition of</primary></indexterm>
+<indexterm role="cp"><primary>GNU, definition of</primary></indexterm>
+<indexterm role="cp"><primary>RMS, definition of</primary></indexterm>
+<indexterm role="cp"><primary>Stallman, Richard, acronym for</primary></indexterm>
+<indexterm role="cp"><primary>Richard Stallman, acronym for</primary></indexterm>
+<indexterm role="cp"><primary>GPL, definition of</primary></indexterm>
+<indexterm role="cp"><primary>Acronyms, definitions for</primary></indexterm>
+<indexterm role="cp"><primary>Common acronyms, definitions for</primary></indexterm>
+
+<variablelist>
+<varlistentry><term>FSF
+</term><listitem><para>フリーソフトウェア財団(Free Software Foundation)
+</para>
+</listitem></varlistentry><varlistentry><term>GNU
+</term><listitem><para>GNU&#8217;s Not Unix(GNUはUnixではない)
+</para>
+</listitem></varlistentry><varlistentry><term>RMS
+</term><listitem><para>Richard Matthew Stallman
+</para>
+</listitem></varlistentry><varlistentry><term>GPL
+</term><listitem><para>GNU 一般公衆利用許諾書(GNU GENERAL PUBLIC LICENSE)
+</para>
+</listitem></varlistentry></variablelist>
+<para>フリーソフトウェア財団(Free Software Foundation)のタイトルにある&#8220;フリー(free)&#8221;とは、&#8220;ゼロコスト(zero
+cost)&#8221;ではなく&#8220;自由(freedom)&#8221;を意図した単語です。GPLの対象となるソフトウェアにたいして、もし望むなら誰でも対価を請求できます。とはいえ実際にはGPLが課した自由により、誰でもGPLソフトウェアの再販や譲渡を行う権利を有するので、常に誰か他の人からより少ない金額でソフトウェアを入手できることから低価格へとつながります。
+</para>
+<!-- - -->
+</sect1>
+</chapter>
+<chapter label="2" id="General-questions">
+<title>General questions</title>
+<indexterm role="cp"><primary>General questions</primary></indexterm>
+
+<para>このチャプターではEmacs、フリーソフトウェア財団や関連する組織にたいする一般的な問いが含まれています。
+</para>
+
+<sect1 label="2.1" id="Real-meaning-of-copyleft">
+<title>What is the real legal meaning of the GNU copyleft?</title>
+<indexterm role="cp"><primary>Copyleft, real meaning of</primary></indexterm>
+<indexterm role="cp"><primary>GPL, real meaning of</primary></indexterm>
+<indexterm role="cp"><primary>General Public License, real meaning of</primary></indexterm>
+<indexterm role="cp"><primary>Discussion of the GPL</primary></indexterm>
+
+<para>GNU
+一般公衆利用許諾書、いわゆるGPL(コピーレフト)の真の法的な意味合いは、裁判官がその有効性と範囲を裁定した場合にのみ明らかになります。判例として定められるようなGPLが関与する著作権侵害の訴訟はこれまでに一度もありませんでした。GPL条件への違反によって企業への訴訟が起こされましたが、これまでのところすべてが法廷外で(原告に有利に)和解されています。この問題に関しての議論は、どうかこの問題について大々的に罵り合うために作成されたニュースグループ<ulink url="news:gnu.misc.discuss">news:gnu.misc.discuss</ulink>で行ってください。
+</para>
+<para>RMSは記しています:
+</para>
+<blockquote><para>GNUコピーレフトの法的な意味は、Emacsがフリーソフトウェアプロジェクトであり、Emacsに関連する作業もフリーソフトウェアであるべくだという精神ほど重要ではありません。&#8220;フリー(free)&#8221;とはすべてのユーザーがEmacsを学び、共有して、変更や改善を行う自由(freedom)をもっているという意味です。すべての人がこの自由を有することを保証するために、あなたがEmacsのあるバージョンや関連プログラムを配布する際には、それを受け取る人にソースコードも渡すことによって、あなたが楽しんだのと同じ自由を分け与えてください。
+</para></blockquote>
+</sect1>
+<sect1 label="2.2" id="Guidelines-for-newsgroup-postings">
+<title>What are appropriate messages for the various Emacs newsgroups?</title>
+<indexterm role="cp"><primary>Newsgroups, appropriate messages for</primary></indexterm>
+<indexterm role="cp"><primary>GNU newsgroups, appropriate messages for</primary></indexterm>
+<indexterm role="cp"><primary>Usenet groups, appropriate messages for</primary></indexterm>
+<indexterm role="cp"><primary>Mailing lists, appropriate messages for</primary></indexterm>
+<indexterm role="cp"><primary>Posting messages to newsgroups</primary></indexterm>
+
+<indexterm role="cp"><primary>GNU mailing lists</primary></indexterm>
+<para>Emacsメーリングリストのは<ulink url="https://savannah.gnu.org/mail/?group=emacs">the Emacs
+Savannah page</ulink>に記述があります。それらのうちのいくつかはニュースグループへゲートウェイされています。
+</para>
+<para>Emacsプログラム全般に関する議論はニュースグループ<ulink url="news:comp.emacs">news:comp.emacs</ulink>、<ulink url="news:gnu.emacs.help">news:gnu.emacs.help</ulink>はGNU
+Emacsに特化したニュースグループです。したがってある問いにたいして適切なニュースグループは1つだけなので、両方のグループへのクロスポストには意味がありません。
+</para>
+<para>問題について大いに罵り合うために作成された<ulink url="news:gnu.misc.discuss">news:gnu.misc.discuss</ulink>を除いて、&#8220;非フリー(non-free)&#8221;なソフトウェアを推奨するようなメッセージは<literal>gnu.*</literal>ニュースグループのすべてにおいて受け入れ難いものとみなされます。&#8220;非フリー&#8221;なソフトウェアにはエンドユーザーが自由にソースコードを改変したり拡張機能の取り替えができないすべてのソフトウェアが含まれます。そのようなソフトウェアを推奨するフォローアップを投稿する際には、&#8216;<literal>Newsgroups:</literal>&#8217;行から<literal>gnu.*</literal>グループを削除するよう注意してください。
+</para>
+<para><ulink url="news:gnu.emacs.bug">news:gnu.emacs.bug</ulink>はバグレポートを目にする場所ですが、このニュースグループに直接バグレポートを投稿することは避けてください(<link linkend="Reporting-bugs">Reporting
+bugs</link>を参照)。
+</para>
+<para>最後にGNUのメーリングリストやニュースグループに投稿する前に<ulink url="https://www.gnu.org/philosophy/kind-communication.html">GNU Kind Communications Guidelines</ulink>を一読することをお勧めします。
+</para>
+</sect1>
+<sect1 label="2.3" id="Newsgroup-archives">
+<title>Where can I get old postings to <ulink url="news:gnu.emacs.help">news:gnu.emacs.help</ulink> and other GNU groups?</title>
+<indexterm role="cp"><primary>Archived postings from <literal>gnu.emacs.help</literal></primary></indexterm>
+<indexterm role="cp"><primary>Usenet archives for GNU groups</primary></indexterm>
+<indexterm role="cp"><primary>Old Usenet postings for GNU groups</primary></indexterm>
+
+<para>網羅する範囲において意図していない齟齬があるかもしれませんが、FSFはGNUメーリングリストすべてのアーカイブを長年保守してきました。このアーカイブが<ulink url="https://lists.gnu.org/r/">the GNU mail archive</ulink>でウェブ上で閲覧できます。
+</para>
+<para><ulink url="http://groups.google.com/groups/dir?q=gnu&amp;">Google</ulink>のようなウェブベースのUsenet検索サービスでも<literal>gnu.*</literal>はアーカイブされています。
+</para>
+</sect1>
+<sect1 label="2.4" id="Reporting-bugs">
+<title>Where should I report bugs and other problems with Emacs?</title>
+<indexterm role="cp"><primary>Bug reporting</primary></indexterm>
+<indexterm role="cp"><primary>Good bug reports</primary></indexterm>
+<indexterm role="cp"><primary>How to submit a bug report</primary></indexterm>
+<indexterm role="cp"><primary>Reporting bugs</primary></indexterm>
+
+<para>コマンド<userinput>M-x
+report-emacs-bug</userinput>を使用するのがEmacsのバグを報告する正しい方法です。このコマンドは必要な情報と正しいEメールアドレス<email>bug-gnu-emacs@gnu.org</email>でメールバッファーをセットアップします。ここに送信したものはニュースグループ<ulink url="news:gnu.emacs.bug">news:gnu.emacs.bug</ulink>でも目にすることができますが、バグレポートの提出にはどうかニュースではなくEメールを使用してください。これによって信頼できる返信アドレスが保証されるので、詳細についてあなたに連絡をとることができるようになります。
+</para>
+<para>バグを報告する前に必ずEmacsマニュアルの&#8220;Bugs&#8221;セクションを読んでください。マニュアルには有用なバグレポートを投稿する方法(section &#8220;Reporting Bugs&#8221; in <citetitle>The GNU Emacs
+Manual</citetitle>を参照)が詳細に渡って記述されています(マニュアルの読み方が判らなければ<link linkend="Emacs-manual">Emacs manual</link>を参照)。
+</para>
+<para>RMSは述べています:
+</para>
+<blockquote><para>バグレポートを<ulink url="https://lists.gnu.org/mailman/listinfo/help-gnu-emacs">the
+help-gnu-emacs mailing list</ulink>
+(<ulink url="news:gnu.emacs.help">news:gnu.emacs.help</ulink>に投稿される効果をもつ)に送信するのは、ほとんどは問題を解決するアイデアをもたない単なるユーザーである多数の人たちに不必要に費やさせるので望ましくありません。<ulink url="https://lists.gnu.org/mailman/listinfo/bug-gnu-emacs">The bug-gnu-emacs
+list</ulink>なら何をするべきか恐らくもっと知識があり、他のものよりもEmacsのメッセージを受け取りたいと表明している、より少ない人たちにメッセージを届けられます。
+</para></blockquote>
+<para>RMSは<ulink url="news:gnu.emacs.help">news:gnu.emacs.help</ulink>へ投稿しても問題がない場合について述べています:
+</para>
+<blockquote><para>バグをレポートして利用可能な修整について収穫が得られなかったら適切な遅延(1週間とか)を経た後で、あなたを助けられる誰かに助けを求めるために<literal>gnu.emacs.help</literal>へ投稿することに問題はありません。
+</para></blockquote>
+<para>バグを発見したのか確信がもてない場合には、RMSの好意による以下のそれほど徹底はされていないリストを検討してみてください:
+</para>
+<blockquote><para>Emacsがクラッシュしたら、それはバグです。Emacsのビルド時にコンパイルがエラーとなるなら、それはバグです。ビルド時にEmacsがクラッシュしたら、それはバグです。ドキュメントに記述された通りにLispコードが処理を行わなければ、それはバグです。
+</para></blockquote>
+</sect1>
+<sect1 label="2.5" id="Unsubscribing-from-Emacs-lists">
+<title>How do I unsubscribe from a mailing list?</title>
+<indexterm role="cp"><primary>Unsubscribing from GNU mailing lists</primary></indexterm>
+<indexterm role="cp"><primary>Removing yourself from GNU mailing lists</primary></indexterm>
+
+<para>あなたが<replaceable>list</replaceable>という名前のGNUメーリングリストからメールを受信しているなら、アドレス<email>list-request@gnu.org</email>にリクエストを送信すれば登録解除できるはずです。メーリングリストのメールには通常ならメッセージヘッダー(&#8216;<literal>List-Unsubscribe:</literal>&#8217;)、あるいはフッターのいずれかに登録を解除する方法を告げる情報が含まれています。
+</para>
+</sect1>
+<sect1 label="2.6" id="Contacting-the-FSF">
+<title>How do I contact the FSF?</title>
+<indexterm role="cp"><primary>Contracting the FSF</primary></indexterm>
+<indexterm role="cp"><primary>Free Software Foundation, contacting</primary></indexterm>
+
+<para>最新の情報は<ulink url="https://www.fsf.org/about/contact.html">the FSF contact
+web-page</ulink>を参照してください。一般的な対応なら<email>info@fsf.org</email>に送信できます。
+</para>
+<indexterm role="cp"><primary>Ordering GNU software</primary></indexterm>
+<para>FSFに直接アイテムを注文する方法の詳細は<ulink url="https://shop.fsf.org/">FSF on-line
+store</ulink>を参照してください。
+</para>
+<!-- - -->
+</sect1>
+</chapter>
+<chapter label="3" id="Getting-help">
+<title>Getting help</title>
+<indexterm role="cp"><primary>Getting help</primary></indexterm>
+
+<para>このチャプターではEmacsでヘルプを得る方法について説明します。
+</para>
+
+<sect1 label="3.1" id="Basic-editing">
+<title>I&#8217;m just starting Emacs; how do I do basic editing?</title>
+<indexterm role="cp"><primary>Basic editing with Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Beginning editing</primary></indexterm>
+<indexterm role="cp"><primary>Tutorial, invoking the</primary></indexterm>
+<indexterm role="cp"><primary>Self-paced tutorial, invoking the</primary></indexterm>
+<indexterm role="cp"><primary>Help system, entering the</primary></indexterm>
+
+<para>マイペースで学べるチュートリアルを呼び出すには<userinput>C-h
+t</userinput>とタイプします。単に<userinput>C-h</userinput>とタイプすることでヘルプシステムにエンターします。このチュートリアルはEmacs
+22以降はフランス語、ドイツ語、日本語、ロシア語等、英語以外の多くの言語で利用できるようになりました。言語を選んでチュートリアルを開始するには<userinput>M-x
+help-with-tutorial-spec-language <keycap>RET</keycap></userinput>とタイプしてください。
+</para>
+<para>ローカルのキーボードを処理するために、<userinput>C-h</userinput>が<keycap>DEL</keycap>のように振る舞うようにシステム管理者が変更しているかもしれません。ヘルプの呼び出しにはかわりに<userinput>M-x
+help-for-help</userinput>を使用できます。システム上でヘルプを呼び出すキー(もしあれば)を見つけるには<userinput>M-x where-is
+<keycap>RET</keycap> help-for-help
+<keycap>RET</keycap></userinput>とタイプします。これはエコーエリア内にカンマで区切られたキーシーケンスのリストをプリントします。リストされた各キーシーケンスの最後の文字は無視してください。結果として得られたキーシーケンス(<keycap>F1</keycap>が一般的)のそれぞれがヘルプを呼び出します。
+</para>
+<para>Emacsのヘルプが単一のキーで呼び出せればもっとも良く機能します。この値は変数<literal>help-char</literal>に格納されているはずです。
+</para>
+<para><ulink url="http://web.psung.name/emacs/">http://web.psung.name/emacs/</ulink>ではEmacsのスライドやチュートリアルをいくつか見つけることができます。
+</para>
+</sect1>
+<sect1 label="3.2" id="Learning-how-to-do-something">
+<title>How do I find out how to do something in Emacs?</title>
+<indexterm role="cp"><primary>Help for Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Learning to do something in Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Reference card for Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Overview of help systems</primary></indexterm>
+
+<para>Emacsで物事を行う方法を見つけるには複数の手法があります。
+</para>
+<itemizedlist>
+<listitem><indexterm role="cp"><primary>Reading the Emacs manual</primary></indexterm>
+<para>Infoハイパーテキストリーダーを通じてEmacsマニュアルの完全なテキストが利用できます。Infoモードでマニュアルを表示するには<userinput>C-h
+r</userinput>とタイプしてください。Infoにエンター直後に<userinput>h</userinput>とタイプすれば、その使用方法に関する短いチュートリアルが提供されるでしょう。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Lookup a subject in a manual</primary></indexterm>
+<indexterm role="cp"><primary>Index search in a manual</primary></indexterm>
+<para>特定の問題やコマンド、変数について述べているマニュアルのセクションを素早く見つけるには<userinput>C-h i m emacs <keycap>RET</keycap> i
+<replaceable>topic</replaceable> <keycap>RET</keycap></userinput>とタイプします。これで正しいマニュアル箇所に辿り着けないようなら、必要なものが見つかるまで<userinput>,</userinput>
+(カンマ)を繰り返し押下してください(<userinput>i</userinput>と<userinput>,</userinput>はEmacsマニュアルの全インデックスからタイプされた<replaceable>topic</replaceable>を探すインデックス検索関数を呼び出すキー)。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Apropos</primary></indexterm>
+<para><userinput>C-h a</userinput> (<userinput>M-x
+command-apropos</userinput>)を使用すれば、特定の単語を含んだすべてのコマンド(実際には正規表現にマッチしたコマンド)を一覧できます。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Command description in the manual</primary></indexterm>
+<para>コマンド<userinput>C-h F</userinput>
+(<literal>Info-goto-emacs-command-node</literal>)はコマンド名の入力を求めて、そのコマンドの記述があるEmacsマニュアルのセクションの検索を試みます。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Finding commands and variables</primary></indexterm>
+<para><userinput>M-x apropos</userinput>を使用すれば名前に特定の単語を含んだ関数およびコマンドをすべて一覧できます。
+</para>
+</listitem><listitem><para><userinput>M-x
+apropos-documentation</userinput>を使用すればドキュメントが正規表現または文字列ににマッチする関数およびコマンドをすべて一覧できます。
+</para>
+</listitem><listitem><para>FSFからマニュアルのハードコードを注文できます。<link linkend="Getting-a-printed-manual">Getting a printed manual</link>を参照してください。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Reference cards, in other languages</primary></indexterm>
+<para>コマンドとそれらを呼び出すキーを一覧する印刷されたリファレンスカードを入手できます。$2(または$10か$18)でFSFに注文するか、Emacsディストリビューション内のファイル<filename>etc/refcards/refcard.tex</filename>または<filename>etc/refcards/refcard.pdf</filename>を自分でプリントできます。バージョン21.1以降のEmacsディストリビューションには複数の言語に翻訳されたリファレンスカードが同梱されています。<filename>etc/refcards/<replaceable>lang</replaceable>-refcard.*</filename>
+(<replaceable>lang</replaceable>は言語のアルファベット2文字コード)という名前のファイルを探してみてください。たとえばドイツ語バージョンのリファレンスカードは<filename>etc/refcards/de-refcard.tex</filename>と<filename>etc/refcards/de-refcard.pdf</filename>にあります。
+</para>
+</listitem><listitem><para>Emacsには他にもヘルプや情報を得るためのコマンドが多数存在します。これらのコマンドの一覧を得るには<userinput>C-h</userinput>の後に&#8216;<literal>?</literal>&#8217;をタイプしてください。
+</para>
+</listitem></itemizedlist>
+</sect1>
+<sect1 label="3.3" id="Getting-a-printed-manual">
+<title>How do I get a printed copy of the Emacs manual?</title>
+<indexterm role="cp"><primary>Printed Emacs manual, obtaining</primary></indexterm>
+<indexterm role="cp"><primary>Manual, obtaining a printed or HTML copy of</primary></indexterm>
+<indexterm role="cp"><primary>Emacs manual, obtaining a printed or HTML copy of</primary></indexterm>
+
+<para>Emacsマニュアルの印刷されたコピーわFSFに注文できます。詳細は<ulink url="https://shop.fsf.org/">FSF on-line
+store</ulink>を参照してください。
+</para>
+<para>この数百ページに及ぶマニュアルを自分でプリントする勇気があるなら、マニュアルの完全なTexinfoソースもEmacsディストリビューションの<filename>doc/emacs</filename>ディレクトリーにあります(<link linkend="Printing-a-Texinfo-file">Printing
+a Texinfo file</link>を参照)。
+</para>
+<para>どうしても自分でコピーをプリントする必要があるものの&tex;がない場合には、
+</para>
+<para><ulink url="https://www.gnu.org/software/emacs/manual/">https://www.gnu.org/software/emacs/manual/</ulink>からPostScriptやPDF(あるいはHTML)のバージョンを入手できます。
+</para>
+<para>Emacsからマニュアルを閲覧する方法については<link linkend="Learning-how-to-do-something">Learning how to do something</link>を参照してください。
+</para>
+</sect1>
+<sect1 label="3.4" id="Emacs-Lisp-documentation">
+<title>Where can I get documentation on Emacs Lisp?</title>
+<indexterm role="cp"><primary>Documentation on Emacs Lisp</primary></indexterm>
+<indexterm role="cp"><primary>Function documentation</primary></indexterm>
+<indexterm role="cp"><primary>Variable documentation</primary></indexterm>
+<indexterm role="cp"><primary>Emacs Lisp Reference Manual</primary></indexterm>
+<indexterm role="cp"><primary>Reference manual for Emacs Lisp</primary></indexterm>
+
+<para>Emacsでは関数なら<userinput>C-h f</userinput>、変数なら<userinput>C-h v</userinput>とタイプしてドキュメントを入手できます。
+</para>
+<para>詳細についてはEmacs LispリファレンスマニュアルがInfo形式で利用可能です(section &#8220;Emacs Lisp&#8221; in <citetitle>The
+Emacs Lisp Reference Manual</citetitle>を参照)。
+</para>
+<para>FSFにマニュアルのハードコードを注文することもできます。詳細は<ulink url="https://shop.fsf.org/">FSF on-line
+store</ulink>を参照してください(このマニュアルは常にプリントされているる訳ではない)。
+</para>
+<para>Emacs LispリファレンスマニュアルのHTMLバージョンは
+</para>
+<para><ulink url="https://www.gnu.org/software/emacs/elisp-manual/elisp.html">https://www.gnu.org/software/emacs/elisp-manual/elisp.html</ulink>から利用できます。
+</para>
+</sect1>
+<sect1 label="3.5" id="Installing-Texinfo-documentation">
+<title>How do I install a piece of Texinfo documentation?</title>
+<indexterm role="cp"><primary>Texinfo documentation, installing</primary></indexterm>
+<indexterm role="cp"><primary>Installing Texinfo documentation</primary></indexterm>
+<indexterm role="cp"><primary>New Texinfo files, installing</primary></indexterm>
+<indexterm role="cp"><primary>Documentation, installing new Texinfo files</primary></indexterm>
+<indexterm role="cp"><primary>Info files, how to install</primary></indexterm>
+
+<para>Emacsのリリースにはビルド前のInfoファイルが同梱されており、通常のインストールプロセスによって正しい場所に配置されます。これはInfoファイルを提供するほとんどのアプリケーションにも当てはまります。以降は手作業で追加のInfoファイルをインストールしたいユーザーだけに関係のあるセクションです。
+</para>
+<para>まずはTexinfoソースファイルをInfoファイルにしなければなりません。
+</para>
+<para><ulink url="https://www.gnu.org/software/texinfo/">https://www.gnu.org/software/texinfo/</ulink>にあるTexinfoパッケージの一部として利用可能なスタンドアロンプログラム<filename>makeinfo</filename>を使用してこれを行うことができます。
+</para>
+<para>TexinfoフォーマットについてはTexinfoパッケージに同梱されているTexinfoマニュアルを読んでください。このマニュアルはInfoフォーマットでもインストールされるので、Emacsから<userinput>C-h
+i m texinfo <keycap>RET</keycap></userinput>とタイプして読むことができます。
+</para>
+<!-- FIXME is this a complete alternative? -->
+<!-- Probably not, given that we require makeinfo to build Emacs. -->
+<para>かわりに変換したいマニュアルのTexinfoソースファイルをEmacsでvisitした後にコマンド<userinput>M-x
+texinfo-format-buffer</userinput>を使用することもできます。
+</para>
+<para><literal>texinfo-format-buffer</literal>と<filename>makeinfo</filename>はどちらも実行結果のInfoファイルをEmacsのInfoツリーにインストールしません。Infoファイルをインストールするには以下の手順を行ってください:
+</para>
+<orderedlist numeration="arabic"><listitem><para>インストール済みEmacsディストリビューションの<filename>info</filename>ディレクトリーにファイルを移動する。場所が判らなければ<link linkend="File_002dname-conventions">File-name
+conventions</link>を参照のこと。
+</para>
+</listitem><listitem><para>メインのInfoディレクトリーメニュー更新のために、以下のようにしてTexinfoディストリビューションの一部である<literal>install-info</literal>コマンドを実行する。:
+</para>
+<screen> install-info --info-dir=<replaceable>dir-path</replaceable> <replaceable>dir-path</replaceable>/<replaceable>file</replaceable>
+</screen>
+<para>ここで<replaceable>dir-path</replaceable>は生成したInfoファイルをコピーしたディレクトリーへのフルパス、<replaceable>file</replaceable>は生成してインストールしたいInfoファイルの名前。
+</para>
+<para>インストール済みの<literal>install-info</literal>コマンドがなければインストール済みEmacsディストリビューションのファイル<filename>info/dir</filename>を編集してインストールされているInfoパッケージ内のトップレベルノードに行を追加できる。このファイル内にある例にしたがえばよい。フォーマットは:
+</para>
+<screen>* Topic: (relative-pathname).  Short description of topic.
+</screen>
+</listitem></orderedlist>
+<para>Infoファイルをインストールしたいが必要な権限がない場合にはいくつかのオプションがあります:
+</para>
+<itemizedlist><listitem><para>使用する前に実際にInfoファイルがインストールされている必要はない。<literal>info</literal>コマンドにプレフィクス引数を使用して、ミニバッファーでInfoファイルの名前を指定できる。これによりそのInfoファイル内の&#8216;<literal>Top</literal>&#8217;という名前のノードに移動する。たとえばホームディレクトリーにある<filename><replaceable>info-file</replaceable></filename>という名前のInfoファイルを閲覧するには、以下のようにタイプできる:
+</para>
+<screen><userinput>C-u C-h i ~/<replaceable>info-file</replaceable> <keycap>RET</keycap></userinput>
+</screen>
+<para>かわりにファイルの名前を以下のようにカッコ内にタイプして(Infoモードで<userinput>g</userinput>押下により呼び出される)<literal>Info-goto-node</literal>コマンドにファイル名を与えることができる。
+</para>
+<screen><userinput>C-h i g (~/<replaceable>info-file</replaceable>) <keycap>RET</keycap></userinput>
+</screen>
+</listitem><listitem><para>自分用のInfoディレクトリーを作成できる。変数<literal>Info-default-directory-list</literal>の値にパス名を追加することによってEmacsにInfoディレクトリーの場所を伝えることができる。たとえばホームディレクトリーにある<filename>Info</filename>という名前のサブディレクトリーを個人用のInfoディレクトリーとして使用するには以下を<filename>.emacs</filename>ファイルに追加すればよい:
+</para>
+<programlisting>(add-to-list 'Info-default-directory-list &quot;~/Info&quot;)
+</programlisting>
+<para>このディレクトリーには<filename>dir</filename>という名前のトップレベルInfoファイルが必要になるだろう。これはそのディレクトリーにあるInfoファイルのエントリーだけをリストスル点を除き、システムの<filename>dir</filename>がもつすべてをもつ。(偶然にも)このディレクトリー内のすべてのファイルが他の<filename>dir</filename>ファイルから参照されていれば、これは必要ないかもしれない。<literal>Info-default-directory-list</literal>内のすべての<filename>dir</filename>ファイルのノードリストはInfoシステムによってマージされる。
+</para>
+</listitem></itemizedlist>
+</sect1>
+<sect1 label="3.6" id="Printing-a-Texinfo-file">
+<title>How do I print a Texinfo file?</title>
+<indexterm role="cp"><primary>Printing a Texinfo file</primary></indexterm>
+<indexterm role="cp"><primary>Texinfo file, printing</primary></indexterm>
+<indexterm role="cp"><primary>Printing documentation</primary></indexterm>
+
+<para>Infoファイルから見栄えの良いプリント出力は得られません。マニュアルのプリント用には、依然としてオリジナルのTexinfoソースファイルが不可欠です。
+</para>
+<para>システムに&tex;がインストールされていれば以下のステップを行います:
+</para>
+<orderedlist numeration="arabic">
+<listitem><para>Texinfoファイルの先頭の行が以下のようになっていることを確認:
+</para>
+<screen>\input texinfo
+</screen>
+<para>&#8216;<literal>texinfo</literal>&#8217;を<filename>texinfo.tex</filename>ファイルのフルパスに変更(またはカレントディレクトリーにコピーまたはリンク)する必要があるかもしれない。これはEmacsに同梱されている<filename>doc/misc/texinfo.tex</filename>である。
+</para>
+</listitem><listitem><para><userinput>texi2dvi
+<replaceable>texinfo-source</replaceable></userinput>とタイプする。ここで<replaceable>texinfo-source</replaceable>はプリントしたコピーを生成したいTexinfoソースファイル名。&#8216;<literal>texi2dvi</literal>&#8217;スクリプトはGNU
+Texinfoディストリビューションの一部である。
+</para>
+<para>&#8216;<literal>texi2pdf</literal>&#8217;の場合には、かわりにPDFファイルを生成する。
+</para>
+</listitem><listitem><para>あなたのサイトでDVIファイルを通常プリントするのと同じ方法でDVIファイル<filename><replaceable>texinfo-source</replaceable>.dvi</filename>をプリントする。たとえばPostScriptプリンターをもっていれば、そのプリンターでDVIファイルをプリントするために<literal>dvips</literal>プログラムを実行する。
+</para>
+</listitem></orderedlist>
+<para>より一般的な手順については最新のTexinfoパッケージを調べてください(<link linkend="Installing-Texinfo-documentation">Installing Texinfo
+documentation</link>を参照)。
+</para>
+</sect1>
+<sect1 label="3.7" id="Viewing-Info-files-outside-of-Emacs">
+<title>Can I view Info files without using Emacs?</title>
+<indexterm role="cp"><primary>Viewing Info files</primary></indexterm>
+<indexterm role="cp"><primary>Info file viewers</primary></indexterm>
+<indexterm role="cp"><primary>Alternative Info file viewers</primary></indexterm>
+
+<para>はい。以下はいくつかの候補プログラムです:
+</para>
+<itemizedlist>
+<listitem><para>Texinfoパッケージに同梱されているInfoプログラムのスタンドアロンバージョンである<literal>info</literal>。詳細はSee <link linkend="Installing-Texinfo-documentation">Installing
+Texinfo documentation</link>を参照のこと。
+</para>
+</listitem><listitem><para>X Window
+systemの下で実行され、Tcl/Tkを使用するInfoビューアーのTkinfo。Tkinfoは<ulink url="http://math-www.uni-paderborn.de/~axel/tkinfo/">http://math-www.uni-paderborn.de/~axel/tkinfo/</ulink>で入手できる。
+</para>
+</listitem></itemizedlist>
+</sect1>
+<sect1 label="3.8" id="Informational-files-for-Emacs">
+<title>What informational files are available for Emacs?</title>
+<indexterm role="cp"><primary>Informational files included with Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Files included with Emacs</primary></indexterm>
+<indexterm role="cp"><primary><filename>COPYING</filename>, description of file</primary></indexterm>
+<indexterm role="cp"><primary><filename>DISTRIB</filename>, description of file</primary></indexterm>
+<indexterm role="cp"><primary><filename>MACHINES</filename>, description of file</primary></indexterm>
+<indexterm role="cp"><primary><filename>NEWS</filename>, description of file</primary></indexterm>
+
+<para>これはよくある質問ではありませんが、そうあるべきなのです!
+あなたに読んでもらうためｎ、Emacsおよび関連するGNUプロジェクトの様相に関する様々な情報ファイルが利用可能です。
+</para>
+<para>以下のファイル(やその他のファイルも)はEmacsディストリビューション(どこにあるか判らなければ<link linkend="File_002dname-conventions">File-name
+conventions</link>を参照)の<filename>etc</filename>ディレクトリー内にあります。これらのファイルの多くはEmacsの&#8216;<literal>Help</literal>&#8217;メニュー、あるいは<userinput>C-h
+?</userinput> (<userinput>M-x help-for-help</userinput>)とタイプして利用することができます。
+</para>
+<variablelist>
+<varlistentry><term><filename>COPYING</filename>
+</term><listitem><para>GNU 一般公衆利用許諾書(GNU GENERAL PUBLIC LICENSE)
+</para>
+</listitem></varlistentry><varlistentry><term><filename>DISTRIB</filename>
+</term><listitem><para>Emacsの可用性に関する情報
+</para>
+</listitem></varlistentry><varlistentry><term><filename>MACHINES</filename>
+</term><listitem><para>様々なマシンおよびシステムにおけるEmacsの状況
+</para>
+</listitem></varlistentry><varlistentry><term><filename>NEWS</filename>
+</term><listitem><para>Emacsのニュース、ユーザーの目に見える最新の変更履歴
+</para>
+</listitem></varlistentry></variablelist>
+<para><citetitle>GNU&#8217;s Bulletin</citetitle>の未解決問題を含むより詳細なGNU情報については
+</para>
+<para><ulink url="https://www.gnu.org/bulletins/bulletins.html">https://www.gnu.org/bulletins/bulletins.html</ulink>、および
+</para>
+<para><ulink url="http://www.cs.pdx.edu/~trent/gnu/gnu.html">http://www.cs.pdx.edu/~trent/gnu/gnu.html</ulink>を参照してください。
+</para>
+</sect1>
+<sect1 label="3.9" id="Help-installing-Emacs">
+<title>Where can I get help in installing Emacs?</title>
+<indexterm role="cp"><primary>Installation help</primary></indexterm>
+<indexterm role="cp"><primary>Help installing Emacs</primary></indexterm>
+
+<para>インストールにおける基本的なヒントについては<link linkend="Installing-Emacs">Installing Emacs</link>、インストールに何か問題がある場合には<link linkend="Problems-building-Emacs">Problems
+building Emacs</link>を参照してください。
+</para>
+<para><ulink url="https://www.fsf.org/resources/service/">The GNU Service
+directory</ulink>にはEmacsやその他のGNUソフトウェアのインストールや使用において有償による手助けを提案する企業や個人が一覧されています。
+</para>
+</sect1>
+<sect1 label="3.10" id="Obtaining-the-FAQ">
+<title>Where can I get the latest version of this FAQ?</title>
+<indexterm role="cp"><primary>FAQ, obtaining the</primary></indexterm>
+<indexterm role="cp"><primary>Latest FAQ version, obtaining the</primary></indexterm>
+
+<para>Emacs
+FAQはInfo形式としてEmacsに同梱されています。任意のEmacsフレームトップにあるEmacsメニューバーの&#8216;<literal>Help</literal>&#8217;メニューあら&#8216;<literal>Emacs
+FAQ</literal>&#8217;オプションを選択、あるいは<userinput>C-h C-f</userinput> (<userinput>M-x
+view-emacs-FAQ</userinput>)とタイプしてくださいこれを読むことができます。開発版の最新バージョンはEmacsの開発用レポジトリから利用できます(<link linkend="Latest-version-of-Emacs">Latest
+version of Emacs</link>を参照)。
+</para>
+<!-- - -->
+</sect1>
+</chapter>
+<chapter label="4" id="Status-of-Emacs">
+<title>Status of Emacs</title>
+<indexterm role="cp"><primary>Status of Emacs</primary></indexterm>
+
+<para>このチャプターでは最新バージョンの状況も含めたEmacsに関する基本情報を提供します。
+</para>
+
+<sect1 label="4.1" id="Origin-of-the-term-Emacs">
+<title>Where does the name &#8220;Emacs&#8221; come from?</title>
+<indexterm role="cp"><primary>Origin of the term &#8220;Emacs&#8221;</primary></indexterm>
+<indexterm role="cp"><primary>Emacs name origin</primary></indexterm>
+<indexterm role="cp"><primary>TECO</primary></indexterm>
+<indexterm role="cp"><primary>Original version of Emacs</primary></indexterm>
+
+<!-- gls@@east.sun.com -->
+<para>Emacsは元々はEditor
+MACroSの略語でした。RMSは&#8220;その時点ではITS上の略語として<userinput>E</userinput>は使用されていなかったのでEmacsという名前を採用した&#8221;と述べています。最初のEmacsは1976年にMITにおいてRMSがPDP-10上のITS
+(the Incompatible Timesharing System)のエディターTECO (Text Editor and COrrector,
+originally Tape Editor and
+COrrector)のために記述したマクロのセットでした。RMSはすでにTECOを再プログラム可能な&#8220;リアルタイム&#8221;のフルスクリーンモードに拡張済みでした。Emacsは多くの異なるTECOコマンドセットとキーバインディングを統合するプロジェクトとして、MITにおいてGuy
+Steeleによって開始されて、RMSによって完成されました。
+</para>
+<para>TECOのコードは行がノイズのように見えると多くの人が言っています。これは<ulink url="news:alt.lang.teco">news:alt.lang.teco</ulink>で読むことができます。誰かがTECO実装をEmacs
+Lispで記述しました(これを見つけるには<link linkend="Packages-that-do-not-come-with-Emacs">Packages that do not come with
+Emacs</link>を参照)。Emacsの内部でオリジナルのTECOを実行するのは興味深いプロジェクトになるでしょう。
+</para>
+<indexterm role="cp"><primary>Why Emacs?</primary></indexterm>
+<para>Emacsという名前をもつ理由としてそれほど深刻ではない候補についてはファイル<filename>etc/JOKES</filename>を調べてください(<link linkend="File_002dname-conventions">File-name
+conventions</link>を参照)。
+</para>
+</sect1>
+<sect1 label="4.2" id="Latest-version-of-Emacs">
+<title>What is the latest version of Emacs?</title>
+<indexterm role="cp"><primary>Version, latest</primary></indexterm>
+<indexterm role="cp"><primary>Latest version of Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Development, Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Repository, Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Bazaar repository, Emacs</primary></indexterm>
+
+<para>Emacs
+27.2はこれが記述されたカレントのバージョンです。2つのコンポーネントからなるバージョンナンバーは、リリースバージョンであることを表します(例:
+&#8216;<literal>24.5</literal>&#8217;)。3つのコンポーネントからなるバージョンナンバーは開発バージョンを表します(たとえば&#8216;<literal>28.0.50</literal>&#8217;、いずれ&#8216;<literal>28.1</literal>&#8217;となる)。
+</para>
+<para>Emacsは活動的な開発の下にあり<ulink url="https://savannah.gnu.org/projects/emacs/">Savannah</ulink>でホスティングされています。そこで示された手順にしたがってプロジェクトレポジトリをクローンしてください。
+</para>
+<para>リリース前にはEmacsにたいして多くの変更が施されるので、開発版のバージョンナンバーに特別な意味はありません。開発レポジトリから取得した日付を参考にするほうが良いでしょう。開発版は通常は日常的の使用にたいしてかなり堅牢ですが、最新機能より安定性の方が重要ならリリース版に固執した方が良いかもしれません。
+</para>
+<para>以降のセクションでは最近のEmacsのリリースにおける主要な新機能を一覧にしました。Emacsのあるバージョンにおける変更の完全な詳細については<userinput>C-h
+C-n</userinput>とタイプしてください。Emacs
+22以降では古いバージョンにおいて何が新機能かうぃ読むために、このコマンドにプレフィクス引数を与えることができます。
+</para>
+</sect1>
+<sect1 label="4.3" id="New-in-Emacs-27">
+<title>What is different about Emacs 27?</title>
+<indexterm role="cp"><primary>Differences between Emacs 26 and Emacs 27</primary></indexterm>
+<indexterm role="cp"><primary>Emacs 27, new features in</primary></indexterm>
+
+<itemizedlist><listitem><indexterm role="cp"><primary>bignum support</primary></indexterm>
+<para>ネイティブでは大き過ぎるサイズの整数をサポートするために<acronym>GMP</acronym>ライブラリー(GNU Multiple Precision
+libraryl:
+GNU多倍長整数ライブラリー)を使用するようになった。ネイティブでサポートされる整数は&#8220;fixnums&#8221;、それより大きい整数は&#8220;bignum&#8221;とされる。bignumで意味をもつすべての数学、比較、および論理(&#8220;ビット&#8221;とも呼ばれる)の演算操作はfixnumとbignumの両方をサポートするようになった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>HarfBuzz</primary></indexterm>
+<para>デフォルトのシェーピングエンジン(shaping engine: 整形エンジン)としてEmacsはHarfBuzzを使用するようになった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>JSON, native parsing</primary></indexterm>
+<para><filename>json.el</filename>より高速な<acronym>JSON</acronym>解析のネイティブサポート。
+</para>
+</listitem><listitem><para>Cairoによる描画が実験的機能ではなくなった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>portable dumper</primary></indexterm>
+<para>Emacsがunexecではなく&#8220;portable
+dumper&#8221;を使用するようになった。これは現代的なシステムのメモリー割り当てにたいする互換性を向上して、とりわけ現代的なオペレーティングシステムのほとんどが使用している<acronym>ASLR</acronym>(Address
+Space Layout Randomization: アドレス空間配置のランダム化)をよりサポートする。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>XDG convention</primary></indexterm>
+<para>initファイルにたいしてEmacsが<acronym>XDG</acronym>規約を使用可能になった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>early init file</primary></indexterm>
+<para>早期initファイル(early init file)を使用してEmacsを設定できるようになった。これの主要目的は正規initファイル(regular
+init file)のロード前に発生するパッケージシステムの初期化にたいして、その方法のカスタマイズを可能にすることである。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>tabs</primary></indexterm>
+<para>タブ(タブバーとタブライン)にたいするビルトインサポート。
+</para>
+</listitem><listitem><para>ImageMagickを必要としないイメージのリサイズおよびローテートのサポート。
+</para></listitem></itemizedlist>
+<para>Emacs 27における変更の完全なリストは、Emacsの<filename>NEWS</filename>ファイル (<userinput>C-h n</userinput>)を参照してください。
+</para>
+</sect1>
+<sect1 label="4.4" id="New-in-Emacs-26">
+<title>What is different about Emacs 26?</title>
+<indexterm role="cp"><primary>Differences between Emacs 25 and Emacs 26</primary></indexterm>
+<indexterm role="cp"><primary>Emacs 26, new features in</primary></indexterm>
+
+<itemizedlist><listitem><indexterm role="cp"><primary>threads</primary></indexterm>
+<para>EmacsがLispスレッドによる限定された並列処理を提供するようになった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>systemd support</primary></indexterm>
+<para>Emacsでの<literal>systemd</literal>サポート。新たなコマンドラインオプション<option>--fg-daemon</option>はこのサポートの一部であり、forkせずにフォアグラウンドで<option>--daemon</option>と同じように実行される。
+</para>
+</listitem><listitem><para>24ビットトゥルーカラーの機能を提供するテキスト端末上でのEmacsによる24ビットトゥルーカラーサポート。<link linkend="Colors-on-a-TTY">Colors on a
+TTY</link>を参照のこと。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>double-buffering</primary></indexterm>
+<para>X上のEmacsがほとんどの状況においてディスプレーのちらつきをなくすダブルバッファリングをサポートするようになった。
+</para>
+</listitem><listitem><para>マウスやタッチパッドを使用してEmacsディスプレーを水平方向にスクロールできるようになった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>line number display</primary></indexterm>
+<para>Emacsの表示において<literal>display-line-numbers-mode</literal>コマンドを通じた行番号表示のためのオプション機能が含まれるようになった。この機能は<literal>linum</literal>のようなパッケージが提案するものと等価な表示をより高速に行い、更に相対的行番号など多くのオプション機能も提供する。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>horizontal scrolling of current line</primary></indexterm>
+<para>行の切り詰め時にウィンドウディスプレーの自動的な水平スクロールが、Emacsがカーソルを表示するカレント行でのみオプションで有効にできるようになった。このモードでは他のすべてのウィンドウ行にたいして、表示領域外にある文字を表示するためのスクロールは行われない。
+</para>
+</listitem><listitem><para>トルコ語とギリシャ語のスクリプトの特別ケースを大文字小文字変換が配慮するようになった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Enchant support</primary></indexterm>
+<para>EnchantサポートがEmacsのスペルチェックコマンドの一部となった。
+</para>
+</listitem><listitem><para>TrampがGoogle Driveファイルシステムをサポートするようになった。
+</para>
+</listitem><listitem><para>ビルドされたマシンの詳細を省いてEmacsをビルドできるようになり、これにより再現可能なビルドの生成が容易になった。
+</para>
+</listitem><listitem><para>Enriched
+Textモードに関するセキュリティの脆弱性が削除された。以前のEnrichedモードではテキストの一部として<literal>display</literal>プロパティの保存ができた。これらのプロパティは任意のLispコードの評価をサポートしており、外部ソースからEnrichedテキストを受け取るEmacsユーザーを脆弱性に晒していた。Enriched
+Textモードがデコードした<literal>display</literal>プロパティ内の任意のLispフォームの実行はデフォルトで無効になった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Unicode 11.0.0</primary></indexterm>
+<para>Emacs 26.2には最新のUnicode標準バージョン11.0.0.からインポートされたデータファイルが同梱される。
+</para></listitem></itemizedlist>
+<para>Emacs 26における変更の完全なリストは、Emacsの<filename>NEWS</filename>ファイル (<userinput>C-h n</userinput>)を参照してください。
+</para>
+</sect1>
+<sect1 label="4.5" id="New-in-Emacs-25">
+<title>What is different about Emacs 25?</title>
+<indexterm role="cp"><primary>Differences between Emacs 24 and Emacs 25</primary></indexterm>
+<indexterm role="cp"><primary>Emacs 25, new features in</primary></indexterm>
+
+<itemizedlist><listitem><indexterm role="cp"><primary>xwidgets</primary></indexterm>
+<para>gtk3とwebkitgtk3がインストールされていればEmacsがバッファー内にネイティブウィジェットを埋め込めるようになった。たとえば埋め込みのwebkitブラウザウィンドウにアクセスするには<userinput>M-x
+xwidget-webkit-browse-url</userinput>とタイプすればよい。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>loadable modules</primary></indexterm>
+<para>共有ライブラリーとしてコンパイルされた外部モジュールをEmacsが動的にロード可能になった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Unicode characters, typing easily</primary></indexterm>
+<para>いくつかの一般的な文字にたいして略記が<userinput>C-x 8</userinput>に新規で追加された。略記のリストは<userinput>C-x 8 C-h</userinput>とタイプする。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>automatic display of Lisp APIs</primary></indexterm>
+<para>新しいマイナーモード<literal>global-eldoc-mode</literal>がデフォルトで有効になり、ポイント位置にあるEmacs
+Lispフォームの引数をエコーエリアまたはモードラインに表示するようになった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>pasting text on text terminals</primary></indexterm>
+<indexterm role="cp"><primary>bracketed paste mode</primary></indexterm>
+<para>&#8220;bracketed paste
+mode&#8221;をサポートするテキスト端末では、Emacsがそのモードをデフォルトで使用するようになった。このモードではEmacsはペーストされたテキストとユーザーがタイプしたテキストを区別できる。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Unicode 9.0.0</primary></indexterm>
+<para>Emacs 25には最新のUnicode標準バージョン9.0.0.からインポートされたデータファイルが同梱される。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>bidirectional editing</primary></indexterm>
+<para>双方向編集のサポートは、最新のUnicode標準バージョン9.0.0.が要請するすべての機能を含むように更新された。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>character folding in searches</primary></indexterm>
+<para>検索コマンドがマッチでの文字フォールディング(folding:
+折り畳み)を行うようになった。これはcaseフォールディング(大文字小文字を無視)と似ているが、case(大文字小文字)の違いを無視するのではなく、ダイアクリティカルマークを無視して二重引用符の様々な変種をマッチする等、類似した文字間のより広範な区別を無視する。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>eww</primary></indexterm>
+<para>EmacsウェブブラウザEWWが可変ピッチフォントをレンダリングするように拡張され、それ以外にも新たな機能が加わった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>rmail, and HTML mails</primary></indexterm>
+<para>libxml2とともにEmacsをビルドした場合、あるいはLynxブラウザがインストールされていれば、RmailがHTMLメールメッセージをレンダリングするようになった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>support for push commands in VC</primary></indexterm>
+<para>VCがBzr、Git、Hg用に実装された<literal>push</literal>コマンドを基本的にサポートするようになった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>hide-ifdef, C/C<literal>++</literal> expressions in macros</primary></indexterm>
+<para>Hide-IfDefモードがマクロ、マクロ引数展開、対話的マクロ評価、<literal>#define</literal>されたシンボルのスキャンにおいてすべてのC/C<literal>++</literal>式をサポートするようになった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>xref</primary></indexterm>
+<para>新パッケージXrefがEtagsのフロントエンドとUIを置き換えた。Xrefは関数、マクロ、データ構造等の定義の検索や移動、そして定義に移動する前の場所に戻るための汎用フレームワークおよび新たなコマンドを提供する。バックエンドの1つとしてTAGSテーブルを読み込むetags.elのコードは依然として使用しているものの、Etagsコマンドの多くは置き換えられるか廃止された。結果としてポピュラーなキーバインディング<userinput>M-.</userinput>および<userinput>M-,</userinput>はXrefコマンドを呼び出すように変更された。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>project</primary></indexterm>
+<para>新パッケージProjectはプロジェクトを取り扱うたねの汎用インフラストラクチャを提供する。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>horizontal scroll bars</primary></indexterm>
+<para>Emacsはツールキットのツールバーを提供するいくつかのプラットフォーム、すなわちGtk+、Lucid、Motif、Windowsにおいて水平スクロールバーを描画できるようになった。
+</para>
+</listitem></itemizedlist>
+<para>Emacs 25における変更の完全なリストは、Emacsの<filename>NEWS</filename>ファイル (<userinput>C-h n</userinput>)を参照してください。
+</para>
+</sect1>
+<sect1 label="4.6" id="New-in-Emacs-24">
+<title>What is different about Emacs 24?</title>
+<indexterm role="cp"><primary>Differences between Emacs 23 and Emacs 24</primary></indexterm>
+<indexterm role="cp"><primary>Emacs 24, new features in</primary></indexterm>
+
+<itemizedlist><listitem><indexterm role="cp"><primary>packages, installing more</primary></indexterm>
+<para>Emacsにパッケージマネージャーが含まれるようになった。これを開始するには<userinput>M-x
+list-packages</userinput>とタイプする。これを使用すれば更に多くのLispパッケージをダウンロードして自動でインストールできる。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>lexical binding</primary></indexterm>
+<para>Emacs Lispがファイル単位にもとづくレキシカルバインディングをサポートするようになった。<emphasis>レキシカルバインディング(lexical
+binding)</emphasis>では変数参照はバインディング構文内にテキスト的に配置されていなければならない。これはローカルなテキストスコープ外部で定義された変数をプログラムが参照可能な<emphasis>ダイナミックバインディング(dynamic
+binding)</emphasis>とは対照的である。Lispファイルはファイルコンテンツがレキシカルバインディング和使用していると解釈するよう示すために、ローカル変数セッティング<literal>lexical-binding:
+t</literal>を使用できる。詳細についてはEmacs Lispリファレンスマニュアルを参照のこと。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>bidirectional display</primary></indexterm>
+<indexterm role="cp"><primary>right-to-left languages</primary></indexterm>
+<para>英語のような自然言語のいくつかは左から右へと記述される。それ以外のアラビア語などは右から左に記述される。Emacsはこれらの形式が混交した、いわゆる&#8220;双方向テキスト(bidirectional
+text)&#8221;をサポートするようになった。
+</para>
+</listitem><listitem><para>テキスト選択の処理が改善されて、外部クリップボードとより統合された。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>themes</primary></indexterm>
+<para>新たなコマンド<userinput>customize-themes</userinput>によってEmacsの外観の変更が容易になった。
+</para>
+</listitem><listitem><para>GTK+ 3ツールキットとともにEmacsをコンパイルできるようになった。
+</para>
+</listitem><listitem><para>コンパイル時に新たに複数の外部ライブラリーを含めることをサポートする。
+</para>
+<itemizedlist>
+<listitem><para>SELinux(&#8220;Security-Enhanced
+Linux&#8221;)とは、従来の&#8220;Unixスタイル&#8221;より複雑なファイルアクセスコントロールを提供するLinuxカーネルの機能。
+</para>
+</listitem><listitem><para>ImageMagickディスプレーライブラリー。これによりEmacsでより多くのイメージ形式を表示でき、ローテーションのような変換も行うことができるようになる。
+</para>
+</listitem><listitem><para>安全なネットワーク通信のためのGnuTLSライブラリー。メールサーバーがサポートしていれば、EmacsはEメールにたいしてこれを透過的に使用する。
+</para>
+</listitem><listitem><para>XML構造解析のためのlibxml2ライブラリー。
+</para></listitem></itemizedlist>
+</listitem><listitem><para>ウィンドウおよびバッファー表示の処理における柔軟性の向上。
+</para>
+</listitem></itemizedlist>
+<para>いつも通り詳細については<filename>NEWS</filename>ファイルを参照してください。
+</para>
+
+</sect1>
+<sect1 label="4.7" id="New-in-Emacs-23">
+<title>What is different about Emacs 23?</title>
+<indexterm role="cp"><primary>Differences between Emacs 22 and Emacs 23</primary></indexterm>
+<indexterm role="cp"><primary>Emacs 23, new features in</primary></indexterm>
+
+<itemizedlist>
+<listitem><indexterm role="cp"><primary>Anti-aliased fonts</primary></indexterm>
+<indexterm role="cp"><primary>Freetype fonts</primary></indexterm>
+<para>Emacsにfreetype、fontconfigを含む複数のフォントバックエンドを使用可能なフォントコードが新たに追加された。EmacsはアンチエイリアスにXftライブラリー、複雑なテキストレイアウトとテキストシェーピングにotfやm17nのライブラリーを使用できる。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Unicode</primary></indexterm>
+<indexterm role="cp"><primary>Character sets</primary></indexterm>
+<para>Emacs文字セットがUnicodeのスーパーセットになった。新たに複数の言語環境が追加された。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Multi-tty support</primary></indexterm>
+<indexterm role="cp"><primary>X and tty displays</primary></indexterm>
+<para>Emacsが同一セッションでXディスプレーとttyの両方を使用できるようになった(&#8216;<literal>multi-tty</literal>&#8217;)。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Daemon mode</primary></indexterm>
+<para>Emacsをバックグラウンドでデーモンとして開始できるようになった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>NeXTstep port</primary></indexterm>
+<indexterm role="cp"><primary>GNUstep port</primary></indexterm>
+<indexterm role="cp"><primary>macOS Cocoa</primary></indexterm>
+<para>新たにEmacsのNeXTstepポートが登場した。これはGNUstepおよび(Cocoaライブラリーを介して)Mac OS
+Xをサポートする。Emacs 22においてMac OS XをサポートしていたEmacsのCarbonポートは削除された。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Directory-local variables</primary></indexterm>
+<para>ファイルローカル変数と同様の方法でディレクトリーローカル変数を定義できるようになった。
+</para>
+</listitem><listitem><para>Transient Markモードがデフォルトでオンになった。
+</para>
+</listitem></itemizedlist>
+<para>他にもシリアルポートアクセスのサポート、D-Busバインディング、行移動における新たなVisual
+Lineモード、補完の改善、PDFやPostScript、DVIを閲覧するための新モード(&#8216;<literal>DocView</literal>&#8217;)、(XMLドキュメント編集用の)nXMLモード、新しいバージョンコントロールシステム用にVCを更新する等の変更が含まれます。
+</para>
+
+</sect1>
+<sect1 label="4.8" id="New-in-Emacs-22">
+<title>What is different about Emacs 22?</title>
+<indexterm role="cp"><primary>Differences between Emacs 21 and Emacs 22</primary></indexterm>
+<indexterm role="cp"><primary>Emacs 22, new features in</primary></indexterm>
+
+<itemizedlist><listitem><indexterm role="cp"><primary>GTK+ Toolkit</primary></indexterm>
+<indexterm role="cp"><primary>Drag-and-drop</primary></indexterm>
+<para>GTK+ウィジェットとともにEmacsをビルドできるようになり、X上でのドラッグアンドドロップ操作がサポートされた。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Supported systems</primary></indexterm>
+<para>Emacs 22ではS390およびx86-64マシン上のGNU/Linuxシステム、Mac OS
+XおよびCygwinオペレーティングシステムにたいするサポートを提供する。
+</para>
+</listitem><listitem><para>ネイティブのMS-WindowsおよびMac OS Xのビルドにイメージ、ツールバー、ツールチップの完全サポートが含められた。
+</para>
+</listitem><listitem><para>Font Lockモード、Auto Compressionモード、File Name Shadowモードがデフォルトで有効になった。
+</para>
+</listitem><listitem><para>バッファーの最大サイズが増加した。32ビットマシンのEmacs 23.1では256MB、Emacs 23.2以降は512MB。
+</para>
+</listitem><listitem><para><userinput>mouse-2</userinput>に加えて<userinput>mouse-1</userinput>でリンクをフォローできるようになった。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Mouse wheel</primary></indexterm>
+<para>マウスホイールのサポートがデフォルトでオンになった。
+</para>
+</listitem><listitem><para>ウィンドウフリンジがカスタマイズ可能になった。
+</para>
+</listitem><listitem><para>選択されたウィンドウのモードラインがハイライトされるようになった。
+</para>
+</listitem><listitem><para>ミニバッファーのプロンプトは独自のフェイスで表示される。
+</para>
+</listitem><listitem><para>abbrev定義を起動時に読み込む。
+</para>
+</listitem><listitem><para>GrepモードがCompilationモードから切り離されて、新たにgrep特有のオプションおよびコマンドをもつようになった。
+</para>
+</listitem><listitem><para>Emacsオリジナルのマクロシステムは、新たに多くのコマンドおよび機能、ファンクションキーF3とF4を使用するシンプルなインターフェイスを提供するKmacroパッケージに置き換えられた。マクロはマクロリングに格納されるとともに、対話的にデバッグと編集ができるようになった。
+</para>
+</listitem><listitem><para>GDBにたいする完全にグラフィカルなユーザーインターフェイスとしてGUD(Grand Unified
+Debugger)が使用できるようになった。これは伝統的な開発環境で見い出すことができる多くの機能を提供するとともに、ブレークポイントの操作、ウォッチポイントの追加、コールスタック表示等を容易にする。ブレークポイントはソースバッファー内に視覚的に示される。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>New modes</primary></indexterm>
+<para>Calc、TRAMP、URL、IDO、CUA、ERC、rcirc、Table、Image-Dired、SES、Ruler、Org、PGG、Flymake、Password、Printing、Reveal、wdired、t-mouse、longlines、savehist、Confモード、Pythonモード、DNSモードなど新たに多くのモードとパッケージがEmacsに含められた。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Multilingual Environment</primary></indexterm>
+<para>LeimはEmacsの一部となった。Unicodeサポートが更に改善されてbelarusian、bulgarian-bds、bulgarian-phonetic、chinese-sisheng、croatian、dutch、georgian、latin-alt-postfix、latin-postfix、latin-prefix、latvian-keyboard、lithuanian-numeric、lithuanian-keyboard、malayalam-inscript、rfc1345、russian-computer、sgml、slovenian、tamil-inscript、ucs、ukrainian-computer、vietnamese-telex、welshの入力メソッドが追加された。
+</para>
+<para>Belarusian、Bulgarian、Chinese-EUC-TW、Croatian、French、Georgian、Italian、Latin-6、Latin-7、Latvian、Lithuanian、Malayalam、Russian、Slovenian、Swedish、Tajik、Tamil、UTF-8、Ukrainian、Welsh、Windows-1255の言語環境が追加された。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Documentation</primary></indexterm>
+<indexterm role="cp"><primary>Emacs Lisp Manual</primary></indexterm>
+<para>これらに加えてEmacs 22にはEmacs Lispリファレンスマニュアル(<link linkend="Emacs-Lisp-documentation">Emacs Lisp
+documentation</link>を参照)およびEmacs Lisp Introが含められた。
+</para></listitem></itemizedlist>
+
+</sect1>
+<sect1 label="4.9" id="New-in-Emacs-21">
+<title>What is different about Emacs 21?</title>
+<indexterm role="cp"><primary>Differences between Emacs 20 and Emacs 21</primary></indexterm>
+<indexterm role="cp"><primary>Emacs 21, new features in</primary></indexterm>
+
+<indexterm role="cp"><primary>Variable-size fonts</primary></indexterm>
+<indexterm role="cp"><primary>Toolbar support</primary></indexterm>
+<para>Emacs
+21ではディスプレーエンジンの徹底的な書き換えが行われました。新たなディスプレーエンジンは可変長フォント、イメージをサポートするとともに、サウンドをサポートするプラットフォームでのサウンド再生が可能になりました。結果としてウィンドウ化されたディスプレーで実行した際のEmacsの視覚的外観はより現代的なGUIプログラムを想起させるものとなり、3Dウィジェット(モードラインとスクロールバーで使用)、設定と拡張が可能なツールバー、ツールチップ(別名バルーンヘルプ)、その他が含められました。
+</para>
+<indexterm role="cp"><primary>Colors on text-only terminals</primary></indexterm>
+<indexterm role="cp"><primary>TTY colors</primary></indexterm>
+<para>これらに加えてEmacs
+21はテキストオンリーの端末でのフェイスがサポートされました。これはGNU/Linuxコンソールや<literal>xterm</literal>上でEmacsを<userinput>emacs
+-nw</userinput>で実行した際にカラー表示されることを意味しています。
+</para>
+
+</sect1>
+<sect1 label="4.10" id="New-in-Emacs-20">
+<title>What is different about Emacs 20?</title>
+<indexterm role="cp"><primary>Differences between Emacs 19 and Emacs 20</primary></indexterm>
+<indexterm role="cp"><primary>Emacs 20, new features in</primary></indexterm>
+
+<para>Emacsのバージョン18と19の差はよりダイナミックなものでした。一般的なユーザーのほとんどにとってもウィンドウシステムにおけるフレーム、フェイス、カラーの導入は明白な変更でした。
+</para>
+<para>Emacsのバージョン19と20の間にも同様に差はあるものの多くは軽微であるか気付くのが難しいものでした。この変更の中には非ラテン文字を使用する言語用のMULEと同一ドキュメント内での複数言語の混合、Lispを使用せずに変数を変更する&#8220;Customize&#8221;機能、Macintosh、Microsoft、Unixプラットフォームにおけるファイルの自動変換が含まれます。
+</para>
+<!-- - -->
+</sect1>
+</chapter>
+<chapter label="5" id="Common-requests">
+<title>Common requests</title>
+<indexterm role="cp"><primary>Common requests</primary></indexterm>
+
+
+<sect1 label="5.1" id="Setting-up-a-customization-file">
+<title>How do I set up a <filename>.emacs</filename> file properly?</title>
+<indexterm role="cp"><primary><filename>.emacs</filename> file, setting up</primary></indexterm>
+<indexterm role="cp"><primary><filename>.emacs</filename> file, locating</primary></indexterm>
+<indexterm role="cp"><primary>Init file, setting up</primary></indexterm>
+<indexterm role="cp"><primary>Customization file, setting up</primary></indexterm>
+
+<para>section &#8220;Init File&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+<para>一般的にEmacsの新規ユーザーは<filename>.emacs</filename>ファイルを与えられるべきではありません。なぜならこれによる非標準的から混乱を招くからです。その後に彼らはなぜEmacsがドキュメント通りに振る舞わないか尋ねる質問を<ulink url="https://lists.gnu.org/mailman/listinfo/help-gnu-emacs">the help-gnu-emacs mailing list</ulink>に送信するのです。
+</para>
+<para>EmacsにはCustomize機能が含まれています(<link linkend="Using-Customize">Using Customize</link>を参照)。これによってEmacs
+Lispに親しみのないユーザーはLispコードよりもメニューを使い、比較的判りやすい方法で<filename>.emacs</filename>ファイルを編集できます。
+</para>
+<para>Customizeは確かにEmacsの設定を容易にするかもしれませんが、Emacs
+Lispを習得して<filename>.emacs</filename>を直接編集するために少し時間を割くことを検討してみてください。頻繁に要求される基本的なタスクを処理することに興味があるユーザーには、シンプルな設定オプションがsection &#8220;Init
+File&#8221; in <citetitle>The GNU Emacs Manual</citetitle>により完全に記述されています。
+</para>
+<para>ユーザーがどこで自分の<filename>.emacs</filename>ファイルを見つけられるか判らない場合があります。Emacsから<filename>~/.emacs</filename>としてファイルをvisitすることのよって、正しいファイルが見つかるでしょう。
+</para>
+</sect1>
+<sect1 label="5.2" id="Using-Customize">
+<title>How do I start using Customize?</title>
+<indexterm role="cp"><primary>Customize groups</primary></indexterm>
+<indexterm role="cp"><primary>Customizing variables</primary></indexterm>
+<indexterm role="cp"><primary>Customizing faces</primary></indexterm>
+
+<para>Customizeの主となるエントリーポイントは<userinput>M-x customize
+<keycap>RET</keycap></userinput>です。このコマンドにより利用可能なすべてのCustomizeグループを一覧するバッファーへと導かれます。そこからカスタマイズ可能なすべてのオプションおよびフェイスにアクセスして、それらの値の変更とinitファイルへの保存ができます。section &#8220;Easy
+Customization&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+<para>(たとえば&#8220;shell&#8221;のように)あらかじめグループの名前が判っていれば<userinput>M-x customize-group
+<keycap>RET</keycap></userinput>を使用してください。
+</para>
+<para>オプションを1つカスタマイズしたければ、<userinput>M-x customize-option
+<keycap>RET</keycap></userinput>を使用します。このコマンドは補完付きでカスタマイズするオプション名の入力を求めます。
+</para>
+</sect1>
+<sect1 label="5.3" id="Colors-on-a-TTY">
+<title>How do I get colors and syntax highlighting on a TTY?</title>
+<indexterm role="cp"><primary>Colors on a TTY</primary></indexterm>
+<indexterm role="cp"><primary>Syntax highlighting on a TTY</primary></indexterm>
+<indexterm role="cp"><primary>Console, colors</primary></indexterm>
+
+<para>Emacs
+21.1以降では非ウィンドウ化モード(UnixおよびGNU/Linuxテキストオンリー端末やコンソール、またはXやMS-Windowsで&#8216;<literal>emacs
+-nw</literal>&#8217;を呼び出した場合)でカラーとフェイスがサポートされています(MS-DOSポートではEmacs
+19.29以降でカラーとフェイスがサポートされている)。Emacsは起動時に自動的にカラーサポートを検出して、利用できるようならカラーを使用します。あなたの端末がカラーをサポートしていると思えるのにEmacsがカラーを使用しない場合には、あなたのディスプレータイプにたいするカラー関連能力について<literal>termcap</literal>エントリーをチェックしてください。
+</para>
+<para>コマンド<userinput>M-x
+list-colors-display</userinput>はカレントディスプレーについてEmacsが関知する全カラーを展覧するウィンドウをポップアップします。
+</para>
+<para>バージョン22.1以降ではシンタックスハイライトがデフォルトでオンです。
+</para>
+<indexterm role="cp"><primary>direct color in terminals</primary></indexterm>
+<para>Emacs 26.1以降はターミナル(訳注:
+端末=terminalはtermcapのterm)でのダイレクトカラーモードをサポートしています。EmacsがTerminfoで&#8216;<literal>setb24</literal>&#8217;および&#8216;<literal>setf24</literal>&#8217;のケイパビリティ(訳注:
+capabilityはtermcapのcap)を見つけたら24ビットダイレクトカラーモードを使用します。ケイパビリティ文字列は、引数として1つの24ビットピクセル値を取り、24ビットカラーを端末に送信するために使用できる文字列にピクセルを変換することが期待されます。
+</para>
+<para>標準のターミナル定義はこれらのケイパビリティをサポートせず、したがってカスタム定義が必要になります。
+</para>
+<screen>$ cat terminfo-custom.src
+
+xterm-emacs|xterm with 24-bit direct color mode for Emacs,
+  use=xterm-256color,
+  setb24=\E[48\:2\:\:%p1%{65536}%/%d\:%p1%{256}%/%{255}%&amp;\
+     %d\:%p1%{255}%&amp;%dm,
+  setf24=\E[38\:2\:\:%p1%{65536}%/%d\:%p1%{256}%/%{255}%&amp;\
+     %d\:%p1%{255}%&amp;%dm,
+
+$ tic -x -o ~/.terminfo terminfo-custom.src
+
+$ TERM=xterm-emacs emacs -nw
+</screen>
+<indexterm role="cp"><primary>24-bit direct color mode</primary></indexterm>
+<para>Emacs
+27.1以降では24ビットダイレクトカラーモードの検出にたいしてTerminfoの&#8216;<literal>RGB</literal>&#8217;ケイパビリティをサポートしています。複数の標準的なターミナル定義がこのケイパビリティをサポートしています。
+</para>
+<screen>$ TERM=xterm-direct infocmp | grep seta[bf]
+
+  setab=\E[%?%p1%{8}%&lt;%t4%p1%d%e48\:2\:\:%p1%{65536}%/\
+     %d\:%p1%{256}%/%{255}%&amp;%d\:%p1%{255}%&amp;%d%;m,
+  setaf=\E[%?%p1%{8}%&lt;%t3%p1%d%e38\:2\:\:%p1%{65536}%/\
+     %d\:%p1%{256}%/%{255}%&amp;%d\:%p1%{255}%&amp;%d%;m,
+
+$ TERM=xterm-direct emacs -nw
+</screen>
+<para>あなたのターミナルにXTermとの互換性がなければ、別の<envar>TERM</envar>定義を使う必要があるかもしれません。名前に&#8216;<literal>direct</literal>&#8217;が含まれるすべてのターミナルが候補になり得ます。それらのうちどれがシステムにインストールされているか調べるために<command>toe</command>コマンドを使用できます:
+</para>
+<screen>$ toe | grep '\-direct'
+
+konsole-direct  konsole with direct-color indexing
+vte-direct      vte with direct-color indexing
+st-direct       st with direct-color indexing
+xterm-direct2   xterm with direct-color indexing (old)
+xterm-direct    xterm with direct-color indexing
+</screen>
+<para>&#8216;<literal>RGB</literal>&#8217;ケイパビリティをもつターミナルは、ダイレクト。モードを認識しないアプリケーションにたいする後方互換性を保守するために、ピクセル#000001から#000007をインデックス付けされたカラーとして扱います。したがってもっとも暗い青い濃淡は利用できないかもしれません。これが問題となるようなら、&#8216;<literal>setb24</literal>&#8217;と&#8216;<literal>setf24</literal>&#8217;のカスタムターミナル定義を常に使用するこれができます。
+</para>
+</sect1>
+<sect1 label="5.4" id="Debugging-a-customization-file">
+<title>How do I debug a <filename>.emacs</filename> file?</title>
+<indexterm role="cp"><primary>Debugging <filename>.emacs</filename> file</primary></indexterm>
+<indexterm role="cp"><primary><filename>.emacs</filename> debugging</primary></indexterm>
+<indexterm role="cp"><primary>Init file debugging</primary></indexterm>
+<indexterm role="cp"><primary>&#8216;<literal>-debug-init</literal>&#8217; option</primary></indexterm>
+
+<para>コマンドラインオプション&#8216;<literal>-debug-init</literal>&#8217;でEmacsを開始してください。これは<filename>.emacs</filename>ファイルを評価する前にEmacs
+Lispデバッガを有効して、何かうまく行かなければあなたをデバッガ内へと導きます。<filename>trace-back</filename>バッファーの上端行はエラーメッセージ、2行目か3行目には問題を引き起こした<filename>.emacs</filename>ファイルのLispコードが表示されるでしょう。
+</para>
+<para><filename>.emacs</filename>ファイル内の関数や引数の終端にカーソルを移動して<userinput>C-x C-e</userinput> (<userinput>M-x
+eval-last-sexp</userinput>)をタイプすれば、関数や関数の引数を個別に評価することもできます。
+</para>
+<para>セットまたは使用を試みている変数の値をチェックするには<userinput>C-h v</userinput> (<userinput>M-x describe-variable</userinput>)を使用できます。
+</para>
+</sect1>
+<sect1 label="5.5" id="Displaying-the-current-line-or-column">
+<title>How do I make Emacs display the current line (or column) number?</title>
+<indexterm role="cp"><primary><literal>line-number-mode</literal></primary></indexterm>
+<indexterm role="cp"><primary>Displaying the current line or column</primary></indexterm>
+<indexterm role="cp"><primary>Line number, displaying the current</primary></indexterm>
+<indexterm role="cp"><primary>Column, displaying the current</primary></indexterm>
+<indexterm role="cp"><primary><literal>mode-line-format</literal></primary></indexterm>
+
+<para>デフォルトではEmacsはポイント位置のカレント行番号をモードラインに表示します。コマンド<userinput>M-x
+line-number-mode</userinput>、または変数<literal>line-number-mode</literal>でこの機能のオンとオフを切り替えることができます。バッファーのバイトサイズが変数<literal>line-number-display-limit</literal>の値より大きければ、Emacsは行番号を表示しないことに注意してください。
+</para>
+<para><userinput>M-x column-number-mode</userinput>、または以下のフォームを
+</para>
+<programlisting>(setq column-number-mode t)
+</programlisting>
+<para><filename>.emacs</filename>ファイルに記述することにより、同じようにカレント列番号を表示できます。この機能はデフォルトではオフです。
+</para>
+<para>変数<literal>mode-line-format</literal>内のフォーマット指定子<literal>&quot;%c&quot;</literal>は、モードラインにカレント列の値っっ挿入します。この変数のセットや使用する方法についての詳細は<literal>mode-line-format</literal>のドキュメントを参照してください(<userinput>C-h
+v mode-line-format <keycap>RET</keycap></userinput>を使用する)。
+</para>
+<indexterm role="cp"><primary>Set number capability in <literal>vi</literal> emulators</primary></indexterm>
+<para>&#8216;<literal>display-line-numbers</literal>&#8217;パッケージ(Emacsのバージョン26.1で追加)は&#8216;<literal>vi</literal>&#8217;の&#8220;set
+number&#8221;機能のように、各行の前のテキストエリアに行番号を表示します。このオプション表示をアクティブにするにはバッファーローカル変数<literal>display-line-numbers</literal>をカスタマイズします。かわりにマイナーモード<literal>display-line-numbers-mode</literal>やグローバル版の<literal>global-display-line-numbers-mode</literal>を使うこともできます。これらのモード使用時には<literal>display-line-numbers</literal>を使用するときと同じ値で<literal>display-line-numbers-type</literal>をカスタマイズしてください。
+</para>
+<para>&#8216;<literal>linum</literal>&#8217;パッケージ(バージョン23.1以降のEmacsに同梱)もありますが今後配送されます。ユーザーおよび開発者にはかわりに&#8216;<literal>display-line-numbers</literal>&#8217;の使用をお勧めします。(Emacsには同梱されていないパッケージ)&#8216;<literal>setnu</literal>&#8217;と&#8216;<literal>wb-line-number</literal>&#8217;もこの機能を実装しています。
+</para>
+</sect1>
+<sect1 label="5.6" id="Displaying-the-current-file-name-in-the-titlebar">
+<title>How can I modify the titlebar to contain the current file name?</title>
+<indexterm role="cp"><primary>Titlebar, displaying the current file name in</primary></indexterm>
+<indexterm role="cp"><primary>File name, displaying in the titlebar</primary></indexterm>
+<indexterm role="cp"><primary><literal>frame-title-format</literal></primary></indexterm>
+
+<para>Emacsフレームのタイトルバーのコンテンツは、変数<literal>mode-line-format</literal>と同じ構造をもつ変数<literal>frame-title-format</literal>によって制御されます(これらの変数について情報を得るには<userinput>C-h
+v</userinput>または<userinput>M-x describe-variable</userinput>を使用する)。
+</para>
+<para>デフォルトではフレームのタイトルバーには、1つのフレームしか存在しない場合を除き、がカレントでvisitされているバッファーの名前が表示されます。フレームが1つの場合には、タイトルバーにはEmacsを呼び出したときの名前、およびEmacsを呼び出したマシン名が含まれます。これは<literal>frame-title-format</literal>に以下をデフォルト値としてセットすることにより行われます:
+</para>
+<programlisting>(multiple-frames &quot;%b&quot; (&quot;&quot; invocation-name &quot;@&quot; (system-name)))
+</programlisting>
+<para>存在するフレームの個数に関わらずフレームのタイトルバーにバッファー名が含まれるように挙動を変更するには、以下を<filename>.emacs</filename>に含めてください:
+</para>
+<programlisting>(setq frame-title-format &quot;%b&quot;)
+</programlisting>
+</sect1>
+<sect1 label="5.7" id="Turning-on-abbrevs-by-default">
+<title>How do I turn on abbrevs by default just in mode <replaceable>mymode</replaceable>?</title>
+<indexterm role="cp"><primary>Abbrevs, turning on by default</primary></indexterm>
+
+<para>Abbrevモードは略語をタイプするとそれを展開します。特定のバッファーでこれをオンにするには<userinput>M-x
+abbrev-mode</userinput>を使用します。デフォルトですべてのバッファーでオンにするには、以下を<filename>.emacs</filename>ファイルに記述してください:
+</para>
+<programlisting>(setq-default abbrev-mode t)
+</programlisting>
+<para>To turn it on in a specific mode, use:
+</para>
+<programlisting>(add-hook '<replaceable>mymode</replaceable>-mode-hook
+          (lambda ()
+           (setq abbrev-mode t)))
+</programlisting>
+<para>If your Emacs version is older then 22.1, you will also need to use:
+</para>
+<programlisting>(condition-case ()
+   (quietly-read-abbrev-file)
+  (file-error nil))
+</programlisting>
+</sect1>
+<sect1 label="5.8" id="Associating-modes-with-files">
+<title>How do I make Emacs use a certain major mode for certain files?</title>
+<indexterm role="cp"><primary>Associating modes with files</primary></indexterm>
+<indexterm role="cp"><primary>File extensions and modes</primary></indexterm>
+<indexterm role="cp"><primary><literal>auto-mode-alist</literal>, modifying</primary></indexterm>
+<indexterm role="cp"><primary>Modes, associating with file extensions</primary></indexterm>
+
+<para>名前が拡張子<filename>.<replaceable>bar</replaceable></filename>で終わるファイルすべてにたいして特定のモード<replaceable>foo</replaceable>を使用したければ、以下でこれを行うことができるでしょう:
+</para>
+<programlisting>(add-to-list 'auto-mode-alist '(&quot;\\.<replaceable>bar</replaceable>\\'&quot; . <replaceable>foo</replaceable>-mode))
+</programlisting>
+<para>またはかわりにモード<replaceable>foo</replaceable>で編集したい任意のファイルの1行目のどこか(1行目の先頭が&#8216;<literal>#!</literal>&#8217;なら2行目)に以下を記述します:
+</para>
+<screen>-*- <replaceable>foo</replaceable> -*-
+</screen>
+<indexterm role="cp"><primary>Major mode for shell scripts</primary></indexterm>
+<para>変数<literal>interpreter-mode-alist</literal>はインタープリター(shellやpythonなど)に解釈されるスクリプトをロードする際にどのモードを使用するかを指定します。Emacsはスクリプトの1行目を調べて、使用されるインタープリターを判断します。詳細については<literal>interpreter-mode-alist</literal>上で<userinput>C-h
+v</userinput> (または<userinput>M-x describe-variable</userinput>)を使用して調べてください。
+</para>
+</sect1>
+<sect1 label="5.9" id="Replacing-highlighted-text">
+<title>How can I replace highlighted text with what I type?</title>
+<indexterm role="cp"><primary><literal>delete-selection-mode</literal></primary></indexterm>
+<indexterm role="cp"><primary>Replacing highlighted text</primary></indexterm>
+<indexterm role="cp"><primary>Highlighting and replacing text</primary></indexterm>
+
+<para>以下のLispフォームを<filename>.emacs</filename>ファイルに記述することにより自動的に開始できる<literal>delete-selection-mode</literal>を使用します。
+</para>
+<programlisting>(delete-selection-mode 1)
+</programlisting>
+<para><literal>delete-selection-mode</literal>のドキュメント文字列(<userinput>M-x describe-function <keycap>RET</keycap>
+delete-selection-mode <keycap>RET</keycap></userinput>を使用して読むことができる)によると:
+</para>
+<blockquote><para>Delete
+Selectionモードが有効な場合には選択がアクティブのときにテキストをタイプするとテキストで選択を置き換える。それ以外なら選択の有無に関わらずタイプしたテキストはポイント位置に挿入される。
+</para></blockquote>
+<para>このモードにより<keycap>DEL</keycap>を押下してハイライトされているリージョンを削除(killではない)することもできます。
+</para>
+</sect1>
+<sect1 label="5.10" id="Controlling-case-sensitivity">
+<title>How do I control Emacs&#8217;s case-sensitivity when searching/replacing?</title>
+<indexterm role="cp"><primary><literal>case-fold-search</literal></primary></indexterm>
+<indexterm role="cp"><primary>Case sensitivity of searches</primary></indexterm>
+<indexterm role="cp"><primary>Searching without case sensitivity</primary></indexterm>
+<indexterm role="cp"><primary>Ignoring case in searches</primary></indexterm>
+
+<!-- FIXME -->
+<para>変数<literal>case-fold-search</literal>の値は検索がcase(大文字小文字)を区別するかどうかを決定します:
+</para>
+<programlisting>(setq case-fold-search nil) ; caseを区別
+(setq case-fold-search t)   ; 検索はcaseを区別しない
+</programlisting>
+<indexterm role="cp"><primary>Case sensitivity in replacements</primary></indexterm>
+<indexterm role="cp"><primary>Replacing, and case sensitivity</primary></indexterm>
+<indexterm role="cp"><primary><literal>case-replace</literal></primary></indexterm>
+<para>同じように置換では変数<literal>case-replace</literal>が置換においてcaseを維持するかどうかを決定します。
+</para>
+<para>isearchでは<userinput>M-c</userinput>で自由にcaseの区別を切り替えることもできます。
+</para>
+<para>あるメジャーモードにたいしてのみcaseの区別を変更するにはメジャーモードのフックを使用します。たとえば:
+</para>
+<programlisting>(add-hook '<replaceable>foo</replaceable>-mode-hook
+          (lambda ()
+           (setq case-fold-search nil)))
+</programlisting>
+</sect1>
+<sect1 label="5.11" id="Working-with-unprintable-characters">
+<title>How do I search for, delete, or replace unprintable (eight-bit or control) characters?</title>
+<indexterm role="cp"><primary>Unprintable characters, working with</primary></indexterm>
+<indexterm role="cp"><primary>Working with unprintable characters</primary></indexterm>
+<indexterm role="cp"><primary>Control characters, working with</primary></indexterm>
+<indexterm role="cp"><primary>Eight-bit characters, working with</primary></indexterm>
+<indexterm role="cp"><primary>Searching for unprintable characters</primary></indexterm>
+<indexterm role="cp"><primary>Regexps and unprintable characters</primary></indexterm>
+
+<para>たとえばバッファーには&#8216;<literal>\237</literal>&#8217;のように出現する単一文字は<userinput>C-s C-q 2 3
+7</userinput>とタイプして検索できます。プリントできない<emphasis role="bold">すべて</emphasis>の文字を検索するには正規表現(<firstterm>regexp</firstterm>)で行うのが最良です。プリント不可文字にたいするregexpは、プリント可能文字にたいする補集合を使用するのがもっとも簡単です。
+</para>
+<itemizedlist>
+<listitem><para>プリント可能文字にたいするregexp: &#8216;<literal>[\t\n\r\f -~]</literal>&#8217;
+</para>
+</listitem><listitem><para>プリント不可文字にたいするregexp: &#8216;<literal>[^\t\n\r\f -~]</literal>&#8217;
+</para>
+</listitem></itemizedlist>
+<para><literal>isearch-forward-regexp</literal>や<literal>re-search-forward</literal>にたいする対話的な引数としてこれらのスペシャル文字をタイプするには<userinput>C-q</userinput>を使う必要があります(&#8216;<literal>\t</literal>&#8217;、&#8216;<literal>\n</literal>&#8217;、&#8216;<literal>\r</literal>&#8217;、&#8216;<literal>\f</literal>&#8217;はそれぞれ<keycap>TAB</keycap>、<keycap>LFD</keycap>、<keycap>RET</keycap>、<userinput>C-l</userinput>を意味する)。したがって<literal>re-search-forward</literal>を使用してプリント不可文字を検索するには:
+</para>
+<para><userinput>M-x re-search-forward <keycap>RET</keycap> [^ <keycap>TAB</keycap> C-q <keycap>LFD</keycap> C-q <keycap>RET</keycap> C-q
+C-l <keycap>SPC</keycap> -~] <keycap>RET</keycap></userinput>
+</para>
+<para><literal>isearch-forward-regexp</literal>を使用する場合は:
+</para>
+<para><userinput>C-M-s [^ <keycap>TAB</keycap> <keycap>LFD</keycap> C-q <keycap>RET</keycap> C-q C-l <keycap>SPC</keycap> -~]</userinput>
+</para>
+<para>すべてのプリント不可文字を削除するには単にreplace-regexpを使用します:
+</para>
+<para><userinput>M-x replace-regexp <keycap>RET</keycap> [^ <keycap>TAB</keycap> C-q <keycap>LFD</keycap> C-q <keycap>RET</keycap> C-q
+C-l <keycap>SPC</keycap> -~] <keycap>RET</keycap> <keycap>RET</keycap></userinput>
+</para>
+<para>置換は上で述べたのと似ています。すべてのプリント不可文字をコロンで置き換えるには以下を使用します:
+</para>
+<para>M-x replace-regexp <keycap>RET</keycap> [^ <keycap>TAB</keycap> C-q <keycap>LFD</keycap> C-q <keycap>RET</keycap> C-q
+C-l <keycap>SPC</keycap> -~] <keycap>RET</keycap> : <keycap>RET</keycap>
+</para>
+</sect1>
+<sect1 label="5.12" id="Searching-for_002freplacing-newlines">
+<title>How do I input a newline character in isearch or query-replace?</title>
+<indexterm role="cp"><primary>Searching for newlines</primary></indexterm>
+<indexterm role="cp"><primary>Replacing newlines</primary></indexterm>
+
+<para><userinput>C-q C-j</userinput>を使用してください。詳細についてはsection &#8220;Special Input for
+Incremental Search&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+</sect1>
+<sect1 label="5.13" id="Yanking-text-in-isearch">
+<title>How do I copy text from the kill ring into the search string?</title>
+<indexterm role="cp"><primary>Yanking text into the search string</primary></indexterm>
+<indexterm role="cp"><primary>isearch yanking</primary></indexterm>
+
+<para><userinput>M-y</userinput>を使用してください。section &#8220;Isearch Yank&#8221; in <citetitle>The GNU Emacs
+Manual</citetitle>を参照してください。
+</para>
+</sect1>
+<sect1 label="5.14" id="Wrapping-words-automatically">
+<title>How do I make Emacs wrap words for me?</title>
+<indexterm role="cp"><primary>Wrapping word automatically</primary></indexterm>
+<indexterm role="cp"><primary>Wrapping lines</primary></indexterm>
+<indexterm role="cp"><primary>Line wrap</primary></indexterm>
+<indexterm role="cp"><primary><literal>auto-fill-mode</literal>, introduction to</primary></indexterm>
+<indexterm role="cp"><primary>Maximum line width, default value</primary></indexterm>
+<indexterm role="cp"><primary><literal>fill-column</literal>, default value</primary></indexterm>
+
+<para><userinput>M-x
+auto-fill-mode</userinput>とタイプして<literal>auto-fill-mode</literal>を有効にして使用してください。デフォルトの最大行幅は70で、これは変数<literal>fill-column</literal>により決定されます。これを自動でオンに切り替える方法については<link linkend="Turning-on-auto_002dfill-by-default">Turning
+on auto-fill by default</link>を参照してください。
+</para>
+</sect1>
+<sect1 label="5.15" id="Turning-on-auto_002dfill-by-default">
+<title>How do I turn on <literal>auto-fill-mode</literal> by default?</title>
+<indexterm role="cp"><primary><literal>auto-fill-mode</literal>, activating automatically</primary></indexterm>
+<indexterm role="cp"><primary>Filling automatically</primary></indexterm>
+<indexterm role="cp"><primary>Automatic entry to <literal>auto-fill-mode</literal></primary></indexterm>
+
+<para>1つのバッファーだけで<literal>auto-fill-mode</literal>をオンに切り替えるには<userinput>M-x auto-fill-mode</userinput>を使用します。
+</para>
+<para>特定のモードのすべてのバッファーでオンに切り替えるには、そのモードにたいするフックを使用しなければなりません。たとえばテキストバッファーのすべてで<literal>auto-fill</literal>モードをオンに切り替えるには、以下を<filename>.emacs</filename>ファイルサイ追加してください:
+</para>
+<programlisting>(add-hook 'text-mode-hook 'turn-on-auto-fill)
+</programlisting>
+<para>すべてのメジャーモードで<literal>auto-fill</literal>モードをオンにするには以下を行います:
+</para>
+<programlisting>(setq-default auto-fill-function 'do-auto-fill)
+</programlisting>
+</sect1>
+<sect1 label="5.16" id="Changing-load_002dpath">
+<title>How do I change <literal>load-path</literal>?</title>
+<indexterm role="cp"><primary><literal>load-path</literal>, modifying</primary></indexterm>
+<indexterm role="cp"><primary>Modifying <literal>load-path</literal></primary></indexterm>
+<indexterm role="cp"><primary>Adding to <literal>load-path</literal></primary></indexterm>
+
+<para>一般的には<literal>load-path</literal>へは追加のみにするべきです。以下のようにしてディレクトリー<replaceable>/dir/subdir</replaceable>をロードパスに追加できます:
+</para>
+<programlisting>(add-to-list 'load-path &quot;/dir/subdir/&quot;)
+</programlisting>
+<para>ホームディレクトリーにたいして相対的にこれを行うには:
+</para>
+<programlisting>(add-to-list 'load-path &quot;~/mysubdir/&quot;)
+</programlisting>
+</sect1>
+<sect1 label="5.17" id="Using-an-already-running-Emacs-process">
+<title>How do I use an already running Emacs from another window?</title>
+<indexterm role="cp"><primary><literal>emacsclient</literal></primary></indexterm>
+<indexterm role="cp"><primary>Emacs server functions</primary></indexterm>
+<indexterm role="cp"><primary>Using an existing Emacs process</primary></indexterm>
+
+<para>Emacsに同梱されている<literal>emacsclient</literal>は新たなEmacsを開始せずに、すでに実行中のEmacsを使用してファイルを編集するためのものです。これはすでに実行中のEmacsにリクエストを送信することによって行われます。実行中のEmacsはリクエストに応えなければなりません。
+</para>
+<itemizedlist>
+<listitem><para>セットアップ:
+</para>
+<para>&#8216;<literal>emacsclient</literal>&#8217;が機能するにはEmacsが<literal>server-start</literal>関数を実行済みでなければならない。これはコマンドラインオプション:
+</para>
+<screen>emacs -f server-start
+</screen>
+<para>または<filename>.emacs</filename>から<literal>server-start</literal>を呼び出すことによって行うことができる:
+</para>
+<programlisting>(if (<replaceable>some conditions are met</replaceable>) (server-start))
+</programlisting>
+<para>ニュースリーダーやメールリーダーなどが&#8216;<literal>emacsclient</literal>&#8217;を呼び出すようにするには、環境変数<literal>EDITOR</literal>
+(<literal>VISUAL</literal>のときもある)に値&#8216;<literal>emacsclient</literal>&#8217;を設定してみればよい。&#8216;<literal>emacsclient</literal>&#8217;プログラムのかわりにプログラムのフルパス名を指定する必要があるかもしれない。たとえば:
+</para>
+<screen># cshの場合:
+setenv EDITOR emacsclient
+
+# フルパス名を使用
+setenv EDITOR /usr/local/emacs/etc/emacsclient
+
+# shの場合:
+EDITOR=emacsclient ; export EDITOR
+</screen>
+</listitem><listitem><para>通常の使い方:
+</para>
+<para>&#8216;<literal>emacsclient</literal>&#8217;を実行するとソケットに接続してコマンドラインオプションをEmacsに渡す。そしてEmacsは次の機会に指定されたファイルをvisitする(Emacsで行うように行番号を指定できる)。ユーザーは手動でEmacsに切り替える必要がある。ユーザーがファイルの編集を終えたら<userinput>C-x
+#</userinput> (または<userinput>M-x
+server-edit</userinput>)とタイプしてそれを示すことができる。<literal>emacsclient</literal>に要求されたバッファーが別にある場合にはEmacsはそのバッファーに切り替えるだろう。それ以外の場合には<literal>emacsclient</literal>はexitして呼び出し元が継続できるようにシグナルを送る。
+</para>
+</listitem></itemizedlist>
+<para>詳細についてはsection &#8220;Emacs Server&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+</sect1>
+<sect1 label="5.18" id="Compiler-error-messages">
+<title>How do I make Emacs recognize my compiler&#8217;s funny error messages?</title>
+<indexterm role="cp"><primary>Compiler error messages, recognizing</primary></indexterm>
+<indexterm role="cp"><primary>Recognizing non-standard compiler errors</primary></indexterm>
+<indexterm role="cp"><primary>Regexps for recognizing compiler errors</primary></indexterm>
+<indexterm role="cp"><primary>Errors, recognizing compiler</primary></indexterm>
+
+<para><literal>compilation-error-regexp-alist</literal>変数をカスタマイズしてください。
+</para>
+</sect1>
+<sect1 label="5.19" id="Indenting-switch-statements">
+<title>How do I change the indentation for <literal>switch</literal>?</title>
+<indexterm role="cp"><primary><literal>switch</literal>, indenting</primary></indexterm>
+<indexterm role="cp"><primary>Indenting of <literal>switch</literal></primary></indexterm>
+
+<para>以下のように<literal>switch</literal>ステートメントをインデントしたいと思う人は大勢います:
+</para>
+<screen>f()
+{
+  switch(x) {
+    case A:
+      x1;
+      break;
+    case B:
+      x2;
+      break;
+    default:
+      x3;
+  }
+}
+</screen>
+<para>To achieve this, add the following line to your <filename>.emacs</filename>:
+</para>
+<programlisting>(c-set-offset 'case-label '+)
+</programlisting>
+</sect1>
+<sect1 label="5.20" id="Customizing-C-and-C_002b_002b-indentation">
+<title>How to customize indentation in C, C<literal>++</literal>, and Java buffers?</title>
+<indexterm role="cp"><primary>Indentation, how to customize</primary></indexterm>
+<indexterm role="cp"><primary>Customize indentation</primary></indexterm>
+
+<para>Emacsの<literal>cc-mode</literal>はインデントスタイルのカスタマイズ用に対話的な手順を提供しています。これはEmacsディストリビューションに同梱されている<citetitle>CC
+Mode</citetitle>マニュアルに完全な説明があります。section &#8220;Customization
+Indentation&#8221; in <citetitle>The CC Mode Manual</citetitle>を参照してください。以下はそれの短い要約です:
+</para>
+<orderedlist numeration="arabic"><listitem><para>気に召さないインデントの最初の行の先頭に移動して<userinput>C-c C-o</userinput>とタイプする。Emacsが構文シンボル(syntactic
+symbol)の入力を求めるので、デフォルトを受諾するために<keycap>RET</keycap>をタイプする。
+</para>
+</listitem><listitem><para>Emacsがその構文シンボルのオフセットの入力を求める。その際にはカッコ内にデフォルト(現在の定義)が表示される。ここで以下のいずれかを選択できる:
+</para>
+<variablelist><varlistentry><term><literal>0</literal>
+</term><listitem><para>追加のインデントなし。
+</para></listitem></varlistentry><varlistentry><term><literal>+</literal>
+</term><listitem><para>基本オフセット1つ分インデントを加える。
+</para></listitem></varlistentry><varlistentry><term><literal>-</literal>
+</term><listitem><para>基本オフセット1つ分インデントを戻す。
+</para></listitem></varlistentry><varlistentry><term><literal>++</literal>
+</term><listitem><para>基本オフセット2つ分インデントを加える。
+</para></listitem></varlistentry><varlistentry><term><literal>--</literal>
+</term><listitem><para>基本オフセット2つ分インデントを戻す。
+</para></listitem></varlistentry><varlistentry><term><literal>*</literal>
+</term><listitem><para>基本オフセットの半分インデントを加える。
+</para></listitem></varlistentry><varlistentry><term><literal>/</literal>
+</term><listitem><para>基本オフセットの半分インデントを戻す。
+</para></listitem></varlistentry></variablelist>
+</listitem><listitem><para>これらのシンボルのいずれかを選んだ後に<userinput>C-c C-q</userinput>をタイプして、指定したインデントに行またはブロックを再インデントする。
+</para>
+</listitem><listitem><para>結果が気に召さなければステップ1に戻る。そうでなければ以下の行を<filename>.emacs</filename>に追加する:
+</para>
+<programlisting>(c-set-offset '<replaceable>syntactic-symbol</replaceable> <replaceable>offset</replaceable>)
+</programlisting>
+<para>ここで<replaceable>syntactic-symbol</replaceable>は行頭で<userinput>C-c
+C-o</userinput>をタイプした際にEmacsが表示した名前、<replaceable>offset</replaceable>は上記のインデントシンボル(<literal>+</literal>、<literal>/</literal>、<literal>0</literal>等)のいずれかのうち対話的手順の間に選択したシンボル。
+</para>
+</listitem><listitem><para>インデントが気に召さない次の行へ移動してこれらの手順を繰り返す。
+</para></listitem></orderedlist>
+<para>以下のように<literal>(c-set-offset ...)</literal>によるカスタマイズ結果すべてをCモードのフック内に記述することをお勧めします:
+</para>
+<programlisting>(defun my-c-mode-hook ()
+  (c-set-offset ...)
+  (c-set-offset ...))
+(add-hook 'c-mode-hook 'my-c-mode-hook)
+</programlisting>
+<para><literal>cc-mode</literal>をロードしていなければ<literal>c-set-offset</literal>は利用できないので<filename>.emacs</filename>には<literal>(require
+'cc-mode)</literal><!-- /@w -->を記述する必要がありますが、<literal>c-mode-hook</literal>を使用すればこれを避けることができます。
+</para>
+<para><literal>c-mode-hook</literal>はCソースファイルの場合のみ実行されることに注意してください。C<literal>++</literal>には<literal>c++-mode-hook</literal>、Javaソースには<literal>java-mode-hook</literal>を使う等してください。同一のカスタマイズが、<literal>cc-mode</literal>によってサポートされる<emphasis>すべて</emphasis>の言語にたいして効力をもつようにしたければ<literal>c-mode-common-hook</literal>を使用してください。
+</para>
+</sect1>
+<sect1 label="5.21" id="Overwrite-mode">
+<title>How do I make Emacs &#8220;typeover&#8221; or &#8220;overwrite&#8221; instead of inserting?</title>
+<indexterm role="cp"><primary><keycap>Insert</keycap></primary></indexterm>
+<indexterm role="cp"><primary><literal>overwrite-mode</literal></primary></indexterm>
+<indexterm role="cp"><primary>Overwriting existing text</primary></indexterm>
+<indexterm role="cp"><primary>Toggling <literal>overwrite-mode</literal></primary></indexterm>
+
+<para><userinput>M-x overwrite-mode</userinput>
+(マイナーモード)です。これは<literal>overwrite-mode</literal>のオンオフを切り替えるのでもう一度<userinput>M-x
+overwrite-mode</userinput>で簡単に<literal>overwrite-mode</literal>からexitできます。
+</para>
+<para>いくつかのシステムでは<keycap>Insert</keycap>で<literal>overwrite-mode</literal>のオンオフが切り替わります。
+</para>
+</sect1>
+<sect1 label="5.22" id="Turning-off-beeping">
+<title>How do I stop Emacs from beeping on a terminal?</title>
+<indexterm role="cp"><primary>Beeping, turning off</primary></indexterm>
+<indexterm role="cp"><primary>Visible bell</primary></indexterm>
+<indexterm role="cp"><primary>Bell, visible</primary></indexterm>
+
+<!-- martin@@cc.gatech.edu -->
+<para>Martin R. Frank(訳注: Texinfoファイルには&quot;martin@cc.gatech.edu&quot;とコメントされてました)は記しています:
+</para>
+<para>可聴ベル(audible bell)のかわりに<firstterm>視覚的なベル(visible
+bell)</firstterm>を使うように伝えて、その視覚的ベルには何もセットしません。
+</para>
+<para>つまり(あなたがtermcapをもっていると仮定して)<literal>TERMCAP</literal>環境変数に以下を記述します:
+</para>
+<screen>... :vb=: ...
+</screen>
+<para>そして以下のLispフォームを評価してください:
+</para>
+<screen>(setq visible-bell t)
+</screen>
+</sect1>
+<sect1 label="5.23" id="Turning-the-volume-down">
+<title>How do I turn down the bell volume in Emacs running under X?</title>
+<indexterm role="cp"><primary>Bell, volume of</primary></indexterm>
+<indexterm role="cp"><primary>Volume of bell</primary></indexterm>
+
+<para>Xウィンドウシステムではシェルコマンド<literal>xset</literal>のより、すべてのプログラムでベルの音量および間隔を調節できます。
+</para>
+<para>引数なしで<literal>xset</literal>を呼び出すことによって、以下を含むいくつかの基本的な情報が生成されます:
+</para>
+<screen>usage:  xset [-display host:dpy] option ...
+  To turn bell off:
+      -b                b off               b 0
+  To set bell volume, pitch and duration:
+       b [vol [pitch [dur]]]          b on
+</screen>
+</sect1>
+<sect1 label="5.24" id="Automatic-indentation">
+<title>How do I tell Emacs to automatically indent a new line to the indentation of the previous line?</title>
+<indexterm role="cp"><primary>Indenting new lines</primary></indexterm>
+<indexterm role="cp"><primary>New lines, indenting of</primary></indexterm>
+<indexterm role="cp"><primary>Previous line, indenting according to</primary></indexterm>
+<indexterm role="cp"><primary>Text indentation</primary></indexterm>
+
+<para>このような振る舞いはEmacs 20以降では(Textモードでは)自動で行われます。Emacs
+20.2の<filename>etc/NEWS</filename>ファイルからの引用します:
+</para>
+<screen>** Textでパラグラフを分割するのは空行のみとなった。これによってAdaptive FillモードからTextモードやその他Textモードから派生した(Mailモードのような)モードが受ける恩恵を最大にすることが可能になる。Textモードでの<keycap>TAB</keycap>によって<literal>indent-relative</literal>コマンドが実行されるようになった。これによって実際に違いが生じるのは、インデントされたパラグラフを使用している場合だけである。
+
+パラグラフ開始行の先頭にスペースが欲しければ、新しいモードのParagraph Indent Textモードを使用すること。
+</screen>
+<indexterm role="cp"><primary>Prefixing lines</primary></indexterm>
+<indexterm role="cp"><primary>Fill prefix</primary></indexterm>
+<para><literal>auto-fill-mode</literal> (<link linkend="Turning-on-auto_002dfill-by-default">Turning on auto-fill by
+default</link>を参照)をオンに切り替えている場合には、<firstterm>フィルプレフィクス(fill
+prefix)</firstterm>として特定の文字シーケンスをすべての行のプレフィクスとするようEmacsに指示することができます。行頭でプレフィクスをタイプしてポイントをタイプしたプレフィクスの後に移動、それから<userinput>C-x
+.</userinput>
+(<literal>set-fill-prefix</literal>)とタイプしてフィルプレフィクスをセットします。それ以降はオートフィル新たな行の先頭に自動的にフィルプレフィクスを配置するとともに、<userinput>M-q</userinput>
+(<literal>fill-paragraph</literal>)でパラグラフを再フィルする際にはすべてのフィルプレフィクスを保守するようになります。
+</para>
+<para>異なるレベルのインデントをもつパラグラフがある場合には、新たなパラグラフに移動するたびにフィルプレフィクスを正しい値にセットすることが必要になるでしょう。これを取り扱うためのパッケージが多数存在します(<link linkend="Packages-that-do-not-come-with-Emacs">Packages
+that do not come with Emacs</link>を参照)。手引きとして&#8220;fill&#8221;、および&#8220;indent&#8221;のキーワードを調べてください。
+</para>
+</sect1>
+<sect1 label="5.25" id="Matching-parentheses">
+<title>How do I show which parenthesis matches the one I&#8217;m looking at?</title>
+<indexterm role="cp"><primary>Parentheses, matching</primary></indexterm>
+<indexterm role="cp"><primary><filename>paren.el</filename></primary></indexterm>
+<indexterm role="cp"><primary>Highlighting matching parentheses</primary></indexterm>
+<indexterm role="cp"><primary>Pairs of parentheses, highlighting</primary></indexterm>
+<indexterm role="cp"><primary>Matching parentheses</primary></indexterm>
+
+<para><filename>.emacs</filename>ファイルで<literal>show-paren-mode</literal>を呼び出します。
+</para>
+<programlisting>(show-paren-mode 1)
+</programlisting>
+<para>任意のEmacsフレーム上端にあるEmacsメニューバーの&#8216;<literal>Options</literal>&#8217;メニューからオプション&#8216;<literal>Paren Match
+Highlighting</literal>&#8217;を選択してこのモードを有効にすることもできます。
+</para>
+<para>このようなモードの代替案手段としては以下が含まれます:
+</para>
+<itemizedlist>
+<listitem><para>右カッコ(または大カッコや角カッコ)に着目していたら、それを削除してからしで挿入する。Emacsは瞬時の間、マッチするカッコにカーソル和移動するだろう。
+</para>
+</listitem><listitem><para><userinput>C-M-f</userinput> (<literal>forward-sexp</literal>)および<userinput>C-M-b</userinput>
+(<literal>backward-sexp</literal>)はバランスのとれたカッコを1セット分スキップするので、どのカッコがマッチするか確認できる(構文テーブルを修整してバランスのとれた大カッコおよび角カッコもスキップするよう洗練することも可能)。
+</para>
+</listitem><listitem><indexterm role="cp"><primary>Show matching paren as in <literal>vi</literal></primary></indexterm>
+<para>以下は<literal>vi</literal>のように<userinput>%</userinput>キーでマッチするカッコを表示させるEmacs
+Lispコード。更にカーソルがカッコ上になければ通常通り単に%を挿入する。
+</para>
+<programlisting>;; 名無しの貢献者より
+
+(global-set-key &quot;%&quot; 'match-paren)
+
+(defun match-paren (arg)
+  &quot;カッコ上ならマッチするカッコへ移動、それ以外は%を挿入&quot;
+  (interactive &quot;p&quot;)
+  (cond ((looking-at &quot;\\s(&quot;) (forward-list 1) (backward-char 1))
+        ((looking-at &quot;\\s)&quot;) (forward-char 1) (backward-list 1))
+        (t (self-insert-command (or arg 1)))))
+</programlisting>
+</listitem></itemizedlist>
+</sect1>
+<sect1 label="5.26" id="Hiding-_0023ifdef-lines">
+<title>In C mode, can I show just the lines that will be left after <literal>#ifdef</literal> commands are handled by the compiler?</title>
+<indexterm role="cp"><primary><literal>#ifdef</literal>, selective display of</primary></indexterm>
+<indexterm role="cp"><primary><literal>hide-ifdef-mode</literal></primary></indexterm>
+<indexterm role="cp"><primary>Hiding <literal>#ifdef</literal> text</primary></indexterm>
+<indexterm role="cp"><primary>Selectively displaying <literal>#ifdef</literal> code</primary></indexterm>
+
+<para><userinput>M-x hide-ifdef-mode</userinput>
+(マイナーモード)です。Emacsに同梱されている<filename>cpp.el</filename>も調査したいと思うかもしれません。
+</para>
+</sect1>
+<sect1 label="5.27" id="Repeating-commands">
+<title>How do I repeat a command as many times as possible?</title>
+<indexterm role="cp"><primary>Repeating commands many times</primary></indexterm>
+<indexterm role="cp"><primary>Commands, repeating many times</primary></indexterm>
+<indexterm role="cp"><primary><literal>.</literal>, equivalent to <literal>vi</literal> command</primary></indexterm>
+
+<para>最後のコマンドを繰り返すには<literal>repeat</literal>コマンド(<userinput>C-x
+z</userinput>)を使用します。プレフィクス引数を前置すると、そのプレフィクスは繰り返すコマンドに適用されます。
+</para>
+<para>引き起こしを取得するためにミニバッファーを使用するコマンドは、<userinput>C-x <keycap>ESC</keycap> <keycap>ESC</keycap></userinput>
+(<literal>repeat-complex-command</literal>)とタイプしても再呼び出しができます。<literal>repeat-complex-command</literal>では<userinput>M-p</userinput>と<userinput>M-n</userinput>(キーボードにあれば上矢印と下矢印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたものを走査することができます。
+</para>
+<para>一連のコマンドを繰り返すにはキーボードマクロを使用します。コマンドを呼び出すキーボードマクロの作成には<userinput>C-x (</userinput>と<userinput>C-x
+)</userinput>を使い、その後に<userinput>C-x e</userinput>とタイプします。section &#8220;Keyboard Macros&#8221; in <citetitle>The GNU Emacs
+Manual</citetitle>を参照してください。
+</para>
+<para>最後の挿入/削除を再実行する<literal>vi</literal>の<literal>.</literal>コマンドが本当に欲しくて堪らなければ、それをサポートしているよう思われる、VIPERというEmacsに同梱の<literal>vi</literal>エミュレーションモードを使ってください。
+</para>
+</sect1>
+<sect1 label="5.28" id="Valid-X-resources">
+<title>What are the valid X resource settings (i.e., stuff in .Xdefaults)?</title>
+<indexterm role="cp"><primary>Resources, X</primary></indexterm>
+<indexterm role="cp"><primary>X resources</primary></indexterm>
+<indexterm role="cp"><primary>Setting X resources</primary></indexterm>
+
+<para>section &#8220;X Resources&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+<para>EmacsがXツールキットとともにコンパイルされていると仮定して、メニューバーのリソース名を確認するためにeditres(X11R5以降)のようなリソースエディターを使用することもできます。
+</para>
+</sect1>
+<sect1 label="5.29" id="Evaluating-Emacs-Lisp-code">
+<title>How do I execute (&#8220;evaluate&#8221;) a piece of Emacs Lisp code?</title>
+<indexterm role="cp"><primary>Evaluating Lisp code</primary></indexterm>
+<indexterm role="cp"><primary>Lisp forms, evaluating</primary></indexterm>
+
+<para>Emacs Lispの<firstterm>フォーム(form)</firstterm>を実行(Lispスラングでは<firstterm>evaluate: 評価</firstterm>)するには:
+</para>
+<itemizedlist>
+<listitem><para>Emacsを実行する際に毎回評価させたければ、ホームディレクトリーにある<filename>.emacs</filename>という名前のファイルにそれを記述する。これは&#8220;あなたの<filename>.emacs</filename>ファイル&#8221;と呼ばれるものであり、あなたの個人的なカスタマイズがすべて含まれている。
+</para>
+</listitem><listitem><para><filename>*scratch*</filename>バッファーでフォームをタイプしてから、それの後で<keycap>LFD</keycap>
+(または<userinput>C-j</userinput>)をタイプできる。フォームの評価結果はそのままバッファーに挿入される。
+</para>
+</listitem><listitem><para><literal>emacs-lisp-mode</literal>では<userinput>C-M-x</userinput>とタイプすることでポイントの前、または周辺にあるトップレベルのフォームを評価する。
+</para>
+</listitem><listitem><para>任意のバッファーにおいて<userinput>C-x C-e</userinput>とタイプするとポイント直前にあるLispフォームを評価して、その値をエコーエリアにプリントする。
+</para>
+</listitem><listitem><para><userinput>M-:</userinput>または<userinput>M-x
+eval-expression</userinput>とタイプすることによりミニバッファーでLispフォームをタイプして、<keycap>RET</keycap>の押下することでそれが1回評価される。
+</para>
+</listitem><listitem><para>ファイル内のすべてのLispフォームをEmacsにすべて評価させるには<userinput>M-x
+load-file</userinput>を使用できる(これをLispから行うにはかわりに関数<literal>load</literal>を使う)。
+</para>
+<para>関数<literal>load-library</literal>、<literal>eval-region</literal>、<literal>eval-buffer</literal>、<literal>require</literal>、<literal>autoload</literal>も有用。これらについての詳細は<link linkend="Emacs-Lisp-documentation">Emacs
+Lisp documentation</link>を参照のこと。
+</para>
+</listitem></itemizedlist>
+</sect1>
+<sect1 label="5.30" id="Changing-the-length-of-a-Tab">
+<title>How do I change Emacs&#8217;s idea of the <keycap>TAB</keycap> character&#8217;s length?</title>
+<indexterm role="cp"><primary>Tab length</primary></indexterm>
+<indexterm role="cp"><primary>Length of tab character</primary></indexterm>
+
+<para>変数<literal>tab-width</literal>のデフォルト値をセットします。たとえば10文字ごとに<keycap>TAB</keycap>ストップをセットするには、<filename>.emacs</filename>ファイルに以下を挿入してください:
+</para>
+<programlisting>(setq-default tab-width 10)
+</programlisting>
+<para>変数<literal>tab-width</literal>と変数<literal>tab-stop-list</literal>を混同しないでください。前者はリテラルの<keycap>TAB</keycap>文字の表示に使用されます。一方後者は特定のモードにおいて<keycap>TAB</keycap>文字を押下した際にどの文字が挿入されるかを制御します。
+</para>
+</sect1>
+<sect1 label="5.31" id="Inserting-text-at-the-beginning-of-each-line">
+<title>How do I insert &lt;some text&gt; at the beginning of every line?</title>
+<indexterm role="cp"><primary>Prefixing a region with some text</primary></indexterm>
+<indexterm role="cp"><primary>Prefix character, inserting in mail/news replies</primary></indexterm>
+<indexterm role="cp"><primary>Replies to mail/news, inserting a prefix character</primary></indexterm>
+<indexterm role="cp"><primary><literal>mail-yank-prefix</literal></primary></indexterm>
+<indexterm role="cp"><primary>Mail replies, inserting a prefix character</primary></indexterm>
+<indexterm role="cp"><primary>News replies, inserting a prefix character</primary></indexterm>
+
+<para>これをバッファー全体にたいして行う場合には<userinput>M-&lt; M-x replace-regexp <keycap>RET</keycap> ^ <keycap>RET</keycap> your
+text <keycap>RET</keycap></userinput>とタイプします。
+</para>
+<para>リージョンにたいして行う場合には<literal>string-insert-rectangle</literal>を使用します。プレフィクスを付加したい1行目の先頭にマークをセット(<userinput>C-<keycap>SPC</keycap></userinput>)して、付加したい最後の行へカーソルを移動、それから<userinput>M-x
+string-insert-rectangle <keycap>RET</keycap></userinput>とタイプしてください。バッファー全体に行う場合には<userinput>C-x h M-x
+string-insert-rectangle <keycap>RET</keycap></userinput>とタイプします。
+</para>
+<para>yankしたメールメッセージにプレフィクスとして&#8216;<literal>&gt;</literal>&#8217;の付加を試みているなら、変数<literal>mail-yank-prefix</literal>をセットしたいと思うかもしれません。Messageバッファーではyankしたメッセージのメッセージの引用に<userinput>M-;</userinput>
+(こはリージョンのコメントアウトという汎用目的のためのメカニズムである関数<literal>comment-region</literal>を実行する)を使うことさえできます(<link linkend="Changing-the-included-text-prefix">Changing
+the included text prefix</link>を参照)。
+</para>
+</sect1>
+<sect1 label="5.32" id="Forcing-the-cursor-to-remain-in-the-same-column">
+<title>How do I make Emacs behave like this: when I go up or down, the cursor should stay in the same column even if the line is too short?</title>
+<indexterm role="cp"><primary><literal>picture-mode</literal></primary></indexterm>
+<indexterm role="cp"><primary>Remaining in the same column, regardless of contents</primary></indexterm>
+<indexterm role="cp"><primary>Vertical movement in empty documents</primary></indexterm>
+
+<para><userinput>M-x picture-mode</userinput>を使用します。
+</para>
+<para>変数<literal>track-eol</literal>、および<userinput>C-x C-n</userinput>にバインドされているコマンド<literal>set-goal-column</literal>
+(section &#8220;Moving Point&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照)も確認してください。
+</para>
+</sect1>
+<sect1 label="5.33" id="Forcing-Emacs-to-iconify-itself">
+<title>How do I tell Emacs to iconify itself?</title>
+<indexterm role="cp"><primary>Iconification under the X Window System</primary></indexterm>
+<indexterm role="cp"><primary>X Window System and iconification</primary></indexterm>
+<indexterm role="cp"><primary>Suspending Emacs</primary></indexterm>
+
+<para><userinput>C-z</userinput>はEmacsをXで実行中ならアイコン化、それ以外ならEmacsをサスペンドします。section &#8220;Frame Commands&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+</sect1>
+<sect1 label="5.34" id="Using-regular-expressions">
+<title>How do I use regexps (regular expressions) in Emacs?</title>
+<indexterm role="cp"><primary>Regexps</primary></indexterm>
+<indexterm role="cp"><primary>Regular expressions</primary></indexterm>
+<indexterm role="cp"><primary>Differences between Unix and Emacs regexps</primary></indexterm>
+<indexterm role="cp"><primary>Unix regexps, differences from Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Text strings, putting regexps in</primary></indexterm>
+
+<para>section &#8220;Regexp Backslash&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+<para>演算子<literal>or</literal>は&#8216;<literal>|</literal>&#8217;ではなく&#8216;<literal>\|</literal>&#8217;、グルーピング演算子は&#8216;<literal>\(</literal>&#8217;と&#8216;<literal>\)</literal>&#8217;です。更にバックスラッシュの文字列構文は&#8216;<literal>\\</literal>&#8217;です。Lisp文字列で&#8216;<literal>xxx\(foo\|bar\)</literal>&#8217;のような正規表現を指定するには&#8216;<literal>xxx\\(foo\\|bar\\)</literal>&#8217;を使用します。
+</para>
+<para>バックスラッシュを2回記述することに注意してください!
+</para>
+<itemizedlist>
+<listitem><para>Unixの<filename>grep</filename>、<filename>sed</filename>などとは異なり文字の補集合(&#8216;<literal>[^...]</literal>&#8217;)にはマッチしない文字として改行文字(<keycap>LFD</keycap>または<userinput>C-j</userinput>あるいは&#8216;<literal>\n</literal>&#8217;)が記述されていなければ改行文字はマッチする。
+</para>
+</listitem><listitem><para>文字構文のregexp(たとえば&#8216;<literal>\sw</literal>&#8217;)は文字セットにたいするregexp(たとえば&#8216;<literal>[aeiou]</literal>&#8217;)の内部では意味をもたない(これは実際にはregexp構文として典型的)。
+</para>
+</listitem></itemizedlist>
+</sect1>
+<sect1 label="5.35" id="Replacing-text-across-multiple-files">
+<title>How do I perform a replace operation across more than one file?</title>
+<indexterm role="cp"><primary>Replacing strings across files</primary></indexterm>
+<indexterm role="cp"><primary>Multiple files, replacing across</primary></indexterm>
+<indexterm role="cp"><primary>Files, replacing strings across multiple</primary></indexterm>
+<indexterm role="cp"><primary>Recursive search/replace operations</primary></indexterm>
+
+<para>Diredモード(<userinput>M-x dired <keycap>RET</keycap></userinput>または<userinput>C-x
+d</userinput>)はコマンド<literal>dired-do-find-regexp-and-replace</literal>
+(<userinput>Q</userinput>)をサポートしています。これは複数ファイルにおける正規表現の置換を可能にします。
+</para>
+<para>以下のステップにしたがうことにより、このコマンドで複数ファイルにたいする検索/置換処理を行うことができます:
+</para>
+<itemizedlist><listitem><para><literal>find-dired</literal>、<literal>find-name-dired</literal>、<literal>find-grep-dired</literal>のいずれかを使って、処理したいファイルのリストを用意する。
+</para>
+</listitem><listitem><para>結果として得られたDiredバッファーで<userinput>t</userinput>を使用してすべてのファイルをマークする。
+</para>
+</listitem><listitem><para><userinput>Q</userinput>を使用して、マーク済みファイルにたいする<literal>query-replace-regexp</literal>セッションを開始する。
+</para>
+</listitem><listitem><para>それぞれのファイルにたいしてすべての置換を承諾するために<userinput>!</userinput>を打鍵する。
+</para></listitem></itemizedlist>
+<para>Emacsの&#8220;tags&#8221;機能を使用して、別の方法で同じこと行うことができます。tags機能に含まれているコマンド<literal>tags-query-replace</literal>は<filename>TAGS</filename>ファイルに記述されたすべてのファイルを横断してquery-replace(問い合わせ付き置換)を行います。section &#8220;Identifier
+Search&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+</sect1>
+<sect1 label="5.36" id="Documentation-for-etags">
+<title>Where is the documentation for <literal>etags</literal>?</title>
+<indexterm role="cp"><primary>Documentation for <literal>etags</literal></primary></indexterm>
+<indexterm role="cp"><primary><literal>etags</literal>, documentation for</primary></indexterm>
+
+<para><literal>etags</literal>のmanページは<literal>emacs</literal>のmanページと同じ場所にあるはずです。
+</para>
+<para>たとえば&#8216;<literal>etags -H</literal>&#8217;のように、コマンドラインスイッチで手早く読める説明もあります。
+</para>
+</sect1>
+<sect1 label="5.37" id="Disabling-backups">
+<title>How do I disable backup files?</title>
+<indexterm role="cp"><primary>Backups, disabling</primary></indexterm>
+<indexterm role="cp"><primary>Disabling backups</primary></indexterm>
+
+<para>特に何か不幸な出来事が起こったとき等、バックアップ特は役に立つので多分これを行いたいとは思わないでしょう。
+</para>
+<para>Diredでバックアップファイル(およびその他の&#8220;興味がない&#8221;ファイル)を目にすることを避けるには、<filename>.emacs</filename>ファイルに以下を追加して<literal>dired-x</literal>をロードしてください:
+</para>
+<programlisting>(add-hook 'dired-load-hook
+          (lambda ()
+           (require 'dired-x)))
+</programlisting>
+<para><literal>dired-x</literal>のロードにより、<userinput>M-o</userinput>でそれぞれのdiredバッファーでの(興味がないファイルの表示)の省略が切り替わります。以下を<filename>.emacs</filename>に記述すれば、新たなdiredバッファーで省略をデフォルトにできます:
+</para>
+<programlisting>; 訳注
+; FAQ執筆時以降実装が更新されているので以下のように読み変えてください。
+; (現時点最新開発版28.0.??にバグレポート投げときます)
+;   dired-omit-toggle -&gt; dired-omit-mode
+;   M-o               -&gt; C-x M-o
+(add-hook 'dired-mode-hook 'dired-omit-toggle)
+</programlisting>
+<para>Unixシェルで&#8216;<literal>ls</literal>&#8217;するたびにバックアップファイルが目につきうんざりしていたら、&#8216;<literal>-B</literal>&#8217;オプションでGNU
+<literal>ls</literal>を試してみてください。GNU <literal>ls</literal>はGNU
+Fileutilsパッケージの一部であり、<ulink url="https://ftp.gnu.org">https://ftp.gnu.org</ulink>およびそのミラーサイトで利用可能です(<link linkend="Current-GNU-distributions">Current
+GNU distributions</link>を参照)。
+</para>
+<para>バックアップ作成を無効にしたり作成方法を変更する場合には、section &#8220;Backup Names&#8221; in <citetitle>The GNU Emacs
+Manual</citetitle>を参照してください。
+</para>
+<indexterm role="cp"><primary>Backup files in a single directory</primary></indexterm>
+<para>Emacs
+21.1から変数<literal>backup-directory-alist</literal>をカスタマイズして、Emacsがバックアップファイルを置く場所を制御できるようになりました。この変数の値は特定のパターンの名前をもつファイルにたいして、バックアップファイルを特定のディレクトリーに置くように指定します。<emphasis role="bold">すべて</emphasis>のバックアップファイルをディレクトリー<filename>dir</filename>に置くことをEmacsに強制する要素<literal>(&quot;.&quot;
+. <replaceable>dir</replaceable>)</literal>を追加する等が典型的な使い方です。
+</para>
+</sect1>
+<sect1 label="5.38" id="Disabling-auto_002dsave_002dmode">
+<title>How do I disable <literal>auto-save-mode</literal>?</title>
+<indexterm role="cp"><primary>Disabling <literal>auto-save-mode</literal></primary></indexterm>
+<indexterm role="cp"><primary>Auto-saving</primary></indexterm>
+<indexterm role="cp"><primary>Saving at frequent intervals</primary></indexterm>
+
+<para>特にドキュメント編集中にEmacsやコンピューターがクラッシュしたとき等、オートセーブは役に立つので多分これを行いたいとは思わないでしょう。
+</para>
+<para>そのかわりにEmacsがオートセーブを行う前に待機するキーストローク数を指定する変数<literal>auto-save-interval</literal>を変更したいと思うかもしれません。この値を増加させることによって、その長さの間はEmacsにオートセーブの待機を強制します。これによって煩わしさが減るかもしれません。
+</para>
+<para>Sebastian Kremerの<literal>auto-save</literal>パッケージも調べたいと思うかもしれません(<link linkend="Packages-that-do-not-come-with-Emacs">Packages that do
+not come with
+Emacs</link>を参照)。このパッケージではすべてのauto-saveファイルを<filename>/tmp</filename>のような1つのディレクトリーに置くこともできます。
+</para>
+<para><literal>auto-save-mode</literal>を無効にしたり動作を変更するには、section &#8220;Auto Save&#8221; in <citetitle>The GNU Emacs
+Manual</citetitle>を参照してください。
+</para>
+</sect1>
+<sect1 label="5.39" id="Going-to-a-line-by-number">
+<title>How can I go to a certain line given its number?</title>
+<indexterm role="cp"><primary>Going to a line by number</primary></indexterm>
+<indexterm role="cp"><primary>Compilation error messages</primary></indexterm>
+<indexterm role="cp"><primary>Recompilation</primary></indexterm>
+
+<para>行番号で行に移動する必要があるのは確かですか?
+もしかしたらコンパイラーがエラーメッセージをプリントしたソースファイル行を表示するのがあなたの望んでいることではありませんか?
+もしそうならEmacsからコマンド<userinput>M-x compile</userinput>および<userinput>M-x
+recompile</userinput>を使用してコンパイルすることで、より効率的にこれを行うことができます。Emacsはコンパイルエラーメッセージを自動的にインターセプトして、<filename>*compilation*</filename>と呼ばれる特別なバッファーに挿入ます。あなたはソース内の、各メッセージに対応する場所をvisitできます。問題のある行を1つずつステップスルーするには<userinput>C-x
+`</userinput>とタイプします(Emacs 22からは前または次のマッチへ直接移動する<userinput>M-g M-p</userinput>および<userinput>M-g
+M-n</userinput>でも使用できる。<filename>*compilation*</filename>バッファーのメッセージテキスト上で<userinput>mouse-2</userinput>をクリックするか<keycap>RET</keycap>を押下することによって、そのメッセージ中に記されている番号の行へ移動します。
+</para>
+<para>しかし特定のテキスト行へ移動する必要が本当にあるなら<userinput>M-g M-g</userinput> (Emacs
+22からは<literal>goto-line</literal>関数のデフォルトバインディング)をタイプしてください。Emacsは行番号の入力を求めてその行に移動するでしょう。
+</para>
+<para>行番号を数引数として<literal>goto-line</literal>を呼び出せば、これをより高速に行うことができます。たとえば<userinput>C-u 286 M-g
+M-g</userinput>はカレントバッファーの行番号286へジャンプします。
+</para>
+</sect1>
+<sect1 label="5.40" id="Modifying-pull_002ddown-menus">
+<title>How can I create or modify new pull-down menu options?</title>
+<indexterm role="cp"><primary>Pull-down menus, creating or modifying</primary></indexterm>
+<indexterm role="cp"><primary>Menus, creating or modifying</primary></indexterm>
+<indexterm role="cp"><primary>Creating new menu options</primary></indexterm>
+<indexterm role="cp"><primary>Modifying pull-down menus</primary></indexterm>
+<indexterm role="cp"><primary>Menus and keymaps</primary></indexterm>
+<indexterm role="cp"><primary>Keymaps and menus</primary></indexterm>
+
+<para>メニュータイトル(&#8216;<literal>File</literal>&#8217;、&#8216;<literal>Edit</literal>&#8217;、&#8216;<literal>Buffers</literal>&#8217;など)はそれぞれローカルキーマップおよびグローバルキーマップを表しています。メニュータイトルをマウスで選択することによって、メニューのフォーム内にそのキーマップの非<literal>nil</literal>のコンテンツが表示されます。
+</para>
+<para>したがって既存メニューにメニューオプションを追加するために行う必要があるのは、適切なキーマップへの新たな定義の追加だけです。つまり&#8216;<literal>Edit</literal>&#8217;メニューに&#8216;<literal>Forward
+Word</literal>&#8217;アイテムを追加するためには、以下のLispコードが必要です:
+</para>
+<programlisting>(define-key global-map
+  [menu-bar edit forward]
+  '(&quot;Forward word&quot; . forward-word))
+</programlisting>
+<para>1行目ではグローバルメニューバーエントリーを含むグローバルキーマップにエントリーを追加しています。<literal>global-map</literal>への参照をローカルキーマップに置き換えることにより、特定のモードだけにメニューオプションが追加されます。
+</para>
+<para>2行目ではメニューバーから新エントリーへのパスを記述しています。これはこのメニューエントリーを&#8216;<literal>File</literal>&#8217;メニューの下に配置するには、2行目の<literal>edit</literal>という単語を<literal>file</literal>に変更すればよいことを意味します。
+</para>
+<para>3行目は1つ目の要素が表示されるタイトル、2つ目の要素がメニューオプション呼び出し時に呼び出される関数であるようなコンスセルです。
+</para>
+<para>既存メニューへの新オプション追加デ新たなメニューを追加するためには新たにキーマップ全体を定義しなければなりません。
+</para>
+<programlisting>(define-key global-map [menu-bar words]
+  (cons &quot;Words&quot; (make-sparse-keymap &quot;Words&quot;)))
+</programlisting>
+<para>上記のコードは新たに疎キーマップ(sparse
+keymap)を追加して名前&#8216;<literal>Words</literal>&#8217;を付与、それをグローバルメニューバーにアタッチします。したがってこの新メニューへの、&#8216;<literal>Forward
+Word</literal>&#8217;アイテム追加には以下のようなコードが必要になるでしょう:
+</para>
+<programlisting>(define-key global-map
+  [menu-bar words forward]
+  '(&quot;Forward word&quot; . forward-word))
+</programlisting>
+<para>キーマップが機能する方法により、メニューオプションはより新しく定義されたアイテムがトップになるように表示されることに注意してください。したがってメニューオプション&#8216;<literal>foo</literal>&#8217;、&#8216;<literal>bar</literal>&#8217;、&#8216;<literal>baz</literal>&#8217;を(この順番で)定義するとメニューオプションは&#8216;<literal>baz</literal>&#8217;がトップ、&#8216;<literal>foo</literal>&#8217;がボトムに表示されます。
+</para>
+<para>これを回避する1つの方法として関数<literal>define-key-after</literal>の使用があります。これは<literal>define-key</literal>と同様ですが、アイテムが出現しる位置を変更することができます。以下は&#8216;<literal>Edit</literal>&#8217;メニューの&#8216;<literal>Undo</literal>&#8217;アイテムの直後になるように&#8216;<literal>Forward
+Word</literal>&#8217;アイテムを挿入します。
+</para>
+<programlisting>(define-key-after
+  (lookup-key global-map [menu-bar edit])
+  [forward]
+  '(&quot;Forward word&quot; . forward-word)
+  'undo)
+</programlisting>
+<para><literal>define-key-after</literal>にたいする2つ目と3つ目の引数が<literal>define-key</literal>の場合とは異なること、そして追加した新しい(3つ目の)引数がこの関数によってどのように定義されるかに注意してください。
+</para>
+<para>ある場所から別の場所にメニューオプションを移動するには、最後の引数を適切に指定して<literal>define-key-after</literal>を評価するだけです。
+</para>
+<para>より詳細な情報、およびメニューオプションの作成と行うより多くの例については、<citetitle>Emacs Lisp Reference
+Manual</citetitle>の&#8220;Menu Keymaps&#8221;にあります(このマニュアル内の情報については<link linkend="Emacs-Lisp-documentation">Emacs Lisp
+documentation</link>を参照)。
+</para>
+</sect1>
+<sect1 label="5.41" id="Deleting-menus-and-menu-options">
+<title>How do I delete menus and menu options?</title>
+<indexterm role="cp"><primary>Deleting menus and menu options</primary></indexterm>
+<indexterm role="cp"><primary>Menus, deleting</primary></indexterm>
+
+<para>メニューを削除するもっともシンプルな方法は、そのキーマップに&#8216;<literal>nil</literal>&#8217;をセットします。たとえば&#8216;<literal>Words</literal>&#8217;メニュー(<link linkend="Modifying-pull_002ddown-menus">Modifying
+pull-down menus</link>を参照)を削除するには以下を使用します:
+</para>
+<programlisting>(define-key global-map [menu-bar words] nil)
+</programlisting>
+<para>同じように、メニューオプションを削除するには、キーマップエントリーを<literal>nil</literal>に再定義する必要があります。たとえば&#8216;<literal>Edit</literal>&#8217;メニューから(<link linkend="Modifying-pull_002ddown-menus">Modifying
+pull-down menus</link>で追加した)&#8216;<literal>Forward word</literal>&#8217;メニューオプションを削除するには以下を使用します:
+</para>
+<programlisting>(define-key global-map [menu-bar edit forward] nil)
+</programlisting>
+</sect1>
+<sect1 label="5.42" id="Turning-on-syntax-highlighting">
+<title>How do I turn on syntax highlighting?</title>
+<indexterm role="cp"><primary>Syntax highlighting</primary></indexterm>
+<indexterm role="cp"><primary><literal>font-lock-mode</literal></primary></indexterm>
+<indexterm role="cp"><primary>Highlighting based on syntax</primary></indexterm>
+<indexterm role="cp"><primary>Colorizing text</primary></indexterm>
+<indexterm role="cp"><primary>FAQ, <literal>font-lock-mode</literal></primary></indexterm>
+
+<para><literal>font-lock-mode</literal>はEmacsがカレントバッファーでシンタックスハイライト和行う標準的な方法です。これはEmacs
+22.1以降ではデフォルトで有効になっています。
+</para>
+<para><literal>font-lock-mode</literal>をオンに切り替えると、異なるタイプのテキストは違うカラーで表示されます。たとえばプログラミング用のモードでは変数はあるフェイスで、キーワードはそれとは異なるフェイス、コメントは更に違うフェイスで表示されるでしょう。
+</para>
+<para>既存バッファーで<literal>font-lock-mode</literal>をオフに切り替えるには<userinput>M-x font-lock-mode
+<keycap>RET</keycap></userinput>を使用してください。
+</para>
+<para>Emacs
+21以前では以下のコードを<filename>.emacs</filename>ファイルに記述して、<literal>font-lock-mode</literal>をグローバルにオンに切り替えることができます。
+</para>
+<programlisting>(global-font-lock-mode 1)
+</programlisting>
+<para><literal>font-lock-mode</literal>によるバッファーのハイライトにはかなり時間がかかり、苛立たしい表示の遅延を引き起こすので、これに対処するための機能がいくつかあります。
+</para>
+<indexterm role="cp"><primary>Just-In-Time syntax highlighting</primary></indexterm>
+<para>Emacs
+21では<literal>font-lock-mode</literal>をオンに切り替えることによって、<literal>jit-lock-mode</literal>が提供する新たな<firstterm>JITフォント表示(Just-In-Time
+fontification)</firstterm>が自動的にアクティブになります。<literal>jit-lock-mode</literal>はバッファーをユーザーに実際に見せる必要が生じるまで、そのバッファー範囲のフォント表示を遅延させるとともに、EmacsがIdol中にもフォント表示を行えます。これによってバッファーの可視範囲はほとんど瞬時に表示されるようになります。<literal>jit-lock-mode</literal>のカスタマイズの詳細については<userinput>C-h
+f jit-lock-mode <keycap>RET</keycap></userinput>とタイプしてください。
+</para>
+<indexterm role="cp"><primary>Levels of syntax highlighting</primary></indexterm>
+<indexterm role="cp"><primary>Decoration level, in <literal>font-lock-mode</literal></primary></indexterm>
+<para>21より前のバージョンのEmacsではささやかなものから派手なものまで、異なるレベルの装飾が利用可能です。より多くの装飾にはバッファーがフォント表示されるまで、より長い時間待機する必要があることを意味しています。バッファーがどのように装飾されるべきかを制御するためには、<filename>.emacs</filename>ファイルで<literal>font-lock-maximum-decoration</literal>に値をセットします。<literal>nil</literal>値はデフォルトの(通常は最低限の)装飾、<literal>t</literal>は最大限の装飾をも意味します。できるだけ派手な外観にするには、<filename>.emacs</filename>ファイルに以下の行を含めてください。
+</para>
+<programlisting>(setq font-lock-maximum-decoration t)
+</programlisting>
+<para>異なるモードでは違う方法でハイライトするようにこの変数をセットすることもできます。詳細については<userinput>C-h v</userinput> (または<userinput>M-x
+describe-variable
+<keycap>RET</keycap></userinput>)で<literal>font-lock-maximum-decoration</literal>のドキュメントを確認してください。
+</para>
+<para>更に<userinput>C-h f font-lock-mode</userinput> (<userinput>M-x describe-function <keycap>RET</keycap>
+font-lock-mode <keycap>RET</keycap></userinput>)で利用できる、関数<literal>font-lock-mode</literal>のドキュメントも参照してください。
+</para>
+<para>バッファーをフェイス(カラーとフォント)付きでそのままプリントするためには、<userinput>M-x
+ps-print-buffer-with-faces</userinput>または<userinput>M-x
+ps-print-region-with-faces</userinput>を使用します。あなたにはPostScriptプリンターにテキストを送信する方法、あるいはGhostscriptのようなPostScriptインタープリターが必要になるでしょう。詳細については変数<literal>ps-printer-name</literal>、<literal>ps-lpr-command</literal>、<literal>ps-lpr-switches</literal>のドキュメントを参照してください。
+</para>
+</sect1>
+<sect1 label="5.43" id="Scrolling-only-one-line">
+<title>How can I force Emacs to scroll only one line when I move past the bottom of the screen?</title>
+<indexterm role="cp"><primary>Scrolling only one line</primary></indexterm>
+<indexterm role="cp"><primary>Reducing the increment when scrolling</primary></indexterm>
+
+<para><userinput>M-x customize-variable <keycap>RET</keycap> scroll-conservatively
+<keycap>RET</keycap></userinput>で<literal>scroll-conservatively</literal>をカスタマイズして大きな値、たとえば10000にセットしてください。これが何を意味するかについては、section &#8220;Auto
+Scrolling&#8221; in <citetitle>The GNU Emacs Manual</citetitle>の説明を参照してください。
+</para>
+<para>かわりに<filename>.emacs</filename>で以下のLispフォームを使うこともできます:
+</para>
+<programlisting>(setq scroll-conservatively most-positive-fixnum)
+</programlisting>
+</sect1>
+<sect1 label="5.44" id="Editing-MS_002dDOS-files">
+<title>How can I edit MS-DOS files using Emacs?</title>
+<indexterm role="cp"><primary>Editing MS-DOS files</primary></indexterm>
+<indexterm role="cp"><primary>MS-DOS files, editing</primary></indexterm>
+<indexterm role="cp"><primary>Microsoft files, editing</primary></indexterm>
+<indexterm role="cp"><primary>Windows files, editing</primary></indexterm>
+
+<para>MS-DOS
+(およびWindows)のファイルの検出と処理は透過的に行われます。Unixシステム上でファイルフォーマットについて心配するなくMS-DOSファイルのオープン、編集、保存を行うことができます。
+</para>
+<para>MS-DOS形式ファイルの編集時には、それがDOSファイルであることが示されます。UnixおよびGNU/Linuxシステム、およびMacintoshでもモードライン左端付近に文字列&#8216;<literal>(DOS)</literal>&#8217;が表示されるでしょう。DOSのEOLフォーマットをデフォルトとして使用するDOSおよびWindowsでは、モードラインにバックスラッシュ(&#8216;<literal>\</literal>&#8217;)が表示されます。
+</para>
+</sect1>
+<sect1 label="5.45" id="Filling-paragraphs-with-a-single-space">
+<title>How can I tell Emacs to fill paragraphs with a single space after each period?</title>
+<indexterm role="cp"><primary>One space following periods</primary></indexterm>
+<indexterm role="cp"><primary>Single space following periods</primary></indexterm>
+<indexterm role="cp"><primary>Periods, one space following</primary></indexterm>
+
+<para>以下の行を<filename>.emacs</filename>ファイルに追加してください:
+</para>
+<programlisting>(setq sentence-end-double-space nil)
+</programlisting>
+</sect1>
+<sect1 label="5.46" id="Escape-sequences-in-shell-output">
+<title>Why these strange escape sequences from <literal>ls</literal> from the Shell mode?</title>
+<indexterm role="cp"><primary>Escape sequences in <literal>ls</literal> output</primary></indexterm>
+<indexterm role="cp"><primary><literal>ls</literal> in Shell mode</primary></indexterm>
+
+<para>多くのシステムでは、<literal>ls</literal>はANSIカラーエスケープシーケンスを使用してプリントを行う&#8216;<literal>ls
+--color</literal>&#8217;にエイリアスされています。Emacsのバージョン21.1以降には、これらのエスケープシーケンスをShellモードに認識させる<literal>ansi-color</literal>パッケージが含まれています。Emacs
+23.2以降では、このパッケージはデフォルトで有効になっています。これより前のバージョンではShellバッファーで<userinput>M-x
+ansi-color-for-comint-mode</userinput>とタイプするか、あるいはinitファイルに<literal>(add-hook
+'shell-mode-hook 'ansi-color-for-comint-mode-on)</literal>を追加することで有効にできます。
+</para>
+</sect1>
+<sect1 label="5.47" id="Fullscreen-mode-on-MS_002dWindows">
+<title>How can I start Emacs in fullscreen mode on MS-Windows?</title>
+<indexterm role="cp"><primary>Maximize frame</primary></indexterm>
+<indexterm role="cp"><primary>Fullscreen mode</primary></indexterm>
+
+<para>Emacs
+24からはコマンドラインオプション&#8216;<literal>--maximized</literal>&#8217;でEmacsを開始するか、あるいは<filename>.emacs</filename>ファイルに以下のフォームを記述します:
+</para>
+<programlisting>(add-hook 'emacs-startup-hook 'toggle-frame-maximized)
+</programlisting>
+<para>これより古いバージョンでは関数<literal>w32-send-sys-command</literal>を使用してください。たとえば以下を<filename>.emacs</filename>ファイルに記述できます:
+</para>
+<programlisting>(add-hook 'emacs-startup-hook
+          (lambda () (w32-send-sys-command ?\xF030)))
+</programlisting>
+<para>Emacsの開始においてデフォルトのフレームサイズからフルスクリーンに拡がる若干惑わされる視覚効果を回避するには、Windowsのレジストリ文字列に&#8216;<literal>Emacs.Geometry</literal>&#8217;エントリーを追加できます。section &#8220;X
+Resources&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+<para>幅と高さの正しい値を計算するためには、まずEmacsフレームを最大化してから<userinput>M-:</userinput>で<literal>(frame-height)</literal>および<literal>(frame-width)</literal>を評価してください。
+</para>
+<!-- - -->
+</sect1>
+</chapter>
+<chapter label="6" id="Bugs-and-problems">
+<title>Bugs and problems</title>
+<indexterm role="cp"><primary>Bugs and problems</primary></indexterm>
+
+<para>Emacsマニュアルにはユーザーが陥りやすい類の一般的なトラブルのリストがあるので、このチャプターに記述されていない問題に遭遇したら、section &#8220;Dealing with Emacs Trouble&#8221; in <citetitle>The GNU Emacs
+Manual</citetitle>を参照してください。バグを見つけたと判断したら、それをどうすればよいかについてはsection &#8220;Reporting Bugs&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+<para>Emacsディストリビューションに同梱されているファイル<filename>etc/PROBLEMS</filename>は特定プラットフォームでのEmacsのビルド、使用にたいする既知の様々な問題のリストがあります。これを読むには<userinput>C-h
+C-p</userinput>とタイプしてください。
+</para>
+
+<sect1 label="6.1" id="Problems-with-very-large-files">
+<title>Does Emacs have problems with large files?</title>
+<indexterm role="cp"><primary>Very large files, opening</primary></indexterm>
+<indexterm role="cp"><primary>Large files, opening</primary></indexterm>
+<indexterm role="cp"><primary>Opening very large files</primary></indexterm>
+<indexterm role="cp"><primary>Maximum file size</primary></indexterm>
+<indexterm role="cp"><primary>Files, maximum size</primary></indexterm>
+
+<para>Emacsのバッファーサイズには先天的に固定された制限があります。これは同一プラットフォームで他のプログラムがサポートするオブジェクトの最大サイズと比較すると厳しい制限です。
+</para>
+<para>バッファーの最大サイズはバージョン23.2からは32ビットマシンで512MBです。<literal>--with-wide-int</literal>フラグを使用してEmacsをビルドした場合には、バッファーの最大サイズは32ビットマシンで2GBです。
+</para>
+<para>64ビットマシンでコンパイルしたEmacsはより大きい<literal>most-positive-fixnum</literal>
+(2.3EB)までのバッファーを扱うことができます(訳注: 1E=1exaは10の18乗)。
+</para>
+<para>マルチバイト文字のデコーディングのような事柄のために、visitできるのはバッファーのサイズ制限の概ね半分のサイズのファイルだけです。圧縮されたアーカイブをvisitする際には、解凍のためにファイルサイズの制限はより小さくなります。
+</para>
+</sect1>
+<sect1 label="6.2" id="_005eM-in-the-shell-buffer">
+<title>How do I get rid of &#8216;<literal>^M</literal>&#8217; or echoed commands in my shell buffer?</title>
+<indexterm role="cp"><primary>Shell buffer, echoed commands and &#8216;<literal>^M</literal>&#8217; in</primary></indexterm>
+<indexterm role="cp"><primary>Echoed commands in <literal>shell-mode</literal></primary></indexterm>
+
+<para>それらを取り除くには<userinput>M-x comint-strip-ctrl-m
+<keycap>RET</keycap></userinput>を試してください。これが機能しない場合には、いくつかのオプションがあります。
+</para>
+<para><literal>tcsh</literal>では以下を<filename>.cshrc</filename> (または<filename>.tcshrc</filename>)ファイルに記述してください:
+</para>
+<screen>if ($?INSIDE_EMACS &amp;&amp; $?tcsh)
+    unset edit
+    stty -icrnl -onlcr -echo susp ^Z
+endif
+</screen>
+<para>あるいは以下をファイル<filename>.emacs_tcsh</filename>または<filename>~/.emacs.d/init_tcsh.sh</filename>に記述してください:
+</para>
+<screen>unset edit
+stty -icrnl -onlcr -echo susp ^Z
+</screen>
+<para>Shellバッファーで<literal>tcsh</literal>のかわりに<literal>csh</literal>を使用してください。1つ目の方法は:
+</para>
+<programlisting>(setq explicit-shell-file-name &quot;/bin/csh&quot;)
+</programlisting>
+<para>別の方法としては<filename>.cshrc</filename> (または<filename>.tcshrc</filename>)ファイルでこれを行う方法です:
+</para>
+<screen>setenv ESHELL /bin/csh
+</screen>
+<para>(これが効果をもつように環境変数を正しくセットした後にEmacsを再起動しなければなりません。)
+</para>
+<para>以下のLispフォームでEmacs Lispにより<literal>ESHELL</literal>環境変数をセットすることもできます:
+</para>
+<programlisting>(setenv &quot;ESHELL&quot; &quot;/bin/csh&quot;)
+</programlisting>
+<para>上記の解決策は最初にシェルが&#8216;<literal>^M</literal>&#8217;文字を生成するのを防ぐ試みです。これが不可能(たとえばWindowsシェルを使用している)なら、<filename>.emacs</filename>に追加することによって、Emacsにそれらの文字をバッファーから削除させることができます。
+</para>
+<programlisting>(add-hook 'comint-output-filter-functions #'comint-strip-ctrl-m)
+</programlisting>
+<para>関連する注意:
+あなたのシェルが入力行をShellバッファーでエンコードする場合には、Shellバッファーで<literal>comint-process-echoes</literal>変数をカスタマイズするか、あるいはシェルの起動ファイルで以下のコマンドの実行を試みたいと思うかもしれません:
+</para>
+<screen>stty -icrnl -onlcr -echo susp ^Z
+</screen>
+</sect1>
+<sect1 label="6.3" id="Problems-with-Shell-Mode">
+<title>Why do I get an error message when I try to run <userinput>M-x shell</userinput>?</title>
+
+<indexterm role="cp"><primary>Shell Mode, problems</primary></indexterm>
+<indexterm role="cp"><primary><literal>explicit-shell-file-name</literal></primary></indexterm>
+<para>これはEmacsが間違った場所でシェルを探そうとして起こるかもしれません。シェル実行形式の場所をあなたが知っていたら、<filename>.emacs</filename>ファイルで変数<literal>explicit-shell-file-name</literal>がそのフルファイル名を指し示すようにセットしてください。
+</para>
+<indexterm role="cp"><primary>Antivirus programs, and Shell Mode</primary></indexterm>
+<para>MS-Windows上のShellモードで差し出がましいアンチウイルスソフトウェアによりトラブルに遭う人がいます。このようなケースでは常駐アンチウイルスプログラムを無効にすると問題は解決するでしょう。
+</para>
+</sect1>
+<sect1 label="6.4" id="Termcap_002fTerminfo-entries-for-Emacs">
+<title>Where is the termcap/terminfo entry for terminal type &#8216;<literal>emacs</literal>&#8217;?</title>
+<indexterm role="cp"><primary>Termcap</primary></indexterm>
+<indexterm role="cp"><primary>Terminfo</primary></indexterm>
+<indexterm role="cp"><primary>Emacs entries for termcap/terminfo</primary></indexterm>
+
+<para>ターミナルタイプ&#8216;<literal>emacs</literal>&#8217;にたいするtermcapエントリーは、通常はサブシェルの環境変数&#8216;<literal>TERMCAP</literal>&#8217;にセットされます。これは特定の状況下(たとえばShellバッファーからのrlogin)において、システムワイドなtermcapファイルにエントリーを追加する助けになるかもしれません。以下は&#8216;<literal>emacs</literal>&#8217;にたいする正しいtermcapエントリーです:
+</para>
+<screen>emacs:tc=unknown:
+</screen>
+<para>&#8216;<literal>emacs</literal>&#8217;にたいするterminfoエントリーを作成するには<literal>tic</literal>または<literal>captoinfo</literal>を使用します。<filename>/usr/lib/terminfo/e/emacs</filename>を生成する必要がありますが、これは単に<filename>/usr/lib/terminfo/d/dumb</filename>を<filename>/usr/lib/terminfo/e/emacs</filename>にコピーすれば大丈夫です。
+</para>
+<para>termcap/terminfoエントリーがあってもShellバッファーでのフルスクリーンプログラムの使用は有効になりません。かわりに<userinput>M-x
+term</userinput>を使用してください。
+</para>
+<para>termcap/terminfo欠落による問題を回避するためには、シェルのスタートアップファイルで端末タイプを&#8216;<literal>emacs</literal>&#8217;から&#8216;<literal>dumb</literal>&#8217;か&#8216;<literal>unknown</literal>&#8217;に変更します。<literal>csh</literal>ユーザーは以下を<filename>.cshrc</filename>ファイルに記述できます:
+</para>
+<screen>if (&quot;$term&quot; == emacs) set term=dumb
+</screen>
+</sect1>
+<sect1 label="6.5" id="Errors-with-init-files">
+<title>Why does Emacs say &#8216;<literal>Error in init file</literal>&#8217;?</title>
+<indexterm role="cp"><primary>Error in <filename>.emacs</filename></primary></indexterm>
+<indexterm role="cp"><primary>Error in init file</primary></indexterm>
+<indexterm role="cp"><primary>Init file, errors in</primary></indexterm>
+<indexterm role="cp"><primary><filename>.emacs</filename> file, errors in</primary></indexterm>
+<indexterm role="cp"><primary>Debugging <filename>.emacs</filename> file</primary></indexterm>
+
+<para>あなたの<filename>.emacs</filename>ファイル、あるいはシステムワイドファイル<filename>site-lisp/default.el</filename>のロード中にエラーが発生したためです。Emacs
+21.1以降では<filename>*Messages*</filename>バッファーがポップアップして、そこにデバッグ用のヒントを与えるためのエラーに関する追加情報を書き込みます。
+</para>
+<para>あなたの<filename>.emacs</filename>ファイルをデバッグする方法については<link linkend="Debugging-a-customization-file">Debugging a customization
+file</link>を参照してください。
+</para>
+<para>まず何らかのパッケージのロードが必要だったり、そあるいはパッケージのロード後に評価されるフックを使用したのかもしれません。これのよくあるケースについては<link linkend="Terminal-setup-code-works-after-Emacs-has-begun">Terminal
+setup code works after Emacs has begun</link>に記述があります。
+</para>
+</sect1>
+<sect1 label="6.6" id="Emacs-ignores-X-resources">
+<title>Why does Emacs ignore my X resources (my .Xdefaults file)?</title>
+<indexterm role="cp"><primary>X resources being ignored</primary></indexterm>
+<indexterm role="cp"><primary>Ignored X resources</primary></indexterm>
+<indexterm role="cp"><primary><filename>.Xdefaults</filename></primary></indexterm>
+
+<para>Emacsは以下の環境変数が指定するファイルからXリソースを検索します。
+</para>
+<itemizedlist>
+<listitem><para><literal>XFILESEARCHPATH</literal>
+</para></listitem><listitem><para><literal>XUSERFILESEARCHPATH</literal>
+</para></listitem><listitem><para><literal>XAPPLRESDIR</literal>
+</para>
+</listitem></itemizedlist>
+<para>これはXツールキットを使用して記述されたプログラムが提供する機能をエミュレートします。
+</para>
+<para><literal>XFILESEARCHPATH</literal>と<literal>XUSERFILESEARCHPATH</literal>はコロンで区切られたファイル名のリスト、<literal>XAPPLRESDIR</literal>はコロンで区切られたディレクトリーのリストです。
+</para>
+<para>Emacsは以下のようにXリソースを検索します:
+</para>
+<orderedlist numeration="arabic">
+<listitem><para>コマンドラインで&#8216;<literal>-xrm RESOURCESTRING</literal>&#8217;オプションによって指定された値
+</para>
+</listitem><listitem><para>環境変数&#8216;<literal>XENVIRONMENT</literal>&#8217;の値
+</para>
+<itemizedlist>
+<listitem><para>&#8722; これがセットされていなければ、<filename>~/.Xdefaults-<replaceable>hostname</replaceable></filename>という名前のファイルがあればその中から(<replaceable>hostname</replaceable>はEmacsが実行中のマシンの名前)
+</para>
+</listitem></itemizedlist>
+</listitem><listitem><para>サーバーが提供するスクリーン固有のシステムワイドなリソースプロパティ
+</para>
+<itemizedlist>
+<listitem><para>&#8722; これがセットされていなければ、<filename>~/.Xdefaults</filename>という名前のファイルがあればその中から
+</para>
+</listitem></itemizedlist>
+</listitem><listitem><para>&#8216;<literal>XUSERFILESEARCHPATH</literal>&#8217;にリストされたファイル
+</para>
+<itemizedlist>
+<listitem><para>&#8722; 環境変数&#8216;<literal>LANG</literal>&#8217;がセットされていれば&#8216;<literal>XAPPLRESDIR</literal>&#8217;にリストされたディレクトリーにある<filename><replaceable>lang</replaceable>/Emacs</filename>という名前のファイルの中から(<replaceable>lang</replaceable>は環境変数<literal>LANG</literal>の値)
+</para></listitem><listitem><para>&#8722; &#8216;<literal>XAPPLRESDIR</literal>&#8217;にリストされたディレクトリーにあるEmacsという名前のファイルの中から
+</para></listitem><listitem><para>&#8722; (環境変数<literal>LANG</literal>がセットされていれば) <filename>~/<replaceable>lang</replaceable>/Emacs</filename>の中から
+</para></listitem><listitem><para>&#8722; <filename>~/Emacs</filename>の中から
+</para>
+</listitem></itemizedlist>
+</listitem><listitem><para><literal>XFILESEARCHPATH</literal>にリストされたファイルの中から
+</para>
+</listitem></orderedlist>
+</sect1>
+<sect1 label="6.7" id="Emacs-ignores-frame-parameters">
+<title>Why don&#8217;t my customizations of the frame parameters work?</title>
+<indexterm role="cp"><primary>Frame parameters</primary></indexterm>
+
+<para>これが発生したのは恐らく変数<literal>initial-frame-alist</literal>でフレームパラメーターをセットしたからです。この変数にはEmacs起動時に作成された最初のフレームに使用されたパラメーターだけが保持されています。すべてのフレームのパラメーターをカスタマイズするためには、かわりに<literal>default-frame-alist</literal>を変更してください。
+</para>
+<para>これらの2つの変数が存在するのは、多くのユーザーが特別な方法で初期フレームをカスタマイズするからです。たとえば初期フレームの位置とサイズを判断することができ、かつ他のフレームについてはそれぞれを個別に配置してジオメトリを制御したいような場合です。
+</para>
+
+</sect1>
+<sect1 label="6.8" id="Editing-files-with-_0024-in-the-name">
+<title>How do I edit a file with a &#8216;<literal>$</literal>&#8217; in its name?</title>
+<indexterm role="cp"><primary>Editing files with &#8216;<literal>$</literal>&#8217; in the name</primary></indexterm>
+<indexterm role="cp"><primary>&#8216;<literal>$</literal>&#8217; in file names</primary></indexterm>
+<indexterm role="cp"><primary>File names containing &#8216;<literal>$</literal>&#8217;, editing</primary></indexterm>
+
+<para>ミニバッファーでファイル名を入力する際には、単語の前に&#8216;<literal>$</literal>&#8217;があるとEmacsは環境変数としてそれの展開を試みます。この挙動を抑止するには、かわりに<userinput>$$</userinput>とタイプしてください。
+</para>
+</sect1>
+<sect1 label="6.9" id="Shell-mode-loses-the-current-directory">
+<title>Why does shell mode lose track of the shell&#8217;s current directory?</title>
+<indexterm role="cp"><primary>Current directory and <literal>shell-mode</literal></primary></indexterm>
+<indexterm role="cp"><primary><literal>shell-mode</literal> and current directory</primary></indexterm>
+<indexterm role="cp"><primary>Directory, current in <literal>shell-mode</literal></primary></indexterm>
+
+<para>Emacsには実際にシェルが自身のディレクトリーを変更したタイミングを知る手段がありません。これはUnixに内在する制限です。そのためにEmacsは&#8216;<literal>cd</literal>&#8217;コマンドを識別して推測を試みます。変数リファレンスを含むディレクトリーが後に続く<userinput>cd</userinput>
+(<userinput>cd $HOME/bin</userinput>)やシェルのメタ文字を含むディレクトリー(<userinput>cd
+../lib*</userinput>)をタイプすると、Emacsはシェルの新たなカレントディレクトリーの正確な推測に失敗するでしょう。Shellモードにおけるこの問題を処理するために、膨大な数の様々な訂正および改善が記述されてきました(<link linkend="Finding-a-package-with-particular-functionality">Finding
+a package with particular functionality</link>を参照)。
+</para>
+<para>コマンド<userinput>M-x dirs</userinput>でシェルのカレントディレクトリーをEmacsに伝えることができます。
+</para>
+</sect1>
+<sect1 label="6.10" id="Security-risks-with-Emacs">
+<title>Are there any security risks in Emacs?</title>
+<indexterm role="cp"><primary>Security with Emacs</primary></indexterm>
+<indexterm role="cp"><primary>&#8216;<literal>movemail</literal>&#8217; and security</primary></indexterm>
+<indexterm role="cp"><primary><literal>file-local-variable</literal> and security</primary></indexterm>
+<indexterm role="cp"><primary>Synthetic X events and security</primary></indexterm>
+<indexterm role="cp"><primary>X events and security</primary></indexterm>
+
+<itemizedlist>
+<listitem><para>サードパーティのパッケージ。
+</para>
+<para>Emacsにインストールされた任意のパッケージはEmacs自身のプロセスと同じ権限で任意のコードを実行できる。サードパーティのアーカイブをパッケージシステム(<literal>M-x
+list-packages</literal>など)で使用する際には注意を要する。信頼可能なサードパーティだけを使用すること!
+</para>
+</listitem><listitem><para><literal>file-local-variable</literal>機能(危険ではあるが容易に変更できる)。
+</para>
+<para>Emacsにはファイル終端付近に特別にフォーマットされたテキストを含むファイルを編集する際に、変数にたいするローカル値のセットを許す機能がある。この機能にはファイルをvisitする際に任意のEmacs
+Lispコードを評価する能力も含まれる。当然、トロイの木馬がこの機能を悪用する可能性がある。
+</para>
+<para>Emacsにはバージョン22の時点において、セットしても安全だと判っているローカル変数のリストがある。このリスト以外の変数のセットをファイルが試みると、その変数をセットするべきかどうかユーザーに確認を求める。変数<literal>enable-local-eval</literal>をセットすることにより、ファイル下部で見つけたEmacs
+Lispコードの評価を許すか否かを▽えまに伝えることもできる。
+</para>
+<para>section &#8220;File Variables&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照のこと。
+</para>
+</listitem><listitem><para>合成Xイベント(危険であり&#8216;<literal>MIT-MAGIC-COOKIE-1</literal>&#8217;以上を使用すること)。
+</para>
+<para>Emacsは<literal>SendEvent</literal>リクエストが生成した合成Xイベント(synthetic X
+event)が通常イベントであるかのように受け入れる。結果として簡単なホストベースの認証を使用していると、XワークステーションへのX接続をオープン可能な他のユーザーは、Emacsプロセスに(特権での他プロセス実行を含む)何でも実行させることができる。
+</para>
+<para>他のユーザーによるX接続のオープンができないように防ぐことが、これにたいする唯一の修整である。&#8216;<literal>MIT-MAGIC-COOKIE-1</literal>&#8217;のような本物の認証メカニズムを使用することが、これを防ぐ標準的な方法である。<literal>xauth</literal>プログラムの使用に何らかの効果があるなら、恐らく&#8216;<literal>MIT-MAGIC-COOKIE-1</literal>&#8217;を使用しているだろう。あなたのサイトは上位の認証方式を使用しているかもしれない。システム管理者に尋ねてみて欲しい。
+</para>
+<para>本物の認証が利用できなければ、Xプログラム起動中の短い時間内だけホストへのアクセスを許可して、その後にアクセスを削除することで満足できるかもしれない。これは敵対的ユーザーがアクセス可能な時間枠が縮小されるのでリスクは幾分低減するものの、<emphasis>排除はされていない</emphasis>。
+</para>
+<para>UnixおよびXを実行中のコンピューターのほとんどでは<literal>xhost</literal>コマンドを使用してアクセスを有効または無効にできる。すべてのホストにXサーバーへのアクセスを許可するには、
+</para>
+<screen>xhost +
+</screen>
+<para>をシェルプロンプトで使用する。これは(少なくともHPマシンでは)以下のメッセージを生成する:
+</para>
+<screen>access control disabled, clients can connect from any host
+</screen>
+<para>(名前により明示的に許可されたホストを除き)すべてのホストにたいしてXサーバーへのアクセスを拒絶するには以下を使用する
+</para>
+<screen>xhost -
+</screen>
+<para>HPのテスト機では、このコマンドは以下のメッセージを生成した:
+</para>
+<screen>access control enabled, only authorized clients can connect
+</screen>
+</listitem></itemizedlist>
+</sect1>
+<sect1 label="6.11" id="Dired-claims-that-no-file-is-on-this-line">
+<title>Dired says, &#8216;<literal>no file on this line</literal>&#8217; when I try to do something.</title>
+<indexterm role="cp"><primary>Dired does not see a file</primary></indexterm>
+
+<para>Diredはファイル名の先頭を見つけるために正規表現を使用します。Unix形式の長いディレクトリーリスト(&#8216;<literal>ls
+-l</literal>&#8217;)では、ファイル名は日時の後で始まります。したがってこのregexpは日時を探すように記述されています。デフォルトでは言語に関わらず日付と時刻を認識して然るべきですが、あなたのディレクトリーリストが通常のフォーマットでなければDiredが混乱するかもしれません。
+</para>
+<para>これを解決するには2つのアプローチがあります。1つ目には&#8216;<literal>ls
+-l</literal>&#8217;の出力がより標準的なフォーマットになるように設定を行うことです。詳細はあなたのOSのマニュアルを参照してください。
+</para>
+<para>2つ目のアプローチはDiredが使用する正規表現<literal>directory-listing-before-filename-regexp</literal>を変更することです。
+</para>
+<!-- - -->
+</sect1>
+</chapter>
+<chapter label="7" id="Compiling-and-installing-Emacs">
+<title>Compiling and installing Emacs</title>
+<indexterm role="cp"><primary>Compiling and installing Emacs</primary></indexterm>
+
+
+<sect1 label="7.1" id="Installing-Emacs">
+<title>How do I install Emacs?</title>
+<indexterm role="cp"><primary>Installing Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Unix systems, installing Emacs on</primary></indexterm>
+<indexterm role="cp"><primary>Downloading and installing Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Building Emacs from source</primary></indexterm>
+<indexterm role="cp"><primary>Source code, building Emacs from</primary></indexterm>
+
+<para>この回答はUnixおよびUnix風システムを使用するユーザーを意図しています。他のオペレーティングシステムのユーザーは<link linkend="Emacs-for-MS_002dDOS">Emacs for
+MS-DOS</link>で始まる一連の問いを確認する必要があります。これらにはUnix以外のソースおよびバイナリーを取得する場所、それらのシステムでEmacsをインストールする方法が記されています。
+</para>
+<para>GNU/Linuxディストリビューションのほとんどでは、事前ビルドされたEmacsパッケージが提供されています。Emacsがすでにインストール済みでなければ&#8216;<literal>dnf
+install emacs</literal>&#8217; (Red
+Hatとその派生物の場合。古いディストリビューションは&#8216;<literal>yum</literal>&#8217;を使用)、または&#8216;<literal>apt-get install emacs</literal>&#8217;
+(Debianとその派生物の場合)のようなコマンドを(rootとして)実行することでインストールできます。
+</para>
+<para>自分でEmacsをコンパイルしたい場合には、ソースディストリビューションのファイル<filename>INSTALL</filename>を読んでください。要約すると:
+</para>
+<itemizedlist>
+<listitem><para>まずEmacsのソースをダウンロードする。ダウンロードできるサイトのリストは<link linkend="Current-GNU-distributions">Current GNU
+distributions</link>を参照のこと。GNUディストリビューションのメインサイト<ulink url="https://ftp.gnu.org">https://ftp.gnu.org</ulink>では以下からダウンロード可能
+</para>
+<!-- Don't include VER in the file name, because pretests are not there. -->
+<para><ulink url="https://ftp.gnu.org/pub/gnu/emacs/emacs-VERSION.tar.gz">https://ftp.gnu.org/pub/gnu/emacs/emacs-VERSION.tar.gz</ulink>
+</para>
+<para>(&#8216;<literal>VERSION</literal>&#8217;は&#8216;<literal>23.1</literal>&#8217;のように適切なバージョン番号に置き換えること。)
+</para>
+</listitem><listitem><para>次にソースファイルを解凍、抽出する。これには標準ユーティリティー<literal>gzip</literal>および<literal>tar</literal>が必要。これらがシステムになければ<ulink url="https://ftp.gnu.org">https://ftp.gnu.org</ulink>からダウンロードできる。
+</para>
+<para>GNU <literal>tar</literal>なら一度に解凍抽出ができる:
+</para>
+<screen>tar -zxvf emacs-VERSION.tar.gz
+</screen>
+</listitem><listitem><para>この時点でEmacsのソースファイルは<filename>emacs-VERSION</filename>というディレクトリーにあるはず。UnixおよびUnix風システムのほとんどでは、以下のコマンドでEmacsをコンパイルできるだろう。
+</para>
+<screen>cd emacs-VERSION
+./configure         # 特定システム向けにEmacsをconfigure
+make                # Makefileを使ってコンポーネントをビルド、Emacsを使用する
+</screen>
+<para><literal>make</literal>が正常に完了したら、ビルドがうまくいった公算はかなり高い(不成功なら<link linkend="Problems-building-Emacs">Problems building
+Emacs</link>を参照)。
+</para>
+</listitem><listitem><para>デフォルトではEmacsは<filename>/usr/local</filename>にインストールされる。実際にファイルをインストールするには特権ユーザーになって以下をタイプする
+</para>
+<screen>make install
+</screen>
+<para>&#8216;<literal>make
+install</literal>&#8217;によって<filename>/usr/local/bin/emacs</filename>、および<filename>/usr/local/share/info/</filename>にあるかもしれないEmacs
+Infoファイルは上書きされることに注意。
+</para>
+</listitem></itemizedlist>
+</sect1>
+<sect1 label="7.2" id="Problems-building-Emacs">
+<title>What should I do if I have trouble building Emacs?</title>
+<indexterm role="cp"><primary>Problems building Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Errors when building Emacs</primary></indexterm>
+
+<para>まずはあなたの問題にたいする解決策があるかを確認するために、(Emacsソースを解凍した場所にある)ファイル<filename>etc/PROBLEMS</filename>調べてください。次にこのFAQからEmacsのインストールやコンパイルの問題に関連する他の問答を探してください。
+</para>
+<para>あなたの問題を誰かに見てもらって解決の助けとしたいなら、<link linkend="Help-installing-Emacs">Help installing Emacs</link>を参照してください。
+</para>
+<para>ドキュメントから解決策が見つからない場合には、どうかその問題をレポートしてください(<link linkend="Reporting-bugs">Reporting bugs</link>を参照)。
+</para>
+
+<!-- - -->
+</sect1>
+</chapter>
+<chapter label="8" id="Finding-Emacs-and-related-packages">
+<title>Finding Emacs and related packages</title>
+<indexterm role="cp"><primary>Finding Emacs and related packages</primary></indexterm>
+
+
+<sect1 label="8.1" id="Finding-Emacs-on-the-Internet">
+<title>Where can I get Emacs on the net?</title>
+<indexterm role="cp"><primary>Finding Emacs on the Internet</primary></indexterm>
+<indexterm role="cp"><primary>Downloading Emacs</primary></indexterm>
+
+<para>Emacsのダウンロードに関する情報は<ulink url="https://www.gnu.org/software/emacs/">the Emacs
+home-page</ulink>で利用可能です。
+</para>
+<para>Emacsの入手およびEmacs最新バージョンをビルドする方法については<link linkend="Installing-Emacs">Installing
+Emacs</link>、GNUソフトウェアが利用可能なアーカイブサイトのリストは<link linkend="Current-GNU-distributions">Current GNU distributions</link>を参照してください。
+</para>
+</sect1>
+<sect1 label="8.2" id="Finding-a-package-with-particular-functionality">
+<title>How do I find an Emacs Lisp package that does XXX?</title>
+<indexterm role="cp"><primary>Package, finding</primary></indexterm>
+<indexterm role="cp"><primary>Finding an Emacs Lisp package</primary></indexterm>
+<indexterm role="cp"><primary>Functionality, finding a particular package</primary></indexterm>
+
+<para>何よりまずはパッケージが本当にまだ利用できないか確認しましょう。たとえば<userinput>M-x apropos <keycap>RET</keycap> python
+<keycap>RET</keycap></userinput>とタイプすれば、文字列&#8216;<literal>python</literal>&#8217;を含むすべての関数と変数が一覧されます。
+</para>
+<para>パッケージはシステム上にあってもロードされていない可能性もあります。ロード用に利用できるパッケージを確認するために、あなたのコンピューターのlispディレクトリーを見てみましょう(<link linkend="File_002dname-conventions">File-name
+conventions</link>を参照)。ほとんどのパッケージのLispソースには、それらをどのようにロード、呼び出し、設定するべきかに関する短い説明が含まれているので、作成者がソースコード内でヒントを提供していたら、Lispパッケージの使用や変更を行う前に確認しましょう。
+</para>
+<para>コマンド<userinput>C-h p</userinput> (<literal>finder-by-keyword</literal>)でEmacsのパッケージ構成をブラウズできます。
+</para>
+<para>Emacsの一部ではない追加パッケージを探す方法についての助言は<link linkend="Packages-that-do-not-come-with-Emacs">Packages that do not come with
+Emacs</link>を参照してください。
+</para>
+<!-- Note that M-x view-external-packages references this node. -->
+</sect1>
+<sect1 label="8.3" id="Packages-that-do-not-come-with-Emacs">
+<title>Where can I get Emacs Lisp packages that don&#8217;t come with Emacs?</title>
+<indexterm role="cp"><primary>Unbundled packages</primary></indexterm>
+<indexterm role="cp"><primary>Finding other packages</primary></indexterm>
+<indexterm role="cp"><primary>Lisp packages that do not come with Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Packages, those that do not come with Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Emacs Lisp List</primary></indexterm>
+<indexterm role="cp"><primary>Emacs Lisp Archive</primary></indexterm>
+
+<para>あなたのEmacsに更に機能を追加するには、コマンド<userinput>M-x
+list-packages</userinput>を使用するのがもっとも簡単な方法です。これは<ulink url="https://elpa.gnu.org">GNU ELPA</ulink>
+(&#8220;Emacs Lisp Package
+Archive&#8221;)サーバーに接続して、それが提案する追加パッケージのリストを取得します。これらはEmacsでの使用が可能ですが、スペース等の理由によりEmacs自体とは別に配布されているGNUパッケージです。コマンドの結果ト得られた<filename>*Packages*</filename>を閲覧して何が利用可能なのか確認して、それからあなたが選択したパッケージのダウンロードとインストールを自動的に行います。section &#8220;Packages&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+<para>Emacs
+Lispパッケージアーカイブは他にもあります。追加アーカイブを使用するには変数<literal>package-archives</literal>をカスタマイズしてください。これらのアーカイブはGNU
+Emacsとは提携しておらず、わたしたちはそれらがどのように保守されているかを監視していません。彼らはコードの正確さち安全性に最新の注意を払うかもしれないし、あるいはぞんざいに注意するだけかもしれません。
+</para>
+<para>更にこれらの他のアーカイブでホストされるパッケージは、他の非フリーなプログラムのインストールや使用を推奨、あるいは必須としているかもしれません。パッケージがフリーソフトウェアであり、非フリーなソフトウェアをインストールせずに機能するか検証できないのであれば、あなたの自由を危うくしないために近寄らないことを推奨します。
+</para>
+<para><ulink url="news:gnu.emacs.sources">Emacs sources
+newsgroup</ulink>にゲートウェイされている<ulink url="https://lists.gnu.org/mailman/listinfo/gnu-emacs-sources">GNU Emacs sources mailing
+list</ulink>は、(たとえ2点間の通信が不確かであっても)人々が彼らのEmacs拡張をアナウンスする公の場です。
+</para>
+<para><ulink url="https://emacswiki.org">Emacs
+Wiki</ulink>にはいくつかの追加拡張への指標が含まれています。<ulink url="https://wikemacs.org">WikEmacs</ulink>はEmacs用の代替えwikiです。
+</para>
+<para><ulink url="http://www.damtp.cam.ac.uk/user/sje30/emacs/ell.html">The Emacs Lisp
+List (ELL)</ulink>には多くのEmacs Lispファイルへの指標がありますが、これを記述している時点ではすでに更新されていません。
+</para>
+<para>Emacs
+Lispパッケージを提供するすべてのサイトをここで一覧することは、わたしたちには不可能です。もしも特定の機能に興味があるならEmacs自身とGNU
+ELPAをチェックした後は、ウェブ検索が結果を見い出す最良の手段であることが多々あります。
+</para>
+</sect1>
+<sect1 label="8.4" id="Spell_002dcheckers">
+<title>Spell-checkers</title>
+<indexterm role="cp"><primary>Spell-checker</primary></indexterm>
+<indexterm role="cp"><primary>Checking spelling</primary></indexterm>
+<indexterm role="cp"><primary>Hunspell</primary></indexterm>
+<indexterm role="cp"><primary>Aspell</primary></indexterm>
+<indexterm role="cp"><primary>Ispell</primary></indexterm>
+<indexterm role="cp"><primary>Enchant</primary></indexterm>
+
+<para>以下を含む様々なスペルチェッカーはEmacsと互換性があります:
+</para>
+<variablelist>
+<varlistentry><term><emphasis role="bold">Hunspell</emphasis>
+</term><listitem><para><ulink url="http://hunspell.sourceforge.net/">http://hunspell.sourceforge.net/</ulink>
+</para>
+</listitem></varlistentry><varlistentry><term><emphasis role="bold">GNU Aspell</emphasis>
+</term><listitem><para><ulink url="http://aspell.net/">http://aspell.net/</ulink>
+</para>
+</listitem></varlistentry><varlistentry><term><emphasis role="bold">Ispell</emphasis>
+</term><listitem><para><ulink url="http://fmg-www.cs.ucla.edu/geoff/ispell.html">http://fmg-www.cs.ucla.edu/geoff/ispell.html</ulink>
+</para>
+</listitem></varlistentry><varlistentry><term><emphasis role="bold">Enchant</emphasis>
+</term><listitem><para><ulink url="https://abiword.github.io/enchant/">https://abiword.github.io/enchant/</ulink>
+</para>
+</listitem></varlistentry></variablelist>
+</sect1>
+<sect1 label="8.5" id="Current-GNU-distributions">
+<title>Where can I get other up-to-date GNU stuff?</title>
+<indexterm role="cp"><primary>Current GNU distributions</primary></indexterm>
+<indexterm role="cp"><primary>Sources for current GNU distributions</primary></indexterm>
+<indexterm role="cp"><primary>Stuff, current GNU</primary></indexterm>
+<indexterm role="cp"><primary>Up-to-date GNU stuff</primary></indexterm>
+<indexterm role="cp"><primary>Finding current GNU software</primary></indexterm>
+<indexterm role="cp"><primary>Official GNU software sites</primary></indexterm>
+
+<para>GNU公式ソフトウェアのほとんどは通常は以下に保持されています 
+</para>
+<para><ulink url="https://ftp.gnu.org/pub/gnu">https://ftp.gnu.org/pub/gnu</ulink>
+</para>
+<para>&#8216;<literal>ftp.gnu.org</literal>&#8217;のミラーサイト一覧は以下で見つけられます
+</para>
+<para><ulink url="https://www.gnu.org/prep/ftp">https://www.gnu.org/prep/ftp</ulink>
+</para>
+</sect1>
+<sect1 label="8.6" id="Difference-between-Emacs-and-XEmacs">
+<title>What is the difference between Emacs and XEmacs (formerly Lucid Emacs)?</title>
+<indexterm role="cp"><primary>XEmacs</primary></indexterm>
+<indexterm role="cp"><primary>Difference Emacs and XEmacs</primary></indexterm>
+<indexterm role="cp"><primary>Lucid Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Epoch</primary></indexterm>
+
+<para>XEmacsとはもはや活発に開発されなくなったEmacsのブランチバージョンです。当初XEmacsはLucid
+Emacsと呼ばれており、初版はEmacs
+19のプレリリースバージョンから派生しました。このFAQでは公式バージョンにたいしてのみ&#8220;Emacs&#8221;という名前を使用します。
+</para>
+<para>XEmacsは2009年1月30にリリースされた新バージョンが最新であり、それにはEmacsに存在する多くの重要な機能が欠落していました。過去においては、EmacsパッケージにXEmacsとの互換性のためのコードを含めるのは珍しいことではありませんでした。現在ではたとえそのような互換性コードをまだ保守しているパッケージがあったとしても、より人気のあるビルトインおよびサードパーティーのパッケージのいくつかはXEmacsのサポートを止めるか、あるいはEmacs専用に開発されています。
+</para>
+<para>いくつかのXEmacsコードはEmacsに提供されており、他の部分についてもわたしたちは使用したいと考えていまづが、初期のXEmacsメンテナーは提供されたコードの作成者を常に追跡はしておらず、FSFがそのコードにたいする署名済みのコピーライトペーパーを取得することを不可能にしています(FSFは個別の身元を保つEmacsのコードに正しく統合されていない汎用Cサポートパッケージは除き。Emacsリリースに含まれるすべてのコードにたいしてこれらのペーパーを要求している)。
+</para>
+<para>これらの2つのバージョンを区別して議論をする場合には、どうかそれらを&#8220;Emacs&#8221;および&#8220;XEmacs&#8221;と呼ぶようにしてください。XEmacsもまたGNUプロジェクトの作業を元としているので、&#8220;XEmacs&#8221;と&#8220;GNU
+Emacs&#8221;の対比は誤解を招きかねません。&#8220;Emacsen&#8221;や&#8220;(X)Emacs&#8221;のような用語も悪くはありませんが、非常に明快とは言えないので&#8220;Emacs
+and XEmacs&#8221;と記述するほうが良いでしょう。
+</para>
+</sect1>
+<sect1 label="8.7" id="Emacs-for-minimalists">
+<title>I don&#8217;t have enough disk space to install Emacs</title>
+<indexterm role="cp"><primary>Zile</primary></indexterm>
+<indexterm role="cp"><primary>Not enough disk space to install Emacs</primary></indexterm>
+
+<para>GNU ZileはEmacsの軽量クローンです。Zileは&#8216;<literal>Zile Is Lossy
+Emacs</literal>&#8217;を短縮したものです。これにはEmacsの基本的な編集機能すべてが含まれています。Zileのバイナリーは通常は約130kBのサイズなので、非常にスペースに制限がある環境で有用かもしれません。詳細は以下で理由できます
+</para>
+<para><ulink url="https://www.gnu.org/software/zile/">https://www.gnu.org/software/zile/</ulink>
+</para>
+
+</sect1>
+<sect1 label="8.8" id="Emacs-for-MS_002dDOS">
+<title>Where can I get Emacs for MS-DOS?</title>
+<indexterm role="cp"><primary>MS-DOS, Emacs for</primary></indexterm>
+<indexterm role="cp"><primary>DOS, Emacs for</primary></indexterm>
+<indexterm role="cp"><primary>Compiling Emacs for DOS</primary></indexterm>
+<indexterm role="cp"><primary>Emacs for MS-DOS</primary></indexterm>
+
+<para>MS-DOS用のEmacsをソースからビルドするには、ディストリビューションに同梱のファイル<filename>msdos/INSTALL</filename>の手順を参照してください。DOSポートはプレーンDOS、更にWindows
+XPとVistaを含むバージョン3.X以降のすべてのバージョンのMS-Windowsでビルド、実行されています。
+</para>
+<para>ファイル<filename>etc/PROBLEMS</filename>にはMS-DOS下のEmacsに関する追加情報が含まれています。
+</para>
+<para>Emacs 24の事前ビルドされたバイナリーの配布は以下から利用できます
+</para>
+<para><ulink url="http://www.delorie.com/pub/djgpp/current/v2gnu/emacs.README">http://www.delorie.com/pub/djgpp/current/v2gnu/emacs.README</ulink>
+</para>
+<para>Emacs(およびEmacs類似物)のその他のMS-DOS実装については、以下で利用可能な&#8220;Emacs implementations and
+literature,&#8221;のリストを参照してください。
+</para>
+<para><ulink url="http://www.finseth.com/emacs.html">http://www.finseth.com/emacs.html</ulink>
+</para>
+<para>これらのプログラムの多くはEmacsと同じように見えますが、それらにはEmacs Lisp拡張言語のような特定の機能が欠落していることが多々あります。
+</para>
+</sect1>
+<sect1 label="8.9" id="Emacs-for-MS_002dWindows">
+<title>Where can I get Emacs for Microsoft Windows?</title>
+<indexterm role="cp"><primary>FAQ for Emacs on MS-Windows</primary></indexterm>
+<indexterm role="cp"><primary>Emacs for MS-Windows</primary></indexterm>
+<indexterm role="cp"><primary>Microsoft Windows, Emacs for</primary></indexterm>
+
+<para>MS-WindowsでのEmacsには別個にFAQがあります。<citetitle>FAQ for Emacs on MS
+Windows</citetitle>を参照してください。MS-DOSの場合には<link linkend="Emacs-for-MS_002dDOS">Emacs for MS-DOS</link>を参照してください。
+</para>
+
+</sect1>
+<sect1 label="8.10" id="Emacs-for-GNUstep">
+<title>Where can I get Emacs for GNUstep?</title>
+<indexterm role="cp"><primary>GNUstep, Emacs for</primary></indexterm>
+
+<para>バージョン23.1からEmacsはGNUstepをネイティブでサポートしています。ディストリビューション内のファイル<filename>nextstep/INSTALL</filename>を参照してください。
+</para>
+</sect1>
+<sect1 label="8.11" id="Emacs-for-macOS">
+<title>Where can I get Emacs for macOS?</title>
+<indexterm role="cp"><primary>Apple computers, Emacs for</primary></indexterm>
+<indexterm role="cp"><primary>Macintosh, Emacs for</primary></indexterm>
+<indexterm role="cp"><primary>macOS, Emacs for</primary></indexterm>
+
+<para>バージョン22.1からEmacsはmacOSをネイティブでサポートしています。ディストリビューション内のファイル<filename>nextstep/INSTALL</filename>を参照してください。
+</para>
+<!-- - -->
+</sect1>
+</chapter>
+<chapter label="9" id="Key-bindings">
+<title>Key bindings</title>
+<indexterm role="cp"><primary>Key bindings</primary></indexterm>
+
+
+<sect1 label="9.1" id="Binding-keys-to-commands">
+<title>How do I bind keys (including function keys) to commands?</title>
+<indexterm role="cp"><primary>Binding keys to commands</primary></indexterm>
+<indexterm role="cp"><primary>Keys, binding to commands</primary></indexterm>
+<indexterm role="cp"><primary>Commands, binding keys to</primary></indexterm>
+
+<para>対話的、または<filename>.emacs</filename>ファイルでキーをコマンドにバインドできます。すべてのモードにたいしてキーを対話的にバインドするには、<userinput>M-x
+global-set-key <keycap>RET</keycap> <replaceable>key</replaceable> <replaceable>cmd</replaceable> <keycap>RET</keycap></userinput>とタイプします。
+</para>
+<para>カレントのメジャーモードだけでキーをバインドするには<userinput>M-x local-set-key <keycap>RET</keycap> <replaceable>key</replaceable>
+<replaceable>cmd</replaceable> <keycap>RET</keycap></userinput>とタイプします。
+</para>
+<para>section &#8220;Key Bindings&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+<para>対話的にキーをバインドするプログレを容易にするために、次の&#8220;trick&#8221;を使用できます:
+
+まず対話的にキーをバインドしてからすぐに<userinput>C-x <keycap>ESC</keycap> <keycap>ESC</keycap> C-a C-k
+C-g</userinput>とタイプ、
+これでキーバインドを要するコマンドがkillリングに取り込まれたので<filename>.emacs</filename>ファイルにyankできるようになった。
+
+グローバルなキーバインディングの場合には、コマンドの変更は不要です。たとえば、
+</para>
+<programlisting>(global-set-key [f1] 'help-for-help)
+</programlisting>
+<para>これは<filename>.emacs</filename>ファイルに直後記述できます。ローカルなキーバインディングの場合には、、コマンドは&#8216;<literal>add-hook</literal>&#8217;関数と組み合わせて使用されます。たとえばTeXモードでのローカルバインディングは以下のようになるでしょう
+</para>
+<programlisting>(add-hook 'tex-mode-hook
+  (lambda ()
+   (local-set-key [f1] 'help-for-help)))
+</programlisting>
+
+<itemizedlist>
+<listitem><para>killリングからyankしたキーシーケンス内でのコントロール文字の形式はグラフィック形式 &#8212;
+つまり<keycap>CTRL</keycap>は&#8216;<literal>^</literal>&#8217;、<keycap>TAB</keycap>はいくつかのスペース(通常は8)で示されるでしょう。これらをベクターや文字列形式に変換したいと思うかもしれません。
+</para>
+</listitem><listitem><para>プレフィクスキーとしてある文字シーケンスをバインドする場合に、それがすでにコンプリートキーワードとしてバインドされていたら、新しいバインディングの前にコンプリートキーのバインドを解除しなければならない。たとえば<userinput>ESC
+{</userinput>がバインド済みなら:
+</para>
+<programlisting>(global-unset-key [?\e ?{])   ;; または
+(local-unset-key [?\e ?{])
+</programlisting>
+</listitem><listitem><para>コマンドや&#8220;lambdaリスト&#8221;は別として、ベクターや文字列もキーにバインドできるのでマクロとして扱うことができる。たとえば:
+</para>
+<programlisting>(global-set-key [f10] [?\C-x?\e?\e?\C-a?\C-k?\C-g])  ;; または
+(global-set-key [f10] &quot;\C-x\e\e\C-a\C-k\C-g&quot;)
+</programlisting>
+</listitem></itemizedlist>
+</sect1>
+<sect1 label="9.2" id="Invalid-prefix-characters">
+<title>Why does Emacs say &#8216;<literal>Key sequence XXX uses invalid prefix characters</literal>&#8217;?</title>
+<indexterm role="cp"><primary>Prefix characters, invalid</primary></indexterm>
+<indexterm role="cp"><primary>Invalid prefix characters</primary></indexterm>
+<indexterm role="cp"><primary>Misspecified key sequences</primary></indexterm>
+
+<para>通常は2つのうちいずれかが発生したからです。1つ目はキーシーケンス内のコントロール文字の指定誤りです(Lisp式で&#8216;<literal>\C-f</literal>&#8217;のかわりに&#8216;<literal>C-f</literal>&#8217;を使用した)。2つ目はバインドを試みているキーストロークシーケンス内の<firstterm>プレフィクスキー(prefix
+key)</firstterm>がすでに<firstterm>コンプリートキー(complete key)</firstterm>としてバインドされているからです。歴史的な理由により&#8216;<literal>ESC
+[</literal>&#8217;は通常は問題になります。この場合にはキーシーケンスのバインドを試みる前に、以下のフォームのいずれかを評価する必要があります:
+</para>
+<programlisting>(global-unset-key [?\e ?[])  ;; または
+(global-unset-key &quot;\e[&quot;)
+</programlisting>
+</sect1>
+<sect1 label="9.3" id="Terminal-setup-code-works-after-Emacs-has-begun">
+<title>Why doesn&#8217;t this [terminal or window-system setup] code work in my <filename>.emacs</filename> file, but it works just fine after Emacs starts up?</title>
+<indexterm role="cp"><primary>Terminal setup code in <filename>.emacs</filename></primary></indexterm>
+
+<para>スタートアップの間、Emacsは与えられたコード/ファイルの順番に応じて自身を初期化します。<filename>.emacs</filename>ファイルの中のあるコードを、端末またはウィンドウシステムのセットアップコードが実行されるまで延期する必要があるのにセットアップが終わっていないと、この問題を体験することになるでしょう(このコード/ファイルの実行順はスタートアップ後は強制されない)。
+</para>
+<para>端末またはウィンドウシステムのセットアップ後までEmacs Lispコードの実行を延期するには、コードを<firstterm>lambdaリスト(lambda
+list)</firstterm>として<literal>emacs-startup-hook</literal> (またはEmacs
+24.4は<literal>tty-setup-hook</literal>)に追加してください。たとえば、
+</para>
+<programlisting>(add-hook 'emacs-startup-hook
+          (lambda ()
+           (when (string-match &quot;\\`vt220&quot; (or (getenv &quot;TERM&quot;) &quot;&quot;))
+             ;; vt220の&quot;Do&quot;キーをM-xのように振る舞わせる:
+             (global-set-key [do] 'execute-extended-command))))
+</programlisting>
+<para>起動のたびにEmacsが何を行っているかについては<filename>lisp/startup.el</filename>を参照してください。
+</para>
+</sect1>
+<sect1 label="9.4" id="Working-with-function-and-arrow-keys">
+<title>How do I tell what characters or symbols my function or arrow keys emit?</title>
+<indexterm role="cp"><primary>Working with arrow keys</primary></indexterm>
+<indexterm role="cp"><primary>Arrow keys, symbols generated by</primary></indexterm>
+<indexterm role="cp"><primary>Working with function keys</primary></indexterm>
+<indexterm role="cp"><primary>Function keys, symbols generated by</primary></indexterm>
+<indexterm role="cp"><primary>Symbols generated by function keys</primary></indexterm>
+
+<para><userinput>C-h
+c</userinput>の後にファンクションキーか矢印キーをタイプしてください。コマンドはファンクションキーシンボルか文字シーケンスをリターンするでしょう(説明はEmacsドキュメントを参照)。これは他のキーでも同様に機能します。
+</para>
+</sect1>
+<sect1 label="9.5" id="X-key-translations-for-Emacs">
+<title>How do I set the X key &#8220;translations&#8221; for Emacs?</title>
+<indexterm role="cp"><primary>X key translations</primary></indexterm>
+<indexterm role="cp"><primary>Key translations under X</primary></indexterm>
+<indexterm role="cp"><primary>Translations for keys under X</primary></indexterm>
+
+<para>EmacsはデフォルトではXtライブラリーを使用するようには記述されていないので、何の&#8220;変換(translation)&#8221;もセットされていません(XtとともにEmacsをビルドした場合にそのような変換をどのようにセットするかわたしたちには定かではないので、これを行うことができたらどうか知らせてください!)。
+</para>
+<para>Emacs内でのキーの挙動に影響を与えるには<literal>xmodmap</literal> (Emacs外部)、あるいは<literal>define-key</literal>
+(Emacs内部)を通じて行う方法だけです。<literal>define-key</literal>コマンドは<literal>local-function-key-map</literal>と組み合わせて使用する必要があります。たとえば、
+</para>
+<programlisting>(define-key function-key-map [M-<keycap>TAB</keycap>] [?\M-\t])
+</programlisting>
+<para>これはキーシーケンス<userinput>M-<keycap>TAB</keycap></userinput>を定義します。
+</para>
+</sect1>
+<sect1 label="9.6" id="Backspace-invokes-help">
+<title>Why does the <keycap>Backspace</keycap> key invoke help?</title>
+<indexterm role="cp"><primary><keycap>Backspace</keycap> key invokes help</primary></indexterm>
+<indexterm role="cp"><primary>Help invoked by <keycap>Backspace</keycap></primary></indexterm>
+<indexterm role="cp"><primary><keycap>DEL</keycap> key does not delete</primary></indexterm>
+
+<para>(ほとんどのキーボードでは)<keycap>Backspace</keycap>キーは<acronym>ASCII</acronym>コードの8を生成します。<userinput>C-h</userinput>が送信するコードも同じです。Emacsではデフォルトでは<userinput>C-h</userinput>はhelp-commandを呼び出します。これは&#8216;<literal>help</literal>&#8217;の最初の文字が&#8216;<literal>h</literal>&#8217;なので簡単に覚えられることを意図したものです。この問題のもっとも簡単な解決策はヘルプには<userinput>C-h</userinput>
+(と<keycap>Backspace</keycap>)を使い、前の文字の削除には<keycap>DEL</keycap>(<keycap>Delete</keycap>キー)を使うことです。
+</para>
+<para>多くの人たちにとって、この解決策は問題があるかもしれません:
+</para>
+<itemizedlist>
+<listitem><para>彼らはEmacs外部では前の文字の削除に通常は<keycap>Backspace</keycap>を使用する。これはEmacs外部で前の文字を削除するコマンドを<keycap>DEL</keycap>にすれば解決できる。多くのUnixシステムでは、以下のコマンドは<keycap>DEL</keycap>をリマップするだろう:
+</para>
+<screen>stty erase '^?'
+</screen>
+</listitem><listitem><para>ユーザーはキーボード上でより使いやすい位置にある、あるいは別個に<keycap>Delete</keycap>キーがないという理由によって、前の文字の削除に<keycap>Backspace</keycap>キーを使うことを好むかもしれない。この場合には<keycap>Backspace</keycap>キーに<keycap>Delete</keycap>のように振る舞わせる必要がある。いくつかの方法がある。
+</para>
+<itemizedlist><listitem><para>&#8722; いくつかの端末(例: VT3##端末)や端末エミュレータ(例:
+TeraTerm)では、セットアップメニューから<keycap>Backspace</keycap>キーが生成する文字を変更できる。
+</para>
+</listitem><listitem><para>&#8722; 完全にプログラム可能なキーボードや、任意のキーから別の任意のキーへのリマップをサポートする端末エミュレータを入手できるかもしれない。
+</para>
+</listitem><listitem><para>&#8722; Emacs 21.1以降ではオプション<literal>normal-erase-is-backspace-mode</literal>のカスタマイズ、または<userinput>M-x
+normal-erase-is-backspace</userinput>呼び出しにより、ダム端末およびウィンドウ化されたディスプレーの両方において、<keycap>Backspace</keycap>キーおよび<keycap>Delete</keycap>キーの効果を制御できる。詳細についてはこれらのシンボルのドキュメントについては、<link linkend="Emacs-Lisp-documentation">Emacs
+Lisp documentation</link>を参照のこと。
+</para>
+</listitem><listitem><para>&#8722; Emacs内部では<keycap>Backspace</keycap>キーと<keycap>DEL</keycap>キーを交換できる:
+</para>
+<programlisting>(keyboard-translate ?\C-h ?\C-?)
+</programlisting>
+<para>これはたとえ<keycap>DEL</keycap>を<literal>delete-backward-char</literal>以外の何かにバインドするモードでも機能するので、<keycap>Backspace</keycap>を<keycap>DEL</keycap>のように動作させる際の推奨方法である。
+</para>
+<para>同じように<keycap>DEL</keycap>が<userinput>C-d</userinput> (デフォルトでは前方に削除)のように振る舞うようにリマップできる:
+</para>
+<programlisting>(keyboard-translate ?\C-? ?\C-d)
+</programlisting>
+<para><literal>keyboard-translate</literal>についての詳細は<link linkend="Swapping-keys">Swapping keys</link>を参照のこと。
+</para>
+</listitem><listitem><para>&#8722; 別のアプローチとしてはキーバインディングを切り替えて、かわりに<userinput>C-x h</userinput>をヘルプにする:
+</para>
+<programlisting>(global-set-key &quot;\C-h&quot; 'delete-backward-char)
+
+;; mark-whole-bufferをオーバーライドする
+(global-set-key &quot;\C-xh&quot; 'help-command)
+</programlisting>
+<para>とはいえこの手法は推奨しない。これは<keycap>DEL</keycap>を<literal>delete-backward-char</literal>にバインドするモードにたいしてのみ問題を解決する。<literal>view-mode</literal>モードのように<keycap>DEL</keycap>を別の何かにバインドするモードは、<keycap>Backspace</keycap>キーを押下した際に期待通り動作しないだろう。この理由により、えわたしたちは上述した<literal>keyboard-translate</literal>手法をお勧めする。
+</para>
+<para>ヘルプ用として他に人気のあるキーバインディングは<userinput>M-?</userinput>と<userinput>C-x ?</userinput>である。
+</para></listitem></itemizedlist>
+<para><keycap>DEL</keycap>にたいしてローカルバインディングをもちモードが多数あり、それらと干渉するかもしれないので、<keycap>DEL</keycap>に<literal>help-command</literal>をバインドしようとしてはならない。
+</para>
+</listitem></itemizedlist>
+<para>ウィンドウ化されたディスプレーでEmacs
+21以降を実行する場合には、これらのシステムでのキーボード操作とEmacsの矛盾が少なくなるように、<keycap>Delete</keycap>をポイント位置の文字を削除するコマンドにバインドします。
+</para>
+<para>この問題の解決についての詳細はsection &#8220;If <keycap>DEL</keycap> Fails to Delete&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+</sect1>
+<sect1 label="9.7" id="Swapping-keys">
+<title>How do I swap two keys?</title>
+<indexterm role="cp"><primary>Swapping keys</primary></indexterm>
+<indexterm role="cp"><primary>Keys, swapping</primary></indexterm>
+<indexterm role="cp"><primary><literal>keyboard-translate</literal></primary></indexterm>
+
+<para><literal>keyboard-translate</literal>を使用して2つのキー(またはキーシーケンス)を交換できます。たとえば<userinput>C-h</userinput>を<keycap>DEL</keycap>、<keycap>DEL</keycap>を<userinput>C-h</userinput>にするには、
+</para>
+<programlisting>(keyboard-translate ?\C-h ?\C-?)  ; 'C-h'をDELに変換
+(keyboard-translate ?\C-? ?\C-h)  ; DELを'C-h'に変換
+</programlisting>
+<para>関数の後のキーシーケンスの1つ目はキーボードが何を生成するかを識別、2つ目はキーマップでそれが何にマッチするかを指定します。
+</para>
+<para>しかし<userinput>C-h</userinput>と<keycap>DEL</keycap>の特別なケースにおいては、<literal>keyboard-translate</literal>呼び出しではなく<literal>normal-erase-is-backspace-mode</literal>を切り替えるべきです。section &#8220;DEL
+Does Not Delete&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+<para>キーボードの変換(translation)はキーマップのキーバインディングと同じではありません。Emacsには異なる状況に適用するために数々のキーマップがありますが、キーボード変換は1セットしかなく、Emacsが端末から文字を読み取るたびにそれが適用されます。キーボード変換は入力プロセスのもっとも低いレベルで行われます。キーマップに照合される文字にはキーボード変換された結果の文字が含まれています。
+</para>
+</sect1>
+<sect1 label="9.8" id="Producing-C_002dXXX-with-the-keyboard">
+<title>How do I produce C-XXX with my keyboard?</title>
+<indexterm role="cp"><primary>Producing control characters</primary></indexterm>
+<indexterm role="cp"><primary>Generating control characters</primary></indexterm>
+<indexterm role="cp"><primary>Control characters, generating</primary></indexterm>
+
+<para>(X配下ではない)端末で一般的ないくつかの&#8220;エイリアス&#8221;です:
+</para>
+<variablelist>
+<varlistentry><term><userinput>C-2</userinput>や<userinput>C-<keycap>SPC</keycap></userinput>
+</term><listitem><para><userinput>C-@</userinput>
+</para>
+</listitem></varlistentry><varlistentry><term><userinput>C-6</userinput>
+</term><listitem><para><userinput>C-^</userinput>
+</para>
+</listitem></varlistentry><varlistentry><term><userinput>C-7</userinput>や <userinput>C-S--</userinput>
+</term><listitem><para><userinput>C-_</userinput>
+</para>
+</listitem></varlistentry><varlistentry><term><userinput>C-4</userinput>
+</term><listitem><para><userinput>C-\</userinput>
+</para>
+</listitem></varlistentry><varlistentry><term><userinput>C-5</userinput>
+</term><listitem><para><userinput>C-]</userinput>
+</para>
+</listitem></varlistentry><varlistentry><term><userinput>C-/</userinput>
+</term><listitem><para><userinput>C-?</userinput>
+</para>
+</listitem></varlistentry></variablelist>
+<para>多くの場合は他にもエイリアスが存在します。あなたのキーボードで<userinput>C-h
+c</userinput>コマンドを使って、<keycap>CTRL</keycap>とすべての数字を試して何が生成されるか確認してみてください。コマンド名が判っていれば<userinput>C-h
+w</userinput>コマンドを試してみることもできます。
+</para>
+</sect1>
+<sect1 label="9.9" id="No-Meta-key">
+<title>What if I don&#8217;t have a <keycap>Meta</keycap> key?</title>
+<indexterm role="cp"><primary>No <keycap>Meta</keycap> key</primary></indexterm>
+<indexterm role="cp"><primary><keycap>Meta</keycap> key, what to do if you lack it</primary></indexterm>
+
+<para>多くのキーボードでは、<keycap>Alt</keycap>キーは<keycap>Meta</keycap>のように振る舞うので試してみてください。
+</para>
+<para><userinput>M-a</userinput>のかわりに<userinput><keycap>ESC</keycap>
+a</userinput>とタイプすることができます。実際のところ、いずれにせよEmacsｈｓ内部で<userinput>M-a</userinput>を<userinput><keycap>ESC</keycap>
+a</userinput>に変換しています(<literal>meta-prefix-char</literal>の値による)。<keycap>Meta</keycap>と<userinput>a</userinput>は一緒に押しますが、<keycap>ESC</keycap>の場合には<keycap>ESC</keycap>を押して、離した後に<userinput>a</userinput>を押下することに注意してください。
+</para>
+</sect1>
+<sect1 label="9.10" id="No-Escape-key">
+<title>What if I don&#8217;t have an <keycap>Escape</keycap> key?</title>
+<indexterm role="cp"><primary>No Escape key</primary></indexterm>
+<indexterm role="cp"><primary>Lacking an Escape key</primary></indexterm>
+<indexterm role="cp"><primary>Escape key, lacking</primary></indexterm>
+
+<para>かわりに<userinput>C-[</userinput>をタイプしてください。これはエスケープキーのように<acronym>ASCII</acronym>コードの27を送信するはずです。<userinput>C-3</userinput>でも機能する端末もあります(X配下でないこと)。多くの端末(特にDEC)では、<keycap>F11</keycap>が<keycap>ESC</keycap>を生成します。そうでなければ、以下のフォームを使用してこれをバインドできます:
+</para>
+<programlisting>;; DEC端末ではF11はESCの置き換えとドキュメントされている
+(define-key function-key-map [f11] [?\e])
+</programlisting>
+</sect1>
+<sect1 label="9.11" id="Compose-Character">
+<title>Can I make my <keycap>Compose Character</keycap> key behave like a <keycap>Meta</keycap> key?</title>
+<indexterm role="cp"><primary><keycap>Compose Character</keycap> key, using as <keycap>Meta</keycap></primary></indexterm>
+<indexterm role="cp"><primary><keycap>Meta</keycap>, using <keycap>Compose Character</keycap> for</primary></indexterm>
+
+<para>VT220のようなダム端末ではできません。噂では特定のVT220クローンは、この方法で設定することによって独自に<keycap>Compose</keycap>キーをもてるようです。Xを使用していれば、<literal>xmodmap</literal>コマンドでこれを行うことができるかもしれません。
+</para>
+</sect1>
+<sect1 label="9.12" id="Binding-combinations-of-modifiers-and-function-keys">
+<title>How do I bind a combination of modifier key and function key?</title>
+<indexterm role="cp"><primary>Modifiers and function keys</primary></indexterm>
+<indexterm role="cp"><primary>Function keys and modifiers</primary></indexterm>
+<indexterm role="cp"><primary>Binding modifiers and function keys</primary></indexterm>
+
+<para>ファンクションキーのシンボルにプレフィクスを追加することによって、ベクターフォーマットで修飾されたファンクションキーを表すことができます。たとえば(Emacsドキュメントより):
+</para>
+<programlisting>(global-set-key [?\C-x right] 'forward-page)
+</programlisting>
+<para>ここで&#8216;<literal>?\C-x</literal>&#8217;は文字<userinput>C-x</userinput>にたいするLisp文字定数です。
+</para>
+<para>ファンクションキーとともに<keycap>Control</keycap>、<keycap>Meta</keycap>、<keycap>Hyper</keycap>、<keycap>Super</keycap>、<keycap>Alt</keycap>、<keycap>Shift</keycap>の修飾キーが使用できます。これらの修飾キーを表現するにはシンボル名の前に&#8216;<literal>C-</literal>&#8217;、&#8216;<literal>M-</literal>&#8217;、&#8216;<literal>H-</literal>&#8217;、&#8216;<literal>s-</literal>&#8217;、&#8216;<literal>A-</literal>&#8217;&#8216;<literal>S-</literal>&#8217;を前置します。以下は<userinput>H-M-RIGHT</userinput>を単語1つ前方に移動にする方法です:
+</para>
+<programlisting>(global-set-key [H-M-right] 'forward-word)
+</programlisting>
+<itemizedlist>
+<listitem><para>すべての修飾キーがどんな状況でも許されている訳ではありません。Unix文字端末では<keycap>Hyper</keycap>、<keycap>Super</keycap>、<keycap>Alt</keycap>は利用できません。この種の状況下では非<acronym>ASCII</acronym>キーとマウスイベント(たとえば<userinput>C-=</userinput>や<userinput>mouse-1</userinput>)も失敗します。
+</para>
+</listitem></itemizedlist>
+<para>キーバインディングについての一般的な説明については<link linkend="Binding-keys-to-commands">Binding keys to commands</link>を参照してください。
+</para>
+</sect1>
+<sect1 label="9.13" id="Meta-key-does-not-work-in-xterm">
+<title>Why doesn&#8217;t my <keycap>Meta</keycap> key work in an <literal>xterm</literal> window?</title>
+<indexterm role="cp"><primary><keycap>Meta</keycap> key and <literal>xterm</literal></primary></indexterm>
+<indexterm role="cp"><primary>Xterm and <keycap>Meta</keycap> key</primary></indexterm>
+
+<para>section &#8220;Single-Byte Character Set Support&#8221; in <citetitle>The GNU Emacs
+Manual</citetitle>を参照してください。
+</para>
+<para>Emacsマニュアルのアドバイスが失敗した場合には、更なる助けを求める前に以下の方法すべてを試してみてください:
+</para>
+<itemizedlist>
+<listitem><para>ウィンドウマネージャーに<literal>mwm</literal>を使用することによって大きな問題を抱えているのかもしれない(<filename>mwm</filename>のEmacsで<keycap>Meta</keycap>キーが使用できるようにする汎用的で優れた解決策を知る人は居ないだろうか?)。
+</para>
+</listitem><listitem><para>X11ではそれが本当に<keycap>Meta</keycap>キーなのか確認してほしい。あなたの<keycap>Meta</keycap>キーがどんなを生成するかを確認するには<literal>xev</literal>を使用する。<literal>Meta_L</literal>か<literal>Meta_R</literal>のいずれかのはずだが、もし違うならこの状況を修整するために<filename>xmodmap</filename>を使用できる。<keycap>Meta</keycap>は<literal>Meta_L</literal>や<literal>Meta_R</literal>を生成しないものの<userinput>M-x</userinput>は非<acronym>ASCII</acronym>文字を生成するようなら、以下を<filename>~/.Xdefaults</filename>ファイルに記述する:
+</para>
+<screen> XTerm*eightBitInput:   false
+ XTerm*eightBitOutput:  true
+</screen>
+</listitem><listitem><para><literal>xterm</literal>が使用している<literal>pty</literal>は8ビット文字を通すか確認すること。&#8216;<literal>stty -a</literal>&#8217;
+(あるいは&#8216;<literal>stty
+everything</literal>&#8217;)がどこかに&#8216;<literal>cs8</literal>&#8217;と表示するはずである。かわりに&#8216;<literal>cs7</literal>&#8217;が表示されたら、これを修整するために&#8216;<literal>stty
+cs8 -istrip</literal>&#8217; (あるいは&#8216;<literal>stty pass8</literal>&#8217;)を使用する。
+</para>
+</listitem><listitem><para><literal>xterm</literal>とEmacsの間に<literal>rlogin</literal>接続が存在する場合には、各文字の8ビット目をすべて渡すように、rloginに&#8216;<literal>-8</literal>&#8217;引数を与える必要があるかもしれない。
+</para>
+</listitem><listitem><para>UltrixでEmacsを実行しているなら、<literal>(set-input-mode t nil)</literal>の評価が助けになると報告されている。
+</para>
+</listitem><listitem><para>他のすべてが失敗したら、<userinput>M-W</userinput>のタイプ時に<literal>xterm</literal>に<userinput><keycap>ESC</keycap>
+W</userinput>を生成させることができる。これはいずれにせよ<userinput>M-W</userinput>を受け取ったときにEmacsが行うであろう変換と同じである。X11R4では以下のリソース仕様でこれを行うことができるだろう:
+</para>
+<screen>XTerm.VT100.EightBitInput: false
+</screen>
+<para>(これは<literal>insert-eight-bit</literal>アクションの振る舞いを変更する。)
+</para>
+<para>古い<literal>xterm</literal>ではtranslationでこの挙動を指定できる:
+</para>
+<screen>XTerm.VT100.Translations: #override \
+  Meta&lt;KeyPress&gt;: string(0x1b) insert()
+</screen>
+<para>&#8216;<literal>Meta</literal>&#8217;を&#8216;<literal>Alt</literal>&#8217;に置き換える必要があるかもしれない。
+</para>
+</listitem></itemizedlist>
+</sect1>
+<sect1 label="9.14" id="ExtendChar-key-does-not-work-as-Meta">
+<title>Why doesn&#8217;t my <keycap>ExtendChar</keycap> key work as a <keycap>Meta</keycap> key under HP-UX 8.0 and 9.x?</title>
+<indexterm role="cp"><primary><keycap>ExtendChar</keycap> key as <keycap>Meta</keycap></primary></indexterm>
+<indexterm role="cp"><primary><keycap>Meta</keycap>, using <keycap>ExtendChar</keycap> for</primary></indexterm>
+<indexterm role="cp"><primary>HP-UX, the <keycap>ExtendChar</keycap> key</primary></indexterm>
+
+<para>これはX11R4における国際家拡張の結果であるとともに、HPが現在はこの拡張を使用しているという事実を示しています。Emacsは<keycap>Meta</keycap>キーの状態に関わらず<literal>XLookupString</literal>関数が同じ結果をリターンするという、もはや必ずしも真とは言えない前提にもとづいています。Emacsが修整されるまでは、その場しのぎの一時的な修整ですがXサーバー起動後に毎回、できればxtermクライアント開始前に以下のコマンドを実行してください:
+</para>
+<screen>xmodmap -e 'remove mod1 = Mode_switch'
+</screen>
+<!-- FIXME: Emacs 21 supports I18N in X11; does that mean that this bug is -->
+<!-- solved? -->
+
+<para>これはシステムワイドで追加のkeysymを無効にします。これはあなたが実際にそれらを使用つもりなら不本意かもしれません。
+</para>
+</sect1>
+<sect1 label="9.15" id="SPC-no-longer-completes-file-names">
+<title>Why doesn&#8217;t <keycap>SPC</keycap> complete file names anymore?</title>
+<indexterm role="cp"><primary><userinput>SPC</userinput> file name completion</primary></indexterm>
+
+<para>Emacs
+22.1から<userinput>SPC</userinput>はミニバッファーでファイル名の補完を行わなくなったので、スペースが埋め込まれたファイル名のタイプにおいてスペースをクォートする必要がなくなりました。
+</para>
+<para>以下のようにミニバッファーで<userinput>SPC</userinput>を<literal>minibuffer-complete-word</literal>にバインドすることによって古い挙動を取り戻すことができます:
+</para>
+<programlisting>(define-key minibuffer-local-filename-completion-map (kbd &quot;SPC&quot;)
+  'minibuffer-complete-word)
+
+(define-key minibuffer-local-must-match-filename-map (kbd &quot;SPC&quot;)
+  'minibuffer-complete-word)
+</programlisting>
+<!-- - -->
+</sect1>
+</chapter>
+<chapter label="10" id="Alternate-character-sets">
+<title>Alternate character sets</title>
+<indexterm role="cp"><primary>Alternate character sets</primary></indexterm>
+
+
+<sect1 label="10.1" id="Emacs-does-not-display-8_002dbit-characters">
+<title>How do I make Emacs display 8-bit characters?</title>
+<indexterm role="cp"><primary>Displaying eight-bit characters</primary></indexterm>
+<indexterm role="cp"><primary>Eight-bit characters, displaying</primary></indexterm>
+
+<para>section &#8220;Single-byte Character Set Support&#8221; in <citetitle>The GNU Emacs
+Manual</citetitle>を参照してください。Unixのテキストのみの端末ディスプレー、あるいは&#8216;<literal>emacs
+-nw</literal>&#8217;呼び出しでEmacsを実行する際には、たとえ言語環境を設定後であっても、通常は<literal>set-terminal-coding-system</literal>を使用してその端末で表示可能なものをEmacsに伝える必要があります。さもないと非<acronym>ASCII</acronym>文字は&#8216;<literal>?</literal>&#8217;と表示されるでしょう。他のMS-DOSやMS-Windowsのようなオペレーティングシステムでは、ディスプレーがサポートする文字についてEmacsがOSに問い合わせて、必要となる端末コーディングシステムを自動的にセットアップします。
+</para>
+</sect1>
+<sect1 label="10.2" id="Inputting-eight_002dbit-characters">
+<title>How do I input eight-bit characters?</title>
+<indexterm role="cp"><primary>Entering eight-bit characters</primary></indexterm>
+<indexterm role="cp"><primary>Eight-bit characters, entering</primary></indexterm>
+<indexterm role="cp"><primary>Input, 8-bit characters</primary></indexterm>
+
+<para>8ビット文字の入力には様々なメソッドが利用できます。section &#8220;Single-byte Character Set
+Support&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。より洗練されたメソッドについてはsection &#8220;Input
+Methods&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+</para>
+</sect1>
+<sect1 label="10.3" id="Right_002dto_002dleft-alphabets">
+<title>Where is an Emacs that can handle Semitic (right-to-left) alphabets?</title>
+<indexterm role="cp"><primary>Right-to-left alphabets</primary></indexterm>
+<indexterm role="cp"><primary>Hebrew, handling with Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Semitic alphabets</primary></indexterm>
+<indexterm role="cp"><primary>Arabic</primary></indexterm>
+<indexterm role="cp"><primary>Farsi</primary></indexterm>
+<indexterm role="cp"><primary>bidirectional scripts</primary></indexterm>
+
+<para>バージョン24.1以降のEmacsではアラビア語、ペルシア語、ヘブライ語のような双方向スクリプト(bidirectional
+script)の表示と編集がサポートされています。<link linkend="New-in-Emacs-24">bidirectional
+display</link>を参照してください。
+</para>
+
+</sect1>
+<sect1 label="10.4" id="How-to-add-fonts">
+<title>How do I add fonts for use with Emacs?</title>
+<indexterm role="cp"><primary>add fonts for use with Emacs</primary></indexterm>
+<indexterm role="cp"><primary>intlfonts</primary></indexterm>
+
+<para>まずBDFフォントファイル、およびそれらが必要とするすべての補助パッケージをダウンロードしてインストールしてください。GNU
+Intlfontsディストリビューションは<ulink url="https://directory.fsf.org/localization/intlfonts.html">the GNU Software Directory Web site</ulink>で見つけることができます。
+</para>
+<para>次にXウィンドウシステムの場合には、シェルプロンプトから以下の2つのコマンドを実行してください:
+</para>
+<screen>  xset +fp /usr/local/share/emacs/fonts
+  xset fp rehash
+</screen>
+<para>(<filename>/usr/local/share/emacs/fonts</filename>以外の場所にフォントをインストールしていたら1つ目のコマンドは変更が必要。)
+たとえば<filename>~/.xsessionrc</filename>や<filename>~/.gnomerc</filename>のようなウィンドウシステムのスタートアップファイルに追加する等、ログイン時いつでもこれら2つのコマンドが実行されるようにアレンジも必要でしょう。
+</para>
+<para>それでは以下の行をinitファイル<filename>~/.emacs</filename>に追加してください:
+</para>
+<programlisting>  (add-to-list 'bdf-directory-list &quot;/usr/share/emacs/fonts/bdf&quot;)
+</programlisting>
+<para>(繰り返しになるが、別の場所にフォントをインストールしていたらファイル名は変更すること。)
+</para>
+<para>最後に<literal>ps-print</literal>でインストール済みフォントを使用したければ、以下の行を<filename>~/.emacs</filename>に追加してください:
+</para>
+<programlisting>  (setq ps-multibyte-buffer 'bdf-font-except-latin)
+</programlisting>
+<para>MS-Windowsでは追加でいくつかのステップが必要です。以下にリストします。
+</para>
+<para>まずBDFフォントファイルがある<emphasis>すべて</emphasis>のディレクトリーが<literal>bdf-directory-list</literal>に記述されていることを確認してください。UnixおよびGNU/Linuxシステムでは同一ディレクトリーにBDFフォントをインストールするために<userinput>make
+install</userinput>を実行します。それとは対照的にWindowsユーザーは通常はIntlfontsインストールコマンドは実行せずに、どこかのディレクトリーにディストリビューションを解凍してください。このディレクトリーにはBDFフォントがあるサブディレクトリーが含まれています。たとえば<filename>C:/Intlfonts</filename>にIntlfontsを解凍したとすると、以下のように<literal>bdf-directory-list</literal>をセットする必要があります:
+</para>
+<programlisting>  (setq bdf-directory-list
+    '(&quot;C:/Intlfonts/Asian&quot;
+      &quot;C:/Intlfonts/Chinese&quot; &quot;C:/Intlfonts/Chinese.X&quot;
+      &quot;C:/Intlfonts/Chinese.BIG&quot; &quot;C:/Intlfonts/Ethiopic&quot;
+      &quot;C:/Intlfonts/European&quot; &quot;C:/Intlfonts/European.BIG&quot;
+      &quot;C:/Intlfonts/Japanese&quot; &quot;C:/Intlfonts/Japanese.X&quot;
+      &quot;C:/Intlfonts/Japanese.BIG&quot; &quot;C:/Intlfonts/Korean.X&quot;
+      &quot;C:/Intlfonts/Misc&quot;))
+</programlisting>
+<indexterm role="cp"><primary><literal>w32-bdf-filename-alist</literal></primary></indexterm>
+<indexterm role="cp"><primary><literal>w32-find-bdf-fonts</literal></primary></indexterm>
+<para>次は変数<literal>w32-bdf-filename-alist</literal>にBDFフォントのエイリアスとそれらに応じたファイル名をセットする必要があります。BDFフォントファイルのすべてのディレクトリーを<literal>bdf-directory-list</literal>にセットしたとすると、以下のLispコードで<literal>w32-bdf-filename-alist</literal>がセットアップされるはずです:
+</para>
+<programlisting>  (setq w32-bdf-filename-alist
+     (w32-find-bdf-fonts bdf-directory-list))
+</programlisting>
+<para>今度はBDFフォント用にフォントセットを作成します:
+</para>
+<screen>  (create-fontset-from-fontset-spec
+   &quot;-*-fixed-medium-r-normal-*-16-*-*-*-c-*-fontset-bdf,
+   japanese-jisx0208:-*-*-medium-r-normal-*-16-*-*-*-c-*-jisx0208.1983-*,
+   katakana-jisx0201:-*-*-medium-r-normal-*-16-*-*-*-c-*-jisx0201*-*,
+   latin-jisx0201:-*-*-medium-r-normal-*-16-*-*-*-c-*-jisx0201*-*,
+   japanese-jisx0208-1978:-*-*-medium-r-normal-*-16-*-*-*-c-*-jisx0208.1978-*,
+   thai-tis620:-misc-fixed-medium-r-normal--16-160-72-72-m-80-tis620.2529-1,
+   lao:-misc-fixed-medium-r-normal--16-160-72-72-m-80-MuleLao-1,
+   tibetan-1-column:-TibMdXA-fixed-medium-r-normal--16-160-72-72-m-80-MuleTibetan-1,
+   ethiopic:-Admas-Ethiomx16f-Medium-R-Normal--16-150-100-100-M-160-Ethiopic-Unicode,
+   tibetan:-TibMdXA-fixed-medium-r-normal--16-160-72-72-m-160-MuleTibetan-0&quot;)
+</screen>
+<para>Intlfontsの国際化BDFフォントの多くはタイプ0なので、font-encoding-alistに追加する必要があります:
+</para>
+<programlisting>  (setq font-encoding-alist
+        (append '((&quot;MuleTibetan-0&quot; (tibetan . 0))
+                  (&quot;GB2312&quot;        (chinese-gb2312 . 0))
+                  (&quot;JISX0208&quot;      (japanese-jisx0208 . 0))
+                  (&quot;JISX0212&quot;      (japanese-jisx0212 . 0))
+                  (&quot;VISCII&quot;        (vietnamese-viscii-lower . 0))
+                  (&quot;KSC5601&quot;       (korean-ksc5601 . 0))
+                  (&quot;MuleArabic-0&quot;  (arabic-digit . 0))
+                  (&quot;MuleArabic-1&quot;  (arabic-1-column . 0))
+                  (&quot;MuleArabic-2&quot;  (arabic-2-column . 0)))
+                font-encoding-alist))
+</programlisting>
+<para>これでEmacsのフォントメニュー、あるいは<filename>~/.emacs</filename>でデフォルトフォントを設定することにより、&#8216;<literal>bdf: 16-dot
+medium</literal>&#8217;の選択ができるようになりました。 
+</para>
+<programlisting>  (set-frame-font &quot;fontset-bdf&quot;)
+</programlisting>
+
+<!-- - -->
+</sect1>
+</chapter>
+<chapter label="11" id="Mail-and-news">
+<title>Mail and news</title>
+<indexterm role="cp"><primary>Mail and news</primary></indexterm>
+
+
+<sect1 label="11.1" id="Changing-the-included-text-prefix">
+<title>How do I change the included text prefix in mail/news followups?</title>
+<indexterm role="cp"><primary>Prefix in mail/news followups, changing</primary></indexterm>
+<indexterm role="cp"><primary>Included text prefix, changing</primary></indexterm>
+<indexterm role="cp"><primary>Setting the included text character</primary></indexterm>
+<indexterm role="cp"><primary>Quoting in mail messages</primary></indexterm>
+
+<para>If you read mail with Rmail, set the variable <literal>mail-yank-prefix</literal>.  For
+Gnus, set <literal>message-yank-prefix</literal>.  For VM, set
+<literal>vm-included-text-prefix</literal>.  For mh-e, set <literal>mh-ins-buf-prefix</literal>.
+</para>
+<para>For fancier control of citations, use Supercite (see section &#8220;the Supercite
+Manual&#8221; in <citetitle>The Supercite Manual</citetitle>).
+</para>
+<para>To prevent Emacs from including various headers of the replied-to message,
+set the value of <literal>mail-yank-ignored-headers</literal> to an appropriate regexp.
+</para>
+</sect1>
+<sect1 label="11.2" id="Saving-a-copy-of-outgoing-mail">
+<title>How do I save a copy of outgoing mail?</title>
+<indexterm role="cp"><primary>Saving a copy of outgoing mail</primary></indexterm>
+<indexterm role="cp"><primary>Copying outgoing mail to a file</primary></indexterm>
+<indexterm role="cp"><primary>Filing outgoing mail</primary></indexterm>
+<indexterm role="cp"><primary>Automatic filing of outgoing mail</primary></indexterm>
+<indexterm role="cp"><primary>Mail, saving outgoing automatically</primary></indexterm>
+
+<para>You can either mail yourself a copy by including a &#8216;<literal>BCC</literal>&#8217; header in the
+mail message, or store a copy of the message directly to a file by including
+an &#8216;<literal>FCC</literal>&#8217; header.
+</para>
+<para>If you use standard mail, you can automatically create a &#8216;<literal>BCC</literal>&#8217; to
+yourself by putting
+</para>
+<programlisting>(setq mail-self-blind t)
+</programlisting>
+<para>in your <filename>.emacs</filename> file.  You can automatically include an &#8216;<literal>FCC</literal>&#8217;
+field by putting something like the following in your <filename>.emacs</filename> file:
+</para>
+<programlisting>(setq mail-archive-file-name (expand-file-name &quot;~/outgoing&quot;))
+</programlisting>
+<para>The output file will be in Unix mail format.
+</para>
+<para>If you use <literal>mh-e</literal>, add an &#8216;<literal>FCC</literal>&#8217; or &#8216;<literal>BCC</literal>&#8217; field to your
+components file.
+</para>
+<para>It does not work to put &#8216;<literal>set record filename</literal>&#8217; in the <filename>.mailrc</filename>
+file.
+</para>
+</sect1>
+<sect1 label="11.3" id="Expanding-aliases-when-sending-mail">
+<title>Why doesn&#8217;t Emacs expand my aliases when sending mail?</title>
+<indexterm role="cp"><primary>Expanding aliases when sending mail</primary></indexterm>
+<indexterm role="cp"><primary>Mail alias expansion</primary></indexterm>
+<indexterm role="cp"><primary>Sending mail with aliases</primary></indexterm>
+
+<para>See section &#8220;The Emacs Manual&#8221; in <citetitle>The Emacs Manual</citetitle>.
+</para>
+<itemizedlist>
+<listitem><para>Normally, Emacs expands aliases when you send the message.  To expand them
+before this, use <userinput>M-x expand-mail-aliases</userinput>.
+</para>
+</listitem><listitem><para>Emacs normally only reads the <filename>.mailrc</filename> file once per session, when you
+start to compose your first mail message.  If you edit the file after this,
+you can use <userinput>M-x build-mail-aliases</userinput> to make Emacs reread it.  Prior to
+Emacs 24.1, this is not an interactive command, so you must instead type
+<userinput>M-: (build-mail-aliases) <keycap>RET</keycap></userinput>.
+</para>
+</listitem><listitem><para>If you like, you can expand mail aliases as abbrevs, as soon as you type
+them in.  To enable this feature, execute the following:
+</para>
+<programlisting>(add-hook 'mail-mode-hook 'mail-abbrevs-setup)
+</programlisting>
+<para>Note that the aliases are expanded automatically only after you type a
+word-separator character (e.g., <keycap>RET</keycap> or <userinput>,</userinput>).  You can force their
+expansion by moving point to the end of the alias and typing <userinput>C-x a e</userinput>
+(<userinput>M-x expand-abbrev</userinput>).
+</para></listitem></itemizedlist>
+</sect1>
+<sect1 label="11.4" id="Sorting-the-messages-in-an-Rmail-folder">
+<title>How can I sort the messages in my Rmail folder?</title>
+<indexterm role="cp"><primary>Rmail, sorting messages in</primary></indexterm>
+<indexterm role="cp"><primary>Folder, sorting messages in an Rmail</primary></indexterm>
+<indexterm role="cp"><primary>Sorting messages in an Rmail folder</primary></indexterm>
+
+<para>In Rmail, type <userinput>C-c C-s C-h</userinput> to get a list of sorting functions and
+their key bindings.
+</para>
+</sect1>
+<sect1 label="11.5" id="Rmail-writes-to-_002fvar_002fspool_002fmail">
+<title>Why does Rmail need to write to <filename>/var/spool/mail</filename>?</title>
+<indexterm role="cp"><primary>Rmail and <filename>/var/spool/mail</filename></primary></indexterm>
+<indexterm role="cp"><primary><filename>/var/spool/mail</filename> and Rmail</primary></indexterm>
+
+<para>This is the behavior of the <literal>movemail</literal> program which Rmail uses.  This
+indicates that <literal>movemail</literal> is configured to use lock files.
+</para>
+<para>RMSは記しています:
+</para>
+<blockquote><para>Certain systems require lock files to interlock access to mail files.  On
+these systems, <literal>movemail</literal> must write lock files, or you risk losing
+mail.  You simply must arrange to let <literal>movemail</literal> write them.
+</para>
+<para>Other systems use the <literal>flock</literal> system call to interlock access.  On
+these systems, you should configure <literal>movemail</literal> to use <literal>flock</literal>.
+</para></blockquote>
+</sect1>
+<sect1 label="11.6" id="Replying-to-the-sender-of-a-message">
+<title>How can I force Rmail to reply to the sender of a message, but not the other recipients?</title>
+<indexterm role="cp"><primary>Replying only to the sender of a message</primary></indexterm>
+<indexterm role="cp"><primary>Sender, replying only to</primary></indexterm>
+<indexterm role="cp"><primary>Rmail, replying to the sender of a message in</primary></indexterm>
+
+<!-- isaacson@@seas.upenn.edu -->
+<para>Ron Isaacson says: When you hit <userinput>r</userinput> to reply in Rmail, by default it Ccs
+all of the original recipients (everyone on the original &#8216;<literal>To</literal>&#8217; and
+&#8216;<literal>CC</literal>&#8217; lists). With a prefix argument (i.e., typing <userinput>C-u</userinput> before
+<userinput>r</userinput>), it replies only to the sender.  However, going through the whole
+<userinput>C-u</userinput> business every time you want to reply is a pain.  This is the best
+fix I&#8217;ve been able to come up with:
+</para>
+<programlisting>(defun rmail-reply-t ()
+  &quot;Reply only to the sender of the current message. (See rmail-reply.)&quot;
+  (interactive)
+  (rmail-reply t))
+
+(add-hook 'rmail-mode-hook
+  (lambda ()
+    (define-key rmail-mode-map &quot;r&quot; 'rmail-reply-t)
+    (define-key rmail-mode-map &quot;R&quot; 'rmail-reply)))
+</programlisting>
+</sect1>
+<sect1 label="11.7" id="Automatically-starting-a-mail-or-news-reader">
+<title>How do I make Emacs automatically start my mail/news reader?</title>
+<indexterm role="cp"><primary>Mail reader, starting automatically</primary></indexterm>
+<indexterm role="cp"><primary>News reader, starting automatically</primary></indexterm>
+<indexterm role="cp"><primary>Starting mail/news reader automatically</primary></indexterm>
+
+<para>To start Emacs in Gnus:
+</para>
+<screen>emacs -f gnus
+</screen>
+<para>in Rmail:
+</para>
+<screen>emacs -f rmail
+</screen>
+<para>A more convenient way to start with Gnus:
+</para>
+<screen>alias gnus 'emacs -f gnus'
+gnus
+</screen>
+<para>It is probably unwise to automatically start your mail or news reader from
+your <filename>.emacs</filename> file.  This would cause problems if you needed to run two
+copies of Emacs at the same time.  Also, this would make it difficult for
+you to start Emacs quickly when you needed to.
+</para>
+</sect1>
+<sect1 label="11.8" id="Reading-news-with-Emacs">
+<title>How do I read news under Emacs?</title>
+<indexterm role="cp"><primary>Reading news under Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Usenet reader in Emacs</primary></indexterm>
+<indexterm role="cp"><primary>Gnus newsreader</primary></indexterm>
+<indexterm role="cp"><primary>FAQ for Gnus</primary></indexterm>
+<indexterm role="cp"><primary>Gnus FAQ</primary></indexterm>
+<indexterm role="cp"><primary>Learning more about Gnus</primary></indexterm>
+
+<para>Use <userinput>M-x gnus</userinput>.  For more information on Gnus, see section &#8220;the Gnus
+Manual&#8221; in <citetitle>The Gnus Manual</citetitle>, which includes section &#8220;the Gnus FAQ&#8221; in <citetitle>The Gnus Manual</citetitle>.
+</para>
+
+</sect1>
+<sect1 label="11.9" id="Making-Gnus-faster">
+<title>How do I make Gnus faster?</title>
+<indexterm role="cp"><primary>Faster, starting Gnus</primary></indexterm>
+<indexterm role="cp"><primary>Starting Gnus faster</primary></indexterm>
+<indexterm role="cp"><primary>Gnus, starting faster</primary></indexterm>
+<indexterm role="cp"><primary>Slow catch up in Gnus</primary></indexterm>
+<indexterm role="cp"><primary>Gnus is slow when catching up</primary></indexterm>
+<indexterm role="cp"><primary>Crosspostings make Gnus catching up slow</primary></indexterm>
+
+<para>From the Gnus FAQ (see <link linkend="Reading-news-with-Emacs">Reading news with Emacs</link>):
+</para>
+<blockquote><para>If you have a slow machine, or are just really impatient, there are a few
+things you can do to make Gnus run faster.
+</para>
+<para>Set <literal>gnus-check-new-newsgroups</literal> and <literal>gnus-check-bogus-newsgroups</literal>
+to <literal>nil</literal> to make startup faster.
+</para>
+<para>Set <literal>gnus-show-threads</literal>, <literal>gnus-use-cross-reference</literal> and
+<literal>gnus-nov-is-evil</literal> to <literal>nil</literal> to make entering and exiting the
+summary buffer faster.
+</para></blockquote>
+</sect1>
+<sect1 label="11.10" id="Catching-up-in-all-newsgroups">
+<title>How do I catch up all newsgroups in Gnus?</title>
+<indexterm role="cp"><primary>Catching up all newsgroups in Gnus</primary></indexterm>
+<indexterm role="cp"><primary>Gnus, Catching up all newsgroups in</primary></indexterm>
+
+<para>In the <filename>*Newsgroup*</filename> buffer, type <userinput>M-&lt; C-x ( c y C-x ) M-0 C-x e</userinput>
+</para>
+<para>Leave off the initial <userinput>M-&lt;</userinput> if you only want to catch up from point to
+the end of the <filename>*Newsgroup*</filename> buffer.
+</para>
+</sect1>
+</chapter>
+<chapter label="" id="Concept-index">
+<title>Concept Index</title>
+<index role="cp"></index>
+
+</chapter>
+</book>

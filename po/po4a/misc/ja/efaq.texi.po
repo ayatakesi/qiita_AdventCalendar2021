@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-12-01 22:42+0900\n"
+"PO-Revision-Date: 2021-12-02 20:18+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -9480,58 +9480,58 @@ msgstr ""
 #: ../../../../misc/efaq.texi:4592
 #, no-wrap
 msgid "Automatically starting a mail or news reader"
-msgstr ""
+msgstr "Automatically starting a mail or news reader"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4593
 #, no-wrap
 msgid "How do I make Emacs automatically start my mail/news reader?"
-msgstr ""
+msgstr "How do I make Emacs automatically start my mail/news reader?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4594
 #, no-wrap
 msgid "Mail reader, starting automatically"
-msgstr ""
+msgstr "Mail reader, starting automatically"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4595
 #, no-wrap
 msgid "News reader, starting automatically"
-msgstr ""
+msgstr "News reader, starting automatically"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4596
 #, no-wrap
 msgid "Starting mail/news reader automatically"
-msgstr ""
+msgstr "Starting mail/news reader automatically"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4599
 msgid "To start Emacs in Gnus:"
-msgstr ""
+msgstr "EmacsをGnusで開始するには:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:4602
 #, no-wrap
 msgid "emacs -f gnus\n"
-msgstr ""
+msgstr "emacs -f gnus\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4606
 msgid "in Rmail:"
-msgstr ""
+msgstr "Rmailでは:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:4609
 #, no-wrap
 msgid "emacs -f rmail\n"
-msgstr ""
+msgstr "emacs -f rmail\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4612
 msgid "A more convenient way to start with Gnus:"
-msgstr ""
+msgstr "Gnusでより便利に開始するには:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:4616
@@ -9540,163 +9540,165 @@ msgid ""
 "alias gnus 'emacs -f gnus'\n"
 "gnus\n"
 msgstr ""
+"alias gnus 'emacs -f gnus'\n"
+"gnus\n"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4622
 msgid "It is probably unwise to automatically start your mail or news reader from your @file{.emacs} file.  This would cause problems if you needed to run two copies of Emacs at the same time.  Also, this would make it difficult for you to start Emacs quickly when you needed to."
-msgstr ""
+msgstr "@file{.emacs}ファイルから自動的にメールやニュースを開始するのは、恐らく賢明ではないでしょう。これは同時に2つのEmacsを実行する必要がある場合には問題を起こすかもしれません。更に必要な際に素早くEmacsを開始するのが困難になるかもしれません。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4623
 #, no-wrap
 msgid "Reading news with Emacs"
-msgstr ""
+msgstr "Reading news with Emacs"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4624
 #, no-wrap
 msgid "How do I read news under Emacs?"
-msgstr ""
+msgstr "How do I read news under Emacs?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4625
 #, no-wrap
 msgid "Reading news under Emacs"
-msgstr ""
+msgstr "Reading news under Emacs"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4626
 #, no-wrap
 msgid "Usenet reader in Emacs"
-msgstr ""
+msgstr "Usenet reader in Emacs"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4627
 #, no-wrap
 msgid "Gnus newsreader"
-msgstr ""
+msgstr "Gnus newsreader"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4628
 #, no-wrap
 msgid "FAQ for Gnus"
-msgstr ""
+msgstr "FAQ for Gnus"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4629
 #, no-wrap
 msgid "Gnus FAQ"
-msgstr ""
+msgstr "Gnus FAQ"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4630
 #, no-wrap
 msgid "Learning more about Gnus"
-msgstr ""
+msgstr "Learning more about Gnus"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4635
 msgid "Use @kbd{M-x gnus}.  For more information on Gnus, @pxref{Top,, the Gnus Manual, gnus, The Gnus Manual}, which includes @ref{Frequently Asked Questions,, the Gnus FAQ, gnus, The Gnus Manual}."
-msgstr ""
+msgstr "@kbd{M-x gnus}を使用します。@ref{Frequently Asked Questions,, the Gnus FAQ, gnus, The Gnus Manual}に含まれている@ref{Top,, the Gnus Manual, gnus, The Gnus Manual}を参照してください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4637
 #, no-wrap
 msgid "Making Gnus faster"
-msgstr ""
+msgstr "Making Gnus faster"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4638
 #, no-wrap
 msgid "How do I make Gnus faster?"
-msgstr ""
+msgstr "How do I make Gnus faster?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4639
 #, no-wrap
 msgid "Faster, starting Gnus"
-msgstr ""
+msgstr "Faster, starting Gnus"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4640
 #, no-wrap
 msgid "Starting Gnus faster"
-msgstr ""
+msgstr "Starting Gnus faster"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4641
 #, no-wrap
 msgid "Gnus, starting faster"
-msgstr ""
+msgstr "Gnus, starting faster"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4642
 #, no-wrap
 msgid "Slow catch up in Gnus"
-msgstr ""
+msgstr "Slow catch up in Gnus"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4643
 #, no-wrap
 msgid "Gnus is slow when catching up"
-msgstr ""
+msgstr "Gnus is slow when catching up"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4644
 #, no-wrap
 msgid "Crosspostings make Gnus catching up slow"
-msgstr ""
+msgstr "Crosspostings make Gnus catching up slow"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4647
 msgid "From the Gnus FAQ (@pxref{Reading news with Emacs}):"
-msgstr ""
+msgstr "Gnus FAQ(@ref{Reading news with Emacs}を参照)から引用します:"
 
 #. type: quotation
 #: ../../../../misc/efaq.texi:4651
 msgid "If you have a slow machine, or are just really impatient, there are a few things you can do to make Gnus run faster."
-msgstr ""
+msgstr "古いマシンの場合、あるいは実際にじれったいだけなら、Gnusの実行を高速にするためにできることがあります。"
 
 #. type: quotation
 #: ../../../../misc/efaq.texi:4654
 msgid "Set @code{gnus-check-new-newsgroups} and @code{gnus-check-bogus-newsgroups} to @code{nil} to make startup faster."
-msgstr ""
+msgstr "起動をより高速にするためには@code{gnus-check-new-newsgroups}と@code{gnus-check-bogus-newsgroups}に@code{nil}をセットしてください。"
 
 #. type: quotation
 #: ../../../../misc/efaq.texi:4658
 msgid "Set @code{gnus-show-threads}, @code{gnus-use-cross-reference} and @code{gnus-nov-is-evil} to @code{nil} to make entering and exiting the summary buffer faster."
-msgstr ""
+msgstr "summaryバッファーへの出入りをより高速にするために@code{gnus-show-threads}、@code{gnus-nov-is-evil}、@code{gnus-use-cross-reference}に@code{nil}をセットしてください。"
 
 #. type: section
 #: ../../../../misc/efaq.texi:4661
 #, no-wrap
 msgid "How do I catch up all newsgroups in Gnus?"
-msgstr ""
+msgstr "How do I catch up all newsgroups in Gnus?"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4662
 #, no-wrap
 msgid "Catching up all newsgroups in Gnus"
-msgstr ""
+msgstr "Catching up all newsgroups in Gnus"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4663
 #, no-wrap
 msgid "Gnus, Catching up all newsgroups in"
-msgstr ""
+msgstr "Gnus, Catching up all newsgroups in"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4666
 msgid "In the @file{*Newsgroup*} buffer, type @kbd{M-< C-x ( c y C-x ) M-0 C-x e}"
-msgstr ""
+msgstr "@file{*Newsgroup*}バッファーで@kbd{M-< C-x ( c y C-x ) M-0 C-x e}とタイプします。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4669
 msgid "Leave off the initial @kbd{M-<} if you only want to catch up from point to the end of the @file{*Newsgroup*} buffer."
-msgstr ""
+msgstr "@file{*Newsgroup*}バッファーのポイント位置からバッファー終端までを確認したいだけなら、先頭の@kbd{M-<}は省略してください。"
 
 #. type: unnumbered
 #: ../../../../misc/efaq.texi:4671
 #, no-wrap
 msgid "Concept Index"
-msgstr ""
+msgstr "Concept Index"
