@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: XXXX-XX.X\n"
 "POT-Creation-Date: 2021-12-02 12:06\n"
-"PO-Revision-Date: 2021-12-03 07:43+0900\n"
+"PO-Revision-Date: 2021-12-03 21:07+0900\n"
 "Last-Translator: XXXX#translator\n"
 "Language-Team: XXXX#translators\n"
 "Language: ja\n"
@@ -212,52 +212,52 @@ msgid "@section How do I insert <some text> at the beginning of every line?"
 msgstr "@section 各行の先頭に<何らかのテキスト>を挿入するには?"
 
 msgid "@section How do I make Emacs behave like this: when I go up or down, the cursor should stay in the same column even if the line is too short?"
-msgstr ""
+msgstr "@section 上下に移動した際にたとえ短すぎる行でも同じ列にカーソルが留まる; このようにEmacsを振る舞わせるには?"
 
 msgid "@section How do I tell Emacs to iconify itself?"
-msgstr ""
+msgstr "@section アイコン化するようEmacsに伝えるには?"
 
 msgid "@section How do I use regexps (regular expressions) in Emacs?"
-msgstr ""
+msgstr "@section Emacsでregexp(正規表現)わ使用するには?"
 
 msgid "@section How do I perform a replace operation across more than one file?"
-msgstr ""
+msgstr "@section 複数ファイルを横断して置換操作を行うには?"
 
 msgid "@section Where is the documentation for @code{etags}?"
-msgstr ""
+msgstr "@section @code{etags}のドキュメントはどこ?"
 
 msgid "@section How do I disable backup files?"
-msgstr ""
+msgstr "@section バックアップファイルを無効にするには?"
 
 msgid "@section How do I disable @code{auto-save-mode}?"
-msgstr ""
+msgstr "@section @code{auto-save-mode}を無効にするには?"
 
 msgid "@section How can I go to a certain line given its number?"
-msgstr ""
+msgstr "@section 行番号で特定行に移動するには?"
 
 msgid "@section How can I create or modify new pull-down menu options?"
-msgstr ""
+msgstr "@section プルダウンの新たなメニューオプションの作成や変更を行うには?"
 
 msgid "@section How do I delete menus and menu options?"
-msgstr ""
+msgstr "@section メニューやメニューオプションを削除するには?"
 
 msgid "@section How do I turn on syntax highlighting?"
-msgstr ""
+msgstr "@section 構文ハイライトをオンにするには?"
 
 msgid "@section How can I force Emacs to scroll only one line when I move past the bottom of the screen?"
-msgstr ""
+msgstr "@section 画面下端に移動した際にEmacsが1行だけスクロールするよう強制するには?"
 
 msgid "@section How can I edit MS-DOS files using Emacs?"
-msgstr ""
+msgstr "@section EmacsでMS-DOSファイルを編集するには?"
 
 msgid "@section How can I tell Emacs to fill paragraphs with a single space after each period?"
-msgstr ""
+msgstr "@section ピリオドごとにその後の単一スペースでパラグラフをフィルするようEmacsに伝えるには?"
 
 msgid "@section Why these strange escape sequences from @code{ls} from the Shell mode?"
-msgstr ""
+msgstr "@section なぜShellモード@code{ls}は奇妙なエスケープシーケンスを出力するのか?"
 
 msgid "@section How can I start Emacs in fullscreen mode on MS-Windows?"
-msgstr ""
+msgstr "@section MS-WindowsでフルスクリーンモードでEmacsを開始するには?"
 
 msgid "@chapter Bugs and problems"
 msgstr ""

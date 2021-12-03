@@ -1,4 +1,4 @@
-This is efaq.info, produced by makeinfo version 6.8 from efaq.texi.
+This is efaq.info, produced by texi2any version 6.8 from efaq.texi.
 
 Copyright © 2001–2021 Free Software Foundation, Inc.
 Copyright © 1994, 1995, 1996, 1997, 1998, 1999, 2000 Reuven M. Lerner
@@ -2038,8 +2038,8 @@ included text prefix::を参照)。
 
 File: efaq.info,  Node: Forcing the cursor to remain in the same column,  Next: Forcing Emacs to iconify itself,  Prev: Inserting text at the beginning of each line,  Up: Common requests
 
-5.32 How do I make Emacs behave like this: when I go up or down, the cursor should stay in the same column even if the line is too short?
-=========================================================================================================================================
+5.32 上下に移動した際にたとえ短すぎる行でも同じ列にカーソルが留まる; このようにEmacsを振る舞わせるには?
+=======================================================================================================
 
 ‘M-x picture-mode’を使用します。
 
@@ -2050,8 +2050,8 @@ File: efaq.info,  Node: Forcing the cursor to remain in the same column,  Next: 
 
 File: efaq.info,  Node: Forcing Emacs to iconify itself,  Next: Using regular expressions,  Prev: Forcing the cursor to remain in the same column,  Up: Common requests
 
-5.33 How do I tell Emacs to iconify itself?
-===========================================
+5.33 アイコン化するようEmacsに伝えるには?
+=========================================
 
 ‘C-z’はEmacsをXで実行中ならアイコン化、それ以外ならEmacsをサスペンドしま
 す。*note (emacs)Frame Commands::を参照してください。
@@ -2059,8 +2059,8 @@ File: efaq.info,  Node: Forcing Emacs to iconify itself,  Next: Using regular ex
 
 File: efaq.info,  Node: Using regular expressions,  Next: Replacing text across multiple files,  Prev: Forcing Emacs to iconify itself,  Up: Common requests
 
-5.34 How do I use regexps (regular expressions) in Emacs?
-=========================================================
+5.34 Emacsでregexp(正規表現)わ使用するには?
+===========================================
 
 *note (emacs)Regexp Backslash::を参照してください。
 
@@ -2081,8 +2081,8 @@ File: efaq.info,  Node: Using regular expressions,  Next: Replacing text across 
 
 File: efaq.info,  Node: Replacing text across multiple files,  Next: Documentation for etags,  Prev: Using regular expressions,  Up: Common requests
 
-5.35 How do I perform a replace operation across more than one file?
-====================================================================
+5.35 複数ファイルを横断して置換操作を行うには?
+==============================================
 
 Diredモード(‘M-x dired <RET>’または‘C-x d’)はコマンド
 ‘dired-do-find-regexp-and-replace’ (‘Q’)をサポートしています。これは複数
@@ -2111,8 +2111,8 @@ tags機能に含まれているコマンド‘tags-query-replace’は‘TAGS’
 
 File: efaq.info,  Node: Documentation for etags,  Next: Disabling backups,  Prev: Replacing text across multiple files,  Up: Common requests
 
-5.36 Where is the documentation for ‘etags’?
-============================================
+5.36 ‘etags’のドキュメントはどこ?
+=================================
 
 ‘etags’のmanページは‘emacs’のmanページと同じ場所にあるはずです。
 
@@ -2122,8 +2122,8 @@ File: efaq.info,  Node: Documentation for etags,  Next: Disabling backups,  Prev
 
 File: efaq.info,  Node: Disabling backups,  Next: Disabling auto-save-mode,  Prev: Documentation for etags,  Up: Common requests
 
-5.37 How do I disable backup files?
-===================================
+5.37 バックアップファイルを無効にするには?
+==========================================
 
 特に何か不幸な出来事が起こったとき等、バックアップ特は役に立つので多分こ
 れを行いたいとは思わないでしょう。
@@ -2165,8 +2165,8 @@ Fileutilsパッケージの一部であり、<https://ftp.gnu.org>およびそ�
 
 File: efaq.info,  Node: Disabling auto-save-mode,  Next: Going to a line by number,  Prev: Disabling backups,  Up: Common requests
 
-5.38 How do I disable ‘auto-save-mode’?
-=======================================
+5.38 ‘auto-save-mode’を無効にするには?
+======================================
 
 特にドキュメント編集中にEmacsやコンピューターがクラッシュしたとき等、オ
 ートセーブは役に立つので多分これを行いたいとは思わないでしょう。
@@ -2187,8 +2187,8 @@ Save::を参照してください。
 
 File: efaq.info,  Node: Going to a line by number,  Next: Modifying pull-down menus,  Prev: Disabling auto-save-mode,  Up: Common requests
 
-5.39 How can I go to a certain line given its number?
-=====================================================
+5.39 行番号で特定行に移動するには?
+==================================
 
 行番号で行に移動する必要があるのは確かですか?  もしかしたらコンパイラー
 がエラーメッセージをプリントしたソースファイル行を表示するのがあなたの望
@@ -2214,8 +2214,8 @@ Emacsは行番号の入力を求めてその行に移動するでしょう。
 
 File: efaq.info,  Node: Modifying pull-down menus,  Next: Deleting menus and menu options,  Prev: Going to a line by number,  Up: Common requests
 
-5.40 How can I create or modify new pull-down menu options?
-===========================================================
+5.40 プルダウンの新たなメニューオプションの作成や変更を行うには?
+================================================================
 
 メニュータイトル(‘File’、‘Edit’、‘Buffers’など)はそれぞれローカルキーマ
 ップおよびグローバルキーマップを表しています。メニュータイトルをマウスで
@@ -2287,8 +2287,8 @@ Word’アイテムを挿入します。
 
 File: efaq.info,  Node: Deleting menus and menu options,  Next: Turning on syntax highlighting,  Prev: Modifying pull-down menus,  Up: Common requests
 
-5.41 How do I delete menus and menu options?
-============================================
+5.41 メニューやメニューオプションを削除するには?
+================================================
 
 メニューを削除するもっともシンプルな方法は、そのキーマップに‘nil’をセッ
 トします。たとえば‘Words’メニュー(*note Modifying pull-down menus::を参
@@ -2306,8 +2306,8 @@ Modifying pull-down menus::で追加した)‘Forward word’メニューオプ�
 
 File: efaq.info,  Node: Turning on syntax highlighting,  Next: Scrolling only one line,  Prev: Deleting menus and menu options,  Up: Common requests
 
-5.42 How do I turn on syntax highlighting?
-==========================================
+5.42 構文ハイライトをオンにするには?
+====================================
 
 ‘font-lock-mode’はEmacsがカレントバッファーでシンタックスハイライト和行
 う標準的な方法です。これはEmacs 22.1以降ではデフォルトで有効になっていま
@@ -2367,8 +2367,8 @@ ps-print-region-with-faces’を使用します。あなたにはPostScriptプ�
 
 File: efaq.info,  Node: Scrolling only one line,  Next: Editing MS-DOS files,  Prev: Turning on syntax highlighting,  Up: Common requests
 
-5.43 How can I force Emacs to scroll only one line when I move past the bottom of the screen?
-=============================================================================================
+5.43 画面下端に移動した際にEmacsが1行だけスクロールするよう強制するには?
+========================================================================
 
 ‘M-x customize-variable <RET> scroll-conservatively <RET>’で
 ‘scroll-conservatively’をカスタマイズして大きな値、たとえば10000にセット
@@ -2382,8 +2382,8 @@ Scrolling::の説明を参照してください。
 
 File: efaq.info,  Node: Editing MS-DOS files,  Next: Filling paragraphs with a single space,  Prev: Scrolling only one line,  Up: Common requests
 
-5.44 How can I edit MS-DOS files using Emacs?
-=============================================
+5.44 EmacsでMS-DOSファイルを編集するには?
+=========================================
 
 MS-DOS (およびWindows)のファイルの検出と処理は透過的に行われます。Unixシ
 ステム上でファイルフォーマットについて心配するなくMS-DOSファイルのオープ
@@ -2398,8 +2398,8 @@ MS-DOS (およびWindows)のファイルの検出と処理は透過的に行わ�
 
 File: efaq.info,  Node: Filling paragraphs with a single space,  Next: Escape sequences in shell output,  Prev: Editing MS-DOS files,  Up: Common requests
 
-5.45 How can I tell Emacs to fill paragraphs with a single space after each period?
-===================================================================================
+5.45 ピリオドごとにその後の単一スペースでパラグラフをフィルするようEmacsに伝えるには?
+=====================================================================================
 
 以下の行を‘.emacs’ファイルに追加してください:
 
@@ -2408,8 +2408,8 @@ File: efaq.info,  Node: Filling paragraphs with a single space,  Next: Escape se
 
 File: efaq.info,  Node: Escape sequences in shell output,  Next: Fullscreen mode on MS-Windows,  Prev: Filling paragraphs with a single space,  Up: Common requests
 
-5.46 Why these strange escape sequences from ‘ls’ from the Shell mode?
-======================================================================
+5.46 なぜShellモード‘ls’は奇妙なエスケープシーケンスを出力するのか?
+===================================================================
 
 多くのシステムでは、‘ls’はANSIカラーエスケープシーケンスを使用してプリン
 トを行う‘ls --color’にエイリアスされています。Emacsのバージョン21.1以降
@@ -2423,8 +2423,8 @@ File: efaq.info,  Node: Escape sequences in shell output,  Next: Fullscreen mode
 
 File: efaq.info,  Node: Fullscreen mode on MS-Windows,  Prev: Escape sequences in shell output,  Up: Common requests
 
-5.47 How can I start Emacs in fullscreen mode on MS-Windows?
-============================================================
+5.47 MS-WindowsでフルスクリーンモードでEmacsを開始するには?
+===========================================================
 
 Emacs 24からはコマンドラインオプション‘--maximized’でEmacsを開始するか、
 あるいは‘.emacs’ファイルに以下のフォームを記述します:
@@ -4868,81 +4868,81 @@ Node: Evaluating Emacs Lisp code103173
 Node: Changing the length of a Tab105156
 Node: Inserting text at the beginning of each line105985
 Node: Forcing the cursor to remain in the same column107421
-Node: Forcing Emacs to iconify itself108118
-Node: Using regular expressions108550
-Node: Replacing text across multiple files109770
-Node: Documentation for etags111407
-Node: Disabling backups111867
-Node: Disabling auto-save-mode114284
-Node: Going to a line by number115529
-Node: Modifying pull-down menus117467
-Node: Deleting menus and menu options121686
-Node: Turning on syntax highlighting122633
-Node: Scrolling only one line126530
-Node: Editing MS-DOS files127308
-Node: Filling paragraphs with a single space128244
-Node: Escape sequences in shell output128683
-Node: Fullscreen mode on MS-Windows129720
-Node: Bugs and problems130995
-Node: Problems with very large files132270
-Node: ^M in the shell buffer133524
-Node: Problems with Shell Mode135732
-Node: Termcap/Terminfo entries for Emacs136613
-Node: Errors with init files138226
-Node: Emacs ignores X resources139310
-Node: Emacs ignores frame parameters141455
-Node: Editing files with $ in the name142550
-Node: Shell mode loses the current directory143078
-Node: Security risks with Emacs144284
-Node: Dired claims that no file is on this line148490
-Node: Compiling and installing Emacs149690
-Node: Installing Emacs149953
-Node: Problems building Emacs153126
-Node: Finding Emacs and related packages153986
-Node: Finding Emacs on the Internet154533
-Node: Finding a package with particular functionality155156
-Node: Packages that do not come with Emacs156646
-Node: Spell-checkers159809
-Node: Current GNU distributions160295
-Node: Difference between Emacs and XEmacs160793
-Node: Emacs for minimalists163275
-Node: Emacs for MS-DOS163955
-Node: Emacs for MS-Windows165234
-Node: Emacs for GNUstep165660
-Node: Emacs for macOS166077
-Node: Key bindings166459
-Node: Binding keys to commands167122
-Node: Invalid prefix characters169922
-Node: Terminal setup code works after Emacs has begun170985
-Node: Working with function and arrow keys172642
-Node: X key translations for Emacs173283
-Node: Backspace invokes help174376
-Node: Swapping keys179233
-Node: Producing C-XXX with the keyboard180725
-Node: No Meta key181547
-Node: No Escape key182262
-Node: Compose Character182977
-Node: Binding combinations of modifiers and function keys183569
-Node: Meta key does not work in xterm185130
-Node: ExtendChar key does not work as Meta188076
-Node: SPC no longer completes file names189205
-Node: Alternate character sets190077
-Node: Emacs does not display 8-bit characters190377
-Node: Inputting eight-bit characters191374
-Node: Right-to-left alphabets191904
-Node: How to add fonts192480
-Node: Mail and news197896
-Node: Changing the included text prefix198414
-Node: Saving a copy of outgoing mail199232
-Node: Expanding aliases when sending mail200414
-Node: Sorting the messages in an Rmail folder201969
-Node: Rmail writes to /var/spool/mail202382
-Node: Replying to the sender of a message203633
-Node: Automatically starting a mail or news reader204839
-Node: Reading news with Emacs205669
-Node: Making Gnus faster206070
-Node: Catching up in all newsgroups206891
-Node: Concept index207361
+Node: Forcing Emacs to iconify itself108095
+Node: Using regular expressions108538
+Node: Replacing text across multiple files109742
+Node: Documentation for etags111355
+Node: Disabling backups111803
+Node: Disabling auto-save-mode114252
+Node: Going to a line by number115503
+Node: Modifying pull-down menus117417
+Node: Deleting menus and menu options121675
+Node: Turning on syntax highlighting122651
+Node: Scrolling only one line126551
+Node: Editing MS-DOS files127317
+Node: Filling paragraphs with a single space128257
+Node: Escape sequences in shell output128737
+Node: Fullscreen mode on MS-Windows129794
+Node: Bugs and problems131086
+Node: Problems with very large files132361
+Node: ^M in the shell buffer133615
+Node: Problems with Shell Mode135823
+Node: Termcap/Terminfo entries for Emacs136704
+Node: Errors with init files138317
+Node: Emacs ignores X resources139401
+Node: Emacs ignores frame parameters141546
+Node: Editing files with $ in the name142641
+Node: Shell mode loses the current directory143169
+Node: Security risks with Emacs144375
+Node: Dired claims that no file is on this line148581
+Node: Compiling and installing Emacs149781
+Node: Installing Emacs150044
+Node: Problems building Emacs153217
+Node: Finding Emacs and related packages154077
+Node: Finding Emacs on the Internet154624
+Node: Finding a package with particular functionality155247
+Node: Packages that do not come with Emacs156737
+Node: Spell-checkers159900
+Node: Current GNU distributions160386
+Node: Difference between Emacs and XEmacs160884
+Node: Emacs for minimalists163366
+Node: Emacs for MS-DOS164046
+Node: Emacs for MS-Windows165325
+Node: Emacs for GNUstep165751
+Node: Emacs for macOS166168
+Node: Key bindings166550
+Node: Binding keys to commands167213
+Node: Invalid prefix characters170013
+Node: Terminal setup code works after Emacs has begun171076
+Node: Working with function and arrow keys172733
+Node: X key translations for Emacs173374
+Node: Backspace invokes help174467
+Node: Swapping keys179324
+Node: Producing C-XXX with the keyboard180816
+Node: No Meta key181638
+Node: No Escape key182353
+Node: Compose Character183068
+Node: Binding combinations of modifiers and function keys183660
+Node: Meta key does not work in xterm185221
+Node: ExtendChar key does not work as Meta188167
+Node: SPC no longer completes file names189296
+Node: Alternate character sets190168
+Node: Emacs does not display 8-bit characters190468
+Node: Inputting eight-bit characters191465
+Node: Right-to-left alphabets191995
+Node: How to add fonts192571
+Node: Mail and news197987
+Node: Changing the included text prefix198505
+Node: Saving a copy of outgoing mail199323
+Node: Expanding aliases when sending mail200505
+Node: Sorting the messages in an Rmail folder202060
+Node: Rmail writes to /var/spool/mail202473
+Node: Replying to the sender of a message203724
+Node: Automatically starting a mail or news reader204930
+Node: Reading news with Emacs205760
+Node: Making Gnus faster206161
+Node: Catching up in all newsgroups206982
+Node: Concept index207452
 
 End Tag Table
 

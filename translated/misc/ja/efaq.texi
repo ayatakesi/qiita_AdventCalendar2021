@@ -1992,7 +1992,7 @@ yankしたメールメッセージにプレフィクスとして@samp{>}の付�
 the included text prefix}を参照)。
 
 @node Forcing the cursor to remain in the same column
-@section How do I make Emacs behave like this: when I go up or down, the cursor should stay in the same column even if the line is too short?
+@section 上下に移動した際にたとえ短すぎる行でも同じ列にカーソルが留まる; このようにEmacsを振る舞わせるには?
 @cindex @code{picture-mode}
 @cindex Remaining in the same column, regardless of contents
 @cindex Vertical movement in empty documents
@@ -2003,7 +2003,7 @@ the included text prefix}を参照)。
 (@ref{Moving Point, , , emacs, The GNU Emacs Manual}を参照)も確認してください。
 
 @node Forcing Emacs to iconify itself
-@section How do I tell Emacs to iconify itself?
+@section アイコン化するようEmacsに伝えるには?
 @cindex Iconification under the X Window System
 @cindex X Window System and iconification
 @cindex Suspending Emacs
@@ -2012,7 +2012,7 @@ the included text prefix}を参照)。
 emacs, The GNU Emacs Manual}を参照してください。
 
 @node Using regular expressions
-@section How do I use regexps (regular expressions) in Emacs?
+@section Emacsでregexp(正規表現)わ使用するには?
 @cindex Regexps
 @cindex Regular expressions
 @cindex Differences between Unix and Emacs regexps
@@ -2036,7 +2036,7 @@ Unixの@file{grep}、@file{sed}などとは異なり文字の補集合(@samp{[^.
 @end itemize
 
 @node Replacing text across multiple files
-@section How do I perform a replace operation across more than one file?
+@section 複数ファイルを横断して置換操作を行うには?
 @cindex Replacing strings across files
 @cindex Multiple files, replacing across
 @cindex Files, replacing strings across multiple
@@ -2066,7 +2066,7 @@ Emacsの``tags''機能を使用して、別の方法で同じこと行うこと�
 Search,,, emacs, The GNU Emacs Manual}を参照してください。
 
 @node Documentation for etags
-@section Where is the documentation for @code{etags}?
+@section @code{etags}のドキュメントはどこ?
 @cindex Documentation for @code{etags}
 @cindex @code{etags}, documentation for
 
@@ -2075,7 +2075,7 @@ Search,,, emacs, The GNU Emacs Manual}を参照してください。
 たとえば@samp{etags -H}のように、コマンドラインスイッチで手早く読める説明もあります。
 
 @node Disabling backups
-@section How do I disable backup files?
+@section バックアップファイルを無効にするには?
 @cindex Backups, disabling
 @cindex Disabling backups
 
@@ -2114,7 +2114,7 @@ Emacs
 . @var{dir})}を追加する等が典型的な使い方です。
 
 @node Disabling auto-save-mode
-@section How do I disable @code{auto-save-mode}?
+@section @code{auto-save-mode}を無効にするには?
 @cindex Disabling @code{auto-save-mode}
 @cindex Auto-saving
 @cindex Saving at frequent intervals
@@ -2131,7 +2131,7 @@ Emacs}を参照)。このパッケージではすべてのauto-saveファイル�
 Manual}を参照してください。
 
 @node Going to a line by number
-@section How can I go to a certain line given its number?
+@section 行番号で特定行に移動するには?
 @cindex Going to a line by number
 @cindex Compilation error messages
 @cindex Recompilation
@@ -2150,7 +2150,7 @@ M-n}でも使用できる。@file{*compilation*}バッファーのメッセー�
 M-g}はカレントバッファーの行番号286へジャンプします。
 
 @node Modifying pull-down menus
-@section How can I create or modify new pull-down menu options?
+@section プルダウンの新たなメニューオプションの作成や変更を行うには?
 @cindex Pull-down menus, creating or modifying
 @cindex Menus, creating or modifying
 @cindex Creating new menu options
@@ -2216,7 +2216,7 @@ Manual}の``Menu Keymaps''にあります(このマニュアル内の情報に�
 documentation}を参照)。
 
 @node Deleting menus and menu options
-@section How do I delete menus and menu options?
+@section メニューやメニューオプションを削除するには?
 @cindex Deleting menus and menu options
 @cindex Menus, deleting
 
@@ -2235,7 +2235,7 @@ pull-down menus}で追加した)@samp{Forward word}メニューオプション�
 @end lisp
 
 @node Turning on syntax highlighting
-@section How do I turn on syntax highlighting?
+@section 構文ハイライトをオンにするには?
 @cindex Syntax highlighting
 @cindex @code{font-lock-mode}
 @cindex Highlighting based on syntax
@@ -2286,7 +2286,7 @@ ps-print-buffer-with-faces}または@kbd{M-x
 ps-print-region-with-faces}を使用します。あなたにはPostScriptプリンターにテキストを送信する方法、あるいはGhostscriptのようなPostScriptインタープリターが必要になるでしょう。詳細については変数@code{ps-printer-name}、@code{ps-lpr-command}、@code{ps-lpr-switches}のドキュメントを参照してください。
 
 @node Scrolling only one line
-@section How can I force Emacs to scroll only one line when I move past the bottom of the screen?
+@section 画面下端に移動した際にEmacsが1行だけスクロールするよう強制するには?
 @cindex Scrolling only one line
 @cindex Reducing the increment when scrolling
 
@@ -2301,7 +2301,7 @@ Scrolling,,, emacs, The GNU Emacs Manual}の説明を参照してください。
 @end lisp
 
 @node Editing MS-DOS files
-@section How can I edit MS-DOS files using Emacs?
+@section EmacsでMS-DOSファイルを編集するには?
 @cindex Editing MS-DOS files
 @cindex MS-DOS files, editing
 @cindex Microsoft files, editing
@@ -2313,7 +2313,7 @@ MS-DOS
 MS-DOS形式ファイルの編集時には、それがDOSファイルであることが示されます。UnixおよびGNU/Linuxシステム、およびMacintoshでもモードライン左端付近に文字列@samp{(DOS)}が表示されるでしょう。DOSのEOLフォーマットをデフォルトとして使用するDOSおよびWindowsでは、モードラインにバックスラッシュ(@samp{\})が表示されます。
 
 @node Filling paragraphs with a single space
-@section How can I tell Emacs to fill paragraphs with a single space after each period?
+@section ピリオドごとにその後の単一スペースでパラグラフをフィルするようEmacsに伝えるには?
 @cindex One space following periods
 @cindex Single space following periods
 @cindex Periods, one space following
@@ -2325,7 +2325,7 @@ MS-DOS形式ファイルの編集時には、それがDOSファイルである�
 @end lisp
 
 @node Escape sequences in shell output
-@section Why these strange escape sequences from @code{ls} from the Shell mode?
+@section なぜShellモード@code{ls}は奇妙なエスケープシーケンスを出力するのか?
 @cindex Escape sequences in @code{ls} output
 @cindex @code{ls} in Shell mode
 
@@ -2336,7 +2336,7 @@ ansi-color-for-comint-mode}とタイプするか、あるいはinitファイル�
 'shell-mode-hook 'ansi-color-for-comint-mode-on)}を追加することで有効にできます。
 
 @node Fullscreen mode on MS-Windows
-@section How can I start Emacs in fullscreen mode on MS-Windows?
+@section MS-WindowsでフルスクリーンモードでEmacsを開始するには?
 @cindex Maximize frame
 @cindex Fullscreen mode
 
