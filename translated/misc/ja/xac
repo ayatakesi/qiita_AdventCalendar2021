@@ -1,0 +1,1000 @@
+<p>あなたのターミナルにXTermとの互換性がなければ、別の<code>TERM</code>定義を使う必要があるかもしれません。名前に&lsquo;<samp>direct</samp>&rsquo;が含まれるすべてのターミナルが候補になり得ます。それらのうちどれがシステムにインストールされているか調べるために<code>toe</code>コマンドを使用できます:
+</p>
+<div class="example">
+<pre class="example">$ toe | grep '\-direct'
+
+konsole-direct  konsole with direct-color indexing
+vte-direct      vte with direct-color indexing
+st-direct       st with direct-color indexing
+xterm-direct2   xterm with direct-color indexing (old)
+xterm-direct    xterm with direct-color indexing
+</pre></div>
+
+<p>&lsquo;<samp>RGB</samp>&rsquo;ケイパビリティをもつターミナルは、ダイレクト。モードを認識しないアプリケーションにたいする後方互換性を保守するために、ピクセル#000001から#000007をインデックス付けされたカラーとして扱います。したがってもっとも暗い青い濃淡は利用できないかもしれません。これが問題となるようなら、&lsquo;<samp>setb24</samp>&rsquo;と&lsquo;<samp>setf24</samp>&rsquo;のカスタムターミナル定義を常に使用するこれができます。
+</p>
+<hr>
+</div>
+<div class="section" id="Debugging-a-customization-file">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Colors-on-a-TTY" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Displaying-the-current-line-or-column" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="g_t_002eemacshuairuwodebatugusuruniha_003f"></span><h2 class="section">5.4 <samp>.emacs</samp>ファイルをデバッグするには?</h2>
+<span id="index-Debugging-_002eemacs-file"></span>
+<span id="index-_002eemacs-debugging"></span>
+<span id="index-Init-file-debugging"></span>
+<span id="index-_002ddebug_002dinit-option"></span>
+
+<p>コマンドラインオプション&lsquo;<samp>-debug-init</samp>&rsquo;でEmacsを開始してください。これは<samp>.emacs</samp>ファイルを評価する前にEmacs
+Lispデバッガを有効して、何かうまく行かなければあなたをデバッガ内へと導きます。<samp>trace-back</samp>バッファーの上端行はエラーメッセージ、2行目か3行目には問題を引き起こした<samp>.emacs</samp>ファイルのLispコードが表示されるでしょう。
+</p>
+<p><samp>.emacs</samp>ファイル内の関数や引数の終端にカーソルを移動して<kbd>C-x C-e</kbd> (<kbd>M-x
+eval-last-sexp</kbd>)をタイプすれば、関数や関数の引数を個別に評価することもできます。
+</p>
+<p>セットまたは使用を試みている変数の値をチェックするには<kbd>C-h v</kbd> (<kbd>M-x describe-variable</kbd>)を使用できます。
+</p>
+<hr>
+</div>
+<div class="section" id="Displaying-the-current-line-or-column">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Debugging-a-customization-file" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Displaying-the-current-file-name-in-the-titlebar" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="EmacsniXian-Zai-noXing-_0028yaLie-_0029noFan-Hao-woBiao-Shisaseruniha_003f"></span><h2 class="section">5.5 Emacsに現在の行(や列)の番号を表示させるには?</h2>
+<span id="index-line_002dnumber_002dmode"></span>
+<span id="index-Displaying-the-current-line-or-column"></span>
+<span id="index-Line-number_002c-displaying-the-current"></span>
+<span id="index-Column_002c-displaying-the-current"></span>
+<span id="index-mode_002dline_002dformat"></span>
+
+<p>デフォルトではEmacsはポイント位置のカレント行番号をモードラインに表示します。コマンド<kbd>M-x
+line-number-mode</kbd>、または変数<code>line-number-mode</code>でこの機能のオンとオフを切り替えることができます。バッファーのバイトサイズが変数<code>line-number-display-limit</code>の値より大きければ、Emacsは行番号を表示しないことに注意してください。
+</p>
+<p><kbd>M-x column-number-mode</kbd>、または以下のフォームを
+</p>
+<div class="example lisp">
+<pre class="lisp">(setq column-number-mode t)
+</pre></div>
+
+<p><samp>.emacs</samp>ファイルに記述することにより、同じようにカレント列番号を表示できます。この機能はデフォルトではオフです。
+</p>
+<p>変数<code>mode-line-format</code>内のフォーマット指定子<code>&quot;%c&quot;</code>は、モードラインにカレント列の値っっ挿入します。この変数のセットや使用する方法についての詳細は<code>mode-line-format</code>のドキュメントを参照してください(<kbd>C-h
+v mode-line-format <span class="key">RET</span></kbd>を使用する)。
+</p>
+<span id="index-Set-number-capability-in-vi-emulators"></span>
+<p>&lsquo;<samp>display-line-numbers</samp>&rsquo;パッケージ(Emacsのバージョン26.1で追加)は&lsquo;<samp>vi</samp>&rsquo;の&ldquo;set
+number&rdquo;機能のように、各行の前のテキストエリアに行番号を表示します。このオプション表示をアクティブにするにはバッファーローカル変数<code>display-line-numbers</code>をカスタマイズします。かわりにマイナーモード<code>display-line-numbers-mode</code>やグローバル版の<code>global-display-line-numbers-mode</code>を使うこともできます。これらのモード使用時には<code>display-line-numbers</code>を使用するときと同じ値で<code>display-line-numbers-type</code>をカスタマイズしてください。
+</p>
+<p>&lsquo;<samp>linum</samp>&rsquo;パッケージ(バージョン23.1以降のEmacsに同梱)もありますが今後配送されます。ユーザーおよび開発者にはかわりに&lsquo;<samp>display-line-numbers</samp>&rsquo;の使用をお勧めします。(Emacsには同梱されていないパッケージ)&lsquo;<samp>setnu</samp>&rsquo;と&lsquo;<samp>wb-line-number</samp>&rsquo;もこの機能を実装しています。
+</p>
+<hr>
+</div>
+<div class="section" id="Displaying-the-current-file-name-in-the-titlebar">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Displaying-the-current-line-or-column" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Turning-on-abbrevs-by-default" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Xian-Zai-nohuairuMing-wotaitorubaniHan-meruniha_003f"></span><h2 class="section">5.6 現在のファイル名をタイトルバーに含めるには?</h2>
+<span id="index-Titlebar_002c-displaying-the-current-file-name-in"></span>
+<span id="index-File-name_002c-displaying-in-the-titlebar"></span>
+<span id="index-frame_002dtitle_002dformat"></span>
+
+<p>Emacsフレームのタイトルバーのコンテンツは、変数<code>mode-line-format</code>と同じ構造をもつ変数<code>frame-title-format</code>によって制御されます(これらの変数について情報を得るには<kbd>C-h
+v</kbd>または<kbd>M-x describe-variable</kbd>を使用する)。
+</p>
+<p>デフォルトではフレームのタイトルバーには、1つのフレームしか存在しない場合を除き、がカレントでvisitされているバッファーの名前が表示されます。フレームが1つの場合には、タイトルバーにはEmacsを呼び出したときの名前、およびEmacsを呼び出したマシン名が含まれます。これは<code>frame-title-format</code>に以下をデフォルト値としてセットすることにより行われます:
+</p>
+<div class="example lisp">
+<pre class="lisp">(multiple-frames &quot;%b&quot; (&quot;&quot; invocation-name &quot;@&quot; (system-name)))
+</pre></div>
+
+<p>存在するフレームの個数に関わらずフレームのタイトルバーにバッファー名が含まれるように挙動を変更するには、以下を<samp>.emacs</samp>に含めてください:
+</p>
+<div class="example lisp">
+<pre class="lisp">(setq frame-title-format &quot;%b&quot;)
+</pre></div>
+
+<hr>
+</div>
+<div class="section" id="Turning-on-abbrevs-by-default">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Displaying-the-current-file-name-in-the-titlebar" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Associating-modes-with-files" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="modomymodededehuorutodeabbrevwoonnisuruniha_003f"></span><h2 class="section">5.7 モード<var>mymode</var>でデフォルトでabbrevをオンにするには?</h2>
+<span id="index-Abbrevs_002c-turning-on-by-default"></span>
+
+<p>Abbrevモードは略語をタイプするとそれを展開します。特定のバッファーでこれをオンにするには<kbd>M-x
+abbrev-mode</kbd>を使用します。デフォルトですべてのバッファーでオンにするには、以下を<samp>.emacs</samp>ファイルに記述してください:
+</p>
+<div class="example lisp">
+<pre class="lisp">(setq-default abbrev-mode t)
+</pre></div>
+
+<p>To turn it on in a specific mode, use:
+</p>
+<div class="example lisp">
+<pre class="lisp">(add-hook '<var>mymode</var>-mode-hook
+          (lambda ()
+           (setq abbrev-mode t)))
+</pre></div>
+
+<p>If your Emacs version is older then 22.1, you will also need to use:
+</p>
+<div class="example lisp">
+<pre class="lisp">(condition-case ()
+   (quietly-read-abbrev-file)
+  (file-error nil))
+</pre></div>
+
+<hr>
+</div>
+<div class="section" id="Associating-modes-with-files">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Turning-on-abbrevs-by-default" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Replacing-highlighted-text" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Te-Ding-nohuairuniTe-Ding-nomodowoEmacsniShi-Yong-saseruniha_003f"></span><h2 class="section">5.8 特定のファイルに特定のモードをEmacsに使用させるには?</h2>
+<span id="index-Associating-modes-with-files"></span>
+<span id="index-File-extensions-and-modes"></span>
+<span id="index-auto_002dmode_002dalist_002c-modifying"></span>
+<span id="index-Modes_002c-associating-with-file-extensions"></span>
+
+<p>名前が拡張子<samp>.<var>bar</var></samp>で終わるファイルすべてにたいして特定のモード<var>foo</var>を使用したければ、以下でこれを行うことができるでしょう:
+</p>
+<div class="example lisp">
+<pre class="lisp">(add-to-list 'auto-mode-alist '(&quot;\\.<var>bar</var>\\'&quot; . <var>foo</var>-mode))
+</pre></div>
+
+<p>またはかわりにモード<var>foo</var>で編集したい任意のファイルの1行目のどこか(1行目の先頭が&lsquo;<samp>#!</samp>&rsquo;なら2行目)に以下を記述します:
+</p>
+<div class="example">
+<pre class="example">-*- <var>foo</var> -*-
+</pre></div>
+
+<span id="index-Major-mode-for-shell-scripts"></span>
+<p>変数<code>interpreter-mode-alist</code>はインタープリター(shellやpythonなど)に解釈されるスクリプトをロードする際にどのモードを使用するかを指定します。Emacsはスクリプトの1行目を調べて、使用されるインタープリターを判断します。詳細については<code>interpreter-mode-alist</code>上で<kbd>C-h
+v</kbd> (または<kbd>M-x describe-variable</kbd>)を使用して調べてください。
+</p>
+<hr>
+</div>
+<div class="section" id="Replacing-highlighted-text">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Associating-modes-with-files" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Controlling-case-sensitivity" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="hairaitosaretatekisutowotaipusitatekisutodeZhi-kiHuan-eruniha_003f"></span><h2 class="section">5.9 ハイライトされたテキストをタイプしたテキストで置き換えるには?</h2>
+<span id="index-delete_002dselection_002dmode"></span>
+<span id="index-Replacing-highlighted-text"></span>
+<span id="index-Highlighting-and-replacing-text"></span>
+
+<p>以下のLispフォームを<samp>.emacs</samp>ファイルに記述することにより自動的に開始できる<code>delete-selection-mode</code>を使用します。
+</p>
+<div class="example lisp">
+<pre class="lisp">(delete-selection-mode 1)
+</pre></div>
+
+<p><code>delete-selection-mode</code>のドキュメント文字列(<kbd>M-x describe-function <span class="key">RET</span>
+delete-selection-mode <span class="key">RET</span></kbd>を使用して読むことができる)によると:
+</p>
+<blockquote>
+<p>Delete
+Selectionモードが有効な場合には選択がアクティブのときにテキストをタイプするとテキストで選択を置き換える。それ以外なら選択の有無に関わらずタイプしたテキストはポイント位置に挿入される。
+</p></blockquote>
+
+<p>このモードにより<tt class="key">DEL</tt>を押下してハイライトされているリージョンを削除(killではない)することもできます。
+</p>
+<hr>
+</div>
+<div class="section" id="Controlling-case-sensitivity">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Replacing-highlighted-text" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Working-with-unprintable-characters" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Jian-Suo-yaZhi-Huan-noJi-niEmacsniyoruDa-WenZi-Xiao-WenZi-noQu-Bie-woZhi-Yu-suruniha_003f"></span><h2 class="section">5.10 検索や置換の際にEmacsによる大文字小文字の区別を制御するには?</h2>
+<span id="index-case_002dfold_002dsearch"></span>
+<span id="index-Case-sensitivity-of-searches"></span>
+<span id="index-Searching-without-case-sensitivity"></span>
+<span id="index-Ignoring-case-in-searches"></span>
+
+<p>変数<code>case-fold-search</code>の値は検索がcase(大文字小文字)を区別するかどうかを決定します:
+</p>
+<div class="example lisp">
+<pre class="lisp">(setq case-fold-search nil) ; caseを区別
+(setq case-fold-search t)   ; 検索はcaseを区別しない
+</pre></div>
+
+<span id="index-Case-sensitivity-in-replacements"></span>
+<span id="index-Replacing_002c-and-case-sensitivity"></span>
+<span id="index-case_002dreplace"></span>
+<p>同じように置換では変数<code>case-replace</code>が置換においてcaseを維持するかどうかを決定します。
+</p>
+<p>isearchでは<kbd>M-c</kbd>で自由にcaseの区別を切り替えることもできます。
+</p>
+<p>あるメジャーモードにたいしてのみcaseの区別を変更するにはメジャーモードのフックを使用します。たとえば:
+</p>
+<div class="example lisp">
+<pre class="lisp">(add-hook '<var>foo</var>-mode-hook
+          (lambda ()
+           (setq case-fold-search nil)))
+</pre></div>
+
+<hr>
+</div>
+<div class="section" id="Working-with-unprintable-characters">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Controlling-case-sensitivity" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Searching-for_002freplacing-newlines" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="purintoBu-Ke-WenZi-_00288bitutoWenZi-yakontororuWenZi-_0029noJian-Suo-_002c-Xue-Chu-_002c-Zhi-Huan-woXing-uniha_003f"></span><h2 class="section">5.11 プリント不可文字(8ビット文字やコントロール文字)の検索、削除、置換を行うには?</h2>
+<span id="index-Unprintable-characters_002c-working-with"></span>
+<span id="index-Working-with-unprintable-characters"></span>
+<span id="index-Control-characters_002c-working-with"></span>
+<span id="index-Eight_002dbit-characters_002c-working-with"></span>
+<span id="index-Searching-for-unprintable-characters"></span>
+<span id="index-Regexps-and-unprintable-characters"></span>
+
+<p>たとえばバッファーには&lsquo;<samp>\237</samp>&rsquo;のように出現する単一文字は<kbd>C-s C-q 2 3
+7</kbd>とタイプして検索できます。プリントできない<strong>すべて</strong>の文字を検索するには正規表現(<em>regexp</em>)で行うのが最良です。プリント不可文字にたいするregexpは、プリント可能文字にたいする補集合を使用するのがもっとも簡単です。
+</p>
+<ul>
+<li> プリント可能文字にたいするregexp: &lsquo;<samp>[\t\n\r\f -~]</samp>&rsquo;
+
+</li><li> プリント不可文字にたいするregexp: &lsquo;<samp>[^\t\n\r\f -~]</samp>&rsquo;
+
+</li></ul>
+
+<p><code>isearch-forward-regexp</code>や<code>re-search-forward</code>にたいする対話的な引数としてこれらのスペシャル文字をタイプするには<kbd>C-q</kbd>を使う必要があります(&lsquo;<samp>\t</samp>&rsquo;、&lsquo;<samp>\n</samp>&rsquo;、&lsquo;<samp>\r</samp>&rsquo;、&lsquo;<samp>\f</samp>&rsquo;はそれぞれ<tt class="key">TAB</tt>、<tt class="key">LFD</tt>、<tt class="key">RET</tt>、<kbd>C-l</kbd>を意味する)。したがって<code>re-search-forward</code>を使用してプリント不可文字を検索するには:
+</p>
+<p><kbd>M-x re-search-forward <span class="key">RET</span> [^ <span class="key">TAB</span> C-q <span class="key">LFD</span> C-q <span class="key">RET</span> C-q
+C-l <span class="key">SPC</span> -~] <span class="key">RET</span></kbd>
+</p>
+<p><code>isearch-forward-regexp</code>を使用する場合は:
+</p>
+<p><kbd>C-M-s [^ <span class="key">TAB</span> <span class="key">LFD</span> C-q <span class="key">RET</span> C-q C-l <span class="key">SPC</span> -~]</kbd>
+</p>
+<p>すべてのプリント不可文字を削除するには単にreplace-regexpを使用します:
+</p>
+<p><kbd>M-x replace-regexp <span class="key">RET</span> [^ <span class="key">TAB</span> C-q <span class="key">LFD</span> C-q <span class="key">RET</span> C-q
+C-l <span class="key">SPC</span> -~] <span class="key">RET</span> <span class="key">RET</span></kbd>
+</p>
+<p>置換は上で述べたのと似ています。すべてのプリント不可文字をコロンで置き換えるには以下を使用します:
+</p>
+<p>M-x replace-regexp <tt class="key">RET</tt> [^ <tt class="key">TAB</tt> C-q <tt class="key">LFD</tt> C-q <tt class="key">RET</tt> C-q
+C-l <tt class="key">SPC</tt> -~] <tt class="key">RET</tt> : <tt class="key">RET</tt>
+</p>
+<hr>
+</div>
+<div class="section" id="Searching-for_002freplacing-newlines">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Working-with-unprintable-characters" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Yanking-text-in-isearch" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="isearchyaquery_002dreplacedeGai-Xing-woRu-Li-suruniha_003f"></span><h2 class="section">5.12 isearchやquery-replaceで改行を入力するには?</h2>
+<span id="index-Searching-for-newlines"></span>
+<span id="index-Replacing-newlines"></span>
+
+<p><kbd>C-q C-j</kbd>を使用してください。詳細については<a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Special-Isearch">Special Input for
+Incremental Search</a> in <cite>The GNU Emacs Manual</cite>を参照してください。
+</p>
+<hr>
+</div>
+<div class="section" id="Yanking-text-in-isearch">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Searching-for_002freplacing-newlines" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Wrapping-words-automatically" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="killringukaraJian-Suo-WenZi-Lie-nitekisutowokopisuruniha_003f"></span><h2 class="section">5.13 killリングから検索文字列にテキストをコピーするには?</h2>
+<span id="index-Yanking-text-into-the-search-string"></span>
+<span id="index-isearch-yanking"></span>
+
+<p><kbd>M-y</kbd>を使用してください。<a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Isearch-Yank">Isearch Yank</a> in <cite>The GNU Emacs
+Manual</cite>を参照してください。
+</p>
+<hr>
+</div>
+<div class="section" id="Wrapping-words-automatically">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Yanking-text-in-isearch" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Turning-on-auto_002dfill-by-default" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Zi-Fen-Yong-niEmacsniDan-Yu-woZhe-riFan-saseruniha_003f"></span><h2 class="section">5.14 自分用にEmacsに単語を折り返させるには?</h2>
+<span id="index-Wrapping-word-automatically"></span>
+<span id="index-Wrapping-lines"></span>
+<span id="index-Line-wrap"></span>
+<span id="index-auto_002dfill_002dmode_002c-introduction-to"></span>
+<span id="index-Maximum-line-width_002c-default-value"></span>
+<span id="index-fill_002dcolumn_002c-default-value"></span>
+
+<p><kbd>M-x
+auto-fill-mode</kbd>とタイプして<code>auto-fill-mode</code>を有効にして使用してください。デフォルトの最大行幅は70で、これは変数<code>fill-column</code>により決定されます。これを自動でオンに切り替える方法については<a href="#Turning-on-auto_002dfill-by-default">デフォルトで<code>auto-fill-mode</code>をオンにするには?</a>を参照してください。
+</p>
+<hr>
+</div>
+<div class="section" id="Turning-on-auto_002dfill-by-default">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Wrapping-words-automatically" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Changing-load_002dpath" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="dehuorutodeauto_002dfill_002dmodewoonnisuruniha_003f"></span><h2 class="section">5.15 デフォルトで<code>auto-fill-mode</code>をオンにするには?</h2>
+<span id="index-auto_002dfill_002dmode_002c-activating-automatically"></span>
+<span id="index-Filling-automatically"></span>
+<span id="index-Automatic-entry-to-auto_002dfill_002dmode"></span>
+
+<p>1つのバッファーだけで<code>auto-fill-mode</code>をオンに切り替えるには<kbd>M-x auto-fill-mode</kbd>を使用します。
+</p>
+<p>特定のモードのすべてのバッファーでオンに切り替えるには、そのモードにたいするフックを使用しなければなりません。たとえばテキストバッファーのすべてで<code>auto-fill</code>モードをオンに切り替えるには、以下を<samp>.emacs</samp>ファイルサイ追加してください:
+</p>
+<div class="example lisp">
+<pre class="lisp">(add-hook 'text-mode-hook 'turn-on-auto-fill)
+</pre></div>
+
+<p>すべてのメジャーモードで<code>auto-fill</code>モードをオンにするには以下を行います:
+</p>
+<div class="example lisp">
+<pre class="lisp">(setq-default auto-fill-function 'do-auto-fill)
+</pre></div>
+
+<hr>
+</div>
+<div class="section" id="Changing-load_002dpath">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Turning-on-auto_002dfill-by-default" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Using-an-already-running-Emacs-process" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="load_002dpathwoBian-Geng-suruniha_003f"></span><h2 class="section">5.16 <code>load-path</code>を変更するには?</h2>
+<span id="index-load_002dpath_002c-modifying"></span>
+<span id="index-Modifying-load_002dpath"></span>
+<span id="index-Adding-to-load_002dpath"></span>
+
+<p>一般的には<code>load-path</code>へは追加のみにするべきです。以下のようにしてディレクトリー<var>/dir/subdir</var>をロードパスに追加できます:
+</p>
+<div class="example lisp">
+<pre class="lisp">(add-to-list 'load-path &quot;/dir/subdir/&quot;)
+</pre></div>
+
+<p>ホームディレクトリーにたいして相対的にこれを行うには:
+</p>
+<div class="example lisp">
+<pre class="lisp">(add-to-list 'load-path &quot;~/mysubdir/&quot;)
+</pre></div>
+
+<hr>
+</div>
+<div class="section" id="Using-an-already-running-Emacs-process">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Changing-load_002dpath" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Compiler-error-messages" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Bie-uindoudesudeniShi-Xing-ZhongnoEmacswoShi-Yong-suruniha_003f"></span><h2 class="section">5.17 別ウィンドウですでに実行中のEmacsを使用するには?</h2>
+<span id="index-emacsclient"></span>
+<span id="index-Emacs-server-functions"></span>
+<span id="index-Using-an-existing-Emacs-process"></span>
+
+<p>Emacsに同梱されている<code>emacsclient</code>は新たなEmacsを開始せずに、すでに実行中のEmacsを使用してファイルを編集するためのものです。これはすでに実行中のEmacsにリクエストを送信することによって行われます。実行中のEmacsはリクエストに応えなければなりません。
+</p>
+<ul>
+<li> セットアップ:
+
+<p>&lsquo;<samp>emacsclient</samp>&rsquo;が機能するにはEmacsが<code>server-start</code>関数を実行済みでなければならない。これはコマンドラインオプション:
+</p>
+<div class="example">
+<pre class="example">emacs -f server-start
+</pre></div>
+
+<p>または<samp>.emacs</samp>から<code>server-start</code>を呼び出すことによって行うことができる:
+</p>
+<div class="example lisp">
+<pre class="lisp">(if (<var>some conditions are met</var>) (server-start))
+</pre></div>
+
+<p>ニュースリーダーやメールリーダーなどが&lsquo;<samp>emacsclient</samp>&rsquo;を呼び出すようにするには、環境変数<code>EDITOR</code>
+(<code>VISUAL</code>のときもある)に値&lsquo;<samp>emacsclient</samp>&rsquo;を設定してみればよい。&lsquo;<samp>emacsclient</samp>&rsquo;プログラムのかわりにプログラムのフルパス名を指定する必要があるかもしれない。たとえば:
+</p>
+<div class="example">
+<pre class="example"># cshの場合:
+setenv EDITOR emacsclient
+
+# フルパス名を使用
+setenv EDITOR /usr/local/emacs/etc/emacsclient
+
+# shの場合:
+EDITOR=emacsclient ; export EDITOR
+</pre></div>
+
+</li><li> 通常の使い方:
+
+<p>&lsquo;<samp>emacsclient</samp>&rsquo;を実行するとソケットに接続してコマンドラインオプションをEmacsに渡す。そしてEmacsは次の機会に指定されたファイルをvisitする(Emacsで行うように行番号を指定できる)。ユーザーは手動でEmacsに切り替える必要がある。ユーザーがファイルの編集を終えたら<kbd>C-x
+#</kbd> (または<kbd>M-x
+server-edit</kbd>)とタイプしてそれを示すことができる。<code>emacsclient</code>に要求されたバッファーが別にある場合にはEmacsはそのバッファーに切り替えるだろう。それ以外の場合には<code>emacsclient</code>はexitして呼び出し元が継続できるようにシグナルを送る。
+</p>
+</li></ul>
+
+<p>詳細については<a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Emacs-Server">Emacs Server</a> in <cite>The GNU Emacs Manual</cite>を参照してください。
+</p>
+<hr>
+</div>
+<div class="section" id="Compiler-error-messages">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Using-an-already-running-Emacs-process" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Indenting-switch-statements" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="watasinokonpairanoBian-naerametuseziwoEmacsniRen-Shi-saseruniha_003f"></span><h2 class="section">5.18 わたしのコンパイラーの変なエラーメッセージをEmacsに認識させるには?</h2>
+<span id="index-Compiler-error-messages_002c-recognizing"></span>
+<span id="index-Recognizing-non_002dstandard-compiler-errors"></span>
+<span id="index-Regexps-for-recognizing-compiler-errors"></span>
+<span id="index-Errors_002c-recognizing-compiler"></span>
+
+<p><code>compilation-error-regexp-alist</code>変数をカスタマイズしてください。
+</p>
+<hr>
+</div>
+<div class="section" id="Indenting-switch-statements">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Compiler-error-messages" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Customizing-C-and-C_002b_002b-indentation" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="switchnoindentowoBian-Geng-suruniha_003f"></span><h2 class="section">5.19 <code>switch</code>のインデントを変更するには?</h2>
+<span id="index-switch_002c-indenting"></span>
+<span id="index-Indenting-of-switch"></span>
+
+<p>以下のように<code>switch</code>ステートメントをインデントしたいと思う人は大勢います:
+</p>
+<div class="example">
+<pre class="example">f()
+{
+  switch(x) {
+    case A:
+      x1;
+      break;
+    case B:
+      x2;
+      break;
+    default:
+      x3;
+  }
+}
+</pre></div>
+
+<p>To achieve this, add the following line to your <samp>.emacs</samp>:
+</p>
+<div class="example lisp">
+<pre class="lisp">(c-set-offset 'case-label '+)
+</pre></div>
+
+<hr>
+</div>
+<div class="section" id="Customizing-C-and-C_002b_002b-indentation">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Indenting-switch-statements" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Overwrite-mode" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="C_002c-C_002b_002b_002c-Javanobatuhuanoindentowokasutamaizusuruniha_003f"></span><h2 class="section">5.20 C、C<tt>++</tt>、Javaのバッファーのインデントをカスタマイズするには?</h2>
+<span id="index-Indentation_002c-how-to-customize"></span>
+<span id="index-Customize-indentation"></span>
+
+<p>Emacsの<code>cc-mode</code>はインデントスタイルのカスタマイズ用に対話的な手順を提供しています。これはEmacsディストリビューションに同梱されている<cite>CC
+Mode</cite>マニュアルに完全な説明があります。<a data-manual="ccmode" href="https://www.gnu.org/software/emacs/manual/html_mono/ccmode.html#Customizing-Indentation">Customization
+Indentation</a> in <cite>The CC Mode Manual</cite>を参照してください。以下はそれの短い要約です:
+</p>
+<ol>
+<li> 気に召さないインデントの最初の行の先頭に移動して<kbd>C-c C-o</kbd>とタイプする。Emacsが構文シンボル(syntactic
+symbol)の入力を求めるので、デフォルトを受諾するために<tt class="key">RET</tt>をタイプする。
+
+</li><li> Emacsがその構文シンボルのオフセットの入力を求める。その際にはカッコ内にデフォルト(現在の定義)が表示される。ここで以下のいずれかを選択できる:
+
+<dl compact="compact">
+<dt><span><code>0</code></span></dt>
+<dd><p>追加のインデントなし。
+</p></dd>
+<dt><span><code>+</code></span></dt>
+<dd><p>基本オフセット1つ分インデントを加える。
+</p></dd>
+<dt><span><code>-</code></span></dt>
+<dd><p>基本オフセット1つ分インデントを戻す。
+</p></dd>
+<dt><span><code>++</code></span></dt>
+<dd><p>基本オフセット2つ分インデントを加える。
+</p></dd>
+<dt><span><code>--</code></span></dt>
+<dd><p>基本オフセット2つ分インデントを戻す。
+</p></dd>
+<dt><span><code>*</code></span></dt>
+<dd><p>基本オフセットの半分インデントを加える。
+</p></dd>
+<dt><span><code>/</code></span></dt>
+<dd><p>基本オフセットの半分インデントを戻す。
+</p></dd>
+</dl>
+
+</li><li> これらのシンボルのいずれかを選んだ後に<kbd>C-c C-q</kbd>をタイプして、指定したインデントに行またはブロックを再インデントする。
+
+</li><li> 結果が気に召さなければステップ1に戻る。そうでなければ以下の行を<samp>.emacs</samp>に追加する:
+
+<div class="example lisp">
+<pre class="lisp">(c-set-offset '<var>syntactic-symbol</var> <var>offset</var>)
+</pre></div>
+
+<p>ここで<var>syntactic-symbol</var>は行頭で<kbd>C-c
+C-o</kbd>をタイプした際にEmacsが表示した名前、<var>offset</var>は上記のインデントシンボル(<code>+</code>、<code>/</code>、<code>0</code>等)のいずれかのうち対話的手順の間に選択したシンボル。
+</p>
+</li><li> インデントが気に召さない次の行へ移動してこれらの手順を繰り返す。
+</li></ol>
+
+<p>以下のように<code>(c-set-offset ...)</code>によるカスタマイズ結果すべてをCモードのフック内に記述することをお勧めします:
+</p>
+<div class="example lisp">
+<pre class="lisp">(defun my-c-mode-hook ()
+  (c-set-offset ...)
+  (c-set-offset ...))
+(add-hook 'c-mode-hook 'my-c-mode-hook)
+</pre></div>
+
+<p><code>cc-mode</code>をロードしていなければ<code>c-set-offset</code>は利用できないので<samp>.emacs</samp>には<code>(require&nbsp;<span class="nolinebreak">'cc-mode)</span></code><!-- /@w -->を記述する必要がありますが、<code>c-mode-hook</code>を使用すればこれを避けることができます。
+</p>
+<p><code>c-mode-hook</code>はCソースファイルの場合のみ実行されることに注意してください。C<tt>++</tt>には<code>c++-mode-hook</code>、Javaソースには<code>java-mode-hook</code>を使う等してください。同一のカスタマイズが、<code>cc-mode</code>によってサポートされる<em>すべて</em>の言語にたいして効力をもつようにしたければ<code>c-mode-common-hook</code>を使用してください。
+</p>
+<hr>
+</div>
+<div class="section" id="Overwrite-mode">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Customizing-C-and-C_002b_002b-indentation" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Turning-off-beeping" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="EmacsniCha-Ru-dehanaku_0060_0060Shang-Shu-ki_0027_0027saseruniha_003f"></span><h2 class="section">5.21 Emacsに挿入ではなく&ldquo;上書き&rdquo;させるには?</h2>
+<span id="index-Insert"></span>
+<span id="index-overwrite_002dmode"></span>
+<span id="index-Overwriting-existing-text"></span>
+<span id="index-Toggling-overwrite_002dmode"></span>
+
+<p><kbd>M-x overwrite-mode</kbd>
+(マイナーモード)です。これは<code>overwrite-mode</code>のオンオフを切り替えるのでもう一度<kbd>M-x
+overwrite-mode</kbd>で簡単に<code>overwrite-mode</code>からexitできます。
+</p>
+<p>いくつかのシステムでは<tt class="key">Insert</tt>で<code>overwrite-mode</code>のオンオフが切り替わります。
+</p>
+<hr>
+</div>
+<div class="section" id="Turning-off-beeping">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Overwrite-mode" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Turning-the-volume-down" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Duan-Mo-deEmacsnobipuYin-woZhi-meruniha_003f"></span><h2 class="section">5.22 端末でEmacsのビープ音を止めるには?</h2>
+<span id="index-Beeping_002c-turning-off"></span>
+<span id="index-Visible-bell"></span>
+<span id="index-Bell_002c-visible"></span>
+
+<p>Martin R. Frank(訳注: Texinfoファイルには&quot;martin@cc.gatech.edu&quot;とコメントされてました)は記しています:
+</p>
+<p>可聴ベル(audible bell)のかわりに<em>視覚的なベル(visible
+bell)</em>を使うように伝えて、その視覚的ベルには何もセットしません。
+</p>
+<p>つまり(あなたがtermcapをもっていると仮定して)<code>TERMCAP</code>環境変数に以下を記述します:
+</p>
+<div class="example">
+<pre class="example">... :vb=: ...
+</pre></div>
+
+<p>そして以下のLispフォームを評価してください:
+</p>
+<div class="example">
+<pre class="example">(setq visible-bell t)
+</pre></div>
+
+<hr>
+</div>
+<div class="section" id="Turning-the-volume-down">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Turning-off-beeping" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Automatic-indentation" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="XdeEmacswoShi-Xing-ZhongniberuYin-Liang-woXia-geruniha_003f"></span><h2 class="section">5.23 XでEmacsを実行中にベル音量を下げるには?</h2>
+<span id="index-Bell_002c-volume-of"></span>
+<span id="index-Volume-of-bell"></span>
+
+<p>Xウィンドウシステムではシェルコマンド<code>xset</code>のより、すべてのプログラムでベルの音量および間隔を調節できます。
+</p>
+<p>引数なしで<code>xset</code>を呼び出すことによって、以下を含むいくつかの基本的な情報が生成されます:
+</p>
+<div class="example">
+<pre class="example">usage:  xset [-display host:dpy] option ...
+  To turn bell off:
+      -b                b off               b 0
+  To set bell volume, pitch and duration:
+       b [vol [pitch [dur]]]          b on
+</pre></div>
+
+<hr>
+</div>
+<div class="section" id="Automatic-indentation">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Turning-the-volume-down" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Matching-parentheses" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Xin-siiXing-woQian-noXing-niHe-waseteZi-Dong-De-niindentosuruyouEmacsniChuan-eruniha_003f"></span><h2 class="section">5.24 新しい行を前の行に合わせて自動的にインデントするようEmacsに伝えるには?</h2>
+<span id="index-Indenting-new-lines"></span>
+<span id="index-New-lines_002c-indenting-of"></span>
+<span id="index-Previous-line_002c-indenting-according-to"></span>
+<span id="index-Text-indentation"></span>
+
+<p>このような振る舞いはEmacs 20以降では(Textモードでは)自動で行われます。Emacs
+20.2の<samp>etc/NEWS</samp>ファイルからの引用します:
+</p>
+<div class="example">
+<pre class="example">** Textでパラグラフを分割するのは空行のみとなった。これによってAdaptive FillモードからTextモードやその他Textモードから派生した(Mailモードのような)モードが受ける恩恵を最大にすることが可能になる。Textモードでの<span class="key">TAB</span>によって<code>indent-relative</code>コマンドが実行されるようになった。これによって実際に違いが生じるのは、インデントされたパラグラフを使用している場合だけである。
+
+パラグラフ開始行の先頭にスペースが欲しければ、新しいモードのParagraph Indent Textモードを使用すること。
+</pre></div>
+
+<span id="index-Prefixing-lines"></span>
+<span id="index-Fill-prefix"></span>
+<p><code>auto-fill-mode</code> (<a href="#Turning-on-auto_002dfill-by-default">デフォルトで<code>auto-fill-mode</code>をオンにするには?</a>を参照)をオンに切り替えている場合には、<em>フィルプレフィクス(fill
+prefix)</em>として特定の文字シーケンスをすべての行のプレフィクスとするようEmacsに指示することができます。行頭でプレフィクスをタイプしてポイントをタイプしたプレフィクスの後に移動、それから<kbd>C-x
+.</kbd>
+(<code>set-fill-prefix</code>)とタイプしてフィルプレフィクスをセットします。それ以降はオートフィル新たな行の先頭に自動的にフィルプレフィクスを配置するとともに、<kbd>M-q</kbd>
+(<code>fill-paragraph</code>)でパラグラフを再フィルする際にはすべてのフィルプレフィクスを保守するようになります。
+</p>
+<p>異なるレベルのインデントをもつパラグラフがある場合には、新たなパラグラフに移動するたびにフィルプレフィクスを正しい値にセットすることが必要になるでしょう。これを取り扱うためのパッケージが多数存在します(<a href="#Packages-that-do-not-come-with-Emacs">Where can I get Emacs Lisp packages that don&rsquo;t come with Emacs?</a>を参照)。手引きとして&ldquo;fill&rdquo;、および&ldquo;indent&rdquo;のキーワードを調べてください。
+</p>
+<hr>
+</div>
+<div class="section" id="Matching-parentheses">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Automatic-indentation" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Hiding-_0023ifdef-lines" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Zi-Fen-gaZhu-Mu-ZhongnokatukoniDui-Ying-surukatukowoBiao-Shisuruniha_003f"></span><h2 class="section">5.25 自分が注目中のカッコに対応するカッコを表示するには?</h2>
+<span id="index-Parentheses_002c-matching"></span>
+<span id="index-paren_002eel"></span>
+<span id="index-Highlighting-matching-parentheses"></span>
+<span id="index-Pairs-of-parentheses_002c-highlighting"></span>
+<span id="index-Matching-parentheses"></span>
+
+<p><samp>.emacs</samp>ファイルで<code>show-paren-mode</code>を呼び出します。
+</p>
+<div class="example lisp">
+<pre class="lisp">(show-paren-mode 1)
+</pre></div>
+
+<p>任意のEmacsフレーム上端にあるEmacsメニューバーの&lsquo;<samp>Options</samp>&rsquo;メニューからオプション&lsquo;<samp>Paren Match
+Highlighting</samp>&rsquo;を選択してこのモードを有効にすることもできます。
+</p>
+<p>このようなモードの代替案手段としては以下が含まれます:
+</p>
+<ul>
+<li> 右カッコ(または大カッコや角カッコ)に着目していたら、それを削除してからしで挿入する。Emacsは瞬時の間、マッチするカッコにカーソル和移動するだろう。
+
+</li><li> <kbd>C-M-f</kbd> (<code>forward-sexp</code>)および<kbd>C-M-b</kbd>
+(<code>backward-sexp</code>)はバランスのとれたカッコを1セット分スキップするので、どのカッコがマッチするか確認できる(構文テーブルを修整してバランスのとれた大カッコおよび角カッコもスキップするよう洗練することも可能)。
+
+</li><li> <span id="index-Show-matching-paren-as-in-vi"></span>
+以下は<code>vi</code>のように<kbd>%</kbd>キーでマッチするカッコを表示させるEmacs
+Lispコード。更にカーソルがカッコ上になければ通常通り単に%を挿入する。
+
+<div class="example lisp">
+<pre class="lisp">;; 名無しの貢献者より
+
+(global-set-key &quot;%&quot; 'match-paren)
+
+(defun match-paren (arg)
+  &quot;カッコ上ならマッチするカッコへ移動、それ以外は%を挿入&quot;
+  (interactive &quot;p&quot;)
+  (cond ((looking-at &quot;\\s(&quot;) (forward-list 1) (backward-char 1))
+        ((looking-at &quot;\\s)&quot;) (forward-char 1) (backward-list 1))
+        (t (self-insert-command (or arg 1)))))
+</pre></div>
+
+</li></ul>
+
+<hr>
+</div>
+<div class="section" id="Hiding-_0023ifdef-lines">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Matching-parentheses" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Repeating-commands" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Cmododekonpairaga_0023ifdefChu-Li-Hou-niCan-ruXing-dakewoBiao-Shisuruniha_003f"></span><h2 class="section">5.26 Cモードでコンパイラーが<code>#ifdef</code>処理後に残る行だけを表示するには?</h2>
+<span id="index-_0023ifdef_002c-selective-display-of"></span>
+<span id="index-hide_002difdef_002dmode"></span>
+<span id="index-Hiding-_0023ifdef-text"></span>
+<span id="index-Selectively-displaying-_0023ifdef-code"></span>
+
+<p><kbd>M-x hide-ifdef-mode</kbd>
+(マイナーモード)です。Emacsに同梱されている<samp>cpp.el</samp>も調査したいと思うかもしれません。
+</p>
+<hr>
+</div>
+<div class="section" id="Repeating-commands">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Hiding-_0023ifdef-lines" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Valid-X-resources" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="dekirudakeZe-Shan-komandowoZao-riFan-suniha_003f"></span><h2 class="section">5.27 できるだけ沢山コマンドを繰り返すには?</h2>
+<span id="index-Repeating-commands-many-times"></span>
+<span id="index-Commands_002c-repeating-many-times"></span>
+<span id="index-_002e_002c-equivalent-to-vi-command"></span>
+
+<p>最後のコマンドを繰り返すには<code>repeat</code>コマンド(<kbd>C-x
+z</kbd>)を使用します。プレフィクス引数を前置すると、そのプレフィクスは繰り返すコマンドに適用されます。
+</p>
+<p>引数を取得するためにミニバッファーを使用するコマンドは、<kbd>C-x <span class="key">ESC</span> <span class="key">ESC</span></kbd>
+(<code>repeat-complex-command</code>)とタイプしても再呼び出しができます。<code>repeat-complex-command</code>では<kbd>M-p</kbd>と<kbd>M-n</kbd>(キーボードにあれば上矢印と下矢印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたものを走査することができます。
+</p>
+<p>一連のコマンドを繰り返すにはキーボードマクロを使用します。コマンドを呼び出すキーボードマクロの作成には<kbd>C-x (</kbd>と<kbd>C-x
+)</kbd>を使い、その後に<kbd>C-x e</kbd>とタイプします。<a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Keyboard-Macros">Keyboard Macros</a> in <cite>The GNU Emacs
+Manual</cite>を参照してください。
+</p>
+<p>最後の挿入/削除を再実行する<code>vi</code>の<code>.</code>コマンドが本当に欲しくて堪らなければ、それをサポートしているよう思われる、VIPERというEmacsに同梱の<code>vi</code>エミュレーションモードを使ってください。
+</p>
+<hr>
+</div>
+<div class="section" id="Valid-X-resources">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Repeating-commands" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>

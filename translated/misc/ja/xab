@@ -1,0 +1,1000 @@
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Texinfohuairuwopurintosuruniha_003f"></span><h2 class="section">3.6 Texinfoファイルをプリントするには?</h2>
+<span id="index-Printing-a-Texinfo-file"></span>
+<span id="index-Texinfo-file_002c-printing"></span>
+<span id="index-Printing-documentation"></span>
+
+<p>Infoファイルから見栄えの良いプリント出力は得られません。マニュアルのプリント用には、依然としてオリジナルのTexinfoソースファイルが不可欠です。
+</p>
+<p>システムにTeXがインストールされていれば以下のステップを行います:
+</p>
+<ol>
+<li> Texinfoファイルの先頭の行が以下のようになっていることを確認:
+
+<div class="example">
+<pre class="example">\input texinfo
+</pre></div>
+
+<p>&lsquo;<samp>texinfo</samp>&rsquo;を<samp>texinfo.tex</samp>ファイルのフルパスに変更(またはカレントディレクトリーにコピーまたはリンク)する必要があるかもしれない。これはEmacsに同梱されている<samp>doc/misc/texinfo.tex</samp>である。
+</p>
+</li><li> <kbd>texi2dvi
+<var>texinfo-source</var></kbd>とタイプする。ここで<var>texinfo-source</var>はプリントしたコピーを生成したいTexinfoソースファイル名。&lsquo;<samp>texi2dvi</samp>&rsquo;スクリプトはGNU
+Texinfoディストリビューションの一部である。
+
+<p>&lsquo;<samp>texi2pdf</samp>&rsquo;の場合には、かわりにPDFファイルを生成する。
+</p>
+</li><li> あなたのサイトでDVIファイルを通常プリントするのと同じ方法でDVIファイル<samp><var>texinfo-source</var>.dvi</samp>をプリントする。たとえばPostScriptプリンターをもっていれば、そのプリンターでDVIファイルをプリントするために<code>dvips</code>プログラムを実行する。
+
+</li></ol>
+
+<p>より一般的な手順については最新のTexinfoパッケージを調べてください(<a href="#Installing-Texinfo-documentation">Texinfoドキュメントをインストールするには?</a>を参照)。
+</p>
+<hr>
+</div>
+<div class="section" id="Viewing-Info-files-outside-of-Emacs">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Getting-help" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Printing-a-Texinfo-file" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Getting-help" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Informational-files-for-Emacs" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="EmacswoShi-wazuniInfohuairuwoYue-Lan-dekiru_003f"></span><h2 class="section">3.7 Emacsを使わずにInfoファイルを閲覧できる?</h2>
+<span id="index-Viewing-Info-files"></span>
+<span id="index-Info-file-viewers"></span>
+<span id="index-Alternative-Info-file-viewers"></span>
+
+<p>はい。以下はいくつかの候補プログラムです:
+</p>
+<ul>
+<li> Texinfoパッケージに同梱されているInfoプログラムのスタンドアロンバージョンである<code>info</code>。詳細はSee <a href="#Installing-Texinfo-documentation">Texinfoドキュメントをインストールするには?</a>を参照のこと。
+
+</li><li> X Window
+systemの下で実行され、Tcl/Tkを使用するInfoビューアーのTkinfo。Tkinfoは<a href="http://math-www.uni-paderborn.de/~axel/tkinfo/">http://math-www.uni-paderborn.de/~axel/tkinfo/</a>で入手できる。
+
+</li></ul>
+
+<hr>
+</div>
+<div class="section" id="Informational-files-for-Emacs">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Getting-help" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Viewing-Info-files-outside-of-Emacs" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Getting-help" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Help-installing-Emacs" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Li-Yong-dekiruEmacsQing-Bao-nohuairuha_003f"></span><h2 class="section">3.8 利用できるEmacs情報のファイルは?</h2>
+<span id="index-Informational-files-included-with-Emacs"></span>
+<span id="index-Files-included-with-Emacs"></span>
+<span id="index-COPYING_002c-description-of-file"></span>
+<span id="index-DISTRIB_002c-description-of-file"></span>
+<span id="index-MACHINES_002c-description-of-file"></span>
+<span id="index-NEWS_002c-description-of-file"></span>
+
+<p>これはよくある質問ではありませんが、そうあるべきなのです!
+あなたに読んでもらうためｎ、Emacsおよび関連するGNUプロジェクトの様相に関する様々な情報ファイルが利用可能です。
+</p>
+<p>以下のファイル(やその他のファイルも)はEmacsディストリビューション(どこにあるか判らなければ<a href="#File_002dname-conventions"><samp>src/config.h</samp>、<samp>site-lisp/default.el</samp>等は何なのか?</a>を参照)の<samp>etc</samp>ディレクトリー内にあります。これらのファイルの多くはEmacsの&lsquo;<samp>Help</samp>&rsquo;メニュー、あるいは<kbd>C-h
+?</kbd> (<kbd>M-x help-for-help</kbd>)とタイプして利用することができます。
+</p>
+<dl compact="compact">
+<dt><span><samp>COPYING</samp></span></dt>
+<dd><p>GNU 一般公衆利用許諾書(GNU GENERAL PUBLIC LICENSE)
+</p>
+</dd>
+<dt><span><samp>DISTRIB</samp></span></dt>
+<dd><p>Emacsの可用性に関する情報
+</p>
+</dd>
+<dt><span><samp>MACHINES</samp></span></dt>
+<dd><p>様々なマシンおよびシステムにおけるEmacsの状況
+</p>
+</dd>
+<dt><span><samp>NEWS</samp></span></dt>
+<dd><p>Emacsのニュース、ユーザーの目に見える最新の変更履歴
+</p>
+</dd>
+</dl>
+
+<p><cite>GNU&rsquo;s Bulletin</cite>の未解決問題を含むより詳細なGNU情報については
+</p>
+<p><a href="https://www.gnu.org/bulletins/bulletins.html">https://www.gnu.org/bulletins/bulletins.html</a>、および
+</p>
+<p><a href="http://www.cs.pdx.edu/~trent/gnu/gnu.html">http://www.cs.pdx.edu/~trent/gnu/gnu.html</a>を参照してください。
+</p>
+<hr>
+</div>
+<div class="section" id="Help-installing-Emacs">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Getting-help" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Informational-files-for-Emacs" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Getting-help" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Obtaining-the-FAQ" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="EmacsnoinsutorudedokoniZhu-kewoQiu-mereba_003f"></span><h2 class="section">3.9 Emacsのインストールでどこに助けを求めれば?</h2>
+<span id="index-Installation-help"></span>
+<span id="index-Help-installing-Emacs"></span>
+
+<p>インストールにおける基本的なヒントについては<a href="#Installing-Emacs">How do I install Emacs?</a>、インストールに何か問題がある場合には<a href="#Problems-building-Emacs">What should I do if I have trouble building Emacs?</a>を参照してください。
+</p>
+<p><a href="https://www.fsf.org/resources/service/">The GNU Service
+directory</a>にはEmacsやその他のGNUソフトウェアのインストールや使用において有償による手助けを提案する企業や個人が一覧されています。
+</p>
+<hr>
+</div>
+<div class="section" id="Obtaining-the-FAQ">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Getting-help" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Help-installing-Emacs" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Getting-help" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="konoFAQnoZui-Xin-Ban-hadokodeRu-Shou-dekiru_003f"></span><h2 class="section">3.10 このFAQの最新版はどこで入手できる?</h2>
+<span id="index-FAQ_002c-obtaining-the"></span>
+<span id="index-Latest-FAQ-version_002c-obtaining-the"></span>
+
+<p>Emacs
+FAQはInfo形式としてEmacsに同梱されています。任意のEmacsフレームトップにあるEmacsメニューバーの&lsquo;<samp>Help</samp>&rsquo;メニューあら&lsquo;<samp>Emacs
+FAQ</samp>&rsquo;オプションを選択、あるいは<kbd>C-h C-f</kbd> (<kbd>M-x
+view-emacs-FAQ</kbd>)とタイプしてくださいこれを読むことができます。開発版の最新バージョンはEmacsの開発用レポジトリから利用できます(<a href="#Latest-version-of-Emacs">Emacsの最新バージョンとは?</a>を参照)。
+</p>
+<hr>
+</div>
+</div>
+<div class="chapter" id="Status-of-Emacs">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Getting-help" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Obtaining-the-FAQ" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Top" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Origin-of-the-term-Emacs" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="EmacsnoZhuang-Kuang-nituite"></span><h1 class="chapter">4 Emacsの状況について</h1>
+<span id="index-Status-of-Emacs"></span>
+
+<p>このチャプターでは最新バージョンの状況も含めたEmacsに関する基本情報を提供します。
+</p>
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#Origin-of-the-term-Emacs">4.1 &ldquo;Emacs&rdquo;という名前の由良は?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Latest-version-of-Emacs">4.2 Emacsの最新バージョンとは?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#New-in-Emacs-27">4.3 Emacs 27は何が違う?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#New-in-Emacs-26">4.4 Emacs 26は何が違う?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#New-in-Emacs-24">4.6 Emacs 24は何が違う?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#New-in-Emacs-22">4.8 Emacs 22は何が違う?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#New-in-Emacs-21">4.9 Emacs 21は何が違う?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#New-in-Emacs-20">4.10 Emacs 20は何が違う?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+</table>
+
+<hr>
+<div class="section" id="Origin-of-the-term-Emacs">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Latest-version-of-Emacs" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="g_t_0060_0060Emacs_0027_0027toiuMing-Qian-noYou-Liang-ha_003f"></span><h2 class="section">4.1 &ldquo;Emacs&rdquo;という名前の由良は?</h2>
+<span id="index-Origin-of-the-term-_0060_0060Emacs_0027_0027"></span>
+<span id="index-Emacs-name-origin"></span>
+<span id="index-TECO"></span>
+<span id="index-Original-version-of-Emacs"></span>
+
+<p>Emacsは元々はEditor
+MACroSの略語でした。RMSは&ldquo;その時点ではITS上の略語として<kbd>E</kbd>は使用されていなかったのでEmacsという名前を採用した&rdquo;と述べています。最初のEmacsは1976年にMITにおいてRMSがPDP-10上のITS
+(the Incompatible Timesharing System)のエディターTECO (Text Editor and COrrector,
+originally Tape Editor and
+COrrector)のために記述したマクロのセットでした。RMSはすでにTECOを再プログラム可能な&ldquo;リアルタイム&rdquo;のフルスクリーンモードに拡張済みでした。Emacsは多くの異なるTECOコマンドセットとキーバインディングを統合するプロジェクトとして、MITにおいてGuy
+Steeleによって開始されて、RMSによって完成されました。
+</p>
+<p>TECOのコードは行がノイズのように見えると多くの人が言っています。これは<a href="news:alt.lang.teco">news:alt.lang.teco</a>で読むことができます。誰かがTECO実装をEmacs
+Lispで記述しました(これを見つけるには<a href="#Packages-that-do-not-come-with-Emacs">Where can I get Emacs Lisp packages that don&rsquo;t come with Emacs?</a>を参照)。Emacsの内部でオリジナルのTECOを実行するのは興味深いプロジェクトになるでしょう。
+</p>
+<span id="index-Why-Emacs_003f"></span>
+<p>Emacsという名前をもつ理由としてそれほど深刻ではない候補についてはファイル<samp>etc/JOKES</samp>を調べてください(<a href="#File_002dname-conventions"><samp>src/config.h</samp>、<samp>site-lisp/default.el</samp>等は何なのか?</a>を参照)。
+</p>
+<hr>
+</div>
+<div class="section" id="Latest-version-of-Emacs">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Origin-of-the-term-Emacs" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-27" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="EmacsnoZui-Xin-baziyontoha_003f"></span><h2 class="section">4.2 Emacsの最新バージョンとは?</h2>
+<span id="index-Version_002c-latest"></span>
+<span id="index-Latest-version-of-Emacs"></span>
+<span id="index-Development_002c-Emacs"></span>
+<span id="index-Repository_002c-Emacs"></span>
+<span id="index-Bazaar-repository_002c-Emacs"></span>
+
+<p>Emacs
+27.2はこれが記述されたカレントのバージョンです。2つのコンポーネントからなるバージョンナンバーは、リリースバージョンであることを表します(例:
+&lsquo;<samp>24.5</samp>&rsquo;)。3つのコンポーネントからなるバージョンナンバーは開発バージョンを表します(たとえば&lsquo;<samp>28.0.50</samp>&rsquo;、いずれ&lsquo;<samp>28.1</samp>&rsquo;となる)。
+</p>
+<p>Emacsは活動的な開発の下にあり<a href="https://savannah.gnu.org/projects/emacs/">Savannah</a>でホスティングされています。そこで示された手順にしたがってプロジェクトレポジトリをクローンしてください。
+</p>
+<p>リリース前にはEmacsにたいして多くの変更が施されるので、開発版のバージョンナンバーに特別な意味はありません。開発レポジトリから取得した日付を参考にするほうが良いでしょう。開発版は通常は日常的の使用にたいしてかなり堅牢ですが、最新機能より安定性の方が重要ならリリース版に固執した方が良いかもしれません。
+</p>
+<p>以降のセクションでは最近のEmacsのリリースにおける主要な新機能を一覧にしました。Emacsのあるバージョンにおける変更の完全な詳細については<kbd>C-h
+C-n</kbd>とタイプしてください。Emacs
+22以降では古いバージョンにおいて何が新機能かうぃ読むために、このコマンドにプレフィクス引数を与えることができます。
+</p>
+<hr>
+</div>
+<div class="section" id="New-in-Emacs-27">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Latest-version-of-Emacs" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-26" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Emacs-27haHe-gaWei-u_003f"></span><h2 class="section">4.3 Emacs 27は何が違う?</h2>
+<span id="index-Differences-between-Emacs-26-and-Emacs-27"></span>
+<span id="index-Emacs-27_002c-new-features-in"></span>
+
+<ul>
+<li> <span id="index-bignum-support"></span>
+ネイティブでは大き過ぎるサイズの整数をサポートするために<acronym>GMP</acronym>ライブラリー(GNU Multiple Precision
+libraryl:
+GNU多倍長整数ライブラリー)を使用するようになった。ネイティブでサポートされる整数は&ldquo;fixnums&rdquo;、それより大きい整数は&ldquo;bignum&rdquo;とされる。bignumで意味をもつすべての数学、比較、および論理(&ldquo;ビット&rdquo;とも呼ばれる)の演算操作はfixnumとbignumの両方をサポートするようになった。
+
+</li><li> <span id="index-HarfBuzz"></span>
+デフォルトのシェーピングエンジン(shaping engine: 整形エンジン)としてEmacsはHarfBuzzを使用するようになった。
+
+</li><li> <span id="index-JSON_002c-native-parsing"></span>
+<samp>json.el</samp>より高速な<acronym>JSON</acronym>解析のネイティブサポート。
+
+</li><li> Cairoによる描画が実験的機能ではなくなった。
+
+</li><li> <span id="index-portable-dumper"></span>
+Emacsがunexecではなく&ldquo;portable
+dumper&rdquo;を使用するようになった。これは現代的なシステムのメモリー割り当てにたいする互換性を向上して、とりわけ現代的なオペレーティングシステムのほとんどが使用している<acronym>ASLR</acronym>(Address
+Space Layout Randomization: アドレス空間配置のランダム化)をよりサポートする。
+
+</li><li> <span id="index-XDG-convention"></span>
+initファイルにたいしてEmacsが<acronym>XDG</acronym>規約を使用可能になった。
+
+</li><li> <span id="index-early-init-file"></span>
+早期initファイル(early init file)を使用してEmacsを設定できるようになった。これの主要目的は正規initファイル(regular
+init file)のロード前に発生するパッケージシステムの初期化にたいして、その方法のカスタマイズを可能にすることである。
+
+</li><li> <span id="index-tabs"></span>
+タブ(タブバーとタブライン)にたいするビルトインサポート。
+
+</li><li> ImageMagickを必要としないイメージのリサイズおよびローテートのサポート。
+</li></ul>
+
+<p>Emacs 27における変更の完全なリストは、Emacsの<samp>NEWS</samp>ファイル (<kbd>C-h n</kbd>)を参照してください。
+</p>
+<hr>
+</div>
+<div class="section" id="New-in-Emacs-26">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-27" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-25" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Emacs-26haHe-gaWei-u_003f"></span><h2 class="section">4.4 Emacs 26は何が違う?</h2>
+<span id="index-Differences-between-Emacs-25-and-Emacs-26"></span>
+<span id="index-Emacs-26_002c-new-features-in"></span>
+
+<ul>
+<li> <span id="index-threads"></span>
+EmacsがLispスレッドによる限定された並列処理を提供するようになった。
+
+</li><li> <span id="index-systemd-support"></span>
+Emacsでの<code>systemd</code>サポート。新たなコマンドラインオプション<samp>--fg-daemon</samp>はこのサポートの一部であり、forkせずにフォアグラウンドで<samp>--daemon</samp>と同じように実行される。
+
+</li><li> 24ビットトゥルーカラーの機能を提供するテキスト端末上でのEmacsによる24ビットトゥルーカラーサポート。<a href="#Colors-on-a-TTY">TTYで色や構文ハイライトするには?</a>を参照のこと。
+
+</li><li> <span id="index-double_002dbuffering"></span>
+X上のEmacsがほとんどの状況においてディスプレーのちらつきをなくすダブルバッファリングをサポートするようになった。
+
+</li><li> マウスやタッチパッドを使用してEmacsディスプレーを水平方向にスクロールできるようになった。
+
+</li><li> <span id="index-line-number-display"></span>
+Emacsの表示において<code>display-line-numbers-mode</code>コマンドを通じた行番号表示のためのオプション機能が含まれるようになった。この機能は<code>linum</code>のようなパッケージが提案するものと等価な表示をより高速に行い、更に相対的行番号など多くのオプション機能も提供する。
+
+</li><li> <span id="index-horizontal-scrolling-of-current-line"></span>
+行の切り詰め時にウィンドウディスプレーの自動的な水平スクロールが、Emacsがカーソルを表示するカレント行でのみオプションで有効にできるようになった。このモードでは他のすべてのウィンドウ行にたいして、表示領域外にある文字を表示するためのスクロールは行われない。
+
+</li><li> トルコ語とギリシャ語のスクリプトの特別ケースを大文字小文字変換が配慮するようになった。
+
+</li><li> <span id="index-Enchant-support"></span>
+EnchantサポートがEmacsのスペルチェックコマンドの一部となった。
+
+</li><li> TrampがGoogle Driveファイルシステムをサポートするようになった。
+
+</li><li> ビルドされたマシンの詳細を省いてEmacsをビルドできるようになり、これにより再現可能なビルドの生成が容易になった。
+
+</li><li> Enriched
+Textモードに関するセキュリティの脆弱性が削除された。以前のEnrichedモードではテキストの一部として<code>display</code>プロパティの保存ができた。これらのプロパティは任意のLispコードの評価をサポートしており、外部ソースからEnrichedテキストを受け取るEmacsユーザーを脆弱性に晒していた。Enriched
+Textモードがデコードした<code>display</code>プロパティ内の任意のLispフォームの実行はデフォルトで無効になった。
+
+</li><li> <span id="index-Unicode-11_002e0_002e0"></span>
+Emacs 26.2には最新のUnicode標準バージョン11.0.0.からインポートされたデータファイルが同梱される。
+</li></ul>
+
+<p>Emacs 26における変更の完全なリストは、Emacsの<samp>NEWS</samp>ファイル (<kbd>C-h n</kbd>)を参照してください。
+</p>
+<hr>
+</div>
+<div class="section" id="New-in-Emacs-25">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-26" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-24" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Emacs-25haHe-gaWei-u_003f"></span><h2 class="section">4.5 Emacs 25は何が違う?</h2>
+<span id="index-Differences-between-Emacs-24-and-Emacs-25"></span>
+<span id="index-Emacs-25_002c-new-features-in"></span>
+
+<ul>
+<li> <span id="index-xwidgets"></span>
+gtk3とwebkitgtk3がインストールされていればEmacsがバッファー内にネイティブウィジェットを埋め込めるようになった。たとえば埋め込みのwebkitブラウザウィンドウにアクセスするには<kbd>M-x
+xwidget-webkit-browse-url</kbd>とタイプすればよい。
+
+</li><li> <span id="index-loadable-modules"></span>
+共有ライブラリーとしてコンパイルされた外部モジュールをEmacsが動的にロード可能になった。
+
+</li><li> <span id="index-Unicode-characters_002c-typing-easily"></span>
+いくつかの一般的な文字にたいして略記が<kbd>C-x 8</kbd>に新規で追加された。略記のリストは<kbd>C-x 8 C-h</kbd>とタイプする。
+
+</li><li> <span id="index-automatic-display-of-Lisp-APIs"></span>
+新しいマイナーモード<code>global-eldoc-mode</code>がデフォルトで有効になり、ポイント位置にあるEmacs
+Lispフォームの引数をエコーエリアまたはモードラインに表示するようになった。
+
+</li><li> <span id="index-pasting-text-on-text-terminals"></span>
+<span id="index-bracketed-paste-mode"></span>
+&ldquo;bracketed paste
+mode&rdquo;をサポートするテキスト端末では、Emacsがそのモードをデフォルトで使用するようになった。このモードではEmacsはペーストされたテキストとユーザーがタイプしたテキストを区別できる。
+
+</li><li> <span id="index-Unicode-9_002e0_002e0"></span>
+Emacs 25には最新のUnicode標準バージョン9.0.0.からインポートされたデータファイルが同梱される。
+
+</li><li> <span id="index-bidirectional-editing"></span>
+双方向編集のサポートは、最新のUnicode標準バージョン9.0.0.が要請するすべての機能を含むように更新された。
+
+</li><li> <span id="index-character-folding-in-searches"></span>
+検索コマンドがマッチでの文字フォールディング(folding:
+折り畳み)を行うようになった。これはcaseフォールディング(大文字小文字を無視)と似ているが、case(大文字小文字)の違いを無視するのではなく、ダイアクリティカルマークを無視して二重引用符の様々な変種をマッチする等、類似した文字間のより広範な区別を無視する。
+
+</li><li> <span id="index-eww"></span>
+EmacsウェブブラウザEWWが可変ピッチフォントをレンダリングするように拡張され、それ以外にも新たな機能が加わった。
+
+</li><li> <span id="index-rmail_002c-and-HTML-mails"></span>
+libxml2とともにEmacsをビルドした場合、あるいはLynxブラウザがインストールされていれば、RmailがHTMLメールメッセージをレンダリングするようになった。
+
+</li><li> <span id="index-support-for-push-commands-in-VC"></span>
+VCがBzr、Git、Hg用に実装された<code>push</code>コマンドを基本的にサポートするようになった。
+
+</li><li> <span id="index-hide_002difdef_002c-C_002fC_002b_002b-expressions-in-macros"></span>
+Hide-IfDefモードがマクロ、マクロ引数展開、対話的マクロ評価、<code>#define</code>されたシンボルのスキャンにおいてすべてのC/C<tt>++</tt>式をサポートするようになった。
+
+</li><li> <span id="index-xref"></span>
+新パッケージXrefがEtagsのフロントエンドとUIを置き換えた。Xrefは関数、マクロ、データ構造等の定義の検索や移動、そして定義に移動する前の場所に戻るための汎用フレームワークおよび新たなコマンドを提供する。バックエンドの1つとしてTAGSテーブルを読み込むetags.elのコードは依然として使用しているものの、Etagsコマンドの多くは置き換えられるか廃止された。結果としてポピュラーなキーバインディング<kbd>M-.</kbd>および<kbd>M-,</kbd>はXrefコマンドを呼び出すように変更された。
+
+</li><li> <span id="index-project"></span>
+新パッケージProjectはプロジェクトを取り扱うたねの汎用インフラストラクチャを提供する。
+
+</li><li> <span id="index-horizontal-scroll-bars"></span>
+Emacsはツールキットのツールバーを提供するいくつかのプラットフォーム、すなわちGtk+、Lucid、Motif、Windowsにおいて水平スクロールバーを描画できるようになった。
+
+</li></ul>
+
+<p>Emacs 25における変更の完全なリストは、Emacsの<samp>NEWS</samp>ファイル (<kbd>C-h n</kbd>)を参照してください。
+</p>
+<hr>
+</div>
+<div class="section" id="New-in-Emacs-24">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-25" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-23" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Emacs-24haHe-gaWei-u_003f"></span><h2 class="section">4.6 Emacs 24は何が違う?</h2>
+<span id="index-Differences-between-Emacs-23-and-Emacs-24"></span>
+<span id="index-Emacs-24_002c-new-features-in"></span>
+
+<ul>
+<li> <span id="index-packages_002c-installing-more"></span>
+Emacsにパッケージマネージャーが含まれるようになった。これを開始するには<kbd>M-x
+list-packages</kbd>とタイプする。これを使用すれば更に多くのLispパッケージをダウンロードして自動でインストールできる。
+
+</li><li> <span id="index-lexical-binding"></span>
+Emacs Lispがファイル単位にもとづくレキシカルバインディングをサポートするようになった。<em>レキシカルバインディング(lexical
+binding)</em>では変数参照はバインディング構文内にテキスト的に配置されていなければならない。これはローカルなテキストスコープ外部で定義された変数をプログラムが参照可能な<em>ダイナミックバインディング(dynamic
+binding)</em>とは対照的である。Lispファイルはファイルコンテンツがレキシカルバインディング和使用していると解釈するよう示すために、ローカル変数セッティング<code>lexical-binding:
+t</code>を使用できる。詳細についてはEmacs Lispリファレンスマニュアルを参照のこと。
+
+</li><li> <span id="index-bidirectional-display"></span>
+<span id="index-right_002dto_002dleft-languages"></span>
+英語のような自然言語のいくつかは左から右へと記述される。それ以外のアラビア語などは右から左に記述される。Emacsはこれらの形式が混交した、いわゆる&ldquo;双方向テキスト(bidirectional
+text)&rdquo;をサポートするようになった。
+
+</li><li> テキスト選択の処理が改善されて、外部クリップボードとより統合された。
+
+</li><li> <span id="index-themes"></span>
+新たなコマンド<kbd>customize-themes</kbd>によってEmacsの外観の変更が容易になった。
+
+</li><li> GTK+ 3ツールキットとともにEmacsをコンパイルできるようになった。
+
+</li><li> コンパイル時に新たに複数の外部ライブラリーを含めることをサポートする。
+
+<ul>
+<li> SELinux(&ldquo;Security-Enhanced
+Linux&rdquo;)とは、従来の&ldquo;Unixスタイル&rdquo;より複雑なファイルアクセスコントロールを提供するLinuxカーネルの機能。
+
+</li><li> ImageMagickディスプレーライブラリー。これによりEmacsでより多くのイメージ形式を表示でき、ローテーションのような変換も行うことができるようになる。
+
+</li><li> 安全なネットワーク通信のためのGnuTLSライブラリー。メールサーバーがサポートしていれば、EmacsはEメールにたいしてこれを透過的に使用する。
+
+</li><li> XML構造解析のためのlibxml2ライブラリー。
+</li></ul>
+
+</li><li> ウィンドウおよびバッファー表示の処理における柔軟性の向上。
+
+</li></ul>
+
+<p>いつも通り詳細については<samp>NEWS</samp>ファイルを参照してください。
+</p>
+
+<hr>
+</div>
+<div class="section" id="New-in-Emacs-23">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-24" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-22" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Emacs-23haHe-gaWei-u_003f"></span><h2 class="section">4.7 Emacs 23は何が違う?</h2>
+<span id="index-Differences-between-Emacs-22-and-Emacs-23"></span>
+<span id="index-Emacs-23_002c-new-features-in"></span>
+
+<ul>
+<li> <span id="index-Anti_002daliased-fonts"></span>
+<span id="index-Freetype-fonts"></span>
+Emacsにfreetype、fontconfigを含む複数のフォントバックエンドを使用可能なフォントコードが新たに追加された。EmacsはアンチエイリアスにXftライブラリー、複雑なテキストレイアウトとテキストシェーピングにotfやm17nのライブラリーを使用できる。
+
+</li><li> <span id="index-Unicode"></span>
+<span id="index-Character-sets"></span>
+Emacs文字セットがUnicodeのスーパーセットになった。新たに複数の言語環境が追加された。
+
+</li><li> <span id="index-Multi_002dtty-support"></span>
+<span id="index-X-and-tty-displays"></span>
+Emacsが同一セッションでXディスプレーとttyの両方を使用できるようになった(&lsquo;<samp>multi-tty</samp>&rsquo;)。
+
+</li><li> <span id="index-Daemon-mode"></span>
+Emacsをバックグラウンドでデーモンとして開始できるようになった。
+
+</li><li> <span id="index-NeXTstep-port"></span>
+<span id="index-GNUstep-port"></span>
+<span id="index-macOS-Cocoa"></span>
+新たにEmacsのNeXTstepポートが登場した。これはGNUstepおよび(Cocoaライブラリーを介して)Mac OS
+Xをサポートする。Emacs 22においてMac OS XをサポートしていたEmacsのCarbonポートは削除された。
+
+</li><li> <span id="index-Directory_002dlocal-variables"></span>
+ファイルローカル変数と同様の方法でディレクトリーローカル変数を定義できるようになった。
+
+</li><li> Transient Markモードがデフォルトでオンになった。
+
+</li></ul>
+
+<p>他にもシリアルポートアクセスのサポート、D-Busバインディング、行移動における新たなVisual
+Lineモード、補完の改善、PDFやPostScript、DVIを閲覧するための新モード(&lsquo;<samp>DocView</samp>&rsquo;)、(XMLドキュメント編集用の)nXMLモード、新しいバージョンコントロールシステム用にVCを更新する等の変更が含まれます。
+</p>
+
+<hr>
+</div>
+<div class="section" id="New-in-Emacs-22">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-23" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-21" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Emacs-22haHe-gaWei-u_003f"></span><h2 class="section">4.8 Emacs 22は何が違う?</h2>
+<span id="index-Differences-between-Emacs-21-and-Emacs-22"></span>
+<span id="index-Emacs-22_002c-new-features-in"></span>
+
+<ul>
+<li> <span id="index-GTK_002b-Toolkit"></span>
+<span id="index-Drag_002dand_002ddrop"></span>
+GTK+ウィジェットとともにEmacsをビルドできるようになり、X上でのドラッグアンドドロップ操作がサポートされた。
+
+</li><li> <span id="index-Supported-systems"></span>
+Emacs 22ではS390およびx86-64マシン上のGNU/Linuxシステム、Mac OS
+XおよびCygwinオペレーティングシステムにたいするサポートを提供する。
+
+</li><li> ネイティブのMS-WindowsおよびMac OS Xのビルドにイメージ、ツールバー、ツールチップの完全サポートが含められた。
+
+</li><li> Font Lockモード、Auto Compressionモード、File Name Shadowモードがデフォルトで有効になった。
+
+</li><li> バッファーの最大サイズが増加した。32ビットマシンのEmacs 23.1では256MB、Emacs 23.2以降は512MB。
+
+</li><li> <kbd>mouse-2</kbd>に加えて<kbd>mouse-1</kbd>でリンクをフォローできるようになった。
+
+</li><li> <span id="index-Mouse-wheel"></span>
+マウスホイールのサポートがデフォルトでオンになった。
+
+</li><li> ウィンドウフリンジがカスタマイズ可能になった。
+
+</li><li> 選択されたウィンドウのモードラインがハイライトされるようになった。
+
+</li><li> ミニバッファーのプロンプトは独自のフェイスで表示される。
+
+</li><li> abbrev定義を起動時に読み込む。
+
+</li><li> GrepモードがCompilationモードから切り離されて、新たにgrep特有のオプションおよびコマンドをもつようになった。
+
+</li><li> Emacsオリジナルのマクロシステムは、新たに多くのコマンドおよび機能、ファンクションキーF3とF4を使用するシンプルなインターフェイスを提供するKmacroパッケージに置き換えられた。マクロはマクロリングに格納されるとともに、対話的にデバッグと編集ができるようになった。
+
+</li><li> GDBにたいする完全にグラフィカルなユーザーインターフェイスとしてGUD(Grand Unified
+Debugger)が使用できるようになった。これは伝統的な開発環境で見い出すことができる多くの機能を提供するとともに、ブレークポイントの操作、ウォッチポイントの追加、コールスタック表示等を容易にする。ブレークポイントはソースバッファー内に視覚的に示される。
+
+</li><li> <span id="index-New-modes"></span>
+Calc、TRAMP、URL、IDO、CUA、ERC、rcirc、Table、Image-Dired、SES、Ruler、Org、PGG、Flymake、Password、Printing、Reveal、wdired、t-mouse、longlines、savehist、Confモード、Pythonモード、DNSモードなど新たに多くのモードとパッケージがEmacsに含められた。
+
+</li><li> <span id="index-Multilingual-Environment"></span>
+LeimはEmacsの一部となった。Unicodeサポートが更に改善されてbelarusian、bulgarian-bds、bulgarian-phonetic、chinese-sisheng、croatian、dutch、georgian、latin-alt-postfix、latin-postfix、latin-prefix、latvian-keyboard、lithuanian-numeric、lithuanian-keyboard、malayalam-inscript、rfc1345、russian-computer、sgml、slovenian、tamil-inscript、ucs、ukrainian-computer、vietnamese-telex、welshの入力メソッドが追加された。
+
+<p>Belarusian、Bulgarian、Chinese-EUC-TW、Croatian、French、Georgian、Italian、Latin-6、Latin-7、Latvian、Lithuanian、Malayalam、Russian、Slovenian、Swedish、Tajik、Tamil、UTF-8、Ukrainian、Welsh、Windows-1255の言語環境が追加された。
+</p>
+</li><li> <span id="index-Documentation"></span>
+<span id="index-Emacs-Lisp-Manual"></span>
+これらに加えてEmacs 22にはEmacs Lispリファレンスマニュアル(<a href="#Emacs-Lisp-documentation">Emacs Lispではどこでドキュメントを入手すれば?</a>を参照)およびEmacs Lisp Introが含められた。
+</li></ul>
+
+
+<hr>
+</div>
+<div class="section" id="New-in-Emacs-21">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-22" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-20" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Emacs-21haHe-gaWei-u_003f"></span><h2 class="section">4.9 Emacs 21は何が違う?</h2>
+<span id="index-Differences-between-Emacs-20-and-Emacs-21"></span>
+<span id="index-Emacs-21_002c-new-features-in"></span>
+
+<span id="index-Variable_002dsize-fonts"></span>
+<span id="index-Toolbar-support"></span>
+<p>Emacs
+21ではディスプレーエンジンの徹底的な書き換えが行われました。新たなディスプレーエンジンは可変長フォント、イメージをサポートするとともに、サウンドをサポートするプラットフォームでのサウンド再生が可能になりました。結果としてウィンドウ化されたディスプレーで実行した際のEmacsの視覚的外観はより現代的なGUIプログラムを想起させるものとなり、3Dウィジェット(モードラインとスクロールバーで使用)、設定と拡張が可能なツールバー、ツールチップ(別名バルーンヘルプ)、その他が含められました。
+</p>
+<span id="index-Colors-on-text_002donly-terminals"></span>
+<span id="index-TTY-colors"></span>
+<p>これらに加えてEmacs
+21はテキストオンリーの端末でのフェイスがサポートされました。これはGNU/Linuxコンソールや<code>xterm</code>上でEmacsを<kbd>emacs
+-nw</kbd>で実行した際にカラー表示されることを意味しています。
+</p>
+
+<hr>
+</div>
+<div class="section" id="New-in-Emacs-20">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-21" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Emacs-20haHe-gaWei-u_003f"></span><h2 class="section">4.10 Emacs 20は何が違う?</h2>
+<span id="index-Differences-between-Emacs-19-and-Emacs-20"></span>
+<span id="index-Emacs-20_002c-new-features-in"></span>
+
+<p>Emacsのバージョン18と19の差はよりダイナミックなものでした。一般的なユーザーのほとんどにとってもウィンドウシステムにおけるフレーム、フェイス、カラーの導入は明白な変更でした。
+</p>
+<p>Emacsのバージョン19と20の間にも同様に差はあるものの多くは軽微であるか気付くのが難しいものでした。この変更の中には非ラテン文字を使用する言語用のMULEと同一ドキュメント内での複数言語の混合、Lispを使用せずに変数を変更する&ldquo;Customize&rdquo;機能、Macintosh、Microsoft、Unixプラットフォームにおけるファイルの自動変換が含まれます。
+</p>
+<hr>
+</div>
+</div>
+<div class="chapter" id="Common-requests">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Status-of-Emacs" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#New-in-Emacs-20" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Top" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Setting-up-a-customization-file" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="yokuaruYao-Wang-"></span><h1 class="chapter">5 よくある要望</h1>
+<span id="index-Common-requests"></span>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#Setting-up-a-customization-file">5.1 <samp>.emacs</samp>ファイルを正しくセットアップするには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Using-Customize">5.2 Customizeを使い始めるには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Colors-on-a-TTY">5.3 TTYで色や構文ハイライトするには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Debugging-a-customization-file">5.4 <samp>.emacs</samp>ファイルをデバッグするには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Displaying-the-current-line-or-column">5.5 Emacsに現在の行(や列)の番号を表示させるには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Displaying-the-current-file-name-in-the-titlebar">5.6 現在のファイル名をタイトルバーに含めるには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Turning-on-abbrevs-by-default">5.7 モード<var>mymode</var>でデフォルトでabbrevをオンにするには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Associating-modes-with-files">5.8 特定のファイルに特定のモードをEmacsに使用させるには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Replacing-highlighted-text">5.9 ハイライトされたテキストをタイプしたテキストで置き換えるには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Controlling-case-sensitivity">5.10 検索や置換の際にEmacsによる大文字小文字の区別を制御するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Working-with-unprintable-characters">5.11 プリント不可文字(8ビット文字やコントロール文字)の検索、削除、置換を行うには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Searching-for_002freplacing-newlines">5.12 isearchやquery-replaceで改行を入力するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Yanking-text-in-isearch">5.13 killリングから検索文字列にテキストをコピーするには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Wrapping-words-automatically">5.14 自分用にEmacsに単語を折り返させるには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Turning-on-auto_002dfill-by-default">5.15 デフォルトで<code>auto-fill-mode</code>をオンにするには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Changing-load_002dpath">5.16 <code>load-path</code>を変更するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Using-an-already-running-Emacs-process">5.17 別ウィンドウですでに実行中のEmacsを使用するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Compiler-error-messages">5.18 わたしのコンパイラーの変なエラーメッセージをEmacsに認識させるには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Indenting-switch-statements">5.19 <code>switch</code>のインデントを変更するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Customizing-C-and-C_002b_002b-indentation">5.20 C、C<tt>++</tt>、Javaのバッファーのインデントをカスタマイズするには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Overwrite-mode">5.21 Emacsに挿入ではなく&ldquo;上書き&rdquo;させるには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Turning-off-beeping">5.22 端末でEmacsのビープ音を止めるには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Turning-the-volume-down">5.23 XでEmacsを実行中にベル音量を下げるには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Automatic-indentation">5.24 新しい行を前の行に合わせて自動的にインデントするようEmacsに伝えるには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Matching-parentheses">5.25 自分が注目中のカッコに対応するカッコを表示するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Hiding-_0023ifdef-lines">5.26 Cモードでコンパイラーが<code>#ifdef</code>処理後に残る行だけを表示するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Repeating-commands">5.27 できるだけ沢山コマンドを繰り返すには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Valid-X-resources">5.28 有効なXリソース(.Xdefaults内の項目)は?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Evaluating-Emacs-Lisp-code">5.29 Emacs Lispのコード片を実行(&ldquo;evaluate&rdquo;)するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Changing-the-length-of-a-Tab">5.30 <tt class="key">TAB</tt>文字の長さにたいするEmacsの解釈を変更するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Inserting-text-at-the-beginning-of-each-line">5.31 各行の先頭に&lt;何らかのテキスト&gt;を挿入するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Forcing-the-cursor-to-remain-in-the-same-column">5.32 上下に移動した際にたとえ短すぎる行でも同じ列にカーソルが留まる; このようにEmacsを振る舞わせるには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Forcing-Emacs-to-iconify-itself">5.33 アイコン化するようEmacsに伝えるには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Using-regular-expressions">5.34 Emacsでregexp(正規表現)わ使用するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Replacing-text-across-multiple-files">5.35 複数ファイルを横断して置換操作を行うには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Documentation-for-etags">5.36 <code>etags</code>のドキュメントはどこ?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Disabling-backups">5.37 バックアップファイルを無効にするには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Disabling-auto_002dsave_002dmode">5.38 <code>auto-save-mode</code>を無効にするには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Going-to-a-line-by-number">5.39 行番号で特定行に移動するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Modifying-pull_002ddown-menus">5.40 プルダウンの新たなメニューオプションの作成や変更を行うには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Deleting-menus-and-menu-options">5.41 メニューやメニューオプションを削除するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Turning-on-syntax-highlighting">5.42 構文ハイライトをオンにするには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Scrolling-only-one-line">5.43 画面下端に移動した際にEmacsが1行だけスクロールするよう強制するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Editing-MS_002dDOS-files">5.44 EmacsでMS-DOSファイルを編集するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Filling-paragraphs-with-a-single-space">5.45 ピリオドごとにその後の単一スペースでパラグラフをフィルするようEmacsに伝えるには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Escape-sequences-in-shell-output">5.46 なぜShellモード<code>ls</code>は奇妙なエスケープシーケンスを出力するのか?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Fullscreen-mode-on-MS_002dWindows">5.47 MS-WindowsでフルスクリーンモードでEmacsを開始するには?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+</table>
+
+<hr>
+<div class="section" id="Setting-up-a-customization-file">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Using-Customize" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="g_t_002eemacshuairuwoZheng-sikusetutoatupusuruniha_003f"></span><h2 class="section">5.1 <samp>.emacs</samp>ファイルを正しくセットアップするには?</h2>
+<span id="index-_002eemacs-file_002c-setting-up"></span>
+<span id="index-_002eemacs-file_002c-locating"></span>
+<span id="index-Init-file_002c-setting-up"></span>
+<span id="index-Customization-file_002c-setting-up"></span>
+
+<p><a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Init-File">Init File</a> in <cite>The GNU Emacs Manual</cite>を参照してください。
+</p>
+<p>一般的にEmacsの新規ユーザーは<samp>.emacs</samp>ファイルを与えられるべきではありません。なぜならこれによる非標準的から混乱を招くからです。その後に彼らはなぜEmacsがドキュメント通りに振る舞わないか尋ねる質問を<a href="https://lists.gnu.org/mailman/listinfo/help-gnu-emacs">the help-gnu-emacs mailing list</a>に送信するのです。
+</p>
+<p>EmacsにはCustomize機能が含まれています(<a href="#Using-Customize">Customizeを使い始めるには?</a>を参照)。これによってEmacs
+Lispに親しみのないユーザーはLispコードよりもメニューを使い、比較的判りやすい方法で<samp>.emacs</samp>ファイルを編集できます。
+</p>
+<p>Customizeは確かにEmacsの設定を容易にするかもしれませんが、Emacs
+Lispを習得して<samp>.emacs</samp>を直接編集するために少し時間を割くことを検討してみてください。頻繁に要求される基本的なタスクを処理することに興味があるユーザーには、シンプルな設定オプションが<a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Init-File">Init
+File</a> in <cite>The GNU Emacs Manual</cite>により完全に記述されています。
+</p>
+<p>ユーザーがどこで自分の<samp>.emacs</samp>ファイルを見つけられるか判らない場合があります。Emacsから<samp>~/.emacs</samp>としてファイルをvisitすることのよって、正しいファイルが見つかるでしょう。
+</p>
+<hr>
+</div>
+<div class="section" id="Using-Customize">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Setting-up-a-customization-file" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Colors-on-a-TTY" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="CustomizewoShi-iShi-meruniha_003f"></span><h2 class="section">5.2 Customizeを使い始めるには?</h2>
+<span id="index-Customize-groups"></span>
+<span id="index-Customizing-variables"></span>
+<span id="index-Customizing-faces"></span>
+
+<p>Customizeの主となるエントリーポイントは<kbd>M-x customize
+<span class="key">RET</span></kbd>です。このコマンドにより利用可能なすべてのCustomizeグループを一覧するバッファーへと導かれます。そこからカスタマイズ可能なすべてのオプションおよびフェイスにアクセスして、それらの値の変更とinitファイルへの保存ができます。<a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Easy-Customization">Easy
+Customization</a> in <cite>The GNU Emacs Manual</cite>を参照してください。
+</p>
+<p>(たとえば&ldquo;shell&rdquo;のように)あらかじめグループの名前が判っていれば<kbd>M-x customize-group
+<span class="key">RET</span></kbd>を使用してください。
+</p>
+<p>オプションを1つカスタマイズしたければ、<kbd>M-x customize-option
+<span class="key">RET</span></kbd>を使用します。このコマンドは補完付きでカスタマイズするオプション名の入力を求めます。
+</p>
+<hr>
+</div>
+<div class="section" id="Colors-on-a-TTY">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Common-requests" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Using-Customize" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Common-requests" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Debugging-a-customization-file" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Bugs-and-problems" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="TTYdeSe-yaGou-Wenhairaitosuruniha_003f"></span><h2 class="section">5.3 TTYで色や構文ハイライトするには?</h2>
+<span id="index-Colors-on-a-TTY"></span>
+<span id="index-Syntax-highlighting-on-a-TTY"></span>
+<span id="index-Console_002c-colors"></span>
+
+<p>Emacs
+21.1以降では非ウィンドウ化モード(UnixおよびGNU/Linuxテキストオンリー端末やコンソール、またはXやMS-Windowsで&lsquo;<samp>emacs
+-nw</samp>&rsquo;を呼び出した場合)でカラーとフェイスがサポートされています(MS-DOSポートではEmacs
+19.29以降でカラーとフェイスがサポートされている)。Emacsは起動時に自動的にカラーサポートを検出して、利用できるようならカラーを使用します。あなたの端末がカラーをサポートしていると思えるのにEmacsがカラーを使用しない場合には、あなたのディスプレータイプにたいするカラー関連能力について<code>termcap</code>エントリーをチェックしてください。
+</p>
+<p>コマンド<kbd>M-x
+list-colors-display</kbd>はカレントディスプレーについてEmacsが関知する全カラーを展覧するウィンドウをポップアップします。
+</p>
+<p>バージョン22.1以降ではシンタックスハイライトがデフォルトでオンです。
+</p>
+<span id="index-direct-color-in-terminals"></span>
+<p>Emacs 26.1以降はターミナル(訳注:
+端末=terminalはtermcapのterm)でのダイレクトカラーモードをサポートしています。EmacsがTerminfoで&lsquo;<samp>setb24</samp>&rsquo;および&lsquo;<samp>setf24</samp>&rsquo;のケイパビリティ(訳注:
+capabilityはtermcapのcap)を見つけたら24ビットダイレクトカラーモードを使用します。ケイパビリティ文字列は、引数として1つの24ビットピクセル値を取り、24ビットカラーを端末に送信するために使用できる文字列にピクセルを変換することが期待されます。
+</p>
+<p>標準のターミナル定義はこれらのケイパビリティをサポートせず、したがってカスタム定義が必要になります。
+</p>
+<div class="example">
+<pre class="example">$ cat terminfo-custom.src
+
+xterm-emacs|xterm with 24-bit direct color mode for Emacs,
+  use=xterm-256color,
+  setb24=\E[48\:2\:\:%p1%{65536}%/%d\:%p1%{256}%/%{255}%&amp;\
+     %d\:%p1%{255}%&amp;%dm,
+  setf24=\E[38\:2\:\:%p1%{65536}%/%d\:%p1%{256}%/%{255}%&amp;\
+     %d\:%p1%{255}%&amp;%dm,
+
+$ tic -x -o ~/.terminfo terminfo-custom.src
+
+$ TERM=xterm-emacs emacs -nw
+</pre></div>
+
+<span id="index-24_002dbit-direct-color-mode"></span>
+<p>Emacs
+27.1以降では24ビットダイレクトカラーモードの検出にたいしてTerminfoの&lsquo;<samp>RGB</samp>&rsquo;ケイパビリティをサポートしています。複数の標準的なターミナル定義がこのケイパビリティをサポートしています。
+</p>
+<div class="example">
+<pre class="example">$ TERM=xterm-direct infocmp | grep seta[bf]
+
+  setab=\E[%?%p1%{8}%&lt;%t4%p1%d%e48\:2\:\:%p1%{65536}%/\
+     %d\:%p1%{256}%/%{255}%&amp;%d\:%p1%{255}%&amp;%d%;m,
+  setaf=\E[%?%p1%{8}%&lt;%t3%p1%d%e38\:2\:\:%p1%{65536}%/\
+     %d\:%p1%{256}%/%{255}%&amp;%d\:%p1%{255}%&amp;%d%;m,
+
+$ TERM=xterm-direct emacs -nw
+</pre></div>
+

@@ -1,0 +1,1000 @@
+<p>起動のたびにEmacsが何を行っているかについては<samp>lisp/startup.el</samp>を参照してください。
+</p>
+<hr>
+</div>
+<div class="section" id="Working-with-function-and-arrow-keys">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Key-bindings" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Terminal-setup-code-works-after-Emacs-has-begun" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Key-bindings" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#X-key-translations-for-Emacs" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-do-I-tell-what-characters-or-symbols-my-function-or-arrow-keys-emit_003f"></span><h2 class="section">9.4 How do I tell what characters or symbols my function or arrow keys emit?</h2>
+<span id="index-Working-with-arrow-keys"></span>
+<span id="index-Arrow-keys_002c-symbols-generated-by"></span>
+<span id="index-Working-with-function-keys"></span>
+<span id="index-Function-keys_002c-symbols-generated-by"></span>
+<span id="index-Symbols-generated-by-function-keys"></span>
+
+<p><kbd>C-h
+c</kbd>の後にファンクションキーか矢印キーをタイプしてください。コマンドはファンクションキーシンボルか文字シーケンスをリターンするでしょう(説明はEmacsドキュメントを参照)。これは他のキーでも同様に機能します。
+</p>
+<hr>
+</div>
+<div class="section" id="X-key-translations-for-Emacs">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Key-bindings" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Working-with-function-and-arrow-keys" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Key-bindings" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Backspace-invokes-help" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-do-I-set-the-X-key-_0060_0060translations_0027_0027-for-Emacs_003f"></span><h2 class="section">9.5 How do I set the X key &ldquo;translations&rdquo; for Emacs?</h2>
+<span id="index-X-key-translations"></span>
+<span id="index-Key-translations-under-X"></span>
+<span id="index-Translations-for-keys-under-X"></span>
+
+<p>EmacsはデフォルトではXtライブラリーを使用するようには記述されていないので、何の&ldquo;変換(translation)&rdquo;もセットされていません(XtとともにEmacsをビルドした場合にそのような変換をどのようにセットするかわたしたちには定かではないので、これを行うことができたらどうか知らせてください!)。
+</p>
+<p>Emacs内でのキーの挙動に影響を与えるには<code>xmodmap</code> (Emacs外部)、あるいは<code>define-key</code>
+(Emacs内部)を通じて行う方法だけです。<code>define-key</code>コマンドは<code>local-function-key-map</code>と組み合わせて使用する必要があります。たとえば、
+</p>
+<div class="example lisp">
+<pre class="lisp">(define-key function-key-map [M-<span class="key">TAB</span>] [?\M-\t])
+</pre></div>
+
+<p>これはキーシーケンス<kbd>M-<span class="key">TAB</span></kbd>を定義します。
+</p>
+<hr>
+</div>
+<div class="section" id="Backspace-invokes-help">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Key-bindings" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#X-key-translations-for-Emacs" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Key-bindings" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Swapping-keys" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Why-does-the-Backspace-key-invoke-help_003f"></span><h2 class="section">9.6 Why does the <tt class="key">Backspace</tt> key invoke help?</h2>
+<span id="index-Backspace-key-invokes-help"></span>
+<span id="index-Help-invoked-by-Backspace"></span>
+<span id="index-DEL-key-does-not-delete"></span>
+
+<p>(ほとんどのキーボードでは)<tt class="key">Backspace</tt>キーは<acronym>ASCII</acronym>コードの8を生成します。<kbd>C-h</kbd>が送信するコードも同じです。Emacsではデフォルトでは<kbd>C-h</kbd>はhelp-commandを呼び出します。これは&lsquo;<samp>help</samp>&rsquo;の最初の文字が&lsquo;<samp>h</samp>&rsquo;なので簡単に覚えられることを意図したものです。この問題のもっとも簡単な解決策はヘルプには<kbd>C-h</kbd>
+(と<tt class="key">Backspace</tt>)を使い、前の文字の削除には<tt class="key">DEL</tt>(<tt class="key">Delete</tt>キー)を使うことです。
+</p>
+<p>多くの人たちにとって、この解決策は問題があるかもしれません:
+</p>
+<ul>
+<li> 彼らはEmacs外部では前の文字の削除に通常は<tt class="key">Backspace</tt>を使用する。これはEmacs外部で前の文字を削除するコマンドを<tt class="key">DEL</tt>にすれば解決できる。多くのUnixシステムでは、以下のコマンドは<tt class="key">DEL</tt>をリマップするだろう:
+
+<div class="example">
+<pre class="example">stty erase '^?'
+</pre></div>
+
+</li><li> ユーザーはキーボード上でより使いやすい位置にある、あるいは別個に<tt class="key">Delete</tt>キーがないという理由によって、前の文字の削除に<tt class="key">Backspace</tt>キーを使うことを好むかもしれない。この場合には<tt class="key">Backspace</tt>キーに<tt class="key">Delete</tt>のように振る舞わせる必要がある。いくつかの方法がある。
+
+<ul class="no-bullet">
+<li>- いくつかの端末(例: VT3##端末)や端末エミュレータ(例:
+TeraTerm)では、セットアップメニューから<tt class="key">Backspace</tt>キーが生成する文字を変更できる。
+
+</li><li>- 完全にプログラム可能なキーボードや、任意のキーから別の任意のキーへのリマップをサポートする端末エミュレータを入手できるかもしれない。
+
+</li><li>- Emacs 21.1以降ではオプション<code>normal-erase-is-backspace-mode</code>のカスタマイズ、または<kbd>M-x
+normal-erase-is-backspace</kbd>呼び出しにより、ダム端末およびウィンドウ化されたディスプレーの両方において、<tt class="key">Backspace</tt>キーおよび<tt class="key">Delete</tt>キーの効果を制御できる。詳細についてはこれらのシンボルのドキュメントについては、<a href="#Emacs-Lisp-documentation">Emacs Lispではどこでドキュメントを入手すれば?</a>を参照のこと。
+
+</li><li>- Emacs内部では<tt class="key">Backspace</tt>キーと<tt class="key">DEL</tt>キーを交換できる:
+
+<div class="example lisp">
+<pre class="lisp">(keyboard-translate ?\C-h ?\C-?)
+</pre></div>
+
+<p>これはたとえ<tt class="key">DEL</tt>を<code>delete-backward-char</code>以外の何かにバインドするモードでも機能するので、<tt class="key">Backspace</tt>を<tt class="key">DEL</tt>のように動作させる際の推奨方法である。
+</p>
+<p>同じように<tt class="key">DEL</tt>が<kbd>C-d</kbd> (デフォルトでは前方に削除)のように振る舞うようにリマップできる:
+</p>
+<div class="example lisp">
+<pre class="lisp">(keyboard-translate ?\C-? ?\C-d)
+</pre></div>
+
+<p><code>keyboard-translate</code>についての詳細は<a href="#Swapping-keys">How do I swap two keys?</a>を参照のこと。
+</p>
+</li><li>- 別のアプローチとしてはキーバインディングを切り替えて、かわりに<kbd>C-x h</kbd>をヘルプにする:
+
+<div class="example lisp">
+<pre class="lisp">(global-set-key &quot;\C-h&quot; 'delete-backward-char)
+
+;; mark-whole-bufferをオーバーライドする
+(global-set-key &quot;\C-xh&quot; 'help-command)
+</pre></div>
+
+<p>とはいえこの手法は推奨しない。これは<tt class="key">DEL</tt>を<code>delete-backward-char</code>にバインドするモードにたいしてのみ問題を解決する。<code>view-mode</code>モードのように<tt class="key">DEL</tt>を別の何かにバインドするモードは、<tt class="key">Backspace</tt>キーを押下した際に期待通り動作しないだろう。この理由により、えわたしたちは上述した<code>keyboard-translate</code>手法をお勧めする。
+</p>
+<p>ヘルプ用として他に人気のあるキーバインディングは<kbd>M-?</kbd>と<kbd>C-x ?</kbd>である。
+</p></li></ul>
+
+<p><tt class="key">DEL</tt>にたいしてローカルバインディングをもちモードが多数あり、それらと干渉するかもしれないので、<tt class="key">DEL</tt>に<code>help-command</code>をバインドしようとしてはならない。
+</p>
+</li></ul>
+
+<p>ウィンドウ化されたディスプレーでEmacs
+21以降を実行する場合には、これらのシステムでのキーボード操作とEmacsの矛盾が少なくなるように、<tt class="key">Delete</tt>をポイント位置の文字を削除するコマンドにバインドします。
+</p>
+<p>この問題の解決についての詳細は<a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#DEL-Does-Not-Delete">If <tt class="key">DEL</tt> Fails to Delete</a> in <cite>The GNU Emacs Manual</cite>を参照してください。
+</p>
+<hr>
+</div>
+<div class="section" id="Swapping-keys">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Key-bindings" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Backspace-invokes-help" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Key-bindings" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Producing-C_002dXXX-with-the-keyboard" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-do-I-swap-two-keys_003f"></span><h2 class="section">9.7 How do I swap two keys?</h2>
+<span id="index-Swapping-keys"></span>
+<span id="index-Keys_002c-swapping"></span>
+<span id="index-keyboard_002dtranslate"></span>
+
+<p><code>keyboard-translate</code>を使用して2つのキー(またはキーシーケンス)を交換できます。たとえば<kbd>C-h</kbd>を<tt class="key">DEL</tt>、<tt class="key">DEL</tt>を<kbd>C-h</kbd>にするには、
+</p>
+<div class="example lisp">
+<pre class="lisp">(keyboard-translate ?\C-h ?\C-?)  ; 'C-h'をDELに変換
+(keyboard-translate ?\C-? ?\C-h)  ; DELを'C-h'に変換
+</pre></div>
+
+<p>関数の後のキーシーケンスの1つ目はキーボードが何を生成するかを識別、2つ目はキーマップでそれが何にマッチするかを指定します。
+</p>
+<p>しかし<kbd>C-h</kbd>と<tt class="key">DEL</tt>の特別なケースにおいては、<code>keyboard-translate</code>呼び出しではなく<code>normal-erase-is-backspace-mode</code>を切り替えるべきです。<a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#DEL-Does-Not-Delete">DEL
+Does Not Delete</a> in <cite>The GNU Emacs Manual</cite>を参照してください。
+</p>
+<p>キーボードの変換(translation)はキーマップのキーバインディングと同じではありません。Emacsには異なる状況に適用するために数々のキーマップがありますが、キーボード変換は1セットしかなく、Emacsが端末から文字を読み取るたびにそれが適用されます。キーボード変換は入力プロセスのもっとも低いレベルで行われます。キーマップに照合される文字にはキーボード変換された結果の文字が含まれています。
+</p>
+<hr>
+</div>
+<div class="section" id="Producing-C_002dXXX-with-the-keyboard">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Key-bindings" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Swapping-keys" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Key-bindings" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#No-Meta-key" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-do-I-produce-C_002dXXX-with-my-keyboard_003f"></span><h2 class="section">9.8 How do I produce C-XXX with my keyboard?</h2>
+<span id="index-Producing-control-characters"></span>
+<span id="index-Generating-control-characters"></span>
+<span id="index-Control-characters_002c-generating"></span>
+
+<p>(X配下ではない)端末で一般的ないくつかの&ldquo;エイリアス&rdquo;です:
+</p>
+<dl compact="compact">
+<dt><span><kbd>C-2</kbd>や<kbd>C-<span class="key">SPC</span></kbd></span></dt>
+<dd><p><kbd>C-@</kbd>
+</p>
+</dd>
+<dt><span><kbd>C-6</kbd></span></dt>
+<dd><p><kbd>C-^</kbd>
+</p>
+</dd>
+<dt><span><kbd>C-7</kbd>や <kbd>C-S--</kbd></span></dt>
+<dd><p><kbd>C-_</kbd>
+</p>
+</dd>
+<dt><span><kbd>C-4</kbd></span></dt>
+<dd><p><kbd>C-\</kbd>
+</p>
+</dd>
+<dt><span><kbd>C-5</kbd></span></dt>
+<dd><p><kbd>C-]</kbd>
+</p>
+</dd>
+<dt><span><kbd>C-/</kbd></span></dt>
+<dd><p><kbd>C-?</kbd>
+</p>
+</dd>
+</dl>
+
+<p>多くの場合は他にもエイリアスが存在します。あなたのキーボードで<kbd>C-h
+c</kbd>コマンドを使って、<tt class="key">CTRL</tt>とすべての数字を試して何が生成されるか確認してみてください。コマンド名が判っていれば<kbd>C-h
+w</kbd>コマンドを試してみることもできます。
+</p>
+<hr>
+</div>
+<div class="section" id="No-Meta-key">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Key-bindings" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Producing-C_002dXXX-with-the-keyboard" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Key-bindings" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#No-Escape-key" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="What-if-I-don_0027t-have-a-Meta-key_003f"></span><h2 class="section">9.9 What if I don&rsquo;t have a <tt class="key">Meta</tt> key?</h2>
+<span id="index-No-Meta-key"></span>
+<span id="index-Meta-key_002c-what-to-do-if-you-lack-it"></span>
+
+<p>多くのキーボードでは、<tt class="key">Alt</tt>キーは<tt class="key">Meta</tt>のように振る舞うので試してみてください。
+</p>
+<p><kbd>M-a</kbd>のかわりに<kbd><span class="key">ESC</span>
+a</kbd>とタイプすることができます。実際のところ、いずれにせよEmacsｈｓ内部で<kbd>M-a</kbd>を<kbd><span class="key">ESC</span>
+a</kbd>に変換しています(<code>meta-prefix-char</code>の値による)。<tt class="key">Meta</tt>と<kbd>a</kbd>は一緒に押しますが、<tt class="key">ESC</tt>の場合には<tt class="key">ESC</tt>を押して、離した後に<kbd>a</kbd>を押下することに注意してください。
+</p>
+<hr>
+</div>
+<div class="section" id="No-Escape-key">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Key-bindings" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#No-Meta-key" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Key-bindings" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Compose-Character" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="What-if-I-don_0027t-have-an-Escape-key_003f"></span><h2 class="section">9.10 What if I don&rsquo;t have an <tt class="key">Escape</tt> key?</h2>
+<span id="index-No-Escape-key"></span>
+<span id="index-Lacking-an-Escape-key"></span>
+<span id="index-Escape-key_002c-lacking"></span>
+
+<p>かわりに<kbd>C-[</kbd>をタイプしてください。これはエスケープキーのように<acronym>ASCII</acronym>コードの27を送信するはずです。<kbd>C-3</kbd>でも機能する端末もあります(X配下でないこと)。多くの端末(特にDEC)では、<tt class="key">F11</tt>が<tt class="key">ESC</tt>を生成します。そうでなければ、以下のフォームを使用してこれをバインドできます:
+</p>
+<div class="example lisp">
+<pre class="lisp">;; DEC端末ではF11はESCの置き換えとドキュメントされている
+(define-key function-key-map [f11] [?\e])
+</pre></div>
+
+<hr>
+</div>
+<div class="section" id="Compose-Character">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Key-bindings" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#No-Escape-key" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Key-bindings" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Binding-combinations-of-modifiers-and-function-keys" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Can-I-make-my-Compose-Character-key-behave-like-a-Meta-key_003f"></span><h2 class="section">9.11 Can I make my <tt class="key">Compose Character</tt> key behave like a <tt class="key">Meta</tt> key?</h2>
+<span id="index-Compose-Character-key_002c-using-as-Meta"></span>
+<span id="index-Meta_002c-using-Compose-Character-for"></span>
+
+<p>VT220のようなダム端末ではできません。噂では特定のVT220クローンは、この方法で設定することによって独自に<tt class="key">Compose</tt>キーをもてるようです。Xを使用していれば、<code>xmodmap</code>コマンドでこれを行うことができるかもしれません。
+</p>
+<hr>
+</div>
+<div class="section" id="Binding-combinations-of-modifiers-and-function-keys">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Key-bindings" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Compose-Character" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Key-bindings" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Meta-key-does-not-work-in-xterm" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-do-I-bind-a-combination-of-modifier-key-and-function-key_003f"></span><h2 class="section">9.12 How do I bind a combination of modifier key and function key?</h2>
+<span id="index-Modifiers-and-function-keys"></span>
+<span id="index-Function-keys-and-modifiers"></span>
+<span id="index-Binding-modifiers-and-function-keys"></span>
+
+<p>ファンクションキーのシンボルにプレフィクスを追加することによって、ベクターフォーマットで修飾されたファンクションキーを表すことができます。たとえば(Emacsドキュメントより):
+</p>
+<div class="example lisp">
+<pre class="lisp">(global-set-key [?\C-x right] 'forward-page)
+</pre></div>
+
+<p>ここで&lsquo;<samp>?\C-x</samp>&rsquo;は文字<kbd>C-x</kbd>にたいするLisp文字定数です。
+</p>
+<p>ファンクションキーとともに<tt class="key">Control</tt>、<tt class="key">Meta</tt>、<tt class="key">Hyper</tt>、<tt class="key">Super</tt>、<tt class="key">Alt</tt>、<tt class="key">Shift</tt>の修飾キーが使用できます。これらの修飾キーを表現するにはシンボル名の前に&lsquo;<samp>C-</samp>&rsquo;、&lsquo;<samp>M-</samp>&rsquo;、&lsquo;<samp>H-</samp>&rsquo;、&lsquo;<samp>s-</samp>&rsquo;、&lsquo;<samp>A-</samp>&rsquo;&lsquo;<samp>S-</samp>&rsquo;を前置します。以下は<kbd>H-M-RIGHT</kbd>を単語1つ前方に移動にする方法です:
+</p>
+<div class="example lisp">
+<pre class="lisp">(global-set-key [H-M-right] 'forward-word)
+</pre></div>
+
+<ul>
+<li> すべての修飾キーがどんな状況でも許されている訳ではありません。Unix文字端末では<tt class="key">Hyper</tt>、<tt class="key">Super</tt>、<tt class="key">Alt</tt>は利用できません。この種の状況下では非<acronym>ASCII</acronym>キーとマウスイベント(たとえば<kbd>C-=</kbd>や<kbd>mouse-1</kbd>)も失敗します。
+
+</li></ul>
+
+<p>キーバインディングについての一般的な説明については<a href="#Binding-keys-to-commands">How do I bind keys (including function keys) to commands?</a>を参照してください。
+</p>
+<hr>
+</div>
+<div class="section" id="Meta-key-does-not-work-in-xterm">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Key-bindings" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Binding-combinations-of-modifiers-and-function-keys" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Key-bindings" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#ExtendChar-key-does-not-work-as-Meta" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Why-doesn_0027t-my-Meta-key-work-in-an-xterm-window_003f"></span><h2 class="section">9.13 Why doesn&rsquo;t my <tt class="key">Meta</tt> key work in an <code>xterm</code> window?</h2>
+<span id="index-Meta-key-and-xterm"></span>
+<span id="index-Xterm-and-Meta-key"></span>
+
+<p><a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Unibyte-Mode">Single-Byte Character Set Support</a> in <cite>The GNU Emacs
+Manual</cite>を参照してください。
+</p>
+<p>Emacsマニュアルのアドバイスが失敗した場合には、更なる助けを求める前に以下の方法すべてを試してみてください:
+</p>
+<ul>
+<li> ウィンドウマネージャーに<code>mwm</code>を使用することによって大きな問題を抱えているのかもしれない(<samp>mwm</samp>のEmacsで<tt class="key">Meta</tt>キーが使用できるようにする汎用的で優れた解決策を知る人は居ないだろうか?)。
+
+</li><li> X11ではそれが本当に<tt class="key">Meta</tt>キーなのか確認してほしい。あなたの<tt class="key">Meta</tt>キーがどんなを生成するかを確認するには<code>xev</code>を使用する。<code>Meta_L</code>か<code>Meta_R</code>のいずれかのはずだが、もし違うならこの状況を修整するために<samp>xmodmap</samp>を使用できる。<tt class="key">Meta</tt>は<code>Meta_L</code>や<code>Meta_R</code>を生成しないものの<kbd>M-x</kbd>は非<acronym>ASCII</acronym>文字を生成するようなら、以下を<samp>~/.Xdefaults</samp>ファイルに記述する:
+
+<div class="example">
+<pre class="example"> XTerm*eightBitInput:   false
+ XTerm*eightBitOutput:  true
+</pre></div>
+
+</li><li> <code>xterm</code>が使用している<code>pty</code>は8ビット文字を通すか確認すること。&lsquo;<samp>stty -a</samp>&rsquo;
+(あるいは&lsquo;<samp>stty
+everything</samp>&rsquo;)がどこかに&lsquo;<samp>cs8</samp>&rsquo;と表示するはずである。かわりに&lsquo;<samp>cs7</samp>&rsquo;が表示されたら、これを修整するために&lsquo;<samp>stty
+cs8 -istrip</samp>&rsquo; (あるいは&lsquo;<samp>stty pass8</samp>&rsquo;)を使用する。
+
+</li><li> <code>xterm</code>とEmacsの間に<code>rlogin</code>接続が存在する場合には、各文字の8ビット目をすべて渡すように、rloginに&lsquo;<samp>-8</samp>&rsquo;引数を与える必要があるかもしれない。
+
+</li><li> UltrixでEmacsを実行しているなら、<code>(set-input-mode t nil)</code>の評価が助けになると報告されている。
+
+</li><li> 他のすべてが失敗したら、<kbd>M-W</kbd>のタイプ時に<code>xterm</code>に<kbd><span class="key">ESC</span>
+W</kbd>を生成させることができる。これはいずれにせよ<kbd>M-W</kbd>を受け取ったときにEmacsが行うであろう変換と同じである。X11R4では以下のリソース仕様でこれを行うことができるだろう:
+
+<div class="example">
+<pre class="example">XTerm.VT100.EightBitInput: false
+</pre></div>
+
+<p>(これは<code>insert-eight-bit</code>アクションの振る舞いを変更する。)
+</p>
+<p>古い<code>xterm</code>ではtranslationでこの挙動を指定できる:
+</p>
+<div class="example">
+<pre class="example">XTerm.VT100.Translations: #override \
+  Meta&lt;KeyPress&gt;: string(0x1b) insert()
+</pre></div>
+
+<p>&lsquo;<samp>Meta</samp>&rsquo;を&lsquo;<samp>Alt</samp>&rsquo;に置き換える必要があるかもしれない。
+</p>
+</li></ul>
+
+<hr>
+</div>
+<div class="section" id="ExtendChar-key-does-not-work-as-Meta">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Key-bindings" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Meta-key-does-not-work-in-xterm" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Key-bindings" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#SPC-no-longer-completes-file-names" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Why-doesn_0027t-my-ExtendChar-key-work-as-a-Meta-key-under-HP_002dUX-8_002e0-and-9_002ex_003f"></span><h2 class="section">9.14 Why doesn&rsquo;t my <tt class="key">ExtendChar</tt> key work as a <tt class="key">Meta</tt> key under HP-UX 8.0 and 9.x?</h2>
+<span id="index-ExtendChar-key-as-Meta"></span>
+<span id="index-Meta_002c-using-ExtendChar-for"></span>
+<span id="index-HP_002dUX_002c-the-ExtendChar-key"></span>
+
+<p>これはX11R4における国際家拡張の結果であるとともに、HPが現在はこの拡張を使用しているという事実を示しています。Emacsは<tt class="key">Meta</tt>キーの状態に関わらず<code>XLookupString</code>関数が同じ結果をリターンするという、もはや必ずしも真とは言えない前提にもとづいています。Emacsが修整されるまでは、その場しのぎの一時的な修整ですがXサーバー起動後に毎回、できればxtermクライアント開始前に以下のコマンドを実行してください:
+</p>
+<div class="example">
+<pre class="example">xmodmap -e 'remove mod1 = Mode_switch'
+</pre></div>
+
+
+<p>これはシステムワイドで追加のkeysymを無効にします。これはあなたが実際にそれらを使用つもりなら不本意かもしれません。
+</p>
+<hr>
+</div>
+<div class="section" id="SPC-no-longer-completes-file-names">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Key-bindings" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#ExtendChar-key-does-not-work-as-Meta" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Key-bindings" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Why-doesn_0027t-SPC-complete-file-names-anymore_003f"></span><h2 class="section">9.15 Why doesn&rsquo;t <tt class="key">SPC</tt> complete file names anymore?</h2>
+<span id="index-SPC-file-name-completion"></span>
+
+<p>Emacs
+22.1から<kbd>SPC</kbd>はミニバッファーでファイル名の補完を行わなくなったので、スペースが埋め込まれたファイル名のタイプにおいてスペースをクォートする必要がなくなりました。
+</p>
+<p>以下のようにミニバッファーで<kbd>SPC</kbd>を<code>minibuffer-complete-word</code>にバインドすることによって古い挙動を取り戻すことができます:
+</p>
+<div class="example lisp">
+<pre class="lisp">(define-key minibuffer-local-filename-completion-map (kbd &quot;SPC&quot;)
+  'minibuffer-complete-word)
+
+(define-key minibuffer-local-must-match-filename-map (kbd &quot;SPC&quot;)
+  'minibuffer-complete-word)
+</pre></div>
+
+<hr>
+</div>
+</div>
+<div class="chapter" id="Alternate-character-sets">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Key-bindings" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#SPC-no-longer-completes-file-names" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Top" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Emacs-does-not-display-8_002dbit-characters" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Alternate-character-sets-1"></span><h1 class="chapter">10 Alternate character sets</h1>
+<span id="index-Alternate-character-sets"></span>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#Emacs-does-not-display-8_002dbit-characters">10.1 How do I make Emacs display 8-bit characters?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Inputting-eight_002dbit-characters">10.2 How do I input eight-bit characters?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Right_002dto_002dleft-alphabets">10.3 Where is an Emacs that can handle Semitic (right-to-left) alphabets?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#How-to-add-fonts">10.4 How do I add fonts for use with Emacs?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+</table>
+
+<hr>
+<div class="section" id="Emacs-does-not-display-8_002dbit-characters">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Inputting-eight_002dbit-characters" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-do-I-make-Emacs-display-8_002dbit-characters_003f"></span><h2 class="section">10.1 How do I make Emacs display 8-bit characters?</h2>
+<span id="index-Displaying-eight_002dbit-characters"></span>
+<span id="index-Eight_002dbit-characters_002c-displaying"></span>
+
+<p><a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Unibyte-Mode">Single-byte Character Set Support</a> in <cite>The GNU Emacs
+Manual</cite>を参照してください。Unixのテキストのみの端末ディスプレー、あるいは&lsquo;<samp>emacs
+-nw</samp>&rsquo;呼び出しでEmacsを実行する際には、たとえ言語環境を設定後であっても、通常は<code>set-terminal-coding-system</code>を使用してその端末で表示可能なものをEmacsに伝える必要があります。さもないと非<acronym>ASCII</acronym>文字は&lsquo;<samp>?</samp>&rsquo;と表示されるでしょう。他のMS-DOSやMS-Windowsのようなオペレーティングシステムでは、ディスプレーがサポートする文字についてEmacsがOSに問い合わせて、必要となる端末コーディングシステムを自動的にセットアップします。
+</p>
+<hr>
+</div>
+<div class="section" id="Inputting-eight_002dbit-characters">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Emacs-does-not-display-8_002dbit-characters" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Right_002dto_002dleft-alphabets" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-do-I-input-eight_002dbit-characters_003f"></span><h2 class="section">10.2 How do I input eight-bit characters?</h2>
+<span id="index-Entering-eight_002dbit-characters"></span>
+<span id="index-Eight_002dbit-characters_002c-entering"></span>
+<span id="index-Input_002c-8_002dbit-characters"></span>
+
+<p>8ビット文字の入力には様々なメソッドが利用できます。<a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Unibyte-Mode">Single-byte Character Set
+Support</a> in <cite>The GNU Emacs Manual</cite>を参照してください。より洗練されたメソッドについては<a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Input-Methods">Input
+Methods</a> in <cite>The GNU Emacs Manual</cite>を参照してください。
+</p>
+<hr>
+</div>
+<div class="section" id="Right_002dto_002dleft-alphabets">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Inputting-eight_002dbit-characters" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#How-to-add-fonts" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Where-is-an-Emacs-that-can-handle-Semitic-_0028right_002dto_002dleft_0029-alphabets_003f"></span><h2 class="section">10.3 Where is an Emacs that can handle Semitic (right-to-left) alphabets?</h2>
+<span id="index-Right_002dto_002dleft-alphabets"></span>
+<span id="index-Hebrew_002c-handling-with-Emacs"></span>
+<span id="index-Semitic-alphabets"></span>
+<span id="index-Arabic"></span>
+<span id="index-Farsi"></span>
+<span id="index-bidirectional-scripts"></span>
+
+<p>バージョン24.1以降のEmacsではアラビア語、ペルシア語、ヘブライ語のような双方向スクリプト(bidirectional
+script)の表示と編集がサポートされています。<a href="#New-in-Emacs-24">bidirectional
+display</a>を参照してください。
+</p>
+
+<hr>
+</div>
+<div class="section" id="How-to-add-fonts">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Right_002dto_002dleft-alphabets" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-do-I-add-fonts-for-use-with-Emacs_003f"></span><h2 class="section">10.4 How do I add fonts for use with Emacs?</h2>
+<span id="index-add-fonts-for-use-with-Emacs"></span>
+<span id="index-intlfonts"></span>
+
+<p>まずBDFフォントファイル、およびそれらが必要とするすべての補助パッケージをダウンロードしてインストールしてください。GNU
+Intlfontsディストリビューションは<a href="https://directory.fsf.org/localization/intlfonts.html">the GNU Software Directory Web site</a>で見つけることができます。
+</p>
+<p>次にXウィンドウシステムの場合には、シェルプロンプトから以下の2つのコマンドを実行してください:
+</p>
+<div class="example">
+<pre class="example">  xset +fp /usr/local/share/emacs/fonts
+  xset fp rehash
+</pre></div>
+
+<p>(<samp>/usr/local/share/emacs/fonts</samp>以外の場所にフォントをインストールしていたら1つ目のコマンドは変更が必要。)
+たとえば<samp>~/.xsessionrc</samp>や<samp>~/.gnomerc</samp>のようなウィンドウシステムのスタートアップファイルに追加する等、ログイン時いつでもこれら2つのコマンドが実行されるようにアレンジも必要でしょう。
+</p>
+<p>それでは以下の行をinitファイル<samp>~/.emacs</samp>に追加してください:
+</p>
+<div class="example lisp">
+<pre class="lisp">  (add-to-list 'bdf-directory-list &quot;/usr/share/emacs/fonts/bdf&quot;)
+</pre></div>
+
+<p>(繰り返しになるが、別の場所にフォントをインストールしていたらファイル名は変更すること。)
+</p>
+<p>最後に<code>ps-print</code>でインストール済みフォントを使用したければ、以下の行を<samp>~/.emacs</samp>に追加してください:
+</p>
+<div class="example lisp">
+<pre class="lisp">  (setq ps-multibyte-buffer 'bdf-font-except-latin)
+</pre></div>
+
+<p>MS-Windowsでは追加でいくつかのステップが必要です。以下にリストします。
+</p>
+<p>まずBDFフォントファイルがある<em>すべて</em>のディレクトリーが<code>bdf-directory-list</code>に記述されていることを確認してください。UnixおよびGNU/Linuxシステムでは同一ディレクトリーにBDFフォントをインストールするために<kbd>make
+install</kbd>を実行します。それとは対照的にWindowsユーザーは通常はIntlfontsインストールコマンドは実行せずに、どこかのディレクトリーにディストリビューションを解凍してください。このディレクトリーにはBDFフォントがあるサブディレクトリーが含まれています。たとえば<samp>C:/Intlfonts</samp>にIntlfontsを解凍したとすると、以下のように<code>bdf-directory-list</code>をセットする必要があります:
+</p>
+<div class="example lisp">
+<pre class="lisp">  (setq bdf-directory-list
+    '(&quot;C:/Intlfonts/Asian&quot;
+      &quot;C:/Intlfonts/Chinese&quot; &quot;C:/Intlfonts/Chinese.X&quot;
+      &quot;C:/Intlfonts/Chinese.BIG&quot; &quot;C:/Intlfonts/Ethiopic&quot;
+      &quot;C:/Intlfonts/European&quot; &quot;C:/Intlfonts/European.BIG&quot;
+      &quot;C:/Intlfonts/Japanese&quot; &quot;C:/Intlfonts/Japanese.X&quot;
+      &quot;C:/Intlfonts/Japanese.BIG&quot; &quot;C:/Intlfonts/Korean.X&quot;
+      &quot;C:/Intlfonts/Misc&quot;))
+</pre></div>
+
+<span id="index-w32_002dbdf_002dfilename_002dalist"></span>
+<span id="index-w32_002dfind_002dbdf_002dfonts"></span>
+<p>次は変数<code>w32-bdf-filename-alist</code>にBDFフォントのエイリアスとそれらに応じたファイル名をセットする必要があります。BDFフォントファイルのすべてのディレクトリーを<code>bdf-directory-list</code>にセットしたとすると、以下のLispコードで<code>w32-bdf-filename-alist</code>がセットアップされるはずです:
+</p>
+<div class="example lisp">
+<pre class="lisp">  (setq w32-bdf-filename-alist
+     (w32-find-bdf-fonts bdf-directory-list))
+</pre></div>
+
+<p>今度はBDFフォント用にフォントセットを作成します:
+</p>
+<div class="example">
+<pre class="example">  (create-fontset-from-fontset-spec
+   &quot;-*-fixed-medium-r-normal-*-16-*-*-*-c-*-fontset-bdf,
+   japanese-jisx0208:-*-*-medium-r-normal-*-16-*-*-*-c-*-jisx0208.1983-*,
+   katakana-jisx0201:-*-*-medium-r-normal-*-16-*-*-*-c-*-jisx0201*-*,
+   latin-jisx0201:-*-*-medium-r-normal-*-16-*-*-*-c-*-jisx0201*-*,
+   japanese-jisx0208-1978:-*-*-medium-r-normal-*-16-*-*-*-c-*-jisx0208.1978-*,
+   thai-tis620:-misc-fixed-medium-r-normal--16-160-72-72-m-80-tis620.2529-1,
+   lao:-misc-fixed-medium-r-normal--16-160-72-72-m-80-MuleLao-1,
+   tibetan-1-column:-TibMdXA-fixed-medium-r-normal--16-160-72-72-m-80-MuleTibetan-1,
+   ethiopic:-Admas-Ethiomx16f-Medium-R-Normal--16-150-100-100-M-160-Ethiopic-Unicode,
+   tibetan:-TibMdXA-fixed-medium-r-normal--16-160-72-72-m-160-MuleTibetan-0&quot;)
+</pre></div>
+
+<p>Intlfontsの国際化BDFフォントの多くはタイプ0なので、font-encoding-alistに追加する必要があります:
+</p>
+<div class="example lisp">
+<pre class="lisp">  (setq font-encoding-alist
+        (append '((&quot;MuleTibetan-0&quot; (tibetan . 0))
+                  (&quot;GB2312&quot;        (chinese-gb2312 . 0))
+                  (&quot;JISX0208&quot;      (japanese-jisx0208 . 0))
+                  (&quot;JISX0212&quot;      (japanese-jisx0212 . 0))
+                  (&quot;VISCII&quot;        (vietnamese-viscii-lower . 0))
+                  (&quot;KSC5601&quot;       (korean-ksc5601 . 0))
+                  (&quot;MuleArabic-0&quot;  (arabic-digit . 0))
+                  (&quot;MuleArabic-1&quot;  (arabic-1-column . 0))
+                  (&quot;MuleArabic-2&quot;  (arabic-2-column . 0)))
+                font-encoding-alist))
+</pre></div>
+
+<p>これでEmacsのフォントメニュー、あるいは<samp>~/.emacs</samp>でデフォルトフォントを設定することにより、&lsquo;<samp>bdf: 16-dot
+medium</samp>&rsquo;の選択ができるようになりました。 
+</p>
+<div class="example lisp">
+<pre class="lisp">  (set-frame-font &quot;fontset-bdf&quot;)
+</pre></div>
+
+
+<hr>
+</div>
+</div>
+<div class="chapter" id="Mail-and-news">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Alternate-character-sets" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#How-to-add-fonts" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Top" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Changing-the-included-text-prefix" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Mail-and-news-1"></span><h1 class="chapter">11 Mail and news</h1>
+<span id="index-Mail-and-news"></span>
+
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top"><a href="#Changing-the-included-text-prefix">11.1 How do I change the included text prefix in mail/news followups?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Saving-a-copy-of-outgoing-mail">11.2 How do I save a copy of outgoing mail?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Expanding-aliases-when-sending-mail">11.3 Why doesn&rsquo;t Emacs expand my aliases when sending mail?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Sorting-the-messages-in-an-Rmail-folder">11.4 How can I sort the messages in my Rmail folder?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Rmail-writes-to-_002fvar_002fspool_002fmail">11.5 Why does Rmail need to write to <samp>/var/spool/mail</samp>?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Replying-to-the-sender-of-a-message">11.6 How can I force Rmail to reply to the sender of a message, but not the other recipients?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Automatically-starting-a-mail-or-news-reader">11.7 How do I make Emacs automatically start my mail/news reader?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Reading-news-with-Emacs">11.8 How do I read news under Emacs?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Making-Gnus-faster">11.9 How do I make Gnus faster?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+<tr><td align="left" valign="top"><a href="#Catching-up-in-all-newsgroups">11.10 How do I catch up all newsgroups in Gnus?</a></td><td>&nbsp;&nbsp;</td><td align="left" valign="top">
+</td></tr>
+</table>
+
+<hr>
+<div class="section" id="Changing-the-included-text-prefix">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Mail-and-news" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Saving-a-copy-of-outgoing-mail" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-do-I-change-the-included-text-prefix-in-mail_002fnews-followups_003f"></span><h2 class="section">11.1 How do I change the included text prefix in mail/news followups?</h2>
+<span id="index-Prefix-in-mail_002fnews-followups_002c-changing"></span>
+<span id="index-Included-text-prefix_002c-changing"></span>
+<span id="index-Setting-the-included-text-character"></span>
+<span id="index-Quoting-in-mail-messages"></span>
+
+<p>メールをRmailで読んでいる場合には変数<code>mail-yank-prefix</code>、Gnusなら<code>message-yank-prefix</code>、VMなら<code>vm-included-text-prefix</code>、mh-eなら<code>mh-ins-buf-prefix</code>をセットしてください。
+</p>
+<p>より装飾的に引用を制御するにはSupercite(<a data-manual="sc" href="sc.html#Top">the Supercite Manual</a> in <cite>The Supercite
+Manual</cite>を参照)を使用してください。
+</p>
+<p>Emacsが返信先メッセージの様々なヘッダーを含めないようにするには、<code>mail-yank-ignored-headers</code>の値に適切な正規表現をセットしてください。
+</p>
+<hr>
+</div>
+<div class="section" id="Saving-a-copy-of-outgoing-mail">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Mail-and-news" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Changing-the-included-text-prefix" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Expanding-aliases-when-sending-mail" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-do-I-save-a-copy-of-outgoing-mail_003f"></span><h2 class="section">11.2 How do I save a copy of outgoing mail?</h2>
+<span id="index-Saving-a-copy-of-outgoing-mail"></span>
+<span id="index-Copying-outgoing-mail-to-a-file"></span>
+<span id="index-Filing-outgoing-mail"></span>
+<span id="index-Automatic-filing-of-outgoing-mail"></span>
+<span id="index-Mail_002c-saving-outgoing-automatically"></span>
+
+<p>メールメッセージの&lsquo;<samp>BCC</samp>&rsquo;ヘッダーに自分を含めて自分にコピーをメールしたり、あるいは&lsquo;<samp>FCC</samp>&rsquo;ヘッダーにファイルを含めてメッセージのコピーを直接保存できます。
+</p>
+<p>標準的なメールを使用しているなら、以下を<samp>.emacs</samp>ファイル記述して自分への&lsquo;<samp>BCC</samp>&rsquo;を自動的に作成できます。
+</p>
+<div class="example lisp">
+<pre class="lisp">(setq mail-self-blind t)
+</pre></div>
+
+<p>以下のような行を<samp>.emacs</samp>ファイルに記述すれば、自動的に&lsquo;<samp>FCC</samp>&rsquo;フィールドを含めることができます:
+</p>
+<div class="example lisp">
+<pre class="lisp">(setq mail-archive-file-name (expand-file-name &quot;~/outgoing&quot;))
+</pre></div>
+
+<p>出力ファイルは Unixのメール形式になります。
+</p>
+<p><code>mh-e</code>を使用しているなら&lsquo;<samp>FCC</samp>&rsquo;と&lsquo;<samp>BCC</samp>&rsquo;のフィールドをコンポーネントファイルに加えてください。
+</p>
+<p><samp>.mailrc</samp>に&lsquo;<samp>set record filename</samp>&rsquo;を記述しても機能しません。
+</p>
+<hr>
+</div>
+<div class="section" id="Expanding-aliases-when-sending-mail">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Mail-and-news" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Saving-a-copy-of-outgoing-mail" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Sorting-the-messages-in-an-Rmail-folder" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Why-doesn_0027t-Emacs-expand-my-aliases-when-sending-mail_003f"></span><h2 class="section">11.3 Why doesn&rsquo;t Emacs expand my aliases when sending mail?</h2>
+<span id="index-Expanding-aliases-when-sending-mail"></span>
+<span id="index-Mail-alias-expansion"></span>
+<span id="index-Sending-mail-with-aliases"></span>
+
+<p><a data-manual="emacs" href="https://www.gnu.org/software/emacs/manual/html_mono/emacs.html#Mail-Aliases">The Emacs Manual</a> in <cite>The Emacs Manual</cite>を参照してください。
+</p>
+<ul>
+<li> Emacsは通常はメール送信の際にエイリアスを展開する。送信前に展開するには<kbd>M-x expand-mail-aliases</kbd>を使用する。
+
+</li><li> Emacsは通常はセッションごとに1回、最初のメールメッセージを作成するときしか<samp>.mailrc</samp>ファイルを読み込まない。その後にファイルを編集したら<kbd>M-x
+build-mail-aliases</kbd>を使用してEmacsに再読み込みさせることができる。これはEmacs
+24.1以前は対話的なコマンドではないので、かわりに<kbd>M-: (build-mail-aliases)
+<span class="key">RET</span></kbd>とタイプしなければならない。
+
+</li><li> もしも望むならabbrevとしてタイプすればすぐにメールエイリアスを展開できる。この機能を有効にするには以下を実行する:
+
+<div class="example lisp">
+<pre class="lisp">(add-hook 'mail-mode-hook 'mail-abbrevs-setup)
+</pre></div>
+
+<p>エイリアスは単語区切り文字(<tt class="key">RET</tt>や<kbd>,</kbd>)をタイプした後でのみ自動的に展開される。エイリアス終端にポイントを移動して<kbd>C-x
+a e</kbd> (<kbd>M-x expand-abbrev</kbd>)をタイプして強制的に展開させることができる。
+</p></li></ul>
+
+<hr>
+</div>
+<div class="section" id="Sorting-the-messages-in-an-Rmail-folder">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Mail-and-news" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Expanding-aliases-when-sending-mail" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Rmail-writes-to-_002fvar_002fspool_002fmail" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-can-I-sort-the-messages-in-my-Rmail-folder_003f"></span><h2 class="section">11.4 How can I sort the messages in my Rmail folder?</h2>
+<span id="index-Rmail_002c-sorting-messages-in"></span>
+<span id="index-Folder_002c-sorting-messages-in-an-Rmail"></span>
+<span id="index-Sorting-messages-in-an-Rmail-folder"></span>
+
+<p>Rmailでソート関数とそれらのキーバインディングのリストを得るには<kbd>C-c C-s C-h</kbd>とタイプします。
+</p>
+<hr>
+</div>
+<div class="section" id="Rmail-writes-to-_002fvar_002fspool_002fmail">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Mail-and-news" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Sorting-the-messages-in-an-Rmail-folder" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Replying-to-the-sender-of-a-message" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Why-does-Rmail-need-to-write-to-_002fvar_002fspool_002fmail_003f"></span><h2 class="section">11.5 Why does Rmail need to write to <samp>/var/spool/mail</samp>?</h2>
+<span id="index-Rmail-and-_002fvar_002fspool_002fmail"></span>
+<span id="index-_002fvar_002fspool_002fmail-and-Rmail"></span>
+
+<p>これはRmailが使用する<code>movemail</code>プログラムの振る舞いです。これは<code>movemail</code>がロックファイルを使うように設定されていることを示しています。
+</p>
+<p>RMSは記しています:
+</p>
+<blockquote>
+<p>特定のシステムではメールファイルへのアクセスをインターロックするためにロックファイルが必要です。これらのシステムでは<code>movemail</code>はロックファイルに書き込まなければなりません。さもないとメールを失うリスクがあるからです。あなたはただ<code>movemail</code>にロックファイルを書き込ませるようアレンジしなければなりません。
+</p>
+<p>他のシステムではインターロックアクセスのために<code>flock</code>システムコールを使用します。これらのシステムでは<code>flock</code>を使用するように<code>movemail</code>を設定するべきです。
+</p></blockquote>
+
+<hr>
+</div>
+<div class="section" id="Replying-to-the-sender-of-a-message">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Mail-and-news" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Rmail-writes-to-_002fvar_002fspool_002fmail" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Automatically-starting-a-mail-or-news-reader" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-can-I-force-Rmail-to-reply-to-the-sender-of-a-message_002c-but-not-the-other-recipients_003f"></span><h2 class="section">11.6 How can I force Rmail to reply to the sender of a message, but not the other recipients?</h2>
+<span id="index-Replying-only-to-the-sender-of-a-message"></span>
+<span id="index-Sender_002c-replying-only-to"></span>
+<span id="index-Rmail_002c-replying-to-the-sender-of-a-message-in"></span>
+
+<p>Ron Isaacsonは述べています:
+Rmailで返信するために<kbd>r</kbd>をタイプすると、デフォルトでは元の受信者すべて(元の&lsquo;<samp>To</samp>&rsquo;と&lsquo;<samp>CC</samp>&rsquo;のリスト全員)にCCされます。(<kbd>r</kbd>の前に<kbd>C-u</kbd>をタイプして)プレフィクス引数を指定すると、送信者だけに返信します。とはいえ返信したいときに全体を通して<kbd>C-u</kbd>作業を行うのは苦痛です。以下はわたしがこれに対処した中では最良の修整です。
+</p>
+<div class="example lisp">
+<pre class="lisp">(defun rmail-reply-t ()
+  &quot;カレントメッセージの送信者だけに返信する(rmail-replyを参照)&quot;
+  (interactive)
+  (rmail-reply t))
+
+(add-hook 'rmail-mode-hook
+  (lambda ()
+    (define-key rmail-mode-map &quot;r&quot; 'rmail-reply-t)
+    (define-key rmail-mode-map &quot;R&quot; 'rmail-reply)))
+</pre></div>
+
+<hr>
+</div>
+<div class="section" id="Automatically-starting-a-mail-or-news-reader">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Mail-and-news" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Replying-to-the-sender-of-a-message" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Reading-news-with-Emacs" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>

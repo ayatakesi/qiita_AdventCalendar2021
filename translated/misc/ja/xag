@@ -1,0 +1,1000 @@
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-do-I-make-Emacs-automatically-start-my-mail_002fnews-reader_003f"></span><h2 class="section">11.7 How do I make Emacs automatically start my mail/news reader?</h2>
+<span id="index-Mail-reader_002c-starting-automatically"></span>
+<span id="index-News-reader_002c-starting-automatically"></span>
+<span id="index-Starting-mail_002fnews-reader-automatically"></span>
+
+<p>EmacsをGnusで開始するには:
+</p>
+<div class="example">
+<pre class="example">emacs -f gnus
+</pre></div>
+
+<p>Rmailでは:
+</p>
+<div class="example">
+<pre class="example">emacs -f rmail
+</pre></div>
+
+<p>Gnusでより便利に開始するには:
+</p>
+<div class="example">
+<pre class="example">alias gnus 'emacs -f gnus'
+gnus
+</pre></div>
+
+<p><samp>.emacs</samp>ファイルから自動的にメールやニュースを開始するのは、恐らく賢明ではないでしょう。これは同時に2つのEmacsを実行する必要がある場合には問題を起こすかもしれません。更に必要な際に素早くEmacsを開始するのが困難になるかもしれません。
+</p>
+<hr>
+</div>
+<div class="section" id="Reading-news-with-Emacs">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Mail-and-news" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Automatically-starting-a-mail-or-news-reader" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Making-Gnus-faster" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-do-I-read-news-under-Emacs_003f"></span><h2 class="section">11.8 How do I read news under Emacs?</h2>
+<span id="index-Reading-news-under-Emacs"></span>
+<span id="index-Usenet-reader-in-Emacs"></span>
+<span id="index-Gnus-newsreader"></span>
+<span id="index-FAQ-for-Gnus"></span>
+<span id="index-Gnus-FAQ"></span>
+<span id="index-Learning-more-about-Gnus"></span>
+
+<p><kbd>M-x gnus</kbd>を使用します。<a data-manual="gnus" href="https://www.gnu.org/software/emacs/manual/html_mono/gnus.html#Frequently-Asked-Questions">the Gnus FAQ</a> in <cite>The Gnus Manual</cite>に含まれている<a data-manual="gnus" href="https://www.gnu.org/software/emacs/manual/html_mono/gnus.html#Top">the Gnus Manual</a> in <cite>The Gnus
+Manual</cite>を参照してください。
+</p>
+
+<hr>
+</div>
+<div class="section" id="Making-Gnus-faster">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Mail-and-news" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Reading-news-with-Emacs" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Catching-up-in-all-newsgroups" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-do-I-make-Gnus-faster_003f"></span><h2 class="section">11.9 How do I make Gnus faster?</h2>
+<span id="index-Faster_002c-starting-Gnus"></span>
+<span id="index-Starting-Gnus-faster"></span>
+<span id="index-Gnus_002c-starting-faster"></span>
+<span id="index-Slow-catch-up-in-Gnus"></span>
+<span id="index-Gnus-is-slow-when-catching-up"></span>
+<span id="index-Crosspostings-make-Gnus-catching-up-slow"></span>
+
+<p>Gnus FAQ(<a href="#Reading-news-with-Emacs">How do I read news under Emacs?</a>を参照)から引用します:
+</p>
+<blockquote>
+<p>古いマシンの場合、あるいは実際にじれったいだけなら、Gnusの実行を高速にするためにできることがあります。
+</p>
+<p>起動をより高速にするためには<code>gnus-check-new-newsgroups</code>と<code>gnus-check-bogus-newsgroups</code>に<code>nil</code>をセットしてください。
+</p>
+<p>summaryバッファーへの出入りをより高速にするために<code>gnus-show-threads</code>、<code>gnus-nov-is-evil</code>、<code>gnus-use-cross-reference</code>に<code>nil</code>をセットしてください。
+</p></blockquote>
+
+<hr>
+</div>
+<div class="section" id="Catching-up-in-all-newsgroups">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Mail-and-news" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Making-Gnus-faster" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Mail-and-news" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Next section in reading order"> &gt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Next chapter"> &gt;&gt; </a>]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="How-do-I-catch-up-all-newsgroups-in-Gnus_003f"></span><h2 class="section">11.10 How do I catch up all newsgroups in Gnus?</h2>
+<span id="index-Catching-up-all-newsgroups-in-Gnus"></span>
+<span id="index-Gnus_002c-Catching-up-all-newsgroups-in"></span>
+
+<p><samp>*Newsgroup*</samp>バッファーで<kbd>M-&lt; C-x ( c y C-x ) M-0 C-x e</kbd>とタイプします。
+</p>
+<p><samp>*Newsgroup*</samp>バッファーのポイント位置からバッファー終端までを確認したいだけなら、先頭の<kbd>M-&lt;</kbd>は省略してください。
+</p>
+<hr>
+</div>
+</div>
+<div class="unnumbered" id="Concept-index">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Mail-and-news" title="Beginning of this chapter or previous chapter"> &lt;&lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Catching-up-in-all-newsgroups" title="Previous section in reading order"> &lt; </a>]</td>
+<td valign="middle" align="left">[<a href="#Top" title="Up section"> Up </a>]</td>
+<td valign="middle" align="left">[ &gt; ]</td>
+<td valign="middle" align="left">[ &gt;&gt; ]</td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left"> &nbsp; </td>
+<td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<span id="Concept-Index"></span><h1 class="unnumbered">Concept Index</h1>
+<table><tr><th valign="top">Jump to: &nbsp; </th><td><a class="summary-letter" href="#Concept-Index_cp_symbol-1"><b>#</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_symbol-2"><b>$</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_symbol-3"><b>-</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_symbol-4"><b>.</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_symbol-5"><b>/</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_symbol-6"><b>2</b></a>
+ &nbsp; 
+<br>
+<a class="summary-letter" href="#Concept-Index_cp_letter-A"><b>A</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-B"><b>B</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-C"><b>C</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-D"><b>D</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-E"><b>E</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-F"><b>F</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-G"><b>G</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-H"><b>H</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-I"><b>I</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-J"><b>J</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-K"><b>K</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-L"><b>L</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-M"><b>M</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-N"><b>N</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-O"><b>O</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-P"><b>P</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-Q"><b>Q</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-R"><b>R</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-S"><b>S</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-T"><b>T</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-U"><b>U</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-V"><b>V</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-W"><b>W</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-X"><b>X</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-Y"><b>Y</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-Z"><b>Z</b></a>
+ &nbsp; 
+</td></tr></table>
+<table class="index-cp" border="0">
+<tr><td></td><th align="left">Index Entry</th><td>&nbsp;</td><th align="left"> Section</th></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_symbol-1">#</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-_0023ifdef_002c-selective-display-of"><code>#ifdef</code>, selective display of</a></td><td>&nbsp;</td><td valign="top"><a href="#Hiding-_0023ifdef-lines">5.26 Cモードでコンパイラーが<code>#ifdef</code>処理後に残る行だけを表示するには?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_symbol-2">$</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-_0024-in-file-names">&lsquo;<samp>$</samp>&rsquo; in file names</a></td><td>&nbsp;</td><td valign="top"><a href="#Editing-files-with-_0024-in-the-name">6.8 How do I edit a file with a &lsquo;<samp>$</samp>&rsquo; in its name?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_symbol-3">-</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-_002ddebug_002dinit-option">&lsquo;<samp>-debug-init</samp>&rsquo; option</a></td><td>&nbsp;</td><td valign="top"><a href="#Debugging-a-customization-file">5.4 <samp>.emacs</samp>ファイルをデバッグするには?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_symbol-4">.</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-_002e_002c-equivalent-to-vi-command"><code>.</code>, equivalent to <code>vi</code> command</a></td><td>&nbsp;</td><td valign="top"><a href="#Repeating-commands">5.27 できるだけ沢山コマンドを繰り返すには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-_002eemacs-debugging"><samp>.emacs</samp> debugging</a></td><td>&nbsp;</td><td valign="top"><a href="#Debugging-a-customization-file">5.4 <samp>.emacs</samp>ファイルをデバッグするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-_002eemacs-file_002c-errors-in"><samp>.emacs</samp> file, errors in</a></td><td>&nbsp;</td><td valign="top"><a href="#Errors-with-init-files">6.5 Why does Emacs say &lsquo;<samp>Error in init file</samp>&rsquo;?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-_002eemacs-file_002c-locating"><samp>.emacs</samp> file, locating</a></td><td>&nbsp;</td><td valign="top"><a href="#Setting-up-a-customization-file">5.1 <samp>.emacs</samp>ファイルを正しくセットアップするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-_002eemacs-file_002c-setting-up"><samp>.emacs</samp> file, setting up</a></td><td>&nbsp;</td><td valign="top"><a href="#Setting-up-a-customization-file">5.1 <samp>.emacs</samp>ファイルを正しくセットアップするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-_002eXdefaults"><samp>.Xdefaults</samp></a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-ignores-X-resources">6.6 Why does Emacs ignore my X resources (my .Xdefaults file)?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_symbol-5">/</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-_002fvar_002fspool_002fmail-and-Rmail"><samp>/var/spool/mail</samp> and Rmail</a></td><td>&nbsp;</td><td valign="top"><a href="#Rmail-writes-to-_002fvar_002fspool_002fmail">11.5 Why does Rmail need to write to <samp>/var/spool/mail</samp>?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_symbol-6">2</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-24_002dbit-direct-color-mode">24-bit direct color mode</a></td><td>&nbsp;</td><td valign="top"><a href="#Colors-on-a-TTY">5.3 TTYで色や構文ハイライトするには?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-A">A</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Abbrevs_002c-turning-on-by-default">Abbrevs, turning on by default</a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-on-abbrevs-by-default">5.7 モード<var>mymode</var>でデフォルトでabbrevをオンにするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Acronyms_002c-definitions-for">Acronyms, definitions for</a></td><td>&nbsp;</td><td valign="top"><a href="#Common-acronyms">1.5 FSF、GNU、RMS、GPLとは何なのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-add-fonts-for-use-with-Emacs">add fonts for use with Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#How-to-add-fonts">10.4 How do I add fonts for use with Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Adding-to-load_002dpath">Adding to <code>load-path</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Changing-load_002dpath">5.16 <code>load-path</code>を変更するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Alternate-character-sets">Alternate character sets</a></td><td>&nbsp;</td><td valign="top"><a href="#Alternate-character-sets">10 Alternate character sets</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Alternative-Info-file-viewers">Alternative Info file viewers</a></td><td>&nbsp;</td><td valign="top"><a href="#Viewing-Info-files-outside-of-Emacs">3.7 Emacsを使わずにInfoファイルを閲覧できる?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Anti_002daliased-fonts">Anti-aliased fonts</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Antivirus-programs_002c-and-Shell-Mode">Antivirus programs, and Shell Mode</a></td><td>&nbsp;</td><td valign="top"><a href="#Problems-with-Shell-Mode">6.3 Why do I get an error message when I try to run <kbd>M-x shell</kbd>?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Apple-computers_002c-Emacs-for">Apple computers, Emacs for</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-for-macOS">8.11 Where can I get Emacs for macOS?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Apropos">Apropos</a></td><td>&nbsp;</td><td valign="top"><a href="#Learning-how-to-do-something">3.2 Emacsで何かを行う方法を見つけるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Arabic">Arabic</a></td><td>&nbsp;</td><td valign="top"><a href="#Right_002dto_002dleft-alphabets">10.3 Where is an Emacs that can handle Semitic (right-to-left) alphabets?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Archived-postings-from-gnu_002eemacs_002ehelp">Archived postings from <code>gnu.emacs.help</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Newsgroup-archives">2.3 <a href="news:gnu.emacs.help">news:gnu.emacs.help</a>や他のGNUグループへの古い投稿はどこで入手できる?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Arrow-keys_002c-symbols-generated-by">Arrow keys, symbols generated by</a></td><td>&nbsp;</td><td valign="top"><a href="#Working-with-function-and-arrow-keys">9.4 How do I tell what characters or symbols my function or arrow keys emit?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Aspell">Aspell</a></td><td>&nbsp;</td><td valign="top"><a href="#Spell_002dcheckers">8.4 Spell-checkers</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Associating-modes-with-files">Associating modes with files</a></td><td>&nbsp;</td><td valign="top"><a href="#Associating-modes-with-files">5.8 特定のファイルに特定のモードをEmacsに使用させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-auto_002dfill_002dmode_002c-activating-automatically"><code>auto-fill-mode</code>, activating automatically</a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-on-auto_002dfill-by-default">5.15 デフォルトで<code>auto-fill-mode</code>をオンにするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-auto_002dfill_002dmode_002c-introduction-to"><code>auto-fill-mode</code>, introduction to</a></td><td>&nbsp;</td><td valign="top"><a href="#Wrapping-words-automatically">5.14 自分用にEmacsに単語を折り返させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-auto_002dmode_002dalist_002c-modifying"><code>auto-mode-alist</code>, modifying</a></td><td>&nbsp;</td><td valign="top"><a href="#Associating-modes-with-files">5.8 特定のファイルに特定のモードをEmacsに使用させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Auto_002dsaving">Auto-saving</a></td><td>&nbsp;</td><td valign="top"><a href="#Disabling-auto_002dsave_002dmode">5.38 <code>auto-save-mode</code>を無効にするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-automatic-display-of-Lisp-APIs">automatic display of Lisp APIs</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Automatic-entry-to-auto_002dfill_002dmode">Automatic entry to <code>auto-fill-mode</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-on-auto_002dfill-by-default">5.15 デフォルトで<code>auto-fill-mode</code>をオンにするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Automatic-filing-of-outgoing-mail">Automatic filing of outgoing mail</a></td><td>&nbsp;</td><td valign="top"><a href="#Saving-a-copy-of-outgoing-mail">11.2 How do I save a copy of outgoing mail?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-B">B</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Backspace-key-invokes-help"><tt class="key">Backspace</tt> key invokes help</a></td><td>&nbsp;</td><td valign="top"><a href="#Backspace-invokes-help">9.6 Why does the <tt class="key">Backspace</tt> key invoke help?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Backup-files-in-a-single-directory">Backup files in a single directory</a></td><td>&nbsp;</td><td valign="top"><a href="#Disabling-backups">5.37 バックアップファイルを無効にするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Backups_002c-disabling">Backups, disabling</a></td><td>&nbsp;</td><td valign="top"><a href="#Disabling-backups">5.37 バックアップファイルを無効にするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Basic-editing-with-Emacs">Basic editing with Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-editing">3.1 Emacsは初めて; 基本的な編集を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Basic-keys">Basic keys</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-keys">1.1 <kbd>C-h</kbd>、<kbd>C-M-a</kbd>、<tt class="key">RET</tt>、<kbd><span class="key">ESC</span> a</kbd>等は何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Bazaar-repository_002c-Emacs">Bazaar repository, Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Latest-version-of-Emacs">4.2 Emacsの最新バージョンとは?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Beeping_002c-turning-off">Beeping, turning off</a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-off-beeping">5.22 端末でEmacsのビープ音を止めるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Beginning-editing">Beginning editing</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-editing">3.1 Emacsは初めて; 基本的な編集を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Bell_002c-visible">Bell, visible</a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-off-beeping">5.22 端末でEmacsのビープ音を止めるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Bell_002c-volume-of">Bell, volume of</a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-the-volume-down">5.23 XでEmacsを実行中にベル音量を下げるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-bidirectional-display">bidirectional display</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-24">4.6 Emacs 24は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-bidirectional-editing">bidirectional editing</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-bidirectional-scripts">bidirectional scripts</a></td><td>&nbsp;</td><td valign="top"><a href="#Right_002dto_002dleft-alphabets">10.3 Where is an Emacs that can handle Semitic (right-to-left) alphabets?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-bignum-support">bignum support</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-27">4.3 Emacs 27は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Binding-keys-to-commands">Binding keys to commands</a></td><td>&nbsp;</td><td valign="top"><a href="#Binding-keys-to-commands">9.1 How do I bind keys (including function keys) to commands?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Binding-modifiers-and-function-keys">Binding modifiers and function keys</a></td><td>&nbsp;</td><td valign="top"><a href="#Binding-combinations-of-modifiers-and-function-keys">9.12 How do I bind a combination of modifier key and function key?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-bracketed-paste-mode">bracketed paste mode</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Bug-reporting">Bug reporting</a></td><td>&nbsp;</td><td valign="top"><a href="#Reporting-bugs">2.4 Emacsのバグやその他の問題はどこにレポートすれば?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Bugs-and-problems">Bugs and problems</a></td><td>&nbsp;</td><td valign="top"><a href="#Bugs-and-problems">6 Bugs and problems</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Building-Emacs-from-source">Building Emacs from source</a></td><td>&nbsp;</td><td valign="top"><a href="#Installing-Emacs">7.1 How do I install Emacs?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-C">C</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-C_002dh_002c-definition-of"><kbd>C-h</kbd>, definition of</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-keys">1.1 <kbd>C-h</kbd>、<kbd>C-M-a</kbd>、<tt class="key">RET</tt>、<kbd><span class="key">ESC</span> a</kbd>等は何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-C_002dM_002dh_002c-definition-of"><kbd>C-M-h</kbd>, definition of</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-keys">1.1 <kbd>C-h</kbd>、<kbd>C-M-a</kbd>、<tt class="key">RET</tt>、<kbd><span class="key">ESC</span> a</kbd>等は何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Case-sensitivity-in-replacements">Case sensitivity in replacements</a></td><td>&nbsp;</td><td valign="top"><a href="#Controlling-case-sensitivity">5.10 検索や置換の際にEmacsによる大文字小文字の区別を制御するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Case-sensitivity-of-searches">Case sensitivity of searches</a></td><td>&nbsp;</td><td valign="top"><a href="#Controlling-case-sensitivity">5.10 検索や置換の際にEmacsによる大文字小文字の区別を制御するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-case_002dfold_002dsearch"><code>case-fold-search</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Controlling-case-sensitivity">5.10 検索や置換の際にEmacsによる大文字小文字の区別を制御するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-case_002dreplace"><code>case-replace</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Controlling-case-sensitivity">5.10 検索や置換の際にEmacsによる大文字小文字の区別を制御するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Catching-up-all-newsgroups-in-Gnus">Catching up all newsgroups in Gnus</a></td><td>&nbsp;</td><td valign="top"><a href="#Catching-up-in-all-newsgroups">11.10 How do I catch up all newsgroups in Gnus?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-character-folding-in-searches">character folding in searches</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Character-sets">Character sets</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Checking-spelling">Checking spelling</a></td><td>&nbsp;</td><td valign="top"><a href="#Spell_002dcheckers">8.4 Spell-checkers</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Colorizing-text">Colorizing text</a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-on-syntax-highlighting">5.42 構文ハイライトをオンにするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Colors-on-a-TTY">Colors on a TTY</a></td><td>&nbsp;</td><td valign="top"><a href="#Colors-on-a-TTY">5.3 TTYで色や構文ハイライトするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Colors-on-text_002donly-terminals">Colors on text-only terminals</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-21">4.9 Emacs 21は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Column_002c-displaying-the-current">Column, displaying the current</a></td><td>&nbsp;</td><td valign="top"><a href="#Displaying-the-current-line-or-column">5.5 Emacsに現在の行(や列)の番号を表示させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Command-description-in-the-manual">Command description in the manual</a></td><td>&nbsp;</td><td valign="top"><a href="#Learning-how-to-do-something">3.2 Emacsで何かを行う方法を見つけるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Commands_002c-binding-keys-to">Commands, binding keys to</a></td><td>&nbsp;</td><td valign="top"><a href="#Binding-keys-to-commands">9.1 How do I bind keys (including function keys) to commands?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Commands_002c-extended">Commands, extended</a></td><td>&nbsp;</td><td valign="top"><a href="#Extended-commands">1.2 <samp>M-x <var>command</var></samp>の意味は?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Commands_002c-repeating-many-times">Commands, repeating many times</a></td><td>&nbsp;</td><td valign="top"><a href="#Repeating-commands">5.27 できるだけ沢山コマンドを繰り返すには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Common-acronyms_002c-definitions-for">Common acronyms, definitions for</a></td><td>&nbsp;</td><td valign="top"><a href="#Common-acronyms">1.5 FSF、GNU、RMS、GPLとは何なのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Common-requests">Common requests</a></td><td>&nbsp;</td><td valign="top"><a href="#Common-requests">5 よくある要望</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Compilation-error-messages">Compilation error messages</a></td><td>&nbsp;</td><td valign="top"><a href="#Going-to-a-line-by-number">5.39 行番号で特定行に移動するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Compiler-error-messages_002c-recognizing">Compiler error messages, recognizing</a></td><td>&nbsp;</td><td valign="top"><a href="#Compiler-error-messages">5.18 わたしのコンパイラーの変なエラーメッセージをEmacsに認識させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Compiling-and-installing-Emacs">Compiling and installing Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Compiling-and-installing-Emacs">7 Compiling and installing Emacs</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Compiling-Emacs-for-DOS">Compiling Emacs for DOS</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-for-MS_002dDOS">8.8 Where can I get Emacs for MS-DOS?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Compose-Character-key_002c-using-as-Meta"><tt class="key">Compose Character</tt> key, using as <tt class="key">Meta</tt></a></td><td>&nbsp;</td><td valign="top"><a href="#Compose-Character">9.11 Can I make my <tt class="key">Compose Character</tt> key behave like a <tt class="key">Meta</tt> key?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Console_002c-colors">Console, colors</a></td><td>&nbsp;</td><td valign="top"><a href="#Colors-on-a-TTY">5.3 TTYで色や構文ハイライトするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Contracting-the-FSF">Contracting the FSF</a></td><td>&nbsp;</td><td valign="top"><a href="#Contacting-the-FSF">2.6 How do I contact the FSF?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Control-characters_002c-generating">Control characters, generating</a></td><td>&nbsp;</td><td valign="top"><a href="#Producing-C_002dXXX-with-the-keyboard">9.8 How do I produce C-XXX with my keyboard?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Control-characters_002c-working-with">Control characters, working with</a></td><td>&nbsp;</td><td valign="top"><a href="#Working-with-unprintable-characters">5.11 プリント不可文字(8ビット文字やコントロール文字)の検索、削除、置換を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Control-key_002c-notation-for">Control key, notation for</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-keys">1.1 <kbd>C-h</kbd>、<kbd>C-M-a</kbd>、<tt class="key">RET</tt>、<kbd><span class="key">ESC</span> a</kbd>等は何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Control_002dMeta-characters_002c-notation-for">Control-Meta characters, notation for</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-keys">1.1 <kbd>C-h</kbd>、<kbd>C-M-a</kbd>、<tt class="key">RET</tt>、<kbd><span class="key">ESC</span> a</kbd>等は何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Conventions-for-file-names">Conventions for file names</a></td><td>&nbsp;</td><td valign="top"><a href="#File_002dname-conventions">1.4 <samp>src/config.h</samp>、<samp>site-lisp/default.el</samp>等は何なのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Copying-outgoing-mail-to-a-file">Copying outgoing mail to a file</a></td><td>&nbsp;</td><td valign="top"><a href="#Saving-a-copy-of-outgoing-mail">11.2 How do I save a copy of outgoing mail?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-COPYING_002c-description-of-file"><samp>COPYING</samp>, description of file</a></td><td>&nbsp;</td><td valign="top"><a href="#Informational-files-for-Emacs">3.8 利用できるEmacs情報のファイルは?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Copyleft_002c-real-meaning-of">Copyleft, real meaning of</a></td><td>&nbsp;</td><td valign="top"><a href="#Real-meaning-of-copyleft">2.1 GNUのcopyleftとは法的に実際には何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Creating-new-menu-options">Creating new menu options</a></td><td>&nbsp;</td><td valign="top"><a href="#Modifying-pull_002ddown-menus">5.40 プルダウンの新たなメニューオプションの作成や変更を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Crosspostings-make-Gnus-catching-up-slow">Crosspostings make Gnus catching up slow</a></td><td>&nbsp;</td><td valign="top"><a href="#Making-Gnus-faster">11.9 How do I make Gnus faster?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Current-directory-and-shell_002dmode">Current directory and <code>shell-mode</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Shell-mode-loses-the-current-directory">6.9 Why does shell mode lose track of the shell&rsquo;s current directory?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Current-GNU-distributions">Current GNU distributions</a></td><td>&nbsp;</td><td valign="top"><a href="#Current-GNU-distributions">8.5 Where can I get other up-to-date GNU stuff?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Customization-file_002c-setting-up">Customization file, setting up</a></td><td>&nbsp;</td><td valign="top"><a href="#Setting-up-a-customization-file">5.1 <samp>.emacs</samp>ファイルを正しくセットアップするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Customize-groups">Customize groups</a></td><td>&nbsp;</td><td valign="top"><a href="#Using-Customize">5.2 Customizeを使い始めるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Customize-indentation">Customize indentation</a></td><td>&nbsp;</td><td valign="top"><a href="#Customizing-C-and-C_002b_002b-indentation">5.20 C、C<tt>++</tt>、Javaのバッファーのインデントをカスタマイズするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Customizing-faces">Customizing faces</a></td><td>&nbsp;</td><td valign="top"><a href="#Using-Customize">5.2 Customizeを使い始めるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Customizing-variables">Customizing variables</a></td><td>&nbsp;</td><td valign="top"><a href="#Using-Customize">5.2 Customizeを使い始めるには?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-D">D</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Daemon-mode">Daemon mode</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Debugging-_002eemacs-file">Debugging <samp>.emacs</samp> file</a></td><td>&nbsp;</td><td valign="top"><a href="#Debugging-a-customization-file">5.4 <samp>.emacs</samp>ファイルをデバッグするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Debugging-_002eemacs-file-1">Debugging <samp>.emacs</samp> file</a></td><td>&nbsp;</td><td valign="top"><a href="#Errors-with-init-files">6.5 Why does Emacs say &lsquo;<samp>Error in init file</samp>&rsquo;?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Decoration-level_002c-in-font_002dlock_002dmode">Decoration level, in <code>font-lock-mode</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-on-syntax-highlighting">5.42 構文ハイライトをオンにするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-DEL-key-does-not-delete"><tt class="key">DEL</tt> key does not delete</a></td><td>&nbsp;</td><td valign="top"><a href="#Backspace-invokes-help">9.6 Why does the <tt class="key">Backspace</tt> key invoke help?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-DEL_002c-definition-of"><tt class="key">DEL</tt>, definition of</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-keys">1.1 <kbd>C-h</kbd>、<kbd>C-M-a</kbd>、<tt class="key">RET</tt>、<kbd><span class="key">ESC</span> a</kbd>等は何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-delete_002dselection_002dmode"><code>delete-selection-mode</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Replacing-highlighted-text">5.9 ハイライトされたテキストをタイプしたテキストで置き換えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Deleting-menus-and-menu-options">Deleting menus and menu options</a></td><td>&nbsp;</td><td valign="top"><a href="#Deleting-menus-and-menu-options">5.41 メニューやメニューオプションを削除するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Development_002c-Emacs">Development, Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Latest-version-of-Emacs">4.2 Emacsの最新バージョンとは?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Difference-Emacs-and-XEmacs">Difference Emacs and XEmacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Difference-between-Emacs-and-XEmacs">8.6 What is the difference between Emacs and XEmacs (formerly Lucid Emacs)?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Differences-between-Emacs-19-and-Emacs-20">Differences between Emacs 19 and Emacs 20</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-20">4.10 Emacs 20は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Differences-between-Emacs-20-and-Emacs-21">Differences between Emacs 20 and Emacs 21</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-21">4.9 Emacs 21は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Differences-between-Emacs-21-and-Emacs-22">Differences between Emacs 21 and Emacs 22</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-22">4.8 Emacs 22は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Differences-between-Emacs-22-and-Emacs-23">Differences between Emacs 22 and Emacs 23</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Differences-between-Emacs-23-and-Emacs-24">Differences between Emacs 23 and Emacs 24</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-24">4.6 Emacs 24は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Differences-between-Emacs-24-and-Emacs-25">Differences between Emacs 24 and Emacs 25</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Differences-between-Emacs-25-and-Emacs-26">Differences between Emacs 25 and Emacs 26</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-26">4.4 Emacs 26は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Differences-between-Emacs-26-and-Emacs-27">Differences between Emacs 26 and Emacs 27</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-27">4.3 Emacs 27は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Differences-between-Unix-and-Emacs-regexps">Differences between Unix and Emacs regexps</a></td><td>&nbsp;</td><td valign="top"><a href="#Using-regular-expressions">5.34 Emacsでregexp(正規表現)わ使用するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-direct-color-in-terminals">direct color in terminals</a></td><td>&nbsp;</td><td valign="top"><a href="#Colors-on-a-TTY">5.3 TTYで色や構文ハイライトするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Directories-and-files-that-come-with-Emacs">Directories and files that come with Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#File_002dname-conventions">1.4 <samp>src/config.h</samp>、<samp>site-lisp/default.el</samp>等は何なのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Directory_002c-current-in-shell_002dmode">Directory, current in <code>shell-mode</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Shell-mode-loses-the-current-directory">6.9 Why does shell mode lose track of the shell&rsquo;s current directory?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Directory_002dlocal-variables">Directory-local variables</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Dired-does-not-see-a-file">Dired does not see a file</a></td><td>&nbsp;</td><td valign="top"><a href="#Dired-claims-that-no-file-is-on-this-line">6.11 Dired says, &lsquo;<samp>no file on this line</samp>&rsquo; when I try to do something.</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Disabling-auto_002dsave_002dmode">Disabling <code>auto-save-mode</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Disabling-auto_002dsave_002dmode">5.38 <code>auto-save-mode</code>を無効にするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Disabling-backups">Disabling backups</a></td><td>&nbsp;</td><td valign="top"><a href="#Disabling-backups">5.37 バックアップファイルを無効にするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Discussion-of-the-GPL">Discussion of the GPL</a></td><td>&nbsp;</td><td valign="top"><a href="#Real-meaning-of-copyleft">2.1 GNUのcopyleftとは法的に実際には何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Displaying-eight_002dbit-characters">Displaying eight-bit characters</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-does-not-display-8_002dbit-characters">10.1 How do I make Emacs display 8-bit characters?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Displaying-the-current-line-or-column">Displaying the current line or column</a></td><td>&nbsp;</td><td valign="top"><a href="#Displaying-the-current-line-or-column">5.5 Emacsに現在の行(や列)の番号を表示させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-DISTRIB_002c-description-of-file"><samp>DISTRIB</samp>, description of file</a></td><td>&nbsp;</td><td valign="top"><a href="#Informational-files-for-Emacs">3.8 利用できるEmacs情報のファイルは?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Do-key"><tt class="key">Do</tt> key</a></td><td>&nbsp;</td><td valign="top"><a href="#Extended-commands">1.2 <samp>M-x <var>command</var></samp>の意味は?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Documentation">Documentation</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-22">4.8 Emacs 22は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Documentation-for-etags">Documentation for <code>etags</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Documentation-for-etags">5.36 <code>etags</code>のドキュメントはどこ?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Documentation-on-Emacs-Lisp">Documentation on Emacs Lisp</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-Lisp-documentation">3.4 Emacs Lispではどこでドキュメントを入手すれば?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Documentation_002c-installing-new-Texinfo-files">Documentation, installing new Texinfo files</a></td><td>&nbsp;</td><td valign="top"><a href="#Installing-Texinfo-documentation">3.5 Texinfoドキュメントをインストールするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-DOS_002c-Emacs-for">DOS, Emacs for</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-for-MS_002dDOS">8.8 Where can I get Emacs for MS-DOS?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-double_002dbuffering">double-buffering</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-26">4.4 Emacs 26は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Downloading-and-installing-Emacs">Downloading and installing Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Installing-Emacs">7.1 How do I install Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Downloading-Emacs">Downloading Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Finding-Emacs-on-the-Internet">8.1 Where can I get Emacs on the net?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Drag_002dand_002ddrop">Drag-and-drop</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-22">4.8 Emacs 22は何が違う?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-E">E</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-early-init-file">early init file</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-27">4.3 Emacs 27は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Echoed-commands-in-shell_002dmode">Echoed commands in <code>shell-mode</code></a></td><td>&nbsp;</td><td valign="top"><a href="#g_t_005eM-in-the-shell-buffer">6.2 How do I get rid of &lsquo;<samp>^M</samp>&rsquo; or echoed commands in my shell buffer?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Editing-files-with-_0024-in-the-name">Editing files with &lsquo;<samp>$</samp>&rsquo; in the name</a></td><td>&nbsp;</td><td valign="top"><a href="#Editing-files-with-_0024-in-the-name">6.8 How do I edit a file with a &lsquo;<samp>$</samp>&rsquo; in its name?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Editing-MS_002dDOS-files">Editing MS-DOS files</a></td><td>&nbsp;</td><td valign="top"><a href="#Editing-MS_002dDOS-files">5.44 EmacsでMS-DOSファイルを編集するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Eight_002dbit-characters_002c-displaying">Eight-bit characters, displaying</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-does-not-display-8_002dbit-characters">10.1 How do I make Emacs display 8-bit characters?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Eight_002dbit-characters_002c-entering">Eight-bit characters, entering</a></td><td>&nbsp;</td><td valign="top"><a href="#Inputting-eight_002dbit-characters">10.2 How do I input eight-bit characters?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Eight_002dbit-characters_002c-working-with">Eight-bit characters, working with</a></td><td>&nbsp;</td><td valign="top"><a href="#Working-with-unprintable-characters">5.11 プリント不可文字(8ビット文字やコントロール文字)の検索、削除、置換を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-20_002c-new-features-in">Emacs 20, new features in</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-20">4.10 Emacs 20は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-21_002c-new-features-in">Emacs 21, new features in</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-21">4.9 Emacs 21は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-22_002c-new-features-in">Emacs 22, new features in</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-22">4.8 Emacs 22は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-23_002c-new-features-in">Emacs 23, new features in</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-24_002c-new-features-in">Emacs 24, new features in</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-24">4.6 Emacs 24は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-25_002c-new-features-in">Emacs 25, new features in</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-26_002c-new-features-in">Emacs 26, new features in</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-26">4.4 Emacs 26は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-27_002c-new-features-in">Emacs 27, new features in</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-27">4.3 Emacs 27は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-entries-for-termcap_002fterminfo">Emacs entries for termcap/terminfo</a></td><td>&nbsp;</td><td valign="top"><a href="#Termcap_002fTerminfo-entries-for-Emacs">6.4 Where is the termcap/terminfo entry for terminal type &lsquo;<samp>emacs</samp>&rsquo;?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-for-MS_002dDOS">Emacs for MS-DOS</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-for-MS_002dDOS">8.8 Where can I get Emacs for MS-DOS?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-for-MS_002dWindows">Emacs for MS-Windows</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-for-MS_002dWindows">8.9 Where can I get Emacs for Microsoft Windows?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-Lisp-Archive">Emacs Lisp Archive</a></td><td>&nbsp;</td><td valign="top"><a href="#Packages-that-do-not-come-with-Emacs">8.3 Where can I get Emacs Lisp packages that don&rsquo;t come with Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-Lisp-List">Emacs Lisp List</a></td><td>&nbsp;</td><td valign="top"><a href="#Packages-that-do-not-come-with-Emacs">8.3 Where can I get Emacs Lisp packages that don&rsquo;t come with Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-Lisp-Manual">Emacs Lisp Manual</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-22">4.8 Emacs 22は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-Lisp-Reference-Manual">Emacs Lisp Reference Manual</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-Lisp-documentation">3.4 Emacs Lispではどこでドキュメントを入手すれば?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-manual_002c-obtaining-a-printed-or-HTML-copy-of">Emacs manual, obtaining a printed or HTML copy of</a></td><td>&nbsp;</td><td valign="top"><a href="#Getting-a-printed-manual">3.3 Emacsマニュアルの印刷版コピーを入手するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-manual_002c-reading-topics-in">Emacs manual, reading topics in</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-manual">1.3 EmacsマニュアルでトピックXXXを読むには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-name-origin">Emacs name origin</a></td><td>&nbsp;</td><td valign="top"><a href="#Origin-of-the-term-Emacs">4.1 &ldquo;Emacs&rdquo;という名前の由良は?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Emacs-server-functions">Emacs server functions</a></td><td>&nbsp;</td><td valign="top"><a href="#Using-an-already-running-Emacs-process">5.17 別ウィンドウですでに実行中のEmacsを使用するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-emacsclient"><code>emacsclient</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Using-an-already-running-Emacs-process">5.17 別ウィンドウですでに実行中のEmacsを使用するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Enchant">Enchant</a></td><td>&nbsp;</td><td valign="top"><a href="#Spell_002dcheckers">8.4 Spell-checkers</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Enchant-support">Enchant support</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-26">4.4 Emacs 26は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Entering-eight_002dbit-characters">Entering eight-bit characters</a></td><td>&nbsp;</td><td valign="top"><a href="#Inputting-eight_002dbit-characters">10.2 How do I input eight-bit characters?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Epoch">Epoch</a></td><td>&nbsp;</td><td valign="top"><a href="#Difference-between-Emacs-and-XEmacs">8.6 What is the difference between Emacs and XEmacs (formerly Lucid Emacs)?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Error-in-_002eemacs">Error in <samp>.emacs</samp></a></td><td>&nbsp;</td><td valign="top"><a href="#Errors-with-init-files">6.5 Why does Emacs say &lsquo;<samp>Error in init file</samp>&rsquo;?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Error-in-init-file">Error in init file</a></td><td>&nbsp;</td><td valign="top"><a href="#Errors-with-init-files">6.5 Why does Emacs say &lsquo;<samp>Error in init file</samp>&rsquo;?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Errors-when-building-Emacs">Errors when building Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Problems-building-Emacs">7.2 What should I do if I have trouble building Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Errors_002c-recognizing-compiler">Errors, recognizing compiler</a></td><td>&nbsp;</td><td valign="top"><a href="#Compiler-error-messages">5.18 わたしのコンパイラーの変なエラーメッセージをEmacsに認識させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-ESC_002c-definition-of"><tt class="key">ESC</tt>, definition of</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-keys">1.1 <kbd>C-h</kbd>、<kbd>C-M-a</kbd>、<tt class="key">RET</tt>、<kbd><span class="key">ESC</span> a</kbd>等は何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Escape-key_002c-lacking">Escape key, lacking</a></td><td>&nbsp;</td><td valign="top"><a href="#No-Escape-key">9.10 What if I don&rsquo;t have an <tt class="key">Escape</tt> key?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Escape-sequences-in-ls-output">Escape sequences in <code>ls</code> output</a></td><td>&nbsp;</td><td valign="top"><a href="#Escape-sequences-in-shell-output">5.46 なぜShellモード<code>ls</code>は奇妙なエスケープシーケンスを出力するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-etags_002c-documentation-for"><code>etags</code>, documentation for</a></td><td>&nbsp;</td><td valign="top"><a href="#Documentation-for-etags">5.36 <code>etags</code>のドキュメントはどこ?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Evaluating-Lisp-code">Evaluating Lisp code</a></td><td>&nbsp;</td><td valign="top"><a href="#Evaluating-Emacs-Lisp-code">5.29 Emacs Lispのコード片を実行(&ldquo;evaluate&rdquo;)するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-eww">eww</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Expanding-aliases-when-sending-mail">Expanding aliases when sending mail</a></td><td>&nbsp;</td><td valign="top"><a href="#Expanding-aliases-when-sending-mail">11.3 Why doesn&rsquo;t Emacs expand my aliases when sending mail?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-explicit_002dshell_002dfile_002dname"><code>explicit-shell-file-name</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Problems-with-Shell-Mode">6.3 Why do I get an error message when I try to run <kbd>M-x shell</kbd>?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-ExtendChar-key-as-Meta"><tt class="key">ExtendChar</tt> key as <tt class="key">Meta</tt></a></td><td>&nbsp;</td><td valign="top"><a href="#ExtendChar-key-does-not-work-as-Meta">9.14 Why doesn&rsquo;t my <tt class="key">ExtendChar</tt> key work as a <tt class="key">Meta</tt> key under HP-UX 8.0 and 9.x?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Extended-commands">Extended commands</a></td><td>&nbsp;</td><td valign="top"><a href="#Extended-commands">1.2 <samp>M-x <var>command</var></samp>の意味は?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-F">F</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-FAQ-for-Emacs-on-MS_002dWindows">FAQ for Emacs on MS-Windows</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-for-MS_002dWindows">8.9 Where can I get Emacs for Microsoft Windows?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-FAQ-for-Gnus">FAQ for Gnus</a></td><td>&nbsp;</td><td valign="top"><a href="#Reading-news-with-Emacs">11.8 How do I read news under Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-FAQ-notation">FAQ notation</a></td><td>&nbsp;</td><td valign="top"><a href="#FAQ-notation">1 FAQの表記について</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-FAQ_002c-font_002dlock_002dmode">FAQ, <code>font-lock-mode</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-on-syntax-highlighting">5.42 構文ハイライトをオンにするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-FAQ_002c-obtaining-the">FAQ, obtaining the</a></td><td>&nbsp;</td><td valign="top"><a href="#Obtaining-the-FAQ">3.10 このFAQの最新版はどこで入手できる?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Farsi">Farsi</a></td><td>&nbsp;</td><td valign="top"><a href="#Right_002dto_002dleft-alphabets">10.3 Where is an Emacs that can handle Semitic (right-to-left) alphabets?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Faster_002c-starting-Gnus">Faster, starting Gnus</a></td><td>&nbsp;</td><td valign="top"><a href="#Making-Gnus-faster">11.9 How do I make Gnus faster?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-File-extensions-and-modes">File extensions and modes</a></td><td>&nbsp;</td><td valign="top"><a href="#Associating-modes-with-files">5.8 特定のファイルに特定のモードをEmacsに使用させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-File-name_002c-displaying-in-the-titlebar">File name, displaying in the titlebar</a></td><td>&nbsp;</td><td valign="top"><a href="#Displaying-the-current-file-name-in-the-titlebar">5.6 現在のファイル名をタイトルバーに含めるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-File-names-containing-_0024_002c-editing">File names containing &lsquo;<samp>$</samp>&rsquo;, editing</a></td><td>&nbsp;</td><td valign="top"><a href="#Editing-files-with-_0024-in-the-name">6.8 How do I edit a file with a &lsquo;<samp>$</samp>&rsquo; in its name?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-file_002dlocal_002dvariable-and-security"><code>file-local-variable</code> and security</a></td><td>&nbsp;</td><td valign="top"><a href="#Security-risks-with-Emacs">6.10 Are there any security risks in Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-File_002dname-conventions">File-name conventions</a></td><td>&nbsp;</td><td valign="top"><a href="#File_002dname-conventions">1.4 <samp>src/config.h</samp>、<samp>site-lisp/default.el</samp>等は何なのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Files-included-with-Emacs">Files included with Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Informational-files-for-Emacs">3.8 利用できるEmacs情報のファイルは?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Files_002c-maximum-size">Files, maximum size</a></td><td>&nbsp;</td><td valign="top"><a href="#Problems-with-very-large-files">6.1 Does Emacs have problems with large files?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Files_002c-replacing-strings-across-multiple">Files, replacing strings across multiple</a></td><td>&nbsp;</td><td valign="top"><a href="#Replacing-text-across-multiple-files">5.35 複数ファイルを横断して置換操作を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Filing-outgoing-mail">Filing outgoing mail</a></td><td>&nbsp;</td><td valign="top"><a href="#Saving-a-copy-of-outgoing-mail">11.2 How do I save a copy of outgoing mail?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Fill-prefix">Fill prefix</a></td><td>&nbsp;</td><td valign="top"><a href="#Automatic-indentation">5.24 新しい行を前の行に合わせて自動的にインデントするようEmacsに伝えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-fill_002dcolumn_002c-default-value"><code>fill-column</code>, default value</a></td><td>&nbsp;</td><td valign="top"><a href="#Wrapping-words-automatically">5.14 自分用にEmacsに単語を折り返させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Filling-automatically">Filling automatically</a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-on-auto_002dfill-by-default">5.15 デフォルトで<code>auto-fill-mode</code>をオンにするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Finding-an-Emacs-Lisp-package">Finding an Emacs Lisp package</a></td><td>&nbsp;</td><td valign="top"><a href="#Finding-a-package-with-particular-functionality">8.2 How do I find an Emacs Lisp package that does XXX?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Finding-commands-and-variables">Finding commands and variables</a></td><td>&nbsp;</td><td valign="top"><a href="#Learning-how-to-do-something">3.2 Emacsで何かを行う方法を見つけるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Finding-current-GNU-software">Finding current GNU software</a></td><td>&nbsp;</td><td valign="top"><a href="#Current-GNU-distributions">8.5 Where can I get other up-to-date GNU stuff?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Finding-Emacs-and-related-packages">Finding Emacs and related packages</a></td><td>&nbsp;</td><td valign="top"><a href="#Finding-Emacs-and-related-packages">8 Finding Emacs and related packages</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Finding-Emacs-on-the-Internet">Finding Emacs on the Internet</a></td><td>&nbsp;</td><td valign="top"><a href="#Finding-Emacs-on-the-Internet">8.1 Where can I get Emacs on the net?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Finding-other-packages">Finding other packages</a></td><td>&nbsp;</td><td valign="top"><a href="#Packages-that-do-not-come-with-Emacs">8.3 Where can I get Emacs Lisp packages that don&rsquo;t come with Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Finding-topics-in-the-Emacs-manual">Finding topics in the Emacs manual</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-manual">1.3 EmacsマニュアルでトピックXXXを読むには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Folder_002c-sorting-messages-in-an-Rmail">Folder, sorting messages in an Rmail</a></td><td>&nbsp;</td><td valign="top"><a href="#Sorting-the-messages-in-an-Rmail-folder">11.4 How can I sort the messages in my Rmail folder?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-font_002dlock_002dmode"><code>font-lock-mode</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-on-syntax-highlighting">5.42 構文ハイライトをオンにするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Frame-parameters">Frame parameters</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-ignores-frame-parameters">6.7 Why don&rsquo;t my customizations of the frame parameters work?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-frame_002dtitle_002dformat"><code>frame-title-format</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Displaying-the-current-file-name-in-the-titlebar">5.6 現在のファイル名をタイトルバーに含めるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Free-Software-Foundation_002c-contacting">Free Software Foundation, contacting</a></td><td>&nbsp;</td><td valign="top"><a href="#Contacting-the-FSF">2.6 How do I contact the FSF?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Freetype-fonts">Freetype fonts</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-FSF_002c-definition-of">FSF, definition of</a></td><td>&nbsp;</td><td valign="top"><a href="#Common-acronyms">1.5 FSF、GNU、RMS、GPLとは何なのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Fullscreen-mode">Fullscreen mode</a></td><td>&nbsp;</td><td valign="top"><a href="#Fullscreen-mode-on-MS_002dWindows">5.47 MS-WindowsでフルスクリーンモードでEmacsを開始するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Function-documentation">Function documentation</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-Lisp-documentation">3.4 Emacs Lispではどこでドキュメントを入手すれば?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Function-keys-and-modifiers">Function keys and modifiers</a></td><td>&nbsp;</td><td valign="top"><a href="#Binding-combinations-of-modifiers-and-function-keys">9.12 How do I bind a combination of modifier key and function key?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Function-keys_002c-symbols-generated-by">Function keys, symbols generated by</a></td><td>&nbsp;</td><td valign="top"><a href="#Working-with-function-and-arrow-keys">9.4 How do I tell what characters or symbols my function or arrow keys emit?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Functionality_002c-finding-a-particular-package">Functionality, finding a particular package</a></td><td>&nbsp;</td><td valign="top"><a href="#Finding-a-package-with-particular-functionality">8.2 How do I find an Emacs Lisp package that does XXX?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-G">G</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-General-Public-License_002c-real-meaning-of">General Public License, real meaning of</a></td><td>&nbsp;</td><td valign="top"><a href="#Real-meaning-of-copyleft">2.1 GNUのcopyleftとは法的に実際には何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-General-questions">General questions</a></td><td>&nbsp;</td><td valign="top"><a href="#General-questions">2 一般的な質問</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Generating-control-characters">Generating control characters</a></td><td>&nbsp;</td><td valign="top"><a href="#Producing-C_002dXXX-with-the-keyboard">9.8 How do I produce C-XXX with my keyboard?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Getting-help">Getting help</a></td><td>&nbsp;</td><td valign="top"><a href="#Getting-help">3 助けを得るには</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-GNU-mailing-lists">GNU mailing lists</a></td><td>&nbsp;</td><td valign="top"><a href="#Guidelines-for-newsgroup-postings">2.2 What are appropriate messages for the various Emacs newsgroups?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-GNU-newsgroups_002c-appropriate-messages-for">GNU newsgroups, appropriate messages for</a></td><td>&nbsp;</td><td valign="top"><a href="#Guidelines-for-newsgroup-postings">2.2 What are appropriate messages for the various Emacs newsgroups?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-GNU_002c-definition-of">GNU, definition of</a></td><td>&nbsp;</td><td valign="top"><a href="#Common-acronyms">1.5 FSF、GNU、RMS、GPLとは何なのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Gnus-FAQ">Gnus FAQ</a></td><td>&nbsp;</td><td valign="top"><a href="#Reading-news-with-Emacs">11.8 How do I read news under Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Gnus-is-slow-when-catching-up">Gnus is slow when catching up</a></td><td>&nbsp;</td><td valign="top"><a href="#Making-Gnus-faster">11.9 How do I make Gnus faster?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Gnus-newsreader">Gnus newsreader</a></td><td>&nbsp;</td><td valign="top"><a href="#Reading-news-with-Emacs">11.8 How do I read news under Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Gnus_002c-Catching-up-all-newsgroups-in">Gnus, Catching up all newsgroups in</a></td><td>&nbsp;</td><td valign="top"><a href="#Catching-up-in-all-newsgroups">11.10 How do I catch up all newsgroups in Gnus?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Gnus_002c-starting-faster">Gnus, starting faster</a></td><td>&nbsp;</td><td valign="top"><a href="#Making-Gnus-faster">11.9 How do I make Gnus faster?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-GNUstep-port">GNUstep port</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-GNUstep_002c-Emacs-for">GNUstep, Emacs for</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-for-GNUstep">8.10 Where can I get Emacs for GNUstep?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Going-to-a-line-by-number">Going to a line by number</a></td><td>&nbsp;</td><td valign="top"><a href="#Going-to-a-line-by-number">5.39 行番号で特定行に移動するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Good-bug-reports">Good bug reports</a></td><td>&nbsp;</td><td valign="top"><a href="#Reporting-bugs">2.4 Emacsのバグやその他の問題はどこにレポートすれば?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-GPL_002c-definition-of">GPL, definition of</a></td><td>&nbsp;</td><td valign="top"><a href="#Common-acronyms">1.5 FSF、GNU、RMS、GPLとは何なのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-GPL_002c-real-meaning-of">GPL, real meaning of</a></td><td>&nbsp;</td><td valign="top"><a href="#Real-meaning-of-copyleft">2.1 GNUのcopyleftとは法的に実際には何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-GTK_002b-Toolkit">GTK+ Toolkit</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-22">4.8 Emacs 22は何が違う?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-H">H</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-HarfBuzz">HarfBuzz</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-27">4.3 Emacs 27は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Hebrew_002c-handling-with-Emacs">Hebrew, handling with Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Right_002dto_002dleft-alphabets">10.3 Where is an Emacs that can handle Semitic (right-to-left) alphabets?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Help-for-Emacs">Help for Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Learning-how-to-do-something">3.2 Emacsで何かを行う方法を見つけるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Help-installing-Emacs">Help installing Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Help-installing-Emacs">3.9 Emacsのインストールでどこに助けを求めれば?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Help-invoked-by-Backspace">Help invoked by <tt class="key">Backspace</tt></a></td><td>&nbsp;</td><td valign="top"><a href="#Backspace-invokes-help">9.6 Why does the <tt class="key">Backspace</tt> key invoke help?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Help-system_002c-entering-the">Help system, entering the</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-editing">3.1 Emacsは初めて; 基本的な編集を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-hide_002difdef_002c-C_002fC_002b_002b-expressions-in-macros">hide-ifdef, C/C<tt>++</tt> expressions in macros</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-hide_002difdef_002dmode"><code>hide-ifdef-mode</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Hiding-_0023ifdef-lines">5.26 Cモードでコンパイラーが<code>#ifdef</code>処理後に残る行だけを表示するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Hiding-_0023ifdef-text">Hiding <code>#ifdef</code> text</a></td><td>&nbsp;</td><td valign="top"><a href="#Hiding-_0023ifdef-lines">5.26 Cモードでコンパイラーが<code>#ifdef</code>処理後に残る行だけを表示するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Highlighting-and-replacing-text">Highlighting and replacing text</a></td><td>&nbsp;</td><td valign="top"><a href="#Replacing-highlighted-text">5.9 ハイライトされたテキストをタイプしたテキストで置き換えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Highlighting-based-on-syntax">Highlighting based on syntax</a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-on-syntax-highlighting">5.42 構文ハイライトをオンにするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Highlighting-matching-parentheses">Highlighting matching parentheses</a></td><td>&nbsp;</td><td valign="top"><a href="#Matching-parentheses">5.25 自分が注目中のカッコに対応するカッコを表示するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-horizontal-scroll-bars">horizontal scroll bars</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-horizontal-scrolling-of-current-line">horizontal scrolling of current line</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-26">4.4 Emacs 26は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-How-to-submit-a-bug-report">How to submit a bug report</a></td><td>&nbsp;</td><td valign="top"><a href="#Reporting-bugs">2.4 Emacsのバグやその他の問題はどこにレポートすれば?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-HP_002dUX_002c-the-ExtendChar-key">HP-UX, the <tt class="key">ExtendChar</tt> key</a></td><td>&nbsp;</td><td valign="top"><a href="#ExtendChar-key-does-not-work-as-Meta">9.14 Why doesn&rsquo;t my <tt class="key">ExtendChar</tt> key work as a <tt class="key">Meta</tt> key under HP-UX 8.0 and 9.x?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Hunspell">Hunspell</a></td><td>&nbsp;</td><td valign="top"><a href="#Spell_002dcheckers">8.4 Spell-checkers</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-I">I</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Iconification-under-the-X-Window-System">Iconification under the X Window System</a></td><td>&nbsp;</td><td valign="top"><a href="#Forcing-Emacs-to-iconify-itself">5.33 アイコン化するようEmacsに伝えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Ignored-X-resources">Ignored X resources</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-ignores-X-resources">6.6 Why does Emacs ignore my X resources (my .Xdefaults file)?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Ignoring-case-in-searches">Ignoring case in searches</a></td><td>&nbsp;</td><td valign="top"><a href="#Controlling-case-sensitivity">5.10 検索や置換の際にEmacsによる大文字小文字の区別を制御するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Included-text-prefix_002c-changing">Included text prefix, changing</a></td><td>&nbsp;</td><td valign="top"><a href="#Changing-the-included-text-prefix">11.1 How do I change the included text prefix in mail/news followups?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Indentation_002c-how-to-customize">Indentation, how to customize</a></td><td>&nbsp;</td><td valign="top"><a href="#Customizing-C-and-C_002b_002b-indentation">5.20 C、C<tt>++</tt>、Javaのバッファーのインデントをカスタマイズするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Indenting-new-lines">Indenting new lines</a></td><td>&nbsp;</td><td valign="top"><a href="#Automatic-indentation">5.24 新しい行を前の行に合わせて自動的にインデントするようEmacsに伝えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Indenting-of-switch">Indenting of <code>switch</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Indenting-switch-statements">5.19 <code>switch</code>のインデントを変更するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Index-search-in-a-manual">Index search in a manual</a></td><td>&nbsp;</td><td valign="top"><a href="#Learning-how-to-do-something">3.2 Emacsで何かを行う方法を見つけるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Info-file-viewers">Info file viewers</a></td><td>&nbsp;</td><td valign="top"><a href="#Viewing-Info-files-outside-of-Emacs">3.7 Emacsを使わずにInfoファイルを閲覧できる?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Info-files_002c-how-to-install">Info files, how to install</a></td><td>&nbsp;</td><td valign="top"><a href="#Installing-Texinfo-documentation">3.5 Texinfoドキュメントをインストールするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Info_002c-finding-topics-in">Info, finding topics in</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-manual">1.3 EmacsマニュアルでトピックXXXを読むには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Informational-files-included-with-Emacs">Informational files included with Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Informational-files-for-Emacs">3.8 利用できるEmacs情報のファイルは?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Init-file-debugging">Init file debugging</a></td><td>&nbsp;</td><td valign="top"><a href="#Debugging-a-customization-file">5.4 <samp>.emacs</samp>ファイルをデバッグするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Init-file_002c-errors-in">Init file, errors in</a></td><td>&nbsp;</td><td valign="top"><a href="#Errors-with-init-files">6.5 Why does Emacs say &lsquo;<samp>Error in init file</samp>&rsquo;?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Init-file_002c-setting-up">Init file, setting up</a></td><td>&nbsp;</td><td valign="top"><a href="#Setting-up-a-customization-file">5.1 <samp>.emacs</samp>ファイルを正しくセットアップするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Input_002c-8_002dbit-characters">Input, 8-bit characters</a></td><td>&nbsp;</td><td valign="top"><a href="#Inputting-eight_002dbit-characters">10.2 How do I input eight-bit characters?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Insert"><tt class="key">Insert</tt></a></td><td>&nbsp;</td><td valign="top"><a href="#Overwrite-mode">5.21 Emacsに挿入ではなく&ldquo;上書き&rdquo;させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Installation-help">Installation help</a></td><td>&nbsp;</td><td valign="top"><a href="#Help-installing-Emacs">3.9 Emacsのインストールでどこに助けを求めれば?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Installing-Emacs">Installing Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Installing-Emacs">7.1 How do I install Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Installing-Texinfo-documentation">Installing Texinfo documentation</a></td><td>&nbsp;</td><td valign="top"><a href="#Installing-Texinfo-documentation">3.5 Texinfoドキュメントをインストールするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-intlfonts">intlfonts</a></td><td>&nbsp;</td><td valign="top"><a href="#How-to-add-fonts">10.4 How do I add fonts for use with Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Invalid-prefix-characters">Invalid prefix characters</a></td><td>&nbsp;</td><td valign="top"><a href="#Invalid-prefix-characters">9.2 Why does Emacs say &lsquo;<samp>Key sequence XXX uses invalid prefix characters</samp>&rsquo;?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-isearch-yanking">isearch yanking</a></td><td>&nbsp;</td><td valign="top"><a href="#Yanking-text-in-isearch">5.13 killリングから検索文字列にテキストをコピーするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Ispell">Ispell</a></td><td>&nbsp;</td><td valign="top"><a href="#Spell_002dcheckers">8.4 Spell-checkers</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-J">J</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-JSON_002c-native-parsing">JSON, native parsing</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-27">4.3 Emacs 27は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Just_002dIn_002dTime-syntax-highlighting">Just-In-Time syntax highlighting</a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-on-syntax-highlighting">5.42 構文ハイライトをオンにするには?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-K">K</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Key-bindings">Key bindings</a></td><td>&nbsp;</td><td valign="top"><a href="#Key-bindings">9 Key bindings</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Key-translations-under-X">Key translations under X</a></td><td>&nbsp;</td><td valign="top"><a href="#X-key-translations-for-Emacs">9.5 How do I set the X key &ldquo;translations&rdquo; for Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-keyboard_002dtranslate"><code>keyboard-translate</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Swapping-keys">9.7 How do I swap two keys?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Keymaps-and-menus">Keymaps and menus</a></td><td>&nbsp;</td><td valign="top"><a href="#Modifying-pull_002ddown-menus">5.40 プルダウンの新たなメニューオプションの作成や変更を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Keys_002c-binding-to-commands">Keys, binding to commands</a></td><td>&nbsp;</td><td valign="top"><a href="#Binding-keys-to-commands">9.1 How do I bind keys (including function keys) to commands?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Keys_002c-swapping">Keys, swapping</a></td><td>&nbsp;</td><td valign="top"><a href="#Swapping-keys">9.7 How do I swap two keys?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-L">L</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Lacking-an-Escape-key">Lacking an Escape key</a></td><td>&nbsp;</td><td valign="top"><a href="#No-Escape-key">9.10 What if I don&rsquo;t have an <tt class="key">Escape</tt> key?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Large-files_002c-opening">Large files, opening</a></td><td>&nbsp;</td><td valign="top"><a href="#Problems-with-very-large-files">6.1 Does Emacs have problems with large files?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Latest-FAQ-version_002c-obtaining-the">Latest FAQ version, obtaining the</a></td><td>&nbsp;</td><td valign="top"><a href="#Obtaining-the-FAQ">3.10 このFAQの最新版はどこで入手できる?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Latest-version-of-Emacs">Latest version of Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Latest-version-of-Emacs">4.2 Emacsの最新バージョンとは?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Learning-more-about-Gnus">Learning more about Gnus</a></td><td>&nbsp;</td><td valign="top"><a href="#Reading-news-with-Emacs">11.8 How do I read news under Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Learning-to-do-something-in-Emacs">Learning to do something in Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Learning-how-to-do-something">3.2 Emacsで何かを行う方法を見つけるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Length-of-tab-character">Length of tab character</a></td><td>&nbsp;</td><td valign="top"><a href="#Changing-the-length-of-a-Tab">5.30 <tt class="key">TAB</tt>文字の長さにたいするEmacsの解釈を変更するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Levels-of-syntax-highlighting">Levels of syntax highlighting</a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-on-syntax-highlighting">5.42 構文ハイライトをオンにするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-lexical-binding">lexical binding</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-24">4.6 Emacs 24は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-LFD_002c-definition-of"><tt class="key">LFD</tt>, definition of</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-keys">1.1 <kbd>C-h</kbd>、<kbd>C-M-a</kbd>、<tt class="key">RET</tt>、<kbd><span class="key">ESC</span> a</kbd>等は何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-line-number-display">line number display</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-26">4.4 Emacs 26は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Line-number_002c-displaying-the-current">Line number, displaying the current</a></td><td>&nbsp;</td><td valign="top"><a href="#Displaying-the-current-line-or-column">5.5 Emacsに現在の行(や列)の番号を表示させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Line-wrap">Line wrap</a></td><td>&nbsp;</td><td valign="top"><a href="#Wrapping-words-automatically">5.14 自分用にEmacsに単語を折り返させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-line_002dnumber_002dmode"><code>line-number-mode</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Displaying-the-current-line-or-column">5.5 Emacsに現在の行(や列)の番号を表示させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Lisp-forms_002c-evaluating">Lisp forms, evaluating</a></td><td>&nbsp;</td><td valign="top"><a href="#Evaluating-Emacs-Lisp-code">5.29 Emacs Lispのコード片を実行(&ldquo;evaluate&rdquo;)するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Lisp-packages-that-do-not-come-with-Emacs">Lisp packages that do not come with Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Packages-that-do-not-come-with-Emacs">8.3 Where can I get Emacs Lisp packages that don&rsquo;t come with Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-load_002dpath_002c-modifying"><code>load-path</code>, modifying</a></td><td>&nbsp;</td><td valign="top"><a href="#Changing-load_002dpath">5.16 <code>load-path</code>を変更するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-loadable-modules">loadable modules</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Lookup-a-subject-in-a-manual">Lookup a subject in a manual</a></td><td>&nbsp;</td><td valign="top"><a href="#Learning-how-to-do-something">3.2 Emacsで何かを行う方法を見つけるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-ls-in-Shell-mode"><code>ls</code> in Shell mode</a></td><td>&nbsp;</td><td valign="top"><a href="#Escape-sequences-in-shell-output">5.46 なぜShellモード<code>ls</code>は奇妙なエスケープシーケンスを出力するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Lucid-Emacs">Lucid Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Difference-between-Emacs-and-XEmacs">8.6 What is the difference between Emacs and XEmacs (formerly Lucid Emacs)?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-M">M</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-M_002dx_002c-meaning-of"><kbd>M-x</kbd>, meaning of</a></td><td>&nbsp;</td><td valign="top"><a href="#Extended-commands">1.2 <samp>M-x <var>command</var></samp>の意味は?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-MACHINES_002c-description-of-file"><samp>MACHINES</samp>, description of file</a></td><td>&nbsp;</td><td valign="top"><a href="#Informational-files-for-Emacs">3.8 利用できるEmacs情報のファイルは?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Macintosh_002c-Emacs-for">Macintosh, Emacs for</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-for-macOS">8.11 Where can I get Emacs for macOS?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-macOS-Cocoa">macOS Cocoa</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-macOS_002c-Emacs-for">macOS, Emacs for</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-for-macOS">8.11 Where can I get Emacs for macOS?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Mail-alias-expansion">Mail alias expansion</a></td><td>&nbsp;</td><td valign="top"><a href="#Expanding-aliases-when-sending-mail">11.3 Why doesn&rsquo;t Emacs expand my aliases when sending mail?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Mail-and-news">Mail and news</a></td><td>&nbsp;</td><td valign="top"><a href="#Mail-and-news">11 Mail and news</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Mail-reader_002c-starting-automatically">Mail reader, starting automatically</a></td><td>&nbsp;</td><td valign="top"><a href="#Automatically-starting-a-mail-or-news-reader">11.7 How do I make Emacs automatically start my mail/news reader?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Mail-replies_002c-inserting-a-prefix-character">Mail replies, inserting a prefix character</a></td><td>&nbsp;</td><td valign="top"><a href="#Inserting-text-at-the-beginning-of-each-line">5.31 各行の先頭に&lt;何らかのテキスト&gt;を挿入するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Mail_002c-saving-outgoing-automatically">Mail, saving outgoing automatically</a></td><td>&nbsp;</td><td valign="top"><a href="#Saving-a-copy-of-outgoing-mail">11.2 How do I save a copy of outgoing mail?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-mail_002dyank_002dprefix"><code>mail-yank-prefix</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Inserting-text-at-the-beginning-of-each-line">5.31 各行の先頭に&lt;何らかのテキスト&gt;を挿入するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Mailing-lists_002c-appropriate-messages-for">Mailing lists, appropriate messages for</a></td><td>&nbsp;</td><td valign="top"><a href="#Guidelines-for-newsgroup-postings">2.2 What are appropriate messages for the various Emacs newsgroups?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Major-mode-for-shell-scripts">Major mode for shell scripts</a></td><td>&nbsp;</td><td valign="top"><a href="#Associating-modes-with-files">5.8 特定のファイルに特定のモードをEmacsに使用させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Manual_002c-obtaining-a-printed-or-HTML-copy-of">Manual, obtaining a printed or HTML copy of</a></td><td>&nbsp;</td><td valign="top"><a href="#Getting-a-printed-manual">3.3 Emacsマニュアルの印刷版コピーを入手するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Matching-parentheses">Matching parentheses</a></td><td>&nbsp;</td><td valign="top"><a href="#Matching-parentheses">5.25 自分が注目中のカッコに対応するカッコを表示するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Maximize-frame">Maximize frame</a></td><td>&nbsp;</td><td valign="top"><a href="#Fullscreen-mode-on-MS_002dWindows">5.47 MS-WindowsでフルスクリーンモードでEmacsを開始するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Maximum-file-size">Maximum file size</a></td><td>&nbsp;</td><td valign="top"><a href="#Problems-with-very-large-files">6.1 Does Emacs have problems with large files?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Maximum-line-width_002c-default-value">Maximum line width, default value</a></td><td>&nbsp;</td><td valign="top"><a href="#Wrapping-words-automatically">5.14 自分用にEmacsに単語を折り返させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Menus-and-keymaps">Menus and keymaps</a></td><td>&nbsp;</td><td valign="top"><a href="#Modifying-pull_002ddown-menus">5.40 プルダウンの新たなメニューオプションの作成や変更を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Menus_002c-creating-or-modifying">Menus, creating or modifying</a></td><td>&nbsp;</td><td valign="top"><a href="#Modifying-pull_002ddown-menus">5.40 プルダウンの新たなメニューオプションの作成や変更を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Menus_002c-deleting">Menus, deleting</a></td><td>&nbsp;</td><td valign="top"><a href="#Deleting-menus-and-menu-options">5.41 メニューやメニューオプションを削除するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Meta-key-and-xterm"><tt class="key">Meta</tt> key and <code>xterm</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Meta-key-does-not-work-in-xterm">9.13 Why doesn&rsquo;t my <tt class="key">Meta</tt> key work in an <code>xterm</code> window?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Meta-key_002c-notation-for"><tt class="key">Meta</tt> key, notation for</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-keys">1.1 <kbd>C-h</kbd>、<kbd>C-M-a</kbd>、<tt class="key">RET</tt>、<kbd><span class="key">ESC</span> a</kbd>等は何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Meta-key_002c-what-to-do-if-you-lack-it"><tt class="key">Meta</tt> key, what to do if you lack it</a></td><td>&nbsp;</td><td valign="top"><a href="#No-Meta-key">9.9 What if I don&rsquo;t have a <tt class="key">Meta</tt> key?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Meta_002c-using-Compose-Character-for"><tt class="key">Meta</tt>, using <tt class="key">Compose Character</tt> for</a></td><td>&nbsp;</td><td valign="top"><a href="#Compose-Character">9.11 Can I make my <tt class="key">Compose Character</tt> key behave like a <tt class="key">Meta</tt> key?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Meta_002c-using-ExtendChar-for"><tt class="key">Meta</tt>, using <tt class="key">ExtendChar</tt> for</a></td><td>&nbsp;</td><td valign="top"><a href="#ExtendChar-key-does-not-work-as-Meta">9.14 Why doesn&rsquo;t my <tt class="key">ExtendChar</tt> key work as a <tt class="key">Meta</tt> key under HP-UX 8.0 and 9.x?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Microsoft-files_002c-editing">Microsoft files, editing</a></td><td>&nbsp;</td><td valign="top"><a href="#Editing-MS_002dDOS-files">5.44 EmacsでMS-DOSファイルを編集するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Microsoft-Windows_002c-Emacs-for">Microsoft Windows, Emacs for</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-for-MS_002dWindows">8.9 Where can I get Emacs for Microsoft Windows?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Misspecified-key-sequences">Misspecified key sequences</a></td><td>&nbsp;</td><td valign="top"><a href="#Invalid-prefix-characters">9.2 Why does Emacs say &lsquo;<samp>Key sequence XXX uses invalid prefix characters</samp>&rsquo;?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-mode_002dline_002dformat"><code>mode-line-format</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Displaying-the-current-line-or-column">5.5 Emacsに現在の行(や列)の番号を表示させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Modes_002c-associating-with-file-extensions">Modes, associating with file extensions</a></td><td>&nbsp;</td><td valign="top"><a href="#Associating-modes-with-files">5.8 特定のファイルに特定のモードをEmacsに使用させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Modifiers-and-function-keys">Modifiers and function keys</a></td><td>&nbsp;</td><td valign="top"><a href="#Binding-combinations-of-modifiers-and-function-keys">9.12 How do I bind a combination of modifier key and function key?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Modifying-load_002dpath">Modifying <code>load-path</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Changing-load_002dpath">5.16 <code>load-path</code>を変更するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Modifying-pull_002ddown-menus">Modifying pull-down menus</a></td><td>&nbsp;</td><td valign="top"><a href="#Modifying-pull_002ddown-menus">5.40 プルダウンの新たなメニューオプションの作成や変更を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Mouse-wheel">Mouse wheel</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-22">4.8 Emacs 22は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-movemail-and-security">&lsquo;<samp>movemail</samp>&rsquo; and security</a></td><td>&nbsp;</td><td valign="top"><a href="#Security-risks-with-Emacs">6.10 Are there any security risks in Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-MS_002dDOS-files_002c-editing">MS-DOS files, editing</a></td><td>&nbsp;</td><td valign="top"><a href="#Editing-MS_002dDOS-files">5.44 EmacsでMS-DOSファイルを編集するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-MS_002dDOS_002c-Emacs-for">MS-DOS, Emacs for</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-for-MS_002dDOS">8.8 Where can I get Emacs for MS-DOS?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Multi_002dtty-support">Multi-tty support</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Multilingual-Environment">Multilingual Environment</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-22">4.8 Emacs 22は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Multiple-files_002c-replacing-across">Multiple files, replacing across</a></td><td>&nbsp;</td><td valign="top"><a href="#Replacing-text-across-multiple-files">5.35 複数ファイルを横断して置換操作を行うには?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-N">N</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-New-lines_002c-indenting-of">New lines, indenting of</a></td><td>&nbsp;</td><td valign="top"><a href="#Automatic-indentation">5.24 新しい行を前の行に合わせて自動的にインデントするようEmacsに伝えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-New-modes">New modes</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-22">4.8 Emacs 22は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-New-Texinfo-files_002c-installing">New Texinfo files, installing</a></td><td>&nbsp;</td><td valign="top"><a href="#Installing-Texinfo-documentation">3.5 Texinfoドキュメントをインストールするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-News-reader_002c-starting-automatically">News reader, starting automatically</a></td><td>&nbsp;</td><td valign="top"><a href="#Automatically-starting-a-mail-or-news-reader">11.7 How do I make Emacs automatically start my mail/news reader?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-News-replies_002c-inserting-a-prefix-character">News replies, inserting a prefix character</a></td><td>&nbsp;</td><td valign="top"><a href="#Inserting-text-at-the-beginning-of-each-line">5.31 各行の先頭に&lt;何らかのテキスト&gt;を挿入するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-NEWS_002c-description-of-file"><samp>NEWS</samp>, description of file</a></td><td>&nbsp;</td><td valign="top"><a href="#Informational-files-for-Emacs">3.8 利用できるEmacs情報のファイルは?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Newsgroups_002c-appropriate-messages-for">Newsgroups, appropriate messages for</a></td><td>&nbsp;</td><td valign="top"><a href="#Guidelines-for-newsgroup-postings">2.2 What are appropriate messages for the various Emacs newsgroups?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-NeXTstep-port">NeXTstep port</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-No-Escape-key">No Escape key</a></td><td>&nbsp;</td><td valign="top"><a href="#No-Escape-key">9.10 What if I don&rsquo;t have an <tt class="key">Escape</tt> key?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-No-Meta-key">No <tt class="key">Meta</tt> key</a></td><td>&nbsp;</td><td valign="top"><a href="#No-Meta-key">9.9 What if I don&rsquo;t have a <tt class="key">Meta</tt> key?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Not-enough-disk-space-to-install-Emacs">Not enough disk space to install Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-for-minimalists">8.7 I don&rsquo;t have enough disk space to install Emacs</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Notation-for-keys">Notation for keys</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-keys">1.1 <kbd>C-h</kbd>、<kbd>C-M-a</kbd>、<tt class="key">RET</tt>、<kbd><span class="key">ESC</span> a</kbd>等は何を意味するのか?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-O">O</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Official-GNU-software-sites">Official GNU software sites</a></td><td>&nbsp;</td><td valign="top"><a href="#Current-GNU-distributions">8.5 Where can I get other up-to-date GNU stuff?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Old-Usenet-postings-for-GNU-groups">Old Usenet postings for GNU groups</a></td><td>&nbsp;</td><td valign="top"><a href="#Newsgroup-archives">2.3 <a href="news:gnu.emacs.help">news:gnu.emacs.help</a>や他のGNUグループへの古い投稿はどこで入手できる?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-One-space-following-periods">One space following periods</a></td><td>&nbsp;</td><td valign="top"><a href="#Filling-paragraphs-with-a-single-space">5.45 ピリオドごとにその後の単一スペースでパラグラフをフィルするようEmacsに伝えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Opening-very-large-files">Opening very large files</a></td><td>&nbsp;</td><td valign="top"><a href="#Problems-with-very-large-files">6.1 Does Emacs have problems with large files?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Ordering-GNU-software">Ordering GNU software</a></td><td>&nbsp;</td><td valign="top"><a href="#Contacting-the-FSF">2.6 How do I contact the FSF?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Origin-of-the-term-_0060_0060Emacs_0027_0027">Origin of the term &ldquo;Emacs&rdquo;</a></td><td>&nbsp;</td><td valign="top"><a href="#Origin-of-the-term-Emacs">4.1 &ldquo;Emacs&rdquo;という名前の由良は?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Original-version-of-Emacs">Original version of Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Origin-of-the-term-Emacs">4.1 &ldquo;Emacs&rdquo;という名前の由良は?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Overview-of-help-systems">Overview of help systems</a></td><td>&nbsp;</td><td valign="top"><a href="#Learning-how-to-do-something">3.2 Emacsで何かを行う方法を見つけるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-overwrite_002dmode"><code>overwrite-mode</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Overwrite-mode">5.21 Emacsに挿入ではなく&ldquo;上書き&rdquo;させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Overwriting-existing-text">Overwriting existing text</a></td><td>&nbsp;</td><td valign="top"><a href="#Overwrite-mode">5.21 Emacsに挿入ではなく&ldquo;上書き&rdquo;させるには?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-P">P</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Package_002c-finding">Package, finding</a></td><td>&nbsp;</td><td valign="top"><a href="#Finding-a-package-with-particular-functionality">8.2 How do I find an Emacs Lisp package that does XXX?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-packages_002c-installing-more">packages, installing more</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-24">4.6 Emacs 24は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Packages_002c-those-that-do-not-come-with-Emacs">Packages, those that do not come with Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Packages-that-do-not-come-with-Emacs">8.3 Where can I get Emacs Lisp packages that don&rsquo;t come with Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Pairs-of-parentheses_002c-highlighting">Pairs of parentheses, highlighting</a></td><td>&nbsp;</td><td valign="top"><a href="#Matching-parentheses">5.25 自分が注目中のカッコに対応するカッコを表示するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-paren_002eel"><samp>paren.el</samp></a></td><td>&nbsp;</td><td valign="top"><a href="#Matching-parentheses">5.25 自分が注目中のカッコに対応するカッコを表示するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Parentheses_002c-matching">Parentheses, matching</a></td><td>&nbsp;</td><td valign="top"><a href="#Matching-parentheses">5.25 自分が注目中のカッコに対応するカッコを表示するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-pasting-text-on-text-terminals">pasting text on text terminals</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Periods_002c-one-space-following">Periods, one space following</a></td><td>&nbsp;</td><td valign="top"><a href="#Filling-paragraphs-with-a-single-space">5.45 ピリオドごとにその後の単一スペースでパラグラフをフィルするようEmacsに伝えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-picture_002dmode"><code>picture-mode</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Forcing-the-cursor-to-remain-in-the-same-column">5.32 上下に移動した際にたとえ短すぎる行でも同じ列にカーソルが留まる; このようにEmacsを振る舞わせるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-portable-dumper">portable dumper</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-27">4.3 Emacs 27は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Posting-messages-to-newsgroups">Posting messages to newsgroups</a></td><td>&nbsp;</td><td valign="top"><a href="#Guidelines-for-newsgroup-postings">2.2 What are appropriate messages for the various Emacs newsgroups?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Prefix-character_002c-inserting-in-mail_002fnews-replies">Prefix character, inserting in mail/news replies</a></td><td>&nbsp;</td><td valign="top"><a href="#Inserting-text-at-the-beginning-of-each-line">5.31 各行の先頭に&lt;何らかのテキスト&gt;を挿入するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Prefix-characters_002c-invalid">Prefix characters, invalid</a></td><td>&nbsp;</td><td valign="top"><a href="#Invalid-prefix-characters">9.2 Why does Emacs say &lsquo;<samp>Key sequence XXX uses invalid prefix characters</samp>&rsquo;?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Prefix-in-mail_002fnews-followups_002c-changing">Prefix in mail/news followups, changing</a></td><td>&nbsp;</td><td valign="top"><a href="#Changing-the-included-text-prefix">11.1 How do I change the included text prefix in mail/news followups?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Prefixing-a-region-with-some-text">Prefixing a region with some text</a></td><td>&nbsp;</td><td valign="top"><a href="#Inserting-text-at-the-beginning-of-each-line">5.31 各行の先頭に&lt;何らかのテキスト&gt;を挿入するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Prefixing-lines">Prefixing lines</a></td><td>&nbsp;</td><td valign="top"><a href="#Automatic-indentation">5.24 新しい行を前の行に合わせて自動的にインデントするようEmacsに伝えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Previous-line_002c-indenting-according-to">Previous line, indenting according to</a></td><td>&nbsp;</td><td valign="top"><a href="#Automatic-indentation">5.24 新しい行を前の行に合わせて自動的にインデントするようEmacsに伝えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Printed-Emacs-manual_002c-obtaining">Printed Emacs manual, obtaining</a></td><td>&nbsp;</td><td valign="top"><a href="#Getting-a-printed-manual">3.3 Emacsマニュアルの印刷版コピーを入手するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Printing-a-Texinfo-file">Printing a Texinfo file</a></td><td>&nbsp;</td><td valign="top"><a href="#Printing-a-Texinfo-file">3.6 Texinfoファイルをプリントするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Printing-documentation">Printing documentation</a></td><td>&nbsp;</td><td valign="top"><a href="#Printing-a-Texinfo-file">3.6 Texinfoファイルをプリントするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Problems-building-Emacs">Problems building Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Problems-building-Emacs">7.2 What should I do if I have trouble building Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Producing-control-characters">Producing control characters</a></td><td>&nbsp;</td><td valign="top"><a href="#Producing-C_002dXXX-with-the-keyboard">9.8 How do I produce C-XXX with my keyboard?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-project">project</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Pull_002ddown-menus_002c-creating-or-modifying">Pull-down menus, creating or modifying</a></td><td>&nbsp;</td><td valign="top"><a href="#Modifying-pull_002ddown-menus">5.40 プルダウンの新たなメニューオプションの作成や変更を行うには?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-Q">Q</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Quoting-in-mail-messages">Quoting in mail messages</a></td><td>&nbsp;</td><td valign="top"><a href="#Changing-the-included-text-prefix">11.1 How do I change the included text prefix in mail/news followups?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-R">R</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Reading-news-under-Emacs">Reading news under Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Reading-news-with-Emacs">11.8 How do I read news under Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Reading-the-Emacs-manual">Reading the Emacs manual</a></td><td>&nbsp;</td><td valign="top"><a href="#Learning-how-to-do-something">3.2 Emacsで何かを行う方法を見つけるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Reading-topics-in-the-Emacs-manual">Reading topics in the Emacs manual</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-manual">1.3 EmacsマニュアルでトピックXXXを読むには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Recognizing-non_002dstandard-compiler-errors">Recognizing non-standard compiler errors</a></td><td>&nbsp;</td><td valign="top"><a href="#Compiler-error-messages">5.18 わたしのコンパイラーの変なエラーメッセージをEmacsに認識させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Recompilation">Recompilation</a></td><td>&nbsp;</td><td valign="top"><a href="#Going-to-a-line-by-number">5.39 行番号で特定行に移動するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Recursive-search_002freplace-operations">Recursive search/replace operations</a></td><td>&nbsp;</td><td valign="top"><a href="#Replacing-text-across-multiple-files">5.35 複数ファイルを横断して置換操作を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Reducing-the-increment-when-scrolling">Reducing the increment when scrolling</a></td><td>&nbsp;</td><td valign="top"><a href="#Scrolling-only-one-line">5.43 画面下端に移動した際にEmacsが1行だけスクロールするよう強制するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Reference-card-for-Emacs">Reference card for Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Learning-how-to-do-something">3.2 Emacsで何かを行う方法を見つけるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Reference-cards_002c-in-other-languages">Reference cards, in other languages</a></td><td>&nbsp;</td><td valign="top"><a href="#Learning-how-to-do-something">3.2 Emacsで何かを行う方法を見つけるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Reference-manual-for-Emacs-Lisp">Reference manual for Emacs Lisp</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-Lisp-documentation">3.4 Emacs Lispではどこでドキュメントを入手すれば?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Regexps">Regexps</a></td><td>&nbsp;</td><td valign="top"><a href="#Using-regular-expressions">5.34 Emacsでregexp(正規表現)わ使用するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Regexps-and-unprintable-characters">Regexps and unprintable characters</a></td><td>&nbsp;</td><td valign="top"><a href="#Working-with-unprintable-characters">5.11 プリント不可文字(8ビット文字やコントロール文字)の検索、削除、置換を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Regexps-for-recognizing-compiler-errors">Regexps for recognizing compiler errors</a></td><td>&nbsp;</td><td valign="top"><a href="#Compiler-error-messages">5.18 わたしのコンパイラーの変なエラーメッセージをEmacsに認識させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Regular-expressions">Regular expressions</a></td><td>&nbsp;</td><td valign="top"><a href="#Using-regular-expressions">5.34 Emacsでregexp(正規表現)わ使用するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Remaining-in-the-same-column_002c-regardless-of-contents">Remaining in the same column, regardless of contents</a></td><td>&nbsp;</td><td valign="top"><a href="#Forcing-the-cursor-to-remain-in-the-same-column">5.32 上下に移動した際にたとえ短すぎる行でも同じ列にカーソルが留まる; このようにEmacsを振る舞わせるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Removing-yourself-from-GNU-mailing-lists">Removing yourself from GNU mailing lists</a></td><td>&nbsp;</td><td valign="top"><a href="#Unsubscribing-from-Emacs-lists">2.5 How do I unsubscribe from a mailing list?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Repeating-commands-many-times">Repeating commands many times</a></td><td>&nbsp;</td><td valign="top"><a href="#Repeating-commands">5.27 できるだけ沢山コマンドを繰り返すには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Replacing-highlighted-text">Replacing highlighted text</a></td><td>&nbsp;</td><td valign="top"><a href="#Replacing-highlighted-text">5.9 ハイライトされたテキストをタイプしたテキストで置き換えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Replacing-newlines">Replacing newlines</a></td><td>&nbsp;</td><td valign="top"><a href="#Searching-for_002freplacing-newlines">5.12 isearchやquery-replaceで改行を入力するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Replacing-strings-across-files">Replacing strings across files</a></td><td>&nbsp;</td><td valign="top"><a href="#Replacing-text-across-multiple-files">5.35 複数ファイルを横断して置換操作を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Replacing_002c-and-case-sensitivity">Replacing, and case sensitivity</a></td><td>&nbsp;</td><td valign="top"><a href="#Controlling-case-sensitivity">5.10 検索や置換の際にEmacsによる大文字小文字の区別を制御するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Replies-to-mail_002fnews_002c-inserting-a-prefix-character">Replies to mail/news, inserting a prefix character</a></td><td>&nbsp;</td><td valign="top"><a href="#Inserting-text-at-the-beginning-of-each-line">5.31 各行の先頭に&lt;何らかのテキスト&gt;を挿入するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Replying-only-to-the-sender-of-a-message">Replying only to the sender of a message</a></td><td>&nbsp;</td><td valign="top"><a href="#Replying-to-the-sender-of-a-message">11.6 How can I force Rmail to reply to the sender of a message, but not the other recipients?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Reporting-bugs">Reporting bugs</a></td><td>&nbsp;</td><td valign="top"><a href="#Reporting-bugs">2.4 Emacsのバグやその他の問題はどこにレポートすれば?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Repository_002c-Emacs">Repository, Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Latest-version-of-Emacs">4.2 Emacsの最新バージョンとは?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Resources_002c-X">Resources, X</a></td><td>&nbsp;</td><td valign="top"><a href="#Valid-X-resources">5.28 有効なXリソース(.Xdefaults内の項目)は?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-RET_002c-definition-of"><tt class="key">RET</tt>, definition of</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-keys">1.1 <kbd>C-h</kbd>、<kbd>C-M-a</kbd>、<tt class="key">RET</tt>、<kbd><span class="key">ESC</span> a</kbd>等は何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Richard-Stallman_002c-acronym-for">Richard Stallman, acronym for</a></td><td>&nbsp;</td><td valign="top"><a href="#Common-acronyms">1.5 FSF、GNU、RMS、GPLとは何なのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Right_002dto_002dleft-alphabets">Right-to-left alphabets</a></td><td>&nbsp;</td><td valign="top"><a href="#Right_002dto_002dleft-alphabets">10.3 Where is an Emacs that can handle Semitic (right-to-left) alphabets?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-right_002dto_002dleft-languages">right-to-left languages</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-24">4.6 Emacs 24は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Rmail-and-_002fvar_002fspool_002fmail">Rmail and <samp>/var/spool/mail</samp></a></td><td>&nbsp;</td><td valign="top"><a href="#Rmail-writes-to-_002fvar_002fspool_002fmail">11.5 Why does Rmail need to write to <samp>/var/spool/mail</samp>?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-rmail_002c-and-HTML-mails">rmail, and HTML mails</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Rmail_002c-replying-to-the-sender-of-a-message-in">Rmail, replying to the sender of a message in</a></td><td>&nbsp;</td><td valign="top"><a href="#Replying-to-the-sender-of-a-message">11.6 How can I force Rmail to reply to the sender of a message, but not the other recipients?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Rmail_002c-sorting-messages-in">Rmail, sorting messages in</a></td><td>&nbsp;</td><td valign="top"><a href="#Sorting-the-messages-in-an-Rmail-folder">11.4 How can I sort the messages in my Rmail folder?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-RMS_002c-definition-of">RMS, definition of</a></td><td>&nbsp;</td><td valign="top"><a href="#Common-acronyms">1.5 FSF、GNU、RMS、GPLとは何なのか?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-S">S</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Saving-a-copy-of-outgoing-mail">Saving a copy of outgoing mail</a></td><td>&nbsp;</td><td valign="top"><a href="#Saving-a-copy-of-outgoing-mail">11.2 How do I save a copy of outgoing mail?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Saving-at-frequent-intervals">Saving at frequent intervals</a></td><td>&nbsp;</td><td valign="top"><a href="#Disabling-auto_002dsave_002dmode">5.38 <code>auto-save-mode</code>を無効にするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Scrolling-only-one-line">Scrolling only one line</a></td><td>&nbsp;</td><td valign="top"><a href="#Scrolling-only-one-line">5.43 画面下端に移動した際にEmacsが1行だけスクロールするよう強制するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Searching-for-newlines">Searching for newlines</a></td><td>&nbsp;</td><td valign="top"><a href="#Searching-for_002freplacing-newlines">5.12 isearchやquery-replaceで改行を入力するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Searching-for-unprintable-characters">Searching for unprintable characters</a></td><td>&nbsp;</td><td valign="top"><a href="#Working-with-unprintable-characters">5.11 プリント不可文字(8ビット文字やコントロール文字)の検索、削除、置換を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Searching-without-case-sensitivity">Searching without case sensitivity</a></td><td>&nbsp;</td><td valign="top"><a href="#Controlling-case-sensitivity">5.10 検索や置換の際にEmacsによる大文字小文字の区別を制御するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Security-with-Emacs">Security with Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Security-risks-with-Emacs">6.10 Are there any security risks in Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Selectively-displaying-_0023ifdef-code">Selectively displaying <code>#ifdef</code> code</a></td><td>&nbsp;</td><td valign="top"><a href="#Hiding-_0023ifdef-lines">5.26 Cモードでコンパイラーが<code>#ifdef</code>処理後に残る行だけを表示するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Self_002dpaced-tutorial_002c-invoking-the">Self-paced tutorial, invoking the</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-editing">3.1 Emacsは初めて; 基本的な編集を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Semitic-alphabets">Semitic alphabets</a></td><td>&nbsp;</td><td valign="top"><a href="#Right_002dto_002dleft-alphabets">10.3 Where is an Emacs that can handle Semitic (right-to-left) alphabets?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Sender_002c-replying-only-to">Sender, replying only to</a></td><td>&nbsp;</td><td valign="top"><a href="#Replying-to-the-sender-of-a-message">11.6 How can I force Rmail to reply to the sender of a message, but not the other recipients?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Sending-mail-with-aliases">Sending mail with aliases</a></td><td>&nbsp;</td><td valign="top"><a href="#Expanding-aliases-when-sending-mail">11.3 Why doesn&rsquo;t Emacs expand my aliases when sending mail?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Set-number-capability-in-vi-emulators">Set number capability in <code>vi</code> emulators</a></td><td>&nbsp;</td><td valign="top"><a href="#Displaying-the-current-line-or-column">5.5 Emacsに現在の行(や列)の番号を表示させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Setting-the-included-text-character">Setting the included text character</a></td><td>&nbsp;</td><td valign="top"><a href="#Changing-the-included-text-prefix">11.1 How do I change the included text prefix in mail/news followups?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Setting-X-resources">Setting X resources</a></td><td>&nbsp;</td><td valign="top"><a href="#Valid-X-resources">5.28 有効なXリソース(.Xdefaults内の項目)は?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Shell-buffer_002c-echoed-commands-and-_005eM-in">Shell buffer, echoed commands and &lsquo;<samp>^M</samp>&rsquo; in</a></td><td>&nbsp;</td><td valign="top"><a href="#g_t_005eM-in-the-shell-buffer">6.2 How do I get rid of &lsquo;<samp>^M</samp>&rsquo; or echoed commands in my shell buffer?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Shell-Mode_002c-problems">Shell Mode, problems</a></td><td>&nbsp;</td><td valign="top"><a href="#Problems-with-Shell-Mode">6.3 Why do I get an error message when I try to run <kbd>M-x shell</kbd>?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-shell_002dmode-and-current-directory"><code>shell-mode</code> and current directory</a></td><td>&nbsp;</td><td valign="top"><a href="#Shell-mode-loses-the-current-directory">6.9 Why does shell mode lose track of the shell&rsquo;s current directory?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Show-matching-paren-as-in-vi">Show matching paren as in <code>vi</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Matching-parentheses">5.25 自分が注目中のカッコに対応するカッコを表示するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Single-space-following-periods">Single space following periods</a></td><td>&nbsp;</td><td valign="top"><a href="#Filling-paragraphs-with-a-single-space">5.45 ピリオドごとにその後の単一スペースでパラグラフをフィルするようEmacsに伝えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Slow-catch-up-in-Gnus">Slow catch up in Gnus</a></td><td>&nbsp;</td><td valign="top"><a href="#Making-Gnus-faster">11.9 How do I make Gnus faster?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Sorting-messages-in-an-Rmail-folder">Sorting messages in an Rmail folder</a></td><td>&nbsp;</td><td valign="top"><a href="#Sorting-the-messages-in-an-Rmail-folder">11.4 How can I sort the messages in my Rmail folder?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Source-code_002c-building-Emacs-from">Source code, building Emacs from</a></td><td>&nbsp;</td><td valign="top"><a href="#Installing-Emacs">7.1 How do I install Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Sources-for-current-GNU-distributions">Sources for current GNU distributions</a></td><td>&nbsp;</td><td valign="top"><a href="#Current-GNU-distributions">8.5 Where can I get other up-to-date GNU stuff?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-SPC-file-name-completion"><kbd>SPC</kbd> file name completion</a></td><td>&nbsp;</td><td valign="top"><a href="#SPC-no-longer-completes-file-names">9.15 Why doesn&rsquo;t <tt class="key">SPC</tt> complete file names anymore?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-SPC_002c-definition-of"><tt class="key">SPC</tt>, definition of</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-keys">1.1 <kbd>C-h</kbd>、<kbd>C-M-a</kbd>、<tt class="key">RET</tt>、<kbd><span class="key">ESC</span> a</kbd>等は何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Spell_002dchecker">Spell-checker</a></td><td>&nbsp;</td><td valign="top"><a href="#Spell_002dcheckers">8.4 Spell-checkers</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Stallman_002c-Richard_002c-acronym-for">Stallman, Richard, acronym for</a></td><td>&nbsp;</td><td valign="top"><a href="#Common-acronyms">1.5 FSF、GNU、RMS、GPLとは何なのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Starting-Gnus-faster">Starting Gnus faster</a></td><td>&nbsp;</td><td valign="top"><a href="#Making-Gnus-faster">11.9 How do I make Gnus faster?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Starting-mail_002fnews-reader-automatically">Starting mail/news reader automatically</a></td><td>&nbsp;</td><td valign="top"><a href="#Automatically-starting-a-mail-or-news-reader">11.7 How do I make Emacs automatically start my mail/news reader?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Status-of-Emacs">Status of Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Status-of-Emacs">4 Emacsの状況について</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Stuff_002c-current-GNU">Stuff, current GNU</a></td><td>&nbsp;</td><td valign="top"><a href="#Current-GNU-distributions">8.5 Where can I get other up-to-date GNU stuff?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-support-for-push-commands-in-VC">support for push commands in VC</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Supported-systems">Supported systems</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-22">4.8 Emacs 22は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Suspending-Emacs">Suspending Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Forcing-Emacs-to-iconify-itself">5.33 アイコン化するようEmacsに伝えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Swapping-keys">Swapping keys</a></td><td>&nbsp;</td><td valign="top"><a href="#Swapping-keys">9.7 How do I swap two keys?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-switch_002c-indenting"><code>switch</code>, indenting</a></td><td>&nbsp;</td><td valign="top"><a href="#Indenting-switch-statements">5.19 <code>switch</code>のインデントを変更するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Symbols-generated-by-function-keys">Symbols generated by function keys</a></td><td>&nbsp;</td><td valign="top"><a href="#Working-with-function-and-arrow-keys">9.4 How do I tell what characters or symbols my function or arrow keys emit?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Syntax-highlighting">Syntax highlighting</a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-on-syntax-highlighting">5.42 構文ハイライトをオンにするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Syntax-highlighting-on-a-TTY">Syntax highlighting on a TTY</a></td><td>&nbsp;</td><td valign="top"><a href="#Colors-on-a-TTY">5.3 TTYで色や構文ハイライトするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Synthetic-X-events-and-security">Synthetic X events and security</a></td><td>&nbsp;</td><td valign="top"><a href="#Security-risks-with-Emacs">6.10 Are there any security risks in Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-systemd-support">systemd support</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-26">4.4 Emacs 26は何が違う?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-T">T</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Tab-length">Tab length</a></td><td>&nbsp;</td><td valign="top"><a href="#Changing-the-length-of-a-Tab">5.30 <tt class="key">TAB</tt>文字の長さにたいするEmacsの解釈を変更するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-TAB_002c-definition-of"><tt class="key">TAB</tt>, definition of</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-keys">1.1 <kbd>C-h</kbd>、<kbd>C-M-a</kbd>、<tt class="key">RET</tt>、<kbd><span class="key">ESC</span> a</kbd>等は何を意味するのか?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-tabs">tabs</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-27">4.3 Emacs 27は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-TECO">TECO</a></td><td>&nbsp;</td><td valign="top"><a href="#Origin-of-the-term-Emacs">4.1 &ldquo;Emacs&rdquo;という名前の由良は?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Termcap">Termcap</a></td><td>&nbsp;</td><td valign="top"><a href="#Termcap_002fTerminfo-entries-for-Emacs">6.4 Where is the termcap/terminfo entry for terminal type &lsquo;<samp>emacs</samp>&rsquo;?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Terminal-setup-code-in-_002eemacs">Terminal setup code in <samp>.emacs</samp></a></td><td>&nbsp;</td><td valign="top"><a href="#Terminal-setup-code-works-after-Emacs-has-begun">9.3 Why doesn&rsquo;t this [terminal or window-system setup] code work in my <samp>.emacs</samp> file, but it works just fine after Emacs starts up?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Terminfo">Terminfo</a></td><td>&nbsp;</td><td valign="top"><a href="#Termcap_002fTerminfo-entries-for-Emacs">6.4 Where is the termcap/terminfo entry for terminal type &lsquo;<samp>emacs</samp>&rsquo;?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Texinfo-documentation_002c-installing">Texinfo documentation, installing</a></td><td>&nbsp;</td><td valign="top"><a href="#Installing-Texinfo-documentation">3.5 Texinfoドキュメントをインストールするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Texinfo-file_002c-printing">Texinfo file, printing</a></td><td>&nbsp;</td><td valign="top"><a href="#Printing-a-Texinfo-file">3.6 Texinfoファイルをプリントするには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Text-indentation">Text indentation</a></td><td>&nbsp;</td><td valign="top"><a href="#Automatic-indentation">5.24 新しい行を前の行に合わせて自動的にインデントするようEmacsに伝えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Text-strings_002c-putting-regexps-in">Text strings, putting regexps in</a></td><td>&nbsp;</td><td valign="top"><a href="#Using-regular-expressions">5.34 Emacsでregexp(正規表現)わ使用するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-themes">themes</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-24">4.6 Emacs 24は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-threads">threads</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-26">4.4 Emacs 26は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Titlebar_002c-displaying-the-current-file-name-in">Titlebar, displaying the current file name in</a></td><td>&nbsp;</td><td valign="top"><a href="#Displaying-the-current-file-name-in-the-titlebar">5.6 現在のファイル名をタイトルバーに含めるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Toggling-overwrite_002dmode">Toggling <code>overwrite-mode</code></a></td><td>&nbsp;</td><td valign="top"><a href="#Overwrite-mode">5.21 Emacsに挿入ではなく&ldquo;上書き&rdquo;させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Toolbar-support">Toolbar support</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-21">4.9 Emacs 21は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Translations-for-keys-under-X">Translations for keys under X</a></td><td>&nbsp;</td><td valign="top"><a href="#X-key-translations-for-Emacs">9.5 How do I set the X key &ldquo;translations&rdquo; for Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-TTY-colors">TTY colors</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-21">4.9 Emacs 21は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Tutorial_002c-invoking-the">Tutorial, invoking the</a></td><td>&nbsp;</td><td valign="top"><a href="#Basic-editing">3.1 Emacsは初めて; 基本的な編集を行うには?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-U">U</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Unbundled-packages">Unbundled packages</a></td><td>&nbsp;</td><td valign="top"><a href="#Packages-that-do-not-come-with-Emacs">8.3 Where can I get Emacs Lisp packages that don&rsquo;t come with Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Unicode">Unicode</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Unicode-11_002e0_002e0">Unicode 11.0.0</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-26">4.4 Emacs 26は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Unicode-9_002e0_002e0">Unicode 9.0.0</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Unicode-characters_002c-typing-easily">Unicode characters, typing easily</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Unix-regexps_002c-differences-from-Emacs">Unix regexps, differences from Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Using-regular-expressions">5.34 Emacsでregexp(正規表現)わ使用するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Unix-systems_002c-installing-Emacs-on">Unix systems, installing Emacs on</a></td><td>&nbsp;</td><td valign="top"><a href="#Installing-Emacs">7.1 How do I install Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Unprintable-characters_002c-working-with">Unprintable characters, working with</a></td><td>&nbsp;</td><td valign="top"><a href="#Working-with-unprintable-characters">5.11 プリント不可文字(8ビット文字やコントロール文字)の検索、削除、置換を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Unsubscribing-from-GNU-mailing-lists">Unsubscribing from GNU mailing lists</a></td><td>&nbsp;</td><td valign="top"><a href="#Unsubscribing-from-Emacs-lists">2.5 How do I unsubscribe from a mailing list?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Up_002dto_002ddate-GNU-stuff">Up-to-date GNU stuff</a></td><td>&nbsp;</td><td valign="top"><a href="#Current-GNU-distributions">8.5 Where can I get other up-to-date GNU stuff?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Usenet-archives-for-GNU-groups">Usenet archives for GNU groups</a></td><td>&nbsp;</td><td valign="top"><a href="#Newsgroup-archives">2.3 <a href="news:gnu.emacs.help">news:gnu.emacs.help</a>や他のGNUグループへの古い投稿はどこで入手できる?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Usenet-groups_002c-appropriate-messages-for">Usenet groups, appropriate messages for</a></td><td>&nbsp;</td><td valign="top"><a href="#Guidelines-for-newsgroup-postings">2.2 What are appropriate messages for the various Emacs newsgroups?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Usenet-reader-in-Emacs">Usenet reader in Emacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Reading-news-with-Emacs">11.8 How do I read news under Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Using-an-existing-Emacs-process">Using an existing Emacs process</a></td><td>&nbsp;</td><td valign="top"><a href="#Using-an-already-running-Emacs-process">5.17 別ウィンドウですでに実行中のEmacsを使用するには?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-V">V</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Variable-documentation">Variable documentation</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-Lisp-documentation">3.4 Emacs Lispではどこでドキュメントを入手すれば?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Variable_002dsize-fonts">Variable-size fonts</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-21">4.9 Emacs 21は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Version_002c-latest">Version, latest</a></td><td>&nbsp;</td><td valign="top"><a href="#Latest-version-of-Emacs">4.2 Emacsの最新バージョンとは?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Vertical-movement-in-empty-documents">Vertical movement in empty documents</a></td><td>&nbsp;</td><td valign="top"><a href="#Forcing-the-cursor-to-remain-in-the-same-column">5.32 上下に移動した際にたとえ短すぎる行でも同じ列にカーソルが留まる; このようにEmacsを振る舞わせるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Very-large-files_002c-opening">Very large files, opening</a></td><td>&nbsp;</td><td valign="top"><a href="#Problems-with-very-large-files">6.1 Does Emacs have problems with large files?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Viewing-Info-files">Viewing Info files</a></td><td>&nbsp;</td><td valign="top"><a href="#Viewing-Info-files-outside-of-Emacs">3.7 Emacsを使わずにInfoファイルを閲覧できる?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Visible-bell">Visible bell</a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-off-beeping">5.22 端末でEmacsのビープ音を止めるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Volume-of-bell">Volume of bell</a></td><td>&nbsp;</td><td valign="top"><a href="#Turning-the-volume-down">5.23 XでEmacsを実行中にベル音量を下げるには?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-W">W</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-w32_002dbdf_002dfilename_002dalist"><code>w32-bdf-filename-alist</code></a></td><td>&nbsp;</td><td valign="top"><a href="#How-to-add-fonts">10.4 How do I add fonts for use with Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-w32_002dfind_002dbdf_002dfonts"><code>w32-find-bdf-fonts</code></a></td><td>&nbsp;</td><td valign="top"><a href="#How-to-add-fonts">10.4 How do I add fonts for use with Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Why-Emacs_003f">Why Emacs?</a></td><td>&nbsp;</td><td valign="top"><a href="#Origin-of-the-term-Emacs">4.1 &ldquo;Emacs&rdquo;という名前の由良は?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Windows-files_002c-editing">Windows files, editing</a></td><td>&nbsp;</td><td valign="top"><a href="#Editing-MS_002dDOS-files">5.44 EmacsでMS-DOSファイルを編集するには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Working-with-arrow-keys">Working with arrow keys</a></td><td>&nbsp;</td><td valign="top"><a href="#Working-with-function-and-arrow-keys">9.4 How do I tell what characters or symbols my function or arrow keys emit?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Working-with-function-keys">Working with function keys</a></td><td>&nbsp;</td><td valign="top"><a href="#Working-with-function-and-arrow-keys">9.4 How do I tell what characters or symbols my function or arrow keys emit?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Working-with-unprintable-characters">Working with unprintable characters</a></td><td>&nbsp;</td><td valign="top"><a href="#Working-with-unprintable-characters">5.11 プリント不可文字(8ビット文字やコントロール文字)の検索、削除、置換を行うには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Wrapping-lines">Wrapping lines</a></td><td>&nbsp;</td><td valign="top"><a href="#Wrapping-words-automatically">5.14 自分用にEmacsに単語を折り返させるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Wrapping-word-automatically">Wrapping word automatically</a></td><td>&nbsp;</td><td valign="top"><a href="#Wrapping-words-automatically">5.14 自分用にEmacsに単語を折り返させるには?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-X">X</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-X-and-tty-displays">X and tty displays</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-X-events-and-security">X events and security</a></td><td>&nbsp;</td><td valign="top"><a href="#Security-risks-with-Emacs">6.10 Are there any security risks in Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-X-key-translations">X key translations</a></td><td>&nbsp;</td><td valign="top"><a href="#X-key-translations-for-Emacs">9.5 How do I set the X key &ldquo;translations&rdquo; for Emacs?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-X-resources">X resources</a></td><td>&nbsp;</td><td valign="top"><a href="#Valid-X-resources">5.28 有効なXリソース(.Xdefaults内の項目)は?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-X-resources-being-ignored">X resources being ignored</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-ignores-X-resources">6.6 Why does Emacs ignore my X resources (my .Xdefaults file)?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-X-Window-System-and-iconification">X Window System and iconification</a></td><td>&nbsp;</td><td valign="top"><a href="#Forcing-Emacs-to-iconify-itself">5.33 アイコン化するようEmacsに伝えるには?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-XDG-convention">XDG convention</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-27">4.3 Emacs 27は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-XEmacs">XEmacs</a></td><td>&nbsp;</td><td valign="top"><a href="#Difference-between-Emacs-and-XEmacs">8.6 What is the difference between Emacs and XEmacs (formerly Lucid Emacs)?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-xref">xref</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Xterm-and-Meta-key">Xterm and <tt class="key">Meta</tt> key</a></td><td>&nbsp;</td><td valign="top"><a href="#Meta-key-does-not-work-in-xterm">9.13 Why doesn&rsquo;t my <tt class="key">Meta</tt> key work in an <code>xterm</code> window?</a></td></tr>
+<tr><td></td><td valign="top"><a href="#index-xwidgets">xwidgets</a></td><td>&nbsp;</td><td valign="top"><a href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-Y">Y</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Yanking-text-into-the-search-string">Yanking text into the search string</a></td><td>&nbsp;</td><td valign="top"><a href="#Yanking-text-in-isearch">5.13 killリングから検索文字列にテキストをコピーするには?</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+<tr><th id="Concept-Index_cp_letter-Z">Z</th><td></td><td></td></tr>
+<tr><td></td><td valign="top"><a href="#index-Zile">Zile</a></td><td>&nbsp;</td><td valign="top"><a href="#Emacs-for-minimalists">8.7 I don&rsquo;t have enough disk space to install Emacs</a></td></tr>
+<tr><td colspan="4"> <hr></td></tr>
+</table>
+<table><tr><th valign="top">Jump to: &nbsp; </th><td><a class="summary-letter" href="#Concept-Index_cp_symbol-1"><b>#</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_symbol-2"><b>$</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_symbol-3"><b>-</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_symbol-4"><b>.</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_symbol-5"><b>/</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_symbol-6"><b>2</b></a>
+ &nbsp; 
+<br>
+<a class="summary-letter" href="#Concept-Index_cp_letter-A"><b>A</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-B"><b>B</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-C"><b>C</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-D"><b>D</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-E"><b>E</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-F"><b>F</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-G"><b>G</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-H"><b>H</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-I"><b>I</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-J"><b>J</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-K"><b>K</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-L"><b>L</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-M"><b>M</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-N"><b>N</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-O"><b>O</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-P"><b>P</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-Q"><b>Q</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-R"><b>R</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-S"><b>S</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-T"><b>T</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-U"><b>U</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-V"><b>V</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-W"><b>W</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-X"><b>X</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-Y"><b>Y</b></a>
+ &nbsp; 
+<a class="summary-letter" href="#Concept-Index_cp_letter-Z"><b>Z</b></a>
+ &nbsp; 
+</td></tr></table>
+
+<hr size="6">
+</div>
+</div>
+<div class="Footnotes_element" id="SEC_Foot">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h1 class="footnotes-heading">Footnotes</h1>
+
+<h5><a id="FOOT1" href="#DOCF1">(1)</a></h5>
+<p>DOSおよびWindowsの端末では<tt class="key">Meta</tt>キー押下時にビット7をセットしません。</p>
+</div><hr>
+<div class="Contents_element" id="SEC_Contents">
+<table class="header" cellpadding="1" cellspacing="1" border="0">
+<tr><td valign="middle" align="left">[<a href="#Top" title="Cover (top) of document">Top</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_Contents" title="Table of contents">Contents</a>]</td>
+<td valign="middle" align="left">[<a href="#Concept-index" title="Index">Index</a>]</td>
+<td valign="middle" align="left">[<a href="#SEC_About" title="About (help)"> ? </a>]</td>
+</tr></table>
+<h1 class="contents-heading">Table of Contents</h1>
+
+<div class="contents">
+
+<ul class="no-bullet">
+  <li><a id="toc-FAQnoBiao-Ji-nituite" href="#FAQ-notation">1 FAQの表記について</a>
+  <ul class="no-bullet">
+    <li><a id="toc-C_002dh_002c-C_002dM_002da_002c-RET_002c-ESC-aDeng-haHe-woYi-Wei-surunoka_003f" href="#Basic-keys">1.1 <kbd>C-h</kbd>、<kbd>C-M-a</kbd>、<tt class="key">RET</tt>、<kbd><span class="key">ESC</span> a</kbd>等は何を意味するのか?</a></li>
+    <li><a id="toc-M_002dx-commandnoYi-Wei-ha_003f" href="#Extended-commands">1.2 <samp>M-x <var>command</var></samp>の意味は?</a></li>
+    <li><a id="toc-EmacsmaniyuarudetopitukuXXXwoDu-muniha_003f" href="#Emacs-manual">1.3 EmacsマニュアルでトピックXXXを読むには?</a></li>
+    <li><a id="toc-src_002fconfig_002eh_002c-site_002dlisp_002fdefault_002eelDeng-haHe-nanoka_003f" href="#File_002dname-conventions">1.4 <samp>src/config.h</samp>、<samp>site-lisp/default.el</samp>等は何なのか?</a></li>
+    <li><a id="toc-FSF_002c-GNU_002c-RMS_002c-GPLtohaHe-nanoka_003f" href="#Common-acronyms">1.5 FSF、GNU、RMS、GPLとは何なのか?</a></li>
+  </ul></li>
+  <li><a id="toc-YiBan-De-naZhi-Wen-" href="#General-questions">2 一般的な質問</a>
+  <ul class="no-bullet">
+    <li><a id="toc-GNUnocopylefttohaFa-De-niShi-Ji-nihaHe-woYi-Wei-surunoka_003f" href="#Real-meaning-of-copyleft">2.1 GNUのcopyleftとは法的に実際には何を意味するのか?</a></li>
+    <li><a id="toc-What-are-appropriate-messages-for-the-various-Emacs-newsgroups_003f" href="#Guidelines-for-newsgroup-postings">2.2 What are appropriate messages for the various Emacs newsgroups?</a></li>
+    <li><a id="toc-news_003agnu_002eemacs_002ehelpyaTa-noGNUgurupuhenoGu-iTou-Gao-hadokodeRu-Shou-dekiru_003f" href="#Newsgroup-archives">2.3 <a href="news:gnu.emacs.help">news:gnu.emacs.help</a>や他のGNUグループへの古い投稿はどこで入手できる?</a></li>
+    <li><a id="toc-EmacsnobaguyasonoTa-noWen-Ti-hadokonirepotosureba_003f" href="#Reporting-bugs">2.4 Emacsのバグやその他の問題はどこにレポートすれば?</a></li>
+    <li><a id="toc-How-do-I-unsubscribe-from-a-mailing-list_003f" href="#Unsubscribing-from-Emacs-lists">2.5 How do I unsubscribe from a mailing list?</a></li>
+    <li><a id="toc-How-do-I-contact-the-FSF_003f" href="#Contacting-the-FSF">2.6 How do I contact the FSF?</a></li>
+  </ul></li>
+  <li><a id="toc-Zhu-kewoDe-runiha" href="#Getting-help">3 助けを得るには</a>
+  <ul class="no-bullet">
+    <li><a id="toc-EmacshaChu-mete_003b-Ji-Ben-De-naBian-Ji-woXing-uniha_003f" href="#Basic-editing">3.1 Emacsは初めて; 基本的な編集を行うには?</a></li>
+    <li><a id="toc-EmacsdeHe-kawoXing-uFang-Fa-woJian-tukeruniha_003f" href="#Learning-how-to-do-something">3.2 Emacsで何かを行う方法を見つけるには?</a></li>
+    <li><a id="toc-EmacsmaniyuarunoYin-Shua-Ban-kopiwoRu-Shou-suruniha_003f" href="#Getting-a-printed-manual">3.3 Emacsマニュアルの印刷版コピーを入手するには?</a></li>
+    <li><a id="toc-Emacs-LispdehadokodedokiyumentowoRu-Shou-sureba_003f" href="#Emacs-Lisp-documentation">3.4 Emacs Lispではどこでドキュメントを入手すれば?</a></li>
+    <li><a id="toc-Texinfodokiyumentowoinsutorusuruniha_003f" href="#Installing-Texinfo-documentation">3.5 Texinfoドキュメントをインストールするには?</a></li>
+    <li><a id="toc-Texinfohuairuwopurintosuruniha_003f" href="#Printing-a-Texinfo-file">3.6 Texinfoファイルをプリントするには?</a></li>
+    <li><a id="toc-EmacswoShi-wazuniInfohuairuwoYue-Lan-dekiru_003f" href="#Viewing-Info-files-outside-of-Emacs">3.7 Emacsを使わずにInfoファイルを閲覧できる?</a></li>
+    <li><a id="toc-Li-Yong-dekiruEmacsQing-Bao-nohuairuha_003f" href="#Informational-files-for-Emacs">3.8 利用できるEmacs情報のファイルは?</a></li>
+    <li><a id="toc-EmacsnoinsutorudedokoniZhu-kewoQiu-mereba_003f" href="#Help-installing-Emacs">3.9 Emacsのインストールでどこに助けを求めれば?</a></li>
+    <li><a id="toc-konoFAQnoZui-Xin-Ban-hadokodeRu-Shou-dekiru_003f" href="#Obtaining-the-FAQ">3.10 このFAQの最新版はどこで入手できる?</a></li>
+  </ul></li>
+  <li><a id="toc-EmacsnoZhuang-Kuang-nituite" href="#Status-of-Emacs">4 Emacsの状況について</a>
+  <ul class="no-bullet">
+    <li><a id="toc-_0060_0060Emacs_0027_0027toiuMing-Qian-noYou-Liang-ha_003f" href="#Origin-of-the-term-Emacs">4.1 &ldquo;Emacs&rdquo;という名前の由良は?</a></li>
+    <li><a id="toc-EmacsnoZui-Xin-baziyontoha_003f" href="#Latest-version-of-Emacs">4.2 Emacsの最新バージョンとは?</a></li>
+    <li><a id="toc-Emacs-27haHe-gaWei-u_003f" href="#New-in-Emacs-27">4.3 Emacs 27は何が違う?</a></li>
+    <li><a id="toc-Emacs-26haHe-gaWei-u_003f" href="#New-in-Emacs-26">4.4 Emacs 26は何が違う?</a></li>
+    <li><a id="toc-Emacs-25haHe-gaWei-u_003f" href="#New-in-Emacs-25">4.5 Emacs 25は何が違う?</a></li>
+    <li><a id="toc-Emacs-24haHe-gaWei-u_003f" href="#New-in-Emacs-24">4.6 Emacs 24は何が違う?</a></li>
+    <li><a id="toc-Emacs-23haHe-gaWei-u_003f" href="#New-in-Emacs-23">4.7 Emacs 23は何が違う?</a></li>
+    <li><a id="toc-Emacs-22haHe-gaWei-u_003f" href="#New-in-Emacs-22">4.8 Emacs 22は何が違う?</a></li>
+    <li><a id="toc-Emacs-21haHe-gaWei-u_003f" href="#New-in-Emacs-21">4.9 Emacs 21は何が違う?</a></li>
+    <li><a id="toc-Emacs-20haHe-gaWei-u_003f" href="#New-in-Emacs-20">4.10 Emacs 20は何が違う?</a></li>
+  </ul></li>
+  <li><a id="toc-yokuaruYao-Wang-" href="#Common-requests">5 よくある要望</a>
+  <ul class="no-bullet">
+    <li><a id="toc-_002eemacshuairuwoZheng-sikusetutoatupusuruniha_003f" href="#Setting-up-a-customization-file">5.1 <samp>.emacs</samp>ファイルを正しくセットアップするには?</a></li>
+    <li><a id="toc-CustomizewoShi-iShi-meruniha_003f" href="#Using-Customize">5.2 Customizeを使い始めるには?</a></li>
+    <li><a id="toc-TTYdeSe-yaGou-Wenhairaitosuruniha_003f" href="#Colors-on-a-TTY">5.3 TTYで色や構文ハイライトするには?</a></li>
+    <li><a id="toc-_002eemacshuairuwodebatugusuruniha_003f" href="#Debugging-a-customization-file">5.4 <samp>.emacs</samp>ファイルをデバッグするには?</a></li>
+    <li><a id="toc-EmacsniXian-Zai-noXing-_0028yaLie-_0029noFan-Hao-woBiao-Shisaseruniha_003f" href="#Displaying-the-current-line-or-column">5.5 Emacsに現在の行(や列)の番号を表示させるには?</a></li>
+    <li><a id="toc-Xian-Zai-nohuairuMing-wotaitorubaniHan-meruniha_003f" href="#Displaying-the-current-file-name-in-the-titlebar">5.6 現在のファイル名をタイトルバーに含めるには?</a></li>
+    <li><a id="toc-modomymodededehuorutodeabbrevwoonnisuruniha_003f" href="#Turning-on-abbrevs-by-default">5.7 モード<var>mymode</var>でデフォルトでabbrevをオンにするには?</a></li>
+    <li><a id="toc-Te-Ding-nohuairuniTe-Ding-nomodowoEmacsniShi-Yong-saseruniha_003f" href="#Associating-modes-with-files">5.8 特定のファイルに特定のモードをEmacsに使用させるには?</a></li>
+    <li><a id="toc-hairaitosaretatekisutowotaipusitatekisutodeZhi-kiHuan-eruniha_003f" href="#Replacing-highlighted-text">5.9 ハイライトされたテキストをタイプしたテキストで置き換えるには?</a></li>
+    <li><a id="toc-Jian-Suo-yaZhi-Huan-noJi-niEmacsniyoruDa-WenZi-Xiao-WenZi-noQu-Bie-woZhi-Yu-suruniha_003f" href="#Controlling-case-sensitivity">5.10 検索や置換の際にEmacsによる大文字小文字の区別を制御するには?</a></li>
+    <li><a id="toc-purintoBu-Ke-WenZi-_00288bitutoWenZi-yakontororuWenZi-_0029noJian-Suo-_002c-Xue-Chu-_002c-Zhi-Huan-woXing-uniha_003f" href="#Working-with-unprintable-characters">5.11 プリント不可文字(8ビット文字やコントロール文字)の検索、削除、置換を行うには?</a></li>
+    <li><a id="toc-isearchyaquery_002dreplacedeGai-Xing-woRu-Li-suruniha_003f" href="#Searching-for_002freplacing-newlines">5.12 isearchやquery-replaceで改行を入力するには?</a></li>
+    <li><a id="toc-killringukaraJian-Suo-WenZi-Lie-nitekisutowokopisuruniha_003f" href="#Yanking-text-in-isearch">5.13 killリングから検索文字列にテキストをコピーするには?</a></li>
+    <li><a id="toc-Zi-Fen-Yong-niEmacsniDan-Yu-woZhe-riFan-saseruniha_003f" href="#Wrapping-words-automatically">5.14 自分用にEmacsに単語を折り返させるには?</a></li>
+    <li><a id="toc-dehuorutodeauto_002dfill_002dmodewoonnisuruniha_003f" href="#Turning-on-auto_002dfill-by-default">5.15 デフォルトで<code>auto-fill-mode</code>をオンにするには?</a></li>
+    <li><a id="toc-load_002dpathwoBian-Geng-suruniha_003f" href="#Changing-load_002dpath">5.16 <code>load-path</code>を変更するには?</a></li>
+    <li><a id="toc-Bie-uindoudesudeniShi-Xing-ZhongnoEmacswoShi-Yong-suruniha_003f" href="#Using-an-already-running-Emacs-process">5.17 別ウィンドウですでに実行中のEmacsを使用するには?</a></li>
+    <li><a id="toc-watasinokonpairanoBian-naerametuseziwoEmacsniRen-Shi-saseruniha_003f" href="#Compiler-error-messages">5.18 わたしのコンパイラーの変なエラーメッセージをEmacsに認識させるには?</a></li>
+    <li><a id="toc-switchnoindentowoBian-Geng-suruniha_003f" href="#Indenting-switch-statements">5.19 <code>switch</code>のインデントを変更するには?</a></li>
+    <li><a id="toc-C_002c-C_002b_002b_002c-Javanobatuhuanoindentowokasutamaizusuruniha_003f" href="#Customizing-C-and-C_002b_002b-indentation">5.20 C、C<tt>++</tt>、Javaのバッファーのインデントをカスタマイズするには?</a></li>
+    <li><a id="toc-EmacsniCha-Ru-dehanaku_0060_0060Shang-Shu-ki_0027_0027saseruniha_003f" href="#Overwrite-mode">5.21 Emacsに挿入ではなく&ldquo;上書き&rdquo;させるには?</a></li>
+    <li><a id="toc-Duan-Mo-deEmacsnobipuYin-woZhi-meruniha_003f" href="#Turning-off-beeping">5.22 端末でEmacsのビープ音を止めるには?</a></li>
+    <li><a id="toc-XdeEmacswoShi-Xing-ZhongniberuYin-Liang-woXia-geruniha_003f" href="#Turning-the-volume-down">5.23 XでEmacsを実行中にベル音量を下げるには?</a></li>
+    <li><a id="toc-Xin-siiXing-woQian-noXing-niHe-waseteZi-Dong-De-niindentosuruyouEmacsniChuan-eruniha_003f" href="#Automatic-indentation">5.24 新しい行を前の行に合わせて自動的にインデントするようEmacsに伝えるには?</a></li>
+    <li><a id="toc-Zi-Fen-gaZhu-Mu-ZhongnokatukoniDui-Ying-surukatukowoBiao-Shisuruniha_003f" href="#Matching-parentheses">5.25 自分が注目中のカッコに対応するカッコを表示するには?</a></li>
+    <li><a id="toc-Cmododekonpairaga_0023ifdefChu-Li-Hou-niCan-ruXing-dakewoBiao-Shisuruniha_003f" href="#Hiding-_0023ifdef-lines">5.26 Cモードでコンパイラーが<code>#ifdef</code>処理後に残る行だけを表示するには?</a></li>
+    <li><a id="toc-dekirudakeZe-Shan-komandowoZao-riFan-suniha_003f" href="#Repeating-commands">5.27 できるだけ沢山コマンドを繰り返すには?</a></li>
+    <li><a id="toc-You-Xiao-naXrisosu_0028_002eXdefaultsNei-noXiang-Mu-_0029ha_003f" href="#Valid-X-resources">5.28 有効なXリソース(.Xdefaults内の項目)は?</a></li>
+    <li><a id="toc-Emacs-LispnokodoPian-woShi-Xing-_0028_0060_0060evaluate_0027_0027_0029suruniha_003f" href="#Evaluating-Emacs-Lisp-code">5.29 Emacs Lispのコード片を実行(&ldquo;evaluate&rdquo;)するには?</a></li>
+    <li><a id="toc-TABWenZi-noChang-sanitaisuruEmacsnoJie-Shi-woBian-Geng-suruniha_003f" href="#Changing-the-length-of-a-Tab">5.30 <tt class="key">TAB</tt>文字の長さにたいするEmacsの解釈を変更するには?</a></li>
+    <li><a id="toc-Ge-Xing-noXian-Tou-ni_003cHe-rakanotekisuto_003ewoCha-Ru-suruniha_003f" href="#Inserting-text-at-the-beginning-of-each-line">5.31 各行の先頭に&lt;何らかのテキスト&gt;を挿入するには?</a></li>
+    <li><a id="toc-Shang-Xia-niYi-Dong-sitaJi-nitatoeDuan-sugiruXing-demoTong-ziLie-nikasorugaLiu-maru_003b-konoyouniEmacswoZhen-ruWu-waseruniha_003f" href="#Forcing-the-cursor-to-remain-in-the-same-column">5.32 上下に移動した際にたとえ短すぎる行でも同じ列にカーソルが留まる; このようにEmacsを振る舞わせるには?</a></li>
+    <li><a id="toc-aikonHua-suruyouEmacsniChuan-eruniha_003f" href="#Forcing-Emacs-to-iconify-itself">5.33 アイコン化するようEmacsに伝えるには?</a></li>
+    <li><a id="toc-Emacsderegexp_0028Zheng-Gui-Biao-Xian-_0029waShi-Yong-suruniha_003f" href="#Using-regular-expressions">5.34 Emacsでregexp(正規表現)わ使用するには?</a></li>
+    <li><a id="toc-Fu-Shu-huairuwoHeng-Duan-siteZhi-Huan-Cao-Zuo-woXing-uniha_003f" href="#Replacing-text-across-multiple-files">5.35 複数ファイルを横断して置換操作を行うには?</a></li>
+    <li><a id="toc-etagsnodokiyumentohadoko_003f" href="#Documentation-for-etags">5.36 <code>etags</code>のドキュメントはどこ?</a></li>
+    <li><a id="toc-batukuatupuhuairuwoWu-Xiao-nisuruniha_003f" href="#Disabling-backups">5.37 バックアップファイルを無効にするには?</a></li>
+    <li><a id="toc-auto_002dsave_002dmodewoWu-Xiao-nisuruniha_003f" href="#Disabling-auto_002dsave_002dmode">5.38 <code>auto-save-mode</code>を無効にするには?</a></li>
+    <li><a id="toc-Xing-Fan-Hao-deTe-Ding-Xing-niYi-Dong-suruniha_003f" href="#Going-to-a-line-by-number">5.39 行番号で特定行に移動するには?</a></li>
+    <li><a id="toc-purudaunnoXin-tanameniyuopusiyonnoZuo-Cheng-yaBian-Geng-woXing-uniha_003f" href="#Modifying-pull_002ddown-menus">5.40 プルダウンの新たなメニューオプションの作成や変更を行うには?</a></li>
+    <li><a id="toc-meniyuyameniyuopusiyonwoXue-Chu-suruniha_003f" href="#Deleting-menus-and-menu-options">5.41 メニューやメニューオプションを削除するには?</a></li>
+    <li><a id="toc-Gou-Wenhairaitowoonnisuruniha_003f" href="#Turning-on-syntax-highlighting">5.42 構文ハイライトをオンにするには?</a></li>
+    <li><a id="toc-Hua-Mian-Xia-Duan-niYi-Dong-sitaJi-niEmacsga1Xing-dakesukurorusuruyouQiang-Zhi-suruniha_003f" href="#Scrolling-only-one-line">5.43 画面下端に移動した際にEmacsが1行だけスクロールするよう強制するには?</a></li>
+    <li><a id="toc-EmacsdeMS_002dDOShuairuwoBian-Ji-suruniha_003f" href="#Editing-MS_002dDOS-files">5.44 EmacsでMS-DOSファイルを編集するには?</a></li>
+    <li><a id="toc-piriodogotonisonoHou-noDan-YisupesudeparagurahuwohuirusuruyouEmacsniChuan-eruniha_003f" href="#Filling-paragraphs-with-a-single-space">5.45 ピリオドごとにその後の単一スペースでパラグラフをフィルするようEmacsに伝えるには?</a></li>
+    <li><a id="toc-nazeShellmodolshaQi-Miao-naesukepusikensuwoChu-Li-surunoka_003f" href="#Escape-sequences-in-shell-output">5.46 なぜShellモード<code>ls</code>は奇妙なエスケープシーケンスを出力するのか?</a></li>

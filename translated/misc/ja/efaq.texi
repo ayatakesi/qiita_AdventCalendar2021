@@ -2361,7 +2361,7 @@ Resources,,, emacs, The GNU Emacs Manual}を参照してください。
 
 @c ------------------------------------------------------------
 @node Bugs and problems
-@chapter Bugs and problems
+@chapter バグやトラブル
 @cindex Bugs and problems
 
 Emacsマニュアルにはユーザーが陥りやすい類の一般的なトラブルのリストがあるので、このチャプターに記述されていない問題に遭遇したら、@ref{Lossage,
@@ -2387,7 +2387,7 @@ C-p}とタイプしてください。
 @end menu
 
 @node Problems with very large files
-@section Does Emacs have problems with large files?
+@section Emacsにとって大きなファイルは問題になるか?
 @cindex Very large files, opening
 @cindex Large files, opening
 @cindex Opening very large files
@@ -2404,7 +2404,7 @@ Emacsのバッファーサイズには先天的に固定された制限があり
 マルチバイト文字のデコーディングのような事柄のために、visitできるのはバッファーのサイズ制限の概ね半分のサイズのファイルだけです。圧縮されたアーカイブをvisitする際には、解凍のためにファイルサイズの制限はより小さくなります。
 
 @node ^M in the shell buffer
-@section How do I get rid of @samp{^M} or echoed commands in my shell buffer?
+@section Shellバッファーから@samp{^M}やエコーされるコマンドを取り除くには?
 @cindex Shell buffer, echoed commands and @samp{^M} in
 @cindex Echoed commands in @code{shell-mode}
 
@@ -2473,7 +2473,7 @@ stty -icrnl -onlcr -echo susp ^Z
 MS-Windows上のShellモードで差し出がましいアンチウイルスソフトウェアによりトラブルに遭う人がいます。このようなケースでは常駐アンチウイルスプログラムを無効にすると問題は解決するでしょう。
 
 @node Termcap/Terminfo entries for Emacs
-@section Where is the termcap/terminfo entry for terminal type @samp{emacs}?
+@section 端末タイプ@samp{emacs}用のtermcap/terminfoエントリーはどこ?
 @cindex Termcap
 @cindex Terminfo
 @cindex Emacs entries for termcap/terminfo
@@ -2496,7 +2496,7 @@ if ("$term" == emacs) set term=dumb
 @end example
 
 @node Errors with init files
-@section Why does Emacs say @samp{Error in init file}?
+@section Emacsが@samp{Error in init file}と言うのはなぜ?
 @cindex Error in @file{.emacs}
 @cindex Error in init file
 @cindex Init file, errors in
@@ -2513,7 +2513,7 @@ file}を参照してください。
 setup code works after Emacs has begun}に記述があります。
 
 @node Emacs ignores X resources
-@section Why does Emacs ignore my X resources (my .Xdefaults file)?
+@section EmacsがXリソース(わたしの.Xdefaultsファイル)を無視するのはなぜ?
 @cindex X resources being ignored
 @cindex Ignored X resources
 @cindex @file{.Xdefaults}
@@ -2581,7 +2581,7 @@ Emacsは以下のようにXリソースを検索します:
 @end enumerate
 
 @node Emacs ignores frame parameters
-@section Why don't my customizations of the frame parameters work?
+@section わたしがカスタマイズしたフレームパラメーターが機能しないのはなぜ?
 @cindex Frame parameters
 
 これが発生したのは恐らく変数@code{initial-frame-alist}でフレームパラメーターをセットしたからです。この変数にはEmacs起動時に作成された最初のフレームに使用されたパラメーターだけが保持されています。すべてのフレームのパラメーターをカスタマイズするためには、かわりに@code{default-frame-alist}を変更してください。
@@ -2590,7 +2590,7 @@ Emacsは以下のようにXリソースを検索します:
 
 
 @node Editing files with $ in the name
-@section How do I edit a file with a @samp{$} in its name?
+@section 名前に@samp{$}があるファイルを編集するには?
 @cindex Editing files with @samp{$} in the name
 @cindex @samp{$} in file names
 @cindex File names containing @samp{$}, editing
@@ -2598,7 +2598,7 @@ Emacsは以下のようにXリソースを検索します:
 ミニバッファーでファイル名を入力する際には、単語の前に@samp{$}があるとEmacsは環境変数としてそれの展開を試みます。この挙動を抑止するには、かわりに@kbd{$$}とタイプしてください。
 
 @node Shell mode loses the current directory
-@section Why does shell mode lose track of the shell's current directory?
+@section Shellモードがシェルのカレントディレクトリーを見失うのはなぜ?
 @cindex Current directory and @code{shell-mode}
 @cindex @code{shell-mode} and current directory
 @cindex Directory, current in @code{shell-mode}
@@ -2611,7 +2611,7 @@ a package with particular functionality}を参照)。
 コマンド@kbd{M-x dirs}でシェルのカレントディレクトリーをEmacsに伝えることができます。
 
 @node Security risks with Emacs
-@section Are there any security risks in Emacs?
+@section Emacsにセキュリティリスクはある?
 @cindex Security with Emacs
 @cindex @samp{movemail} and security
 @cindex @code{file-local-variable} and security
@@ -2675,7 +2675,7 @@ access control enabled, only authorized clients can connect
 @end itemize
 
 @node Dired claims that no file is on this line
-@section Dired says, @samp{no file on this line} when I try to do something.
+@section 何かしようとするとDiredが@samp{no file on this line}と言う。
 @cindex Dired does not see a file
 
 Diredはファイル名の先頭を見つけるために正規表現を使用します。Unix形式の長いディレクトリーリスト(@samp{ls
@@ -2697,7 +2697,7 @@ Diredはファイル名の先頭を見つけるために正規表現を使用し
 @end menu
 
 @node Installing Emacs
-@section How do I install Emacs?
+@section Emacsをインストールするには?
 @cindex Installing Emacs
 @cindex Unix systems, installing Emacs on
 @cindex Downloading and installing Emacs
@@ -2760,7 +2760,7 @@ Infoファイルは上書きされることに注意。
 @end itemize
 
 @node Problems building Emacs
-@section What should I do if I have trouble building Emacs?
+@section Emacsのビルドでトラブルに逢ったらどうすれば?
 @cindex Problems building Emacs
 @cindex Errors when building Emacs
 
@@ -2773,7 +2773,7 @@ Infoファイルは上書きされることに注意。
 
 @c ------------------------------------------------------------
 @node Finding Emacs and related packages
-@chapter Finding Emacs and related packages
+@chapter Emacsおよび関連パッケージの見つけ方
 @cindex Finding Emacs and related packages
 
 @menu
@@ -2791,7 +2791,7 @@ Infoファイルは上書きされることに注意。
 @end menu
 
 @node Finding Emacs on the Internet
-@section Where can I get Emacs on the net?
+@section ネットショップのどこでEmacsを入手できる?
 @cindex Finding Emacs on the Internet
 @cindex Downloading Emacs
 
@@ -2802,7 +2802,7 @@ Emacsの入手およびEmacs最新バージョンをビルドする方法につ�
 Emacs}、GNUソフトウェアが利用可能なアーカイブサイトのリストは@ref{Current GNU distributions}を参照してください。
 
 @node Finding a package with particular functionality
-@section How do I find an Emacs Lisp package that does XXX?
+@section  XXXを行うEmacs Lispパッケージを見つけるには?
 @cindex Package, finding
 @cindex Finding an Emacs Lisp package
 @cindex Functionality, finding a particular package
@@ -2820,7 +2820,7 @@ Emacs}を参照してください。
 
 @c Note that M-x view-external-packages references this node.
 @node Packages that do not come with Emacs
-@section Where can I get Emacs Lisp packages that don't come with Emacs?
+@section  Emacsに同梱されていないEmacs Lispパッケージはどこで入手できるのか?
 @cindex Unbundled packages
 @cindex Finding other packages
 @cindex Lisp packages that do not come with Emacs
@@ -2857,7 +2857,7 @@ Lispパッケージを提供するすべてのサイトをここで一覧する�
 ELPAをチェックした後は、ウェブ検索が結果を見い出す最良の手段であることが多々あります。
 
 @node Spell-checkers
-@section Spell-checkers
+@section スペルチェッカー
 @cindex Spell-checker
 @cindex Checking spelling
 @cindex Hunspell
@@ -2884,7 +2884,7 @@ ELPAをチェックした後は、ウェブ検索が結果を見い出す最良�
 @end table
 
 @node Current GNU distributions
-@section Where can I get other up-to-date GNU stuff?
+@section その他の最新のGNUスタッフはどこで入手できる?
 @cindex Current GNU distributions
 @cindex Sources for current GNU distributions
 @cindex Stuff, current GNU
@@ -2901,7 +2901,7 @@ GNU公式ソフトウェアのほとんどは通常は以下に保持されて�
 @uref{https://www.gnu.org/prep/ftp}
 
 @node Difference between Emacs and XEmacs
-@section What is the difference between Emacs and XEmacs (formerly Lucid Emacs)?
+@section EmacsとXEmacs(以前はLucid Emacs)の違いは?
 @cindex XEmacs
 @cindex Difference Emacs and XEmacs
 @cindex Lucid Emacs
@@ -2920,7 +2920,7 @@ Emacs''の対比は誤解を招きかねません。``Emacsen''や``(X)Emacs''�
 and XEmacs''と記述するほうが良いでしょう。
 
 @node Emacs for minimalists
-@section I don't have enough disk space to install Emacs
+@section Emacsをインストールするための空き容量が不十分
 @cindex Zile
 @cindex Not enough disk space to install Emacs
 
@@ -2931,7 +2931,7 @@ Emacs}を短縮したものです。これにはEmacsの基本的な編集機能
 
 
 @node Emacs for MS-DOS
-@section Where can I get Emacs for MS-DOS?
+@section MS-DOS用のEmacsはどこ?
 @cindex MS-DOS, Emacs for
 @cindex DOS, Emacs for
 @cindex Compiling Emacs for DOS
@@ -2954,7 +2954,7 @@ literature,''のリストを参照してください。
 これらのプログラムの多くはEmacsと同じように見えますが、それらにはEmacs Lisp拡張言語のような特定の機能が欠落していることが多々あります。
 
 @node Emacs for MS-Windows
-@section Where can I get Emacs for Microsoft Windows?
+@section Microsoft Windows用のEmacsはどこ?
 @cindex FAQ for Emacs on MS-Windows
 @cindex Emacs for MS-Windows
 @cindex Microsoft Windows, Emacs for
@@ -2964,13 +2964,13 @@ Windows}を参照してください。MS-DOSの場合には@ref{Emacs for MS-DOS
 
 
 @node Emacs for GNUstep
-@section Where can I get Emacs for GNUstep?
+@section GNUstep用のEmacsはどこ?
 @cindex GNUstep, Emacs for
 
 バージョン23.1からEmacsはGNUstepをネイティブでサポートしています。ディストリビューション内のファイル@file{nextstep/INSTALL}を参照してください。
 
 @node Emacs for macOS
-@section Where can I get Emacs for macOS?
+@section macOS用のEmacsはどこ?
 @cindex Apple computers, Emacs for
 @cindex Macintosh, Emacs for
 @cindex macOS, Emacs for
@@ -2979,7 +2979,7 @@ Windows}を参照してください。MS-DOSの場合には@ref{Emacs for MS-DOS
 
 @c ------------------------------------------------------------
 @node Key bindings
-@chapter Key bindings
+@chapter キープバインディング
 @cindex Key bindings
 
 @menu
@@ -3001,7 +3001,7 @@ Windows}を参照してください。MS-DOSの場合には@ref{Emacs for MS-DOS
 @end menu
 
 @node Binding keys to commands
-@section How do I bind keys (including function keys) to commands?
+@section キー(ファンクションキー含む)をコマンドにインストールするには?
 @cindex Binding keys to commands
 @cindex Keys, binding to commands
 @cindex Commands, binding keys to
@@ -3058,7 +3058,7 @@ killリングからyankしたキーシーケンス内でのコントロール文
 @end itemize
 
 @node Invalid prefix characters
-@section Why does Emacs say @samp{Key sequence XXX uses invalid prefix characters}?
+@section Emacsが@samp{Key sequence XXX uses invalid prefix characters}と言うのはなぜ?
 @cindex Prefix characters, invalid
 @cindex Invalid prefix characters
 @cindex Misspecified key sequences
@@ -3073,7 +3073,7 @@ key)}がすでに@dfn{コンプリートキー(complete key)}としてバイン�
 @end lisp
 
 @node Terminal setup code works after Emacs has begun
-@section Why doesn't this [terminal or window-system setup] code work in my @file{.emacs} file, but it works just fine after Emacs starts up?
+@section Emacs起動後でなければ@file{.emacs}ファイルの[端末やウィンドウシステム]のセットアップコードが機能しないのはなぜ?
 @cindex Terminal setup code in @file{.emacs}
 
 スタートアップの間、Emacsは与えられたコード/ファイルの順番に応じて自身を初期化します。@file{.emacs}ファイルの中のあるコードを、端末またはウィンドウシステムのセットアップコードが実行されるまで延期する必要があるのにセットアップが終わっていないと、この問題を体験することになるでしょう(このコード/ファイルの実行順はスタートアップ後は強制されない)。
@@ -3093,7 +3093,7 @@ list)}として@code{emacs-startup-hook} (またはEmacs
 起動のたびにEmacsが何を行っているかについては@file{lisp/startup.el}を参照してください。
 
 @node Working with function and arrow keys
-@section How do I tell what characters or symbols my function or arrow keys emit?
+@section ファンクションキーや矢印キーが発する文字やシンボルを確認するには?
 @cindex Working with arrow keys
 @cindex Arrow keys, symbols generated by
 @cindex Working with function keys
@@ -3104,7 +3104,7 @@ list)}として@code{emacs-startup-hook} (またはEmacs
 c}の後にファンクションキーか矢印キーをタイプしてください。コマンドはファンクションキーシンボルか文字シーケンスをリターンするでしょう(説明はEmacsドキュメントを参照)。これは他のキーでも同様に機能します。
 
 @node X key translations for Emacs
-@section How do I set the X key ``translations'' for Emacs?
+@section Xのキー変換をEmacs用に設定するには?
 @cindex X key translations
 @cindex Key translations under X
 @cindex Translations for keys under X
@@ -3122,7 +3122,7 @@ Emacs内でのキーの挙動に影響を与えるには@code{xmodmap} (Emacs外
 これはキーシーケンス@kbd{M-@key{TAB}}を定義します。
 
 @node Backspace invokes help
-@section Why does the @key{Backspace} key invoke help?
+@section @key{Backspace}キーがヘルプを呼び出すのはなぜ?
 @cindex @key{Backspace} key invokes help
 @cindex Help invoked by @key{Backspace}
 @cindex @key{DEL} key does not delete
@@ -3202,7 +3202,7 @@ Emacs内部では@key{Backspace}キーと@key{DEL}キーを交換できる:
 emacs, The GNU Emacs Manual}を参照してください。
 
 @node Swapping keys
-@section How do I swap two keys?
+@section 2つのキーを入れ替えるには?
 @cindex Swapping keys
 @cindex Keys, swapping
 @cindex @code{keyboard-translate}
@@ -3223,7 +3223,7 @@ Does Not Delete,,, emacs, The GNU Emacs Manual}を参照してください。
 キーボードの変換(translation)はキーマップのキーバインディングと同じではありません。Emacsには異なる状況に適用するために数々のキーマップがありますが、キーボード変換は1セットしかなく、Emacsが端末から文字を読み取るたびにそれが適用されます。キーボード変換は入力プロセスのもっとも低いレベルで行われます。キーマップに照合される文字にはキーボード変換された結果の文字が含まれています。
 
 @node Producing C-XXX with the keyboard
-@section How do I produce C-XXX with my keyboard?
+@section キーボードでC-XXXを生成するには?
 @cindex Producing control characters
 @cindex Generating control characters
 @cindex Control characters, generating
@@ -3257,7 +3257,7 @@ c}コマンドを使って、@key{CTRL}とすべての数字を試して何が�
 w}コマンドを試してみることもできます。
 
 @node No Meta key
-@section What if I don't have a @key{Meta} key?
+@section @key{Meta}キーがない、どうすれば?
 @cindex No @key{Meta} key
 @cindex @key{Meta} key, what to do if you lack it
 
@@ -3268,7 +3268,7 @@ a}とタイプすることができます。実際のところ、いずれにせ
 a}に変換しています(@code{meta-prefix-char}の値による)。@key{Meta}と@kbd{a}は一緒に押しますが、@key{ESC}の場合には@key{ESC}を押して、離した後に@kbd{a}を押下することに注意してください。
 
 @node No Escape key
-@section What if I don't have an @key{Escape} key?
+@section @key{Escape}キーがない、どうすれば?
 @cindex No Escape key
 @cindex Lacking an Escape key
 @cindex Escape key, lacking
@@ -3281,14 +3281,14 @@ a}に変換しています(@code{meta-prefix-char}の値による)。@key{Meta}�
 @end lisp
 
 @node Compose Character
-@section Can I make my @key{Compose Character} key behave like a @key{Meta} key?
+@section @key{Compose Character}キーを@key{Meta}キーのように機能させるには?
 @cindex @key{Compose Character} key, using as @key{Meta}
 @cindex @key{Meta}, using @key{Compose Character} for
 
 VT220のようなダム端末ではできません。噂では特定のVT220クローンは、この方法で設定することによって独自に@key{Compose}キーをもてるようです。Xを使用していれば、@code{xmodmap}コマンドでこれを行うことができるかもしれません。
 
 @node Binding combinations of modifiers and function keys
-@section How do I bind a combination of modifier key and function key?
+@section 修飾キーとファンクションキーの組み合わせをバインドするには?
 @cindex Modifiers and function keys
 @cindex Function keys and modifiers
 @cindex Binding modifiers and function keys
@@ -3318,7 +3318,7 @@ VT220のようなダム端末ではできません。噂では特定のVT220ク�
 キーバインディングについての一般的な説明については@ref{Binding keys to commands}を参照してください。
 
 @node Meta key does not work in xterm
-@section Why doesn't my @key{Meta} key work in an @code{xterm} window?
+@section @code{xterm}ウィンドウで@key{Meta}キーが機能しないのはなぜ?
 @cindex @key{Meta} key and @code{xterm}
 @cindex Xterm and @key{Meta} key
 
@@ -3376,7 +3376,7 @@ XTerm.VT100.Translations: #override \
 @end itemize
 
 @node ExtendChar key does not work as Meta
-@section Why doesn't my @key{ExtendChar} key work as a @key{Meta} key under HP-UX 8.0 and 9.x?
+@section HP-UX 8.0および9.xで@key{ExtendChar}キーが@key{Meta}キーのように機能しないのはなぜ?
 @cindex @key{ExtendChar} key as @key{Meta}
 @cindex @key{Meta}, using @key{ExtendChar} for
 @cindex HP-UX, the @key{ExtendChar} key
@@ -3393,7 +3393,7 @@ xmodmap -e 'remove mod1 = Mode_switch'
 これはシステムワイドで追加のkeysymを無効にします。これはあなたが実際にそれらを使用つもりなら不本意かもしれません。
 
 @node SPC no longer completes file names
-@section Why doesn't @key{SPC} complete file names anymore?
+@section @key{SPC}でファイル名が他の人されなくなった、なぜ?
 @cindex @kbd{SPC} file name completion
 
 Emacs
@@ -3411,7 +3411,7 @@ Emacs
 
 @c ------------------------------------------------------------
 @node Alternate character sets
-@chapter Alternate character sets
+@chapter 代替文字集合
 @cindex Alternate character sets
 
 @menu
@@ -3422,7 +3422,7 @@ Emacs
 @end menu
 
 @node Emacs does not display 8-bit characters
-@section How do I make Emacs display 8-bit characters?
+@section Emacsで8ビット文字を表示するには?
 @cindex Displaying eight-bit characters
 @cindex Eight-bit characters, displaying
 
@@ -3431,7 +3431,7 @@ Manual}を参照してください。Unixのテキストのみの端末ディス
 -nw}呼び出しでEmacsを実行する際には、たとえ言語環境を設定後であっても、通常は@code{set-terminal-coding-system}を使用してその端末で表示可能なものをEmacsに伝える必要があります。さもないと非@acronym{ASCII}文字は@samp{?}と表示されるでしょう。他のMS-DOSやMS-Windowsのようなオペレーティングシステムでは、ディスプレーがサポートする文字についてEmacsがOSに問い合わせて、必要となる端末コーディングシステムを自動的にセットアップします。
 
 @node Inputting eight-bit characters
-@section How do I input eight-bit characters?
+@section 8ビット文字を入力するには?
 @cindex Entering eight-bit characters
 @cindex Eight-bit characters, entering
 @cindex Input, 8-bit characters
@@ -3441,7 +3441,7 @@ Support, emacs, The GNU Emacs Manual}を参照してください。より洗練�
 Methods,,, emacs, The GNU Emacs Manual}を参照してください。
 
 @node Right-to-left alphabets
-@section Where is an Emacs that can handle Semitic (right-to-left) alphabets?
+@section セム語アルファベット(右から左に記述)を扱えるEmacsを入手できるのはどこ?
 @cindex Right-to-left alphabets
 @cindex Hebrew, handling with Emacs
 @cindex Semitic alphabets
@@ -3455,7 +3455,7 @@ display}を参照してください。
 
 
 @node How to add fonts
-@section How do I add fonts for use with Emacs?
+@section Emacsで使うフォントを追加するには?
 @cindex add fonts for use with Emacs
 @cindex intlfonts
 
@@ -3556,7 +3556,7 @@ medium}の選択ができるようになりました。
 
 @c ------------------------------------------------------------
 @node Mail and news
-@chapter Mail and news
+@chapter メールとニュース
 @cindex Mail and news
 
 @menu
@@ -3573,7 +3573,7 @@ medium}の選択ができるようになりました。
 @end menu
 
 @node Changing the included text prefix
-@section How do I change the included text prefix in mail/news followups?
+@section メール/ニュースのフォローアップにふくまるテキストプレフィクスを変更するには?
 @cindex Prefix in mail/news followups, changing
 @cindex Included text prefix, changing
 @cindex Setting the included text character
@@ -3587,7 +3587,7 @@ Manual}を参照)を使用してください。
 Emacsが返信先メッセージの様々なヘッダーを含めないようにするには、@code{mail-yank-ignored-headers}の値に適切な正規表現をセットしてください。
 
 @node Saving a copy of outgoing mail
-@section How do I save a copy of outgoing mail?
+@section 送信メールのコピーを保存するには?
 @cindex Saving a copy of outgoing mail
 @cindex Copying outgoing mail to a file
 @cindex Filing outgoing mail
@@ -3616,7 +3616,7 @@ Emacsが返信先メッセージの様々なヘッダーを含めないように
 @file{.mailrc}に@samp{set record filename}を記述しても機能しません。
 
 @node Expanding aliases when sending mail
-@section Why doesn't Emacs expand my aliases when sending mail?
+@section 送信時にEmacsがエイリアスを展開しない、なぜ?
 @cindex Expanding aliases when sending mail
 @cindex Mail alias expansion
 @cindex Sending mail with aliases
@@ -3646,7 +3646,7 @@ a e} (@kbd{M-x expand-abbrev})をタイプして強制的に展開させるこ�
 @end itemize
 
 @node Sorting the messages in an Rmail folder
-@section How can I sort the messages in my Rmail folder?
+@section Rmailフォルダーｎメッセージを並び替えるには?
 @cindex Rmail, sorting messages in
 @cindex Folder, sorting messages in an Rmail
 @cindex Sorting messages in an Rmail folder
@@ -3654,7 +3654,7 @@ a e} (@kbd{M-x expand-abbrev})をタイプして強制的に展開させるこ�
 Rmailでソート関数とそれらのキーバインディングのリストを得るには@kbd{C-c C-s C-h}とタイプします。
 
 @node Rmail writes to /var/spool/mail
-@section Why does Rmail need to write to @file{/var/spool/mail}?
+@section Rmailが@file{/var/spool/mail}への書き込みを必要とするのはなぜ?
 @cindex Rmail and @file{/var/spool/mail}
 @cindex @file{/var/spool/mail} and Rmail
 
@@ -3669,7 +3669,7 @@ RMSは記しています:
 @end quotation
 
 @node Replying to the sender of a message
-@section How can I force Rmail to reply to the sender of a message, but not the other recipients?
+@section 他の受信者を除き送信者だけにRmailが返信するよう強制するには?
 @cindex Replying only to the sender of a message
 @cindex Sender, replying only to
 @cindex Rmail, replying to the sender of a message in
@@ -3691,7 +3691,7 @@ Rmailで返信するために@kbd{r}をタイプすると、デフォルトで�
 @end lisp
 
 @node Automatically starting a mail or news reader
-@section How do I make Emacs automatically start my mail/news reader?
+@section メール/ニュースリーダーをEmacsに自動的に開始させるには?
 @cindex Mail reader, starting automatically
 @cindex News reader, starting automatically
 @cindex Starting mail/news reader automatically
@@ -3719,7 +3719,7 @@ gnus
 @file{.emacs}ファイルから自動的にメールやニュースを開始するのは、恐らく賢明ではないでしょう。これは同時に2つのEmacsを実行する必要がある場合には問題を起こすかもしれません。更に必要な際に素早くEmacsを開始するのが困難になるかもしれません。
 
 @node Reading news with Emacs
-@section How do I read news under Emacs?
+@section Emacsでニュースを読むには?
 @cindex Reading news under Emacs
 @cindex Usenet reader in Emacs
 @cindex Gnus newsreader
@@ -3733,7 +3733,7 @@ Manual}を参照してください。
 
 
 @node Making Gnus faster
-@section How do I make Gnus faster?
+@section Gnusわ高速にするには?
 @cindex Faster, starting Gnus
 @cindex Starting Gnus faster
 @cindex Gnus, starting faster
@@ -3752,7 +3752,7 @@ summaryバッファーへの出入りをより高速にするために@code{gnus
 @end quotation
 
 @node Catching up in all newsgroups
-@section How do I catch up all newsgroups in Gnus?
+@section Gnusの全ニュースグループをキャッチアップするには?
 @cindex Catching up all newsgroups in Gnus
 @cindex Gnus, Catching up all newsgroups in
 
