@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-12-03 07:35+0900\n"
+"PO-Revision-Date: 2021-12-04 18:44+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -307,7 +307,7 @@ msgstr "@kbd{C-x}:@key{Control}キーを押したまま@kbd{x}キーを押下す
 #. type: itemize
 #: ../../../../misc/efaq.texi:142
 msgid "@kbd{M-x}: press the @kbd{x} key while holding down the @key{Meta} key (if your computer doesn't have a @key{Meta} key, @pxref{No Meta key})"
-msgstr "@kbd{M-x}: @key{Meta}キー(コンピューターに@key{Meta}キーがなければ@pxref{No Meta key}を参照)を押したまま@kbd{x}キーを押下する"
+msgstr "@kbd{M-x}: @key{Meta}キー(コンピューターに@key{Meta}キーがなければ@ref{No Meta key}を参照)を押したまま@kbd{x}キーを押下する"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:146
@@ -407,7 +407,7 @@ msgstr "@kbd{M-x}, meaning of"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:209
 msgid "@kbd{M-x @var{command}} means type @kbd{M-x}, then type the name of the command, then type @key{RET}.  (@xref{Basic keys}, if you're not sure what @kbd{M-x} and @key{RET} mean.)"
-msgstr "@kbd{M-x @var{command}}は@kbd{M-x}をタイプしてからコマンドの名前、その後に@key{RET}をタイプする(@kbd{M-x}や@key{RET}の意味があやふやなら@xref{Basic keys}を参照)。"
+msgstr "@kbd{M-x @var{command}}は@kbd{M-x}をタイプしてからコマンドの名前、その後に@key{RET}をタイプする(@kbd{M-x}や@key{RET}の意味があやふやなら@ref{Basic keys}を参照)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:217
@@ -494,7 +494,7 @@ msgstr "Info内でこのFAQを読んでいるなら、リファレンス上で�
 #. type: Plain text
 #: ../../../../misc/efaq.texi:252
 msgid "@xref{Getting a printed manual}, if you would like a paper copy of the Emacs manual."
-msgstr "Emacsマニュアルのハードコードをご所望なら@xref{Getting a printed manual}を参照してください。"
+msgstr "Emacsマニュアルのハードコードをご所望なら@ref{Getting a printed manual}を参照してください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:253 ../../../../misc/efaq.texi:255
@@ -528,12 +528,12 @@ msgstr "これらはEmacsとともに配布されるファイルです。Emacs�
 #. type: Plain text
 #: ../../../../misc/efaq.texi:271
 msgid "If you use Emacs, but don't know where it is kept on your system, start Emacs, then type @kbd{C-h v data-directory @key{RET}}.  The directory name displayed by this will be the full pathname of the installed @file{etc} directory.  (This full path is recorded in the Emacs variable @code{data-directory}, and @kbd{C-h v} displays the value and the documentation of a variable.)"
-msgstr "ineEmacsを使っているもののシステム上のどこにあるか判らない場合には、Emacsを起動して@kbd{C-h v data-directory @key{RET}}とタイプしてください。表示されるディレクトリー名は、@file{etc}ディレクトリーがインストールされたフルパスになるでしょう(このフルパスはEmacs変数@code{data-directory}に記録されており、@kbd{C-h v}でこの値と変数のドキュメントが表示される)。"
+msgstr "Emacsを使っているもののシステム上のどこにあるか判らない場合には、Emacsを起動して@kbd{C-h v data-directory @key{RET}}とタイプしてください。表示されるディレクトリー名は、@file{etc}ディレクトリーがインストールされたフルパスになるでしょう(このフルパスはEmacs変数@code{data-directory}に記録されており、@kbd{C-h v}でこの値と変数のドキュメントが表示される)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:278
 msgid "The location of your Info directory (i.e., where Info documentation is stored) is kept in the variable @code{Info-default-directory-list}.  Use @kbd{C-h v Info-default-directory-list @key{RET}} to see the value of this variable, which will be a list of directory names.  The last directory in that list is probably where most Info files are stored.  By default, Emacs Info documentation is placed in @file{/usr/local/share/info}."
-msgstr "Infoディレクトリーはの場所(Infoドキュメントが格納されている場所)変数@code{Info-default-directory-list}に保持されています。この変数の値(ディレクトリー名のリスト)を確認するには@kbd{C-h v Info-default-directory-list @key{RET}}を使用してください。このリスト内にある最後のディレクトリーに、恐らくもっとも多くのInfoファイルが格納されているでしょう。デフォルトではEmacsのInfoドキュメントは@file{/usr/local/share/info}にあります。"
+msgstr "Infoディレクトリーの場所(Infoドキュメントが格納されている場所)は、変数@code{Info-default-directory-list}に保持されています。この変数の値(ディレクトリー名のリスト)を確認するには@kbd{C-h v Info-default-directory-list @key{RET}}を使用してください。このリスト内にある最後のディレクトリーに、恐らくもっとも多くのInfoファイルが格納されているでしょう。デフォルトではEmacsのInfoドキュメントは@file{/usr/local/share/info}にあります。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:281
@@ -724,7 +724,7 @@ msgstr "Discussion of the GPL"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:349
 msgid "The real legal meaning of the GNU General Public License (copyleft) will only be known if and when a judge rules on its validity and scope.  There has never been a copyright infringement case involving the GPL to set any precedents.  Although legal actions have been brought against companies for violating the terms of the GPL, so far all have been settled out of court (in favor of the plaintiffs).  Please take any discussion regarding this issue to the newsgroup @uref{news:gnu.misc.discuss}, which was created to hold the extensive flame wars on the subject."
-msgstr "GNU 一般公衆利用許諾書、いわゆるGPL(コピーレフト)の真の法的な意味合いは、裁判官がその有効性と範囲を裁定した場合にのみ明らかになります。判例として定められるようなGPLが関与する著作権侵害の訴訟はこれまでに一度もありませんでした。GPL条件への違反によって企業への訴訟が起こされましたが、これまでのところすべてが法廷外で(原告に有利に)和解されています。この問題に関しての議論は、どうかこの問題について大々的に罵り合うために作成されたニュースグループ@uref{news:gnu.misc.discuss}で行ってください。"
+msgstr "GNU 一般公衆利用許諾書、いわゆるGPL(コピーレフト)の真の法的な意味合いは、裁判官がその有効性と範囲を裁定した場合にのみ明らかになります。判例として定められるようなGPLが関与する著作権侵害の訴訟はこれまでに一度もありませんでした。GPL条件への違反によって企業への訴訟が起こされましたが、これまでのところすべてが法廷外で(原告に有利に)和解されています。この問題に関しての議論は、どうかこの問題について盛大に罵り合うために作成されたニュースグループ@uref{news:gnu.misc.discuss}で行うようお願いします。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:351 ../../../../misc/efaq.texi:4555
@@ -734,7 +734,7 @@ msgstr "RMSは記しています:"
 #. type: quotation
 #: ../../../../misc/efaq.texi:360
 msgid "The legal meaning of the GNU copyleft is less important than the spirit, which is that Emacs is a free software project and that work pertaining to Emacs should also be free software.  ``Free'' means that all users have the freedom to study, share, change and improve Emacs.  To make sure everyone has this freedom, pass along source code when you distribute any version of Emacs or a related program, and give the recipients the same freedom that you enjoyed."
-msgstr "GNUコピーレフトの法的な意味は、Emacsがフリーソフトウェアプロジェクトであり、Emacsに関連する作業もフリーソフトウェアであるべくだという精神ほど重要ではありません。``フリー(free)''とはすべてのユーザーがEmacsを学び、共有して、変更や改善を行う自由(freedom)をもっているという意味です。すべての人がこの自由を有することを保証するために、あなたがEmacsのあるバージョンや関連プログラムを配布する際には、それを受け取る人にソースコードも渡すことによって、あなたが楽しんだのと同じ自由を分け与えてください。"
+msgstr "GNUコピーレフトの法的な意味は、Emacsがフリーソフトウェアプロジェクトであり、Emacsに関連する作業もフリーソフトウェアであるべきだという精神ほど重要ではありません。``フリー(free)''とはすべてのユーザーがEmacsを学び、共有して、変更や改善を行う自由(freedom)をもっているという意味です。すべての人がこの自由を有することを保証するために、あなたがEmacsのあるバージョンや関連プログラムを配布する際には、それを受け取る人にソースコードも渡すことによって、あなたが楽しんだのと同じ自由を分け与えてください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:362
@@ -787,22 +787,22 @@ msgstr "GNU mailing lists"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:374
 msgid "The Emacs mailing lists are described at @uref{https://savannah.gnu.org/mail/?group=emacs, the Emacs Savannah page}. Some of them are gatewayed to newsgroups."
-msgstr "Emacsメーリングリストのは@uref{https://savannah.gnu.org/mail/?group=emacs, the Emacs Savannah page}に記述があります。それらのうちのいくつかはニュースグループへゲートウェイされています。"
+msgstr "Emacsメーリングリストは@uref{https://savannah.gnu.org/mail/?group=emacs, the Emacs Savannah page}に記述があります。それらのうちのいくつかはニュースグループへゲートウェイされています。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:379
 msgid "The newsgroup @uref{news:comp.emacs} is for discussion of Emacs programs in general.  The newsgroup @uref{news:gnu.emacs.help} is specifically for GNU Emacs.  It therefore makes no sense to cross-post to both groups, since only one can be appropriate to any question."
-msgstr "Emacsプログラム全般に関する議論はニュースグループ@uref{news:comp.emacs}、@uref{news:gnu.emacs.help}はGNU Emacsに特化したニュースグループです。したがってある問いにたいして適切なニュースグループは1つだけなので、両方のグループへのクロスポストには意味がありません。"
+msgstr "Emacsプログラム全般に関する議論はニュースグループ@uref{news:comp.emacs}、@uref{news:gnu.emacs.help}はGNU Emacsに特化したニュースグループです。したがってある問いにたいして適切なニュースグループは1つだけなので、両方のグループへの多重投稿には意味がありません。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:387
 msgid "Messages advocating ``non-free'' software are considered unacceptable on any of the @code{gnu.*} newsgroups except for @uref{news:gnu.misc.discuss}, which was created to hold the extensive flame-wars on the subject.  ``Non-free'' software includes any software for which the end user can't freely modify the source code and exchange enhancements.  Be careful to remove the @code{gnu.*} groups from the @samp{Newsgroups:} line when posting a followup that recommends such software."
-msgstr "問題について大いに罵り合うために作成された@uref{news:gnu.misc.discuss}を除いて、``非フリー(non-free)''なソフトウェアを推奨するようなメッセージは@code{gnu.*}ニュースグループのすべてにおいて受け入れ難いものとみなされます。``非フリー''なソフトウェアにはエンドユーザーが自由にソースコードを改変したり拡張機能の取り替えができないすべてのソフトウェアが含まれます。そのようなソフトウェアを推奨するフォローアップを投稿する際には、@samp{Newsgroups:}行から@code{gnu.*}グループを削除するよう注意してください。"
+msgstr "問題について派手に罵り合うために作成された@uref{news:gnu.misc.discuss}を除いて、``非フリー(non-free)''なソフトウェアを推奨するようなメッセージは@code{gnu.*}ニュースグループのすべてにおいて受け入れ難いものとみなされます。``非フリー''なソフトウェアにはエンドユーザーが自由にソースコードを改変したり拡張機能の取り替えができないすべてのソフトウェアが含まれます。そのようなソフトウェアを推奨するフォローアップを投稿する際には、@samp{Newsgroups:}行から@code{gnu.*}グループを削除するよう注意してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:390
 msgid "@uref{news:gnu.emacs.bug} is a place where bug reports appear, but avoid posting bug reports to this newsgroup directly (@pxref{Reporting bugs})."
-msgstr "@uref{news:gnu.emacs.bug}はバグレポートを目にする場所ですが、このニュースグループに直接バグレポートを投稿することは避けてください(@ref{Reporting bugs}を参照)。"
+msgstr "@uref{news:gnu.emacs.bug}ではバグレポートを目にしますが、このニュースグループに直接バグレポートを投稿することは避けてください(@ref{Reporting bugs}を参照)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:395
@@ -842,7 +842,7 @@ msgstr "Old Usenet postings for GNU groups"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:406
 msgid "The FSF has maintained archives of all of the GNU mailing lists for many years, although there may be some unintentional gaps in coverage.  The archive can be browsed over the web at @uref{https://lists.gnu.org/r/, the GNU mail archive}."
-msgstr "網羅する範囲において意図していない齟齬があるかもしれませんが、FSFはGNUメーリングリストすべてのアーカイブを長年保守してきました。このアーカイブが@uref{https://lists.gnu.org/r/, the GNU mail archive}でウェブ上で閲覧できます。"
+msgstr "網羅する範囲において意図せぬずれがあるかもしれませんが、FSFはGNUメーリングリストすべてのアーカイブを長年保守してきました。このアーカイブが@uref{https://lists.gnu.org/r/, the GNU mail archive}でウェブ上で閲覧できます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:410
@@ -897,7 +897,7 @@ msgstr "RMSは述べています:"
 #. type: quotation
 #: ../../../../misc/efaq.texi:446
 msgid "Sending bug reports to @url{https://lists.gnu.org/mailman/listinfo/help-gnu-emacs, the help-gnu-emacs mailing list} (which has the effect of posting on @uref{news:gnu.emacs.help}) is undesirable because it takes the time of an unnecessarily large group of people, most of whom are just users and have no idea how to fix these problem.  @url{https://lists.gnu.org/mailman/listinfo/bug-gnu-emacs, The bug-gnu-emacs list} reaches a much smaller group of people who are more likely to know what to do and have expressed a wish to receive more messages about Emacs than the others."
-msgstr "バグレポートを@url{https://lists.gnu.org/mailman/listinfo/help-gnu-emacs, the help-gnu-emacs mailing list} (@uref{news:gnu.emacs.help}に投稿される効果をもつ)に送信するのは、ほとんどは問題を解決するアイデアをもたない単なるユーザーである多数の人たちに不必要に費やさせるので望ましくありません。@url{https://lists.gnu.org/mailman/listinfo/bug-gnu-emacs, The bug-gnu-emacs list}なら何をするべきか恐らくもっと知識があり、他のものよりもEmacsのメッセージを受け取りたいと表明している、より少ない人たちにメッセージを届けられます。"
+msgstr "バグレポートを@url{https://lists.gnu.org/mailman/listinfo/help-gnu-emacs, the help-gnu-emacs mailing list} (@uref{news:gnu.emacs.help}に投稿される効果をもつ)に送信するのは、(ほとんどは問題を解決するアイデアをもたない単なるユーザーである)多数の人たちの時間を不必要に費やさせるので望ましくありません。@url{https://lists.gnu.org/mailman/listinfo/bug-gnu-emacs, The bug-gnu-emacs list}なら、恐らく何をするべきかもっと知識があり、他のものよりもEmacsのメッセージを受け取りたいと表明している、より少ない人たちにメッセージを届けられます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:449
@@ -1173,7 +1173,7 @@ msgstr "Index search in a manual"
 #. type: itemize
 #: ../../../../misc/efaq.texi:569
 msgid "To quickly locate the section of the manual which discusses a certain issue, or describes a command or a variable, type @kbd{C-h i m emacs @key{RET} i @var{topic} @key{RET}}, where @var{topic} is the name of the topic, the command, or the variable which you are looking for.  If this does not land you on the right place in the manual, press @kbd{,} (comma) repeatedly until you find what you need.  (The @kbd{i} and @kbd{,} keys invoke the index-searching functions, which look for the @var{topic} you type in all the indices of the Emacs manual.)"
-msgstr "特定の問題やコマンド、変数について述べているマニュアルのセクションを素早く見つけるには@kbd{C-h i m emacs @key{RET} i @var{topic} @key{RET}}とタイプします。これで正しいマニュアル箇所に辿り着けないようなら、必要なものが見つかるまで@kbd{,} (カンマ)を繰り返し押下してください(@kbd{i}と@kbd{,}はEmacsマニュアルの全インデックスからタイプされた@var{topic}を探すインデックス検索関数を呼び出すキー)。"
+msgstr "特定の問題やコマンド、変数について述べているマニュアルのセクションを素早く見つけるには@kbd{C-h i m emacs @key{RET} i @var{topic} @key{RET}}とタイプします。これで正しいマニュアル箇所に辿り着けないようなら、必要なものが見つかるまで@kbd{,} (カンマ)を繰り返し押下してください(@kbd{i}と@kbd{,}はタイプされた@var{topic}をEmacsマニュアルの全インデックスから探すインデックス検索関数を呼び出すキー)。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:570
@@ -1344,7 +1344,7 @@ msgstr "詳細についてはEmacs LispリファレンスマニュアルがInfo�
 #. type: Plain text
 #: ../../../../misc/efaq.texi:655
 msgid "You can also order a hardcopy of the manual from the FSF, for details see the @uref{https://shop.fsf.org/, FSF on-line store}.  (This manual is not always in print.)"
-msgstr "FSFにマニュアルのハードコードを注文することもできます。詳細は@uref{https://shop.fsf.org/, FSF on-line store}を参照してください(このマニュアルは常にプリントされているる訳ではない)。"
+msgstr "FSFにマニュアルのハードコードを注文することもできます。詳細は@uref{https://shop.fsf.org/, FSF on-line store}を参照してください(このマニュアルは常にプリントされる訳ではない)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:657
@@ -1495,7 +1495,7 @@ msgstr "(add-to-list 'Info-default-directory-list \"~/Info\")\n"
 #. type: itemize
 #: ../../../../misc/efaq.texi:765
 msgid "You will need a top-level Info file named @file{dir} in this directory which has everything the system @file{dir} file has in it, except it should list only entries for Info files in that directory.  You might not need it if (fortuitously) all files in this directory were referenced by other @file{dir} files.  The node lists from all @file{dir} files in @code{Info-default-directory-list} are merged by the Info system."
-msgstr "このディレクトリーには@file{dir}という名前のトップレベルInfoファイルが必要になるだろう。これはそのディレクトリーにあるInfoファイルのエントリーだけをリストスル点を除き、システムの@file{dir}がもつすべてをもつ。(偶然にも)このディレクトリー内のすべてのファイルが他の@file{dir}ファイルから参照されていれば、これは必要ないかもしれない。@code{Info-default-directory-list}内のすべての@file{dir}ファイルのノードリストはInfoシステムによってマージされる。"
+msgstr "このディレクトリーには@file{dir}という名前のトップレベルInfoファイルが必要になるだろう。これはそのディレクトリーにあるInfoファイルのエントリーだけをリストする点を除き、システムの@file{dir}がもつすべてをもつ。(偶然にも)このディレクトリー内のすべてのファイルが他の@file{dir}ファイルから参照されていれば、これは必要ないかもしれない。@code{Info-default-directory-list}内のすべての@file{dir}ファイルのノードリストはInfoシステムによってマージされる。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:768 ../../../../misc/efaq.texi:770
@@ -1599,12 +1599,12 @@ msgstr "はい。以下はいくつかの候補プログラムです:"
 #. type: itemize
 #: ../../../../misc/efaq.texi:825
 msgid "@code{info}, a stand-alone version of the Info program, comes as part of the Texinfo package.  @xref{Installing Texinfo documentation}, for details."
-msgstr "Texinfoパッケージに同梱されているInfoプログラムのスタンドアロンバージョンである@code{info}。詳細は@xref{Installing Texinfo documentation}を参照のこと。"
+msgstr "Texinfoパッケージに同梱されているInfoプログラムのスタンドアロンバージョンである@code{info}。詳細は@ref{Installing Texinfo documentation}を参照のこと。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:830
 msgid "Tkinfo, an Info viewer that runs under X Window system and uses Tcl/Tk.  You can get Tkinfo at @uref{http://math-www.uni-paderborn.de/~axel/tkinfo/}."
-msgstr "X Window systemの下で実行され、Tcl/Tkを使用するInfoビューアーのTkinfo。Tkinfoは@uref{http://math-www.uni-paderborn.de/~axel/tkinfo/}で入手できる。"
+msgstr "Tcl/Tkを使用する、X Window systemの下で実行されるInfoビューアーのTkinfo。Tkinfoは@uref{http://math-www.uni-paderborn.de/~axel/tkinfo/}で入手できる。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:833
@@ -1657,7 +1657,7 @@ msgstr "@file{NEWS}, description of file"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:845
 msgid "This isn't a frequently asked question, but it should be! A variety of informational files about Emacs and relevant aspects of the GNU project are available for you to read."
-msgstr "これはよくある質問ではありませんが、そうあるべきなのです! あなたに読んでもらうためｎ、Emacsおよび関連するGNUプロジェクトの様相に関する様々な情報ファイルが利用可能です。"
+msgstr "これはよくある質問ではありませんが、そうあるべきなのです! あなたに読んでもらうために、Emacsおよび関連するGNUプロジェクトの様相に関する様々な情報ファイルが利用可能です。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:851
@@ -1767,7 +1767,7 @@ msgstr "Latest FAQ version, obtaining the"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:897
 msgid "The Emacs FAQ is distributed with Emacs in Info format.  You can read it by selecting the @samp{Emacs FAQ} option from the @samp{Help} menu of the Emacs menu bar at the top of any Emacs frame, or by typing @kbd{C-h C-f} (@kbd{M-x view-emacs-FAQ}).  The very latest version is available in the Emacs development repository (@pxref{Latest version of Emacs})."
-msgstr "Emacs FAQはInfo形式としてEmacsに同梱されています。任意のEmacsフレームトップにあるEmacsメニューバーの@samp{Help}メニューあら@samp{Emacs FAQ}オプションを選択、あるいは@kbd{C-h C-f} (@kbd{M-x view-emacs-FAQ})とタイプしてくださいこれを読むことができます。開発版の最新バージョンはEmacsの開発用レポジトリから利用できます(@ref{Latest version of Emacs}を参照)。"
+msgstr "Emacs FAQはInfo形式としてEmacsに同梱されています。任意のEmacsフレームトップにあるEmacsメニューバーの@samp{Help}メニューから@samp{Emacs FAQ}オプションを選択、あるいは@kbd{C-h C-f} (@kbd{M-x view-emacs-FAQ})とタイプしてこれを読むことができます。開発版の最新バージョンはEmacsの開発用レポジトリから利用できます(@ref{Latest version of Emacs}を参照)。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:899 ../../../../misc/efaq.texi:900 ../../../../misc/efaq.texi:901
@@ -1999,7 +1999,7 @@ msgstr "JSON, native parsing"
 #. type: itemize
 #: ../../../../misc/efaq.texi:1002
 msgid "Native support for @acronym{JSON} parsing that is much faster than @file{json.el}."
-msgstr "@file{json.el}より高速な@acronym{JSON}解析のネイティブサポート。"
+msgstr "@file{json.el}による高速な@acronym{JSON}解析のネイティブサポート。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:1005
@@ -2015,7 +2015,7 @@ msgstr "portable dumper"
 #. type: itemize
 #: ../../../../misc/efaq.texi:1013
 msgid "Emacs now uses a ``portable dumper'' instead of unexec.  This improves compatibility with memory allocation on modern systems, and in particular better supports the Address Space Layout Randomization (@acronym{ASLR}) feature, a security technique used by most modern operating systems."
-msgstr "Emacsがunexecではなく``portable dumper''を使用するようになった。これは現代的なシステムのメモリー割り当てにたいする互換性を向上して、とりわけ現代的なオペレーティングシステムのほとんどが使用している@acronym{ASLR}(Address Space Layout Randomization: アドレス空間配置のランダム化)をよりサポートする。"
+msgstr "Emacsがunexecではなく``portable dumper''を使用するようになった。これは現代的なシステムのメモリー割り当てにたいする互換性を向上して、とりわけ現代的なオペレーティングシステムのほとんどが使用している@acronym{ASLR}(Address Space Layout Randomization: アドレス空間配置のランダム化)のサポートが向上した。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:1014
@@ -2251,7 +2251,7 @@ msgstr "Unicode characters, typing easily"
 #. type: itemize
 #: ../../../../misc/efaq.texi:1136
 msgid "@kbd{C-x 8} has new shorthands for several popular characters, type @kbd{C-x 8 C-h} to list shorthands."
-msgstr "いくつかの一般的な文字にたいして略記が@kbd{C-x 8}に新規で追加された。略記のリストは@kbd{C-x 8 C-h}とタイプする。"
+msgstr "いくつかの一般的な文字にたいしする略記が@kbd{C-x 8}に新規で追加された。略記のリストは@kbd{C-x 8 C-h}とタイプする。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:1137
@@ -2462,7 +2462,7 @@ msgstr "英語のような自然言語のいくつかは左から右へと記述
 #. type: itemize
 #: ../../../../misc/efaq.texi:1248
 msgid "Handling of text selections has been improved, and now integrates better with external clipboards."
-msgstr "テキスト選択の処理が改善されて、外部クリップボードとより統合された。"
+msgstr "テキスト選択の処理が改善されて、外部クリップボードとの統合性が向上した。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:1249
@@ -2488,7 +2488,7 @@ msgstr "コンパイル時に新たに複数の外部ライブラリーを含め
 #. type: itemize
 #: ../../../../misc/efaq.texi:1267
 msgid "``Security-Enhanced Linux'' (SELinux) is a Linux kernel feature that provides more sophisticated file access controls than ordinary ``Unix-style'' file permissions."
-msgstr "SELinux(``Security-Enhanced Linux'')とは、従来の``Unixスタイル''より複雑なファイルアクセスコントロールを提供するLinuxカーネルの機能。"
+msgstr "従来の``Unixスタイル''より複雑なファイルアクセスコントロールを提供するLinuxカーネルの機能であるSELinux(``Security-Enhanced Linux'')"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:1272
@@ -2756,12 +2756,12 @@ msgstr "GrepモードがCompilationモードから切り離されて、新たに
 #. type: itemize
 #: ../../../../misc/efaq.texi:1404
 msgid "The original Emacs macro system has been replaced by the new Kmacro package, which provides many new commands and features and a simple interface that uses the function keys F3 and F4.  Macros are stored in a macro ring, and can be debugged and edited interactively."
-msgstr "Emacsオリジナルのマクロシステムは、新たに多くのコマンドおよび機能、ファンクションキーF3とF4を使用するシンプルなインターフェイスを提供するKmacroパッケージに置き換えられた。マクロはマクロリングに格納されるとともに、対話的にデバッグと編集ができるようになった。"
+msgstr "Emacsオリジナルのマクロシステムは、新たに多くのコマンドおよび機能、ファンクションキーF3とF4を使用するシンプルなインターフェイスを提供するKmacroパッケージに置き換えられた。マクロはマクロリングに格納されるとともに、対話的なデバッグと編集が可能になった。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:1411
 msgid "The Grand Unified Debugger (GUD) can be used with a full graphical user interface to GDB; this provides many features found in traditional development environments, making it easy to manipulate breakpoints, add watch points, display the call stack, etc.  Breakpoints are visually indicated in the source buffer."
-msgstr "GDBにたいする完全にグラフィカルなユーザーインターフェイスとしてGUD(Grand Unified Debugger)が使用できるようになった。これは伝統的な開発環境で見い出すことができる多くの機能を提供するとともに、ブレークポイントの操作、ウォッチポイントの追加、コールスタック表示等を容易にする。ブレークポイントはソースバッファー内に視覚的に示される。"
+msgstr "GDBにたいする完全にグラフィカルなユーザーインターフェイスとしてGUD(Grand Unified Debugger)が使用できるようになった。これは伝統的な開発環境で目にする多くの機能を提供するとともに、ブレークポイントの操作、ウォッチポイントの追加、コールスタック表示等を容易にする。ブレークポイントはソースバッファー内に視覚的に示される。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:1413
@@ -2863,7 +2863,7 @@ msgstr "TTY colors"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1462
 msgid "In addition, Emacs 21 supports faces on text-only terminals.  This means that you can now have colors when you run Emacs on a GNU/Linux console and on @code{xterm} with @kbd{emacs -nw}."
-msgstr "これらに加えてEmacs 21はテキストオンリーの端末でのフェイスがサポートされました。これはGNU/Linuxコンソールや@code{xterm}上でEmacsを@kbd{emacs -nw}で実行した際にカラー表示されることを意味しています。"
+msgstr "これらに加えてEmacs 21ではテキストオンリーの端末でのフェイスがサポートされました。これはGNU/Linuxコンソールや@code{xterm}上でEmacsを@kbd{emacs -nw}で実行した際にカラー表示されることを意味しています。"
 
 #. type: section
 #: ../../../../misc/efaq.texi:1465
@@ -2886,12 +2886,12 @@ msgstr "Emacs 20, new features in"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1472
 msgid "The differences between Emacs versions 18 and 19 were rather dramatic; the introduction of frames, faces, and colors on windowing systems was obvious to even the most casual user."
-msgstr "Emacsのバージョン18と19の差はよりダイナミックなものでした。一般的なユーザーのほとんどにとってもウィンドウシステムにおけるフレーム、フェイス、カラーの導入は明白な変更でした。"
+msgstr "Emacsのバージョン18から19への変更はより劇的なものでした。一般的なユーザーのほとんどにとってもウィンドウシステムにおけるフレーム、フェイス、カラーの導入は明白な変更でした。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1479
 msgid "There are differences between Emacs versions 19 and 20 as well, but many are more subtle or harder to find.  Among the changes are the inclusion of MULE code for languages that use non-Latin characters and for mixing several languages in the same document; the ``Customize'' facility for modifying variables without having to use Lisp; and automatic conversion of files from Macintosh, Microsoft, and Unix platforms."
-msgstr "Emacsのバージョン19と20の間にも同様に差はあるものの多くは軽微であるか気付くのが難しいものでした。この変更の中には非ラテン文字を使用する言語用のMULEと同一ドキュメント内での複数言語の混合、Lispを使用せずに変数を変更する``Customize''機能、Macintosh、Microsoft、Unixプラットフォームにおけるファイルの自動変換が含まれます。"
+msgstr "Emacsのバージョン19と20の間にも同様に変更はあるものの、その多くは軽微であるか気付くのが難しいものでした。この変更の中には非ラテン文字を使用する言語用のMULEと同一ドキュメント内での複数言語の混合、Lispを使用せずに変数を変更する``Customize''機能、Macintosh、Microsoft、Unixプラットフォームにおけるファイルの自動変換が含まれます。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:1481 ../../../../misc/efaq.texi:1482 ../../../../misc/efaq.texi:1483
@@ -3179,7 +3179,7 @@ msgstr "@ref{Init File,,, emacs, The GNU Emacs Manual}を参照してくださ�
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1550
 msgid "In general, new Emacs users should not be provided with @file{.emacs} files, because this can cause confusing non-standard behavior.  Then they send questions to @url{https://lists.gnu.org/mailman/listinfo/help-gnu-emacs, the help-gnu-emacs mailing list} asking why Emacs isn't behaving as documented."
-msgstr "一般的にEmacsの新規ユーザーは@file{.emacs}ファイルを与えられるべきではありません。なぜならこれによる非標準的から混乱を招くからです。その後に彼らはなぜEmacsがドキュメント通りに振る舞わないか尋ねる質問を@url{https://lists.gnu.org/mailman/listinfo/help-gnu-emacs, the help-gnu-emacs mailing list}に送信するのです。"
+msgstr "一般的にEmacsの新規ユーザーは@file{.emacs}ファイルを与えられるべきではありません。なぜならこれによる非標準的な振る舞いが混乱を招くからです。その後に彼らはなぜEmacsがドキュメント通りに振る舞わないか尋ねる質問を@url{https://lists.gnu.org/mailman/listinfo/help-gnu-emacs, the help-gnu-emacs mailing list}に送信するのです。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1555
@@ -3189,12 +3189,12 @@ msgstr "EmacsにはCustomize機能が含まれています(@ref{Using Customize}
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1561
 msgid "While Customize might indeed make it easier to configure Emacs, consider taking a bit of time to learn Emacs Lisp and modifying your @file{.emacs} directly.  Simple configuration options are described rather completely in @ref{Init File,,, emacs, The GNU Emacs Manual}, for users interested in performing frequently requested, basic tasks."
-msgstr "Customizeは確かにEmacsの設定を容易にするかもしれませんが、Emacs Lispを習得して@file{.emacs}を直接編集するために少し時間を割くことを検討してみてください。頻繁に要求される基本的なタスクを処理することに興味があるユーザーには、シンプルな設定オプションが@ref{Init File,,, emacs, The GNU Emacs Manual}により完全に記述されています。"
+msgstr "Customizeは確かにEmacsの設定を容易にするかもしれませんが、Emacs Lispを習得して@file{.emacs}を直接編集するために少し時間を割くことを検討してみてください。頻繁に求められる基本的なタスクを処理することに興味があるユーザーには、シンプルな設定オプションが@ref{Init File,,, emacs, The GNU Emacs Manual}に完全に記述されています。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1565
 msgid "Sometimes users are unsure as to where their @file{.emacs} file should be found.  Visiting the file as @file{~/.emacs} from Emacs will find the correct file."
-msgstr "ユーザーがどこで自分の@file{.emacs}ファイルを見つけられるか判らない場合があります。Emacsから@file{~/.emacs}としてファイルをvisitすることのよって、正しいファイルが見つかるでしょう。"
+msgstr "ユーザーがどこで自分の@file{.emacs}ファイルを見つけられるか判らない場合があります。Emacsから@file{~/.emacs}としてファイルをvisitすることによって、正しいファイルが見つかるでしょう。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:1566
@@ -3289,12 +3289,12 @@ msgstr "direct color in terminals"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1611
 msgid "Emacs 26.1 and later support direct color mode in terminals.  If Emacs finds Terminfo capabilities @samp{setb24} and @samp{setf24}, 24-bit direct color mode is used.  The capability strings are expected to take one 24-bit pixel value as argument and transform the pixel to a string that can be used to send 24-bit colors to the terminal."
-msgstr "Emacs 26.1以降はターミナル(訳注: 端末=terminalはtermcapのterm)でのダイレクトカラーモードをサポートしています。EmacsがTerminfoで@samp{setb24}および@samp{setf24}のケイパビリティ(訳注: capabilityはtermcapのcap)を見つけたら24ビットダイレクトカラーモードを使用します。ケイパビリティ文字列は、引数として1つの24ビットピクセル値を取り、24ビットカラーを端末に送信するために使用できる文字列にピクセルを変換することが期待されます。"
+msgstr "Emacs 26.1以降は端末(訳注: 端末=terminalはtermcapのterm)でのダイレクトカラーモードをサポートしています。EmacsがTerminfoで@samp{setb24}および@samp{setf24}のケイパビリティ(訳注: capabilityはtermcapのcap)を見つけたら24ビットダイレクトカラーモードを使用します。ケイパビリティ文字列は、引数として1つの24ビットピクセル値を取り、24ビットカラーを端末に送信するために使用できる文字列にピクセルを変換することが期待されます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1614
 msgid "Standard terminal definitions don't support these capabilities and therefore custom definition is needed."
-msgstr "標準のターミナル定義はこれらのケイパビリティをサポートせず、したがってカスタム定義が必要になります。"
+msgstr "標準の端末定義はこれらのケイパビリティをサポートせず、したがってカスタム定義が必要になります。"
 
 #. type: example
 #: ../../../../misc/efaq.texi:1617
@@ -3347,7 +3347,7 @@ msgstr "24-bit direct color mode"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1634
 msgid "Emacs 27.1 and later support Terminfo capability @samp{RGB} for detecting 24-bit direct color mode.  Multiple standard terminal definitions support this capability."
-msgstr "Emacs 27.1以降では24ビットダイレクトカラーモードの検出にたいしてTerminfoの@samp{RGB}ケイパビリティをサポートしています。複数の標準的なターミナル定義がこのケイパビリティをサポートしています。"
+msgstr "Emacs 27.1以降では24ビットダイレクトカラーモードの検出にたいする、Terminfoの@samp{RGB}ケイパビリティをサポートしています。複数の標準的な端末定義がこのケイパビリティをサポートしています。"
 
 #. type: example
 #: ../../../../misc/efaq.texi:1637
@@ -3382,7 +3382,7 @@ msgstr "$ TERM=xterm-direct emacs -nw\n"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1650
 msgid "If your terminal is incompatible with XTerm, you may have to use another @env{TERM} definition.  Any terminal whose name includes @samp{direct} should be a candidate.  The @command{toe} command can be used to find out which of these are installed on your system:"
-msgstr "あなたのターミナルにXTermとの互換性がなければ、別の@env{TERM}定義を使う必要があるかもしれません。名前に@samp{direct}が含まれるすべてのターミナルが候補になり得ます。それらのうちどれがシステムにインストールされているか調べるために@command{toe}コマンドを使用できます:"
+msgstr "あなたの端末にXTermとの互換性がなければ、別の@env{TERM}定義を使う必要があるかもしれません。名前に@samp{direct}が含まれるすべての端末が候補になり得ます。それらのうちどれがシステムにインストールされているか調べるために@command{toe}コマンドを使用できます:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:1653
@@ -3411,7 +3411,7 @@ msgstr ""
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1667
 msgid "Terminals with @samp{RGB} capability treat pixels #000001 - #000007 as indexed colors to maintain backward compatibility with applications that are unaware of direct color mode.  Therefore the seven darkest blue shades may not be available.  If this is a problem, you can always use custom terminal definition with @samp{setb24} and @samp{setf24}."
-msgstr "@samp{RGB}ケイパビリティをもつターミナルは、ダイレクト。モードを認識しないアプリケーションにたいする後方互換性を保守するために、ピクセル#000001から#000007をインデックス付けされたカラーとして扱います。したがってもっとも暗い青い濃淡は利用できないかもしれません。これが問題となるようなら、@samp{setb24}と@samp{setf24}のカスタムターミナル定義を常に使用するこれができます。"
+msgstr "@samp{RGB}ケイパビリティをもつ端末は、ダイレクトカラーモードを認識しないアプリケーションにたいする後方互換性を保守するために、ピクセル#000001から#000007をインデックス付けされたカラーとして扱います。したがってもっとも暗い青い濃淡は利用できないかもしれません。これが問題となるようなら、@samp{setb24}と@samp{setf24}のカスタム端末定義を使用することは常に可能です。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:1668
@@ -3452,7 +3452,7 @@ msgstr "@samp{-debug-init} option"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1681
 msgid "Start Emacs with the @samp{-debug-init} command-line option.  This enables the Emacs Lisp debugger before evaluating your @file{.emacs} file, and places you in the debugger if something goes wrong.  The top line in the @file{trace-back} buffer will be the error message, and the second or third line of that buffer will display the Lisp code from your @file{.emacs} file that caused the problem."
-msgstr "コマンドラインオプション@samp{-debug-init}でEmacsを開始してください。これは@file{.emacs}ファイルを評価する前にEmacs Lispデバッガを有効して、何かうまく行かなければあなたをデバッガ内へと導きます。@file{trace-back}バッファーの上端行はエラーメッセージ、2行目か3行目には問題を引き起こした@file{.emacs}ファイルのLispコードが表示されるでしょう。"
+msgstr "コマンドラインオプション@samp{-debug-init}でEmacsを開始してください。これは@file{.emacs}ファイルを評価する前にEmacs Lispデバッガを有効にして、何かうまく行かなければあなたをデバッガ内へと導きます。@file{trace-back}バッファーの上端行はエラーメッセージ、2行目か3行目には問題を引き起こした@file{.emacs}ファイルのLispコードが表示されるでしょう。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1686
@@ -3503,12 +3503,12 @@ msgstr "mode-line-format"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1704
 msgid "By default, Emacs displays the current line number of the point in the mode line.  You can toggle this feature off or on with the command @kbd{M-x line-number-mode}, or by setting the variable @code{line-number-mode}.  Note that Emacs will not display the line number if the buffer's size in bytes is larger than the value of the variable @code{line-number-display-limit}."
-msgstr "デフォルトではEmacsはポイント位置のカレント行番号をモードラインに表示します。コマンド@kbd{M-x line-number-mode}、または変数@code{line-number-mode}でこの機能のオンとオフを切り替えることができます。バッファーのバイトサイズが変数@code{line-number-display-limit}の値より大きければ、Emacsは行番号を表示しないことに注意してください。"
+msgstr "デフォルトではEmacsはポイント位置のカレント行番号をモードラインに表示します。コマンド@kbd{M-x line-number-mode}、または変数@code{line-number-mode}でこの機能のオンオフを切り替えることができます。バッファーのバイトサイズが変数@code{line-number-display-limit}の値より大きければ、Emacsは行番号を表示しないことに注意してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1707
 msgid "You can similarly display the current column with @kbd{M-x column-number-mode}, or by putting the form"
-msgstr "@kbd{M-x column-number-mode}、または以下のフォームを"
+msgstr "@kbd{M-x column-number-mode}、または以下のフォーム"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:1710
@@ -3519,12 +3519,12 @@ msgstr "(setq column-number-mode t)\n"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1714
 msgid "in your @file{.emacs} file.  This feature is off by default."
-msgstr "@file{.emacs}ファイルに記述することにより、同じようにカレント列番号を表示できます。この機能はデフォルトではオフです。"
+msgstr "を@file{.emacs}ファイルに記述することにより、同じようにカレント列番号を表示できます。この機能はデフォルトではオフです。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1720
 msgid "The @code{\"%c\"} format specifier in the variable @code{mode-line-format} will insert the current column's value into the mode line.  See the documentation for @code{mode-line-format} (using @kbd{C-h v mode-line-format @key{RET}}) for more information on how to set and use this variable."
-msgstr "変数@code{mode-line-format}内のフォーマット指定子@code{\"%c\"}は、モードラインにカレント列の値っっ挿入します。この変数のセットや使用する方法についての詳細は@code{mode-line-format}のドキュメントを参照してください(@kbd{C-h v mode-line-format @key{RET}}を使用する)。"
+msgstr "変数@code{mode-line-format}内のフォーマット指定子@code{\"%c\"}は、モードラインにカレント列の値を挿入します。この変数のセット、および使用方法についての詳細は@code{mode-line-format}のドキュメントを参照してください(@kbd{C-h v mode-line-format @key{RET}}を使用する)。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:1721
@@ -3540,7 +3540,7 @@ msgstr "@samp{display-line-numbers}パッケージ(Emacsのバージョン26.1�
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1737
 msgid "There is also the @samp{linum} package (distributed with Emacs since version 23.1) which will henceforth become obsolete.  Users and developers are encouraged to use @samp{display-line-numbers} instead.  The packages @samp{setnu} and @samp{wb-line-number} (not distributed with Emacs) also implement this feature."
-msgstr "@samp{linum}パッケージ(バージョン23.1以降のEmacsに同梱)もありますが今後配送されます。ユーザーおよび開発者にはかわりに@samp{display-line-numbers}の使用をお勧めします。(Emacsには同梱されていないパッケージ)@samp{setnu}と@samp{wb-line-number}もこの機能を実装しています。"
+msgstr "@samp{linum}パッケージ(バージョン23.1以降のEmacsに同梱)もありますが今後廃止されます。ユーザーおよび開発者には、かわりに@samp{display-line-numbers}の使用をお勧めします。(Emacsには同梱されていない)パッケージ@samp{setnu}と@samp{wb-line-number}もこの機能を実装しています。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:1738
@@ -3580,7 +3580,7 @@ msgstr "Emacsフレームのタイトルバーのコンテンツは、変数@cod
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1755
 msgid "By default, the titlebar for a frame does contain the name of the buffer currently being visited, except if there is a single frame.  In such a case, the titlebar contains Emacs invocation name and the name of the machine at which Emacs was invoked.  This is done by setting @code{frame-title-format} to the default value of"
-msgstr "デフォルトではフレームのタイトルバーには、1つのフレームしか存在しない場合を除き、がカレントでvisitされているバッファーの名前が表示されます。フレームが1つの場合には、タイトルバーにはEmacsを呼び出したときの名前、およびEmacsを呼び出したマシン名が含まれます。これは@code{frame-title-format}に以下をデフォルト値としてセットすることにより行われます:"
+msgstr "デフォルトではフレームのタイトルバーには、1つのフレームしか存在しない場合を除き、カレントでvisitされているバッファーの名前が表示されます。フレームが1つの場合には、タイトルバーにEmacsを呼び出したときの名前、およびEmacsを呼び出したマシン名が含まれます。これは@code{frame-title-format}に以下をデフォルト値としてセットすることにより行われます:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:1758
@@ -4014,7 +4014,7 @@ msgstr "isearch yanking"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:1946
 msgid "Use @kbd{M-y}.  @xref{Isearch Yank,,, emacs, The GNU Emacs Manual}."
-msgstr "@kbd{M-y}を使用してください。@ref{Isearch Yank,,, emacs, The GNU Emacs Manual}を参照してください。"
+msgstr "@kbd{M-y}を使用します。@ref{Isearch Yank,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:1947
@@ -4243,7 +4243,7 @@ msgstr "(if (@var{some conditions are met}) (server-start))\n"
 #. type: itemize
 #: ../../../../misc/efaq.texi:2038
 msgid "To get your news reader, mail reader, etc., to invoke @samp{emacsclient}, try setting the environment variable @code{EDITOR} (or sometimes @code{VISUAL}) to the value @samp{emacsclient}.  You may have to specify the full pathname of the @samp{emacsclient} program instead.  Examples:"
-msgstr "ニュースリーダーやメールリーダーなどが@samp{emacsclient}を呼び出すようにするには、環境変数@code{EDITOR} (@code{VISUAL}のときもある)に値@samp{emacsclient}を設定してみればよい。@samp{emacsclient}プログラムのかわりにプログラムのフルパス名を指定する必要があるかもしれない。たとえば:"
+msgstr "ニュースリーダーやメールリーダーなどが@samp{emacsclient}を呼び出すようにするには、環境変数@code{EDITOR} (@code{VISUAL}のときもあり)に値@samp{emacsclient}を設定してみればよい。@samp{emacsclient}プログラムのかわりにプログラムのフルパス名を指定する必要があるかもしれない。たとえば:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:2042
@@ -4434,7 +4434,7 @@ msgstr "Emacsの@code{cc-mode}はインデントスタイルのカスタマイ�
 #. type: enumerate
 #: ../../../../misc/efaq.texi:2120
 msgid "Go to the beginning of the first line where you don't like the indentation and type @kbd{C-c C-o}.  Emacs will prompt you for the syntactic symbol; type @key{RET} to accept the default it suggests."
-msgstr "気に召さないインデントの最初の行の先頭に移動して@kbd{C-c C-o}とタイプする。Emacsが構文シンボル(syntactic symbol)の入力を求めるので、デフォルトを受諾するために@key{RET}をタイプする。"
+msgstr "気に入らないインデントの最初の行の先頭に移動して@kbd{C-c C-o}とタイプする。Emacsが構文シンボル(syntactic symbol)の入力を求めるので、デフォルトを承諾するために@key{RET}をタイプする。"
 
 #. type: enumerate
 #: ../../../../misc/efaq.texi:2125
@@ -4450,7 +4450,7 @@ msgstr "0"
 #. type: table
 #: ../../../../misc/efaq.texi:2129
 msgid "No extra indentation."
-msgstr "追加のインデントなし。"
+msgstr "余計なインデントなし。"
 
 #. type: item
 #: ../../../../misc/efaq.texi:2129
@@ -4526,7 +4526,7 @@ msgstr "これらのシンボルのいずれかを選んだ後に@kbd{C-c C-q}�
 #. type: enumerate
 #: ../../../../misc/efaq.texi:2150
 msgid "If you don't like the result, go back to step 1.  Otherwise, add the following line to your @file{.emacs}:"
-msgstr "結果が気に召さなければステップ1に戻る。そうでなければ以下の行を@file{.emacs}に追加する:"
+msgstr "結果が気に入らなければステップ1に戻る。そうでなければ以下の行を@file{.emacs}に追加する:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2153
@@ -4542,7 +4542,7 @@ msgstr "ここで@var{syntactic-symbol}は行頭で@kbd{C-c C-o}をタイプし�
 #. type: enumerate
 #: ../../../../misc/efaq.texi:2165
 msgid "Go to the next line whose indentation is not to your liking and repeat the process there."
-msgstr "インデントが気に召さない次の行へ移動してこれらの手順を繰り返す。"
+msgstr "インデントが気に入らない次の行へ移動してこれらの手順を繰り返す。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2169
@@ -4612,7 +4612,7 @@ msgstr "Toggling @code{overwrite-mode}"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2198
 msgid "@kbd{M-x overwrite-mode} (a minor mode).  This toggles @code{overwrite-mode} on and off, so exiting from @code{overwrite-mode} is as easy as another @kbd{M-x overwrite-mode}."
-msgstr "@kbd{M-x overwrite-mode} (マイナーモード)です。これは@code{overwrite-mode}のオンオフを切り替えるのでもう一度@kbd{M-x overwrite-mode}で簡単に@code{overwrite-mode}からexitできます。"
+msgstr "@kbd{M-x overwrite-mode} (マイナーモード)です。これは@code{overwrite-mode}のオンオフを切り替えるので、もう一度@kbd{M-x overwrite-mode}とタイプすれば簡単に@code{overwrite-mode}からexitできます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2200
@@ -4657,7 +4657,7 @@ msgstr "Martin R. Frank(訳注: Texinfoファイルには\"martin@@cc.gatech.edu
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2212
 msgid "Tell Emacs to use the @dfn{visible bell} instead of the audible bell, and set the visible bell to nothing."
-msgstr "可聴ベル(audible bell)のかわりに@dfn{視覚的なベル(visible bell)}を使うように伝えて、その視覚的ベルには何もセットしません。"
+msgstr "可聴ベル(audible bell)のかわりに@dfn{視覚的なベル(visible bell)}を使うようにEmacs伝えて、その視覚的ベルには何もセットしません。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2215
@@ -4770,7 +4770,7 @@ msgstr "Text indentation"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2254
 msgid "Such behavior is automatic (in Text mode) in Emacs 20 and later.  From the @file{etc/NEWS} file for Emacs 20.2:"
-msgstr "このような振る舞いはEmacs 20以降では(Textモードでは)自動で行われます。Emacs 20.2の@file{etc/NEWS}ファイルからの引用します:"
+msgstr "このような振る舞いはEmacs 20以降では(Textモードでは)自動で行われます。Emacs 20.2の@file{etc/NEWS}ファイルからの引用です:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:2261
@@ -4807,7 +4807,7 @@ msgstr "Fill prefix"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2276
 msgid "If you have @code{auto-fill-mode} turned on (@pxref{Turning on auto-fill by default}), you can tell Emacs to prefix every line with a certain character sequence, the @dfn{fill prefix}.  Type the prefix at the beginning of a line, position point after it, and then type @kbd{C-x .} (@code{set-fill-prefix}) to set the fill prefix.  Thereafter, auto-filling will automatically put the fill prefix at the beginning of new lines, and @kbd{M-q} (@code{fill-paragraph}) will maintain any fill prefix when refilling the paragraph."
-msgstr "@code{auto-fill-mode} (@ref{Turning on auto-fill by default}を参照)をオンに切り替えている場合には、@dfn{フィルプレフィクス(fill prefix)}として特定の文字シーケンスをすべての行のプレフィクスとするようEmacsに指示することができます。行頭でプレフィクスをタイプしてポイントをタイプしたプレフィクスの後に移動、それから@kbd{C-x .} (@code{set-fill-prefix})とタイプしてフィルプレフィクスをセットします。それ以降はオートフィル新たな行の先頭に自動的にフィルプレフィクスを配置するとともに、@kbd{M-q} (@code{fill-paragraph})でパラグラフを再フィルする際にはすべてのフィルプレフィクスを保守するようになります。"
+msgstr "@code{auto-fill-mode} (@ref{Turning on auto-fill by default}を参照)をオンに切り替えている場合には、@dfn{フィルプレフィクス(fill prefix)}として特定の文字シーケンスをすべての行のプレフィクスとするようEmacsに指示することができます。行頭でプレフィクスをタイプしてポイントをタイプしたプレフィクスの後に移動、それから@kbd{C-x .} (@code{set-fill-prefix})とタイプしてフィルプレフィクスをセットします。それ以降はオートフィルが新たな行の先頭に自動的にフィルプレフィクスを配置するとともに、@kbd{M-q} (@code{fill-paragraph})でパラグラフを再フィルする際にはすべてのフィルプレフィクスを保守するようになります。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2282
@@ -4869,17 +4869,17 @@ msgstr "任意のEmacsフレーム上端にあるEmacsメニューバーの@samp
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2302
 msgid "Alternatives to this mode include:"
-msgstr "このようなモードの代替案手段としては以下が含まれます:"
+msgstr "このようなモードの代替となる手段として以下が含まれます:"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2309
 msgid "If you're looking at a right parenthesis (or brace or bracket) you can delete it and reinsert it.  Emacs will momentarily move the cursor to the matching parenthesis."
-msgstr "右カッコ(または大カッコや角カッコ)に着目していたら、それを削除してからしで挿入する。Emacsは瞬時の間、マッチするカッコにカーソル和移動するだろう。"
+msgstr "あなたが右カッコ(または大カッコや角カッコ)に着目していたら、それを削除してから再度挿入する。Emacsは瞬時の間、マッチするカッコにカーソルを移動するだろう。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2315
 msgid "@kbd{C-M-f} (@code{forward-sexp}) and @kbd{C-M-b} (@code{backward-sexp})  will skip over one set of balanced parentheses, so you can see which parentheses match.  (You can train it to skip over balanced brackets and braces at the same time by modifying the syntax table.)"
-msgstr "@kbd{C-M-f} (@code{forward-sexp})および@kbd{C-M-b} (@code{backward-sexp})はバランスのとれたカッコを1セット分スキップするので、どのカッコがマッチするか確認できる(構文テーブルを修整してバランスのとれた大カッコおよび角カッコもスキップするよう洗練することも可能)。"
+msgstr "@kbd{C-M-f} (@code{forward-sexp})および@kbd{C-M-b} (@code{backward-sexp})は釣り合いのとれたカッコを1セット分スキップするので、どのカッコがマッチするか確認できる(構文テーブルを修整して釣り合いのとれた大カッコおよび角カッコもスキップするよう洗練することも可能)。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2316
@@ -6480,7 +6480,7 @@ msgstr "Emacs entries for termcap/terminfo"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3086
 msgid "The termcap entry for terminal type @samp{emacs} is ordinarily put in the @samp{TERMCAP} environment variable of subshells.  It may help in certain situations (e.g., using rlogin from shell buffer) to add an entry for @samp{emacs} to the system-wide termcap file.  Here is a correct termcap entry for @samp{emacs}:"
-msgstr "ターミナルタイプ@samp{emacs}にたいするtermcapエントリーは、通常はサブシェルの環境変数@samp{TERMCAP}にセットされます。これは特定の状況下(たとえばShellバッファーからのrlogin)において、システムワイドなtermcapファイルにエントリーを追加する助けになるかもしれません。以下は@samp{emacs}にたいする正しいtermcapエントリーです:"
+msgstr "端末タイプ@samp{emacs}にたいするtermcapエントリーは、通常はサブシェルの環境変数@samp{TERMCAP}にセットされます。これは特定の状況下(たとえばShellバッファーからのrlogin)において、システムワイドなtermcapファイルにエントリーを追加する助けになるかもしれません。以下は@samp{emacs}にたいする正しいtermcapエントリーです:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3089

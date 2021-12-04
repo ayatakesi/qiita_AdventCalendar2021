@@ -132,7 +132,7 @@ FAQ、並びにEmacsドキュメントで使用する表記について説明し
 @kbd{C-x}:@key{Control}キーを押したまま@kbd{x}キーを押下する
 
 @item
-@kbd{M-x}: @key{Meta}キー(コンピューターに@key{Meta}キーがなければ@pxref{No Meta
+@kbd{M-x}: @key{Meta}キー(コンピューターに@key{Meta}キーがなければ@ref{No Meta
 key}を参照)を押したまま@kbd{x}キーを押下する
 
 @item
@@ -188,7 +188,7 @@ DOSおよびWindowsの端末では@key{Meta}キー押下時にビット7をセ�
 @cindex @kbd{M-x}, meaning of
 
 @kbd{M-x
-@var{command}}は@kbd{M-x}をタイプしてからコマンドの名前、その後に@key{RET}をタイプする(@kbd{M-x}や@key{RET}の意味があやふやなら@xref{Basic
+@var{command}}は@kbd{M-x}をタイプしてからコマンドの名前、その後に@key{RET}をタイプする(@kbd{M-x}や@key{RET}の意味があやふやなら@ref{Basic
 keys}を参照)。
 
 (デフォルトでは)@kbd{M-x}はコマンド@code{execute-extended-command}を呼び出します。このコマンドによってコマンド名を覚えていれば任意のEmacsコマンドを実行できます。コマンド名を覚えることができなければ補完には@key{TAB}や@key{SPC}、利用可能なコマンドの一覧は@kbd{?}、以前に入力したコマンドの確認には@kbd{M-p}と@kbd{M-n}(または上下の矢印)をタイプできます。Emacsの@dfn{コマンド(command)}とは@dfn{インタラクティブ(interactive:
@@ -218,7 +218,7 @@ keys}を参照)。
 
 Info内でこのFAQを読んでいるなら、リファレンス上で単に@key{RET}を押下すればフォローできます。
 
-Emacsマニュアルのハードコードをご所望なら@xref{Getting a printed manual}を参照してください。
+Emacsマニュアルのハードコードをご所望なら@ref{Getting a printed manual}を参照してください。
 
 @node File-name conventions
 @section @file{src/config.h}、@file{site-lisp/default.el}等は何なのか?
@@ -228,11 +228,11 @@ Emacsマニュアルのハードコードをご所望なら@xref{Getting a print
 
 これらはEmacsとともに配布されるファイルです。Emacsディストリビューションは@file{etc}、@file{lisp}、@file{src}等のサブディレクトリーに分かれています。これらの内のいくつか(@file{etc}や@file{lisp}など)はインストール済みEmacsとソースの両方に存在しますが、ソース内でのみ見いだせるものもあります(@file{src}など)。
 
-ineEmacsを使っているもののシステム上のどこにあるか判らない場合には、Emacsを起動して@kbd{C-h v data-directory
+Emacsを使っているもののシステム上のどこにあるか判らない場合には、Emacsを起動して@kbd{C-h v data-directory
 @key{RET}}とタイプしてください。表示されるディレクトリー名は、@file{etc}ディレクトリーがインストールされたフルパスになるでしょう(このフルパスはEmacs変数@code{data-directory}に記録されており、@kbd{C-h
 v}でこの値と変数のドキュメントが表示される)。
 
-Infoディレクトリーはの場所(Infoドキュメントが格納されている場所)変数@code{Info-default-directory-list}に保持されています。この変数の値(ディレクトリー名のリスト)を確認するには@kbd{C-h
+Infoディレクトリーの場所(Infoドキュメントが格納されている場所)は、変数@code{Info-default-directory-list}に保持されています。この変数の値(ディレクトリー名のリスト)を確認するには@kbd{C-h
 v Info-default-directory-list
 @key{RET}}を使用してください。このリスト内にある最後のディレクトリーに、恐らくもっとも多くのInfoファイルが格納されているでしょう。デフォルトではEmacsのInfoドキュメントは@file{/usr/local/share/info}にあります。
 
@@ -293,12 +293,12 @@ cost)''ではなく``自由(freedom)''を意図した単語です。GPLの対象
 @cindex Discussion of the GPL
 
 GNU
-一般公衆利用許諾書、いわゆるGPL(コピーレフト)の真の法的な意味合いは、裁判官がその有効性と範囲を裁定した場合にのみ明らかになります。判例として定められるようなGPLが関与する著作権侵害の訴訟はこれまでに一度もありませんでした。GPL条件への違反によって企業への訴訟が起こされましたが、これまでのところすべてが法廷外で(原告に有利に)和解されています。この問題に関しての議論は、どうかこの問題について大々的に罵り合うために作成されたニュースグループ@uref{news:gnu.misc.discuss}で行ってください。
+一般公衆利用許諾書、いわゆるGPL(コピーレフト)の真の法的な意味合いは、裁判官がその有効性と範囲を裁定した場合にのみ明らかになります。判例として定められるようなGPLが関与する著作権侵害の訴訟はこれまでに一度もありませんでした。GPL条件への違反によって企業への訴訟が起こされましたが、これまでのところすべてが法廷外で(原告に有利に)和解されています。この問題に関しての議論は、どうかこの問題について盛大に罵り合うために作成されたニュースグループ@uref{news:gnu.misc.discuss}で行うようお願いします。
 
 RMSは記しています:
 
 @quotation
-GNUコピーレフトの法的な意味は、Emacsがフリーソフトウェアプロジェクトであり、Emacsに関連する作業もフリーソフトウェアであるべくだという精神ほど重要ではありません。``フリー(free)''とはすべてのユーザーがEmacsを学び、共有して、変更や改善を行う自由(freedom)をもっているという意味です。すべての人がこの自由を有することを保証するために、あなたがEmacsのあるバージョンや関連プログラムを配布する際には、それを受け取る人にソースコードも渡すことによって、あなたが楽しんだのと同じ自由を分け与えてください。
+GNUコピーレフトの法的な意味は、Emacsがフリーソフトウェアプロジェクトであり、Emacsに関連する作業もフリーソフトウェアであるべきだという精神ほど重要ではありません。``フリー(free)''とはすべてのユーザーがEmacsを学び、共有して、変更や改善を行う自由(freedom)をもっているという意味です。すべての人がこの自由を有することを保証するために、あなたがEmacsのあるバージョンや関連プログラムを配布する際には、それを受け取る人にソースコードも渡すことによって、あなたが楽しんだのと同じ自由を分け与えてください。
 @end quotation
 
 @node Guidelines for newsgroup postings
@@ -310,15 +310,15 @@ GNUコピーレフトの法的な意味は、Emacsがフリーソフトウェア
 @cindex Posting messages to newsgroups
 
 @cindex GNU mailing lists
-Emacsメーリングリストのは@uref{https://savannah.gnu.org/mail/?group=emacs, the Emacs
+Emacsメーリングリストは@uref{https://savannah.gnu.org/mail/?group=emacs, the Emacs
 Savannah page}に記述があります。それらのうちのいくつかはニュースグループへゲートウェイされています。
 
 Emacsプログラム全般に関する議論はニュースグループ@uref{news:comp.emacs}、@uref{news:gnu.emacs.help}はGNU
-Emacsに特化したニュースグループです。したがってある問いにたいして適切なニュースグループは1つだけなので、両方のグループへのクロスポストには意味がありません。
+Emacsに特化したニュースグループです。したがってある問いにたいして適切なニュースグループは1つだけなので、両方のグループへの多重投稿には意味がありません。
 
-問題について大いに罵り合うために作成された@uref{news:gnu.misc.discuss}を除いて、``非フリー(non-free)''なソフトウェアを推奨するようなメッセージは@code{gnu.*}ニュースグループのすべてにおいて受け入れ難いものとみなされます。``非フリー''なソフトウェアにはエンドユーザーが自由にソースコードを改変したり拡張機能の取り替えができないすべてのソフトウェアが含まれます。そのようなソフトウェアを推奨するフォローアップを投稿する際には、@samp{Newsgroups:}行から@code{gnu.*}グループを削除するよう注意してください。
+問題について派手に罵り合うために作成された@uref{news:gnu.misc.discuss}を除いて、``非フリー(non-free)''なソフトウェアを推奨するようなメッセージは@code{gnu.*}ニュースグループのすべてにおいて受け入れ難いものとみなされます。``非フリー''なソフトウェアにはエンドユーザーが自由にソースコードを改変したり拡張機能の取り替えができないすべてのソフトウェアが含まれます。そのようなソフトウェアを推奨するフォローアップを投稿する際には、@samp{Newsgroups:}行から@code{gnu.*}グループを削除するよう注意してください。
 
-@uref{news:gnu.emacs.bug}はバグレポートを目にする場所ですが、このニュースグループに直接バグレポートを投稿することは避けてください(@ref{Reporting
+@uref{news:gnu.emacs.bug}ではバグレポートを目にしますが、このニュースグループに直接バグレポートを投稿することは避けてください(@ref{Reporting
 bugs}を参照)。
 
 最後にGNUのメーリングリストやニュースグループに投稿する前に@url{https://www.gnu.org/philosophy/kind-communication.html,
@@ -330,7 +330,7 @@ GNU Kind Communications Guidelines}を一読することをお勧めします。
 @cindex Usenet archives for GNU groups
 @cindex Old Usenet postings for GNU groups
 
-網羅する範囲において意図していない齟齬があるかもしれませんが、FSFはGNUメーリングリストすべてのアーカイブを長年保守してきました。このアーカイブが@uref{https://lists.gnu.org/r/,
+網羅する範囲において意図せぬずれがあるかもしれませんが、FSFはGNUメーリングリストすべてのアーカイブを長年保守してきました。このアーカイブが@uref{https://lists.gnu.org/r/,
 the GNU mail archive}でウェブ上で閲覧できます。
 
 @uref{http://groups.google.com/groups/dir?q=gnu&,
@@ -355,9 +355,9 @@ RMSは述べています:
 @quotation
 バグレポートを@url{https://lists.gnu.org/mailman/listinfo/help-gnu-emacs, the
 help-gnu-emacs mailing list}
-(@uref{news:gnu.emacs.help}に投稿される効果をもつ)に送信するのは、ほとんどは問題を解決するアイデアをもたない単なるユーザーである多数の人たちに不必要に費やさせるので望ましくありません。@url{https://lists.gnu.org/mailman/listinfo/bug-gnu-emacs,
+(@uref{news:gnu.emacs.help}に投稿される効果をもつ)に送信するのは、(ほとんどは問題を解決するアイデアをもたない単なるユーザーである)多数の人たちの時間を不必要に費やさせるので望ましくありません。@url{https://lists.gnu.org/mailman/listinfo/bug-gnu-emacs,
 The bug-gnu-emacs
-list}なら何をするべきか恐らくもっと知識があり、他のものよりもEmacsのメッセージを受け取りたいと表明している、より少ない人たちにメッセージを届けられます。
+list}なら、恐らく何をするべきかもっと知識があり、他のものよりもEmacsのメッセージを受け取りたいと表明している、より少ない人たちにメッセージを届けられます。
 @end quotation
 
 RMSは@uref{news:gnu.emacs.help}へ投稿しても問題がない場合について述べています:
@@ -454,7 +454,7 @@ r}とタイプしてください。Infoにエンター直後に@kbd{h}とタイ�
 @item
 特定の問題やコマンド、変数について述べているマニュアルのセクションを素早く見つけるには@kbd{C-h i m emacs @key{RET} i
 @var{topic} @key{RET}}とタイプします。これで正しいマニュアル箇所に辿り着けないようなら、必要なものが見つかるまで@kbd{,}
-(カンマ)を繰り返し押下してください(@kbd{i}と@kbd{,}はEmacsマニュアルの全インデックスからタイプされた@var{topic}を探すインデックス検索関数を呼び出すキー)。
+(カンマ)を繰り返し押下してください(@kbd{i}と@kbd{,}はタイプされた@var{topic}をEmacsマニュアルの全インデックスから探すインデックス検索関数を呼び出すキー)。
 
 @cindex Apropos
 @item
@@ -519,7 +519,7 @@ Emacsでは関数なら@kbd{C-h f}、変数なら@kbd{C-h v}とタイプして�
 Emacs Lisp Reference Manual}を参照)。
 
 FSFにマニュアルのハードコードを注文することもできます。詳細は@uref{https://shop.fsf.org/, FSF on-line
-store}を参照してください(このマニュアルは常にプリントされているる訳ではない)。
+store}を参照してください(このマニュアルは常にプリントされる訳ではない)。
 
 Emacs LispリファレンスマニュアルのHTMLバージョンは
 
@@ -595,7 +595,7 @@ Infoファイルをインストールしたいが必要な権限がない場合�
 (add-to-list 'Info-default-directory-list "~/Info")
 @end lisp
 
-このディレクトリーには@file{dir}という名前のトップレベルInfoファイルが必要になるだろう。これはそのディレクトリーにあるInfoファイルのエントリーだけをリストスル点を除き、システムの@file{dir}がもつすべてをもつ。(偶然にも)このディレクトリー内のすべてのファイルが他の@file{dir}ファイルから参照されていれば、これは必要ないかもしれない。@code{Info-default-directory-list}内のすべての@file{dir}ファイルのノードリストはInfoシステムによってマージされる。
+このディレクトリーには@file{dir}という名前のトップレベルInfoファイルが必要になるだろう。これはそのディレクトリーにあるInfoファイルのエントリーだけをリストする点を除き、システムの@file{dir}がもつすべてをもつ。(偶然にも)このディレクトリー内のすべてのファイルが他の@file{dir}ファイルから参照されていれば、これは必要ないかもしれない。@code{Info-default-directory-list}内のすべての@file{dir}ファイルのノードリストはInfoシステムによってマージされる。
 
 @end itemize
 
@@ -646,12 +646,12 @@ documentation}を参照)。
 @itemize @bullet
 
 @item
-Texinfoパッケージに同梱されているInfoプログラムのスタンドアロンバージョンである@code{info}。詳細は@xref{Installing
+Texinfoパッケージに同梱されているInfoプログラムのスタンドアロンバージョンである@code{info}。詳細は@ref{Installing
 Texinfo documentation}を参照のこと。
 
 @item
-X Window
-systemの下で実行され、Tcl/Tkを使用するInfoビューアーのTkinfo。Tkinfoは@uref{http://math-www.uni-paderborn.de/~axel/tkinfo/}で入手できる。
+Tcl/Tkを使用する、X Window
+systemの下で実行されるInfoビューアーのTkinfo。Tkinfoは@uref{http://math-www.uni-paderborn.de/~axel/tkinfo/}で入手できる。
 
 @end itemize
 
@@ -665,7 +665,7 @@ systemの下で実行され、Tcl/Tkを使用するInfoビューアーのTkinfo�
 @cindex @file{NEWS}, description of file
 
 これはよくある質問ではありませんが、そうあるべきなのです!
-あなたに読んでもらうためｎ、Emacsおよび関連するGNUプロジェクトの様相に関する様々な情報ファイルが利用可能です。
+あなたに読んでもらうために、Emacsおよび関連するGNUプロジェクトの様相に関する様々な情報ファイルが利用可能です。
 
 以下のファイル(やその他のファイルも)はEmacsディストリビューション(どこにあるか判らなければ@ref{File-name
 conventions}を参照)の@file{etc}ディレクトリー内にあります。これらのファイルの多くはEmacsの@samp{Help}メニュー、あるいは@kbd{C-h
@@ -710,9 +710,9 @@ directory}にはEmacsやその他のGNUソフトウェアのインストール�
 @cindex Latest FAQ version, obtaining the
 
 Emacs
-FAQはInfo形式としてEmacsに同梱されています。任意のEmacsフレームトップにあるEmacsメニューバーの@samp{Help}メニューあら@samp{Emacs
+FAQはInfo形式としてEmacsに同梱されています。任意のEmacsフレームトップにあるEmacsメニューバーの@samp{Help}メニューから@samp{Emacs
 FAQ}オプションを選択、あるいは@kbd{C-h C-f} (@kbd{M-x
-view-emacs-FAQ})とタイプしてくださいこれを読むことができます。開発版の最新バージョンはEmacsの開発用レポジトリから利用できます(@ref{Latest
+view-emacs-FAQ})とタイプしてこれを読むことができます。開発版の最新バージョンはEmacsの開発用レポジトリから利用できます(@ref{Latest
 version of Emacs}を参照)。
 
 @c ------------------------------------------------------------
@@ -797,7 +797,7 @@ GNU多倍長整数ライブラリー)を使用するようになった。ネイ�
 
 @cindex JSON, native parsing
 @item
-@file{json.el}より高速な@acronym{JSON}解析のネイティブサポート。
+@file{json.el}による高速な@acronym{JSON}解析のネイティブサポート。
 
 @item
 Cairoによる描画が実験的機能ではなくなった。
@@ -806,7 +806,7 @@ Cairoによる描画が実験的機能ではなくなった。
 @item
 Emacsがunexecではなく``portable
 dumper''を使用するようになった。これは現代的なシステムのメモリー割り当てにたいする互換性を向上して、とりわけ現代的なオペレーティングシステムのほとんどが使用している@acronym{ASLR}(Address
-Space Layout Randomization: アドレス空間配置のランダム化)をよりサポートする。
+Space Layout Randomization: アドレス空間配置のランダム化)のサポートが向上した。
 
 @cindex XDG convention
 @item
@@ -902,7 +902,7 @@ xwidget-webkit-browse-url}とタイプすればよい。
 
 @cindex Unicode characters, typing easily
 @item
-いくつかの一般的な文字にたいして略記が@kbd{C-x 8}に新規で追加された。略記のリストは@kbd{C-x 8 C-h}とタイプする。
+いくつかの一般的な文字にたいしする略記が@kbd{C-x 8}に新規で追加された。略記のリストは@kbd{C-x 8 C-h}とタイプする。
 
 @cindex automatic display of Lisp APIs
 @item
@@ -985,7 +985,7 @@ t}を使用できる。詳細についてはEmacs Lispリファレンスマニ�
 text)''をサポートするようになった。
 
 @item
-テキスト選択の処理が改善されて、外部クリップボードとより統合された。
+テキスト選択の処理が改善されて、外部クリップボードとの統合性が向上した。
 
 @cindex themes
 @item
@@ -1000,8 +1000,8 @@ GTK+ 3ツールキットとともにEmacsをコンパイルできるようにな
 @itemize
 
 @item
-SELinux(``Security-Enhanced
-Linux'')とは、従来の``Unixスタイル''より複雑なファイルアクセスコントロールを提供するLinuxカーネルの機能。
+従来の``Unixスタイル''より複雑なファイルアクセスコントロールを提供するLinuxカーネルの機能であるSELinux(``Security-Enhanced
+Linux'')
 
 @item
 ImageMagickディスプレーライブラリー。これによりEmacsでより多くのイメージ形式を表示でき、ローテーションのような変換も行うことができるようになる。
@@ -1116,11 +1116,11 @@ abbrev定義を起動時に読み込む。
 GrepモードがCompilationモードから切り離されて、新たにgrep特有のオプションおよびコマンドをもつようになった。
 
 @item
-Emacsオリジナルのマクロシステムは、新たに多くのコマンドおよび機能、ファンクションキーF3とF4を使用するシンプルなインターフェイスを提供するKmacroパッケージに置き換えられた。マクロはマクロリングに格納されるとともに、対話的にデバッグと編集ができるようになった。
+Emacsオリジナルのマクロシステムは、新たに多くのコマンドおよび機能、ファンクションキーF3とF4を使用するシンプルなインターフェイスを提供するKmacroパッケージに置き換えられた。マクロはマクロリングに格納されるとともに、対話的なデバッグと編集が可能になった。
 
 @item
 GDBにたいする完全にグラフィカルなユーザーインターフェイスとしてGUD(Grand Unified
-Debugger)が使用できるようになった。これは伝統的な開発環境で見い出すことができる多くの機能を提供するとともに、ブレークポイントの操作、ウォッチポイントの追加、コールスタック表示等を容易にする。ブレークポイントはソースバッファー内に視覚的に示される。
+Debugger)が使用できるようになった。これは伝統的な開発環境で目にする多くの機能を提供するとともに、ブレークポイントの操作、ウォッチポイントの追加、コールスタック表示等を容易にする。ブレークポイントはソースバッファー内に視覚的に示される。
 
 @item
 @cindex New modes
@@ -1153,7 +1153,7 @@ Emacs
 @cindex Colors on text-only terminals
 @cindex TTY colors
 これらに加えてEmacs
-21はテキストオンリーの端末でのフェイスがサポートされました。これはGNU/Linuxコンソールや@code{xterm}上でEmacsを@kbd{emacs
+21ではテキストオンリーの端末でのフェイスがサポートされました。これはGNU/Linuxコンソールや@code{xterm}上でEmacsを@kbd{emacs
 -nw}で実行した際にカラー表示されることを意味しています。
 
 
@@ -1162,9 +1162,9 @@ Emacs
 @cindex Differences between Emacs 19 and Emacs 20
 @cindex Emacs 20, new features in
 
-Emacsのバージョン18と19の差はよりダイナミックなものでした。一般的なユーザーのほとんどにとってもウィンドウシステムにおけるフレーム、フェイス、カラーの導入は明白な変更でした。
+Emacsのバージョン18から19への変更はより劇的なものでした。一般的なユーザーのほとんどにとってもウィンドウシステムにおけるフレーム、フェイス、カラーの導入は明白な変更でした。
 
-Emacsのバージョン19と20の間にも同様に差はあるものの多くは軽微であるか気付くのが難しいものでした。この変更の中には非ラテン文字を使用する言語用のMULEと同一ドキュメント内での複数言語の混合、Lispを使用せずに変数を変更する``Customize''機能、Macintosh、Microsoft、Unixプラットフォームにおけるファイルの自動変換が含まれます。
+Emacsのバージョン19と20の間にも同様に変更はあるものの、その多くは軽微であるか気付くのが難しいものでした。この変更の中には非ラテン文字を使用する言語用のMULEと同一ドキュメント内での複数言語の混合、Lispを使用せずに変数を変更する``Customize''機能、Macintosh、Microsoft、Unixプラットフォームにおけるファイルの自動変換が含まれます。
 
 @c ------------------------------------------------------------
 @node Common requests
@@ -1230,17 +1230,17 @@ Emacsのバージョン19と20の間にも同様に差はあるものの多く�
 
 @ref{Init File,,, emacs, The GNU Emacs Manual}を参照してください。
 
-一般的にEmacsの新規ユーザーは@file{.emacs}ファイルを与えられるべきではありません。なぜならこれによる非標準的から混乱を招くからです。その後に彼らはなぜEmacsがドキュメント通りに振る舞わないか尋ねる質問を@url{https://lists.gnu.org/mailman/listinfo/help-gnu-emacs,
+一般的にEmacsの新規ユーザーは@file{.emacs}ファイルを与えられるべきではありません。なぜならこれによる非標準的な振る舞いが混乱を招くからです。その後に彼らはなぜEmacsがドキュメント通りに振る舞わないか尋ねる質問を@url{https://lists.gnu.org/mailman/listinfo/help-gnu-emacs,
 the help-gnu-emacs mailing list}に送信するのです。
 
 EmacsにはCustomize機能が含まれています(@ref{Using Customize}を参照)。これによってEmacs
 Lispに親しみのないユーザーはLispコードよりもメニューを使い、比較的判りやすい方法で@file{.emacs}ファイルを編集できます。
 
 Customizeは確かにEmacsの設定を容易にするかもしれませんが、Emacs
-Lispを習得して@file{.emacs}を直接編集するために少し時間を割くことを検討してみてください。頻繁に要求される基本的なタスクを処理することに興味があるユーザーには、シンプルな設定オプションが@ref{Init
-File,,, emacs, The GNU Emacs Manual}により完全に記述されています。
+Lispを習得して@file{.emacs}を直接編集するために少し時間を割くことを検討してみてください。頻繁に求められる基本的なタスクを処理することに興味があるユーザーには、シンプルな設定オプションが@ref{Init
+File,,, emacs, The GNU Emacs Manual}に完全に記述されています。
 
-ユーザーがどこで自分の@file{.emacs}ファイルを見つけられるか判らない場合があります。Emacsから@file{~/.emacs}としてファイルをvisitすることのよって、正しいファイルが見つかるでしょう。
+ユーザーがどこで自分の@file{.emacs}ファイルを見つけられるか判らない場合があります。Emacsから@file{~/.emacs}としてファイルをvisitすることによって、正しいファイルが見つかるでしょう。
 
 @node Using Customize
 @section Customizeを使い始めるには?
@@ -1275,11 +1275,11 @@ list-colors-display}はカレントディスプレーについてEmacsが関知�
 バージョン22.1以降ではシンタックスハイライトがデフォルトでオンです。
 
 @cindex direct color in terminals
-Emacs 26.1以降はターミナル(訳注:
+Emacs 26.1以降は端末(訳注:
 端末=terminalはtermcapのterm)でのダイレクトカラーモードをサポートしています。EmacsがTerminfoで@samp{setb24}および@samp{setf24}のケイパビリティ(訳注:
 capabilityはtermcapのcap)を見つけたら24ビットダイレクトカラーモードを使用します。ケイパビリティ文字列は、引数として1つの24ビットピクセル値を取り、24ビットカラーを端末に送信するために使用できる文字列にピクセルを変換することが期待されます。
 
-標準のターミナル定義はこれらのケイパビリティをサポートせず、したがってカスタム定義が必要になります。
+標準の端末定義はこれらのケイパビリティをサポートせず、したがってカスタム定義が必要になります。
 
 @example
 $ cat terminfo-custom.src
@@ -1298,7 +1298,7 @@ $ TERM=xterm-emacs emacs -nw
 
 @cindex 24-bit direct color mode
 Emacs
-27.1以降では24ビットダイレクトカラーモードの検出にたいしてTerminfoの@samp{RGB}ケイパビリティをサポートしています。複数の標準的なターミナル定義がこのケイパビリティをサポートしています。
+27.1以降では24ビットダイレクトカラーモードの検出にたいする、Terminfoの@samp{RGB}ケイパビリティをサポートしています。複数の標準的な端末定義がこのケイパビリティをサポートしています。
 
 @example
 $ TERM=xterm-direct infocmp | grep seta[bf]
@@ -1311,7 +1311,7 @@ $ TERM=xterm-direct infocmp | grep seta[bf]
 $ TERM=xterm-direct emacs -nw
 @end example
 
-あなたのターミナルにXTermとの互換性がなければ、別の@env{TERM}定義を使う必要があるかもしれません。名前に@samp{direct}が含まれるすべてのターミナルが候補になり得ます。それらのうちどれがシステムにインストールされているか調べるために@command{toe}コマンドを使用できます:
+あなたの端末にXTermとの互換性がなければ、別の@env{TERM}定義を使う必要があるかもしれません。名前に@samp{direct}が含まれるすべての端末が候補になり得ます。それらのうちどれがシステムにインストールされているか調べるために@command{toe}コマンドを使用できます:
 
 @example
 $ toe | grep '\-direct'
@@ -1323,7 +1323,7 @@ xterm-direct2   xterm with direct-color indexing (old)
 xterm-direct    xterm with direct-color indexing
 @end example
 
-@samp{RGB}ケイパビリティをもつターミナルは、ダイレクト。モードを認識しないアプリケーションにたいする後方互換性を保守するために、ピクセル#000001から#000007をインデックス付けされたカラーとして扱います。したがってもっとも暗い青い濃淡は利用できないかもしれません。これが問題となるようなら、@samp{setb24}と@samp{setf24}のカスタムターミナル定義を常に使用するこれができます。
+@samp{RGB}ケイパビリティをもつ端末は、ダイレクトカラーモードを認識しないアプリケーションにたいする後方互換性を保守するために、ピクセル#000001から#000007をインデックス付けされたカラーとして扱います。したがってもっとも暗い青い濃淡は利用できないかもしれません。これが問題となるようなら、@samp{setb24}と@samp{setf24}のカスタム端末定義を使用することは常に可能です。
 
 @node Debugging a customization file
 @section @file{.emacs}ファイルをデバッグするには?
@@ -1333,7 +1333,7 @@ xterm-direct    xterm with direct-color indexing
 @cindex @samp{-debug-init} option
 
 コマンドラインオプション@samp{-debug-init}でEmacsを開始してください。これは@file{.emacs}ファイルを評価する前にEmacs
-Lispデバッガを有効して、何かうまく行かなければあなたをデバッガ内へと導きます。@file{trace-back}バッファーの上端行はエラーメッセージ、2行目か3行目には問題を引き起こした@file{.emacs}ファイルのLispコードが表示されるでしょう。
+Lispデバッガを有効にして、何かうまく行かなければあなたをデバッガ内へと導きます。@file{trace-back}バッファーの上端行はエラーメッセージ、2行目か3行目には問題を引き起こした@file{.emacs}ファイルのLispコードが表示されるでしょう。
 
 @file{.emacs}ファイル内の関数や引数の終端にカーソルを移動して@kbd{C-x C-e} (@kbd{M-x
 eval-last-sexp})をタイプすれば、関数や関数の引数を個別に評価することもできます。
@@ -1349,25 +1349,25 @@ eval-last-sexp})をタイプすれば、関数や関数の引数を個別に評�
 @cindex @code{mode-line-format}
 
 デフォルトではEmacsはポイント位置のカレント行番号をモードラインに表示します。コマンド@kbd{M-x
-line-number-mode}、または変数@code{line-number-mode}でこの機能のオンとオフを切り替えることができます。バッファーのバイトサイズが変数@code{line-number-display-limit}の値より大きければ、Emacsは行番号を表示しないことに注意してください。
+line-number-mode}、または変数@code{line-number-mode}でこの機能のオンオフを切り替えることができます。バッファーのバイトサイズが変数@code{line-number-display-limit}の値より大きければ、Emacsは行番号を表示しないことに注意してください。
 
-@kbd{M-x column-number-mode}、または以下のフォームを
+@kbd{M-x column-number-mode}、または以下のフォーム
 
 @lisp
 (setq column-number-mode t)
 @end lisp
 
 @noindent
-@file{.emacs}ファイルに記述することにより、同じようにカレント列番号を表示できます。この機能はデフォルトではオフです。
+を@file{.emacs}ファイルに記述することにより、同じようにカレント列番号を表示できます。この機能はデフォルトではオフです。
 
-変数@code{mode-line-format}内のフォーマット指定子@code{"%c"}は、モードラインにカレント列の値っっ挿入します。この変数のセットや使用する方法についての詳細は@code{mode-line-format}のドキュメントを参照してください(@kbd{C-h
+変数@code{mode-line-format}内のフォーマット指定子@code{"%c"}は、モードラインにカレント列の値を挿入します。この変数のセット、および使用方法についての詳細は@code{mode-line-format}のドキュメントを参照してください(@kbd{C-h
 v mode-line-format @key{RET}}を使用する)。
 
 @cindex Set number capability in @code{vi} emulators
 @samp{display-line-numbers}パッケージ(Emacsのバージョン26.1で追加)は@samp{vi}の``set
 number''機能のように、各行の前のテキストエリアに行番号を表示します。このオプション表示をアクティブにするにはバッファーローカル変数@code{display-line-numbers}をカスタマイズします。かわりにマイナーモード@code{display-line-numbers-mode}やグローバル版の@code{global-display-line-numbers-mode}を使うこともできます。これらのモード使用時には@code{display-line-numbers}を使用するときと同じ値で@code{display-line-numbers-type}をカスタマイズしてください。
 
-@samp{linum}パッケージ(バージョン23.1以降のEmacsに同梱)もありますが今後配送されます。ユーザーおよび開発者にはかわりに@samp{display-line-numbers}の使用をお勧めします。(Emacsには同梱されていないパッケージ)@samp{setnu}と@samp{wb-line-number}もこの機能を実装しています。
+@samp{linum}パッケージ(バージョン23.1以降のEmacsに同梱)もありますが今後廃止されます。ユーザーおよび開発者には、かわりに@samp{display-line-numbers}の使用をお勧めします。(Emacsには同梱されていない)パッケージ@samp{setnu}と@samp{wb-line-number}もこの機能を実装しています。
 
 @node Displaying the current file name in the titlebar
 @section 現在のファイル名をタイトルバーに含めるには?
@@ -1378,7 +1378,7 @@ number''機能のように、各行の前のテキストエリアに行番号を
 Emacsフレームのタイトルバーのコンテンツは、変数@code{mode-line-format}と同じ構造をもつ変数@code{frame-title-format}によって制御されます(これらの変数について情報を得るには@kbd{C-h
 v}または@kbd{M-x describe-variable}を使用する)。
 
-デフォルトではフレームのタイトルバーには、1つのフレームしか存在しない場合を除き、がカレントでvisitされているバッファーの名前が表示されます。フレームが1つの場合には、タイトルバーにはEmacsを呼び出したときの名前、およびEmacsを呼び出したマシン名が含まれます。これは@code{frame-title-format}に以下をデフォルト値としてセットすることにより行われます:
+デフォルトではフレームのタイトルバーには、1つのフレームしか存在しない場合を除き、カレントでvisitされているバッファーの名前が表示されます。フレームが1つの場合には、タイトルバーにEmacsを呼び出したときの名前、およびEmacsを呼び出したマシン名が含まれます。これは@code{frame-title-format}に以下をデフォルト値としてセットすることにより行われます:
 
 @lisp
 (multiple-frames "%b" ("" invocation-name "@@" (system-name)))
@@ -1546,8 +1546,7 @@ Incremental Search, emacs, The GNU Emacs Manual}を参照してください。
 @cindex Yanking text into the search string
 @cindex isearch yanking
 
-@kbd{M-y}を使用してください。@ref{Isearch Yank,,, emacs, The GNU Emacs
-Manual}を参照してください。
+@kbd{M-y}を使用します。@ref{Isearch Yank,,, emacs, The GNU Emacs Manual}を参照してください。
 
 @node Wrapping words automatically
 @section 自分用にEmacsに単語を折り返させるには?
@@ -1626,7 +1625,7 @@ emacs -f server-start
 @end lisp
 
 ニュースリーダーやメールリーダーなどが@samp{emacsclient}を呼び出すようにするには、環境変数@code{EDITOR}
-(@code{VISUAL}のときもある)に値@samp{emacsclient}を設定してみればよい。@samp{emacsclient}プログラムのかわりにプログラムのフルパス名を指定する必要があるかもしれない。たとえば:
+(@code{VISUAL}のときもあり)に値@samp{emacsclient}を設定してみればよい。@samp{emacsclient}プログラムのかわりにプログラムのフルパス名を指定する必要があるかもしれない。たとえば:
 
 @example
 # cshの場合:
@@ -1699,15 +1698,15 @@ Indentation, ccmode, The CC Mode Manual}を参照してください。以下は�
 
 @enumerate
 @item
-気に召さないインデントの最初の行の先頭に移動して@kbd{C-c C-o}とタイプする。Emacsが構文シンボル(syntactic
-symbol)の入力を求めるので、デフォルトを受諾するために@key{RET}をタイプする。
+気に入らないインデントの最初の行の先頭に移動して@kbd{C-c C-o}とタイプする。Emacsが構文シンボル(syntactic
+symbol)の入力を求めるので、デフォルトを承諾するために@key{RET}をタイプする。
 
 @item
 Emacsがその構文シンボルのオフセットの入力を求める。その際にはカッコ内にデフォルト(現在の定義)が表示される。ここで以下のいずれかを選択できる:
 
 @table @code
 @item 0
-追加のインデントなし。
+余計なインデントなし。
 @item +
 基本オフセット1つ分インデントを加える。
 @item -
@@ -1726,7 +1725,7 @@ Emacsがその構文シンボルのオフセットの入力を求める。その
 これらのシンボルのいずれかを選んだ後に@kbd{C-c C-q}をタイプして、指定したインデントに行またはブロックを再インデントする。
 
 @item
-結果が気に召さなければステップ1に戻る。そうでなければ以下の行を@file{.emacs}に追加する:
+結果が気に入らなければステップ1に戻る。そうでなければ以下の行を@file{.emacs}に追加する:
 
 @lisp
 (c-set-offset '@var{syntactic-symbol} @var{offset})
@@ -1737,7 +1736,7 @@ Emacsがその構文シンボルのオフセットの入力を求める。その
 C-o}をタイプした際にEmacsが表示した名前、@var{offset}は上記のインデントシンボル(@code{+}、@code{/}、@code{0}等)のいずれかのうち対話的手順の間に選択したシンボル。
 
 @item
-インデントが気に召さない次の行へ移動してこれらの手順を繰り返す。
+インデントが気に入らない次の行へ移動してこれらの手順を繰り返す。
 @end enumerate
 
 以下のように@code{(c-set-offset ...)}によるカスタマイズ結果すべてをCモードのフック内に記述することをお勧めします:
@@ -1763,8 +1762,8 @@ C-o}をタイプした際にEmacsが表示した名前、@var{offset}は上記�
 @cindex Toggling @code{overwrite-mode}
 
 @kbd{M-x overwrite-mode}
-(マイナーモード)です。これは@code{overwrite-mode}のオンオフを切り替えるのでもう一度@kbd{M-x
-overwrite-mode}で簡単に@code{overwrite-mode}からexitできます。
+(マイナーモード)です。これは@code{overwrite-mode}のオンオフを切り替えるので、もう一度@kbd{M-x
+overwrite-mode}とタイプすれば簡単に@code{overwrite-mode}からexitできます。
 
 いくつかのシステムでは@key{Insert}で@code{overwrite-mode}のオンオフが切り替わります。
 
@@ -1778,7 +1777,7 @@ overwrite-mode}で簡単に@code{overwrite-mode}からexitできます。
 Martin R. Frank(訳注: Texinfoファイルには"martin@@cc.gatech.edu"とコメントされてました)は記しています:
 
 可聴ベル(audible bell)のかわりに@dfn{視覚的なベル(visible
-bell)}を使うように伝えて、その視覚的ベルには何もセットしません。
+bell)}を使うようにEmacs伝えて、その視覚的ベルには何もセットしません。
 
 つまり(あなたがtermcapをもっていると仮定して)@code{TERMCAP}環境変数に以下を記述します:
 
@@ -1817,7 +1816,7 @@ usage:  xset [-display host:dpy] option ...
 @cindex Text indentation
 
 このような振る舞いはEmacs 20以降では(Textモードでは)自動で行われます。Emacs
-20.2の@file{etc/NEWS}ファイルからの引用します:
+20.2の@file{etc/NEWS}ファイルからの引用です:
 
 @example
 ** Textでパラグラフを分割するのは空行のみとなった。これによってAdaptive FillモードからTextモードやその他Textモードから派生した(Mailモードのような)モードが受ける恩恵を最大にすることが可能になる。Textモードでの@key{TAB}によって@code{indent-relative}コマンドが実行されるようになった。これによって実際に違いが生じるのは、インデントされたパラグラフを使用している場合だけである。
@@ -1831,7 +1830,7 @@ usage:  xset [-display host:dpy] option ...
 default}を参照)をオンに切り替えている場合には、@dfn{フィルプレフィクス(fill
 prefix)}として特定の文字シーケンスをすべての行のプレフィクスとするようEmacsに指示することができます。行頭でプレフィクスをタイプしてポイントをタイプしたプレフィクスの後に移動、それから@kbd{C-x
 .}
-(@code{set-fill-prefix})とタイプしてフィルプレフィクスをセットします。それ以降はオートフィル新たな行の先頭に自動的にフィルプレフィクスを配置するとともに、@kbd{M-q}
+(@code{set-fill-prefix})とタイプしてフィルプレフィクスをセットします。それ以降はオートフィルが新たな行の先頭に自動的にフィルプレフィクスを配置するとともに、@kbd{M-q}
 (@code{fill-paragraph})でパラグラフを再フィルする際にはすべてのフィルプレフィクスを保守するようになります。
 
 異なるレベルのインデントをもつパラグラフがある場合には、新たなパラグラフに移動するたびにフィルプレフィクスを正しい値にセットすることが必要になるでしょう。これを取り扱うためのパッケージが多数存在します(@ref{Packages
@@ -2463,7 +2462,7 @@ stty -icrnl -onlcr -echo susp ^Z
 @end example
 
 @node Problems with Shell Mode
-@section Why do I get an error message when I try to run @kbd{M-x shell}?
+@section @kbd{M-x shell}を実行するとエラーメッセージを返されるのはなぜ?
 
 @cindex Shell Mode, problems
 @cindex @code{explicit-shell-file-name}
@@ -2478,7 +2477,7 @@ MS-Windows上のShellモードで差し出がましいアンチウイルスソ�
 @cindex Terminfo
 @cindex Emacs entries for termcap/terminfo
 
-ターミナルタイプ@samp{emacs}にたいするtermcapエントリーは、通常はサブシェルの環境変数@samp{TERMCAP}にセットされます。これは特定の状況下(たとえばShellバッファーからのrlogin)において、システムワイドなtermcapファイルにエントリーを追加する助けになるかもしれません。以下は@samp{emacs}にたいする正しいtermcapエントリーです:
+端末タイプ@samp{emacs}にたいするtermcapエントリーは、通常はサブシェルの環境変数@samp{TERMCAP}にセットされます。これは特定の状況下(たとえばShellバッファーからのrlogin)において、システムワイドなtermcapファイルにエントリーを追加する助けになるかもしれません。以下は@samp{emacs}にたいする正しいtermcapエントリーです:
 
 @example
 emacs:tc=unknown:

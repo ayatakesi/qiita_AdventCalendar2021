@@ -129,7 +129,7 @@ distribution in 1999.]
 <!-- - -->
 </chapter>
 <chapter label="1" id="FAQ-notation">
-<title>FAQ notation</title>
+<title>FAQの表記について</title>
 <indexterm role="cp"><primary>FAQ notation</primary></indexterm>
 
 <para>このチャプターではGNU Emacs
@@ -137,7 +137,7 @@ FAQ、並びにEmacsドキュメントで使用する表記について説明し
 </para>
 
 <sect1 label="1.1" id="Basic-keys">
-<title>What do these mean: <userinput>C-h</userinput>, <userinput>C-M-a</userinput>, <keycap>RET</keycap>, <userinput><keycap>ESC</keycap> a</userinput>, etc.?</title>
+<title><userinput>C-h</userinput>、<userinput>C-M-a</userinput>、<keycap>RET</keycap>、<userinput><keycap>ESC</keycap> a</userinput>等は何を意味するのか?</title>
 <indexterm role="cp"><primary>Basic keys</primary></indexterm>
 <indexterm role="cp"><primary>Control key, notation for</primary></indexterm>
 <indexterm role="cp"><primary><keycap>Meta</keycap> key, notation for</primary></indexterm>
@@ -155,7 +155,7 @@ FAQ、並びにEmacsドキュメントで使用する表記について説明し
 <itemizedlist>
 <listitem><para><userinput>C-x</userinput>:<keycap>Control</keycap>キーを押したまま<userinput>x</userinput>キーを押下する
 </para>
-</listitem><listitem><para><userinput>M-x</userinput>: <keycap>Meta</keycap>キー(コンピューターに<keycap>Meta</keycap>キーがなければsee <link linkend="No-Meta-key">No Meta
+</listitem><listitem><para><userinput>M-x</userinput>: <keycap>Meta</keycap>キー(コンピューターに<keycap>Meta</keycap>キーがなければ<link linkend="No-Meta-key">No Meta
 key</link>を参照)を押したまま<userinput>x</userinput>キーを押下する
 </para>
 </listitem><listitem><para><userinput>M-C-x</userinput>: <keycap>Control</keycap>と<keycap>Meta</keycap>の両方を押したまま<userinput>x</userinput>キーを押下する
@@ -193,13 +193,13 @@ key</link>を参照)を押したまま<userinput>x</userinput>キーを押下す
 </para>
 </sect1>
 <sect1 label="1.2" id="Extended-commands">
-<title>What does <filename>M-x <replaceable>command</replaceable></filename> mean?</title>
+<title><filename>M-x <replaceable>command</replaceable></filename>の意味は?</title>
 <indexterm role="cp"><primary>Extended commands</primary></indexterm>
 <indexterm role="cp"><primary>Commands, extended</primary></indexterm>
 <indexterm role="cp"><primary><userinput>M-x</userinput>, meaning of</primary></indexterm>
 
 <para><userinput>M-x
-<replaceable>command</replaceable></userinput>は<userinput>M-x</userinput>をタイプしてからコマンドの名前、その後に<keycap>RET</keycap>をタイプする(<userinput>M-x</userinput>や<keycap>RET</keycap>の意味があやふやならSee <link linkend="Basic-keys">Basic
+<replaceable>command</replaceable></userinput>は<userinput>M-x</userinput>をタイプしてからコマンドの名前、その後に<keycap>RET</keycap>をタイプする(<userinput>M-x</userinput>や<keycap>RET</keycap>の意味があやふやなら<link linkend="Basic-keys">Basic
 keys</link>を参照)。
 </para>
 <para>(デフォルトでは)<userinput>M-x</userinput>はコマンド<literal>execute-extended-command</literal>を呼び出します。このコマンドによってコマンド名を覚えていれば任意のEmacsコマンドを実行できます。コマンド名を覚えることができなければ補完には<keycap>TAB</keycap>や<keycap>SPC</keycap>、利用可能なコマンドの一覧は<userinput>?</userinput>、以前に入力したコマンドの確認には<userinput>M-p</userinput>と<userinput>M-n</userinput>(または上下の矢印)をタイプできます。Emacsの<firstterm>コマンド(command)</firstterm>とは<firstterm>インタラクティブ(interactive:
@@ -212,7 +212,7 @@ keys</link>を参照)。
 </para>
 </sect1>
 <sect1 label="1.3" id="Emacs-manual">
-<title>How do I read topic XXX in the Emacs manual?</title>
+<title>EmacsマニュアルでトピックXXXを読むには?</title>
 <indexterm role="cp"><primary>Emacs manual, reading topics in</primary></indexterm>
 <indexterm role="cp"><primary>Reading topics in the Emacs manual</primary></indexterm>
 <indexterm role="cp"><primary>Finding topics in the Emacs manual</primary></indexterm>
@@ -230,22 +230,22 @@ keys</link>を参照)。
 </para>
 <para>Info内でこのFAQを読んでいるなら、リファレンス上で単に<keycap>RET</keycap>を押下すればフォローできます。
 </para>
-<para>Emacsマニュアルのハードコードをご所望ならSee <link linkend="Getting-a-printed-manual">Getting a printed manual</link>を参照してください。
+<para>Emacsマニュアルのハードコードをご所望なら<link linkend="Getting-a-printed-manual">Getting a printed manual</link>を参照してください。
 </para>
 </sect1>
 <sect1 label="1.4" id="File_002dname-conventions">
-<title>What are <filename>src/config.h</filename>, <filename>site-lisp/default.el</filename>, etc.?</title>
+<title><filename>src/config.h</filename>、<filename>site-lisp/default.el</filename>等は何なのか?</title>
 <indexterm role="cp"><primary>File-name conventions</primary></indexterm>
 <indexterm role="cp"><primary>Conventions for file names</primary></indexterm>
 <indexterm role="cp"><primary>Directories and files that come with Emacs</primary></indexterm>
 
 <para>これらはEmacsとともに配布されるファイルです。Emacsディストリビューションは<filename>etc</filename>、<filename>lisp</filename>、<filename>src</filename>等のサブディレクトリーに分かれています。これらの内のいくつか(<filename>etc</filename>や<filename>lisp</filename>など)はインストール済みEmacsとソースの両方に存在しますが、ソース内でのみ見いだせるものもあります(<filename>src</filename>など)。
 </para>
-<para>ineEmacsを使っているもののシステム上のどこにあるか判らない場合には、Emacsを起動して<userinput>C-h v data-directory
+<para>Emacsを使っているもののシステム上のどこにあるか判らない場合には、Emacsを起動して<userinput>C-h v data-directory
 <keycap>RET</keycap></userinput>とタイプしてください。表示されるディレクトリー名は、<filename>etc</filename>ディレクトリーがインストールされたフルパスになるでしょう(このフルパスはEmacs変数<literal>data-directory</literal>に記録されており、<userinput>C-h
 v</userinput>でこの値と変数のドキュメントが表示される)。
 </para>
-<para>Infoディレクトリーはの場所(Infoドキュメントが格納されている場所)変数<literal>Info-default-directory-list</literal>に保持されています。この変数の値(ディレクトリー名のリスト)を確認するには<userinput>C-h
+<para>Infoディレクトリーの場所(Infoドキュメントが格納されている場所)は、変数<literal>Info-default-directory-list</literal>に保持されています。この変数の値(ディレクトリー名のリスト)を確認するには<userinput>C-h
 v Info-default-directory-list
 <keycap>RET</keycap></userinput>を使用してください。このリスト内にある最後のディレクトリーに、恐らくもっとも多くのInfoファイルが格納されているでしょう。デフォルトではEmacsのInfoドキュメントは<filename>/usr/local/share/info</filename>にあります。
 </para>
@@ -254,7 +254,7 @@ Emacs</link>を参照してください。
 </para>
 </sect1>
 <sect1 label="1.5" id="Common-acronyms">
-<title>What are FSF, GNU, RMS, and GPL?</title>
+<title>FSF、GNU、RMS、GPLとは何なのか?</title>
 <indexterm role="cp"><primary>FSF, definition of</primary></indexterm>
 <indexterm role="cp"><primary>GNU, definition of</primary></indexterm>
 <indexterm role="cp"><primary>RMS, definition of</primary></indexterm>
@@ -285,25 +285,25 @@ cost)&#8221;ではなく&#8220;自由(freedom)&#8221;を意図した単語です
 </sect1>
 </chapter>
 <chapter label="2" id="General-questions">
-<title>General questions</title>
+<title>一般的な質問</title>
 <indexterm role="cp"><primary>General questions</primary></indexterm>
 
 <para>このチャプターではEmacs、フリーソフトウェア財団や関連する組織にたいする一般的な問いが含まれています。
 </para>
 
 <sect1 label="2.1" id="Real-meaning-of-copyleft">
-<title>What is the real legal meaning of the GNU copyleft?</title>
+<title>GNUのcopyleftとは法的に実際には何を意味するのか?</title>
 <indexterm role="cp"><primary>Copyleft, real meaning of</primary></indexterm>
 <indexterm role="cp"><primary>GPL, real meaning of</primary></indexterm>
 <indexterm role="cp"><primary>General Public License, real meaning of</primary></indexterm>
 <indexterm role="cp"><primary>Discussion of the GPL</primary></indexterm>
 
 <para>GNU
-一般公衆利用許諾書、いわゆるGPL(コピーレフト)の真の法的な意味合いは、裁判官がその有効性と範囲を裁定した場合にのみ明らかになります。判例として定められるようなGPLが関与する著作権侵害の訴訟はこれまでに一度もありませんでした。GPL条件への違反によって企業への訴訟が起こされましたが、これまでのところすべてが法廷外で(原告に有利に)和解されています。この問題に関しての議論は、どうかこの問題について大々的に罵り合うために作成されたニュースグループ<ulink url="news:gnu.misc.discuss">news:gnu.misc.discuss</ulink>で行ってください。
+一般公衆利用許諾書、いわゆるGPL(コピーレフト)の真の法的な意味合いは、裁判官がその有効性と範囲を裁定した場合にのみ明らかになります。判例として定められるようなGPLが関与する著作権侵害の訴訟はこれまでに一度もありませんでした。GPL条件への違反によって企業への訴訟が起こされましたが、これまでのところすべてが法廷外で(原告に有利に)和解されています。この問題に関しての議論は、どうかこの問題について盛大に罵り合うために作成されたニュースグループ<ulink url="news:gnu.misc.discuss">news:gnu.misc.discuss</ulink>で行うようお願いします。
 </para>
 <para>RMSは記しています:
 </para>
-<blockquote><para>GNUコピーレフトの法的な意味は、Emacsがフリーソフトウェアプロジェクトであり、Emacsに関連する作業もフリーソフトウェアであるべくだという精神ほど重要ではありません。&#8220;フリー(free)&#8221;とはすべてのユーザーがEmacsを学び、共有して、変更や改善を行う自由(freedom)をもっているという意味です。すべての人がこの自由を有することを保証するために、あなたがEmacsのあるバージョンや関連プログラムを配布する際には、それを受け取る人にソースコードも渡すことによって、あなたが楽しんだのと同じ自由を分け与えてください。
+<blockquote><para>GNUコピーレフトの法的な意味は、Emacsがフリーソフトウェアプロジェクトであり、Emacsに関連する作業もフリーソフトウェアであるべきだという精神ほど重要ではありません。&#8220;フリー(free)&#8221;とはすべてのユーザーがEmacsを学び、共有して、変更や改善を行う自由(freedom)をもっているという意味です。すべての人がこの自由を有することを保証するために、あなたがEmacsのあるバージョンや関連プログラムを配布する際には、それを受け取る人にソースコードも渡すことによって、あなたが楽しんだのと同じ自由を分け与えてください。
 </para></blockquote>
 </sect1>
 <sect1 label="2.2" id="Guidelines-for-newsgroup-postings">
@@ -315,33 +315,33 @@ cost)&#8221;ではなく&#8220;自由(freedom)&#8221;を意図した単語です
 <indexterm role="cp"><primary>Posting messages to newsgroups</primary></indexterm>
 
 <indexterm role="cp"><primary>GNU mailing lists</primary></indexterm>
-<para>Emacsメーリングリストのは<ulink url="https://savannah.gnu.org/mail/?group=emacs">the Emacs
+<para>Emacsメーリングリストは<ulink url="https://savannah.gnu.org/mail/?group=emacs">the Emacs
 Savannah page</ulink>に記述があります。それらのうちのいくつかはニュースグループへゲートウェイされています。
 </para>
 <para>Emacsプログラム全般に関する議論はニュースグループ<ulink url="news:comp.emacs">news:comp.emacs</ulink>、<ulink url="news:gnu.emacs.help">news:gnu.emacs.help</ulink>はGNU
-Emacsに特化したニュースグループです。したがってある問いにたいして適切なニュースグループは1つだけなので、両方のグループへのクロスポストには意味がありません。
+Emacsに特化したニュースグループです。したがってある問いにたいして適切なニュースグループは1つだけなので、両方のグループへの多重投稿には意味がありません。
 </para>
-<para>問題について大いに罵り合うために作成された<ulink url="news:gnu.misc.discuss">news:gnu.misc.discuss</ulink>を除いて、&#8220;非フリー(non-free)&#8221;なソフトウェアを推奨するようなメッセージは<literal>gnu.*</literal>ニュースグループのすべてにおいて受け入れ難いものとみなされます。&#8220;非フリー&#8221;なソフトウェアにはエンドユーザーが自由にソースコードを改変したり拡張機能の取り替えができないすべてのソフトウェアが含まれます。そのようなソフトウェアを推奨するフォローアップを投稿する際には、&#8216;<literal>Newsgroups:</literal>&#8217;行から<literal>gnu.*</literal>グループを削除するよう注意してください。
+<para>問題について派手に罵り合うために作成された<ulink url="news:gnu.misc.discuss">news:gnu.misc.discuss</ulink>を除いて、&#8220;非フリー(non-free)&#8221;なソフトウェアを推奨するようなメッセージは<literal>gnu.*</literal>ニュースグループのすべてにおいて受け入れ難いものとみなされます。&#8220;非フリー&#8221;なソフトウェアにはエンドユーザーが自由にソースコードを改変したり拡張機能の取り替えができないすべてのソフトウェアが含まれます。そのようなソフトウェアを推奨するフォローアップを投稿する際には、&#8216;<literal>Newsgroups:</literal>&#8217;行から<literal>gnu.*</literal>グループを削除するよう注意してください。
 </para>
-<para><ulink url="news:gnu.emacs.bug">news:gnu.emacs.bug</ulink>はバグレポートを目にする場所ですが、このニュースグループに直接バグレポートを投稿することは避けてください(<link linkend="Reporting-bugs">Reporting
+<para><ulink url="news:gnu.emacs.bug">news:gnu.emacs.bug</ulink>ではバグレポートを目にしますが、このニュースグループに直接バグレポートを投稿することは避けてください(<link linkend="Reporting-bugs">Reporting
 bugs</link>を参照)。
 </para>
 <para>最後にGNUのメーリングリストやニュースグループに投稿する前に<ulink url="https://www.gnu.org/philosophy/kind-communication.html">GNU Kind Communications Guidelines</ulink>を一読することをお勧めします。
 </para>
 </sect1>
 <sect1 label="2.3" id="Newsgroup-archives">
-<title>Where can I get old postings to <ulink url="news:gnu.emacs.help">news:gnu.emacs.help</ulink> and other GNU groups?</title>
+<title><ulink url="news:gnu.emacs.help">news:gnu.emacs.help</ulink>や他のGNUグループへの古い投稿はどこで入手できる?</title>
 <indexterm role="cp"><primary>Archived postings from <literal>gnu.emacs.help</literal></primary></indexterm>
 <indexterm role="cp"><primary>Usenet archives for GNU groups</primary></indexterm>
 <indexterm role="cp"><primary>Old Usenet postings for GNU groups</primary></indexterm>
 
-<para>網羅する範囲において意図していない齟齬があるかもしれませんが、FSFはGNUメーリングリストすべてのアーカイブを長年保守してきました。このアーカイブが<ulink url="https://lists.gnu.org/r/">the GNU mail archive</ulink>でウェブ上で閲覧できます。
+<para>網羅する範囲において意図せぬずれがあるかもしれませんが、FSFはGNUメーリングリストすべてのアーカイブを長年保守してきました。このアーカイブが<ulink url="https://lists.gnu.org/r/">the GNU mail archive</ulink>でウェブ上で閲覧できます。
 </para>
 <para><ulink url="http://groups.google.com/groups/dir?q=gnu&amp;">Google</ulink>のようなウェブベースのUsenet検索サービスでも<literal>gnu.*</literal>はアーカイブされています。
 </para>
 </sect1>
 <sect1 label="2.4" id="Reporting-bugs">
-<title>Where should I report bugs and other problems with Emacs?</title>
+<title>Emacsのバグやその他の問題はどこにレポートすれば?</title>
 <indexterm role="cp"><primary>Bug reporting</primary></indexterm>
 <indexterm role="cp"><primary>Good bug reports</primary></indexterm>
 <indexterm role="cp"><primary>How to submit a bug report</primary></indexterm>
@@ -357,8 +357,8 @@ Manual</citetitle>を参照)が詳細に渡って記述されています(マニ
 </para>
 <blockquote><para>バグレポートを<ulink url="https://lists.gnu.org/mailman/listinfo/help-gnu-emacs">the
 help-gnu-emacs mailing list</ulink>
-(<ulink url="news:gnu.emacs.help">news:gnu.emacs.help</ulink>に投稿される効果をもつ)に送信するのは、ほとんどは問題を解決するアイデアをもたない単なるユーザーである多数の人たちに不必要に費やさせるので望ましくありません。<ulink url="https://lists.gnu.org/mailman/listinfo/bug-gnu-emacs">The bug-gnu-emacs
-list</ulink>なら何をするべきか恐らくもっと知識があり、他のものよりもEmacsのメッセージを受け取りたいと表明している、より少ない人たちにメッセージを届けられます。
+(<ulink url="news:gnu.emacs.help">news:gnu.emacs.help</ulink>に投稿される効果をもつ)に送信するのは、(ほとんどは問題を解決するアイデアをもたない単なるユーザーである)多数の人たちの時間を不必要に費やさせるので望ましくありません。<ulink url="https://lists.gnu.org/mailman/listinfo/bug-gnu-emacs">The bug-gnu-emacs
+list</ulink>なら、恐らく何をするべきかもっと知識があり、他のものよりもEmacsのメッセージを受け取りたいと表明している、より少ない人たちにメッセージを届けられます。
 </para></blockquote>
 <para>RMSは<ulink url="news:gnu.emacs.help">news:gnu.emacs.help</ulink>へ投稿しても問題がない場合について述べています:
 </para>
@@ -393,14 +393,14 @@ store</ulink>を参照してください。
 </sect1>
 </chapter>
 <chapter label="3" id="Getting-help">
-<title>Getting help</title>
+<title>助けを得るには</title>
 <indexterm role="cp"><primary>Getting help</primary></indexterm>
 
 <para>このチャプターではEmacsでヘルプを得る方法について説明します。
 </para>
 
 <sect1 label="3.1" id="Basic-editing">
-<title>I&#8217;m just starting Emacs; how do I do basic editing?</title>
+<title>Emacsは初めて; 基本的な編集を行うには?</title>
 <indexterm role="cp"><primary>Basic editing with Emacs</primary></indexterm>
 <indexterm role="cp"><primary>Beginning editing</primary></indexterm>
 <indexterm role="cp"><primary>Tutorial, invoking the</primary></indexterm>
@@ -423,7 +423,7 @@ help-for-help</userinput>を使用できます。システム上でヘルプを�
 </para>
 </sect1>
 <sect1 label="3.2" id="Learning-how-to-do-something">
-<title>How do I find out how to do something in Emacs?</title>
+<title>Emacsで何かを行う方法を見つけるには?</title>
 <indexterm role="cp"><primary>Help for Emacs</primary></indexterm>
 <indexterm role="cp"><primary>Learning to do something in Emacs</primary></indexterm>
 <indexterm role="cp"><primary>Reference card for Emacs</primary></indexterm>
@@ -440,7 +440,7 @@ r</userinput>とタイプしてください。Infoにエンター直後に<useri
 <indexterm role="cp"><primary>Index search in a manual</primary></indexterm>
 <para>特定の問題やコマンド、変数について述べているマニュアルのセクションを素早く見つけるには<userinput>C-h i m emacs <keycap>RET</keycap> i
 <replaceable>topic</replaceable> <keycap>RET</keycap></userinput>とタイプします。これで正しいマニュアル箇所に辿り着けないようなら、必要なものが見つかるまで<userinput>,</userinput>
-(カンマ)を繰り返し押下してください(<userinput>i</userinput>と<userinput>,</userinput>はEmacsマニュアルの全インデックスからタイプされた<replaceable>topic</replaceable>を探すインデックス検索関数を呼び出すキー)。
+(カンマ)を繰り返し押下してください(<userinput>i</userinput>と<userinput>,</userinput>はタイプされた<replaceable>topic</replaceable>をEmacsマニュアルの全インデックスから探すインデックス検索関数を呼び出すキー)。
 </para>
 </listitem><listitem><indexterm role="cp"><primary>Apropos</primary></indexterm>
 <para><userinput>C-h a</userinput> (<userinput>M-x
@@ -467,7 +467,7 @@ apropos-documentation</userinput>を使用すればドキュメントが正規�
 </listitem></itemizedlist>
 </sect1>
 <sect1 label="3.3" id="Getting-a-printed-manual">
-<title>How do I get a printed copy of the Emacs manual?</title>
+<title>Emacsマニュアルの印刷版コピーを入手するには?</title>
 <indexterm role="cp"><primary>Printed Emacs manual, obtaining</primary></indexterm>
 <indexterm role="cp"><primary>Manual, obtaining a printed or HTML copy of</primary></indexterm>
 <indexterm role="cp"><primary>Emacs manual, obtaining a printed or HTML copy of</primary></indexterm>
@@ -486,7 +486,7 @@ a Texinfo file</link>を参照)。
 </para>
 </sect1>
 <sect1 label="3.4" id="Emacs-Lisp-documentation">
-<title>Where can I get documentation on Emacs Lisp?</title>
+<title>Emacs Lispではどこでドキュメントを入手すれば?</title>
 <indexterm role="cp"><primary>Documentation on Emacs Lisp</primary></indexterm>
 <indexterm role="cp"><primary>Function documentation</primary></indexterm>
 <indexterm role="cp"><primary>Variable documentation</primary></indexterm>
@@ -499,7 +499,7 @@ a Texinfo file</link>を参照)。
 Emacs Lisp Reference Manual</citetitle>を参照)。
 </para>
 <para>FSFにマニュアルのハードコードを注文することもできます。詳細は<ulink url="https://shop.fsf.org/">FSF on-line
-store</ulink>を参照してください(このマニュアルは常にプリントされているる訳ではない)。
+store</ulink>を参照してください(このマニュアルは常にプリントされる訳ではない)。
 </para>
 <para>Emacs LispリファレンスマニュアルのHTMLバージョンは
 </para>
@@ -507,7 +507,7 @@ store</ulink>を参照してください(このマニュアルは常にプリン
 </para>
 </sect1>
 <sect1 label="3.5" id="Installing-Texinfo-documentation">
-<title>How do I install a piece of Texinfo documentation?</title>
+<title>Texinfoドキュメントをインストールするには?</title>
 <indexterm role="cp"><primary>Texinfo documentation, installing</primary></indexterm>
 <indexterm role="cp"><primary>Installing Texinfo documentation</primary></indexterm>
 <indexterm role="cp"><primary>New Texinfo files, installing</primary></indexterm>
@@ -558,12 +558,12 @@ conventions</link>を参照のこと。
 </para>
 <programlisting>(add-to-list 'Info-default-directory-list &quot;~/Info&quot;)
 </programlisting>
-<para>このディレクトリーには<filename>dir</filename>という名前のトップレベルInfoファイルが必要になるだろう。これはそのディレクトリーにあるInfoファイルのエントリーだけをリストスル点を除き、システムの<filename>dir</filename>がもつすべてをもつ。(偶然にも)このディレクトリー内のすべてのファイルが他の<filename>dir</filename>ファイルから参照されていれば、これは必要ないかもしれない。<literal>Info-default-directory-list</literal>内のすべての<filename>dir</filename>ファイルのノードリストはInfoシステムによってマージされる。
+<para>このディレクトリーには<filename>dir</filename>という名前のトップレベルInfoファイルが必要になるだろう。これはそのディレクトリーにあるInfoファイルのエントリーだけをリストする点を除き、システムの<filename>dir</filename>がもつすべてをもつ。(偶然にも)このディレクトリー内のすべてのファイルが他の<filename>dir</filename>ファイルから参照されていれば、これは必要ないかもしれない。<literal>Info-default-directory-list</literal>内のすべての<filename>dir</filename>ファイルのノードリストはInfoシステムによってマージされる。
 </para>
 </listitem></itemizedlist>
 </sect1>
 <sect1 label="3.6" id="Printing-a-Texinfo-file">
-<title>How do I print a Texinfo file?</title>
+<title>Texinfoファイルをプリントするには?</title>
 <indexterm role="cp"><primary>Printing a Texinfo file</primary></indexterm>
 <indexterm role="cp"><primary>Texinfo file, printing</primary></indexterm>
 <indexterm role="cp"><primary>Printing documentation</primary></indexterm>
@@ -593,7 +593,7 @@ documentation</link>を参照)。
 </para>
 </sect1>
 <sect1 label="3.7" id="Viewing-Info-files-outside-of-Emacs">
-<title>Can I view Info files without using Emacs?</title>
+<title>Emacsを使わずにInfoファイルを閲覧できる?</title>
 <indexterm role="cp"><primary>Viewing Info files</primary></indexterm>
 <indexterm role="cp"><primary>Info file viewers</primary></indexterm>
 <indexterm role="cp"><primary>Alternative Info file viewers</primary></indexterm>
@@ -601,16 +601,16 @@ documentation</link>を参照)。
 <para>はい。以下はいくつかの候補プログラムです:
 </para>
 <itemizedlist>
-<listitem><para>Texinfoパッケージに同梱されているInfoプログラムのスタンドアロンバージョンである<literal>info</literal>。詳細はSee <link linkend="Installing-Texinfo-documentation">Installing
+<listitem><para>Texinfoパッケージに同梱されているInfoプログラムのスタンドアロンバージョンである<literal>info</literal>。詳細は<link linkend="Installing-Texinfo-documentation">Installing
 Texinfo documentation</link>を参照のこと。
 </para>
-</listitem><listitem><para>X Window
-systemの下で実行され、Tcl/Tkを使用するInfoビューアーのTkinfo。Tkinfoは<ulink url="http://math-www.uni-paderborn.de/~axel/tkinfo/">http://math-www.uni-paderborn.de/~axel/tkinfo/</ulink>で入手できる。
+</listitem><listitem><para>Tcl/Tkを使用する、X Window
+systemの下で実行されるInfoビューアーのTkinfo。Tkinfoは<ulink url="http://math-www.uni-paderborn.de/~axel/tkinfo/">http://math-www.uni-paderborn.de/~axel/tkinfo/</ulink>で入手できる。
 </para>
 </listitem></itemizedlist>
 </sect1>
 <sect1 label="3.8" id="Informational-files-for-Emacs">
-<title>What informational files are available for Emacs?</title>
+<title>利用できるEmacs情報のファイルは?</title>
 <indexterm role="cp"><primary>Informational files included with Emacs</primary></indexterm>
 <indexterm role="cp"><primary>Files included with Emacs</primary></indexterm>
 <indexterm role="cp"><primary><filename>COPYING</filename>, description of file</primary></indexterm>
@@ -619,7 +619,7 @@ systemの下で実行され、Tcl/Tkを使用するInfoビューアーのTkinfo�
 <indexterm role="cp"><primary><filename>NEWS</filename>, description of file</primary></indexterm>
 
 <para>これはよくある質問ではありませんが、そうあるべきなのです!
-あなたに読んでもらうためｎ、Emacsおよび関連するGNUプロジェクトの様相に関する様々な情報ファイルが利用可能です。
+あなたに読んでもらうために、Emacsおよび関連するGNUプロジェクトの様相に関する様々な情報ファイルが利用可能です。
 </para>
 <para>以下のファイル(やその他のファイルも)はEmacsディストリビューション(どこにあるか判らなければ<link linkend="File_002dname-conventions">File-name
 conventions</link>を参照)の<filename>etc</filename>ディレクトリー内にあります。これらのファイルの多くはEmacsの&#8216;<literal>Help</literal>&#8217;メニュー、あるいは<userinput>C-h
@@ -647,7 +647,7 @@ conventions</link>を参照)の<filename>etc</filename>ディレクトリー内�
 </para>
 </sect1>
 <sect1 label="3.9" id="Help-installing-Emacs">
-<title>Where can I get help in installing Emacs?</title>
+<title>Emacsのインストールでどこに助けを求めれば?</title>
 <indexterm role="cp"><primary>Installation help</primary></indexterm>
 <indexterm role="cp"><primary>Help installing Emacs</primary></indexterm>
 
@@ -659,28 +659,28 @@ directory</ulink>にはEmacsやその他のGNUソフトウェアのインスト�
 </para>
 </sect1>
 <sect1 label="3.10" id="Obtaining-the-FAQ">
-<title>Where can I get the latest version of this FAQ?</title>
+<title>このFAQの最新版はどこで入手できる?</title>
 <indexterm role="cp"><primary>FAQ, obtaining the</primary></indexterm>
 <indexterm role="cp"><primary>Latest FAQ version, obtaining the</primary></indexterm>
 
 <para>Emacs
-FAQはInfo形式としてEmacsに同梱されています。任意のEmacsフレームトップにあるEmacsメニューバーの&#8216;<literal>Help</literal>&#8217;メニューあら&#8216;<literal>Emacs
+FAQはInfo形式としてEmacsに同梱されています。任意のEmacsフレームトップにあるEmacsメニューバーの&#8216;<literal>Help</literal>&#8217;メニューから&#8216;<literal>Emacs
 FAQ</literal>&#8217;オプションを選択、あるいは<userinput>C-h C-f</userinput> (<userinput>M-x
-view-emacs-FAQ</userinput>)とタイプしてくださいこれを読むことができます。開発版の最新バージョンはEmacsの開発用レポジトリから利用できます(<link linkend="Latest-version-of-Emacs">Latest
+view-emacs-FAQ</userinput>)とタイプしてこれを読むことができます。開発版の最新バージョンはEmacsの開発用レポジトリから利用できます(<link linkend="Latest-version-of-Emacs">Latest
 version of Emacs</link>を参照)。
 </para>
 <!-- - -->
 </sect1>
 </chapter>
 <chapter label="4" id="Status-of-Emacs">
-<title>Status of Emacs</title>
+<title>Emacsの状況について</title>
 <indexterm role="cp"><primary>Status of Emacs</primary></indexterm>
 
 <para>このチャプターでは最新バージョンの状況も含めたEmacsに関する基本情報を提供します。
 </para>
 
 <sect1 label="4.1" id="Origin-of-the-term-Emacs">
-<title>Where does the name &#8220;Emacs&#8221; come from?</title>
+<title>&#8220;Emacs&#8221;という名前の由良は?</title>
 <indexterm role="cp"><primary>Origin of the term &#8220;Emacs&#8221;</primary></indexterm>
 <indexterm role="cp"><primary>Emacs name origin</primary></indexterm>
 <indexterm role="cp"><primary>TECO</primary></indexterm>
@@ -704,7 +704,7 @@ conventions</link>を参照)。
 </para>
 </sect1>
 <sect1 label="4.2" id="Latest-version-of-Emacs">
-<title>What is the latest version of Emacs?</title>
+<title>Emacsの最新バージョンとは?</title>
 <indexterm role="cp"><primary>Version, latest</primary></indexterm>
 <indexterm role="cp"><primary>Latest version of Emacs</primary></indexterm>
 <indexterm role="cp"><primary>Development, Emacs</primary></indexterm>
@@ -725,7 +725,7 @@ C-n</userinput>とタイプしてください。Emacs
 </para>
 </sect1>
 <sect1 label="4.3" id="New-in-Emacs-27">
-<title>What is different about Emacs 27?</title>
+<title>Emacs 27は何が違う?</title>
 <indexterm role="cp"><primary>Differences between Emacs 26 and Emacs 27</primary></indexterm>
 <indexterm role="cp"><primary>Emacs 27, new features in</primary></indexterm>
 
@@ -738,14 +738,14 @@ GNU多倍長整数ライブラリー)を使用するようになった。ネイ�
 <para>デフォルトのシェーピングエンジン(shaping engine: 整形エンジン)としてEmacsはHarfBuzzを使用するようになった。
 </para>
 </listitem><listitem><indexterm role="cp"><primary>JSON, native parsing</primary></indexterm>
-<para><filename>json.el</filename>より高速な<acronym>JSON</acronym>解析のネイティブサポート。
+<para><filename>json.el</filename>による高速な<acronym>JSON</acronym>解析のネイティブサポート。
 </para>
 </listitem><listitem><para>Cairoによる描画が実験的機能ではなくなった。
 </para>
 </listitem><listitem><indexterm role="cp"><primary>portable dumper</primary></indexterm>
 <para>Emacsがunexecではなく&#8220;portable
 dumper&#8221;を使用するようになった。これは現代的なシステムのメモリー割り当てにたいする互換性を向上して、とりわけ現代的なオペレーティングシステムのほとんどが使用している<acronym>ASLR</acronym>(Address
-Space Layout Randomization: アドレス空間配置のランダム化)をよりサポートする。
+Space Layout Randomization: アドレス空間配置のランダム化)のサポートが向上した。
 </para>
 </listitem><listitem><indexterm role="cp"><primary>XDG convention</primary></indexterm>
 <para>initファイルにたいしてEmacsが<acronym>XDG</acronym>規約を使用可能になった。
@@ -763,7 +763,7 @@ init file)のロード前に発生するパッケージシステムの初期化�
 </para>
 </sect1>
 <sect1 label="4.4" id="New-in-Emacs-26">
-<title>What is different about Emacs 26?</title>
+<title>Emacs 26は何が違う?</title>
 <indexterm role="cp"><primary>Differences between Emacs 25 and Emacs 26</primary></indexterm>
 <indexterm role="cp"><primary>Emacs 26, new features in</primary></indexterm>
 
@@ -807,7 +807,7 @@ Textモードがデコードした<literal>display</literal>プロパティ内�
 </para>
 </sect1>
 <sect1 label="4.5" id="New-in-Emacs-25">
-<title>What is different about Emacs 25?</title>
+<title>Emacs 25は何が違う?</title>
 <indexterm role="cp"><primary>Differences between Emacs 24 and Emacs 25</primary></indexterm>
 <indexterm role="cp"><primary>Emacs 25, new features in</primary></indexterm>
 
@@ -819,7 +819,7 @@ xwidget-webkit-browse-url</userinput>とタイプすればよい。
 <para>共有ライブラリーとしてコンパイルされた外部モジュールをEmacsが動的にロード可能になった。
 </para>
 </listitem><listitem><indexterm role="cp"><primary>Unicode characters, typing easily</primary></indexterm>
-<para>いくつかの一般的な文字にたいして略記が<userinput>C-x 8</userinput>に新規で追加された。略記のリストは<userinput>C-x 8 C-h</userinput>とタイプする。
+<para>いくつかの一般的な文字にたいしする略記が<userinput>C-x 8</userinput>に新規で追加された。略記のリストは<userinput>C-x 8 C-h</userinput>とタイプする。
 </para>
 </listitem><listitem><indexterm role="cp"><primary>automatic display of Lisp APIs</primary></indexterm>
 <para>新しいマイナーモード<literal>global-eldoc-mode</literal>がデフォルトで有効になり、ポイント位置にあるEmacs
@@ -866,7 +866,7 @@ mode&#8221;をサポートするテキスト端末では、Emacsがそのモー�
 </para>
 </sect1>
 <sect1 label="4.6" id="New-in-Emacs-24">
-<title>What is different about Emacs 24?</title>
+<title>Emacs 24は何が違う?</title>
 <indexterm role="cp"><primary>Differences between Emacs 23 and Emacs 24</primary></indexterm>
 <indexterm role="cp"><primary>Emacs 24, new features in</primary></indexterm>
 
@@ -885,7 +885,7 @@ t</literal>を使用できる。詳細についてはEmacs Lispリファレン�
 <para>英語のような自然言語のいくつかは左から右へと記述される。それ以外のアラビア語などは右から左に記述される。Emacsはこれらの形式が混交した、いわゆる&#8220;双方向テキスト(bidirectional
 text)&#8221;をサポートするようになった。
 </para>
-</listitem><listitem><para>テキスト選択の処理が改善されて、外部クリップボードとより統合された。
+</listitem><listitem><para>テキスト選択の処理が改善されて、外部クリップボードとの統合性が向上した。
 </para>
 </listitem><listitem><indexterm role="cp"><primary>themes</primary></indexterm>
 <para>新たなコマンド<userinput>customize-themes</userinput>によってEmacsの外観の変更が容易になった。
@@ -895,8 +895,8 @@ text)&#8221;をサポートするようになった。
 </listitem><listitem><para>コンパイル時に新たに複数の外部ライブラリーを含めることをサポートする。
 </para>
 <itemizedlist>
-<listitem><para>SELinux(&#8220;Security-Enhanced
-Linux&#8221;)とは、従来の&#8220;Unixスタイル&#8221;より複雑なファイルアクセスコントロールを提供するLinuxカーネルの機能。
+<listitem><para>従来の&#8220;Unixスタイル&#8221;より複雑なファイルアクセスコントロールを提供するLinuxカーネルの機能であるSELinux(&#8220;Security-Enhanced
+Linux&#8221;)
 </para>
 </listitem><listitem><para>ImageMagickディスプレーライブラリー。これによりEmacsでより多くのイメージ形式を表示でき、ローテーションのような変換も行うことができるようになる。
 </para>
@@ -912,7 +912,7 @@ Linux&#8221;)とは、従来の&#8220;Unixスタイル&#8221;より複雑なフ�
 
 </sect1>
 <sect1 label="4.7" id="New-in-Emacs-23">
-<title>What is different about Emacs 23?</title>
+<title>Emacs 23は何が違う?</title>
 <indexterm role="cp"><primary>Differences between Emacs 22 and Emacs 23</primary></indexterm>
 <indexterm role="cp"><primary>Emacs 23, new features in</primary></indexterm>
 
@@ -950,7 +950,7 @@ Lineモード、補完の改善、PDFやPostScript、DVIを閲覧するための
 
 </sect1>
 <sect1 label="4.8" id="New-in-Emacs-22">
-<title>What is different about Emacs 22?</title>
+<title>Emacs 22は何が違う?</title>
 <indexterm role="cp"><primary>Differences between Emacs 21 and Emacs 22</primary></indexterm>
 <indexterm role="cp"><primary>Emacs 22, new features in</primary></indexterm>
 
@@ -983,10 +983,10 @@ XおよびCygwinオペレーティングシステムにたいするサポート�
 </para>
 </listitem><listitem><para>GrepモードがCompilationモードから切り離されて、新たにgrep特有のオプションおよびコマンドをもつようになった。
 </para>
-</listitem><listitem><para>Emacsオリジナルのマクロシステムは、新たに多くのコマンドおよび機能、ファンクションキーF3とF4を使用するシンプルなインターフェイスを提供するKmacroパッケージに置き換えられた。マクロはマクロリングに格納されるとともに、対話的にデバッグと編集ができるようになった。
+</listitem><listitem><para>Emacsオリジナルのマクロシステムは、新たに多くのコマンドおよび機能、ファンクションキーF3とF4を使用するシンプルなインターフェイスを提供するKmacroパッケージに置き換えられた。マクロはマクロリングに格納されるとともに、対話的なデバッグと編集が可能になった。
 </para>
 </listitem><listitem><para>GDBにたいする完全にグラフィカルなユーザーインターフェイスとしてGUD(Grand Unified
-Debugger)が使用できるようになった。これは伝統的な開発環境で見い出すことができる多くの機能を提供するとともに、ブレークポイントの操作、ウォッチポイントの追加、コールスタック表示等を容易にする。ブレークポイントはソースバッファー内に視覚的に示される。
+Debugger)が使用できるようになった。これは伝統的な開発環境で目にする多くの機能を提供するとともに、ブレークポイントの操作、ウォッチポイントの追加、コールスタック表示等を容易にする。ブレークポイントはソースバッファー内に視覚的に示される。
 </para>
 </listitem><listitem><indexterm role="cp"><primary>New modes</primary></indexterm>
 <para>Calc、TRAMP、URL、IDO、CUA、ERC、rcirc、Table、Image-Dired、SES、Ruler、Org、PGG、Flymake、Password、Printing、Reveal、wdired、t-mouse、longlines、savehist、Confモード、Pythonモード、DNSモードなど新たに多くのモードとパッケージがEmacsに含められた。
@@ -1004,7 +1004,7 @@ documentation</link>を参照)およびEmacs Lisp Introが含められた。
 
 </sect1>
 <sect1 label="4.9" id="New-in-Emacs-21">
-<title>What is different about Emacs 21?</title>
+<title>Emacs 21は何が違う?</title>
 <indexterm role="cp"><primary>Differences between Emacs 20 and Emacs 21</primary></indexterm>
 <indexterm role="cp"><primary>Emacs 21, new features in</primary></indexterm>
 
@@ -1016,30 +1016,30 @@ documentation</link>を参照)およびEmacs Lisp Introが含められた。
 <indexterm role="cp"><primary>Colors on text-only terminals</primary></indexterm>
 <indexterm role="cp"><primary>TTY colors</primary></indexterm>
 <para>これらに加えてEmacs
-21はテキストオンリーの端末でのフェイスがサポートされました。これはGNU/Linuxコンソールや<literal>xterm</literal>上でEmacsを<userinput>emacs
+21ではテキストオンリーの端末でのフェイスがサポートされました。これはGNU/Linuxコンソールや<literal>xterm</literal>上でEmacsを<userinput>emacs
 -nw</userinput>で実行した際にカラー表示されることを意味しています。
 </para>
 
 </sect1>
 <sect1 label="4.10" id="New-in-Emacs-20">
-<title>What is different about Emacs 20?</title>
+<title>Emacs 20は何が違う?</title>
 <indexterm role="cp"><primary>Differences between Emacs 19 and Emacs 20</primary></indexterm>
 <indexterm role="cp"><primary>Emacs 20, new features in</primary></indexterm>
 
-<para>Emacsのバージョン18と19の差はよりダイナミックなものでした。一般的なユーザーのほとんどにとってもウィンドウシステムにおけるフレーム、フェイス、カラーの導入は明白な変更でした。
+<para>Emacsのバージョン18から19への変更はより劇的なものでした。一般的なユーザーのほとんどにとってもウィンドウシステムにおけるフレーム、フェイス、カラーの導入は明白な変更でした。
 </para>
-<para>Emacsのバージョン19と20の間にも同様に差はあるものの多くは軽微であるか気付くのが難しいものでした。この変更の中には非ラテン文字を使用する言語用のMULEと同一ドキュメント内での複数言語の混合、Lispを使用せずに変数を変更する&#8220;Customize&#8221;機能、Macintosh、Microsoft、Unixプラットフォームにおけるファイルの自動変換が含まれます。
+<para>Emacsのバージョン19と20の間にも同様に変更はあるものの、その多くは軽微であるか気付くのが難しいものでした。この変更の中には非ラテン文字を使用する言語用のMULEと同一ドキュメント内での複数言語の混合、Lispを使用せずに変数を変更する&#8220;Customize&#8221;機能、Macintosh、Microsoft、Unixプラットフォームにおけるファイルの自動変換が含まれます。
 </para>
 <!-- - -->
 </sect1>
 </chapter>
 <chapter label="5" id="Common-requests">
-<title>Common requests</title>
+<title>よくある要望</title>
 <indexterm role="cp"><primary>Common requests</primary></indexterm>
 
 
 <sect1 label="5.1" id="Setting-up-a-customization-file">
-<title>How do I set up a <filename>.emacs</filename> file properly?</title>
+<title><filename>.emacs</filename>ファイルを正しくセットアップするには?</title>
 <indexterm role="cp"><primary><filename>.emacs</filename> file, setting up</primary></indexterm>
 <indexterm role="cp"><primary><filename>.emacs</filename> file, locating</primary></indexterm>
 <indexterm role="cp"><primary>Init file, setting up</primary></indexterm>
@@ -1047,20 +1047,20 @@ documentation</link>を参照)およびEmacs Lisp Introが含められた。
 
 <para>section &#8220;Init File&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
 </para>
-<para>一般的にEmacsの新規ユーザーは<filename>.emacs</filename>ファイルを与えられるべきではありません。なぜならこれによる非標準的から混乱を招くからです。その後に彼らはなぜEmacsがドキュメント通りに振る舞わないか尋ねる質問を<ulink url="https://lists.gnu.org/mailman/listinfo/help-gnu-emacs">the help-gnu-emacs mailing list</ulink>に送信するのです。
+<para>一般的にEmacsの新規ユーザーは<filename>.emacs</filename>ファイルを与えられるべきではありません。なぜならこれによる非標準的な振る舞いが混乱を招くからです。その後に彼らはなぜEmacsがドキュメント通りに振る舞わないか尋ねる質問を<ulink url="https://lists.gnu.org/mailman/listinfo/help-gnu-emacs">the help-gnu-emacs mailing list</ulink>に送信するのです。
 </para>
 <para>EmacsにはCustomize機能が含まれています(<link linkend="Using-Customize">Using Customize</link>を参照)。これによってEmacs
 Lispに親しみのないユーザーはLispコードよりもメニューを使い、比較的判りやすい方法で<filename>.emacs</filename>ファイルを編集できます。
 </para>
 <para>Customizeは確かにEmacsの設定を容易にするかもしれませんが、Emacs
-Lispを習得して<filename>.emacs</filename>を直接編集するために少し時間を割くことを検討してみてください。頻繁に要求される基本的なタスクを処理することに興味があるユーザーには、シンプルな設定オプションがsection &#8220;Init
-File&#8221; in <citetitle>The GNU Emacs Manual</citetitle>により完全に記述されています。
+Lispを習得して<filename>.emacs</filename>を直接編集するために少し時間を割くことを検討してみてください。頻繁に求められる基本的なタスクを処理することに興味があるユーザーには、シンプルな設定オプションがsection &#8220;Init
+File&#8221; in <citetitle>The GNU Emacs Manual</citetitle>に完全に記述されています。
 </para>
-<para>ユーザーがどこで自分の<filename>.emacs</filename>ファイルを見つけられるか判らない場合があります。Emacsから<filename>~/.emacs</filename>としてファイルをvisitすることのよって、正しいファイルが見つかるでしょう。
+<para>ユーザーがどこで自分の<filename>.emacs</filename>ファイルを見つけられるか判らない場合があります。Emacsから<filename>~/.emacs</filename>としてファイルをvisitすることによって、正しいファイルが見つかるでしょう。
 </para>
 </sect1>
 <sect1 label="5.2" id="Using-Customize">
-<title>How do I start using Customize?</title>
+<title>Customizeを使い始めるには?</title>
 <indexterm role="cp"><primary>Customize groups</primary></indexterm>
 <indexterm role="cp"><primary>Customizing variables</primary></indexterm>
 <indexterm role="cp"><primary>Customizing faces</primary></indexterm>
@@ -1077,7 +1077,7 @@ Customization&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照し�
 </para>
 </sect1>
 <sect1 label="5.3" id="Colors-on-a-TTY">
-<title>How do I get colors and syntax highlighting on a TTY?</title>
+<title>TTYで色や構文ハイライトするには?</title>
 <indexterm role="cp"><primary>Colors on a TTY</primary></indexterm>
 <indexterm role="cp"><primary>Syntax highlighting on a TTY</primary></indexterm>
 <indexterm role="cp"><primary>Console, colors</primary></indexterm>
@@ -1093,11 +1093,11 @@ list-colors-display</userinput>はカレントディスプレーについてEmac
 <para>バージョン22.1以降ではシンタックスハイライトがデフォルトでオンです。
 </para>
 <indexterm role="cp"><primary>direct color in terminals</primary></indexterm>
-<para>Emacs 26.1以降はターミナル(訳注:
+<para>Emacs 26.1以降は端末(訳注:
 端末=terminalはtermcapのterm)でのダイレクトカラーモードをサポートしています。EmacsがTerminfoで&#8216;<literal>setb24</literal>&#8217;および&#8216;<literal>setf24</literal>&#8217;のケイパビリティ(訳注:
 capabilityはtermcapのcap)を見つけたら24ビットダイレクトカラーモードを使用します。ケイパビリティ文字列は、引数として1つの24ビットピクセル値を取り、24ビットカラーを端末に送信するために使用できる文字列にピクセルを変換することが期待されます。
 </para>
-<para>標準のターミナル定義はこれらのケイパビリティをサポートせず、したがってカスタム定義が必要になります。
+<para>標準の端末定義はこれらのケイパビリティをサポートせず、したがってカスタム定義が必要になります。
 </para>
 <screen>$ cat terminfo-custom.src
 
@@ -1114,7 +1114,7 @@ $ TERM=xterm-emacs emacs -nw
 </screen>
 <indexterm role="cp"><primary>24-bit direct color mode</primary></indexterm>
 <para>Emacs
-27.1以降では24ビットダイレクトカラーモードの検出にたいしてTerminfoの&#8216;<literal>RGB</literal>&#8217;ケイパビリティをサポートしています。複数の標準的なターミナル定義がこのケイパビリティをサポートしています。
+27.1以降では24ビットダイレクトカラーモードの検出にたいする、Terminfoの&#8216;<literal>RGB</literal>&#8217;ケイパビリティをサポートしています。複数の標準的な端末定義がこのケイパビリティをサポートしています。
 </para>
 <screen>$ TERM=xterm-direct infocmp | grep seta[bf]
 
@@ -1125,7 +1125,7 @@ $ TERM=xterm-emacs emacs -nw
 
 $ TERM=xterm-direct emacs -nw
 </screen>
-<para>あなたのターミナルにXTermとの互換性がなければ、別の<envar>TERM</envar>定義を使う必要があるかもしれません。名前に&#8216;<literal>direct</literal>&#8217;が含まれるすべてのターミナルが候補になり得ます。それらのうちどれがシステムにインストールされているか調べるために<command>toe</command>コマンドを使用できます:
+<para>あなたの端末にXTermとの互換性がなければ、別の<envar>TERM</envar>定義を使う必要があるかもしれません。名前に&#8216;<literal>direct</literal>&#8217;が含まれるすべての端末が候補になり得ます。それらのうちどれがシステムにインストールされているか調べるために<command>toe</command>コマンドを使用できます:
 </para>
 <screen>$ toe | grep '\-direct'
 
@@ -1135,18 +1135,18 @@ st-direct       st with direct-color indexing
 xterm-direct2   xterm with direct-color indexing (old)
 xterm-direct    xterm with direct-color indexing
 </screen>
-<para>&#8216;<literal>RGB</literal>&#8217;ケイパビリティをもつターミナルは、ダイレクト。モードを認識しないアプリケーションにたいする後方互換性を保守するために、ピクセル#000001から#000007をインデックス付けされたカラーとして扱います。したがってもっとも暗い青い濃淡は利用できないかもしれません。これが問題となるようなら、&#8216;<literal>setb24</literal>&#8217;と&#8216;<literal>setf24</literal>&#8217;のカスタムターミナル定義を常に使用するこれができます。
+<para>&#8216;<literal>RGB</literal>&#8217;ケイパビリティをもつ端末は、ダイレクトカラーモードを認識しないアプリケーションにたいする後方互換性を保守するために、ピクセル#000001から#000007をインデックス付けされたカラーとして扱います。したがってもっとも暗い青い濃淡は利用できないかもしれません。これが問題となるようなら、&#8216;<literal>setb24</literal>&#8217;と&#8216;<literal>setf24</literal>&#8217;のカスタム端末定義を使用することは常に可能です。
 </para>
 </sect1>
 <sect1 label="5.4" id="Debugging-a-customization-file">
-<title>How do I debug a <filename>.emacs</filename> file?</title>
+<title><filename>.emacs</filename>ファイルをデバッグするには?</title>
 <indexterm role="cp"><primary>Debugging <filename>.emacs</filename> file</primary></indexterm>
 <indexterm role="cp"><primary><filename>.emacs</filename> debugging</primary></indexterm>
 <indexterm role="cp"><primary>Init file debugging</primary></indexterm>
 <indexterm role="cp"><primary>&#8216;<literal>-debug-init</literal>&#8217; option</primary></indexterm>
 
 <para>コマンドラインオプション&#8216;<literal>-debug-init</literal>&#8217;でEmacsを開始してください。これは<filename>.emacs</filename>ファイルを評価する前にEmacs
-Lispデバッガを有効して、何かうまく行かなければあなたをデバッガ内へと導きます。<filename>trace-back</filename>バッファーの上端行はエラーメッセージ、2行目か3行目には問題を引き起こした<filename>.emacs</filename>ファイルのLispコードが表示されるでしょう。
+Lispデバッガを有効にして、何かうまく行かなければあなたをデバッガ内へと導きます。<filename>trace-back</filename>バッファーの上端行はエラーメッセージ、2行目か3行目には問題を引き起こした<filename>.emacs</filename>ファイルのLispコードが表示されるでしょう。
 </para>
 <para><filename>.emacs</filename>ファイル内の関数や引数の終端にカーソルを移動して<userinput>C-x C-e</userinput> (<userinput>M-x
 eval-last-sexp</userinput>)をタイプすれば、関数や関数の引数を個別に評価することもできます。
@@ -1155,7 +1155,7 @@ eval-last-sexp</userinput>)をタイプすれば、関数や関数の引数を�
 </para>
 </sect1>
 <sect1 label="5.5" id="Displaying-the-current-line-or-column">
-<title>How do I make Emacs display the current line (or column) number?</title>
+<title>Emacsに現在の行(や列)の番号を表示させるには?</title>
 <indexterm role="cp"><primary><literal>line-number-mode</literal></primary></indexterm>
 <indexterm role="cp"><primary>Displaying the current line or column</primary></indexterm>
 <indexterm role="cp"><primary>Line number, displaying the current</primary></indexterm>
@@ -1163,26 +1163,26 @@ eval-last-sexp</userinput>)をタイプすれば、関数や関数の引数を�
 <indexterm role="cp"><primary><literal>mode-line-format</literal></primary></indexterm>
 
 <para>デフォルトではEmacsはポイント位置のカレント行番号をモードラインに表示します。コマンド<userinput>M-x
-line-number-mode</userinput>、または変数<literal>line-number-mode</literal>でこの機能のオンとオフを切り替えることができます。バッファーのバイトサイズが変数<literal>line-number-display-limit</literal>の値より大きければ、Emacsは行番号を表示しないことに注意してください。
+line-number-mode</userinput>、または変数<literal>line-number-mode</literal>でこの機能のオンオフを切り替えることができます。バッファーのバイトサイズが変数<literal>line-number-display-limit</literal>の値より大きければ、Emacsは行番号を表示しないことに注意してください。
 </para>
-<para><userinput>M-x column-number-mode</userinput>、または以下のフォームを
+<para><userinput>M-x column-number-mode</userinput>、または以下のフォーム
 </para>
 <programlisting>(setq column-number-mode t)
 </programlisting>
-<para><filename>.emacs</filename>ファイルに記述することにより、同じようにカレント列番号を表示できます。この機能はデフォルトではオフです。
+<para>を<filename>.emacs</filename>ファイルに記述することにより、同じようにカレント列番号を表示できます。この機能はデフォルトではオフです。
 </para>
-<para>変数<literal>mode-line-format</literal>内のフォーマット指定子<literal>&quot;%c&quot;</literal>は、モードラインにカレント列の値っっ挿入します。この変数のセットや使用する方法についての詳細は<literal>mode-line-format</literal>のドキュメントを参照してください(<userinput>C-h
+<para>変数<literal>mode-line-format</literal>内のフォーマット指定子<literal>&quot;%c&quot;</literal>は、モードラインにカレント列の値を挿入します。この変数のセット、および使用方法についての詳細は<literal>mode-line-format</literal>のドキュメントを参照してください(<userinput>C-h
 v mode-line-format <keycap>RET</keycap></userinput>を使用する)。
 </para>
 <indexterm role="cp"><primary>Set number capability in <literal>vi</literal> emulators</primary></indexterm>
 <para>&#8216;<literal>display-line-numbers</literal>&#8217;パッケージ(Emacsのバージョン26.1で追加)は&#8216;<literal>vi</literal>&#8217;の&#8220;set
 number&#8221;機能のように、各行の前のテキストエリアに行番号を表示します。このオプション表示をアクティブにするにはバッファーローカル変数<literal>display-line-numbers</literal>をカスタマイズします。かわりにマイナーモード<literal>display-line-numbers-mode</literal>やグローバル版の<literal>global-display-line-numbers-mode</literal>を使うこともできます。これらのモード使用時には<literal>display-line-numbers</literal>を使用するときと同じ値で<literal>display-line-numbers-type</literal>をカスタマイズしてください。
 </para>
-<para>&#8216;<literal>linum</literal>&#8217;パッケージ(バージョン23.1以降のEmacsに同梱)もありますが今後配送されます。ユーザーおよび開発者にはかわりに&#8216;<literal>display-line-numbers</literal>&#8217;の使用をお勧めします。(Emacsには同梱されていないパッケージ)&#8216;<literal>setnu</literal>&#8217;と&#8216;<literal>wb-line-number</literal>&#8217;もこの機能を実装しています。
+<para>&#8216;<literal>linum</literal>&#8217;パッケージ(バージョン23.1以降のEmacsに同梱)もありますが今後廃止されます。ユーザーおよび開発者には、かわりに&#8216;<literal>display-line-numbers</literal>&#8217;の使用をお勧めします。(Emacsには同梱されていない)パッケージ&#8216;<literal>setnu</literal>&#8217;と&#8216;<literal>wb-line-number</literal>&#8217;もこの機能を実装しています。
 </para>
 </sect1>
 <sect1 label="5.6" id="Displaying-the-current-file-name-in-the-titlebar">
-<title>How can I modify the titlebar to contain the current file name?</title>
+<title>現在のファイル名をタイトルバーに含めるには?</title>
 <indexterm role="cp"><primary>Titlebar, displaying the current file name in</primary></indexterm>
 <indexterm role="cp"><primary>File name, displaying in the titlebar</primary></indexterm>
 <indexterm role="cp"><primary><literal>frame-title-format</literal></primary></indexterm>
@@ -1190,7 +1190,7 @@ number&#8221;機能のように、各行の前のテキストエリアに行番�
 <para>Emacsフレームのタイトルバーのコンテンツは、変数<literal>mode-line-format</literal>と同じ構造をもつ変数<literal>frame-title-format</literal>によって制御されます(これらの変数について情報を得るには<userinput>C-h
 v</userinput>または<userinput>M-x describe-variable</userinput>を使用する)。
 </para>
-<para>デフォルトではフレームのタイトルバーには、1つのフレームしか存在しない場合を除き、がカレントでvisitされているバッファーの名前が表示されます。フレームが1つの場合には、タイトルバーにはEmacsを呼び出したときの名前、およびEmacsを呼び出したマシン名が含まれます。これは<literal>frame-title-format</literal>に以下をデフォルト値としてセットすることにより行われます:
+<para>デフォルトではフレームのタイトルバーには、1つのフレームしか存在しない場合を除き、カレントでvisitされているバッファーの名前が表示されます。フレームが1つの場合には、タイトルバーにEmacsを呼び出したときの名前、およびEmacsを呼び出したマシン名が含まれます。これは<literal>frame-title-format</literal>に以下をデフォルト値としてセットすることにより行われます:
 </para>
 <programlisting>(multiple-frames &quot;%b&quot; (&quot;&quot; invocation-name &quot;@&quot; (system-name)))
 </programlisting>
@@ -1200,7 +1200,7 @@ v</userinput>または<userinput>M-x describe-variable</userinput>を使用す�
 </programlisting>
 </sect1>
 <sect1 label="5.7" id="Turning-on-abbrevs-by-default">
-<title>How do I turn on abbrevs by default just in mode <replaceable>mymode</replaceable>?</title>
+<title>モード<replaceable>mymode</replaceable>でデフォルトでabbrevをオンにするには?</title>
 <indexterm role="cp"><primary>Abbrevs, turning on by default</primary></indexterm>
 
 <para>Abbrevモードは略語をタイプするとそれを展開します。特定のバッファーでこれをオンにするには<userinput>M-x
@@ -1222,7 +1222,7 @@ abbrev-mode</userinput>を使用します。デフォルトですべてのバッ
 </programlisting>
 </sect1>
 <sect1 label="5.8" id="Associating-modes-with-files">
-<title>How do I make Emacs use a certain major mode for certain files?</title>
+<title>特定のファイルに特定のモードをEmacsに使用させるには?</title>
 <indexterm role="cp"><primary>Associating modes with files</primary></indexterm>
 <indexterm role="cp"><primary>File extensions and modes</primary></indexterm>
 <indexterm role="cp"><primary><literal>auto-mode-alist</literal>, modifying</primary></indexterm>
@@ -1242,7 +1242,7 @@ v</userinput> (または<userinput>M-x describe-variable</userinput>)を使用�
 </para>
 </sect1>
 <sect1 label="5.9" id="Replacing-highlighted-text">
-<title>How can I replace highlighted text with what I type?</title>
+<title>ハイライトされたテキストをタイプしたテキストで置き換えるには?</title>
 <indexterm role="cp"><primary><literal>delete-selection-mode</literal></primary></indexterm>
 <indexterm role="cp"><primary>Replacing highlighted text</primary></indexterm>
 <indexterm role="cp"><primary>Highlighting and replacing text</primary></indexterm>
@@ -1261,7 +1261,7 @@ Selectionモードが有効な場合には選択がアクティブのときに�
 </para>
 </sect1>
 <sect1 label="5.10" id="Controlling-case-sensitivity">
-<title>How do I control Emacs&#8217;s case-sensitivity when searching/replacing?</title>
+<title>検索や置換の際にEmacsによる大文字小文字の区別を制御するには?</title>
 <indexterm role="cp"><primary><literal>case-fold-search</literal></primary></indexterm>
 <indexterm role="cp"><primary>Case sensitivity of searches</primary></indexterm>
 <indexterm role="cp"><primary>Searching without case sensitivity</primary></indexterm>
@@ -1288,7 +1288,7 @@ Selectionモードが有効な場合には選択がアクティブのときに�
 </programlisting>
 </sect1>
 <sect1 label="5.11" id="Working-with-unprintable-characters">
-<title>How do I search for, delete, or replace unprintable (eight-bit or control) characters?</title>
+<title>プリント不可文字(8ビット文字やコントロール文字)の検索、削除、置換を行うには?</title>
 <indexterm role="cp"><primary>Unprintable characters, working with</primary></indexterm>
 <indexterm role="cp"><primary>Working with unprintable characters</primary></indexterm>
 <indexterm role="cp"><primary>Control characters, working with</primary></indexterm>
@@ -1326,7 +1326,7 @@ C-l <keycap>SPC</keycap> -~] <keycap>RET</keycap> : <keycap>RET</keycap>
 </para>
 </sect1>
 <sect1 label="5.12" id="Searching-for_002freplacing-newlines">
-<title>How do I input a newline character in isearch or query-replace?</title>
+<title>isearchやquery-replaceで改行を入力するには?</title>
 <indexterm role="cp"><primary>Searching for newlines</primary></indexterm>
 <indexterm role="cp"><primary>Replacing newlines</primary></indexterm>
 
@@ -1335,16 +1335,15 @@ Incremental Search&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参�
 </para>
 </sect1>
 <sect1 label="5.13" id="Yanking-text-in-isearch">
-<title>How do I copy text from the kill ring into the search string?</title>
+<title>killリングから検索文字列にテキストをコピーするには?</title>
 <indexterm role="cp"><primary>Yanking text into the search string</primary></indexterm>
 <indexterm role="cp"><primary>isearch yanking</primary></indexterm>
 
-<para><userinput>M-y</userinput>を使用してください。section &#8220;Isearch Yank&#8221; in <citetitle>The GNU Emacs
-Manual</citetitle>を参照してください。
+<para><userinput>M-y</userinput>を使用します。section &#8220;Isearch Yank&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
 </para>
 </sect1>
 <sect1 label="5.14" id="Wrapping-words-automatically">
-<title>How do I make Emacs wrap words for me?</title>
+<title>自分用にEmacsに単語を折り返させるには?</title>
 <indexterm role="cp"><primary>Wrapping word automatically</primary></indexterm>
 <indexterm role="cp"><primary>Wrapping lines</primary></indexterm>
 <indexterm role="cp"><primary>Line wrap</primary></indexterm>
@@ -1358,7 +1357,7 @@ on auto-fill by default</link>を参照してください。
 </para>
 </sect1>
 <sect1 label="5.15" id="Turning-on-auto_002dfill-by-default">
-<title>How do I turn on <literal>auto-fill-mode</literal> by default?</title>
+<title>デフォルトで<literal>auto-fill-mode</literal>をオンにするには?</title>
 <indexterm role="cp"><primary><literal>auto-fill-mode</literal>, activating automatically</primary></indexterm>
 <indexterm role="cp"><primary>Filling automatically</primary></indexterm>
 <indexterm role="cp"><primary>Automatic entry to <literal>auto-fill-mode</literal></primary></indexterm>
@@ -1375,7 +1374,7 @@ on auto-fill by default</link>を参照してください。
 </programlisting>
 </sect1>
 <sect1 label="5.16" id="Changing-load_002dpath">
-<title>How do I change <literal>load-path</literal>?</title>
+<title><literal>load-path</literal>を変更するには?</title>
 <indexterm role="cp"><primary><literal>load-path</literal>, modifying</primary></indexterm>
 <indexterm role="cp"><primary>Modifying <literal>load-path</literal></primary></indexterm>
 <indexterm role="cp"><primary>Adding to <literal>load-path</literal></primary></indexterm>
@@ -1390,7 +1389,7 @@ on auto-fill by default</link>を参照してください。
 </programlisting>
 </sect1>
 <sect1 label="5.17" id="Using-an-already-running-Emacs-process">
-<title>How do I use an already running Emacs from another window?</title>
+<title>別ウィンドウですでに実行中のEmacsを使用するには?</title>
 <indexterm role="cp"><primary><literal>emacsclient</literal></primary></indexterm>
 <indexterm role="cp"><primary>Emacs server functions</primary></indexterm>
 <indexterm role="cp"><primary>Using an existing Emacs process</primary></indexterm>
@@ -1409,7 +1408,7 @@ on auto-fill by default</link>を参照してください。
 <programlisting>(if (<replaceable>some conditions are met</replaceable>) (server-start))
 </programlisting>
 <para>ニュースリーダーやメールリーダーなどが&#8216;<literal>emacsclient</literal>&#8217;を呼び出すようにするには、環境変数<literal>EDITOR</literal>
-(<literal>VISUAL</literal>のときもある)に値&#8216;<literal>emacsclient</literal>&#8217;を設定してみればよい。&#8216;<literal>emacsclient</literal>&#8217;プログラムのかわりにプログラムのフルパス名を指定する必要があるかもしれない。たとえば:
+(<literal>VISUAL</literal>のときもあり)に値&#8216;<literal>emacsclient</literal>&#8217;を設定してみればよい。&#8216;<literal>emacsclient</literal>&#8217;プログラムのかわりにプログラムのフルパス名を指定する必要があるかもしれない。たとえば:
 </para>
 <screen># cshの場合:
 setenv EDITOR emacsclient
@@ -1431,7 +1430,7 @@ server-edit</userinput>)とタイプしてそれを示すことができる。<l
 </para>
 </sect1>
 <sect1 label="5.18" id="Compiler-error-messages">
-<title>How do I make Emacs recognize my compiler&#8217;s funny error messages?</title>
+<title>わたしのコンパイラーの変なエラーメッセージをEmacsに認識させるには?</title>
 <indexterm role="cp"><primary>Compiler error messages, recognizing</primary></indexterm>
 <indexterm role="cp"><primary>Recognizing non-standard compiler errors</primary></indexterm>
 <indexterm role="cp"><primary>Regexps for recognizing compiler errors</primary></indexterm>
@@ -1441,7 +1440,7 @@ server-edit</userinput>)とタイプしてそれを示すことができる。<l
 </para>
 </sect1>
 <sect1 label="5.19" id="Indenting-switch-statements">
-<title>How do I change the indentation for <literal>switch</literal>?</title>
+<title><literal>switch</literal>のインデントを変更するには?</title>
 <indexterm role="cp"><primary><literal>switch</literal>, indenting</primary></indexterm>
 <indexterm role="cp"><primary>Indenting of <literal>switch</literal></primary></indexterm>
 
@@ -1467,7 +1466,7 @@ server-edit</userinput>)とタイプしてそれを示すことができる。<l
 </programlisting>
 </sect1>
 <sect1 label="5.20" id="Customizing-C-and-C_002b_002b-indentation">
-<title>How to customize indentation in C, C<literal>++</literal>, and Java buffers?</title>
+<title>C、C<literal>++</literal>、Javaのバッファーのインデントをカスタマイズするには?</title>
 <indexterm role="cp"><primary>Indentation, how to customize</primary></indexterm>
 <indexterm role="cp"><primary>Customize indentation</primary></indexterm>
 
@@ -1475,13 +1474,13 @@ server-edit</userinput>)とタイプしてそれを示すことができる。<l
 Mode</citetitle>マニュアルに完全な説明があります。section &#8220;Customization
 Indentation&#8221; in <citetitle>The CC Mode Manual</citetitle>を参照してください。以下はそれの短い要約です:
 </para>
-<orderedlist numeration="arabic"><listitem><para>気に召さないインデントの最初の行の先頭に移動して<userinput>C-c C-o</userinput>とタイプする。Emacsが構文シンボル(syntactic
-symbol)の入力を求めるので、デフォルトを受諾するために<keycap>RET</keycap>をタイプする。
+<orderedlist numeration="arabic"><listitem><para>気に入らないインデントの最初の行の先頭に移動して<userinput>C-c C-o</userinput>とタイプする。Emacsが構文シンボル(syntactic
+symbol)の入力を求めるので、デフォルトを承諾するために<keycap>RET</keycap>をタイプする。
 </para>
 </listitem><listitem><para>Emacsがその構文シンボルのオフセットの入力を求める。その際にはカッコ内にデフォルト(現在の定義)が表示される。ここで以下のいずれかを選択できる:
 </para>
 <variablelist><varlistentry><term><literal>0</literal>
-</term><listitem><para>追加のインデントなし。
+</term><listitem><para>余計なインデントなし。
 </para></listitem></varlistentry><varlistentry><term><literal>+</literal>
 </term><listitem><para>基本オフセット1つ分インデントを加える。
 </para></listitem></varlistentry><varlistentry><term><literal>-</literal>
@@ -1497,14 +1496,14 @@ symbol)の入力を求めるので、デフォルトを受諾するために<key
 </para></listitem></varlistentry></variablelist>
 </listitem><listitem><para>これらのシンボルのいずれかを選んだ後に<userinput>C-c C-q</userinput>をタイプして、指定したインデントに行またはブロックを再インデントする。
 </para>
-</listitem><listitem><para>結果が気に召さなければステップ1に戻る。そうでなければ以下の行を<filename>.emacs</filename>に追加する:
+</listitem><listitem><para>結果が気に入らなければステップ1に戻る。そうでなければ以下の行を<filename>.emacs</filename>に追加する:
 </para>
 <programlisting>(c-set-offset '<replaceable>syntactic-symbol</replaceable> <replaceable>offset</replaceable>)
 </programlisting>
 <para>ここで<replaceable>syntactic-symbol</replaceable>は行頭で<userinput>C-c
 C-o</userinput>をタイプした際にEmacsが表示した名前、<replaceable>offset</replaceable>は上記のインデントシンボル(<literal>+</literal>、<literal>/</literal>、<literal>0</literal>等)のいずれかのうち対話的手順の間に選択したシンボル。
 </para>
-</listitem><listitem><para>インデントが気に召さない次の行へ移動してこれらの手順を繰り返す。
+</listitem><listitem><para>インデントが気に入らない次の行へ移動してこれらの手順を繰り返す。
 </para></listitem></orderedlist>
 <para>以下のように<literal>(c-set-offset ...)</literal>によるカスタマイズ結果すべてをCモードのフック内に記述することをお勧めします:
 </para>
@@ -1520,21 +1519,21 @@ C-o</userinput>をタイプした際にEmacsが表示した名前、<replaceable
 </para>
 </sect1>
 <sect1 label="5.21" id="Overwrite-mode">
-<title>How do I make Emacs &#8220;typeover&#8221; or &#8220;overwrite&#8221; instead of inserting?</title>
+<title>Emacsに挿入ではなく&#8220;上書き&#8221;させるには?</title>
 <indexterm role="cp"><primary><keycap>Insert</keycap></primary></indexterm>
 <indexterm role="cp"><primary><literal>overwrite-mode</literal></primary></indexterm>
 <indexterm role="cp"><primary>Overwriting existing text</primary></indexterm>
 <indexterm role="cp"><primary>Toggling <literal>overwrite-mode</literal></primary></indexterm>
 
 <para><userinput>M-x overwrite-mode</userinput>
-(マイナーモード)です。これは<literal>overwrite-mode</literal>のオンオフを切り替えるのでもう一度<userinput>M-x
-overwrite-mode</userinput>で簡単に<literal>overwrite-mode</literal>からexitできます。
+(マイナーモード)です。これは<literal>overwrite-mode</literal>のオンオフを切り替えるので、もう一度<userinput>M-x
+overwrite-mode</userinput>とタイプすれば簡単に<literal>overwrite-mode</literal>からexitできます。
 </para>
 <para>いくつかのシステムでは<keycap>Insert</keycap>で<literal>overwrite-mode</literal>のオンオフが切り替わります。
 </para>
 </sect1>
 <sect1 label="5.22" id="Turning-off-beeping">
-<title>How do I stop Emacs from beeping on a terminal?</title>
+<title>端末でEmacsのビープ音を止めるには?</title>
 <indexterm role="cp"><primary>Beeping, turning off</primary></indexterm>
 <indexterm role="cp"><primary>Visible bell</primary></indexterm>
 <indexterm role="cp"><primary>Bell, visible</primary></indexterm>
@@ -1543,7 +1542,7 @@ overwrite-mode</userinput>で簡単に<literal>overwrite-mode</literal>からexi
 <para>Martin R. Frank(訳注: Texinfoファイルには&quot;martin@cc.gatech.edu&quot;とコメントされてました)は記しています:
 </para>
 <para>可聴ベル(audible bell)のかわりに<firstterm>視覚的なベル(visible
-bell)</firstterm>を使うように伝えて、その視覚的ベルには何もセットしません。
+bell)</firstterm>を使うようにEmacs伝えて、その視覚的ベルには何もセットしません。
 </para>
 <para>つまり(あなたがtermcapをもっていると仮定して)<literal>TERMCAP</literal>環境変数に以下を記述します:
 </para>
@@ -1555,7 +1554,7 @@ bell)</firstterm>を使うように伝えて、その視覚的ベルには何も
 </screen>
 </sect1>
 <sect1 label="5.23" id="Turning-the-volume-down">
-<title>How do I turn down the bell volume in Emacs running under X?</title>
+<title>XでEmacsを実行中にベル音量を下げるには?</title>
 <indexterm role="cp"><primary>Bell, volume of</primary></indexterm>
 <indexterm role="cp"><primary>Volume of bell</primary></indexterm>
 
@@ -1571,14 +1570,14 @@ bell)</firstterm>を使うように伝えて、その視覚的ベルには何も
 </screen>
 </sect1>
 <sect1 label="5.24" id="Automatic-indentation">
-<title>How do I tell Emacs to automatically indent a new line to the indentation of the previous line?</title>
+<title>新しい行を前の行に合わせて自動的にインデントするようEmacsに伝えるには?</title>
 <indexterm role="cp"><primary>Indenting new lines</primary></indexterm>
 <indexterm role="cp"><primary>New lines, indenting of</primary></indexterm>
 <indexterm role="cp"><primary>Previous line, indenting according to</primary></indexterm>
 <indexterm role="cp"><primary>Text indentation</primary></indexterm>
 
 <para>このような振る舞いはEmacs 20以降では(Textモードでは)自動で行われます。Emacs
-20.2の<filename>etc/NEWS</filename>ファイルからの引用します:
+20.2の<filename>etc/NEWS</filename>ファイルからの引用です:
 </para>
 <screen>** Textでパラグラフを分割するのは空行のみとなった。これによってAdaptive FillモードからTextモードやその他Textモードから派生した(Mailモードのような)モードが受ける恩恵を最大にすることが可能になる。Textモードでの<keycap>TAB</keycap>によって<literal>indent-relative</literal>コマンドが実行されるようになった。これによって実際に違いが生じるのは、インデントされたパラグラフを使用している場合だけである。
 
@@ -1590,7 +1589,7 @@ bell)</firstterm>を使うように伝えて、その視覚的ベルには何も
 default</link>を参照)をオンに切り替えている場合には、<firstterm>フィルプレフィクス(fill
 prefix)</firstterm>として特定の文字シーケンスをすべての行のプレフィクスとするようEmacsに指示することができます。行頭でプレフィクスをタイプしてポイントをタイプしたプレフィクスの後に移動、それから<userinput>C-x
 .</userinput>
-(<literal>set-fill-prefix</literal>)とタイプしてフィルプレフィクスをセットします。それ以降はオートフィル新たな行の先頭に自動的にフィルプレフィクスを配置するとともに、<userinput>M-q</userinput>
+(<literal>set-fill-prefix</literal>)とタイプしてフィルプレフィクスをセットします。それ以降はオートフィルが新たな行の先頭に自動的にフィルプレフィクスを配置するとともに、<userinput>M-q</userinput>
 (<literal>fill-paragraph</literal>)でパラグラフを再フィルする際にはすべてのフィルプレフィクスを保守するようになります。
 </para>
 <para>異なるレベルのインデントをもつパラグラフがある場合には、新たなパラグラフに移動するたびにフィルプレフィクスを正しい値にセットすることが必要になるでしょう。これを取り扱うためのパッケージが多数存在します(<link linkend="Packages-that-do-not-come-with-Emacs">Packages
@@ -1598,7 +1597,7 @@ that do not come with Emacs</link>を参照)。手引きとして&#8220;fill&#82
 </para>
 </sect1>
 <sect1 label="5.25" id="Matching-parentheses">
-<title>How do I show which parenthesis matches the one I&#8217;m looking at?</title>
+<title>自分が注目中のカッコに対応するカッコを表示するには?</title>
 <indexterm role="cp"><primary>Parentheses, matching</primary></indexterm>
 <indexterm role="cp"><primary><filename>paren.el</filename></primary></indexterm>
 <indexterm role="cp"><primary>Highlighting matching parentheses</primary></indexterm>
@@ -1638,7 +1637,7 @@ Lispコード。更にカーソルがカッコ上になければ通常通り単�
 </listitem></itemizedlist>
 </sect1>
 <sect1 label="5.26" id="Hiding-_0023ifdef-lines">
-<title>In C mode, can I show just the lines that will be left after <literal>#ifdef</literal> commands are handled by the compiler?</title>
+<title>Cモードでコンパイラーが<literal>#ifdef</literal>処理後に残る行だけを表示するには?</title>
 <indexterm role="cp"><primary><literal>#ifdef</literal>, selective display of</primary></indexterm>
 <indexterm role="cp"><primary><literal>hide-ifdef-mode</literal></primary></indexterm>
 <indexterm role="cp"><primary>Hiding <literal>#ifdef</literal> text</primary></indexterm>
@@ -1649,7 +1648,7 @@ Lispコード。更にカーソルがカッコ上になければ通常通り単�
 </para>
 </sect1>
 <sect1 label="5.27" id="Repeating-commands">
-<title>How do I repeat a command as many times as possible?</title>
+<title>できるだけ沢山コマンドを繰り返すには?</title>
 <indexterm role="cp"><primary>Repeating commands many times</primary></indexterm>
 <indexterm role="cp"><primary>Commands, repeating many times</primary></indexterm>
 <indexterm role="cp"><primary><literal>.</literal>, equivalent to <literal>vi</literal> command</primary></indexterm>
@@ -1657,7 +1656,7 @@ Lispコード。更にカーソルがカッコ上になければ通常通り単�
 <para>最後のコマンドを繰り返すには<literal>repeat</literal>コマンド(<userinput>C-x
 z</userinput>)を使用します。プレフィクス引数を前置すると、そのプレフィクスは繰り返すコマンドに適用されます。
 </para>
-<para>引き起こしを取得するためにミニバッファーを使用するコマンドは、<userinput>C-x <keycap>ESC</keycap> <keycap>ESC</keycap></userinput>
+<para>引数を取得するためにミニバッファーを使用するコマンドは、<userinput>C-x <keycap>ESC</keycap> <keycap>ESC</keycap></userinput>
 (<literal>repeat-complex-command</literal>)とタイプしても再呼び出しができます。<literal>repeat-complex-command</literal>では<userinput>M-p</userinput>と<userinput>M-n</userinput>(キーボードにあれば上矢印と下矢印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたものを走査することができます。
 </para>
 <para>一連のコマンドを繰り返すにはキーボードマクロを使用します。コマンドを呼び出すキーボードマクロの作成には<userinput>C-x (</userinput>と<userinput>C-x
@@ -1668,7 +1667,7 @@ Manual</citetitle>を参照してください。
 </para>
 </sect1>
 <sect1 label="5.28" id="Valid-X-resources">
-<title>What are the valid X resource settings (i.e., stuff in .Xdefaults)?</title>
+<title>有効なXリソース(.Xdefaults内の項目)は?</title>
 <indexterm role="cp"><primary>Resources, X</primary></indexterm>
 <indexterm role="cp"><primary>X resources</primary></indexterm>
 <indexterm role="cp"><primary>Setting X resources</primary></indexterm>
@@ -1679,7 +1678,7 @@ Manual</citetitle>を参照してください。
 </para>
 </sect1>
 <sect1 label="5.29" id="Evaluating-Emacs-Lisp-code">
-<title>How do I execute (&#8220;evaluate&#8221;) a piece of Emacs Lisp code?</title>
+<title>Emacs Lispのコード片を実行(&#8220;evaluate&#8221;)するには?</title>
 <indexterm role="cp"><primary>Evaluating Lisp code</primary></indexterm>
 <indexterm role="cp"><primary>Lisp forms, evaluating</primary></indexterm>
 
@@ -1707,7 +1706,7 @@ Lisp documentation</link>を参照のこと。
 </listitem></itemizedlist>
 </sect1>
 <sect1 label="5.30" id="Changing-the-length-of-a-Tab">
-<title>How do I change Emacs&#8217;s idea of the <keycap>TAB</keycap> character&#8217;s length?</title>
+<title><keycap>TAB</keycap>文字の長さにたいするEmacsの解釈を変更するには?</title>
 <indexterm role="cp"><primary>Tab length</primary></indexterm>
 <indexterm role="cp"><primary>Length of tab character</primary></indexterm>
 
@@ -1719,7 +1718,7 @@ Lisp documentation</link>を参照のこと。
 </para>
 </sect1>
 <sect1 label="5.31" id="Inserting-text-at-the-beginning-of-each-line">
-<title>How do I insert &lt;some text&gt; at the beginning of every line?</title>
+<title>各行の先頭に&lt;何らかのテキスト&gt;を挿入するには?</title>
 <indexterm role="cp"><primary>Prefixing a region with some text</primary></indexterm>
 <indexterm role="cp"><primary>Prefix character, inserting in mail/news replies</primary></indexterm>
 <indexterm role="cp"><primary>Replies to mail/news, inserting a prefix character</primary></indexterm>
@@ -1740,7 +1739,7 @@ the included text prefix</link>を参照)。
 </para>
 </sect1>
 <sect1 label="5.32" id="Forcing-the-cursor-to-remain-in-the-same-column">
-<title>How do I make Emacs behave like this: when I go up or down, the cursor should stay in the same column even if the line is too short?</title>
+<title>上下に移動した際にたとえ短すぎる行でも同じ列にカーソルが留まる; このようにEmacsを振る舞わせるには?</title>
 <indexterm role="cp"><primary><literal>picture-mode</literal></primary></indexterm>
 <indexterm role="cp"><primary>Remaining in the same column, regardless of contents</primary></indexterm>
 <indexterm role="cp"><primary>Vertical movement in empty documents</primary></indexterm>
@@ -1752,7 +1751,7 @@ the included text prefix</link>を参照)。
 </para>
 </sect1>
 <sect1 label="5.33" id="Forcing-Emacs-to-iconify-itself">
-<title>How do I tell Emacs to iconify itself?</title>
+<title>アイコン化するようEmacsに伝えるには?</title>
 <indexterm role="cp"><primary>Iconification under the X Window System</primary></indexterm>
 <indexterm role="cp"><primary>X Window System and iconification</primary></indexterm>
 <indexterm role="cp"><primary>Suspending Emacs</primary></indexterm>
@@ -1761,7 +1760,7 @@ the included text prefix</link>を参照)。
 </para>
 </sect1>
 <sect1 label="5.34" id="Using-regular-expressions">
-<title>How do I use regexps (regular expressions) in Emacs?</title>
+<title>Emacsでregexp(正規表現)わ使用するには?</title>
 <indexterm role="cp"><primary>Regexps</primary></indexterm>
 <indexterm role="cp"><primary>Regular expressions</primary></indexterm>
 <indexterm role="cp"><primary>Differences between Unix and Emacs regexps</primary></indexterm>
@@ -1782,7 +1781,7 @@ the included text prefix</link>を参照)。
 </listitem></itemizedlist>
 </sect1>
 <sect1 label="5.35" id="Replacing-text-across-multiple-files">
-<title>How do I perform a replace operation across more than one file?</title>
+<title>複数ファイルを横断して置換操作を行うには?</title>
 <indexterm role="cp"><primary>Replacing strings across files</primary></indexterm>
 <indexterm role="cp"><primary>Multiple files, replacing across</primary></indexterm>
 <indexterm role="cp"><primary>Files, replacing strings across multiple</primary></indexterm>
@@ -1807,7 +1806,7 @@ Search&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してく�
 </para>
 </sect1>
 <sect1 label="5.36" id="Documentation-for-etags">
-<title>Where is the documentation for <literal>etags</literal>?</title>
+<title><literal>etags</literal>のドキュメントはどこ?</title>
 <indexterm role="cp"><primary>Documentation for <literal>etags</literal></primary></indexterm>
 <indexterm role="cp"><primary><literal>etags</literal>, documentation for</primary></indexterm>
 
@@ -1817,7 +1816,7 @@ Search&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してく�
 </para>
 </sect1>
 <sect1 label="5.37" id="Disabling-backups">
-<title>How do I disable backup files?</title>
+<title>バックアップファイルを無効にするには?</title>
 <indexterm role="cp"><primary>Backups, disabling</primary></indexterm>
 <indexterm role="cp"><primary>Disabling backups</primary></indexterm>
 
@@ -1853,7 +1852,7 @@ Manual</citetitle>を参照してください。
 </para>
 </sect1>
 <sect1 label="5.38" id="Disabling-auto_002dsave_002dmode">
-<title>How do I disable <literal>auto-save-mode</literal>?</title>
+<title><literal>auto-save-mode</literal>を無効にするには?</title>
 <indexterm role="cp"><primary>Disabling <literal>auto-save-mode</literal></primary></indexterm>
 <indexterm role="cp"><primary>Auto-saving</primary></indexterm>
 <indexterm role="cp"><primary>Saving at frequent intervals</primary></indexterm>
@@ -1871,7 +1870,7 @@ Manual</citetitle>を参照してください。
 </para>
 </sect1>
 <sect1 label="5.39" id="Going-to-a-line-by-number">
-<title>How can I go to a certain line given its number?</title>
+<title>行番号で特定行に移動するには?</title>
 <indexterm role="cp"><primary>Going to a line by number</primary></indexterm>
 <indexterm role="cp"><primary>Compilation error messages</primary></indexterm>
 <indexterm role="cp"><primary>Recompilation</primary></indexterm>
@@ -1891,7 +1890,7 @@ M-g</userinput>はカレントバッファーの行番号286へジャンプし�
 </para>
 </sect1>
 <sect1 label="5.40" id="Modifying-pull_002ddown-menus">
-<title>How can I create or modify new pull-down menu options?</title>
+<title>プルダウンの新たなメニューオプションの作成や変更を行うには?</title>
 <indexterm role="cp"><primary>Pull-down menus, creating or modifying</primary></indexterm>
 <indexterm role="cp"><primary>Menus, creating or modifying</primary></indexterm>
 <indexterm role="cp"><primary>Creating new menu options</primary></indexterm>
@@ -1948,7 +1947,7 @@ documentation</link>を参照)。
 </para>
 </sect1>
 <sect1 label="5.41" id="Deleting-menus-and-menu-options">
-<title>How do I delete menus and menu options?</title>
+<title>メニューやメニューオプションを削除するには?</title>
 <indexterm role="cp"><primary>Deleting menus and menu options</primary></indexterm>
 <indexterm role="cp"><primary>Menus, deleting</primary></indexterm>
 
@@ -1964,7 +1963,7 @@ pull-down menus</link>で追加した)&#8216;<literal>Forward word</literal>&#82
 </programlisting>
 </sect1>
 <sect1 label="5.42" id="Turning-on-syntax-highlighting">
-<title>How do I turn on syntax highlighting?</title>
+<title>構文ハイライトをオンにするには?</title>
 <indexterm role="cp"><primary>Syntax highlighting</primary></indexterm>
 <indexterm role="cp"><primary><literal>font-lock-mode</literal></primary></indexterm>
 <indexterm role="cp"><primary>Highlighting based on syntax</primary></indexterm>
@@ -2011,7 +2010,7 @@ ps-print-region-with-faces</userinput>を使用します。あなたにはPostSc
 </para>
 </sect1>
 <sect1 label="5.43" id="Scrolling-only-one-line">
-<title>How can I force Emacs to scroll only one line when I move past the bottom of the screen?</title>
+<title>画面下端に移動した際にEmacsが1行だけスクロールするよう強制するには?</title>
 <indexterm role="cp"><primary>Scrolling only one line</primary></indexterm>
 <indexterm role="cp"><primary>Reducing the increment when scrolling</primary></indexterm>
 
@@ -2025,7 +2024,7 @@ Scrolling&#8221; in <citetitle>The GNU Emacs Manual</citetitle>の説明を参�
 </programlisting>
 </sect1>
 <sect1 label="5.44" id="Editing-MS_002dDOS-files">
-<title>How can I edit MS-DOS files using Emacs?</title>
+<title>EmacsでMS-DOSファイルを編集するには?</title>
 <indexterm role="cp"><primary>Editing MS-DOS files</primary></indexterm>
 <indexterm role="cp"><primary>MS-DOS files, editing</primary></indexterm>
 <indexterm role="cp"><primary>Microsoft files, editing</primary></indexterm>
@@ -2038,7 +2037,7 @@ Scrolling&#8221; in <citetitle>The GNU Emacs Manual</citetitle>の説明を参�
 </para>
 </sect1>
 <sect1 label="5.45" id="Filling-paragraphs-with-a-single-space">
-<title>How can I tell Emacs to fill paragraphs with a single space after each period?</title>
+<title>ピリオドごとにその後の単一スペースでパラグラフをフィルするようEmacsに伝えるには?</title>
 <indexterm role="cp"><primary>One space following periods</primary></indexterm>
 <indexterm role="cp"><primary>Single space following periods</primary></indexterm>
 <indexterm role="cp"><primary>Periods, one space following</primary></indexterm>
@@ -2049,7 +2048,7 @@ Scrolling&#8221; in <citetitle>The GNU Emacs Manual</citetitle>の説明を参�
 </programlisting>
 </sect1>
 <sect1 label="5.46" id="Escape-sequences-in-shell-output">
-<title>Why these strange escape sequences from <literal>ls</literal> from the Shell mode?</title>
+<title>なぜShellモード<literal>ls</literal>は奇妙なエスケープシーケンスを出力するのか?</title>
 <indexterm role="cp"><primary>Escape sequences in <literal>ls</literal> output</primary></indexterm>
 <indexterm role="cp"><primary><literal>ls</literal> in Shell mode</primary></indexterm>
 
@@ -2061,7 +2060,7 @@ ansi-color-for-comint-mode</userinput>とタイプするか、あるいはinit�
 </para>
 </sect1>
 <sect1 label="5.47" id="Fullscreen-mode-on-MS_002dWindows">
-<title>How can I start Emacs in fullscreen mode on MS-Windows?</title>
+<title>MS-WindowsでフルスクリーンモードでEmacsを開始するには?</title>
 <indexterm role="cp"><primary>Maximize frame</primary></indexterm>
 <indexterm role="cp"><primary>Fullscreen mode</primary></indexterm>
 
@@ -2084,7 +2083,7 @@ Resources&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照して�
 </sect1>
 </chapter>
 <chapter label="6" id="Bugs-and-problems">
-<title>Bugs and problems</title>
+<title>バグやトラブル</title>
 <indexterm role="cp"><primary>Bugs and problems</primary></indexterm>
 
 <para>Emacsマニュアルにはユーザーが陥りやすい類の一般的なトラブルのリストがあるので、このチャプターに記述されていない問題に遭遇したら、section &#8220;Dealing with Emacs Trouble&#8221; in <citetitle>The GNU Emacs
@@ -2095,7 +2094,7 @@ C-p</userinput>とタイプしてください。
 </para>
 
 <sect1 label="6.1" id="Problems-with-very-large-files">
-<title>Does Emacs have problems with large files?</title>
+<title>Emacsにとって大きなファイルは問題になるか?</title>
 <indexterm role="cp"><primary>Very large files, opening</primary></indexterm>
 <indexterm role="cp"><primary>Large files, opening</primary></indexterm>
 <indexterm role="cp"><primary>Opening very large files</primary></indexterm>
@@ -2113,7 +2112,7 @@ C-p</userinput>とタイプしてください。
 </para>
 </sect1>
 <sect1 label="6.2" id="_005eM-in-the-shell-buffer">
-<title>How do I get rid of &#8216;<literal>^M</literal>&#8217; or echoed commands in my shell buffer?</title>
+<title>Shellバッファーから&#8216;<literal>^M</literal>&#8217;やエコーされるコマンドを取り除くには?</title>
 <indexterm role="cp"><primary>Shell buffer, echoed commands and &#8216;<literal>^M</literal>&#8217; in</primary></indexterm>
 <indexterm role="cp"><primary>Echoed commands in <literal>shell-mode</literal></primary></indexterm>
 
@@ -2157,7 +2156,7 @@ stty -icrnl -onlcr -echo susp ^Z
 </screen>
 </sect1>
 <sect1 label="6.3" id="Problems-with-Shell-Mode">
-<title>Why do I get an error message when I try to run <userinput>M-x shell</userinput>?</title>
+<title><userinput>M-x shell</userinput>を実行するとエラーメッセージを返されるのはなぜ?</title>
 
 <indexterm role="cp"><primary>Shell Mode, problems</primary></indexterm>
 <indexterm role="cp"><primary><literal>explicit-shell-file-name</literal></primary></indexterm>
@@ -2168,12 +2167,12 @@ stty -icrnl -onlcr -echo susp ^Z
 </para>
 </sect1>
 <sect1 label="6.4" id="Termcap_002fTerminfo-entries-for-Emacs">
-<title>Where is the termcap/terminfo entry for terminal type &#8216;<literal>emacs</literal>&#8217;?</title>
+<title>端末タイプ&#8216;<literal>emacs</literal>&#8217;用のtermcap/terminfoエントリーはどこ?</title>
 <indexterm role="cp"><primary>Termcap</primary></indexterm>
 <indexterm role="cp"><primary>Terminfo</primary></indexterm>
 <indexterm role="cp"><primary>Emacs entries for termcap/terminfo</primary></indexterm>
 
-<para>ターミナルタイプ&#8216;<literal>emacs</literal>&#8217;にたいするtermcapエントリーは、通常はサブシェルの環境変数&#8216;<literal>TERMCAP</literal>&#8217;にセットされます。これは特定の状況下(たとえばShellバッファーからのrlogin)において、システムワイドなtermcapファイルにエントリーを追加する助けになるかもしれません。以下は&#8216;<literal>emacs</literal>&#8217;にたいする正しいtermcapエントリーです:
+<para>端末タイプ&#8216;<literal>emacs</literal>&#8217;にたいするtermcapエントリーは、通常はサブシェルの環境変数&#8216;<literal>TERMCAP</literal>&#8217;にセットされます。これは特定の状況下(たとえばShellバッファーからのrlogin)において、システムワイドなtermcapファイルにエントリーを追加する助けになるかもしれません。以下は&#8216;<literal>emacs</literal>&#8217;にたいする正しいtermcapエントリーです:
 </para>
 <screen>emacs:tc=unknown:
 </screen>
@@ -2188,7 +2187,7 @@ term</userinput>を使用してください。
 </screen>
 </sect1>
 <sect1 label="6.5" id="Errors-with-init-files">
-<title>Why does Emacs say &#8216;<literal>Error in init file</literal>&#8217;?</title>
+<title>Emacsが&#8216;<literal>Error in init file</literal>&#8217;と言うのはなぜ?</title>
 <indexterm role="cp"><primary>Error in <filename>.emacs</filename></primary></indexterm>
 <indexterm role="cp"><primary>Error in init file</primary></indexterm>
 <indexterm role="cp"><primary>Init file, errors in</primary></indexterm>
@@ -2206,7 +2205,7 @@ setup code works after Emacs has begun</link>に記述があります。
 </para>
 </sect1>
 <sect1 label="6.6" id="Emacs-ignores-X-resources">
-<title>Why does Emacs ignore my X resources (my .Xdefaults file)?</title>
+<title>EmacsがXリソース(わたしの.Xdefaultsファイル)を無視するのはなぜ?</title>
 <indexterm role="cp"><primary>X resources being ignored</primary></indexterm>
 <indexterm role="cp"><primary>Ignored X resources</primary></indexterm>
 <indexterm role="cp"><primary><filename>.Xdefaults</filename></primary></indexterm>
@@ -2254,7 +2253,7 @@ setup code works after Emacs has begun</link>に記述があります。
 </listitem></orderedlist>
 </sect1>
 <sect1 label="6.7" id="Emacs-ignores-frame-parameters">
-<title>Why don&#8217;t my customizations of the frame parameters work?</title>
+<title>わたしがカスタマイズしたフレームパラメーターが機能しないのはなぜ?</title>
 <indexterm role="cp"><primary>Frame parameters</primary></indexterm>
 
 <para>これが発生したのは恐らく変数<literal>initial-frame-alist</literal>でフレームパラメーターをセットしたからです。この変数にはEmacs起動時に作成された最初のフレームに使用されたパラメーターだけが保持されています。すべてのフレームのパラメーターをカスタマイズするためには、かわりに<literal>default-frame-alist</literal>を変更してください。
@@ -2264,7 +2263,7 @@ setup code works after Emacs has begun</link>に記述があります。
 
 </sect1>
 <sect1 label="6.8" id="Editing-files-with-_0024-in-the-name">
-<title>How do I edit a file with a &#8216;<literal>$</literal>&#8217; in its name?</title>
+<title>名前に&#8216;<literal>$</literal>&#8217;があるファイルを編集するには?</title>
 <indexterm role="cp"><primary>Editing files with &#8216;<literal>$</literal>&#8217; in the name</primary></indexterm>
 <indexterm role="cp"><primary>&#8216;<literal>$</literal>&#8217; in file names</primary></indexterm>
 <indexterm role="cp"><primary>File names containing &#8216;<literal>$</literal>&#8217;, editing</primary></indexterm>
@@ -2273,7 +2272,7 @@ setup code works after Emacs has begun</link>に記述があります。
 </para>
 </sect1>
 <sect1 label="6.9" id="Shell-mode-loses-the-current-directory">
-<title>Why does shell mode lose track of the shell&#8217;s current directory?</title>
+<title>Shellモードがシェルのカレントディレクトリーを見失うのはなぜ?</title>
 <indexterm role="cp"><primary>Current directory and <literal>shell-mode</literal></primary></indexterm>
 <indexterm role="cp"><primary><literal>shell-mode</literal> and current directory</primary></indexterm>
 <indexterm role="cp"><primary>Directory, current in <literal>shell-mode</literal></primary></indexterm>
@@ -2287,7 +2286,7 @@ a package with particular functionality</link>を参照)。
 </para>
 </sect1>
 <sect1 label="6.10" id="Security-risks-with-Emacs">
-<title>Are there any security risks in Emacs?</title>
+<title>Emacsにセキュリティリスクはある?</title>
 <indexterm role="cp"><primary>Security with Emacs</primary></indexterm>
 <indexterm role="cp"><primary>&#8216;<literal>movemail</literal>&#8217; and security</primary></indexterm>
 <indexterm role="cp"><primary><literal>file-local-variable</literal> and security</primary></indexterm>
@@ -2338,7 +2337,7 @@ event)が通常イベントであるかのように受け入れる。結果と�
 </listitem></itemizedlist>
 </sect1>
 <sect1 label="6.11" id="Dired-claims-that-no-file-is-on-this-line">
-<title>Dired says, &#8216;<literal>no file on this line</literal>&#8217; when I try to do something.</title>
+<title>何かしようとするとDiredが&#8216;<literal>no file on this line</literal>&#8217;と言う。</title>
 <indexterm role="cp"><primary>Dired does not see a file</primary></indexterm>
 
 <para>Diredはファイル名の先頭を見つけるために正規表現を使用します。Unix形式の長いディレクトリーリスト(&#8216;<literal>ls
@@ -2358,7 +2357,7 @@ event)が通常イベントであるかのように受け入れる。結果と�
 
 
 <sect1 label="7.1" id="Installing-Emacs">
-<title>How do I install Emacs?</title>
+<title>Emacsをインストールするには?</title>
 <indexterm role="cp"><primary>Installing Emacs</primary></indexterm>
 <indexterm role="cp"><primary>Unix systems, installing Emacs on</primary></indexterm>
 <indexterm role="cp"><primary>Downloading and installing Emacs</primary></indexterm>
@@ -2410,7 +2409,7 @@ Infoファイルは上書きされることに注意。
 </listitem></itemizedlist>
 </sect1>
 <sect1 label="7.2" id="Problems-building-Emacs">
-<title>What should I do if I have trouble building Emacs?</title>
+<title>Emacsのビルドでトラブルに逢ったらどうすれば?</title>
 <indexterm role="cp"><primary>Problems building Emacs</primary></indexterm>
 <indexterm role="cp"><primary>Errors when building Emacs</primary></indexterm>
 
@@ -2425,12 +2424,12 @@ Infoファイルは上書きされることに注意。
 </sect1>
 </chapter>
 <chapter label="8" id="Finding-Emacs-and-related-packages">
-<title>Finding Emacs and related packages</title>
+<title>Emacsおよび関連パッケージの見つけ方</title>
 <indexterm role="cp"><primary>Finding Emacs and related packages</primary></indexterm>
 
 
 <sect1 label="8.1" id="Finding-Emacs-on-the-Internet">
-<title>Where can I get Emacs on the net?</title>
+<title>ネットショップのどこでEmacsを入手できる?</title>
 <indexterm role="cp"><primary>Finding Emacs on the Internet</primary></indexterm>
 <indexterm role="cp"><primary>Downloading Emacs</primary></indexterm>
 
@@ -2442,7 +2441,7 @@ Emacs</link>、GNUソフトウェアが利用可能なアーカイブサイト�
 </para>
 </sect1>
 <sect1 label="8.2" id="Finding-a-package-with-particular-functionality">
-<title>How do I find an Emacs Lisp package that does XXX?</title>
+<title>XXXを行うEmacs Lispパッケージを見つけるには?</title>
 <indexterm role="cp"><primary>Package, finding</primary></indexterm>
 <indexterm role="cp"><primary>Finding an Emacs Lisp package</primary></indexterm>
 <indexterm role="cp"><primary>Functionality, finding a particular package</primary></indexterm>
@@ -2461,7 +2460,7 @@ Emacs</link>を参照してください。
 <!-- Note that M-x view-external-packages references this node. -->
 </sect1>
 <sect1 label="8.3" id="Packages-that-do-not-come-with-Emacs">
-<title>Where can I get Emacs Lisp packages that don&#8217;t come with Emacs?</title>
+<title>Emacsに同梱されていないEmacs Lispパッケージはどこで入手できるのか?</title>
 <indexterm role="cp"><primary>Unbundled packages</primary></indexterm>
 <indexterm role="cp"><primary>Finding other packages</primary></indexterm>
 <indexterm role="cp"><primary>Lisp packages that do not come with Emacs</primary></indexterm>
@@ -2496,7 +2495,7 @@ ELPAをチェックした後は、ウェブ検索が結果を見い出す最良�
 </para>
 </sect1>
 <sect1 label="8.4" id="Spell_002dcheckers">
-<title>Spell-checkers</title>
+<title>スペルチェッカー</title>
 <indexterm role="cp"><primary>Spell-checker</primary></indexterm>
 <indexterm role="cp"><primary>Checking spelling</primary></indexterm>
 <indexterm role="cp"><primary>Hunspell</primary></indexterm>
@@ -2522,7 +2521,7 @@ ELPAをチェックした後は、ウェブ検索が結果を見い出す最良�
 </listitem></varlistentry></variablelist>
 </sect1>
 <sect1 label="8.5" id="Current-GNU-distributions">
-<title>Where can I get other up-to-date GNU stuff?</title>
+<title>その他の最新のGNUスタッフはどこで入手できる?</title>
 <indexterm role="cp"><primary>Current GNU distributions</primary></indexterm>
 <indexterm role="cp"><primary>Sources for current GNU distributions</primary></indexterm>
 <indexterm role="cp"><primary>Stuff, current GNU</primary></indexterm>
@@ -2540,7 +2539,7 @@ ELPAをチェックした後は、ウェブ検索が結果を見い出す最良�
 </para>
 </sect1>
 <sect1 label="8.6" id="Difference-between-Emacs-and-XEmacs">
-<title>What is the difference between Emacs and XEmacs (formerly Lucid Emacs)?</title>
+<title>EmacsとXEmacs(以前はLucid Emacs)の違いは?</title>
 <indexterm role="cp"><primary>XEmacs</primary></indexterm>
 <indexterm role="cp"><primary>Difference Emacs and XEmacs</primary></indexterm>
 <indexterm role="cp"><primary>Lucid Emacs</primary></indexterm>
@@ -2560,7 +2559,7 @@ and XEmacs&#8221;と記述するほうが良いでしょう。
 </para>
 </sect1>
 <sect1 label="8.7" id="Emacs-for-minimalists">
-<title>I don&#8217;t have enough disk space to install Emacs</title>
+<title>Emacsをインストールするための空き容量が不十分</title>
 <indexterm role="cp"><primary>Zile</primary></indexterm>
 <indexterm role="cp"><primary>Not enough disk space to install Emacs</primary></indexterm>
 
@@ -2572,7 +2571,7 @@ Emacs</literal>&#8217;を短縮したものです。これにはEmacsの基本�
 
 </sect1>
 <sect1 label="8.8" id="Emacs-for-MS_002dDOS">
-<title>Where can I get Emacs for MS-DOS?</title>
+<title>MS-DOS用のEmacsはどこ?</title>
 <indexterm role="cp"><primary>MS-DOS, Emacs for</primary></indexterm>
 <indexterm role="cp"><primary>DOS, Emacs for</primary></indexterm>
 <indexterm role="cp"><primary>Compiling Emacs for DOS</primary></indexterm>
@@ -2596,7 +2595,7 @@ literature,&#8221;のリストを参照してください。
 </para>
 </sect1>
 <sect1 label="8.9" id="Emacs-for-MS_002dWindows">
-<title>Where can I get Emacs for Microsoft Windows?</title>
+<title>Microsoft Windows用のEmacsはどこ?</title>
 <indexterm role="cp"><primary>FAQ for Emacs on MS-Windows</primary></indexterm>
 <indexterm role="cp"><primary>Emacs for MS-Windows</primary></indexterm>
 <indexterm role="cp"><primary>Microsoft Windows, Emacs for</primary></indexterm>
@@ -2607,14 +2606,14 @@ Windows</citetitle>を参照してください。MS-DOSの場合には<link link
 
 </sect1>
 <sect1 label="8.10" id="Emacs-for-GNUstep">
-<title>Where can I get Emacs for GNUstep?</title>
+<title>GNUstep用のEmacsはどこ?</title>
 <indexterm role="cp"><primary>GNUstep, Emacs for</primary></indexterm>
 
 <para>バージョン23.1からEmacsはGNUstepをネイティブでサポートしています。ディストリビューション内のファイル<filename>nextstep/INSTALL</filename>を参照してください。
 </para>
 </sect1>
 <sect1 label="8.11" id="Emacs-for-macOS">
-<title>Where can I get Emacs for macOS?</title>
+<title>macOS用のEmacsはどこ?</title>
 <indexterm role="cp"><primary>Apple computers, Emacs for</primary></indexterm>
 <indexterm role="cp"><primary>Macintosh, Emacs for</primary></indexterm>
 <indexterm role="cp"><primary>macOS, Emacs for</primary></indexterm>
@@ -2625,12 +2624,12 @@ Windows</citetitle>を参照してください。MS-DOSの場合には<link link
 </sect1>
 </chapter>
 <chapter label="9" id="Key-bindings">
-<title>Key bindings</title>
+<title>キープバインディング</title>
 <indexterm role="cp"><primary>Key bindings</primary></indexterm>
 
 
 <sect1 label="9.1" id="Binding-keys-to-commands">
-<title>How do I bind keys (including function keys) to commands?</title>
+<title>キー(ファンクションキー含む)をコマンドにインストールするには?</title>
 <indexterm role="cp"><primary>Binding keys to commands</primary></indexterm>
 <indexterm role="cp"><primary>Keys, binding to commands</primary></indexterm>
 <indexterm role="cp"><primary>Commands, binding keys to</primary></indexterm>
@@ -2678,7 +2677,7 @@ C-g</userinput>とタイプ、
 </listitem></itemizedlist>
 </sect1>
 <sect1 label="9.2" id="Invalid-prefix-characters">
-<title>Why does Emacs say &#8216;<literal>Key sequence XXX uses invalid prefix characters</literal>&#8217;?</title>
+<title>Emacsが&#8216;<literal>Key sequence XXX uses invalid prefix characters</literal>&#8217;と言うのはなぜ?</title>
 <indexterm role="cp"><primary>Prefix characters, invalid</primary></indexterm>
 <indexterm role="cp"><primary>Invalid prefix characters</primary></indexterm>
 <indexterm role="cp"><primary>Misspecified key sequences</primary></indexterm>
@@ -2692,7 +2691,7 @@ key)</firstterm>がすでに<firstterm>コンプリートキー(complete key)</f
 </programlisting>
 </sect1>
 <sect1 label="9.3" id="Terminal-setup-code-works-after-Emacs-has-begun">
-<title>Why doesn&#8217;t this [terminal or window-system setup] code work in my <filename>.emacs</filename> file, but it works just fine after Emacs starts up?</title>
+<title>Emacs起動後でなければ<filename>.emacs</filename>ファイルの[端末やウィンドウシステム]のセットアップコードが機能しないのはなぜ?</title>
 <indexterm role="cp"><primary>Terminal setup code in <filename>.emacs</filename></primary></indexterm>
 
 <para>スタートアップの間、Emacsは与えられたコード/ファイルの順番に応じて自身を初期化します。<filename>.emacs</filename>ファイルの中のあるコードを、端末またはウィンドウシステムのセットアップコードが実行されるまで延期する必要があるのにセットアップが終わっていないと、この問題を体験することになるでしょう(このコード/ファイルの実行順はスタートアップ後は強制されない)。
@@ -2711,7 +2710,7 @@ list)</firstterm>として<literal>emacs-startup-hook</literal> (またはEmacs
 </para>
 </sect1>
 <sect1 label="9.4" id="Working-with-function-and-arrow-keys">
-<title>How do I tell what characters or symbols my function or arrow keys emit?</title>
+<title>ファンクションキーや矢印キーが発する文字やシンボルを確認するには?</title>
 <indexterm role="cp"><primary>Working with arrow keys</primary></indexterm>
 <indexterm role="cp"><primary>Arrow keys, symbols generated by</primary></indexterm>
 <indexterm role="cp"><primary>Working with function keys</primary></indexterm>
@@ -2723,7 +2722,7 @@ c</userinput>の後にファンクションキーか矢印キーをタイプし�
 </para>
 </sect1>
 <sect1 label="9.5" id="X-key-translations-for-Emacs">
-<title>How do I set the X key &#8220;translations&#8221; for Emacs?</title>
+<title>Xのキー変換をEmacs用に設定するには?</title>
 <indexterm role="cp"><primary>X key translations</primary></indexterm>
 <indexterm role="cp"><primary>Key translations under X</primary></indexterm>
 <indexterm role="cp"><primary>Translations for keys under X</primary></indexterm>
@@ -2739,7 +2738,7 @@ c</userinput>の後にファンクションキーか矢印キーをタイプし�
 </para>
 </sect1>
 <sect1 label="9.6" id="Backspace-invokes-help">
-<title>Why does the <keycap>Backspace</keycap> key invoke help?</title>
+<title><keycap>Backspace</keycap>キーがヘルプを呼び出すのはなぜ?</title>
 <indexterm role="cp"><primary><keycap>Backspace</keycap> key invokes help</primary></indexterm>
 <indexterm role="cp"><primary>Help invoked by <keycap>Backspace</keycap></primary></indexterm>
 <indexterm role="cp"><primary><keycap>DEL</keycap> key does not delete</primary></indexterm>
@@ -2798,7 +2797,7 @@ Lisp documentation</link>を参照のこと。
 </para>
 </sect1>
 <sect1 label="9.7" id="Swapping-keys">
-<title>How do I swap two keys?</title>
+<title>2つのキーを入れ替えるには?</title>
 <indexterm role="cp"><primary>Swapping keys</primary></indexterm>
 <indexterm role="cp"><primary>Keys, swapping</primary></indexterm>
 <indexterm role="cp"><primary><literal>keyboard-translate</literal></primary></indexterm>
@@ -2817,7 +2816,7 @@ Does Not Delete&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照�
 </para>
 </sect1>
 <sect1 label="9.8" id="Producing-C_002dXXX-with-the-keyboard">
-<title>How do I produce C-XXX with my keyboard?</title>
+<title>キーボードでC-XXXを生成するには?</title>
 <indexterm role="cp"><primary>Producing control characters</primary></indexterm>
 <indexterm role="cp"><primary>Generating control characters</primary></indexterm>
 <indexterm role="cp"><primary>Control characters, generating</primary></indexterm>
@@ -2850,7 +2849,7 @@ w</userinput>コマンドを試してみることもできます。
 </para>
 </sect1>
 <sect1 label="9.9" id="No-Meta-key">
-<title>What if I don&#8217;t have a <keycap>Meta</keycap> key?</title>
+<title><keycap>Meta</keycap>キーがない、どうすれば?</title>
 <indexterm role="cp"><primary>No <keycap>Meta</keycap> key</primary></indexterm>
 <indexterm role="cp"><primary><keycap>Meta</keycap> key, what to do if you lack it</primary></indexterm>
 
@@ -2862,7 +2861,7 @@ a</userinput>に変換しています(<literal>meta-prefix-char</literal>の値�
 </para>
 </sect1>
 <sect1 label="9.10" id="No-Escape-key">
-<title>What if I don&#8217;t have an <keycap>Escape</keycap> key?</title>
+<title><keycap>Escape</keycap>キーがない、どうすれば?</title>
 <indexterm role="cp"><primary>No Escape key</primary></indexterm>
 <indexterm role="cp"><primary>Lacking an Escape key</primary></indexterm>
 <indexterm role="cp"><primary>Escape key, lacking</primary></indexterm>
@@ -2874,7 +2873,7 @@ a</userinput>に変換しています(<literal>meta-prefix-char</literal>の値�
 </programlisting>
 </sect1>
 <sect1 label="9.11" id="Compose-Character">
-<title>Can I make my <keycap>Compose Character</keycap> key behave like a <keycap>Meta</keycap> key?</title>
+<title><keycap>Compose Character</keycap>キーを<keycap>Meta</keycap>キーのように機能させるには?</title>
 <indexterm role="cp"><primary><keycap>Compose Character</keycap> key, using as <keycap>Meta</keycap></primary></indexterm>
 <indexterm role="cp"><primary><keycap>Meta</keycap>, using <keycap>Compose Character</keycap> for</primary></indexterm>
 
@@ -2882,7 +2881,7 @@ a</userinput>に変換しています(<literal>meta-prefix-char</literal>の値�
 </para>
 </sect1>
 <sect1 label="9.12" id="Binding-combinations-of-modifiers-and-function-keys">
-<title>How do I bind a combination of modifier key and function key?</title>
+<title>修飾キーとファンクションキーの組み合わせをバインドするには?</title>
 <indexterm role="cp"><primary>Modifiers and function keys</primary></indexterm>
 <indexterm role="cp"><primary>Function keys and modifiers</primary></indexterm>
 <indexterm role="cp"><primary>Binding modifiers and function keys</primary></indexterm>
@@ -2905,7 +2904,7 @@ a</userinput>に変換しています(<literal>meta-prefix-char</literal>の値�
 </para>
 </sect1>
 <sect1 label="9.13" id="Meta-key-does-not-work-in-xterm">
-<title>Why doesn&#8217;t my <keycap>Meta</keycap> key work in an <literal>xterm</literal> window?</title>
+<title><literal>xterm</literal>ウィンドウで<keycap>Meta</keycap>キーが機能しないのはなぜ?</title>
 <indexterm role="cp"><primary><keycap>Meta</keycap> key and <literal>xterm</literal></primary></indexterm>
 <indexterm role="cp"><primary>Xterm and <keycap>Meta</keycap> key</primary></indexterm>
 
@@ -2948,7 +2947,7 @@ W</userinput>を生成させることができる。これはいずれにせよ<
 </listitem></itemizedlist>
 </sect1>
 <sect1 label="9.14" id="ExtendChar-key-does-not-work-as-Meta">
-<title>Why doesn&#8217;t my <keycap>ExtendChar</keycap> key work as a <keycap>Meta</keycap> key under HP-UX 8.0 and 9.x?</title>
+<title>HP-UX 8.0および9.xで<keycap>ExtendChar</keycap>キーが<keycap>Meta</keycap>キーのように機能しないのはなぜ?</title>
 <indexterm role="cp"><primary><keycap>ExtendChar</keycap> key as <keycap>Meta</keycap></primary></indexterm>
 <indexterm role="cp"><primary><keycap>Meta</keycap>, using <keycap>ExtendChar</keycap> for</primary></indexterm>
 <indexterm role="cp"><primary>HP-UX, the <keycap>ExtendChar</keycap> key</primary></indexterm>
@@ -2964,7 +2963,7 @@ W</userinput>を生成させることができる。これはいずれにせよ<
 </para>
 </sect1>
 <sect1 label="9.15" id="SPC-no-longer-completes-file-names">
-<title>Why doesn&#8217;t <keycap>SPC</keycap> complete file names anymore?</title>
+<title><keycap>SPC</keycap>でファイル名が他の人されなくなった、なぜ?</title>
 <indexterm role="cp"><primary><userinput>SPC</userinput> file name completion</primary></indexterm>
 
 <para>Emacs
@@ -2982,12 +2981,12 @@ W</userinput>を生成させることができる。これはいずれにせよ<
 </sect1>
 </chapter>
 <chapter label="10" id="Alternate-character-sets">
-<title>Alternate character sets</title>
+<title>代替文字集合</title>
 <indexterm role="cp"><primary>Alternate character sets</primary></indexterm>
 
 
 <sect1 label="10.1" id="Emacs-does-not-display-8_002dbit-characters">
-<title>How do I make Emacs display 8-bit characters?</title>
+<title>Emacsで8ビット文字を表示するには?</title>
 <indexterm role="cp"><primary>Displaying eight-bit characters</primary></indexterm>
 <indexterm role="cp"><primary>Eight-bit characters, displaying</primary></indexterm>
 
@@ -2997,7 +2996,7 @@ Manual</citetitle>を参照してください。Unixのテキストのみの端�
 </para>
 </sect1>
 <sect1 label="10.2" id="Inputting-eight_002dbit-characters">
-<title>How do I input eight-bit characters?</title>
+<title>8ビット文字を入力するには?</title>
 <indexterm role="cp"><primary>Entering eight-bit characters</primary></indexterm>
 <indexterm role="cp"><primary>Eight-bit characters, entering</primary></indexterm>
 <indexterm role="cp"><primary>Input, 8-bit characters</primary></indexterm>
@@ -3008,7 +3007,7 @@ Methods&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してく�
 </para>
 </sect1>
 <sect1 label="10.3" id="Right_002dto_002dleft-alphabets">
-<title>Where is an Emacs that can handle Semitic (right-to-left) alphabets?</title>
+<title>セム語アルファベット(右から左に記述)を扱えるEmacsを入手できるのはどこ?</title>
 <indexterm role="cp"><primary>Right-to-left alphabets</primary></indexterm>
 <indexterm role="cp"><primary>Hebrew, handling with Emacs</primary></indexterm>
 <indexterm role="cp"><primary>Semitic alphabets</primary></indexterm>
@@ -3023,7 +3022,7 @@ display</link>を参照してください。
 
 </sect1>
 <sect1 label="10.4" id="How-to-add-fonts">
-<title>How do I add fonts for use with Emacs?</title>
+<title>Emacsで使うフォントを追加するには?</title>
 <indexterm role="cp"><primary>add fonts for use with Emacs</primary></indexterm>
 <indexterm role="cp"><primary>intlfonts</primary></indexterm>
 
@@ -3107,132 +3106,109 @@ medium</literal>&#8217;の選択ができるようになりました。
 </sect1>
 </chapter>
 <chapter label="11" id="Mail-and-news">
-<title>Mail and news</title>
+<title>メールとニュース</title>
 <indexterm role="cp"><primary>Mail and news</primary></indexterm>
 
 
 <sect1 label="11.1" id="Changing-the-included-text-prefix">
-<title>How do I change the included text prefix in mail/news followups?</title>
+<title>メール/ニュースのフォローアップにふくまるテキストプレフィクスを変更するには?</title>
 <indexterm role="cp"><primary>Prefix in mail/news followups, changing</primary></indexterm>
 <indexterm role="cp"><primary>Included text prefix, changing</primary></indexterm>
 <indexterm role="cp"><primary>Setting the included text character</primary></indexterm>
 <indexterm role="cp"><primary>Quoting in mail messages</primary></indexterm>
 
-<para>If you read mail with Rmail, set the variable <literal>mail-yank-prefix</literal>.  For
-Gnus, set <literal>message-yank-prefix</literal>.  For VM, set
-<literal>vm-included-text-prefix</literal>.  For mh-e, set <literal>mh-ins-buf-prefix</literal>.
+<para>メールをRmailで読んでいる場合には変数<literal>mail-yank-prefix</literal>、Gnusなら<literal>message-yank-prefix</literal>、VMなら<literal>vm-included-text-prefix</literal>、mh-eなら<literal>mh-ins-buf-prefix</literal>をセットしてください。
 </para>
-<para>For fancier control of citations, use Supercite (see section &#8220;the Supercite
-Manual&#8221; in <citetitle>The Supercite Manual</citetitle>).
+<para>より装飾的に引用を制御するにはSupercite(section &#8220;the Supercite Manual&#8221; in <citetitle>The Supercite
+Manual</citetitle>を参照)を使用してください。
 </para>
-<para>To prevent Emacs from including various headers of the replied-to message,
-set the value of <literal>mail-yank-ignored-headers</literal> to an appropriate regexp.
+<para>Emacsが返信先メッセージの様々なヘッダーを含めないようにするには、<literal>mail-yank-ignored-headers</literal>の値に適切な正規表現をセットしてください。
 </para>
 </sect1>
 <sect1 label="11.2" id="Saving-a-copy-of-outgoing-mail">
-<title>How do I save a copy of outgoing mail?</title>
+<title>送信メールのコピーを保存するには?</title>
 <indexterm role="cp"><primary>Saving a copy of outgoing mail</primary></indexterm>
 <indexterm role="cp"><primary>Copying outgoing mail to a file</primary></indexterm>
 <indexterm role="cp"><primary>Filing outgoing mail</primary></indexterm>
 <indexterm role="cp"><primary>Automatic filing of outgoing mail</primary></indexterm>
 <indexterm role="cp"><primary>Mail, saving outgoing automatically</primary></indexterm>
 
-<para>You can either mail yourself a copy by including a &#8216;<literal>BCC</literal>&#8217; header in the
-mail message, or store a copy of the message directly to a file by including
-an &#8216;<literal>FCC</literal>&#8217; header.
+<para>メールメッセージの&#8216;<literal>BCC</literal>&#8217;ヘッダーに自分を含めて自分にコピーをメールしたり、あるいは&#8216;<literal>FCC</literal>&#8217;ヘッダーにファイルを含めてメッセージのコピーを直接保存できます。
 </para>
-<para>If you use standard mail, you can automatically create a &#8216;<literal>BCC</literal>&#8217; to
-yourself by putting
+<para>標準的なメールを使用しているなら、以下を<filename>.emacs</filename>ファイル記述して自分への&#8216;<literal>BCC</literal>&#8217;を自動的に作成できます。
 </para>
 <programlisting>(setq mail-self-blind t)
 </programlisting>
-<para>in your <filename>.emacs</filename> file.  You can automatically include an &#8216;<literal>FCC</literal>&#8217;
-field by putting something like the following in your <filename>.emacs</filename> file:
+<para>以下のような行を<filename>.emacs</filename>ファイルに記述すれば、自動的に&#8216;<literal>FCC</literal>&#8217;フィールドを含めることができます:
 </para>
 <programlisting>(setq mail-archive-file-name (expand-file-name &quot;~/outgoing&quot;))
 </programlisting>
-<para>The output file will be in Unix mail format.
+<para>出力ファイルは Unixのメール形式になります。
 </para>
-<para>If you use <literal>mh-e</literal>, add an &#8216;<literal>FCC</literal>&#8217; or &#8216;<literal>BCC</literal>&#8217; field to your
-components file.
+<para><literal>mh-e</literal>を使用しているなら&#8216;<literal>FCC</literal>&#8217;と&#8216;<literal>BCC</literal>&#8217;のフィールドをコンポーネントファイルに加えてください。
 </para>
-<para>It does not work to put &#8216;<literal>set record filename</literal>&#8217; in the <filename>.mailrc</filename>
-file.
+<para><filename>.mailrc</filename>に&#8216;<literal>set record filename</literal>&#8217;を記述しても機能しません。
 </para>
 </sect1>
 <sect1 label="11.3" id="Expanding-aliases-when-sending-mail">
-<title>Why doesn&#8217;t Emacs expand my aliases when sending mail?</title>
+<title>送信時にEmacsがエイリアスを展開しない、なぜ?</title>
 <indexterm role="cp"><primary>Expanding aliases when sending mail</primary></indexterm>
 <indexterm role="cp"><primary>Mail alias expansion</primary></indexterm>
 <indexterm role="cp"><primary>Sending mail with aliases</primary></indexterm>
 
-<para>See section &#8220;The Emacs Manual&#8221; in <citetitle>The Emacs Manual</citetitle>.
+<para>section &#8220;The Emacs Manual&#8221; in <citetitle>The Emacs Manual</citetitle>を参照してください。
 </para>
 <itemizedlist>
-<listitem><para>Normally, Emacs expands aliases when you send the message.  To expand them
-before this, use <userinput>M-x expand-mail-aliases</userinput>.
+<listitem><para>Emacsは通常はメール送信の際にエイリアスを展開する。送信前に展開するには<userinput>M-x expand-mail-aliases</userinput>を使用する。
 </para>
-</listitem><listitem><para>Emacs normally only reads the <filename>.mailrc</filename> file once per session, when you
-start to compose your first mail message.  If you edit the file after this,
-you can use <userinput>M-x build-mail-aliases</userinput> to make Emacs reread it.  Prior to
-Emacs 24.1, this is not an interactive command, so you must instead type
-<userinput>M-: (build-mail-aliases) <keycap>RET</keycap></userinput>.
+</listitem><listitem><para>Emacsは通常はセッションごとに1回、最初のメールメッセージを作成するときしか<filename>.mailrc</filename>ファイルを読み込まない。その後にファイルを編集したら<userinput>M-x
+build-mail-aliases</userinput>を使用してEmacsに再読み込みさせることができる。これはEmacs
+24.1以前は対話的なコマンドではないので、かわりに<userinput>M-: (build-mail-aliases)
+<keycap>RET</keycap></userinput>とタイプしなければならない。
 </para>
-</listitem><listitem><para>If you like, you can expand mail aliases as abbrevs, as soon as you type
-them in.  To enable this feature, execute the following:
+</listitem><listitem><para>もしも望むならabbrevとしてタイプすればすぐにメールエイリアスを展開できる。この機能を有効にするには以下を実行する:
 </para>
 <programlisting>(add-hook 'mail-mode-hook 'mail-abbrevs-setup)
 </programlisting>
-<para>Note that the aliases are expanded automatically only after you type a
-word-separator character (e.g., <keycap>RET</keycap> or <userinput>,</userinput>).  You can force their
-expansion by moving point to the end of the alias and typing <userinput>C-x a e</userinput>
-(<userinput>M-x expand-abbrev</userinput>).
+<para>エイリアスは単語区切り文字(<keycap>RET</keycap>や<userinput>,</userinput>)をタイプした後でのみ自動的に展開される。エイリアス終端にポイントを移動して<userinput>C-x
+a e</userinput> (<userinput>M-x expand-abbrev</userinput>)をタイプして強制的に展開させることができる。
 </para></listitem></itemizedlist>
 </sect1>
 <sect1 label="11.4" id="Sorting-the-messages-in-an-Rmail-folder">
-<title>How can I sort the messages in my Rmail folder?</title>
+<title>Rmailフォルダーｎメッセージを並び替えるには?</title>
 <indexterm role="cp"><primary>Rmail, sorting messages in</primary></indexterm>
 <indexterm role="cp"><primary>Folder, sorting messages in an Rmail</primary></indexterm>
 <indexterm role="cp"><primary>Sorting messages in an Rmail folder</primary></indexterm>
 
-<para>In Rmail, type <userinput>C-c C-s C-h</userinput> to get a list of sorting functions and
-their key bindings.
+<para>Rmailでソート関数とそれらのキーバインディングのリストを得るには<userinput>C-c C-s C-h</userinput>とタイプします。
 </para>
 </sect1>
 <sect1 label="11.5" id="Rmail-writes-to-_002fvar_002fspool_002fmail">
-<title>Why does Rmail need to write to <filename>/var/spool/mail</filename>?</title>
+<title>Rmailが<filename>/var/spool/mail</filename>への書き込みを必要とするのはなぜ?</title>
 <indexterm role="cp"><primary>Rmail and <filename>/var/spool/mail</filename></primary></indexterm>
 <indexterm role="cp"><primary><filename>/var/spool/mail</filename> and Rmail</primary></indexterm>
 
-<para>This is the behavior of the <literal>movemail</literal> program which Rmail uses.  This
-indicates that <literal>movemail</literal> is configured to use lock files.
+<para>これはRmailが使用する<literal>movemail</literal>プログラムの振る舞いです。これは<literal>movemail</literal>がロックファイルを使うように設定されていることを示しています。
 </para>
 <para>RMSは記しています:
 </para>
-<blockquote><para>Certain systems require lock files to interlock access to mail files.  On
-these systems, <literal>movemail</literal> must write lock files, or you risk losing
-mail.  You simply must arrange to let <literal>movemail</literal> write them.
+<blockquote><para>特定のシステムではメールファイルへのアクセスをインターロックするためにロックファイルが必要です。これらのシステムでは<literal>movemail</literal>はロックファイルに書き込まなければなりません。さもないとメールを失うリスクがあるからです。あなたはただ<literal>movemail</literal>にロックファイルを書き込ませるようアレンジしなければなりません。
 </para>
-<para>Other systems use the <literal>flock</literal> system call to interlock access.  On
-these systems, you should configure <literal>movemail</literal> to use <literal>flock</literal>.
+<para>他のシステムではインターロックアクセスのために<literal>flock</literal>システムコールを使用します。これらのシステムでは<literal>flock</literal>を使用するように<literal>movemail</literal>を設定するべきです。
 </para></blockquote>
 </sect1>
 <sect1 label="11.6" id="Replying-to-the-sender-of-a-message">
-<title>How can I force Rmail to reply to the sender of a message, but not the other recipients?</title>
+<title>他の受信者を除き送信者だけにRmailが返信するよう強制するには?</title>
 <indexterm role="cp"><primary>Replying only to the sender of a message</primary></indexterm>
 <indexterm role="cp"><primary>Sender, replying only to</primary></indexterm>
 <indexterm role="cp"><primary>Rmail, replying to the sender of a message in</primary></indexterm>
 
 <!-- isaacson@@seas.upenn.edu -->
-<para>Ron Isaacson says: When you hit <userinput>r</userinput> to reply in Rmail, by default it Ccs
-all of the original recipients (everyone on the original &#8216;<literal>To</literal>&#8217; and
-&#8216;<literal>CC</literal>&#8217; lists). With a prefix argument (i.e., typing <userinput>C-u</userinput> before
-<userinput>r</userinput>), it replies only to the sender.  However, going through the whole
-<userinput>C-u</userinput> business every time you want to reply is a pain.  This is the best
-fix I&#8217;ve been able to come up with:
+<para>Ron Isaacsonは述べています:
+Rmailで返信するために<userinput>r</userinput>をタイプすると、デフォルトでは元の受信者すべて(元の&#8216;<literal>To</literal>&#8217;と&#8216;<literal>CC</literal>&#8217;のリスト全員)にCCされます。(<userinput>r</userinput>の前に<userinput>C-u</userinput>をタイプして)プレフィクス引数を指定すると、送信者だけに返信します。とはいえ返信したいときに全体を通して<userinput>C-u</userinput>作業を行うのは苦痛です。以下はわたしがこれに対処した中では最良の修整です。
 </para>
 <programlisting>(defun rmail-reply-t ()
-  &quot;Reply only to the sender of the current message. (See rmail-reply.)&quot;
+  &quot;カレントメッセージの送信者だけに返信する(rmail-replyを参照)&quot;
   (interactive)
   (rmail-reply t))
 
@@ -3243,32 +3219,29 @@ fix I&#8217;ve been able to come up with:
 </programlisting>
 </sect1>
 <sect1 label="11.7" id="Automatically-starting-a-mail-or-news-reader">
-<title>How do I make Emacs automatically start my mail/news reader?</title>
+<title>メール/ニュースリーダーをEmacsに自動的に開始させるには?</title>
 <indexterm role="cp"><primary>Mail reader, starting automatically</primary></indexterm>
 <indexterm role="cp"><primary>News reader, starting automatically</primary></indexterm>
 <indexterm role="cp"><primary>Starting mail/news reader automatically</primary></indexterm>
 
-<para>To start Emacs in Gnus:
+<para>EmacsをGnusで開始するには:
 </para>
 <screen>emacs -f gnus
 </screen>
-<para>in Rmail:
+<para>Rmailでは:
 </para>
 <screen>emacs -f rmail
 </screen>
-<para>A more convenient way to start with Gnus:
+<para>Gnusでより便利に開始するには:
 </para>
 <screen>alias gnus 'emacs -f gnus'
 gnus
 </screen>
-<para>It is probably unwise to automatically start your mail or news reader from
-your <filename>.emacs</filename> file.  This would cause problems if you needed to run two
-copies of Emacs at the same time.  Also, this would make it difficult for
-you to start Emacs quickly when you needed to.
+<para><filename>.emacs</filename>ファイルから自動的にメールやニュースを開始するのは、恐らく賢明ではないでしょう。これは同時に2つのEmacsを実行する必要がある場合には問題を起こすかもしれません。更に必要な際に素早くEmacsを開始するのが困難になるかもしれません。
 </para>
 </sect1>
 <sect1 label="11.8" id="Reading-news-with-Emacs">
-<title>How do I read news under Emacs?</title>
+<title>Emacsでニュースを読むには?</title>
 <indexterm role="cp"><primary>Reading news under Emacs</primary></indexterm>
 <indexterm role="cp"><primary>Usenet reader in Emacs</primary></indexterm>
 <indexterm role="cp"><primary>Gnus newsreader</primary></indexterm>
@@ -3276,13 +3249,13 @@ you to start Emacs quickly when you needed to.
 <indexterm role="cp"><primary>Gnus FAQ</primary></indexterm>
 <indexterm role="cp"><primary>Learning more about Gnus</primary></indexterm>
 
-<para>Use <userinput>M-x gnus</userinput>.  For more information on Gnus, see section &#8220;the Gnus
-Manual&#8221; in <citetitle>The Gnus Manual</citetitle>, which includes section &#8220;the Gnus FAQ&#8221; in <citetitle>The Gnus Manual</citetitle>.
+<para><userinput>M-x gnus</userinput>を使用します。section &#8220;the Gnus FAQ&#8221; in <citetitle>The Gnus Manual</citetitle>に含まれているsection &#8220;the Gnus Manual&#8221; in <citetitle>The Gnus
+Manual</citetitle>を参照してください。
 </para>
 
 </sect1>
 <sect1 label="11.9" id="Making-Gnus-faster">
-<title>How do I make Gnus faster?</title>
+<title>Gnusわ高速にするには?</title>
 <indexterm role="cp"><primary>Faster, starting Gnus</primary></indexterm>
 <indexterm role="cp"><primary>Starting Gnus faster</primary></indexterm>
 <indexterm role="cp"><primary>Gnus, starting faster</primary></indexterm>
@@ -3290,28 +3263,23 @@ Manual&#8221; in <citetitle>The Gnus Manual</citetitle>, which includes section 
 <indexterm role="cp"><primary>Gnus is slow when catching up</primary></indexterm>
 <indexterm role="cp"><primary>Crosspostings make Gnus catching up slow</primary></indexterm>
 
-<para>From the Gnus FAQ (see <link linkend="Reading-news-with-Emacs">Reading news with Emacs</link>):
+<para>Gnus FAQ(<link linkend="Reading-news-with-Emacs">Reading news with Emacs</link>を参照)から引用します:
 </para>
-<blockquote><para>If you have a slow machine, or are just really impatient, there are a few
-things you can do to make Gnus run faster.
+<blockquote><para>古いマシンの場合、あるいは実際にじれったいだけなら、Gnusの実行を高速にするためにできることがあります。
 </para>
-<para>Set <literal>gnus-check-new-newsgroups</literal> and <literal>gnus-check-bogus-newsgroups</literal>
-to <literal>nil</literal> to make startup faster.
+<para>起動をより高速にするためには<literal>gnus-check-new-newsgroups</literal>と<literal>gnus-check-bogus-newsgroups</literal>に<literal>nil</literal>をセットしてください。
 </para>
-<para>Set <literal>gnus-show-threads</literal>, <literal>gnus-use-cross-reference</literal> and
-<literal>gnus-nov-is-evil</literal> to <literal>nil</literal> to make entering and exiting the
-summary buffer faster.
+<para>summaryバッファーへの出入りをより高速にするために<literal>gnus-show-threads</literal>、<literal>gnus-nov-is-evil</literal>、<literal>gnus-use-cross-reference</literal>に<literal>nil</literal>をセットしてください。
 </para></blockquote>
 </sect1>
 <sect1 label="11.10" id="Catching-up-in-all-newsgroups">
-<title>How do I catch up all newsgroups in Gnus?</title>
+<title>Gnusの全ニュースグループをキャッチアップするには?</title>
 <indexterm role="cp"><primary>Catching up all newsgroups in Gnus</primary></indexterm>
 <indexterm role="cp"><primary>Gnus, Catching up all newsgroups in</primary></indexterm>
 
-<para>In the <filename>*Newsgroup*</filename> buffer, type <userinput>M-&lt; C-x ( c y C-x ) M-0 C-x e</userinput>
+<para><filename>*Newsgroup*</filename>バッファーで<userinput>M-&lt; C-x ( c y C-x ) M-0 C-x e</userinput>とタイプします。
 </para>
-<para>Leave off the initial <userinput>M-&lt;</userinput> if you only want to catch up from point to
-the end of the <filename>*Newsgroup*</filename> buffer.
+<para><filename>*Newsgroup*</filename>バッファーのポイント位置からバッファー終端までを確認したいだけなら、先頭の<userinput>M-&lt;</userinput>は省略してください。
 </para>
 </sect1>
 </chapter>

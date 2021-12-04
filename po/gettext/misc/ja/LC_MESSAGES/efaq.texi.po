@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: XXXX-XX.X\n"
 "POT-Creation-Date: 2021-12-02 12:06\n"
-"PO-Revision-Date: 2021-12-04 10:30+0900\n"
+"PO-Revision-Date: 2021-12-04 10:38+0900\n"
 "Last-Translator: XXXX#translator\n"
 "Language-Team: XXXX#translators\n"
 "Language: ja\n"
@@ -269,7 +269,7 @@ msgid "@section How do I get rid of @samp{^M} or echoed commands in my shell buf
 msgstr "@section Shellバッファーから@samp{^M}やエコーされるコマンドを取り除くには?"
 
 msgid "@section Why do I get an error message when I try to run @kbd{M-x shell}?"
-msgstr ""
+msgstr "@section @kbd{M-x shell}を実行するとエラーメッセージを返されるのはなぜ?"
 
 msgid "@section Where is the termcap/terminfo entry for terminal type @samp{emacs}?"
 msgstr "@section 端末タイプ@samp{emacs}用のtermcap/terminfoエントリーはどこ?"
