@@ -27,7 +27,7 @@ function main () {
 	    
 	    if [ ${COMMAND} == "gettextize" ]
 	    then
-		GREP_STRING='^@((chapter)|((sub)*(section))|(appendix)(sub)*(sec)?)';
+		GREP_STRING='^@((chapter)|((sub)*(section))|(appendix)(sub)*(sec)?|(noindent)).+';
 		TEXI_FILE=$(realpath --relative-to ${REPOSITORY_ROOT} ${TEXI_FILE});
 		[ -d ${GETTEXT_ROOT}/${TEXI_FOLDER} ] || mkdir -p ${GETTEXT_ROOT}/${TEXI_FOLDER};
 		TEXTDOMAIN_DIRECTORY=$(realpath --relative-to ${REPOSITORY_ROOT} ${GETTEXT_ROOT}/${TEXI_FOLDER});
