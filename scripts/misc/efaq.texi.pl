@@ -3,7 +3,7 @@
 use Locale::TextDomain ("efaq.texi" => "./po/gettext/misc");
 my ($en, $ja);
 while (<>) {
-	($en, $ja) = (quotemeta('@chapter    Compiling and installing Emacs'), __ '@chapter    Compiling and installing Emacs'); s/$en/$ja/;
+	($en, $ja) = (quotemeta('@chapter Compiling and installing Emacs'), __ '@chapter Compiling and installing Emacs'); s/$en/$ja/;
 	($en, $ja) = (quotemeta('@chapter Alternate character sets'), __ '@chapter Alternate character sets'); s/$en/$ja/;
 	($en, $ja) = (quotemeta('@chapter Bugs and problems'), __ '@chapter Bugs and problems'); s/$en/$ja/;
 	($en, $ja) = (quotemeta('@chapter Common requests'), __ '@chapter Common requests'); s/$en/$ja/;
@@ -14,6 +14,9 @@ while (<>) {
 	($en, $ja) = (quotemeta('@chapter Key bindings'), __ '@chapter Key bindings'); s/$en/$ja/;
 	($en, $ja) = (quotemeta('@chapter Mail and news'), __ '@chapter Mail and news'); s/$en/$ja/;
 	($en, $ja) = (quotemeta('@chapter Status of Emacs'), __ '@chapter Status of Emacs'); s/$en/$ja/;
+	($en, $ja) = (quotemeta('@noindent If your Emacs version is older then 22.1, you will also need to use:'), __ '@noindent If your Emacs version is older then 22.1, you will also need to use:'); s/$en/$ja/;
+	($en, $ja) = (quotemeta('@noindent To achieve this, add the following line to your @file{.emacs}:'), __ '@noindent To achieve this, add the following line to your @file{.emacs}:'); s/$en/$ja/;
+	($en, $ja) = (quotemeta('@noindent To turn it on in a specific mode, use:'), __ '@noindent To turn it on in a specific mode, use:'); s/$en/$ja/;
 	($en, $ja) = (quotemeta('@section  How do I contact the FSF?'), __ '@section  How do I contact the FSF?'); s/$en/$ja/;
 	($en, $ja) = (quotemeta('@section  How do I unsubscribe from a mailing list?'), __ '@section  How do I unsubscribe from a mailing list?'); s/$en/$ja/;
 	($en, $ja) = (quotemeta('@section  What are appropriate messages for the various Emacs newsgroups?'), __ '@section  What are appropriate messages for the various Emacs newsgroups?'); s/$en/$ja/;

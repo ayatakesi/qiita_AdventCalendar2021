@@ -1,4 +1,4 @@
-This is efaq.info, produced by texi2any version 6.8 from efaq.texi.
+This is efaq.info, produced by makeinfo version 6.8 from efaq.texi.
 
 Copyright © 2001–2021 Free Software Foundation, Inc.
 Copyright © 1994, 1995, 1996, 1997, 1998, 1999, 2000 Reuven M. Lerner
@@ -173,7 +173,7 @@ File: efaq.info,  Node: Extended commands,  Next: Emacs manual,  Prev: Basic key
 ==========================
 
 ‘M-x COMMAND’は‘M-x’をタイプしてからコマンドの名前、その後に<RET>をタイ
-プする(‘M-x’や<RET>の意味があやふやなら*Note Basic keys::を参照)。
+プする(‘M-x’や<RET>の意味があやふやなら*note Basic keys::を参照)。
 
    (デフォルトでは)‘M-x’はコマンド‘execute-extended-command’を呼び出しま
 す。このコマンドによってコマンド名を覚えていれば任意のEmacsコマンドを実
@@ -213,7 +213,7 @@ Infoファイルをインストールしていないか、正しくインスト�
    Info内でこのFAQを読んでいるなら、リファレンス上で単に<RET>を押下すれ
 ばフォローできます。
 
-   Emacsマニュアルのハードコードをご所望なら*Note Getting a printed
+   Emacsマニュアルのハードコードをご所望なら*note Getting a printed
 manual::を参照してください。
 
 
@@ -227,18 +227,18 @@ File: efaq.info,  Node: File-name conventions,  Next: Common acronyms,  Prev: Em
 のいくつか(‘etc’や‘lisp’など)はインストール済みEmacsとソースの両方に存在
 しますが、ソース内でのみ見いだせるものもあります(‘src’など)。
 
-   ineEmacsを使っているもののシステム上のどこにあるか判らない場合には、
+   Emacsを使っているもののシステム上のどこにあるか判らない場合には、
 Emacsを起動して‘C-h v data-directory <RET>’とタイプしてください。表示さ
 れるディレクトリー名は、‘etc’ディレクトリーがインストールされたフルパス
 になるでしょう(このフルパスはEmacs変数‘data-directory’に記録されており、
 ‘C-h v’でこの値と変数のドキュメントが表示される)。
 
-   Infoディレクトリーはの場所(Infoドキュメントが格納されている場所)変数
-‘Info-default-directory-list’に保持されています。この変数の値(ディレクト
-リー名のリスト)を確認するには‘C-h v Info-default-directory-list <RET>’を
-使用してください。このリスト内にある最後のディレクトリーに、恐らくもっと
-も多くのInfoファイルが格納されているでしょう。デフォルトではEmacsの
-Infoドキュメントは‘/usr/local/share/info’にあります。
+   Infoディレクトリーの場所(Infoドキュメントが格納されている場所)は、変
+数‘Info-default-directory-list’に保持されています。この変数の値(ディレク
+トリー名のリスト)を確認するには‘C-h v Info-default-directory-list
+<RET>’を使用してください。このリスト内にある最後のディレクトリーに、恐ら
+くもっとも多くのInfoファイルが格納されているでしょう。デフォルトでは
+EmacsのInfoドキュメントは‘/usr/local/share/info’にあります。
 
    ‘etc’ディレクトリー内にあるいくつかのファイルに関する情報については
 *note Informational files for Emacs::を参照してください。
@@ -297,13 +297,13 @@ GNU 一般公衆利用許諾書、いわゆるGPL(コピーレフト)の真の�
 て定められるようなGPLが関与する著作権侵害の訴訟はこれまでに一度もありま
 せんでした。GPL条件への違反によって企業への訴訟が起こされましたが、これ
 までのところすべてが法廷外で(原告に有利に)和解されています。この問題に関
-しての議論は、どうかこの問題について大々的に罵り合うために作成されたニュ
-ースグループ<news:gnu.misc.discuss>で行ってください。
+しての議論は、どうかこの問題について盛大に言い合うために作成されたニュー
+スグループ<news:gnu.misc.discuss>で行うようお願いします。
 
    RMSは記しています:
 
      GNUコピーレフトの法的な意味は、Emacsがフリーソフトウェアプロジェク
-     トであり、Emacsに関連する作業もフリーソフトウェアであるべくだという
+     トであり、Emacsに関連する作業もフリーソフトウェアであるべきだという
      精神ほど重要ではありません。“フリー(free)”とはすべてのユーザーが
      Emacsを学び、共有して、変更や改善を行う自由(freedom)をもっていると
      いう意味です。すべての人がこの自由を有することを保証するために、あ
@@ -317,16 +317,16 @@ File: efaq.info,  Node: Guidelines for newsgroup postings,  Next: Newsgroup arch
 2.2 What are appropriate messages for the various Emacs newsgroups?
 ===================================================================
 
-Emacsメーリングリストのはthe Emacs Savannah page
+Emacsメーリングリストはthe Emacs Savannah page
 (https://savannah.gnu.org/mail/?group=emacs)に記述があります。それらのう
 ちのいくつかはニュースグループへゲートウェイされています。
 
    Emacsプログラム全般に関する議論はニュースグループ<news:comp.emacs>、
 <news:gnu.emacs.help>はGNU Emacsに特化したニュースグループです。したがっ
 てある問いにたいして適切なニュースグループは1つだけなので、両方のグルー
-プへのクロスポストには意味がありません。
+プへの多重投稿には意味がありません。
 
-   問題について大いに罵り合うために作成された<news:gnu.misc.discuss>を除
+   問題について派手に言い合うために作成された<news:gnu.misc.discuss>を除
 いて、“非フリー(non-free)”なソフトウェアを推奨するようなメッセージは
 ‘gnu.*’ニュースグループのすべてにおいて受け入れ難いものとみなされます。
 “非フリー”なソフトウェアにはエンドユーザーが自由にソースコードを改変した
@@ -334,8 +334,8 @@ Emacsメーリングリストのはthe Emacs Savannah page
 なソフトウェアを推奨するフォローアップを投稿する際には、‘Newsgroups:’行
 から‘gnu.*’グループを削除するよう注意してください。
 
-   <news:gnu.emacs.bug>はバグレポートを目にする場所ですが、このニュース
-グループに直接バグレポートを投稿することは避けてください(*note Reporting
+   <news:gnu.emacs.bug>ではバグレポートを目にしますが、このニュースグル
+ープに直接バグレポートを投稿することは避けてください(*note Reporting
 bugs::を参照)。
 
    最後にGNUのメーリングリストやニュースグループに投稿する前にGNU Kind
@@ -349,10 +349,9 @@ File: efaq.info,  Node: Newsgroup archives,  Next: Reporting bugs,  Prev: Guidel
 2.3 <news:gnu.emacs.help>や他のGNUグループへの古い投稿はどこで入手できる?
 =========================================================================
 
-網羅する範囲において意図していない齟齬があるかもしれませんが、FSFはGNUメ
-ーリングリストすべてのアーカイブを長年保守してきました。このアーカイブが
-the GNU mail archive (https://lists.gnu.org/r/)でウェブ上で閲覧できます
-。
+網羅する範囲において意図せぬずれがあるかもしれませんが、FSFはGNUメーリン
+グリストすべてのアーカイブを長年保守してきました。このアーカイブがthe
+GNU mail archive (https://lists.gnu.org/r/)でウェブ上で閲覧できます。
 
    Google (http://groups.google.com/groups/dir?q=gnu&)のようなウェブベー
 スのUsenet検索サービスでも‘gnu.*’はアーカイブされています。
@@ -380,13 +379,14 @@ File: efaq.info,  Node: Reporting bugs,  Next: Unsubscribing from Emacs lists,  
 
      バグレポートをthe help-gnu-emacs mailing list
      (https://lists.gnu.org/mailman/listinfo/help-gnu-emacs)
-     (<news:gnu.emacs.help>に投稿される効果をもつ)に送信するのは、ほとん
-     どは問題を解決するアイデアをもたない単なるユーザーである多数の人た
-     ちに不必要に費やさせるので望ましくありません。The bug-gnu-emacs
-     list (https://lists.gnu.org/mailman/listinfo/bug-gnu-emacs)なら何を
-     するべきか恐らくもっと知識があり、他のものよりもEmacsのメッセージを
-     受け取りたいと表明している、より少ない人たちにメッセージを届けられ
-     ます。
+     (<news:gnu.emacs.help>に投稿される効果をもつ)に送信するのは、(ほと
+     んどは問題を解決するアイデアをもたない単なるユーザーである)多数の人
+     たちの時間を不必要に費やさせるので望ましくありません。The
+     bug-gnu-emacs list
+     (https://lists.gnu.org/mailman/listinfo/bug-gnu-emacs)なら、恐らく
+     何をするべきかもっと知識があり、他のものよりもEmacsのメッセージを受
+     け取りたいと表明している、より少ない人たちにメッセージを届けられま
+     す。
 
    RMSは<news:gnu.emacs.help>へ投稿しても問題がない場合について述べてい
 ます:
@@ -493,9 +493,9 @@ Emacsで物事を行う方法を見つけるには複数の手法があります
    • 特定の問題やコマンド、変数について述べているマニュアルのセクション
      を素早く見つけるには‘C-h i m emacs <RET> i TOPIC <RET>’とタイプしま
      す。これで正しいマニュアル箇所に辿り着けないようなら、必要なものが
-     見つかるまで‘,’ (カンマ)を繰り返し押下してください(‘i’と‘,’は
-     Emacsマニュアルの全インデックスからタイプされたTOPICを探すインデッ
-     クス検索関数を呼び出すキー)。
+     見つかるまで‘,’ (カンマ)を繰り返し押下してください(‘i’と‘,’はタイプ
+     されたTOPICをEmacsマニュアルの全インデックスから探すインデックス検
+     索関数を呼び出すキー)。
 
    • ‘C-h a’ (‘M-x command-apropos’)を使用すれば、特定の単語を含んだすべ
      てのコマンド(実際には正規表現にマッチしたコマンド)を一覧できます。
@@ -564,7 +564,7 @@ Emacsでは関数なら‘C-h f’、変数なら‘C-h v’とタイプして�
 
    FSFにマニュアルのハードコードを注文することもできます。詳細はFSF
 on-line store (https://shop.fsf.org/)を参照してください(このマニュアルは
-常にプリントされているる訳ではない)。
+常にプリントされる訳ではない)。
 
    Emacs LispリファレンスマニュアルのHTMLバージョンは
 
@@ -649,7 +649,7 @@ EmacsのInfoツリーにインストールしません。Infoファイルをイ�
 
      このディレクトリーには‘dir’という名前のトップレベルInfoファイルが必
      要になるだろう。これはそのディレクトリーにあるInfoファイルのエント
-     リーだけをリストスル点を除き、システムの‘dir’がもつすべてをもつ。
+     リーだけをリストする点を除き、システムの‘dir’がもつすべてをもつ。
      (偶然にも)このディレクトリー内のすべてのファイルが他の‘dir’ファイル
      から参照されていれば、これは必要ないかもしれない。
      ‘Info-default-directory-list’内のすべての‘dir’ファイルのノードリス
@@ -697,10 +697,10 @@ File: efaq.info,  Node: Viewing Info files outside of Emacs,  Next: Informationa
 はい。以下はいくつかの候補プログラムです:
 
    • Texinfoパッケージに同梱されているInfoプログラムのスタンドアロンバー
-     ジョンである‘info’。詳細は*Note Installing Texinfo documentation::を
+     ジョンである‘info’。詳細は*note Installing Texinfo documentation::を
      参照のこと。
 
-   • X Window systemの下で実行され、Tcl/Tkを使用するInfoビューアーの
+   • Tcl/Tkを使用する、X Window systemの下で実行されるInfoビューアーの
      Tkinfo。Tkinfoは<http://math-www.uni-paderborn.de/~axel/tkinfo/>で
      入手できる。
 
@@ -711,7 +711,7 @@ File: efaq.info,  Node: Informational files for Emacs,  Next: Help installing Em
 ====================================
 
 これはよくある質問ではありませんが、そうあるべきなのです!  あなたに読ん
-でもらうためｎ、Emacsおよび関連するGNUプロジェクトの様相に関する様々な情
+でもらうために、Emacsおよび関連するGNUプロジェクトの様相に関する様々な情
 報ファイルが利用可能です。
 
    以下のファイル(やその他のファイルも)はEmacsディストリビューション(ど
@@ -758,10 +758,10 @@ File: efaq.info,  Node: Obtaining the FAQ,  Prev: Help installing Emacs,  Up: Ge
 =======================================
 
 Emacs FAQはInfo形式としてEmacsに同梱されています。任意のEmacsフレームト
-ップにあるEmacsメニューバーの‘Help’メニューあら‘Emacs FAQ’オプションを選
-択、あるいは‘C-h C-f’ (‘M-x view-emacs-FAQ’)とタイプしてくださいこれを読
-むことができます。開発版の最新バージョンはEmacsの開発用レポジトリから利
-用できます(*note Latest version of Emacs::を参照)。
+ップにあるEmacsメニューバーの‘Help’メニューから‘Emacs FAQ’オプションを選
+択、あるいは‘C-h C-f’ (‘M-x view-emacs-FAQ’)とタイプしてこれを読むことが
+できます。開発版の最新バージョンはEmacsの開発用レポジトリから利用できま
+す(*note Latest version of Emacs::を参照)。
 
 
 File: efaq.info,  Node: Status of Emacs,  Next: Common requests,  Prev: Getting help,  Up: Top
@@ -854,7 +854,7 @@ File: efaq.info,  Node: New in Emacs 27,  Next: New in Emacs 26,  Prev: Latest v
    • デフォルトのシェーピングエンジン(shaping engine: 整形エンジン)とし
      てEmacsはHarfBuzzを使用するようになった。
 
-   • ‘json.el’より高速なJSON解析のネイティブサポート。
+   • ‘json.el’による高速なJSON解析のネイティブサポート。
 
    • Cairoによる描画が実験的機能ではなくなった。
 
@@ -862,7 +862,7 @@ File: efaq.info,  Node: New in Emacs 27,  Next: New in Emacs 26,  Prev: Latest v
      は現代的なシステムのメモリー割り当てにたいする互換性を向上して、と
      りわけ現代的なオペレーティングシステムのほとんどが使用している
      ASLR(Address Space Layout Randomization: アドレス空間配置のランダム
-     化)をよりサポートする。
+     化)のサポートが向上した。
 
    • initファイルにたいしてEmacsがXDG規約を使用可能になった。
 
@@ -948,8 +948,8 @@ File: efaq.info,  Node: New in Emacs 25,  Next: New in Emacs 24,  Prev: New in E
    • 共有ライブラリーとしてコンパイルされた外部モジュールをEmacsが動的に
      ロード可能になった。
 
-   • いくつかの一般的な文字にたいして略記が‘C-x 8’に新規で追加された。略
-     記のリストは‘C-x 8 C-h’とタイプする。
+   • いくつかの一般的な文字にたいしする略記が‘C-x 8’に新規で追加された。
+     略記のリストは‘C-x 8 C-h’とタイプする。
 
    • 新しいマイナーモード‘global-eldoc-mode’がデフォルトで有効になり、ポ
      イント位置にあるEmacs Lispフォームの引数をエコーエリアまたはモード
@@ -1028,8 +1028,8 @@ File: efaq.info,  Node: New in Emacs 24,  Next: New in Emacs 23,  Prev: New in E
      、いわゆる“双方向テキスト(bidirectional text)”をサポートするように
      なった。
 
-   • テキスト選択の処理が改善されて、外部クリップボードとより統合された
-     。
+   • テキスト選択の処理が改善されて、外部クリップボードとの統合性が向上
+     した。
 
    • 新たなコマンド‘customize-themes’によってEmacsの外観の変更が容易にな
      った。
@@ -1039,9 +1039,9 @@ File: efaq.info,  Node: New in Emacs 24,  Next: New in Emacs 23,  Prev: New in E
    • コンパイル時に新たに複数の外部ライブラリーを含めることをサポートす
      る。
 
-        • SELinux(“Security-Enhanced Linux”)とは、従来の“Unixスタイル”よ
-          り複雑なファイルアクセスコントロールを提供するLinuxカーネルの
-          機能。
+        • 従来の“Unixスタイル”より複雑なファイルアクセスコントロールを提
+          供するLinuxカーネルの機能であるSELinux(“Security-Enhanced
+          Linux”)
 
         • ImageMagickディスプレーライブラリー。これによりEmacsでより多く
           のイメージ形式を表示でき、ローテーションのような変換も行うこと
@@ -1129,13 +1129,13 @@ File: efaq.info,  Node: New in Emacs 22,  Next: New in Emacs 21,  Prev: New in E
    • Emacsオリジナルのマクロシステムは、新たに多くのコマンドおよび機能、
      ファンクションキーF3とF4を使用するシンプルなインターフェイスを提供
      するKmacroパッケージに置き換えられた。マクロはマクロリングに格納さ
-     れるとともに、対話的にデバッグと編集ができるようになった。
+     れるとともに、対話的なデバッグと編集が可能になった。
 
    • GDBにたいする完全にグラフィカルなユーザーインターフェイスとして
      GUD(Grand Unified Debugger)が使用できるようになった。これは伝統的な
-     開発環境で見い出すことができる多くの機能を提供するとともに、ブレー
-     クポイントの操作、ウォッチポイントの追加、コールスタック表示等を容
-     易にする。ブレークポイントはソースバッファー内に視覚的に示される。
+     開発環境で目にする多くの機能を提供するとともに、ブレークポイントの
+     操作、ウォッチポイントの追加、コールスタック表示等を容易にする。ブ
+     レークポイントはソースバッファー内に視覚的に示される。
 
    • Calc、TRAMP、URL、IDO、CUA、ERC、rcirc、Table、Image-Dired、SES、
      Ruler、Org、PGG、Flymake、Password、Printing、Reveal、wdired、
@@ -1174,9 +1174,9 @@ Emacs 21ではディスプレーエンジンの徹底的な書き換えが行わ
 ラインとスクロールバーで使用)、設定と拡張が可能なツールバー、ツールチッ
 プ(別名バルーンヘルプ)、その他が含められました。
 
-   これらに加えてEmacs 21はテキストオンリーの端末でのフェイスがサポート
-されました。これはGNU/Linuxコンソールや‘xterm’上でEmacsを‘emacs -nw’で実
-行した際にカラー表示されることを意味しています。
+   これらに加えてEmacs 21ではテキストオンリーの端末でのフェイスがサポー
+トされました。これはGNU/Linuxコンソールや‘xterm’上でEmacsを‘emacs -nw’で
+実行した際にカラー表示されることを意味しています。
 
 
 File: efaq.info,  Node: New in Emacs 20,  Prev: New in Emacs 21,  Up: Status of Emacs
@@ -1184,15 +1184,15 @@ File: efaq.info,  Node: New in Emacs 20,  Prev: New in Emacs 21,  Up: Status of 
 4.10 Emacs 20は何が違う?
 ========================
 
-Emacsのバージョン18と19の差はよりダイナミックなものでした。一般的なユー
-ザーのほとんどにとってもウィンドウシステムにおけるフレーム、フェイス、カ
-ラーの導入は明白な変更でした。
+Emacsのバージョン18から19への変更はより劇的なものでした。一般的なユーザ
+ーのほとんどにとってもウィンドウシステムにおけるフレーム、フェイス、カラ
+ーの導入は明白な変更でした。
 
-   Emacsのバージョン19と20の間にも同様に差はあるものの多くは軽微であるか
-気付くのが難しいものでした。この変更の中には非ラテン文字を使用する言語用
-のMULEと同一ドキュメント内での複数言語の混合、Lispを使用せずに変数を変更
-する“Customize”機能、Macintosh、Microsoft、Unixプラットフォームにおける
-ファイルの自動変換が含まれます。
+   Emacsのバージョン19と20の間にも同様に変更はあるものの、その多くは軽微
+であるか気付くのが難しいものでした。この変更の中には非ラテン文字を使用す
+る言語用のMULEと同一ドキュメント内での複数言語の混合、Lispを使用せずに変
+数を変更する“Customize”機能、Macintosh、Microsoft、Unixプラットフォーム
+におけるファイルの自動変換が含まれます。
 
 
 File: efaq.info,  Node: Common requests,  Next: Bugs and problems,  Prev: Status of Emacs,  Up: Top
@@ -1259,8 +1259,8 @@ File: efaq.info,  Node: Setting up a customization file,  Next: Using Customize,
 *note (emacs)Init File::を参照してください。
 
    一般的にEmacsの新規ユーザーは‘.emacs’ファイルを与えられるべきではあり
-ません。なぜならこれによる非標準的から混乱を招くからです。その後に彼らは
-なぜEmacsがドキュメント通りに振る舞わないか尋ねる質問をthe
+ません。なぜならこれによる非標準的な振る舞いが混乱を招くからです。その後
+に彼らはなぜEmacsがドキュメント通りに振る舞わないか尋ねる質問をthe
 help-gnu-emacs mailing list
 (https://lists.gnu.org/mailman/listinfo/help-gnu-emacs)に送信するのです
 。
@@ -1271,12 +1271,12 @@ help-gnu-emacs mailing list
 
    Customizeは確かにEmacsの設定を容易にするかもしれませんが、Emacs Lispを
 習得して‘.emacs’を直接編集するために少し時間を割くことを検討してみてくだ
-さい。頻繁に要求される基本的なタスクを処理することに興味があるユーザーに
-は、シンプルな設定オプションが*note (emacs)Init File::により完全に記述さ
-れています。
+さい。頻繁に求められる基本的なタスクを処理することに興味があるユーザーに
+は、シンプルな設定オプションが*note (emacs)Init File::に完全に記述されて
+います。
 
    ユーザーがどこで自分の‘.emacs’ファイルを見つけられるか判らない場合が
-あります。Emacsから‘~/.emacs’としてファイルをvisitすることのよって、正し
+あります。Emacsから‘~/.emacs’としてファイルをvisitすることによって、正し
 いファイルが見つかるでしょう。
 
 
@@ -1318,15 +1318,15 @@ Emacsが関知する全カラーを展覧するウィンドウをポップアッ
 
    バージョン22.1以降ではシンタックスハイライトがデフォルトでオンです。
 
-   Emacs 26.1以降はターミナル(訳注: 端末=terminalはtermcapのterm)でのダ
-イレクトカラーモードをサポートしています。EmacsがTerminfoで‘setb24’およ
-び‘setf24’のケイパビリティ(訳注: capabilityはtermcapのcap)を見つけたら
-24ビットダイレクトカラーモードを使用します。ケイパビリティ文字列は、引数
-として1つの24ビットピクセル値を取り、24ビットカラーを端末に送信するため
-に使用できる文字列にピクセルを変換することが期待されます。
+   Emacs 26.1以降は端末(訳注: 端末=terminalはtermcapのterm)でのダイレク
+トカラーモードをサポートしています。EmacsがTerminfoで‘setb24’および
+‘setf24’のケイパビリティ(訳注: capabilityはtermcapのcap)を見つけたら24ビ
+ットダイレクトカラーモードを使用します。ケイパビリティ文字列は、引数とし
+て1つの24ビットピクセル値を取り、24ビットカラーを端末に送信するために使
+用できる文字列にピクセルを変換することが期待されます。
 
-   標準のターミナル定義はこれらのケイパビリティをサポートせず、したがっ
-てカスタム定義が必要になります。
+   標準の端末定義はこれらのケイパビリティをサポートせず、したがってカス
+タム定義が必要になります。
 
      $ cat terminfo-custom.src
 
@@ -1341,9 +1341,9 @@ Emacsが関知する全カラーを展覧するウィンドウをポップアッ
 
      $ TERM=xterm-emacs emacs -nw
 
-   Emacs 27.1以降では24ビットダイレクトカラーモードの検出にたいして
-Terminfoの‘RGB’ケイパビリティをサポートしています。複数の標準的なターミ
-ナル定義がこのケイパビリティをサポートしています。
+   Emacs 27.1以降では24ビットダイレクトカラーモードの検出にたいする、
+Terminfoの‘RGB’ケイパビリティをサポートしています。複数の標準的な端末定
+義がこのケイパビリティをサポートしています。
 
      $ TERM=xterm-direct infocmp | grep seta[bf]
 
@@ -1354,10 +1354,10 @@ Terminfoの‘RGB’ケイパビリティをサポートしています。複数
 
      $ TERM=xterm-direct emacs -nw
 
-   あなたのターミナルにXTermとの互換性がなければ、別の‘TERM’定義を使う必
-要があるかもしれません。名前に‘direct’が含まれるすべてのターミナルが候補
-になり得ます。それらのうちどれがシステムにインストールされているか調べる
-ために‘toe’コマンドを使用できます:
+   あなたの端末にXTermとの互換性がなければ、別の‘TERM’定義を使う必要があ
+るかもしれません。名前に‘direct’が含まれるすべての端末が候補になり得ます
+。それらのうちどれがシステムにインストールされているか調べるために
+‘toe’コマンドを使用できます:
 
      $ toe | grep '\-direct'
 
@@ -1367,11 +1367,11 @@ Terminfoの‘RGB’ケイパビリティをサポートしています。複数
      xterm-direct2   xterm with direct-color indexing (old)
      xterm-direct    xterm with direct-color indexing
 
-   ‘RGB’ケイパビリティをもつターミナルは、ダイレクト。モードを認識しない
-アプリケーションにたいする後方互換性を保守するために、ピクセル#000001か
-ら#000007をインデックス付けされたカラーとして扱います。したがってもっと
-も暗い青い濃淡は利用できないかもしれません。これが問題となるようなら、
-‘setb24’と‘setf24’のカスタムターミナル定義を常に使用するこれができます。
+   ‘RGB’ケイパビリティをもつ端末は、ダイレクトカラーモードを認識しないア
+プリケーションにたいする後方互換性を保守するために、ピクセル#000001から
+#000007をインデックス付けされたカラーとして扱います。したがってもっとも
+暗い青い濃淡は利用できないかもしれません。これが問題となるようなら、
+‘setb24’と‘setf24’のカスタム端末定義を使用することは常に可能です。
 
 
 File: efaq.info,  Node: Debugging a customization file,  Next: Displaying the current line or column,  Prev: Colors on a TTY,  Up: Common requests
@@ -1380,10 +1380,10 @@ File: efaq.info,  Node: Debugging a customization file,  Next: Displaying the cu
 =======================================
 
 コマンドラインオプション‘-debug-init’でEmacsを開始してください。これは
-‘.emacs’ファイルを評価する前にEmacs Lispデバッガを有効して、何かうまく行
-かなければあなたをデバッガ内へと導きます。‘trace-back’バッファーの上端行
-はエラーメッセージ、2行目か3行目には問題を引き起こした‘.emacs’ファイルの
-Lispコードが表示されるでしょう。
+‘.emacs’ファイルを評価する前にEmacs Lispデバッガを有効にして、何かうまく
+行かなければあなたをデバッガ内へと導きます。‘trace-back’バッファーの上端
+行はエラーメッセージ、2行目か3行目には問題を引き起こした‘.emacs’ファイル
+のLispコードが表示されるでしょう。
 
    ‘.emacs’ファイル内の関数や引数の終端にカーソルを移動して‘C-x C-e’
 (‘M-x eval-last-sexp’)をタイプすれば、関数や関数の引数を個別に評価するこ
@@ -1400,19 +1400,19 @@ File: efaq.info,  Node: Displaying the current line or column,  Next: Displaying
 
 デフォルトではEmacsはポイント位置のカレント行番号をモードラインに表示し
 ます。コマンド‘M-x line-number-mode’、または変数‘line-number-mode’でこの
-機能のオンとオフを切り替えることができます。バッファーのバイトサイズが変
-数‘line-number-display-limit’の値より大きければ、Emacsは行番号を表示しな
-いことに注意してください。
+機能のオンオフを切り替えることができます。バッファーのバイトサイズが変数
+‘line-number-display-limit’の値より大きければ、Emacsは行番号を表示しない
+ことに注意してください。
 
-   ‘M-x column-number-mode’、または以下のフォームを
+   ‘M-x column-number-mode’、または以下のフォーム
 
      (setq column-number-mode t)
 
-‘.emacs’ファイルに記述することにより、同じようにカレント列番号を表示でき
-ます。この機能はデフォルトではオフです。
+を‘.emacs’ファイルに記述することにより、同じようにカレント列番号を表示で
+きます。この機能はデフォルトではオフです。
 
    変数‘mode-line-format’内のフォーマット指定子‘"%c"’は、モードラインに
-カレント列の値っっ挿入します。この変数のセットや使用する方法についての詳
+カレント列の値を挿入します。この変数のセット、および使用方法についての詳
 細は‘mode-line-format’のドキュメントを参照してください(‘C-h v
 mode-line-format <RET>’を使用する)。
 
@@ -1425,9 +1425,9 @@ mode-line-format <RET>’を使用する)。
 用時には‘display-line-numbers’を使用するときと同じ値で
 ‘display-line-numbers-type’をカスタマイズしてください。
 
-   ‘linum’パッケージ(バージョン23.1以降のEmacsに同梱)もありますが今後配
-送されます。ユーザーおよび開発者にはかわりに‘display-line-numbers’の使用
-をお勧めします。(Emacsには同梱されていないパッケージ)‘setnu’と
+   ‘linum’パッケージ(バージョン23.1以降のEmacsに同梱)もありますが今後廃
+止されます。ユーザーおよび開発者には、かわりに‘display-line-numbers’の使
+用をお勧めします。(Emacsには同梱されていない)パッケージ‘setnu’と
 ‘wb-line-number’もこの機能を実装しています。
 
 
@@ -1441,10 +1441,10 @@ Emacsフレームのタイトルバーのコンテンツは、変数‘mode-line
 いて情報を得るには‘C-h v’または‘M-x describe-variable’を使用する)。
 
    デフォルトではフレームのタイトルバーには、1つのフレームしか存在しない
-場合を除き、がカレントでvisitされているバッファーの名前が表示されます。
-フレームが1つの場合には、タイトルバーにはEmacsを呼び出したときの名前、お
-よびEmacsを呼び出したマシン名が含まれます。これは‘frame-title-format’に
-以下をデフォルト値としてセットすることにより行われます:
+場合を除き、カレントでvisitされているバッファーの名前が表示されます。フ
+レームが1つの場合には、タイトルバーにEmacsを呼び出したときの名前、および
+Emacsを呼び出したマシン名が含まれます。これは‘frame-title-format’に以下
+をデフォルト値としてセットすることにより行われます:
 
      (multiple-frames "%b" ("" invocation-name "@" (system-name)))
 
@@ -1465,13 +1465,13 @@ Abbrevモードは略語をタイプするとそれを展開します。特定�
 
      (setq-default abbrev-mode t)
 
-To turn it on in a specific mode, use:
+特定のモードでオンにするには以下を使用してください:
 
      (add-hook 'MYMODE-mode-hook
                (lambda ()
                 (setq abbrev-mode t)))
 
-If your Emacs version is older then 22.1, you will also need to use:
+Emacsのバージョンが22.1より古ければ、以下も使う必要があるでしょう:
 
      (condition-case ()
         (quietly-read-abbrev-file)
@@ -1597,7 +1597,7 @@ File: efaq.info,  Node: Yanking text in isearch,  Next: Wrapping words automatic
 5.13 killリングから検索文字列にテキストをコピーするには?
 ========================================================
 
-‘M-y’を使用してください。*note (emacs)Isearch Yank::を参照してください。
+‘M-y’を使用します。*note (emacs)Isearch Yank::を参照してください。
 
 
 File: efaq.info,  Node: Wrapping words automatically,  Next: Turning on auto-fill by default,  Prev: Yanking text in isearch,  Up: Common requests
@@ -1670,7 +1670,7 @@ Emacsに同梱されている‘emacsclient’は新たなEmacsを開始せず�
           (if (SOME CONDITIONS ARE MET) (server-start))
 
      ニュースリーダーやメールリーダーなどが‘emacsclient’を呼び出すように
-     するには、環境変数‘EDITOR’ (‘VISUAL’のときもある)に値
+     するには、環境変数‘EDITOR’ (‘VISUAL’のときもあり)に値
      ‘emacsclient’を設定してみればよい。‘emacsclient’プログラムのかわり
      にプログラムのフルパス名を指定する必要があるかもしれない。たとえば:
 
@@ -1727,7 +1727,7 @@ File: efaq.info,  Node: Indenting switch statements,  Next: Customizing C and C+
        }
      }
 
-To achieve this, add the following line to your ‘.emacs’:
+これを行うには以下を‘.emacs’ファイルに追加してください:
 
      (c-set-offset 'case-label '+)
 
@@ -1743,16 +1743,16 @@ Emacsの‘cc-mode’はインデントスタイルのカスタマイズ用に�
 (ccmode)Customizing Indentation.を参照してください。以下はそれの短い要約
 です:
 
-  1. 気に召さないインデントの最初の行の先頭に移動して‘C-c C-o’とタイプす
+  1. 気に入らないインデントの最初の行の先頭に移動して‘C-c C-o’とタイプす
      る。Emacsが構文シンボル(syntactic symbol)の入力を求めるので、デフォ
-     ルトを受諾するために<RET>をタイプする。
+     ルトを承諾するために<RET>をタイプする。
 
   2. Emacsがその構文シンボルのオフセットの入力を求める。その際にはカッコ
      内にデフォルト(現在の定義)が表示される。ここで以下のいずれかを選択
      できる:
 
      ‘0’
-          追加のインデントなし。
+          余計なインデントなし。
      ‘+’
           基本オフセット1つ分インデントを加える。
      ‘-’
@@ -1769,7 +1769,7 @@ Emacsの‘cc-mode’はインデントスタイルのカスタマイズ用に�
   3. これらのシンボルのいずれかを選んだ後に‘C-c C-q’をタイプして、指定し
      たインデントに行またはブロックを再インデントする。
 
-  4. 結果が気に召さなければステップ1に戻る。そうでなければ以下の行を
+  4. 結果が気に入らなければステップ1に戻る。そうでなければ以下の行を
      ‘.emacs’に追加する:
 
           (c-set-offset 'SYNTACTIC-SYMBOL OFFSET)
@@ -1778,7 +1778,7 @@ Emacsの‘cc-mode’はインデントスタイルのカスタマイズ用に�
      した名前、OFFSETは上記のインデントシンボル(‘+’、‘/’、‘0’等)のいずれ
      かのうち対話的手順の間に選択したシンボル。
 
-  5. インデントが気に召さない次の行へ移動してこれらの手順を繰り返す。
+  5. インデントが気に入らない次の行へ移動してこれらの手順を繰り返す。
 
    以下のように‘(c-set-offset ...)’によるカスタマイズ結果すべてをCモード
 のフック内に記述することをお勧めします:
@@ -1805,7 +1805,7 @@ File: efaq.info,  Node: Overwrite mode,  Next: Turning off beeping,  Prev: Custo
 ===========================================
 
 ‘M-x overwrite-mode’ (マイナーモード)です。これは‘overwrite-mode’のオン
-オフを切り替えるのでもう一度‘M-x overwrite-mode’で簡単に
+オフを切り替えるので、もう一度‘M-x overwrite-mode’とタイプすれば簡単に
 ‘overwrite-mode’からexitできます。
 
    いくつかのシステムでは<Insert>で‘overwrite-mode’のオンオフが切り替わ
@@ -1821,7 +1821,7 @@ Martin R. Frank(訳注: Texinfoファイルには"martin@cc.gatech.edu"とコメ
 トされてました)は記しています:
 
    可聴ベル(audible bell)のかわりに“視覚的なベル(visible bell)”を使うよ
-うに伝えて、その視覚的ベルには何もセットしません。
+うにEmacs伝えて、その視覚的ベルには何もセットしません。
 
    つまり(あなたがtermcapをもっていると仮定して)‘TERMCAP’環境変数に以下
 を記述します:
@@ -1857,7 +1857,7 @@ File: efaq.info,  Node: Automatic indentation,  Next: Matching parentheses,  Pre
 ===========================================================================
 
 このような振る舞いはEmacs 20以降では(Textモードでは)自動で行われます。
-Emacs 20.2の‘etc/NEWS’ファイルからの引用します:
+Emacs 20.2の‘etc/NEWS’ファイルからの引用です:
 
      ** Textでパラグラフを分割するのは空行のみとなった。これによってAdaptive FillモードからTextモードやその他Textモードから派生した(Mailモードのような)モードが受ける恩恵を最大にすることが可能になる。Textモードでの<TAB>によってindent-relativeコマンドが実行されるようになった。これによって実際に違いが生じるのは、インデントされたパラグラフを使用している場合だけである。
 
@@ -1868,9 +1868,10 @@ Emacs 20.2の‘etc/NEWS’ファイルからの引用します:
 の文字シーケンスをすべての行のプレフィクスとするようEmacsに指示すること
 ができます。行頭でプレフィクスをタイプしてポイントをタイプしたプレフィク
 スの後に移動、それから‘C-x .’ (‘set-fill-prefix’)とタイプしてフィルプレ
-フィクスをセットします。それ以降はオートフィル新たな行の先頭に自動的にフ
-ィルプレフィクスを配置するとともに、‘M-q’ (‘fill-paragraph’)でパラグラフ
-を再フィルする際にはすべてのフィルプレフィクスを保守するようになります。
+フィクスをセットします。それ以降はオートフィルが新たな行の先頭に自動的に
+フィルプレフィクスを配置するとともに、‘M-q’ (‘fill-paragraph’)でパラグラ
+フを再フィルする際にはすべてのフィルプレフィクスを保守するようになります
+。
 
    異なるレベルのインデントをもつパラグラフがある場合には、新たなパラグ
 ラフに移動するたびにフィルプレフィクスを正しい値にセットすることが必要に
@@ -1892,15 +1893,15 @@ File: efaq.info,  Node: Matching parentheses,  Next: Hiding #ifdef lines,  Prev:
 オプション‘Paren Match Highlighting’を選択してこのモードを有効にすること
 もできます。
 
-   このようなモードの代替案手段としては以下が含まれます:
+   このようなモードの代替となる手段として以下が含まれます:
 
-   • 右カッコ(または大カッコや角カッコ)に着目していたら、それを削除して
-     からしで挿入する。Emacsは瞬時の間、マッチするカッコにカーソル和移動
-     するだろう。
+   • あなたが右カッコ(または大カッコや角カッコ)に着目していたら、それを
+     削除してから再度挿入する。Emacsは瞬時の間、マッチするカッコにカーソ
+     ルを移動するだろう。
 
-   • ‘C-M-f’ (‘forward-sexp’)および‘C-M-b’ (‘backward-sexp’)はバランスの
+   • ‘C-M-f’ (‘forward-sexp’)および‘C-M-b’ (‘backward-sexp’)は釣り合いの
      とれたカッコを1セット分スキップするので、どのカッコがマッチするか確
-     認できる(構文テーブルを修整してバランスのとれた大カッコおよび角カッ
+     認できる(構文テーブルを修整して釣り合いのとれた大カッコおよび角カッ
      コもスキップするよう洗練することも可能)。
 
    • 以下は‘vi’のように‘%’キーでマッチするカッコを表示させるEmacs Lispコ
@@ -1924,7 +1925,7 @@ File: efaq.info,  Node: Hiding #ifdef lines,  Next: Repeating commands,  Prev: M
 =====================================================================
 
 ‘M-x hide-ifdef-mode’ (マイナーモード)です。Emacsに同梱されている
-‘cpp.el’も調査したいと思うかもしれません。
+‘cpp.el’も調べてみたいと思うかもしれません。
 
 
 File: efaq.info,  Node: Repeating commands,  Next: Valid X resources,  Prev: Hiding #ifdef lines,  Up: Common requests
@@ -1938,7 +1939,7 @@ File: efaq.info,  Node: Repeating commands,  Next: Valid X resources,  Prev: Hid
 
    引数を取得するためにミニバッファーを使用するコマンドは、‘C-x <ESC>
 <ESC>’ (‘repeat-complex-command’)とタイプしても再呼び出しができます。
-‘repeat-complex-command’では‘M-p’と‘M-n’(キーボードにあれば上矢印と下矢
+‘repeat-complex-command’では‘M-p’と‘M-n’ (キーボードにあれば上矢印と下矢
 印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたもの
 を走査することができます。
 
@@ -1947,8 +1948,8 @@ File: efaq.info,  Node: Repeating commands,  Next: Valid X resources,  Prev: Hid
 e’とタイプします。*note (emacs)Keyboard Macros::を参照してください。
 
    最後の挿入/削除を再実行する‘vi’の‘.’コマンドが本当に欲しくて堪らなけ
-れば、それをサポートしているよう思われる、VIPERというEmacsに同梱の‘vi’エ
-ミュレーションモードを使ってください。
+れば、それをサポートしているよう思われるVIPERというEmacsに同梱の‘vi’エミ
+ュレーションモードを使ってください。
 
 
 File: efaq.info,  Node: Valid X resources,  Next: Evaluating Emacs Lisp code,  Prev: Repeating commands,  Up: Common requests
@@ -1987,8 +1988,7 @@ Emacs Lispの“フォーム(form)”を実行(Lispスラングでは“evaluate
      Lispフォームを評価して、その値をエコーエリアにプリントする。
 
    • ‘M-:’または‘M-x eval-expression’とタイプすることによりミニバッファ
-     ーでLispフォームをタイプして、<RET>の押下することでそれが1回評価さ
-     れる。
+     ーでタイプしたLispフォームが、<RET>押下により1回評価される。
 
    • ファイル内のすべてのLispフォームをEmacsにすべて評価させるには‘M-x
      load-file’を使用できる(これをLispから行うにはかわりに関数‘load’を使
@@ -2030,10 +2030,10 @@ string-insert-rectangle <RET>’とタイプします。
 
    yankしたメールメッセージにプレフィクスとして‘>’の付加を試みているなら
 、変数‘mail-yank-prefix’をセットしたいと思うかもしれません。Messageバッ
-ファーではyankしたメッセージのメッセージの引用に‘M-;’ (こはリージョンの
-コメントアウトという汎用目的のためのメカニズムである関数
-‘comment-region’を実行する)を使うことさえできます(*note Changing the
-included text prefix::を参照)。
+ファーではyankしたメッセージのメッセージの引用に‘M-;’ (これはリージョン
+のコメントアウトという汎用用途メカニズムである関数‘comment-region’を実行
+する)を使うことさえできます(*note Changing the included text prefix::を
+参照)。
 
 
 File: efaq.info,  Node: Forcing the cursor to remain in the same column,  Next: Forcing Emacs to iconify itself,  Prev: Inserting text at the beginning of each line,  Up: Common requests
@@ -2070,13 +2070,13 @@ File: efaq.info,  Node: Using regular expressions,  Next: Replacing text across 
 
    バックスラッシュを2回記述することに注意してください!
 
-   • Unixの‘grep’、‘sed’などとは異なり文字の補集合(‘[^...]’)にはマッチし
-     ない文字として改行文字(<LFD>または‘C-j’あるいは‘\n’)が記述されてい
-     なければ改行文字はマッチする。
+   • Unixの‘grep’、‘sed’などとは異なり、文字の補集合(‘[^...]’)にマッチし
+     ない文字として改行文字(<LFD>、‘C-j’、 または‘\n’)が記述されていなけ
+     れば改行文字にマッチする。
 
    • 文字構文のregexp(たとえば‘\sw’)は文字セットにたいするregexp(たとえ
-     ば‘[aeiou]’)の内部では意味をもたない(これは実際にはregexp構文として
-     典型的)。
+     ば‘[aeiou]’)の内部では意味をもたない(これは実際はregexp構文として典
+     型的)。
 
 
 File: efaq.info,  Node: Replacing text across multiple files,  Next: Documentation for etags,  Prev: Using regular expressions,  Up: Common requests
@@ -2084,7 +2084,7 @@ File: efaq.info,  Node: Replacing text across multiple files,  Next: Documentati
 5.35 複数ファイルを横断して置換操作を行うには?
 ==============================================
 
-Diredモード(‘M-x dired <RET>’または‘C-x d’)はコマンド
+Diredモード(‘M-x dired <RET>’または‘C-x d’)は、コマンド
 ‘dired-do-find-regexp-and-replace’ (‘Q’)をサポートしています。これは複数
 ファイルにおける正規表現の置換を可能にします。
 
@@ -2125,10 +2125,10 @@ File: efaq.info,  Node: Disabling backups,  Next: Disabling auto-save-mode,  Pre
 5.37 バックアップファイルを無効にするには?
 ==========================================
 
-特に何か不幸な出来事が起こったとき等、バックアップ特は役に立つので多分こ
-れを行いたいとは思わないでしょう。
+何か不幸な出来事が起こったとき等は、特にバックアップが役立つので多分これ
+を行いたいとは思わないでしょう。
 
-   Diredでバックアップファイル(およびその他の“興味がない”ファイル)を目に
+   Diredでバックアップファイル(およびその他の“関心がない”ファイル)を目に
 することを避けるには、‘.emacs’ファイルに以下を追加して‘dired-x’をロード
 してください:
 
@@ -2136,7 +2136,7 @@ File: efaq.info,  Node: Disabling backups,  Next: Disabling auto-save-mode,  Pre
                (lambda ()
                 (require 'dired-x)))
 
-   ‘dired-x’のロードにより、‘M-o’でそれぞれのdiredバッファーでの(興味が
+   ‘dired-x’のロードにより、‘M-o’でそれぞれのdiredバッファーでの(関心が
 ないファイルの表示)の省略が切り替わります。以下を‘.emacs’に記述すれば、
 新たなdiredバッファーで省略をデフォルトにできます:
 
@@ -2147,7 +2147,7 @@ File: efaq.info,  Node: Disabling backups,  Next: Disabling auto-save-mode,  Pre
      ;   M-o               -> C-x M-o
      (add-hook 'dired-mode-hook 'dired-omit-toggle)
 
-   Unixシェルで‘ls’するたびにバックアップファイルが目につきうんざりして
+   Unixシェルで‘ls’するたびにバックアップファイルが目障りでうんざりして
 いたら、‘-B’オプションでGNU ‘ls’を試してみてください。GNU ‘ls’はGNU
 Fileutilsパッケージの一部であり、<https://ftp.gnu.org>およびそのミラーサ
 イトで利用可能です(*note Current GNU distributions::を参照)。
@@ -2199,9 +2199,9 @@ compile’および‘M-x recompile’を使用してコンパイルすること
 。あなたはソース内の、各メッセージに対応する場所をvisitできます。問題の
 ある行を1つずつステップスルーするには‘C-x `’とタイプします(Emacs 22から
 は前または次のマッチへ直接移動する‘M-g M-p’および‘M-g M-n’でも使用できる
-。‘*compilation*’バッファーのメッセージテキスト上で‘mouse-2’をクリックす
-るか<RET>を押下することによって、そのメッセージ中に記されている番号の行
-へ移動します。
+)。‘*compilation*’バッファーのメッセージテキスト上で‘mouse-2’をクリック
+するか<RET>を押下することによって、そのメッセージ中に記された行番号へ移
+動します。
 
    しかし特定のテキスト行へ移動する必要が本当にあるなら‘M-g M-g’ (Emacs
 22からは‘goto-line’関数のデフォルトバインディング)をタイプしてください。
@@ -2242,16 +2242,16 @@ File: efaq.info,  Node: Modifying pull-down menus,  Next: Deleting menus and men
    3行目は1つ目の要素が表示されるタイトル、2つ目の要素がメニューオプショ
 ン呼び出し時に呼び出される関数であるようなコンスセルです。
 
-   既存メニューへの新オプション追加デ新たなメニューを追加するためには新
-たにキーマップ全体を定義しなければなりません。
+   既存メニューへの新オプション追加で新たなメニューを追加するためには、
+新たにキーマップ全体を定義しなければなりません。
 
      (define-key global-map [menu-bar words]
        (cons "Words" (make-sparse-keymap "Words")))
 
    上記のコードは新たに疎キーマップ(sparse keymap)を追加して名前
-‘Words’を付与、それをグローバルメニューバーにアタッチします。したがって
-この新メニューへの、‘Forward Word’アイテム追加には以下のようなコードが必
-要になるでしょう:
+‘Words’を付与、それをグローバルメニューバーにアタッチしています。したが
+ってこの新メニューへの‘Forward Word’アイテム追加には、以下のようなコード
+が必要になるでしょう:
 
      (define-key global-map
        [menu-bar words forward]
@@ -2263,8 +2263,8 @@ File: efaq.info,  Node: Modifying pull-down menus,  Next: Deleting menus and men
 プションは‘baz’がトップ、‘foo’がボトムに表示されます。
 
    これを回避する1つの方法として関数‘define-key-after’の使用があります。
-これは‘define-key’と同様ですが、アイテムが出現しる位置を変更することがで
-きます。以下は‘Edit’メニューの‘Undo’アイテムの直後になるように‘Forward
+これは‘define-key’と同様ですが、アイテムが出現する位置を変更することがで
+きます。以下は‘Edit’メニューの‘Undo’アイテムの直後になるように、‘Forward
 Word’アイテムを挿入します。
 
      (define-key-after
@@ -2280,9 +2280,10 @@ Word’アイテムを挿入します。
    ある場所から別の場所にメニューオプションを移動するには、最後の引数を
 適切に指定して‘define-key-after’を評価するだけです。
 
-   より詳細な情報、およびメニューオプションの作成と行うより多くの例につ
-いては、‘Emacs Lisp Reference Manual’の“Menu Keymaps”にあります(このマニ
-ュアル内の情報については*note Emacs Lisp documentation::を参照)。
+   より詳細な情報、およびメニューオプションの作成と変更にたいする更に多
+くの例については、‘Emacs Lisp Reference Manual’の“Menu Keymaps”にありま
+す(このマニュアル内の情報については*note Emacs Lisp documentation::を参
+照)。
 
 
 File: efaq.info,  Node: Deleting menus and menu options,  Next: Turning on syntax highlighting,  Prev: Modifying pull-down menus,  Up: Common requests
@@ -2290,13 +2291,13 @@ File: efaq.info,  Node: Deleting menus and menu options,  Next: Turning on synta
 5.41 メニューやメニューオプションを削除するには?
 ================================================
 
-メニューを削除するもっともシンプルな方法は、そのキーマップに‘nil’をセッ
-トします。たとえば‘Words’メニュー(*note Modifying pull-down menus::を参
-照)を削除するには以下を使用します:
+メニューを削除するには、そのキーマップに‘nil’をセットするのがもっともシ
+ンプルな方法です。たとえば‘Words’メニュー(*note Modifying pull-down
+menus::を参照)を削除するには以下を使用します:
 
      (define-key global-map [menu-bar words] nil)
 
-   同じように、メニューオプションを削除するには、キーマップエントリーを
+   同じようにメニューオプションを削除するには、キーマップエントリーを
 ‘nil’に再定義する必要があります。たとえば‘Edit’メニューから(*note
 Modifying pull-down menus::で追加した)‘Forward word’メニューオプションを
 削除するには以下を使用します:
@@ -2309,14 +2310,14 @@ File: efaq.info,  Node: Turning on syntax highlighting,  Next: Scrolling only on
 5.42 構文ハイライトをオンにするには?
 ====================================
 
-‘font-lock-mode’はEmacsがカレントバッファーでシンタックスハイライト和行
+‘font-lock-mode’はEmacsがカレントバッファーでシンタックスハイライトを行
 う標準的な方法です。これはEmacs 22.1以降ではデフォルトで有効になっていま
 す。
 
    ‘font-lock-mode’をオンに切り替えると、異なるタイプのテキストは違うカ
 ラーで表示されます。たとえばプログラミング用のモードでは変数はあるフェイ
-スで、キーワードはそれとは異なるフェイス、コメントは更に違うフェイスで表
-示されるでしょう。
+ス、キーワードはそれとは異なるフェイス、コメントは更に違うフェイスで表示
+されるでしょう。
 
    既存バッファーで‘font-lock-mode’をオフに切り替えるには‘M-x
 font-lock-mode <RET>’を使用してください。
@@ -2326,26 +2327,26 @@ font-lock-mode <RET>’を使用してください。
 
      (global-font-lock-mode 1)
 
-   ‘font-lock-mode’によるバッファーのハイライトにはかなり時間がかかり、
-苛立たしい表示の遅延を引き起こすので、これに対処するための機能がいくつか
-あります。
+   ‘font-lock-mode’によるバッファーのハイライトにはかなり時間がかかるた
+めに、苛立たしい表示の遅延を引き起こすので、これに対処するための機能がい
+くつかあります。
 
    Emacs 21では‘font-lock-mode’をオンに切り替えることによって、
 ‘jit-lock-mode’が提供する新たな“JITフォント表示(Just-In-Time
 fontification)”が自動的にアクティブになります。‘jit-lock-mode’はバッファ
 ーをユーザーに実際に見せる必要が生じるまで、そのバッファー範囲のフォント
-表示を遅延させるとともに、EmacsがIdol中にもフォント表示を行えます。これ
-によってバッファーの可視範囲はほとんど瞬時に表示されるようになります。
-‘jit-lock-mode’のカスタマイズの詳細については‘C-h f jit-lock-mode
+表示を遅延させるとともに、Emacsがアイドル中にもフォント表示を行えます。
+これによってバッファーの可視範囲はほとんど瞬時に表示されるようになります
+。‘jit-lock-mode’のカスタマイズの詳細については‘C-h f jit-lock-mode
 <RET>’とタイプしてください。
 
    21より前のバージョンのEmacsではささやかなものから派手なものまで、異な
 るレベルの装飾が利用可能です。より多くの装飾にはバッファーがフォント表示
 されるまで、より長い時間待機する必要があることを意味しています。バッファ
-ーがどのように装飾されるべきかを制御するためには、‘.emacs’ファイルで
+ーがどのように装飾されるべきかを制御するには、‘.emacs’ファイルで
 ‘font-lock-maximum-decoration’に値をセットします。‘nil’値はデフォルトの
-(通常は最低限の)装飾、‘t’は最大限の装飾をも意味します。できるだけ派手な
-外観にするには、‘.emacs’ファイルに以下の行を含めてください。
+(通常は最低限の)装飾、‘t’は最大限の装飾を意味します。できるだけ派手な外
+観にするには‘.emacs’ファイルに以下の行を含めてください。
 
      (setq font-lock-maximum-decoration t)
 
@@ -2354,8 +2355,8 @@ fontification)”が自動的にアクティブになります。‘jit-lock-mod
 ‘font-lock-maximum-decoration’のドキュメントを確認してください。
 
    更に‘C-h f font-lock-mode’ (‘M-x describe-function <RET>
-font-lock-mode <RET>’)で利用できる、関数‘font-lock-mode’のドキュメントも
-参照してください。
+font-lock-mode <RET>’)で利用できる関数‘font-lock-mode’のドキュメントも参
+照してください。
 
    バッファーをフェイス(カラーとフォント)付きでそのままプリントするため
 には、‘M-x ps-print-buffer-with-faces’または‘M-x
@@ -2390,10 +2391,10 @@ MS-DOS (およびWindows)のファイルの検出と処理は透過的に行わ�
 ン、編集、保存を行うことができます。
 
    MS-DOS形式ファイルの編集時には、それがDOSファイルであることが示されま
-す。UnixおよびGNU/Linuxシステム、およびMacintoshでもモードライン左端付近
-に文字列‘(DOS)’が表示されるでしょう。DOSのEOLフォーマットをデフォルトと
-して使用するDOSおよびWindowsでは、モードラインにバックスラッシュ(‘\’)が
-表示されます。
+す。UnixとGNU/Linuxシステム、およびMacintoshでもモードライン左端付近に文
+字列‘(DOS)’が表示されるでしょう。DOSのEOLフォーマットをデフォルトとして
+使用するDOSおよびWindowsでは、モードラインにバックスラッシュ(‘\’)が表示
+されます。
 
 
 File: efaq.info,  Node: Filling paragraphs with a single space,  Next: Escape sequences in shell output,  Prev: Editing MS-DOS files,  Up: Common requests
@@ -2437,8 +2438,8 @@ Emacs 24からはコマンドラインオプション‘--maximized’でEmacs�
      (add-hook 'emacs-startup-hook
                (lambda () (w32-send-sys-command ?\xF030)))
 
-   Emacsの開始においてデフォルトのフレームサイズからフルスクリーンに拡が
-る若干惑わされる視覚効果を回避するには、Windowsのレジストリ文字列に
+   Emacsの開始におけるデフォルトのフレームサイズからフルスクリーンに拡が
+る、若干惑わされる視覚効果を回避するにはWindowsのレジストリ文字列に
 ‘Emacs.Geometry’エントリーを追加できます。*note (emacs)X Resources::を参
 照してください。
 
@@ -2448,8 +2449,8 @@ Emacs 24からはコマンドラインオプション‘--maximized’でEmacs�
 
 File: efaq.info,  Node: Bugs and problems,  Next: Compiling and installing Emacs,  Prev: Common requests,  Up: Top
 
-6 Bugs and problems
-*******************
+6 バグやトラブル
+****************
 
 Emacsマニュアルにはユーザーが陥りやすい類の一般的なトラブルのリストがあ
 るので、このチャプターに記述されていない問題に遭遇したら、*note Dealing
@@ -2478,12 +2479,12 @@ with Emacs Trouble: (emacs)Lossage.を参照してください。バグを見つ
 
 File: efaq.info,  Node: Problems with very large files,  Next: ^M in the shell buffer,  Up: Bugs and problems
 
-6.1 Does Emacs have problems with large files?
+6.1 Emacsにとって大きなファイルは問題になるか?
 ==============================================
 
-Emacsのバッファーサイズには先天的に固定された制限があります。これは同一
-プラットフォームで他のプログラムがサポートするオブジェクトの最大サイズと
-比較すると厳しい制限です。
+Emacsのバッファーサイズには固定された固有の制限があります。これは同一プ
+ラットフォームで他のプログラムがサポートするオブジェクトの最大サイズと比
+較すると厳しい制限です。
 
    バッファーの最大サイズはバージョン23.2からは32ビットマシンで512MBです
 。‘--with-wide-int’フラグを使用してEmacsをビルドした場合には、バッファー
@@ -2500,11 +2501,11 @@ Emacsのバッファーサイズには先天的に固定された制限があり
 
 File: efaq.info,  Node: ^M in the shell buffer,  Next: Problems with Shell Mode,  Prev: Problems with very large files,  Up: Bugs and problems
 
-6.2 How do I get rid of ‘^M’ or echoed commands in my shell buffer?
-===================================================================
+6.2 Shellバッファーから‘^M’やエコーされるコマンドを取り除くには?
+================================================================
 
 それらを取り除くには‘M-x comint-strip-ctrl-m <RET>’を試してください。こ
-れが機能しない場合には、いくつかのオプションがあります。
+れが機能しない場合にはいくつかのオプションがあります。
 
    ‘tcsh’では以下を‘.cshrc’ (または‘.tcshrc’)ファイルに記述してください:
 
@@ -2524,12 +2525,12 @@ File: efaq.info,  Node: ^M in the shell buffer,  Next: Problems with Shell Mode,
 
      (setq explicit-shell-file-name "/bin/csh")
 
-別の方法としては‘.cshrc’ (または‘.tcshrc’)ファイルでこれを行う方法です:
+別に‘.cshrc’ (または‘.tcshrc’)ファイルでこれを行う方法があります:
 
      setenv ESHELL /bin/csh
 
-(これが効果をもつように環境変数を正しくセットした後にEmacsを再起動しなけ
-ればなりません。)
+(環境変数を正しくセットした後は、これが効果をもつようにEmacsを再起動しな
+ければなりません。)
 
    以下のLispフォームでEmacs Lispにより‘ESHELL’環境変数をセットすること
 もできます:
@@ -2538,8 +2539,7 @@ File: efaq.info,  Node: ^M in the shell buffer,  Next: Problems with Shell Mode,
 
    上記の解決策は最初にシェルが‘^M’文字を生成するのを防ぐ試みです。これ
 が不可能(たとえばWindowsシェルを使用している)なら、‘.emacs’に追加するこ
-とによって、Emacsにそれらの文字をバッファーから削除させることができます
-。
+とによってEmacsにそれらの文字をバッファーから削除させることができます。
 
      (add-hook 'comint-output-filter-functions #'comint-strip-ctrl-m)
 
@@ -2553,29 +2553,29 @@ File: efaq.info,  Node: ^M in the shell buffer,  Next: Problems with Shell Mode,
 
 File: efaq.info,  Node: Problems with Shell Mode,  Next: Termcap/Terminfo entries for Emacs,  Prev: ^M in the shell buffer,  Up: Bugs and problems
 
-6.3 Why do I get an error message when I try to run ‘M-x shell’?
-================================================================
+6.3 ‘M-x shell’を実行するとエラーメッセージを返されるのはなぜ?
+==============================================================
 
 これはEmacsが間違った場所でシェルを探そうとして起こるかもしれません。シ
 ェル実行形式の場所をあなたが知っていたら、‘.emacs’ファイルで変数
 ‘explicit-shell-file-name’がそのフルファイル名を指し示すようにセットして
 ください。
 
-   MS-Windows上のShellモードで差し出がましいアンチウイルスソフトウェアに
-よりトラブルに遭う人がいます。このようなケースでは常駐アンチウイルスプロ
-グラムを無効にすると問題は解決するでしょう。
+   MS-Windows上のShellモードでお節介なアンチウイルスソフトウェアによりト
+ラブルに遭う人がいます。このようなケースでは常駐アンチウイルスプログラム
+を無効にすると問題は解決するでしょう。
 
 
 File: efaq.info,  Node: Termcap/Terminfo entries for Emacs,  Next: Errors with init files,  Prev: Problems with Shell Mode,  Up: Bugs and problems
 
-6.4 Where is the termcap/terminfo entry for terminal type ‘emacs’?
-==================================================================
+6.4 端末タイプ‘emacs’用のtermcap/terminfoエントリーはどこ?
+==========================================================
 
-ターミナルタイプ‘emacs’にたいするtermcapエントリーは、通常はサブシェルの
-環境変数‘TERMCAP’にセットされます。これは特定の状況下(たとえばShellバッ
-ファーからのrlogin)において、システムワイドなtermcapファイルにエントリー
-を追加する助けになるかもしれません。以下は‘emacs’にたいする正しい
-termcapエントリーです:
+端末タイプ‘emacs’にたいするtermcapエントリーは、通常はサブシェルの環境変
+数‘TERMCAP’にセットされます。これは特定の状況下(たとえばShellバッファー
+からのrlogin)において、システムワイドなtermcapファイルにエントリーを追加
+する助けになるかもしれません。以下は‘emacs’にたいする正しいtermcapエント
+リーです:
 
      emacs:tc=unknown:
 
@@ -2588,7 +2588,7 @@ termcapエントリーです:
 プログラムの使用は有効になりません。かわりに‘M-x term’を使用してください
 。
 
-   termcap/terminfo欠落による問題を回避するためには、シェルのスタートア
+   termcap/terminfo不在による問題を回避するためには、シェルのスタートア
 ップファイルで端末タイプを‘emacs’から‘dumb’か‘unknown’に変更します。
 ‘csh’ユーザーは以下を‘.cshrc’ファイルに記述できます:
 
@@ -2597,8 +2597,8 @@ termcapエントリーです:
 
 File: efaq.info,  Node: Errors with init files,  Next: Emacs ignores X resources,  Prev: Termcap/Terminfo entries for Emacs,  Up: Bugs and problems
 
-6.5 Why does Emacs say ‘Error in init file’?
-============================================
+6.5 Emacsが‘Error in init file’と言うのはなぜ?
+==============================================
 
 あなたの‘.emacs’ファイル、あるいはシステムワイドファイル
 ‘site-lisp/default.el’のロード中にエラーが発生したためです。Emacs 21.1以
@@ -2609,15 +2609,15 @@ File: efaq.info,  Node: Errors with init files,  Next: Emacs ignores X resources
 customization file::を参照してください。
 
    まず何らかのパッケージのロードが必要だったり、そあるいはパッケージの
-ロード後に評価されるフックを使用したのかもしれません。これのよくあるケー
-スについては*note Terminal setup code works after Emacs has begun::に記
-述があります。
+ロード後に評価されるフックを使用したのかもしれません。このよくあるケース
+については*note Terminal setup code works after Emacs has begun::に記述
+があります。
 
 
 File: efaq.info,  Node: Emacs ignores X resources,  Next: Emacs ignores frame parameters,  Prev: Errors with init files,  Up: Bugs and problems
 
-6.6 Why does Emacs ignore my X resources (my .Xdefaults file)?
-==============================================================
+6.6 EmacsがXリソース(わたしの.Xdefaultsファイル)を無視するのはなぜ?
+===================================================================
 
 Emacsは以下の環境変数が指定するファイルからXリソースを検索します。
 
@@ -2663,8 +2663,8 @@ Emacsは以下の環境変数が指定するファイルからXリソースを�
 
 File: efaq.info,  Node: Emacs ignores frame parameters,  Next: Editing files with $ in the name,  Prev: Emacs ignores X resources,  Up: Bugs and problems
 
-6.7 Why don’t my customizations of the frame parameters work?
-=============================================================
+6.7 わたしがカスタマイズしたフレームパラメーターが機能しないのはなぜ?
+=====================================================================
 
 これが発生したのは恐らく変数‘initial-frame-alist’でフレームパラメーター
 をセットしたからです。この変数にはEmacs起動時に作成された最初のフレーム
@@ -2680,27 +2680,27 @@ File: efaq.info,  Node: Emacs ignores frame parameters,  Next: Editing files wit
 
 File: efaq.info,  Node: Editing files with $ in the name,  Next: Shell mode loses the current directory,  Prev: Emacs ignores frame parameters,  Up: Bugs and problems
 
-6.8 How do I edit a file with a ‘$’ in its name?
-================================================
+6.8 名前に‘$’があるファイルを編集するには?
+==========================================
 
-ミニバッファーでファイル名を入力する際には、単語の前に‘$’があるとEmacsは
-環境変数としてそれの展開を試みます。この挙動を抑止するには、かわりに
-‘$$’とタイプしてください。
+ミニバッファーでファイル名を入力する際に単語の前に‘$’があると、Emacsは環
+境変数としてそれの展開を試みます。この挙動を抑止するにはかわりに‘$$’とタ
+イプしてください。
 
 
 File: efaq.info,  Node: Shell mode loses the current directory,  Next: Security risks with Emacs,  Prev: Editing files with $ in the name,  Up: Bugs and problems
 
-6.9 Why does shell mode lose track of the shell’s current directory?
-====================================================================
+6.9 Shellモードがシェルのカレントディレクトリーを見失うのはなぜ?
+================================================================
 
 Emacsには実際にシェルが自身のディレクトリーを変更したタイミングを知る手
-段がありません。これはUnixに内在する制限です。そのためにEmacsは‘cd’コマ
-ンドを識別して推測を試みます。変数リファレンスを含むディレクトリーが後に
-続く‘cd’ (‘cd $HOME/bin’)やシェルのメタ文字を含むディレクトリー(‘cd
+段がありません。これはUnixに内部の制限です。そのためにEmacsは‘cd’コマン
+ドを識別して推測を試みます。変数リファレンスを含むディレクトリーが後に続
+く‘cd’ (‘cd $HOME/bin’)やシェルのメタ文字を含むディレクトリー(‘cd
 ../lib*’)をタイプすると、Emacsはシェルの新たなカレントディレクトリーの正
 確な推測に失敗するでしょう。Shellモードにおけるこの問題を処理するために
-、膨大な数の様々な訂正および改善が記述されてきました(*note Finding a
-package with particular functionality::を参照)。
+、膨大な数の様々な訂正や改善が記述されてきました(*note Finding a package
+with particular functionality::を参照)。
 
    コマンド‘M-x dirs’でシェルのカレントディレクトリーをEmacsに伝えること
 ができます。
@@ -2708,8 +2708,8 @@ package with particular functionality::を参照)。
 
 File: efaq.info,  Node: Security risks with Emacs,  Next: Dired claims that no file is on this line,  Prev: Shell mode loses the current directory,  Up: Bugs and problems
 
-6.10 Are there any security risks in Emacs?
-===========================================
+6.10 Emacsにセキュリティリスクはある?
+=====================================
 
    • サードパーティのパッケージ。
 
@@ -2718,7 +2718,7 @@ File: efaq.info,  Node: Security risks with Emacs,  Next: Dired claims that no f
      ケージシステム(‘M-x list-packages’など)で使用する際には注意を要する
      。信頼可能なサードパーティだけを使用すること!
 
-   • ‘file-local-variable’機能(危険ではあるが容易に変更できる)。
+   • ‘file-local-variable’機能(確かに危険だが容易に変更できる)。
 
      Emacsにはファイル終端付近に特別にフォーマットされたテキストを含むフ
      ァイルを編集する際に、変数にたいするローカル値のセットを許す機能が
@@ -2730,17 +2730,18 @@ File: efaq.info,  Node: Security risks with Emacs,  Next: Dired claims that no f
      ローカル変数のリストがある。このリスト以外の変数のセットをファイル
      が試みると、その変数をセットするべきかどうかユーザーに確認を求める
      。変数‘enable-local-eval’をセットすることにより、ファイル下部で見つ
-     けたEmacs Lispコードの評価を許すか否かを▽えまに伝えることもできる。
+     けたEmacs Lispコードの評価を許すか否かをEmacsに伝えることもできる。
 
      *note (emacs)File Variables::を参照のこと。
 
-   • 合成Xイベント(危険であり‘MIT-MAGIC-COOKIE-1’以上を使用すること)。
+   • 合成Xイベント(確かに危険なので‘MIT-MAGIC-COOKIE-1’以上を使用するこ
+     と)。
 
      Emacsは‘SendEvent’リクエストが生成した合成Xイベント(synthetic X
-     event)が通常イベントであるかのように受け入れる。結果として簡単なホ
-     ストベースの認証を使用していると、XワークステーションへのX接続をオ
-     ープン可能な他のユーザーは、Emacsプロセスに(特権での他プロセス実行
-     を含む)何でも実行させることができる。
+     event)を、通常イベントであるかのように受け入れる。結果として簡単な
+     ホストベースの認証を使用していると、XワークステーションへのX接続を
+     オープン可能な他のユーザーは、Emacsプロセスに(特権での他プロセス実
+     行を含む)何でも実行させることができる。
 
      他のユーザーによるX接続のオープンができないように防ぐことが、これに
      たいする唯一の修整である。‘MIT-MAGIC-COOKIE-1’のような本物の認証メ
@@ -2777,8 +2778,8 @@ File: efaq.info,  Node: Security risks with Emacs,  Next: Dired claims that no f
 
 File: efaq.info,  Node: Dired claims that no file is on this line,  Prev: Security risks with Emacs,  Up: Bugs and problems
 
-6.11 Dired says, ‘no file on this line’ when I try to do something.
-===================================================================
+6.11 何かしようとするとDiredが‘no file on this line’と言う。
+============================================================
 
 Diredはファイル名の先頭を見つけるために正規表現を使用します。Unix形式の
 長いディレクトリーリスト(‘ls -l’)では、ファイル名は日時の後で始まります
@@ -2796,8 +2797,8 @@ OSのマニュアルを参照してください。
 
 File: efaq.info,  Node: Compiling and installing Emacs,  Next: Finding Emacs and related packages,  Prev: Bugs and problems,  Up: Top
 
-7 Compiling and installing Emacs
-********************************
+7 Emacsのコンパイルとインストール
+*********************************
 
 * Menu:
 
@@ -2807,8 +2808,8 @@ File: efaq.info,  Node: Compiling and installing Emacs,  Next: Finding Emacs and
 
 File: efaq.info,  Node: Installing Emacs,  Next: Problems building Emacs,  Up: Compiling and installing Emacs
 
-7.1 How do I install Emacs?
-===========================
+7.1 Emacsをインストールするには?
+================================
 
 この回答はUnixおよびUnix風システムを使用するユーザーを意図しています。他
 のオペレーティングシステムのユーザーは*note Emacs for MS-DOS::で始まる一
@@ -2835,7 +2836,7 @@ Emacsパッケージが提供されています。Emacsがすでにインスト�
      (‘VERSION’は‘23.1’のように適切なバージョン番号に置き換えること。)
 
    • 次にソースファイルを解凍、抽出する。これには標準ユーティリティー
-     ‘gzip’および‘tar’が必要。これらがシステムになければ
+     ‘gzip’と‘tar’が必要。これらがシステムになければ
      <https://ftp.gnu.org>からダウンロードできる。
 
      GNU ‘tar’なら一度に解凍抽出ができる:
@@ -2858,15 +2859,15 @@ Emacsパッケージが提供されています。Emacsがすでにインスト�
 
           make install
 
-     ‘make install’によって‘/usr/local/bin/emacs’、および
+     ‘make install’によって‘/usr/local/bin/emacs’や
      ‘/usr/local/share/info/’にあるかもしれないEmacs Infoファイルは上書
      きされることに注意。
 
 
 File: efaq.info,  Node: Problems building Emacs,  Prev: Installing Emacs,  Up: Compiling and installing Emacs
 
-7.2 What should I do if I have trouble building Emacs?
-======================================================
+7.2 Emacsのビルドでトラブルに逢ったらどうすれば?
+================================================
 
 まずはあなたの問題にたいする解決策があるかを確認するために、(Emacsソース
 を解凍した場所にある)ファイル‘etc/PROBLEMS’調べてください。次にこのFAQか
@@ -2882,8 +2883,8 @@ installing Emacs::を参照してください。
 
 File: efaq.info,  Node: Finding Emacs and related packages,  Next: Key bindings,  Prev: Compiling and installing Emacs,  Up: Top
 
-8 Finding Emacs and related packages
-************************************
+8 Emacsおよび関連パッケージの見つけ方
+*************************************
 
 * Menu:
 
@@ -2902,8 +2903,8 @@ File: efaq.info,  Node: Finding Emacs and related packages,  Next: Key bindings,
 
 File: efaq.info,  Node: Finding Emacs on the Internet,  Next: Finding a package with particular functionality,  Up: Finding Emacs and related packages
 
-8.1 Where can I get Emacs on the net?
-=====================================
+8.1 ネットショップのどこでEmacsを入手できる?
+============================================
 
 Emacsのダウンロードに関する情報はthe Emacs home-page
 (https://www.gnu.org/software/emacs/)で利用可能です。
@@ -2915,8 +2916,8 @@ Installing Emacs::、GNUソフトウェアが利用可能なアーカイブサ�
 
 File: efaq.info,  Node: Finding a package with particular functionality,  Next: Packages that do not come with Emacs,  Prev: Finding Emacs on the Internet,  Up: Finding Emacs and related packages
 
-8.2 How do I find an Emacs Lisp package that does XXX?
-======================================================
+8.2 XXXを行うEmacs Lispパッケージを見つけるには?
+================================================
 
 何よりまずはパッケージが本当にまだ利用できないか確認しましょう。たとえば
 ‘M-x apropos <RET> python <RET>’とタイプすれば、文字列‘python’を含むすべ
@@ -2927,34 +2928,34 @@ File: efaq.info,  Node: Finding a package with particular functionality,  Next: 
 lispディレクトリーを見てみましょう(*note File-name conventions::を参照
 )。ほとんどのパッケージのLispソースには、それらをどのようにロード、呼び
 出し、設定するべきかに関する短い説明が含まれているので、作成者がソースコ
-ード内でヒントを提供していたら、Lispパッケージの使用や変更を行う前に確認
-しましょう。
+ード内でヒントを提供していたら、Lispパッケージの使用や変更を行う前にそれ
+を確認しましょう。
 
-   コマンド‘C-h p’ (‘finder-by-keyword’)でEmacsのパッケージ構成をブラウ
-ズできます。
+   コマンド‘C-h p’ (‘finder-by-keyword’)でEmacsのパッケージ構成を閲覧で
+きます。
 
-   Emacsの一部ではない追加パッケージを探す方法についての助言は*note
+   Emacsの一部ではない追加パッケージを探す方法に関する助言は*note
 Packages that do not come with Emacs::を参照してください。
 
 
 File: efaq.info,  Node: Packages that do not come with Emacs,  Next: Spell-checkers,  Prev: Finding a package with particular functionality,  Up: Finding Emacs and related packages
 
-8.3 Where can I get Emacs Lisp packages that don’t come with Emacs?
-===================================================================
+8.3 Emacsに同梱されていないEmacs Lispパッケージはどこで入手できるのか?
+======================================================================
 
 あなたのEmacsに更に機能を追加するには、コマンド‘M-x list-packages’を使用
 するのがもっとも簡単な方法です。これはGNU ELPA (https://elpa.gnu.org)
 (“Emacs Lisp Package Archive”)サーバーに接続して、それが提案する追加パッ
 ケージのリストを取得します。これらはEmacsでの使用が可能ですが、スペース
 等の理由によりEmacs自体とは別に配布されているGNUパッケージです。コマンド
-の結果ト得られた‘*Packages*’を閲覧して何が利用可能なのか確認して、それか
+の結果として得られた‘*Packages*’を閲覧して何が利用可能なのか確認、それか
 らあなたが選択したパッケージのダウンロードとインストールを自動的に行いま
 す。*note (emacs)Packages::を参照してください。
 
    Emacs Lispパッケージアーカイブは他にもあります。追加アーカイブを使用
 するには変数‘package-archives’をカスタマイズしてください。これらのアーカ
 イブはGNU Emacsとは提携しておらず、わたしたちはそれらがどのように保守さ
-れているかを監視していません。彼らはコードの正確さち安全性に最新の注意を
+れているかを監視していません。彼らはコードの正確さち安全性に細心の注意を
 払うかもしれないし、あるいはぞんざいに注意するだけかもしれません。
 
    更にこれらの他のアーカイブでホストされるパッケージは、他の非フリーな
@@ -2966,8 +2967,8 @@ File: efaq.info,  Node: Packages that do not come with Emacs,  Next: Spell-check
    Emacs sources newsgroup (news:gnu.emacs.sources)にゲートウェイされて
 いるGNU Emacs sources mailing list
 (https://lists.gnu.org/mailman/listinfo/gnu-emacs-sources)は、(たとえ2点
-間の通信が不確かであっても)人々が彼らのEmacs拡張をアナウンスする公の場で
-す。
+間の通信が不確かなものであったとしても)人々が彼らのEmacs拡張をアナウンス
+する公の場です。
 
    Emacs Wiki (https://emacswiki.org)にはいくつかの追加拡張への指標が含
 まれています。WikEmacs (https://wikemacs.org)はEmacs用の代替えwikiです。
@@ -2985,10 +2986,10 @@ ELPAをチェックした後は、ウェブ検索が結果を見い出す最良�
 
 File: efaq.info,  Node: Spell-checkers,  Next: Current GNU distributions,  Prev: Packages that do not come with Emacs,  Up: Finding Emacs and related packages
 
-8.4 Spell-checkers
-==================
+8.4 スペルチェッカー
+====================
 
-以下を含む様々なスペルチェッカーはEmacsと互換性があります:
+以下を含む様々なスペルチェッカーにはEmacsとの互換性があります:
 
 Hunspell
      <http://hunspell.sourceforge.net/>
@@ -3005,10 +3006,10 @@ Enchant
 
 File: efaq.info,  Node: Current GNU distributions,  Next: Difference between Emacs and XEmacs,  Prev: Spell-checkers,  Up: Finding Emacs and related packages
 
-8.5 Where can I get other up-to-date GNU stuff?
-===============================================
+8.5 その他の最新のGNUスタッフはどこで入手できる?
+================================================
 
-GNU公式ソフトウェアのほとんどは通常は以下に保持されています
+GNU公式ソフトウェアのほとんどは通常は以下で保持されています
 
    <https://ftp.gnu.org/pub/gnu>
 
@@ -3019,16 +3020,16 @@ GNU公式ソフトウェアのほとんどは通常は以下に保持されて�
 
 File: efaq.info,  Node: Difference between Emacs and XEmacs,  Next: Emacs for minimalists,  Prev: Current GNU distributions,  Up: Finding Emacs and related packages
 
-8.6 What is the difference between Emacs and XEmacs (formerly Lucid Emacs)?
-===========================================================================
+8.6 EmacsとXEmacs(以前はLucid Emacs)の違いは?
+=============================================
 
 XEmacsとはもはや活発に開発されなくなったEmacsのブランチバージョンです。
 当初XEmacsはLucid Emacsと呼ばれており、初版はEmacs 19のプレリリースバー
 ジョンから派生しました。このFAQでは公式バージョンにたいしてのみ“Emacs”と
 いう名前を使用します。
 
-   XEmacsは2009年1月30にリリースされた新バージョンが最新であり、それには
-Emacsに存在する多くの重要な機能が欠落していました。過去においては、
+   XEmacsは2009年1月30に新たにリリースされたバージョンが最新であり、それ
+にはEmacsに存在する多くの重要な機能が欠落していました。過去においては、
 EmacsパッケージにXEmacsとの互換性のためのコードを含めるのは珍しいことで
 はありませんでした。現在ではたとえそのような互換性コードをまだ保守してい
 るパッケージがあったとしても、より人気のあるビルトインおよびサードパーテ
@@ -3036,12 +3037,11 @@ EmacsパッケージにXEmacsとの互換性のためのコードを含めるの
 用に開発されています。
 
    いくつかのXEmacsコードはEmacsに提供されており、他の部分についてもわた
-したちは使用したいと考えていまづが、初期のXEmacsメンテナーは提供されたコ
-ードの作成者を常に追跡はしておらず、FSFがそのコードにたいする署名済みの
-コピーライトペーパーを取得することを不可能にしています(FSFは個別の身元を
-保つEmacsのコードに正しく統合されていない汎用Cサポートパッケージは除き。
-Emacsリリースに含まれるすべてのコードにたいしてこれらのペーパーを要求し
-ている)。
+したちは使用したいと考えていますが、初期のXEmacsメンテナーは提供されたコ
+ードの作成者を常に追跡してはおらず、FSFによるそのコードの署名済みコピー
+ライトペーパー取得を不可能にしています(FSFはEmacsのコードに正しく統合さ
+れていない個別に身元を保つ汎用Cサポートパッケージを除き、Emacsリリースに
+含まれるすべてのコードにたいしてこれらのペーパーを要求している)。
 
    これらの2つのバージョンを区別して議論をする場合には、どうかそれらを
 “Emacs”および“XEmacs”と呼ぶようにしてください。XEmacsもまたGNUプロジェク
@@ -3052,21 +3052,21 @@ Emacsリリースに含まれるすべてのコードにたいしてこれらの
 
 File: efaq.info,  Node: Emacs for minimalists,  Next: Emacs for MS-DOS,  Prev: Difference between Emacs and XEmacs,  Up: Finding Emacs and related packages
 
-8.7 I don’t have enough disk space to install Emacs
-===================================================
+8.7 Emacsをインストールするための空き容量が不十分
+=================================================
 
 GNU ZileはEmacsの軽量クローンです。Zileは‘Zile Is Lossy Emacs’を短縮した
-ものです。これにはEmacsの基本的な編集機能すべてが含まれています。Zileの
+ものです。これにはEmacsの基本的な編集機能がすべて含まれています。Zileの
 バイナリーは通常は約130kBのサイズなので、非常にスペースに制限がある環境
-で有用かもしれません。詳細は以下で理由できます
+で有用かもしれません。詳細は以下で利用できます
 
    <https://www.gnu.org/software/zile/>
 
 
 File: efaq.info,  Node: Emacs for MS-DOS,  Next: Emacs for MS-Windows,  Prev: Emacs for minimalists,  Up: Finding Emacs and related packages
 
-8.8 Where can I get Emacs for MS-DOS?
-=====================================
+8.8 MS-DOS用のEmacsはどこ?
+==========================
 
 MS-DOS用のEmacsをソースからビルドするには、ディストリビューションに同梱
 のファイル‘msdos/INSTALL’の手順を参照してください。DOSポートはプレーン
@@ -3091,8 +3091,8 @@ Emacs Lisp拡張言語のような特定の機能が欠落していることが�
 
 File: efaq.info,  Node: Emacs for MS-Windows,  Next: Emacs for GNUstep,  Prev: Emacs for MS-DOS,  Up: Finding Emacs and related packages
 
-8.9 Where can I get Emacs for Microsoft Windows?
-================================================
+8.9 Microsoft Windows用のEmacsはどこ?
+=====================================
 
 MS-WindowsでのEmacsには別個にFAQがあります。*note (efaq-w32)Top::を参照
 してください。MS-DOSの場合には*note Emacs for MS-DOS::を参照してください
@@ -3101,8 +3101,8 @@ MS-WindowsでのEmacsには別個にFAQがあります。*note (efaq-w32)Top::�
 
 File: efaq.info,  Node: Emacs for GNUstep,  Next: Emacs for macOS,  Prev: Emacs for MS-Windows,  Up: Finding Emacs and related packages
 
-8.10 Where can I get Emacs for GNUstep?
-=======================================
+8.10 GNUstep用のEmacsはどこ?
+============================
 
 バージョン23.1からEmacsはGNUstepをネイティブでサポートしています。ディス
 トリビューション内のファイル‘nextstep/INSTALL’を参照してください。
@@ -3110,8 +3110,8 @@ File: efaq.info,  Node: Emacs for GNUstep,  Next: Emacs for macOS,  Prev: Emacs 
 
 File: efaq.info,  Node: Emacs for macOS,  Prev: Emacs for GNUstep,  Up: Finding Emacs and related packages
 
-8.11 Where can I get Emacs for macOS?
-=====================================
+8.11 macOS用のEmacsはどこ?
+==========================
 
 バージョン22.1からEmacsはmacOSをネイティブでサポートしています。ディスト
 リビューション内のファイル‘nextstep/INSTALL’を参照してください。
@@ -3119,8 +3119,8 @@ File: efaq.info,  Node: Emacs for macOS,  Prev: Emacs for GNUstep,  Up: Finding 
 
 File: efaq.info,  Node: Key bindings,  Next: Alternate character sets,  Prev: Finding Emacs and related packages,  Up: Top
 
-9 Key bindings
-**************
+9 キープバインディング
+**********************
 
 * Menu:
 
@@ -3143,32 +3143,32 @@ File: efaq.info,  Node: Key bindings,  Next: Alternate character sets,  Prev: Fi
 
 File: efaq.info,  Node: Binding keys to commands,  Next: Invalid prefix characters,  Up: Key bindings
 
-9.1 How do I bind keys (including function keys) to commands?
-=============================================================
+9.1 キー(ファンクションキー含む)をコマンドにインストールするには?
+=================================================================
 
-対話的、または‘.emacs’ファイルでキーをコマンドにバインドできます。すべて
-のモードにたいしてキーを対話的にバインドするには、‘M-x global-set-key
-<RET> KEY CMD <RET>’とタイプします。
+対話的に、あるいは‘.emacs’ファイルでキーをコマンドにバインドできます。す
+べてのモードにたいしてキーを対話的にバインドするには、‘M-x
+global-set-key <RET> KEY CMD <RET>’とタイプします。
 
    カレントのメジャーモードだけでキーをバインドするには‘M-x
 local-set-key <RET> KEY CMD <RET>’とタイプします。
 
    *note (emacs)Key Bindings::を参照してください。
 
-   対話的にキーをバインドするプログレを容易にするために、次の“trick”を使
-用できます:
+   対話的にキーをバインドするプロセスを容易にするために次の“trick”を使用
+できます:
 まず対話的にキーをバインドしてからすぐに‘C-x <ESC> <ESC> C-a C-k C-g’と
 タイプ、
 これでキーバインドを要するコマンドがkillリングに取り込まれたので
 ‘.emacs’ファイルにyankできるようになった。
 
-グローバルなキーバインディングの場合には、コマンドの変更は不要です。たと
-えば、
+グローバルなキーバインディングの場合にはコマンドの変更は不要です。たとえ
+ば、
 
      (global-set-key [f1] 'help-for-help)
 
-これは‘.emacs’ファイルに直後記述できます。ローカルなキーバインディングの
-場合には、、コマンドは‘add-hook’関数と組み合わせて使用されます。たとえば
+これは‘.emacs’ファイルに直接記述できます。ローカルなキーバインディングの
+場合には、コマンドは‘add-hook’関数と組み合わせて使用されます。たとえば
 TeXモードでのローカルバインディングは以下のようになるでしょう
 
      (add-hook 'tex-mode-hook
@@ -3181,9 +3181,9 @@ TeXモードでのローカルバインディングは以下のようになる�
      と思うかもしれません。
 
    • プレフィクスキーとしてある文字シーケンスをバインドする場合に、それ
-     がすでにコンプリートキーワードとしてバインドされていたら、新しいバ
-     インディングの前にコンプリートキーのバインドを解除しなければならな
-     い。たとえば‘ESC {’がバインド済みなら:
+     がすでにコンプリートキーとしてバインドされていたら、新しいバインデ
+     ィングの前にコンプリートキーのバインドを解除しなければならない。た
+     とえば‘ESC {’がバインド済みなら:
 
           (global-unset-key [?\e ?{])   ;; または
           (local-unset-key [?\e ?{])
@@ -3197,8 +3197,8 @@ TeXモードでのローカルバインディングは以下のようになる�
 
 File: efaq.info,  Node: Invalid prefix characters,  Next: Terminal setup code works after Emacs has begun,  Prev: Binding keys to commands,  Up: Key bindings
 
-9.2 Why does Emacs say ‘Key sequence XXX uses invalid prefix characters’?
-=========================================================================
+9.2 Emacsが‘Key sequence XXX uses invalid prefix characters’と言うのはなぜ?
+===========================================================================
 
 通常は2つのうちいずれかが発生したからです。1つ目はキーシーケンス内のコン
 トロール文字の指定誤りです(Lisp式で‘\C-f’のかわりに‘C-f’を使用した)。2つ
@@ -3214,14 +3214,14 @@ File: efaq.info,  Node: Invalid prefix characters,  Next: Terminal setup code wo
 
 File: efaq.info,  Node: Terminal setup code works after Emacs has begun,  Next: Working with function and arrow keys,  Prev: Invalid prefix characters,  Up: Key bindings
 
-9.3 Why doesn’t this [terminal or window-system setup] code work in my ‘.emacs’ file, but it works just fine after Emacs starts up?
-===================================================================================================================================
+9.3 Emacs起動後でなければ‘.emacs’ファイルの[端末やウィンドウシステム]のセットアップコードが機能しないのはなぜ?
+==============================================================================================================
 
 スタートアップの間、Emacsは与えられたコード/ファイルの順番に応じて自身を
-初期化します。‘.emacs’ファイルの中のあるコードを、端末またはウィンドウシ
-ステムのセットアップコードが実行されるまで延期する必要があるのにセットア
-ップが終わっていないと、この問題を体験することになるでしょう(このコード
-/ファイルの実行順はスタートアップ後は強制されない)。
+初期化します。端末またはウィンドウシステムのセットアップコードが実行され
+るまで、‘.emacs’ファイル内のあるコードを延期する必要があるのにセットアッ
+プが終わっていないと、この問題を体験することになるでしょう(このコード/フ
+ァイルの実行順はスタートアップ後は強制されない)。
 
    端末またはウィンドウシステムのセットアップ後までEmacs Lispコードの実
 行を延期するには、コードを“lambdaリスト(lambda list)”として
@@ -3240,8 +3240,8 @@ File: efaq.info,  Node: Terminal setup code works after Emacs has begun,  Next: 
 
 File: efaq.info,  Node: Working with function and arrow keys,  Next: X key translations for Emacs,  Prev: Terminal setup code works after Emacs has begun,  Up: Key bindings
 
-9.4 How do I tell what characters or symbols my function or arrow keys emit?
-============================================================================
+9.4 ファンクションキーや矢印キーが発する文字やシンボルを確認するには?
+=====================================================================
 
 ‘C-h c’の後にファンクションキーか矢印キーをタイプしてください。コマンド
 はファンクションキーシンボルか文字シーケンスをリターンするでしょう(説明
@@ -3250,13 +3250,13 @@ File: efaq.info,  Node: Working with function and arrow keys,  Next: X key trans
 
 File: efaq.info,  Node: X key translations for Emacs,  Next: Backspace invokes help,  Prev: Working with function and arrow keys,  Up: Key bindings
 
-9.5 How do I set the X key “translations” for Emacs?
-====================================================
+9.5 Xのキー変換をEmacs用に設定するには?
+=======================================
 
-EmacsはデフォルトではXtライブラリーを使用するようには記述されていないの
-で、何の“変換(translation)”もセットされていません(XtとともにEmacsをビル
-ドした場合にそのような変換をどのようにセットするかわたしたちには定かでは
-ないので、これを行うことができたらどうか知らせてください!)。
+EmacsはデフォルトではXtライブラリーを使用するように記述されていないので
+、何の“変換(translation)”もセットされていません(XtとともにEmacsをビルド
+した場合にそのような変換をどのようにセットするかわたしたちには定かではな
+いので、これを行うことができたらどうか知らせてください!)。
 
    Emacs内でのキーの挙動に影響を与えるには‘xmodmap’ (Emacs外部)、あるい
 は‘define-key’ (Emacs内部)を通じて行う方法だけです。‘define-key’コマンド
@@ -3270,8 +3270,8 @@ EmacsはデフォルトではXtライブラリーを使用するようには記�
 
 File: efaq.info,  Node: Backspace invokes help,  Next: Swapping keys,  Prev: X key translations for Emacs,  Up: Key bindings
 
-9.6 Why does the <Backspace> key invoke help?
-=============================================
+9.6 <Backspace>キーがヘルプを呼び出すのはなぜ?
+==============================================
 
 (ほとんどのキーボードでは)<Backspace>キーはASCIIコードの8を生成します。
 ‘C-h’が送信するコードも同じです。Emacsではデフォルトでは‘C-h’は
@@ -3305,9 +3305,9 @@ help-commandを呼び出します。これは‘help’の最初の文字が‘h
         − Emacs 21.1以降ではオプション‘normal-erase-is-backspace-mode’の
           カスタマイズ、または‘M-x normal-erase-is-backspace’呼び出しに
           より、ダム端末およびウィンドウ化されたディスプレーの両方におい
-          て、<Backspace>キーおよび<Delete>キーの効果を制御できる。詳細
-          についてはこれらのシンボルのドキュメントについては、*note
-          Emacs Lisp documentation::を参照のこと。
+          て、<Backspace>キーおよび<Delete>キーの効果を制御できる。これ
+          らのシンボルのドキュメントについては*note Emacs Lisp
+          documentation::を参照のこと。
 
         − Emacs内部では<Backspace>キーと<DEL>キーを交換できる:
 
@@ -3325,7 +3325,7 @@ help-commandを呼び出します。これは‘help’の最初の文字が‘h
           ‘keyboard-translate’についての詳細は*note Swapping keys::を参
           照のこと。
 
-        − 別のアプローチとしてはキーバインディングを切り替えて、かわりに
+        − 別のアプローチとしては、キーバインディングを切り替えてかわりに
           ‘C-x h’をヘルプにする:
 
                (global-set-key "\C-h" 'delete-backward-char)
@@ -3337,13 +3337,13 @@ help-commandを呼び出します。これは‘help’の最初の文字が‘h
           ‘delete-backward-char’にバインドするモードにたいしてのみ問題を
           解決する。‘view-mode’モードのように<DEL>を別の何かにバインドす
           るモードは、<Backspace>キーを押下した際に期待通り動作しないだ
-          ろう。この理由により、えわたしたちは上述した
+          ろう。この理由により、わたしたちは上述した
           ‘keyboard-translate’手法をお勧めする。
 
           ヘルプ用として他に人気のあるキーバインディングは‘M-?’と‘C-x
           ?’である。
 
-     <DEL>にたいしてローカルバインディングをもちモードが多数あり、それら
+     <DEL>にたいしてローカルバインディングをもつモードが多数あり、それら
      と干渉するかもしれないので、<DEL>に‘help-command’をバインドしようと
      してはならない。
 
@@ -3357,8 +3357,8 @@ help-commandを呼び出します。これは‘help’の最初の文字が‘h
 
 File: efaq.info,  Node: Swapping keys,  Next: Producing C-XXX with the keyboard,  Prev: Backspace invokes help,  Up: Key bindings
 
-9.7 How do I swap two keys?
-===========================
+9.7 2つのキーを入れ替えるには?
+==============================
 
 ‘keyboard-translate’を使用して2つのキー(またはキーシーケンス)を交換でき
 ます。たとえば‘C-h’を<DEL>、<DEL>を‘C-h’にするには、
@@ -3383,8 +3383,8 @@ File: efaq.info,  Node: Swapping keys,  Next: Producing C-XXX with the keyboard,
 
 File: efaq.info,  Node: Producing C-XXX with the keyboard,  Next: No Meta key,  Prev: Swapping keys,  Up: Key bindings
 
-9.8 How do I produce C-XXX with my keyboard?
-============================================
+9.8 キーボードでC-XXXを生成するには?
+====================================
 
 (X配下ではない)端末で一般的ないくつかの“エイリアス”です:
 
@@ -3414,27 +3414,27 @@ c’コマンドを使って、<CTRL>とすべての数字を試して何が生�
 
 File: efaq.info,  Node: No Meta key,  Next: No Escape key,  Prev: Producing C-XXX with the keyboard,  Up: Key bindings
 
-9.9 What if I don’t have a <Meta> key?
-======================================
+9.9 <Meta>キーがない、どうすれば?
+=================================
 
 多くのキーボードでは、<Alt>キーは<Meta>のように振る舞うので試してみてく
 ださい。
 
    ‘M-a’のかわりに‘<ESC> a’とタイプすることができます。実際のところ、い
-ずれにせよEmacsｈｓ内部で‘M-a’を‘<ESC> a’に変換しています
+ずれにせよEmacsは内部で‘M-a’を‘<ESC> a’に変換しています
 (‘meta-prefix-char’の値による)。<Meta>と‘a’は一緒に押しますが、<ESC>の場
-合には<ESC>を押して、離した後に‘a’を押下することに注意してください。
+合には<ESC>を押して離した後に‘a’を押下することに注意してください。
 
 
 File: efaq.info,  Node: No Escape key,  Next: Compose Character,  Prev: No Meta key,  Up: Key bindings
 
-9.10 What if I don’t have an <Escape> key?
-==========================================
+9.10 <Escape>キーがない、どうすれば?
+====================================
 
 かわりに‘C-[’をタイプしてください。これはエスケープキーのようにASCIIコー
 ドの27を送信するはずです。‘C-3’でも機能する端末もあります(X配下でないこ
-と)。多くの端末(特にDEC)では、<F11>が<ESC>を生成します。そうでなければ、
-以下のフォームを使用してこれをバインドできます:
+と)。多くの端末(特にDEC)では、<F11>が<ESC>を生成します。そうでなければ以
+下のフォームを使用してこれをバインドできます:
 
      ;; DEC端末ではF11はESCの置き換えとドキュメントされている
      (define-key function-key-map [f11] [?\e])
@@ -3442,18 +3442,18 @@ File: efaq.info,  Node: No Escape key,  Next: Compose Character,  Prev: No Meta 
 
 File: efaq.info,  Node: Compose Character,  Next: Binding combinations of modifiers and function keys,  Prev: No Escape key,  Up: Key bindings
 
-9.11 Can I make my <Compose Character> key behave like a <Meta> key?
-====================================================================
+9.11 <Compose Character>キーを<Meta>キーのように機能させるには?
+===============================================================
 
 VT220のようなダム端末ではできません。噂では特定のVT220クローンは、この方
 法で設定することによって独自に<Compose>キーをもてるようです。Xを使用して
-いれば、‘xmodmap’コマンドでこれを行うことができるかもしれません。
+いれば‘xmodmap’コマンドでこれを行うことができるかもしれません。
 
 
 File: efaq.info,  Node: Binding combinations of modifiers and function keys,  Next: Meta key does not work in xterm,  Prev: Compose Character,  Up: Key bindings
 
-9.12 How do I bind a combination of modifier key and function key?
-==================================================================
+9.12 修飾キーとファンクションキーの組み合わせをバインドするには?
+================================================================
 
 ファンクションキーのシンボルにプレフィクスを追加することによって、ベクタ
 ーフォーマットで修飾されたファンクションキーを表すことができます。たとえ
@@ -3465,7 +3465,7 @@ File: efaq.info,  Node: Binding combinations of modifiers and function keys,  Ne
 
    ファンクションキーとともに<Control>、<Meta>、<Hyper>、<Super>、
 <Alt>、<Shift>の修飾キーが使用できます。これらの修飾キーを表現するにはシ
-ンボル名の前に‘C-’、‘M-’、‘H-’、‘s-’、‘A-’‘S-’を前置します。以下は
+ンボル名の前に‘C-’、‘M-’、‘H-’、‘s-’、‘A-’、‘S-’を前置します。以下は
 ‘H-M-RIGHT’を単語1つ前方に移動にする方法です:
 
      (global-set-key [H-M-right] 'forward-word)
@@ -3481,8 +3481,8 @@ to commands::を参照してください。
 
 File: efaq.info,  Node: Meta key does not work in xterm,  Next: ExtendChar key does not work as Meta,  Prev: Binding combinations of modifiers and function keys,  Up: Key bindings
 
-9.13 Why doesn’t my <Meta> key work in an ‘xterm’ window?
-=========================================================
+9.13 ‘xterm’ウィンドウで<Meta>キーが機能しないのはなぜ?
+=======================================================
 
 *note Single-Byte Character Set Support: (emacs)Unibyte Mode.を参照して
 ください。
@@ -3492,26 +3492,26 @@ File: efaq.info,  Node: Meta key does not work in xterm,  Next: ExtendChar key d
 
    • ウィンドウマネージャーに‘mwm’を使用することによって大きな問題を抱え
      ているのかもしれない(‘mwm’のEmacsで<Meta>キーが使用できるようにする
-     汎用的で優れた解決策を知る人は居ないだろうか?)。
+     汎用的で優れた解決策を知る人は居るのだろうか?)。
 
    • X11ではそれが本当に<Meta>キーなのか確認してほしい。あなたの<Meta>キ
-     ーがどんなを生成するかを確認するには‘xev’を使用する。‘Meta_L’か
+     ーがどんなkeysymを生成するか確認するには‘xev’を使用する。‘Meta_L’か
      ‘Meta_R’のいずれかのはずだが、もし違うならこの状況を修整するために
-     ‘xmodmap’を使用できる。<Meta>は‘Meta_L’や‘Meta_R’を生成しないものの
-     ‘M-x’は非ASCII文字を生成するようなら、以下を‘~/.Xdefaults’ファイル
-     に記述する:
+     ‘xmodmap’を使用できる。<Meta>は‘Meta_L’や‘Meta_R’を生成せず、
+     ‘M-x’は非ASCII文字を生成するようなら以下を‘~/.Xdefaults’ファイルに
+     記述する:
 
            XTerm*eightBitInput:   false
            XTerm*eightBitOutput:  true
 
-   • ‘xterm’が使用している‘pty’は8ビット文字を通すか確認すること。‘stty
+   • ‘xterm’が使用している‘pty’が8ビット文字を通すか確認すること。‘stty
      -a’ (あるいは‘stty everything’)がどこかに‘cs8’と表示するはずである
      。かわりに‘cs7’が表示されたら、これを修整するために‘stty cs8
      -istrip’ (あるいは‘stty pass8’)を使用する。
 
    • ‘xterm’とEmacsの間に‘rlogin’接続が存在する場合には、各文字の8ビット
-     目をすべて渡すように、rloginに‘-8’引数を与える必要があるかもしれな
-     い。
+     目をすべて渡すようにrloginに‘-8’引数を与える必要があるかもしれない
+     。
 
    • UltrixでEmacsを実行しているなら、‘(set-input-mode t nil)’の評価が助
      けになると報告されている。
@@ -3535,10 +3535,10 @@ File: efaq.info,  Node: Meta key does not work in xterm,  Next: ExtendChar key d
 
 File: efaq.info,  Node: ExtendChar key does not work as Meta,  Next: SPC no longer completes file names,  Prev: Meta key does not work in xterm,  Up: Key bindings
 
-9.14 Why doesn’t my <ExtendChar> key work as a <Meta> key under HP-UX 8.0 and 9.x?
-==================================================================================
+9.14 HP-UX 8.0および9.xで<ExtendChar>キーが<Meta>キーのように機能しないのはなぜ?
+================================================================================
 
-これはX11R4における国際家拡張の結果であるとともに、HPが現在はこの拡張を
+これはX11R4における国際化拡張の結果であるとともに、HPが現在はこの拡張を
 使用しているという事実を示しています。Emacsは<Meta>キーの状態に関わらず
 ‘XLookupString’関数が同じ結果をリターンするという、もはや必ずしも真とは
 言えない前提にもとづいています。Emacsが修整されるまでは、その場しのぎの
@@ -3553,7 +3553,7 @@ File: efaq.info,  Node: ExtendChar key does not work as Meta,  Next: SPC no long
 
 File: efaq.info,  Node: SPC no longer completes file names,  Prev: ExtendChar key does not work as Meta,  Up: Key bindings
 
-9.15 Why doesn’t <SPC> complete file names anymore?
+9.15 <SPC>でファイル名が他の人されなくなった、なぜ?
 ===================================================
 
 Emacs 22.1から‘SPC’はミニバッファーでファイル名の補完を行わなくなったの
@@ -3561,7 +3561,7 @@ Emacs 22.1から‘SPC’はミニバッファーでファイル名の補完を�
 る必要がなくなりました。
 
    以下のようにミニバッファーで‘SPC’を‘minibuffer-complete-word’にバイン
-ドすることによって古い挙動を取り戻すことができます:
+ドすることによって古い挙動に戻すことができます:
 
      (define-key minibuffer-local-filename-completion-map (kbd "SPC")
        'minibuffer-complete-word)
@@ -3572,8 +3572,8 @@ Emacs 22.1から‘SPC’はミニバッファーでファイル名の補完を�
 
 File: efaq.info,  Node: Alternate character sets,  Next: Mail and news,  Prev: Key bindings,  Up: Top
 
-10 Alternate character sets
-***************************
+10 代替文字集合
+***************
 
 * Menu:
 
@@ -3585,8 +3585,8 @@ File: efaq.info,  Node: Alternate character sets,  Next: Mail and news,  Prev: K
 
 File: efaq.info,  Node: Emacs does not display 8-bit characters,  Next: Inputting eight-bit characters,  Up: Alternate character sets
 
-10.1 How do I make Emacs display 8-bit characters?
-==================================================
+10.1 Emacsで8ビット文字を表示するには?
+======================================
 
 *note Single-byte Character Set Support: (emacs)Unibyte Mode.を参照して
 ください。Unixのテキストのみの端末ディスプレー、あるいは‘emacs -nw’呼び
@@ -3600,8 +3600,8 @@ File: efaq.info,  Node: Emacs does not display 8-bit characters,  Next: Inputtin
 
 File: efaq.info,  Node: Inputting eight-bit characters,  Next: Right-to-left alphabets,  Prev: Emacs does not display 8-bit characters,  Up: Alternate character sets
 
-10.2 How do I input eight-bit characters?
-=========================================
+10.2 8ビット文字を入力するには?
+===============================
 
 8ビット文字の入力には様々なメソッドが利用できます。*note Single-byte
 Character Set Support: (emacs)Unibyte Mode.を参照してください。より洗練
@@ -3610,8 +3610,8 @@ Character Set Support: (emacs)Unibyte Mode.を参照してください。より�
 
 File: efaq.info,  Node: Right-to-left alphabets,  Next: How to add fonts,  Prev: Inputting eight-bit characters,  Up: Alternate character sets
 
-10.3 Where is an Emacs that can handle Semitic (right-to-left) alphabets?
-=========================================================================
+10.3 セム語アルファベット(右から左に記述)を扱えるEmacsを入手できるのはどこ?
+===========================================================================
 
 バージョン24.1以降のEmacsではアラビア語、ペルシア語、ヘブライ語のような
 双方向スクリプト(bidirectional script)の表示と編集がサポートされています
@@ -3620,8 +3620,8 @@ File: efaq.info,  Node: Right-to-left alphabets,  Next: How to add fonts,  Prev:
 
 File: efaq.info,  Node: How to add fonts,  Prev: Right-to-left alphabets,  Up: Alternate character sets
 
-10.4 How do I add fonts for use with Emacs?
-===========================================
+10.4 Emacsで使うフォントを追加するには?
+=======================================
 
 まずBDFフォントファイル、およびそれらが必要とするすべての補助パッケージ
 をダウンロードしてインストールしてください。GNU Intlfontsディストリビュ
@@ -3721,8 +3721,8 @@ font-encoding-alistに追加する必要があります:
 
 File: efaq.info,  Node: Mail and news,  Next: Concept index,  Prev: Alternate character sets,  Up: Top
 
-11 Mail and news
-****************
+11 メールとニュース
+*******************
 
 * Menu:
 
@@ -3740,8 +3740,8 @@ File: efaq.info,  Node: Mail and news,  Next: Concept index,  Prev: Alternate ch
 
 File: efaq.info,  Node: Changing the included text prefix,  Next: Saving a copy of outgoing mail,  Up: Mail and news
 
-11.1 How do I change the included text prefix in mail/news followups?
-=====================================================================
+11.1 メール/ニュースのフォローアップにふくまるテキストプレフィクスを変更するには?
+=================================================================================
 
 メールをRmailで読んでいる場合には変数‘mail-yank-prefix’、Gnusなら
 ‘message-yank-prefix’、VMなら‘vm-included-text-prefix’、mh-eなら
@@ -3756,8 +3756,8 @@ File: efaq.info,  Node: Changing the included text prefix,  Next: Saving a copy 
 
 File: efaq.info,  Node: Saving a copy of outgoing mail,  Next: Expanding aliases when sending mail,  Prev: Changing the included text prefix,  Up: Mail and news
 
-11.2 How do I save a copy of outgoing mail?
-===========================================
+11.2 送信メールのコピーを保存するには?
+======================================
 
 メールメッセージの‘BCC’ヘッダーに自分を含めて自分にコピーをメールしたり
 、あるいは‘FCC’ヘッダーにファイルを含めてメッセージのコピーを直接保存で
@@ -3783,8 +3783,8 @@ File: efaq.info,  Node: Saving a copy of outgoing mail,  Next: Expanding aliases
 
 File: efaq.info,  Node: Expanding aliases when sending mail,  Next: Sorting the messages in an Rmail folder,  Prev: Saving a copy of outgoing mail,  Up: Mail and news
 
-11.3 Why doesn’t Emacs expand my aliases when sending mail?
-===========================================================
+11.3 送信時にEmacsがエイリアスを展開しない、なぜ?
+=================================================
 
 *note The Emacs Manual: (emacs)Mail Aliases.を参照してください。
 
@@ -3809,8 +3809,8 @@ File: efaq.info,  Node: Expanding aliases when sending mail,  Next: Sorting the 
 
 File: efaq.info,  Node: Sorting the messages in an Rmail folder,  Next: Rmail writes to /var/spool/mail,  Prev: Expanding aliases when sending mail,  Up: Mail and news
 
-11.4 How can I sort the messages in my Rmail folder?
-====================================================
+11.4 Rmailフォルダーｎメッセージを並び替えるには?
+=================================================
 
 Rmailでソート関数とそれらのキーバインディングのリストを得るには‘C-c C-s
 C-h’とタイプします。
@@ -3818,8 +3818,8 @@ C-h’とタイプします。
 
 File: efaq.info,  Node: Rmail writes to /var/spool/mail,  Next: Replying to the sender of a message,  Prev: Sorting the messages in an Rmail folder,  Up: Mail and news
 
-11.5 Why does Rmail need to write to ‘/var/spool/mail’?
-=======================================================
+11.5 Rmailが‘/var/spool/mail’への書き込みを必要とするのはなぜ?
+==============================================================
 
 これはRmailが使用する‘movemail’プログラムの振る舞いです。これは
 ‘movemail’がロックファイルを使うように設定されていることを示しています。
@@ -3839,14 +3839,15 @@ File: efaq.info,  Node: Rmail writes to /var/spool/mail,  Next: Replying to the 
 
 File: efaq.info,  Node: Replying to the sender of a message,  Next: Automatically starting a mail or news reader,  Prev: Rmail writes to /var/spool/mail,  Up: Mail and news
 
-11.6 How can I force Rmail to reply to the sender of a message, but not the other recipients?
-=============================================================================================
+11.6 他の受信者を除き送信者だけにRmailが返信するよう強制するには?
+=================================================================
 
-Ron Isaacsonは述べています: Rmailで返信するために‘r’をタイプすると、デフ
-ォルトでは元の受信者すべて(元の‘To’と‘CC’のリスト全員)にCCされます。
-(‘r’の前に‘C-u’をタイプして)プレフィクス引数を指定すると、送信者だけに返
-信します。とはいえ返信したいときに全体を通して‘C-u’作業を行うのは苦痛で
-す。以下はわたしがこれに対処した中では最良の修整です。
+Ron Isaacson(訳注: Texinfoファイルには"isaacson@seas.upenn.edu"とコメン
+トされていました)は述べています: Rmailで返信するために‘r’をタイプすると
+デフォルトでは元の受信者すべて(元の‘To’と‘CC’のリスト全員)にCCされます。
+(‘r’の前に‘C-u’をタイプして)プレフィクス引数を指定すると送信者だけに返信
+します。とはいえ返信したいときに全体を通して‘C-u’作業を行うのは苦痛です
+。以下はわたしがこれに対処した中では最良の修整です。
 
      (defun rmail-reply-t ()
        "カレントメッセージの送信者だけに返信する(rmail-replyを参照)"
@@ -3861,8 +3862,8 @@ Ron Isaacsonは述べています: Rmailで返信するために‘r’をタイ
 
 File: efaq.info,  Node: Automatically starting a mail or news reader,  Next: Reading news with Emacs,  Prev: Replying to the sender of a message,  Up: Mail and news
 
-11.7 How do I make Emacs automatically start my mail/news reader?
-=================================================================
+11.7 メール/ニュースリーダーをEmacsに自動的に開始させるには?
+============================================================
 
 EmacsをGnusで開始するには:
 
@@ -3885,8 +3886,8 @@ Rmailでは:
 
 File: efaq.info,  Node: Reading news with Emacs,  Next: Making Gnus faster,  Prev: Automatically starting a mail or news reader,  Up: Mail and news
 
-11.8 How do I read news under Emacs?
-====================================
+11.8 Emacsでニュースを読むには?
+===============================
 
 ‘M-x gnus’を使用します。*note the Gnus FAQ: (gnus)Frequently Asked
 Questions.に含まれている*note the Gnus Manual: (gnus)Top.を参照してくだ
@@ -3895,8 +3896,8 @@ Questions.に含まれている*note the Gnus Manual: (gnus)Top.を参照して�
 
 File: efaq.info,  Node: Making Gnus faster,  Next: Catching up in all newsgroups,  Prev: Reading news with Emacs,  Up: Mail and news
 
-11.9 How do I make Gnus faster?
-===============================
+11.9 Gnusわ高速にするには?
+==========================
 
 Gnus FAQ(*note Reading news with Emacs::を参照)から引用します:
 
@@ -3913,8 +3914,8 @@ Gnus FAQ(*note Reading news with Emacs::を参照)から引用します:
 
 File: efaq.info,  Node: Catching up in all newsgroups,  Prev: Making Gnus faster,  Up: Mail and news
 
-11.10 How do I catch up all newsgroups in Gnus?
-===============================================
+11.10 Gnusの全ニュースグループをキャッチアップするには?
+=======================================================
 
 ‘*Newsgroup*’バッファーで‘M-< C-x ( c y C-x ) M-0 C-x e’とタイプします。
 
@@ -4805,144 +4806,144 @@ Ref: Basic keys-Footnote-17221
 Node: Extended commands7326
 Node: Emacs manual8716
 Node: File-name conventions10094
-Node: Common acronyms11983
-Node: General questions12991
-Node: Real meaning of copyleft13454
-Node: Guidelines for newsgroup postings15206
-Node: Newsgroup archives17238
-Node: Reporting bugs18018
-Node: Unsubscribing from Emacs lists20983
-Node: Contacting the FSF21649
-Node: Getting help22130
-Node: Basic editing22669
-Node: Learning how to do something24457
-Node: Getting a printed manual27727
-Node: Emacs Lisp documentation28811
-Node: Installing Texinfo documentation29754
-Node: Printing a Texinfo file34868
-Node: Viewing Info files outside of Emacs36680
-Node: Informational files for Emacs37408
-Node: Help installing Emacs38851
-Node: Obtaining the FAQ39554
-Node: Status of Emacs40214
-Node: Origin of the term Emacs40713
-Node: Latest version of Emacs42323
-Node: New in Emacs 2744060
-Node: New in Emacs 2646307
-Node: New in Emacs 2549545
-Node: New in Emacs 2453661
-Node: New in Emacs 2356712
-Node: New in Emacs 2258493
-Node: New in Emacs 2162386
-Node: New in Emacs 2063544
-Node: Common requests64410
-Node: Setting up a customization file66075
-Node: Using Customize67743
-Node: Colors on a TTY68795
-Node: Debugging a customization file73018
-Node: Displaying the current line or column74111
-Node: Displaying the current file name in the titlebar76528
-Node: Turning on abbrevs by default77938
-Node: Associating modes with files78875
-Node: Replacing highlighted text80051
-Node: Controlling case sensitivity81181
-Node: Working with unprintable characters82216
-Node: Searching for/replacing newlines84196
-Node: Yanking text in isearch84627
-Node: Wrapping words automatically85014
-Node: Turning on auto-fill by default85615
-Node: Changing load-path86581
-Node: Using an already running Emacs process87158
-Node: Compiler error messages89705
-Node: Indenting switch statements90122
-Node: Customizing C and C++ indentation90769
-Node: Overwrite mode94222
-Node: Turning off beeping94798
-Node: Turning the volume down95556
-Node: Automatic indentation96318
-Node: Matching parentheses98760
-Node: Hiding #ifdef lines100712
-Node: Repeating commands101162
-Node: Valid X resources102633
-Node: Evaluating Emacs Lisp code103173
-Node: Changing the length of a Tab105156
-Node: Inserting text at the beginning of each line105985
-Node: Forcing the cursor to remain in the same column107421
-Node: Forcing Emacs to iconify itself108095
-Node: Using regular expressions108538
-Node: Replacing text across multiple files109742
-Node: Documentation for etags111355
-Node: Disabling backups111803
-Node: Disabling auto-save-mode114252
-Node: Going to a line by number115503
-Node: Modifying pull-down menus117417
-Node: Deleting menus and menu options121675
-Node: Turning on syntax highlighting122651
-Node: Scrolling only one line126551
-Node: Editing MS-DOS files127317
-Node: Filling paragraphs with a single space128257
-Node: Escape sequences in shell output128737
-Node: Fullscreen mode on MS-Windows129794
-Node: Bugs and problems131086
-Node: Problems with very large files132361
-Node: ^M in the shell buffer133615
-Node: Problems with Shell Mode135823
-Node: Termcap/Terminfo entries for Emacs136704
-Node: Errors with init files138317
-Node: Emacs ignores X resources139401
-Node: Emacs ignores frame parameters141546
-Node: Editing files with $ in the name142641
-Node: Shell mode loses the current directory143169
-Node: Security risks with Emacs144375
-Node: Dired claims that no file is on this line148581
-Node: Compiling and installing Emacs149781
-Node: Installing Emacs150044
-Node: Problems building Emacs153217
-Node: Finding Emacs and related packages154077
-Node: Finding Emacs on the Internet154624
-Node: Finding a package with particular functionality155247
-Node: Packages that do not come with Emacs156737
-Node: Spell-checkers159900
-Node: Current GNU distributions160386
-Node: Difference between Emacs and XEmacs160884
-Node: Emacs for minimalists163366
-Node: Emacs for MS-DOS164046
-Node: Emacs for MS-Windows165325
-Node: Emacs for GNUstep165751
-Node: Emacs for macOS166168
-Node: Key bindings166550
-Node: Binding keys to commands167213
-Node: Invalid prefix characters170013
-Node: Terminal setup code works after Emacs has begun171076
-Node: Working with function and arrow keys172733
-Node: X key translations for Emacs173374
-Node: Backspace invokes help174467
-Node: Swapping keys179324
-Node: Producing C-XXX with the keyboard180816
-Node: No Meta key181638
-Node: No Escape key182353
-Node: Compose Character183068
-Node: Binding combinations of modifiers and function keys183660
-Node: Meta key does not work in xterm185221
-Node: ExtendChar key does not work as Meta188167
-Node: SPC no longer completes file names189296
-Node: Alternate character sets190168
-Node: Emacs does not display 8-bit characters190468
-Node: Inputting eight-bit characters191465
-Node: Right-to-left alphabets191995
-Node: How to add fonts192571
-Node: Mail and news197987
-Node: Changing the included text prefix198505
-Node: Saving a copy of outgoing mail199323
-Node: Expanding aliases when sending mail200505
-Node: Sorting the messages in an Rmail folder202060
-Node: Rmail writes to /var/spool/mail202473
-Node: Replying to the sender of a message203724
-Node: Automatically starting a mail or news reader204930
-Node: Reading news with Emacs205760
-Node: Making Gnus faster206161
-Node: Catching up in all newsgroups206982
-Node: Concept index207452
+Node: Common acronyms11982
+Node: General questions12990
+Node: Real meaning of copyleft13453
+Node: Guidelines for newsgroup postings15211
+Node: Newsgroup archives17228
+Node: Reporting bugs17997
+Node: Unsubscribing from Emacs lists20981
+Node: Contacting the FSF21647
+Node: Getting help22128
+Node: Basic editing22667
+Node: Learning how to do something24455
+Node: Getting a printed manual27725
+Node: Emacs Lisp documentation28809
+Node: Installing Texinfo documentation29743
+Node: Printing a Texinfo file34857
+Node: Viewing Info files outside of Emacs36669
+Node: Informational files for Emacs37400
+Node: Help installing Emacs38843
+Node: Obtaining the FAQ39546
+Node: Status of Emacs40194
+Node: Origin of the term Emacs40693
+Node: Latest version of Emacs42303
+Node: New in Emacs 2744040
+Node: New in Emacs 2646293
+Node: New in Emacs 2549531
+Node: New in Emacs 2453650
+Node: New in Emacs 2356703
+Node: New in Emacs 2258484
+Node: New in Emacs 2162350
+Node: New in Emacs 2063511
+Node: Common requests64386
+Node: Setting up a customization file66051
+Node: Using Customize67725
+Node: Colors on a TTY68777
+Node: Debugging a customization file72946
+Node: Displaying the current line or column74042
+Node: Displaying the current file name in the titlebar76459
+Node: Turning on abbrevs by default77863
+Node: Associating modes with files78864
+Node: Replacing highlighted text80040
+Node: Controlling case sensitivity81170
+Node: Working with unprintable characters82205
+Node: Searching for/replacing newlines84185
+Node: Yanking text in isearch84616
+Node: Wrapping words automatically84994
+Node: Turning on auto-fill by default85595
+Node: Changing load-path86561
+Node: Using an already running Emacs process87138
+Node: Compiler error messages89685
+Node: Indenting switch statements90102
+Node: Customizing C and C++ indentation90770
+Node: Overwrite mode94223
+Node: Turning off beeping94820
+Node: Turning the volume down95583
+Node: Automatic indentation96345
+Node: Matching parentheses98788
+Node: Hiding #ifdef lines100755
+Node: Repeating commands101208
+Node: Valid X resources102677
+Node: Evaluating Emacs Lisp code103217
+Node: Changing the length of a Tab105176
+Node: Inserting text at the beginning of each line106005
+Node: Forcing the cursor to remain in the same column107433
+Node: Forcing Emacs to iconify itself108107
+Node: Using regular expressions108550
+Node: Replacing text across multiple files109746
+Node: Documentation for etags111362
+Node: Disabling backups111810
+Node: Disabling auto-save-mode114256
+Node: Going to a line by number115507
+Node: Modifying pull-down menus117413
+Node: Deleting menus and menu options121699
+Node: Turning on syntax highlighting122683
+Node: Scrolling only one line126582
+Node: Editing MS-DOS files127348
+Node: Filling paragraphs with a single space128282
+Node: Escape sequences in shell output128762
+Node: Fullscreen mode on MS-Windows129819
+Node: Bugs and problems131111
+Node: Problems with very large files132387
+Node: ^M in the shell buffer133656
+Node: Problems with Shell Mode135870
+Node: Termcap/Terminfo entries for Emacs136761
+Node: Errors with init files138364
+Node: Emacs ignores X resources139457
+Node: Emacs ignores frame parameters141634
+Node: Editing files with $ in the name142775
+Node: Shell mode loses the current directory143302
+Node: Security risks with Emacs144516
+Node: Dired claims that no file is on this line148737
+Node: Compiling and installing Emacs149937
+Node: Installing Emacs150215
+Node: Problems building Emacs153394
+Node: Finding Emacs and related packages154261
+Node: Finding Emacs on the Internet154825
+Node: Finding a package with particular functionality155479
+Node: Packages that do not come with Emacs156972
+Node: Spell-checkers160182
+Node: Current GNU distributions160686
+Node: Difference between Emacs and XEmacs161206
+Node: Emacs for minimalists163617
+Node: Emacs for MS-DOS164311
+Node: Emacs for MS-Windows165573
+Node: Emacs for GNUstep165982
+Node: Emacs for macOS166382
+Node: Key bindings166747
+Node: Binding keys to commands167436
+Node: Invalid prefix characters170261
+Node: Terminal setup code works after Emacs has begun171336
+Node: Working with function and arrow keys172991
+Node: X key translations for Emacs173650
+Node: Backspace invokes help174724
+Node: Swapping keys179571
+Node: Producing C-XXX with the keyboard181081
+Node: No Meta key181900
+Node: No Escape key182608
+Node: Compose Character183317
+Node: Binding combinations of modifiers and function keys183912
+Node: Meta key does not work in xterm185501
+Node: ExtendChar key does not work as Meta188447
+Node: SPC no longer completes file names189592
+Node: Alternate character sets190476
+Node: Emacs does not display 8-bit characters190758
+Node: Inputting eight-bit characters191744
+Node: Right-to-left alphabets192266
+Node: How to add fonts192877
+Node: Mail and news198299
+Node: Changing the included text prefix198831
+Node: Saving a copy of outgoing mail199710
+Node: Expanding aliases when sending mail200898
+Node: Sorting the messages in an Rmail folder202450
+Node: Rmail writes to /var/spool/mail202876
+Node: Replying to the sender of a message204158
+Node: Automatically starting a mail or news reader205426
+Node: Reading news with Emacs206270
+Node: Making Gnus faster206671
+Node: Catching up in all newsgroups207490
+Node: Concept index207998
 
 End Tag Table
 

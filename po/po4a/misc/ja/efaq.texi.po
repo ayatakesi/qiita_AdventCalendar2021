@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNU Emacs 27.2\n"
 "POT-Creation-Date: 2021-11-18 22:50+0900\n"
-"PO-Revision-Date: 2021-12-04 18:44+0900\n"
+"PO-Revision-Date: 2021-12-05 16:37+0900\n"
 "Last-Translator: ayatakesi <ayanokoji.takesi@gmail.com>\n"
 "Language-Team: ja\n"
 "Language: ja\n"
@@ -724,7 +724,7 @@ msgstr "Discussion of the GPL"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:349
 msgid "The real legal meaning of the GNU General Public License (copyleft) will only be known if and when a judge rules on its validity and scope.  There has never been a copyright infringement case involving the GPL to set any precedents.  Although legal actions have been brought against companies for violating the terms of the GPL, so far all have been settled out of court (in favor of the plaintiffs).  Please take any discussion regarding this issue to the newsgroup @uref{news:gnu.misc.discuss}, which was created to hold the extensive flame wars on the subject."
-msgstr "GNU 一般公衆利用許諾書、いわゆるGPL(コピーレフト)の真の法的な意味合いは、裁判官がその有効性と範囲を裁定した場合にのみ明らかになります。判例として定められるようなGPLが関与する著作権侵害の訴訟はこれまでに一度もありませんでした。GPL条件への違反によって企業への訴訟が起こされましたが、これまでのところすべてが法廷外で(原告に有利に)和解されています。この問題に関しての議論は、どうかこの問題について盛大に罵り合うために作成されたニュースグループ@uref{news:gnu.misc.discuss}で行うようお願いします。"
+msgstr "GNU 一般公衆利用許諾書、いわゆるGPL(コピーレフト)の真の法的な意味合いは、裁判官がその有効性と範囲を裁定した場合にのみ明らかになります。判例として定められるようなGPLが関与する著作権侵害の訴訟はこれまでに一度もありませんでした。GPL条件への違反によって企業への訴訟が起こされましたが、これまでのところすべてが法廷外で(原告に有利に)和解されています。この問題に関しての議論は、どうかこの問題について盛大に言い合うために作成されたニュースグループ@uref{news:gnu.misc.discuss}で行うようお願いします。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:351 ../../../../misc/efaq.texi:4555
@@ -797,7 +797,7 @@ msgstr "Emacsプログラム全般に関する議論はニュースグループ@
 #. type: Plain text
 #: ../../../../misc/efaq.texi:387
 msgid "Messages advocating ``non-free'' software are considered unacceptable on any of the @code{gnu.*} newsgroups except for @uref{news:gnu.misc.discuss}, which was created to hold the extensive flame-wars on the subject.  ``Non-free'' software includes any software for which the end user can't freely modify the source code and exchange enhancements.  Be careful to remove the @code{gnu.*} groups from the @samp{Newsgroups:} line when posting a followup that recommends such software."
-msgstr "問題について派手に罵り合うために作成された@uref{news:gnu.misc.discuss}を除いて、``非フリー(non-free)''なソフトウェアを推奨するようなメッセージは@code{gnu.*}ニュースグループのすべてにおいて受け入れ難いものとみなされます。``非フリー''なソフトウェアにはエンドユーザーが自由にソースコードを改変したり拡張機能の取り替えができないすべてのソフトウェアが含まれます。そのようなソフトウェアを推奨するフォローアップを投稿する際には、@samp{Newsgroups:}行から@code{gnu.*}グループを削除するよう注意してください。"
+msgstr "問題について派手に言い合うために作成された@uref{news:gnu.misc.discuss}を除いて、``非フリー(non-free)''なソフトウェアを推奨するようなメッセージは@code{gnu.*}ニュースグループのすべてにおいて受け入れ難いものとみなされます。``非フリー''なソフトウェアにはエンドユーザーが自由にソースコードを改変したり拡張機能の取り替えができないすべてのソフトウェアが含まれます。そのようなソフトウェアを推奨するフォローアップを投稿する際には、@samp{Newsgroups:}行から@code{gnu.*}グループを削除するよう注意してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:390
@@ -4965,7 +4965,7 @@ msgstr "Selectively displaying @code{#ifdef} code"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2346
 msgid "@kbd{M-x hide-ifdef-mode}.  (This is a minor mode.)  You might also want to investigate @file{cpp.el}, which is distributed with Emacs."
-msgstr "@kbd{M-x hide-ifdef-mode} (マイナーモード)です。Emacsに同梱されている@file{cpp.el}も調査したいと思うかもしれません。"
+msgstr "@kbd{M-x hide-ifdef-mode} (マイナーモード)です。Emacsに同梱されている@file{cpp.el}も調べてみたいと思うかもしれません。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2347
@@ -5005,7 +5005,7 @@ msgstr "最後のコマンドを繰り返すには@code{repeat}コマンド(@kbd
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2363
 msgid "You can also type @kbd{C-x @key{ESC} @key{ESC}} (@code{repeat-complex-command}) to reinvoke commands that used the minibuffer to get arguments.  In @code{repeat-complex-command} you can type @kbd{M-p} and @kbd{M-n} (and also up-arrow and down-arrow, if your keyboard has these keys) to scan through all the different complex commands you've typed."
-msgstr "引数を取得するためにミニバッファーを使用するコマンドは、@kbd{C-x @key{ESC} @key{ESC}} (@code{repeat-complex-command})とタイプしても再呼び出しができます。@code{repeat-complex-command}では@kbd{M-p}と@kbd{M-n}(キーボードにあれば上矢印と下矢印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたものを走査することができます。"
+msgstr "引数を取得するためにミニバッファーを使用するコマンドは、@kbd{C-x @key{ESC} @key{ESC}} (@code{repeat-complex-command})とタイプしても再呼び出しができます。@code{repeat-complex-command}では@kbd{M-p}と@kbd{M-n} (キーボードにあれば上矢印と下矢印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたものを走査することができます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2367
@@ -5015,7 +5015,7 @@ msgstr "一連のコマンドを繰り返すにはキーボードマクロを使
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2371
 msgid "If you're really desperate for the @code{.} command in @code{vi} that redoes the last insertion/deletion, use VIPER, a @code{vi} emulation mode which comes with Emacs, and which appears to support it."
-msgstr "最後の挿入/削除を再実行する@code{vi}の@code{.}コマンドが本当に欲しくて堪らなければ、それをサポートしているよう思われる、VIPERというEmacsに同梱の@code{vi}エミュレーションモードを使ってください。"
+msgstr "最後の挿入/削除を再実行する@code{vi}の@code{.}コマンドが本当に欲しくて堪らなければ、それをサポートしているよう思われるVIPERというEmacsに同梱の@code{vi}エミュレーションモードを使ってください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2372
@@ -5109,7 +5109,7 @@ msgstr "任意のバッファーにおいて@kbd{C-x C-e}とタイプすると�
 #. type: itemize
 #: ../../../../misc/efaq.texi:2415
 msgid "Typing @kbd{M-:} or @kbd{M-x eval-expression} allows you to type a Lisp form in the minibuffer which will be evaluated once you press @key{RET}."
-msgstr "@kbd{M-:}または@kbd{M-x eval-expression}とタイプすることによりミニバッファーでLispフォームをタイプして、@key{RET}の押下することでそれが1回評価される。"
+msgstr "@kbd{M-:}または@kbd{M-x eval-expression}とタイプすることによりミニバッファーでタイプしたLispフォームが、@key{RET}押下により1回評価される。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2420
@@ -5222,7 +5222,7 @@ msgstr "リージョンにたいして行う場合には@code{string-insert-rect
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2469
 msgid "If you are trying to prefix a yanked mail message with @samp{>}, you might want to set the variable @code{mail-yank-prefix}.  In Message buffers, you can even use @kbd{M-;} to cite yanked messages (@kbd{M-;} runs the function @code{comment-region}, it is a general-purpose mechanism to comment regions) (@pxref{Changing the included text prefix})."
-msgstr "yankしたメールメッセージにプレフィクスとして@samp{>}の付加を試みているなら、変数@code{mail-yank-prefix}をセットしたいと思うかもしれません。Messageバッファーではyankしたメッセージのメッセージの引用に@kbd{M-;} (こはリージョンのコメントアウトという汎用目的のためのメカニズムである関数@code{comment-region}を実行する)を使うことさえできます(@ref{Changing the included text prefix}を参照)。"
+msgstr "yankしたメールメッセージにプレフィクスとして@samp{>}の付加を試みているなら、変数@code{mail-yank-prefix}をセットしたいと思うかもしれません。Messageバッファーではyankしたメッセージのメッセージの引用に@kbd{M-;} (これはリージョンのコメントアウトという汎用用途メカニズムである関数@code{comment-region}を実行する)を使うことさえできます(@ref{Changing the included text prefix}を参照)。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2470
@@ -5359,12 +5359,12 @@ msgstr "バックスラッシュを2回記述することに注意してくだ�
 #. type: itemize
 #: ../../../../misc/efaq.texi:2515
 msgid "Unlike in Unix @file{grep}, @file{sed}, etc., a complement character set (@samp{[^...]})  can match a newline character (@key{LFD} a.k.a.@: @kbd{C-j} a.k.a.@: @samp{\\n}), unless newline is mentioned as one of the characters not to match."
-msgstr "Unixの@file{grep}、@file{sed}などとは異なり文字の補集合(@samp{[^...]})にはマッチしない文字として改行文字(@key{LFD}または@kbd{C-j}あるいは@samp{\\n})が記述されていなければ改行文字はマッチする。"
+msgstr "Unixの@file{grep}、@file{sed}などとは異なり、文字の補集合(@samp{[^...]})にマッチしない文字として改行文字(@key{LFD}、@kbd{C-j}、 または@samp{\\n})が記述されていなければ改行文字にマッチする。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:2520
 msgid "The character syntax regexps (e.g., @samp{\\sw}) are not meaningful inside character set regexps (e.g., @samp{[aeiou]}).  (This is actually typical for regexp syntax.)"
-msgstr "文字構文のregexp(たとえば@samp{\\sw})は文字セットにたいするregexp(たとえば@samp{[aeiou]})の内部では意味をもたない(これは実際にはregexp構文として典型的)。"
+msgstr "文字構文のregexp(たとえば@samp{\\sw})は文字セットにたいするregexp(たとえば@samp{[aeiou]})の内部では意味をもたない(これは実際はregexp構文として典型的)。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2523
@@ -5405,7 +5405,7 @@ msgstr "Recursive search/replace operations"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2533
 msgid "Dired mode (@kbd{M-x dired @key{RET}}, or @kbd{C-x d}) supports the command @code{dired-do-find-regexp-and-replace} (@kbd{Q}), which allows users to replace regular expressions in multiple files."
-msgstr "Diredモード(@kbd{M-x dired @key{RET}}または@kbd{C-x d})はコマンド@code{dired-do-find-regexp-and-replace} (@kbd{Q})をサポートしています。これは複数ファイルにおける正規表現の置換を可能にします。"
+msgstr "Diredモード(@kbd{M-x dired @key{RET}}または@kbd{C-x d})は、コマンド@code{dired-do-find-regexp-and-replace} (@kbd{Q})をサポートしています。これは複数ファイルにおける正規表現の置換を可能にします。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2536
@@ -5492,12 +5492,12 @@ msgstr "Backups, disabling"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2576
 msgid "You probably don't want to do this, since backups are useful, especially when something goes wrong."
-msgstr "特に何か不幸な出来事が起こったとき等、バックアップ特は役に立つので多分これを行いたいとは思わないでしょう。"
+msgstr "何か不幸な出来事が起こったとき等は、特にバックアップが役立つので多分これを行いたいとは思わないでしょう。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2579
 msgid "To avoid seeing backup files (and other ``uninteresting'' files) in Dired, load @code{dired-x} by adding the following to your @file{.emacs} file:"
-msgstr "Diredでバックアップファイル(およびその他の``興味がない''ファイル)を目にすることを避けるには、@file{.emacs}ファイルに以下を追加して@code{dired-x}をロードしてください:"
+msgstr "Diredでバックアップファイル(およびその他の``関心がない''ファイル)を目にすることを避けるには、@file{.emacs}ファイルに以下を追加して@code{dired-x}をロードしてください:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2584
@@ -5514,7 +5514,7 @@ msgstr ""
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2589
 msgid "With @code{dired-x} loaded, @kbd{M-o} toggles omitting in each dired buffer.  You can make omitting the default for new dired buffers by putting the following in your @file{.emacs}:"
-msgstr "@code{dired-x}のロードにより、@kbd{M-o}でそれぞれのdiredバッファーでの(興味がないファイルの表示)の省略が切り替わります。以下を@file{.emacs}に記述すれば、新たなdiredバッファーで省略をデフォルトにできます:"
+msgstr "@code{dired-x}のロードにより、@kbd{M-o}でそれぞれのdiredバッファーでの(関心がないファイルの表示)の省略が切り替わります。以下を@file{.emacs}に記述すれば、新たなdiredバッファーで省略をデフォルトにできます:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2592
@@ -5531,7 +5531,7 @@ msgstr ""
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2598
 msgid "If you're tired of seeing backup files whenever you do an @samp{ls} at the Unix shell, try GNU @code{ls} with the @samp{-B} option.  GNU @code{ls} is part of the GNU Fileutils package, available from @url{https://ftp.gnu.org} and its mirrors (@pxref{Current GNU distributions})."
-msgstr "Unixシェルで@samp{ls}するたびにバックアップファイルが目につきうんざりしていたら、@samp{-B}オプションでGNU @code{ls}を試してみてください。GNU @code{ls}はGNU Fileutilsパッケージの一部であり、@url{https://ftp.gnu.org}およびそのミラーサイトで利用可能です(@ref{Current GNU distributions}を参照)。"
+msgstr "Unixシェルで@samp{ls}するたびにバックアップファイルが目障りでうんざりしていたら、@samp{-B}オプションでGNU @code{ls}を試してみてください。GNU @code{ls}はGNU Fileutilsパッケージの一部であり、@url{https://ftp.gnu.org}およびそのミラーサイトで利用可能です(@ref{Current GNU distributions}を参照)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2601
@@ -5626,7 +5626,7 @@ msgstr "Recompilation"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2652
 msgid "Are you sure you indeed need to go to a line by its number? Perhaps all you want is to display a line in your source file for which a compiler printed an error message? If so, compiling from within Emacs using the @kbd{M-x compile} and @kbd{M-x recompile} commands is a much more effective way of doing that.  Emacs automatically intercepts the compile error messages, inserts them into a special buffer called @file{*compilation*}, and lets you visit the locus of each message in the source.  Type @kbd{C-x `} to step through the offending lines one by one (starting with Emacs 22, you can also use @kbd{M-g M-p} and @kbd{M-g M-n} to go to the previous and next matches directly).  Click @kbd{mouse-2} or press @key{RET} on a message text in the @file{*compilation*} buffer to go to the line whose number is mentioned in that message."
-msgstr "行番号で行に移動する必要があるのは確かですか? もしかしたらコンパイラーがエラーメッセージをプリントしたソースファイル行を表示するのがあなたの望んでいることではありませんか? もしそうならEmacsからコマンド@kbd{M-x compile}および@kbd{M-x recompile}を使用してコンパイルすることで、より効率的にこれを行うことができます。Emacsはコンパイルエラーメッセージを自動的にインターセプトして、@file{*compilation*}と呼ばれる特別なバッファーに挿入ます。あなたはソース内の、各メッセージに対応する場所をvisitできます。問題のある行を1つずつステップスルーするには@kbd{C-x `}とタイプします(Emacs 22からは前または次のマッチへ直接移動する@kbd{M-g M-p}および@kbd{M-g M-n}でも使用できる。@file{*compilation*}バッファーのメッセージテキスト上で@kbd{mouse-2}をクリックするか@key{RET}を押下することによって、そのメッセージ中に記されている番号の行へ移動します。"
+msgstr "行番号で行に移動する必要があるのは確かですか? もしかしたらコンパイラーがエラーメッセージをプリントしたソースファイル行を表示するのがあなたの望んでいることではありませんか? もしそうならEmacsからコマンド@kbd{M-x compile}および@kbd{M-x recompile}を使用してコンパイルすることで、より効率的にこれを行うことができます。Emacsはコンパイルエラーメッセージを自動的にインターセプトして、@file{*compilation*}と呼ばれる特別なバッファーに挿入ます。あなたはソース内の、各メッセージに対応する場所をvisitできます。問題のある行を1つずつステップスルーするには@kbd{C-x `}とタイプします(Emacs 22からは前または次のマッチへ直接移動する@kbd{M-g M-p}および@kbd{M-g M-n}でも使用できる)。@file{*compilation*}バッファーのメッセージテキスト上で@kbd{mouse-2}をクリックするか@key{RET}を押下することによって、そのメッセージ中に記された行番号へ移動します。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2657
@@ -5720,7 +5720,7 @@ msgstr "3行目は1つ目の要素が表示されるタイトル、2つ目の要
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2701
 msgid "To add a new menu, rather than a new option to an existing menu, we must define an entirely new keymap:"
-msgstr "既存メニューへの新オプション追加デ新たなメニューを追加するためには新たにキーマップ全体を定義しなければなりません。"
+msgstr "既存メニューへの新オプション追加で新たなメニューを追加するためには、新たにキーマップ全体を定義しなければなりません。"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2705
@@ -5735,7 +5735,7 @@ msgstr ""
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2711
 msgid "The above code creates a new sparse keymap, gives it the name @samp{Words}, and attaches it to the global menu bar.  Adding the @samp{Forward Word} item to this new menu would thus require the following code:"
-msgstr "上記のコードは新たに疎キーマップ(sparse keymap)を追加して名前@samp{Words}を付与、それをグローバルメニューバーにアタッチします。したがってこの新メニューへの、@samp{Forward Word}アイテム追加には以下のようなコードが必要になるでしょう:"
+msgstr "上記のコードは新たに疎キーマップ(sparse keymap)を追加して名前@samp{Words}を付与、それをグローバルメニューバーにアタッチしています。したがってこの新メニューへの@samp{Forward Word}アイテム追加には、以下のようなコードが必要になるでしょう:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2716
@@ -5757,7 +5757,7 @@ msgstr "キーマップが機能する方法により、メニューオプショ
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2729
 msgid "One way to avoid this problem is to use the function @code{define-key-after}, which works the same as @code{define-key}, but lets you modify where items appear.  The following Lisp code would insert the @samp{Forward Word} item in the @samp{Edit} menu immediately following the @samp{Undo} item:"
-msgstr "これを回避する1つの方法として関数@code{define-key-after}の使用があります。これは@code{define-key}と同様ですが、アイテムが出現しる位置を変更することができます。以下は@samp{Edit}メニューの@samp{Undo}アイテムの直後になるように@samp{Forward Word}アイテムを挿入します。"
+msgstr "これを回避する1つの方法として関数@code{define-key-after}の使用があります。これは@code{define-key}と同様ですが、アイテムが出現する位置を変更することができます。以下は@samp{Edit}メニューの@samp{Undo}アイテムの直後になるように、@samp{Forward Word}アイテムを挿入します。"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2736
@@ -5788,7 +5788,7 @@ msgstr "ある場所から別の場所にメニューオプションを移動す
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2750
 msgid "More detailed information---and more examples of how to create and modify menu options---are in the @cite{Emacs Lisp Reference Manual}, under ``Menu Keymaps.'' (@xref{Emacs Lisp documentation}, for information on this manual.)"
-msgstr "より詳細な情報、およびメニューオプションの作成と行うより多くの例については、@cite{Emacs Lisp Reference Manual}の``Menu Keymaps''にあります(このマニュアル内の情報については@ref{Emacs Lisp documentation}を参照)。"
+msgstr "より詳細な情報、およびメニューオプションの作成と変更にたいする更に多くの例については、@cite{Emacs Lisp Reference Manual}の``Menu Keymaps''にあります(このマニュアル内の情報については@ref{Emacs Lisp documentation}を参照)。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2751 ../../../../misc/efaq.texi:2753
@@ -5811,7 +5811,7 @@ msgstr "Menus, deleting"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2759
 msgid "The simplest way to remove a menu is to set its keymap to @samp{nil}.  For example, to delete the @samp{Words} menu (@pxref{Modifying pull-down menus}), use:"
-msgstr "メニューを削除するもっともシンプルな方法は、そのキーマップに@samp{nil}をセットします。たとえば@samp{Words}メニュー(@ref{Modifying pull-down menus}を参照)を削除するには以下を使用します:"
+msgstr "メニューを削除するには、そのキーマップに@samp{nil}をセットするのがもっともシンプルな方法です。たとえば@samp{Words}メニュー(@ref{Modifying pull-down menus}を参照)を削除するには以下を使用します:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2762
@@ -5822,7 +5822,7 @@ msgstr "(define-key global-map [menu-bar words] nil)\n"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2768
 msgid "Similarly, removing a menu option requires redefining a keymap entry to @code{nil}.  For example, to delete the @samp{Forward word} menu option from the @samp{Edit} menu (we added it in @ref{Modifying pull-down menus}), use:"
-msgstr "同じように、メニューオプションを削除するには、キーマップエントリーを@code{nil}に再定義する必要があります。たとえば@samp{Edit}メニューから(@ref{Modifying pull-down menus}で追加した)@samp{Forward word}メニューオプションを削除するには以下を使用します:"
+msgstr "同じようにメニューオプションを削除するには、キーマップエントリーを@code{nil}に再定義する必要があります。たとえば@samp{Edit}メニューから(@ref{Modifying pull-down menus}で追加した)@samp{Forward word}メニューオプションを削除するには以下を使用します:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2771
@@ -5875,12 +5875,12 @@ msgstr "FAQ, @code{font-lock-mode}"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2784
 msgid "@code{font-lock-mode} is the standard way to have Emacs perform syntax highlighting in the current buffer.  It is enabled by default in Emacs 22.1 and later."
-msgstr "@code{font-lock-mode}はEmacsがカレントバッファーでシンタックスハイライト和行う標準的な方法です。これはEmacs 22.1以降ではデフォルトで有効になっています。"
+msgstr "@code{font-lock-mode}はEmacsがカレントバッファーでシンタックスハイライトを行う標準的な方法です。これはEmacs 22.1以降ではデフォルトで有効になっています。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2789
 msgid "With @code{font-lock-mode} turned on, different types of text will appear in different colors.  For instance, in a programming mode, variables will appear in one face, keywords in a second, and comments in a third."
-msgstr "@code{font-lock-mode}をオンに切り替えると、異なるタイプのテキストは違うカラーで表示されます。たとえばプログラミング用のモードでは変数はあるフェイスで、キーワードはそれとは異なるフェイス、コメントは更に違うフェイスで表示されるでしょう。"
+msgstr "@code{font-lock-mode}をオンに切り替えると、異なるタイプのテキストは違うカラーで表示されます。たとえばプログラミング用のモードでは変数はあるフェイス、キーワードはそれとは異なるフェイス、コメントは更に違うフェイスで表示されるでしょう。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2792
@@ -5901,7 +5901,7 @@ msgstr "(global-font-lock-mode 1)\n"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2803
 msgid "Highlighting a buffer with @code{font-lock-mode} can take quite a while, and cause an annoying delay in display, so several features exist to work around this."
-msgstr "@code{font-lock-mode}によるバッファーのハイライトにはかなり時間がかかり、苛立たしい表示の遅延を引き起こすので、これに対処するための機能がいくつかあります。"
+msgstr "@code{font-lock-mode}によるバッファーのハイライトにはかなり時間がかかるために、苛立たしい表示の遅延を引き起こすので、これに対処するための機能がいくつかあります。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2804
@@ -5912,7 +5912,7 @@ msgstr "Just-In-Time syntax highlighting"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2812
 msgid "In Emacs 21 and later, turning on @code{font-lock-mode} automatically activates the new @dfn{Just-In-Time fontification} provided by @code{jit-lock-mode}.  @code{jit-lock-mode} defers the fontification of portions of buffer until you actually need to see them, and can also fontify while Emacs is idle.  This makes display of the visible portion of a buffer almost instantaneous.  For details about customizing @code{jit-lock-mode}, type @kbd{C-h f jit-lock-mode @key{RET}}."
-msgstr "Emacs 21では@code{font-lock-mode}をオンに切り替えることによって、@code{jit-lock-mode}が提供する新たな@dfn{JITフォント表示(Just-In-Time fontification)}が自動的にアクティブになります。@code{jit-lock-mode}はバッファーをユーザーに実際に見せる必要が生じるまで、そのバッファー範囲のフォント表示を遅延させるとともに、EmacsがIdol中にもフォント表示を行えます。これによってバッファーの可視範囲はほとんど瞬時に表示されるようになります。@code{jit-lock-mode}のカスタマイズの詳細については@kbd{C-h f jit-lock-mode @key{RET}}とタイプしてください。"
+msgstr "Emacs 21では@code{font-lock-mode}をオンに切り替えることによって、@code{jit-lock-mode}が提供する新たな@dfn{JITフォント表示(Just-In-Time fontification)}が自動的にアクティブになります。@code{jit-lock-mode}はバッファーをユーザーに実際に見せる必要が生じるまで、そのバッファー範囲のフォント表示を遅延させるとともに、Emacsがアイドル中にもフォント表示を行えます。これによってバッファーの可視範囲はほとんど瞬時に表示されるようになります。@code{jit-lock-mode}のカスタマイズの詳細については@kbd{C-h f jit-lock-mode @key{RET}}とタイプしてください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:2813
@@ -5929,7 +5929,7 @@ msgstr "Decoration level, in @code{font-lock-mode}"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2823
 msgid "In versions of Emacs before 21, different levels of decoration are available, from slight to gaudy.  More decoration means you need to wait more time for a buffer to be fontified (or a faster machine).  To control how decorated your buffers should become, set the value of @code{font-lock-maximum-decoration} in your @file{.emacs} file, with a @code{nil} value indicating default (usually minimum) decoration, and a @code{t} value indicating the maximum decoration.  For the gaudiest possible look, then, include the line"
-msgstr "21より前のバージョンのEmacsではささやかなものから派手なものまで、異なるレベルの装飾が利用可能です。より多くの装飾にはバッファーがフォント表示されるまで、より長い時間待機する必要があることを意味しています。バッファーがどのように装飾されるべきかを制御するためには、@file{.emacs}ファイルで@code{font-lock-maximum-decoration}に値をセットします。@code{nil}値はデフォルトの(通常は最低限の)装飾、@code{t}は最大限の装飾をも意味します。できるだけ派手な外観にするには、@file{.emacs}ファイルに以下の行を含めてください。"
+msgstr "21より前のバージョンのEmacsではささやかなものから派手なものまで、異なるレベルの装飾が利用可能です。より多くの装飾にはバッファーがフォント表示されるまで、より長い時間待機する必要があることを意味しています。バッファーがどのように装飾されるべきかを制御するには、@file{.emacs}ファイルで@code{font-lock-maximum-decoration}に値をセットします。@code{nil}値はデフォルトの(通常は最低限の)装飾、@code{t}は最大限の装飾を意味します。できるだけ派手な外観にするには@file{.emacs}ファイルに以下の行を含めてください。"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:2826
@@ -5945,7 +5945,7 @@ msgstr "異なるモードでは違う方法でハイライトするようにこ
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2838
 msgid "Also see the documentation for the function @code{font-lock-mode}, available by typing @kbd{C-h f font-lock-mode} (@kbd{M-x describe-function @key{RET} font-lock-mode @key{RET}})."
-msgstr "更に@kbd{C-h f font-lock-mode} (@kbd{M-x describe-function @key{RET} font-lock-mode @key{RET}})で利用できる、関数@code{font-lock-mode}のドキュメントも参照してください。"
+msgstr "更に@kbd{C-h f font-lock-mode} (@kbd{M-x describe-function @key{RET} font-lock-mode @key{RET}})で利用できる関数@code{font-lock-mode}のドキュメントも参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2845
@@ -6024,7 +6024,7 @@ msgstr "MS-DOS (およびWindows)のファイルの検出と処理は透過的�
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2878
 msgid "When editing an MS-DOS style file, the mode line will indicate that it is a DOS file.  On Unix and GNU/Linux systems, and also on a Macintosh, the string @samp{(DOS)} will appear near the left edge of the mode line; on DOS and Windows, where the DOS end-of-line (EOL) format is the default, a backslash (@samp{\\}) will appear in the mode line."
-msgstr "MS-DOS形式ファイルの編集時には、それがDOSファイルであることが示されます。UnixおよびGNU/Linuxシステム、およびMacintoshでもモードライン左端付近に文字列@samp{(DOS)}が表示されるでしょう。DOSのEOLフォーマットをデフォルトとして使用するDOSおよびWindowsでは、モードラインにバックスラッシュ(@samp{\\})が表示されます。"
+msgstr "MS-DOS形式ファイルの編集時には、それがDOSファイルであることが示されます。UnixとGNU/Linuxシステム、およびMacintoshでもモードライン左端付近に文字列@samp{(DOS)}が表示されるでしょう。DOSのEOLフォーマットをデフォルトとして使用するDOSおよびWindowsでは、モードラインにバックスラッシュ(@samp{\\})が表示されます。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:2879
@@ -6143,7 +6143,7 @@ msgstr ""
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2930
 msgid "To avoid the slightly distracting visual effect of Emacs starting with its default frame size and then growing to fullscreen, you can add an @samp{Emacs.Geometry} entry to the Windows registry settings.  @xref{X Resources,,, emacs, The GNU Emacs Manual}."
-msgstr "Emacsの開始においてデフォルトのフレームサイズからフルスクリーンに拡がる若干惑わされる視覚効果を回避するには、Windowsのレジストリ文字列に@samp{Emacs.Geometry}エントリーを追加できます。@ref{X Resources,,, emacs, The GNU Emacs Manual}を参照してください。"
+msgstr "Emacsの開始におけるデフォルトのフレームサイズからフルスクリーンに拡がる、若干惑わされる視覚効果を回避するにはWindowsのレジストリ文字列に@samp{Emacs.Geometry}エントリーを追加できます。@ref{X Resources,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2934
@@ -6267,7 +6267,7 @@ msgstr "Files, maximum size"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2976
 msgid "Emacs has an inherent fixed limitation on the size of buffers.  This limit is stricter than the maximum size of objects supported by other programs on the same architecture."
-msgstr "Emacsのバッファーサイズには先天的に固定された制限があります。これは同一プラットフォームで他のプログラムがサポートするオブジェクトの最大サイズと比較すると厳しい制限です。"
+msgstr "Emacsのバッファーサイズには固定された固有の制限があります。これは同一プラットフォームで他のプログラムがサポートするオブジェクトの最大サイズと比較すると厳しい制限です。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2981
@@ -6311,7 +6311,7 @@ msgstr "Echoed commands in @code{shell-mode}"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:2997
 msgid "Try typing @kbd{M-x comint-strip-ctrl-m @key{RET}} while in @code{shell-mode} to make them go away.  If that doesn't work, you have several options:"
-msgstr "それらを取り除くには@kbd{M-x comint-strip-ctrl-m @key{RET}}を試してください。これが機能しない場合には、いくつかのオプションがあります。"
+msgstr "それらを取り除くには@kbd{M-x comint-strip-ctrl-m @key{RET}}を試してください。これが機能しない場合にはいくつかのオプションがあります。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3000
@@ -6361,7 +6361,7 @@ msgstr "(setq explicit-shell-file-name \"/bin/csh\")\n"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3025
 msgid "and another is to do this in your @file{.cshrc} (or @file{.tcshrc})  file:"
-msgstr "別の方法としては@file{.cshrc} (または@file{.tcshrc})ファイルでこれを行う方法です:"
+msgstr "別に@file{.cshrc} (または@file{.tcshrc})ファイルでこれを行う方法があります:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3028
@@ -6372,7 +6372,7 @@ msgstr "setenv ESHELL /bin/csh\n"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3033
 msgid "(You must start Emacs over again with the environment variable properly set for this to take effect.)"
-msgstr "(これが効果をもつように環境変数を正しくセットした後にEmacsを再起動しなければなりません。)"
+msgstr "(環境変数を正しくセットした後は、これが効果をもつようにEmacsを再起動しなければなりません。)"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3036
@@ -6388,7 +6388,7 @@ msgstr "(setenv \"ESHELL\" \"/bin/csh\")\n"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3046
 msgid "The above solutions try to prevent the shell from producing the @samp{^M} characters in the first place.  If this is not possible (e.g., if you use a Windows shell), you can get Emacs to remove these characters from the buffer by adding this to your @file{.emacs} init file:"
-msgstr "上記の解決策は最初にシェルが@samp{^M}文字を生成するのを防ぐ試みです。これが不可能(たとえばWindowsシェルを使用している)なら、@file{.emacs}に追加することによって、Emacsにそれらの文字をバッファーから削除させることができます。"
+msgstr "上記の解決策は最初にシェルが@samp{^M}文字を生成するのを防ぐ試みです。これが不可能(たとえばWindowsシェルを使用している)なら、@file{.emacs}に追加することによってEmacsにそれらの文字をバッファーから削除させることができます。"
 
 #. type: smalllisp
 #: ../../../../misc/efaq.texi:3049
@@ -6445,7 +6445,7 @@ msgstr "Antivirus programs, and Shell Mode"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3074
 msgid "Some people have trouble with Shell Mode on MS-Windows because of intrusive antivirus software; disabling the resident antivirus program solves the problems in those cases."
-msgstr "MS-Windows上のShellモードで差し出がましいアンチウイルスソフトウェアによりトラブルに遭う人がいます。このようなケースでは常駐アンチウイルスプログラムを無効にすると問題は解決するでしょう。"
+msgstr "MS-Windows上のShellモードでお節介なアンチウイルスソフトウェアによりトラブルに遭う人がいます。このようなケースでは常駐アンチウイルスプログラムを無効にすると問題は解決するでしょう。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3075
@@ -6501,7 +6501,7 @@ msgstr "termcap/terminfoエントリーがあってもShellバッファーでの
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3103
 msgid "A workaround to the problem of missing termcap/terminfo entries is to change terminal type @samp{emacs} to type @samp{dumb} or @samp{unknown} in your shell start up file.  @code{csh} users could put this in their @file{.cshrc} files:"
-msgstr "termcap/terminfo欠落による問題を回避するためには、シェルのスタートアップファイルで端末タイプを@samp{emacs}から@samp{dumb}か@samp{unknown}に変更します。@code{csh}ユーザーは以下を@file{.cshrc}ファイルに記述できます:"
+msgstr "termcap/terminfo不在による問題を回避するためには、シェルのスタートアップファイルで端末タイプを@samp{emacs}から@samp{dumb}か@samp{unknown}に変更します。@code{csh}ユーザーは以下を@file{.cshrc}ファイルに記述できます:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:3106
@@ -6558,7 +6558,7 @@ msgstr "あなたの@file{.emacs}ファイルをデバッグする方法につ�
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3128
 msgid "It may be the case that you need to load some package first, or use a hook that will be evaluated after the package is loaded.  A common case of this is explained in @ref{Terminal setup code works after Emacs has begun}."
-msgstr "まず何らかのパッケージのロードが必要だったり、そあるいはパッケージのロード後に評価されるフックを使用したのかもしれません。これのよくあるケースについては@ref{Terminal setup code works after Emacs has begun}に記述があります。"
+msgstr "まず何らかのパッケージのロードが必要だったり、そあるいはパッケージのロード後に評価されるフックを使用したのかもしれません。このよくあるケースについては@ref{Terminal setup code works after Emacs has begun}に記述があります。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3129
@@ -6744,7 +6744,7 @@ msgstr "File names containing @samp{$}, editing"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3233
 msgid "When entering a file name in the minibuffer, Emacs will attempt to expand a @samp{$} followed by a word as an environment variable.  To suppress this behavior, type @kbd{$$} instead."
-msgstr "ミニバッファーでファイル名を入力する際には、単語の前に@samp{$}があるとEmacsは環境変数としてそれの展開を試みます。この挙動を抑止するには、かわりに@kbd{$$}とタイプしてください。"
+msgstr "ミニバッファーでファイル名を入力する際に単語の前に@samp{$}があると、Emacsは環境変数としてそれの展開を試みます。この挙動を抑止するにはかわりに@kbd{$$}とタイプしてください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3234
@@ -6779,7 +6779,7 @@ msgstr "Directory, current in @code{shell-mode}"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3249
 msgid "Emacs has no way of knowing when the shell actually changes its directory.  This is an intrinsic limitation of Unix.  So it tries to guess by recognizing @samp{cd} commands.  If you type @kbd{cd} followed by directory with a variable reference (@kbd{cd $HOME/bin}) or with a shell metacharacter (@kbd{cd ../lib*}), Emacs will fail to correctly guess the shell's new current directory.  A huge variety of fixes and enhancements to shell mode for this problem have been written to handle this problem (@pxref{Finding a package with particular functionality})."
-msgstr "Emacsには実際にシェルが自身のディレクトリーを変更したタイミングを知る手段がありません。これはUnixに内在する制限です。そのためにEmacsは@samp{cd}コマンドを識別して推測を試みます。変数リファレンスを含むディレクトリーが後に続く@kbd{cd} (@kbd{cd $HOME/bin})やシェルのメタ文字を含むディレクトリー(@kbd{cd ../lib*})をタイプすると、Emacsはシェルの新たなカレントディレクトリーの正確な推測に失敗するでしょう。Shellモードにおけるこの問題を処理するために、膨大な数の様々な訂正および改善が記述されてきました(@ref{Finding a package with particular functionality}を参照)。"
+msgstr "Emacsには実際にシェルが自身のディレクトリーを変更したタイミングを知る手段がありません。これはUnixに内部の制限です。そのためにEmacsは@samp{cd}コマンドを識別して推測を試みます。変数リファレンスを含むディレクトリーが後に続く@kbd{cd} (@kbd{cd $HOME/bin})やシェルのメタ文字を含むディレクトリー(@kbd{cd ../lib*})をタイプすると、Emacsはシェルの新たなカレントディレクトリーの正確な推測に失敗するでしょう。Shellモードにおけるこの問題を処理するために、膨大な数の様々な訂正や改善が記述されてきました(@ref{Finding a package with particular functionality}を参照)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3252
@@ -6841,7 +6841,7 @@ msgstr "Emacsにインストールされた任意のパッケージはEmacs自�
 #. type: itemize
 #: ../../../../misc/efaq.texi:3274
 msgid "The @code{file-local-variable} feature.  (Yes, a risk, but easy to change.)"
-msgstr "@code{file-local-variable}機能(危険ではあるが容易に変更できる)。"
+msgstr "@code{file-local-variable}機能(確かに危険だが容易に変更できる)。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3281
@@ -6851,7 +6851,7 @@ msgstr "Emacsにはファイル終端付近に特別にフォーマットされ�
 #. type: itemize
 #: ../../../../misc/efaq.texi:3288
 msgid "As of Emacs 22, Emacs has a list of local variables that are known to be safe to set.  If a file tries to set any variable outside this list, it asks the user to confirm whether the variables should be set.  You can also tell Emacs whether to allow the evaluation of Emacs Lisp code found at the bottom of files by setting the variable @code{enable-local-eval}."
-msgstr "Emacsにはバージョン22の時点において、セットしても安全だと判っているローカル変数のリストがある。このリスト以外の変数のセットをファイルが試みると、その変数をセットするべきかどうかユーザーに確認を求める。変数@code{enable-local-eval}をセットすることにより、ファイル下部で見つけたEmacs Lispコードの評価を許すか否かを▽えまに伝えることもできる。"
+msgstr "Emacsにはバージョン22の時点において、セットしても安全だと判っているローカル変数のリストがある。このリスト以外の変数のセットをファイルが試みると、その変数をセットするべきかどうかユーザーに確認を求める。変数@code{enable-local-eval}をセットすることにより、ファイル下部で見つけたEmacs Lispコードの評価を許すか否かをEmacsに伝えることもできる。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3290
@@ -6861,12 +6861,12 @@ msgstr "@ref{File Variables,,, emacs, The GNU Emacs Manual}を参照のこと。
 #. type: itemize
 #: ../../../../misc/efaq.texi:3294
 msgid "Synthetic X events.  (Yes, a risk; use @samp{MIT-MAGIC-COOKIE-1} or better.)"
-msgstr "合成Xイベント(危険であり@samp{MIT-MAGIC-COOKIE-1}以上を使用すること)。"
+msgstr "合成Xイベント(確かに危険なので@samp{MIT-MAGIC-COOKIE-1}以上を使用すること)。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3300
 msgid "Emacs accepts synthetic X events generated by the @code{SendEvent} request as though they were regular events.  As a result, if you are using the trivial host-based authentication, other users who can open X connections to your X workstation can make your Emacs process do anything, including run other processes with your privileges."
-msgstr "Emacsは@code{SendEvent}リクエストが生成した合成Xイベント(synthetic X event)が通常イベントであるかのように受け入れる。結果として簡単なホストベースの認証を使用していると、XワークステーションへのX接続をオープン可能な他のユーザーは、Emacsプロセスに(特権での他プロセス実行を含む)何でも実行させることができる。"
+msgstr "Emacsは@code{SendEvent}リクエストが生成した合成Xイベント(synthetic X event)を、通常イベントであるかのように受け入れる。結果として簡単なホストベースの認証を使用していると、XワークステーションへのX接続をオープン可能な他のユーザーは、Emacsプロセスに(特権での他プロセス実行を含む)何でも実行させることができる。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3307
@@ -7035,7 +7035,7 @@ msgstr "(@samp{VERSION}は@samp{23.1}のように適切なバージョン番号�
 #. type: itemize
 #: ../../../../misc/efaq.texi:3412
 msgid "Next uncompress and extract the source files.  This requires the @code{gzip} and @code{tar} programs, which are standard utilities.  If your system does not have them, these can also be downloaded from @url{https://ftp.gnu.org}."
-msgstr "次にソースファイルを解凍、抽出する。これには標準ユーティリティー@code{gzip}および@code{tar}が必要。これらがシステムになければ@url{https://ftp.gnu.org}からダウンロードできる。"
+msgstr "次にソースファイルを解凍、抽出する。これには標準ユーティリティー@code{gzip}と@code{tar}が必要。これらがシステムになければ@url{https://ftp.gnu.org}からダウンロードできる。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3414
@@ -7084,7 +7084,7 @@ msgstr "make install\n"
 #. type: itemize
 #: ../../../../misc/efaq.texi:3444
 msgid "Note that @samp{make install} will overwrite @file{/usr/local/bin/emacs} and any Emacs Info files that might be in @file{/usr/local/share/info/}."
-msgstr "@samp{make install}によって@file{/usr/local/bin/emacs}、および@file{/usr/local/share/info/}にあるかもしれないEmacs Infoファイルは上書きされることに注意。"
+msgstr "@samp{make install}によって@file{/usr/local/bin/emacs}や@file{/usr/local/share/info/}にあるかもしれないEmacs Infoファイルは上書きされることに注意。"
 
 #. type: section
 #: ../../../../misc/efaq.texi:3448
@@ -7241,17 +7241,17 @@ msgstr "何よりまずはパッケージが本当にまだ利用できないか
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3513
 msgid "It is also possible that the package is on your system, but has not been loaded.  To see which packages are available for loading, look through your computer's lisp directory (@pxref{File-name conventions}).  The Lisp source to most packages contains a short description of how they should be loaded, invoked, and configured---so before you use or modify a Lisp package, see if the author has provided any hints in the source code."
-msgstr "パッケージはシステム上にあってもロードされていない可能性もあります。ロード用に利用できるパッケージを確認するために、あなたのコンピューターのlispディレクトリーを見てみましょう(@ref{File-name conventions}を参照)。ほとんどのパッケージのLispソースには、それらをどのようにロード、呼び出し、設定するべきかに関する短い説明が含まれているので、作成者がソースコード内でヒントを提供していたら、Lispパッケージの使用や変更を行う前に確認しましょう。"
+msgstr "パッケージはシステム上にあってもロードされていない可能性もあります。ロード用に利用できるパッケージを確認するために、あなたのコンピューターのlispディレクトリーを見てみましょう(@ref{File-name conventions}を参照)。ほとんどのパッケージのLispソースには、それらをどのようにロード、呼び出し、設定するべきかに関する短い説明が含まれているので、作成者がソースコード内でヒントを提供していたら、Lispパッケージの使用や変更を行う前にそれを確認しましょう。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3516
 msgid "The command @kbd{C-h p} (@code{finder-by-keyword}) allows you to browse the constituent Emacs packages."
-msgstr "コマンド@kbd{C-h p} (@code{finder-by-keyword})でEmacsのパッケージ構成をブラウズできます。"
+msgstr "コマンド@kbd{C-h p} (@code{finder-by-keyword})でEmacsのパッケージ構成を閲覧できます。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3519
 msgid "For advice on how to find extra packages that are not part of Emacs, see @ref{Packages that do not come with Emacs}."
-msgstr "Emacsの一部ではない追加パッケージを探す方法についての助言は@ref{Packages that do not come with Emacs}を参照してください。"
+msgstr "Emacsの一部ではない追加パッケージを探す方法に関する助言は@ref{Packages that do not come with Emacs}を参照してください。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:3521
@@ -7304,12 +7304,12 @@ msgstr "Emacs Lisp Archive"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3539
 msgid "The easiest way to add more features to your Emacs is to use the command @kbd{M-x list-packages}.  This contacts the @uref{https://elpa.gnu.org, GNU ELPA} (``Emacs Lisp Package Archive'')  server and fetches the list of additional packages that it offers.  These are GNU packages that are available for use with Emacs, but are distributed separately from Emacs itself, for reasons of space, etc.  You can browse the resulting @file{*Packages*} buffer to see what is available, and then Emacs can automatically download and install the packages that you select.  @xref{Packages,,, emacs, The GNU Emacs Manual}."
-msgstr "あなたのEmacsに更に機能を追加するには、コマンド@kbd{M-x list-packages}を使用するのがもっとも簡単な方法です。これは@uref{https://elpa.gnu.org, GNU ELPA} (``Emacs Lisp Package Archive'')サーバーに接続して、それが提案する追加パッケージのリストを取得します。これらはEmacsでの使用が可能ですが、スペース等の理由によりEmacs自体とは別に配布されているGNUパッケージです。コマンドの結果ト得られた@file{*Packages*}を閲覧して何が利用可能なのか確認して、それからあなたが選択したパッケージのダウンロードとインストールを自動的に行います。@ref{Packages,,, emacs, The GNU Emacs Manual}を参照してください。"
+msgstr "あなたのEmacsに更に機能を追加するには、コマンド@kbd{M-x list-packages}を使用するのがもっとも簡単な方法です。これは@uref{https://elpa.gnu.org, GNU ELPA} (``Emacs Lisp Package Archive'')サーバーに接続して、それが提案する追加パッケージのリストを取得します。これらはEmacsでの使用が可能ですが、スペース等の理由によりEmacs自体とは別に配布されているGNUパッケージです。コマンドの結果として得られた@file{*Packages*}を閲覧して何が利用可能なのか確認、それからあなたが選択したパッケージのダウンロードとインストールを自動的に行います。@ref{Packages,,, emacs, The GNU Emacs Manual}を参照してください。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3546
 msgid "There are other Emacs Lisp package archives.  To use additional archives, you can customize the @code{package-archives} variable.  Those archives have no affiliation with GNU Emacs, and we do not monitor how they are maintained.  They may pay close attention to correctness and safety of the code, or they may give only cursory attention."
-msgstr "Emacs Lispパッケージアーカイブは他にもあります。追加アーカイブを使用するには変数@code{package-archives}をカスタマイズしてください。これらのアーカイブはGNU Emacsとは提携しておらず、わたしたちはそれらがどのように保守されているかを監視していません。彼らはコードの正確さち安全性に最新の注意を払うかもしれないし、あるいはぞんざいに注意するだけかもしれません。"
+msgstr "Emacs Lispパッケージアーカイブは他にもあります。追加アーカイブを使用するには変数@code{package-archives}をカスタマイズしてください。これらのアーカイブはGNU Emacsとは提携しておらず、わたしたちはそれらがどのように保守されているかを監視していません。彼らはコードの正確さち安全性に細心の注意を払うかもしれないし、あるいはぞんざいに注意するだけかもしれません。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3552
@@ -7319,7 +7319,7 @@ msgstr "更にこれらの他のアーカイブでホストされるパッケー
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3558
 msgid "The @uref{https://lists.gnu.org/mailman/listinfo/gnu-emacs-sources, GNU Emacs sources mailing list}, which is gatewayed to the @uref{news:gnu.emacs.sources, Emacs sources newsgroup} (although the connection between the two can be unreliable) is an official place where people can post or announce their extensions to Emacs."
-msgstr "@uref{news:gnu.emacs.sources, Emacs sources newsgroup}にゲートウェイされている@uref{https://lists.gnu.org/mailman/listinfo/gnu-emacs-sources, GNU Emacs sources mailing list}は、(たとえ2点間の通信が不確かであっても)人々が彼らのEmacs拡張をアナウンスする公の場です。"
+msgstr "@uref{news:gnu.emacs.sources, Emacs sources newsgroup}にゲートウェイされている@uref{https://lists.gnu.org/mailman/listinfo/gnu-emacs-sources, GNU Emacs sources mailing list}は、(たとえ2点間の通信が不確かなものであったとしても)人々が彼らのEmacs拡張をアナウンスする公の場です。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3562
@@ -7381,7 +7381,7 @@ msgstr "Enchant"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3582
 msgid "Various spell-checkers are compatible with Emacs, including:"
-msgstr "以下を含む様々なスペルチェッカーはEmacsと互換性があります:"
+msgstr "以下を含む様々なスペルチェッカーにはEmacsとの互換性があります:"
 
 #. type: table
 #: ../../../../misc/efaq.texi:3587
@@ -7454,7 +7454,7 @@ msgstr "Official GNU software sites"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3609
 msgid "The most up-to-date official GNU software is normally kept at"
-msgstr "GNU公式ソフトウェアのほとんどは通常は以下に保持されています "
+msgstr "GNU公式ソフトウェアのほとんどは通常は以下で保持されています "
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3611
@@ -7515,12 +7515,12 @@ msgstr "XEmacsとはもはや活発に開発されなくなったEmacsのブラ�
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3635
 msgid "XEmacs last released a new version on January 30, 2009, and it lacks many important features that exists in Emacs.  In the past, it was not uncommon for Emacs packages to include code for compatibility with XEmacs.  Nowadays, although some packages still maintain such compatibility code, several of the more popular built-in and third party packages have either stopped supporting XEmacs or were developed exclusively for Emacs."
-msgstr "XEmacsは2009年1月30にリリースされた新バージョンが最新であり、それにはEmacsに存在する多くの重要な機能が欠落していました。過去においては、EmacsパッケージにXEmacsとの互換性のためのコードを含めるのは珍しいことではありませんでした。現在ではたとえそのような互換性コードをまだ保守しているパッケージがあったとしても、より人気のあるビルトインおよびサードパーティーのパッケージのいくつかはXEmacsのサポートを止めるか、あるいはEmacs専用に開発されています。"
+msgstr "XEmacsは2009年1月30に新たにリリースされたバージョンが最新であり、それにはEmacsに存在する多くの重要な機能が欠落していました。過去においては、EmacsパッケージにXEmacsとの互換性のためのコードを含めるのは珍しいことではありませんでした。現在ではたとえそのような互換性コードをまだ保守しているパッケージがあったとしても、より人気のあるビルトインおよびサードパーティーのパッケージのいくつかはXEmacsのサポートを止めるか、あるいはEmacs専用に開発されています。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3644
 msgid "Some XEmacs code has been contributed to Emacs, and we would like to use other parts, but the earlier XEmacs maintainers did not always keep track of the authors of contributed code, which makes it impossible for the FSF to get copyright papers signed for that code.  (The FSF requires these papers for all the code included in the Emacs release, aside from generic C support packages that retain their separate identity and are not integrated into the code of Emacs proper.)"
-msgstr "いくつかのXEmacsコードはEmacsに提供されており、他の部分についてもわたしたちは使用したいと考えていまづが、初期のXEmacsメンテナーは提供されたコードの作成者を常に追跡はしておらず、FSFがそのコードにたいする署名済みのコピーライトペーパーを取得することを不可能にしています(FSFは個別の身元を保つEmacsのコードに正しく統合されていない汎用Cサポートパッケージは除き。Emacsリリースに含まれるすべてのコードにたいしてこれらのペーパーを要求している)。"
+msgstr "いくつかのXEmacsコードはEmacsに提供されており、他の部分についてもわたしたちは使用したいと考えていますが、初期のXEmacsメンテナーは提供されたコードの作成者を常に追跡してはおらず、FSFによるそのコードの署名済みコピーライトペーパー取得を不可能にしています(FSFはEmacsのコードに正しく統合されていない個別に身元を保つ汎用Cサポートパッケージを除き、Emacsリリースに含まれるすべてのコードにたいしてこれらのペーパーを要求している)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3651
@@ -7554,7 +7554,7 @@ msgstr "Not enough disk space to install Emacs"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3662
 msgid "GNU Zile is a lightweight Emacs clone.  Zile is short for @samp{Zile Is Lossy Emacs}.  It has all of Emacs's basic editing features.  The Zile binary typically has a size of about 130 kbytes, so this can be useful if you are in an extremely space-restricted environment.  More information is available from"
-msgstr "GNU ZileはEmacsの軽量クローンです。Zileは@samp{Zile Is Lossy Emacs}を短縮したものです。これにはEmacsの基本的な編集機能すべてが含まれています。Zileのバイナリーは通常は約130kBのサイズなので、非常にスペースに制限がある環境で有用かもしれません。詳細は以下で理由できます"
+msgstr "GNU ZileはEmacsの軽量クローンです。Zileは@samp{Zile Is Lossy Emacs}を短縮したものです。これにはEmacsの基本的な編集機能がすべて含まれています。Zileのバイナリーは通常は約130kBのサイズなので、非常にスペースに制限がある環境で有用かもしれません。詳細は以下で利用できます"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3664
@@ -7816,7 +7816,7 @@ msgstr "Commands, binding keys to"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3754
 msgid "Keys can be bound to commands either interactively or in your @file{.emacs} file.  To interactively bind keys for all modes, type @kbd{M-x global-set-key @key{RET} @var{key} @var{cmd} @key{RET}}."
-msgstr "対話的、または@file{.emacs}ファイルでキーをコマンドにバインドできます。すべてのモードにたいしてキーを対話的にバインドするには、@kbd{M-x global-set-key @key{RET} @var{key} @var{cmd} @key{RET}}とタイプします。"
+msgstr "対話的に、あるいは@file{.emacs}ファイルでキーをコマンドにバインドできます。すべてのモードにたいしてキーを対話的にバインドするには、@kbd{M-x global-set-key @key{RET} @var{key} @var{cmd} @key{RET}}とタイプします。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3757
@@ -7831,7 +7831,7 @@ msgstr "@ref{Key Bindings,,, emacs, The GNU Emacs Manual}を参照してくだ�
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3766
 msgid "To make the process of binding keys interactively easier, use the following ``trick'': First bind the key interactively, then immediately type @kbd{C-x @key{ESC} @key{ESC} C-a C-k C-g}.  Now, the command needed to bind the key is in the kill ring, and can be yanked into your @file{.emacs} file.  If the key binding is global, no changes to the command are required.  For example,"
-msgstr "対話的にキーをバインドするプログレを容易にするために、次の``trick''を使用できます: @*まず対話的にキーをバインドしてからすぐに@kbd{C-x @key{ESC} @key{ESC} C-a C-k C-g}とタイプ、@*これでキーバインドを要するコマンドがkillリングに取り込まれたので@file{.emacs}ファイルにyankできるようになった。@*@*グローバルなキーバインディングの場合には、コマンドの変更は不要です。たとえば、"
+msgstr "対話的にキーをバインドするプロセスを容易にするために次の``trick''を使用できます: @*まず対話的にキーをバインドしてからすぐに@kbd{C-x @key{ESC} @key{ESC} C-a C-k C-g}とタイプ、@*これでキーバインドを要するコマンドがkillリングに取り込まれたので@file{.emacs}ファイルにyankできるようになった。@*@*グローバルなキーバインディングの場合にはコマンドの変更は不要です。たとえば、"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3769
@@ -7842,7 +7842,7 @@ msgstr "(global-set-key [f1] 'help-for-help)\n"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3775
 msgid "can be placed directly into the @file{.emacs} file.  If the key binding is local, the command is used in conjunction with the @samp{add-hook} function.  For example, in TeX mode, a local binding might be"
-msgstr "これは@file{.emacs}ファイルに直後記述できます。ローカルなキーバインディングの場合には、、コマンドは@samp{add-hook}関数と組み合わせて使用されます。たとえばTeXモードでのローカルバインディングは以下のようになるでしょう"
+msgstr "これは@file{.emacs}ファイルに直接記述できます。ローカルなキーバインディングの場合には、コマンドは@samp{add-hook}関数と組み合わせて使用されます。たとえばTeXモードでのローカルバインディングは以下のようになるでしょう"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3780
@@ -7864,7 +7864,7 @@ msgstr "killリングからyankしたキーシーケンス内でのコントロ�
 #. type: itemize
 #: ../../../../misc/efaq.texi:3795
 msgid "If a prefix key of the character sequence to be bound is already bound as a complete key, then you must unbind it before the new binding.  For example, if @kbd{ESC @{} is previously bound:"
-msgstr "プレフィクスキーとしてある文字シーケンスをバインドする場合に、それがすでにコンプリートキーワードとしてバインドされていたら、新しいバインディングの前にコンプリートキーのバインドを解除しなければならない。たとえば@kbd{ESC @{}がバインド済みなら:"
+msgstr "プレフィクスキーとしてある文字シーケンスをバインドする場合に、それがすでにコンプリートキーとしてバインドされていたら、新しいバインディングの前にコンプリートキーのバインドを解除しなければならない。たとえば@kbd{ESC @{}がバインド済みなら:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3799
@@ -7951,7 +7951,7 @@ msgstr "Terminal setup code in @file{.emacs}"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3840
 msgid "During startup, Emacs initializes itself according to a given code/file order.  If some of the code executed in your @file{.emacs} file needs to be postponed until the initial terminal or window-system setup code has been executed but is not, then you will experience this problem (this code/file execution order is not enforced after startup)."
-msgstr "スタートアップの間、Emacsは与えられたコード/ファイルの順番に応じて自身を初期化します。@file{.emacs}ファイルの中のあるコードを、端末またはウィンドウシステムのセットアップコードが実行されるまで延期する必要があるのにセットアップが終わっていないと、この問題を体験することになるでしょう(このコード/ファイルの実行順はスタートアップ後は強制されない)。"
+msgstr "スタートアップの間、Emacsは与えられたコード/ファイルの順番に応じて自身を初期化します。端末またはウィンドウシステムのセットアップコードが実行されるまで、@file{.emacs}ファイル内のあるコードを延期する必要があるのにセットアップが終わっていないと、この問題を体験することになるでしょう(このコード/ファイルの実行順はスタートアップ後は強制されない)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3845
@@ -8059,7 +8059,7 @@ msgstr "Translations for keys under X"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3879
 msgid "Emacs is not written using the Xt library by default, so there are no ``translations'' to be set.  (We aren't sure how to set such translations if you do build Emacs with Xt; please let us know if you've done this!)"
-msgstr "EmacsはデフォルトではXtライブラリーを使用するようには記述されていないので、何の``変換(translation)''もセットされていません(XtとともにEmacsをビルドした場合にそのような変換をどのようにセットするかわたしたちには定かではないので、これを行うことができたらどうか知らせてください!)。"
+msgstr "EmacsはデフォルトではXtライブラリーを使用するように記述されていないので、何の``変換(translation)''もセットされていません(XtとともにEmacsをビルドした場合にそのような変換をどのようにセットするかわたしたちには定かではないので、これを行うことができたらどうか知らせてください!)。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3884
@@ -8146,7 +8146,7 @@ msgstr "完全にプログラム可能なキーボードや、任意のキーか
 #. type: itemize
 #: ../../../../misc/efaq.texi:3943
 msgid "With Emacs 21.1 and later, you can control the effect of the @key{Backspace} and @key{Delete} keys, on both dumb terminals and a windowed displays, by customizing the option @code{normal-erase-is-backspace-mode}, or by invoking @kbd{M-x normal-erase-is-backspace}.  See the documentation of these symbols (@pxref{Emacs Lisp documentation}) for more info."
-msgstr "Emacs 21.1以降ではオプション@code{normal-erase-is-backspace-mode}のカスタマイズ、または@kbd{M-x normal-erase-is-backspace}呼び出しにより、ダム端末およびウィンドウ化されたディスプレーの両方において、@key{Backspace}キーおよび@key{Delete}キーの効果を制御できる。詳細についてはこれらのシンボルのドキュメントについては、@ref{Emacs Lisp documentation}を参照のこと。"
+msgstr "Emacs 21.1以降ではオプション@code{normal-erase-is-backspace-mode}のカスタマイズ、または@kbd{M-x normal-erase-is-backspace}呼び出しにより、ダム端末およびウィンドウ化されたディスプレーの両方において、@key{Backspace}キーおよび@key{Delete}キーの効果を制御できる。これらのシンボルのドキュメントについては@ref{Emacs Lisp documentation}を参照のこと。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3947
@@ -8183,7 +8183,7 @@ msgstr "@code{keyboard-translate}についての詳細は@ref{Swapping keys}を�
 #. type: itemize
 #: ../../../../misc/efaq.texi:3969
 msgid "Another approach is to switch key bindings and put help on @kbd{C-x h} instead:"
-msgstr "別のアプローチとしてはキーバインディングを切り替えて、かわりに@kbd{C-x h}をヘルプにする:"
+msgstr "別のアプローチとしては、キーバインディングを切り替えてかわりに@kbd{C-x h}をヘルプにする:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:3972
@@ -8206,7 +8206,7 @@ msgstr ""
 #. type: itemize
 #: ../../../../misc/efaq.texi:3984
 msgid "This method is not recommended, though: it only solves the problem for those modes which bind @key{DEL} to @code{delete-backward-char}.  Modes which bind @key{DEL} to something else, such as @code{view-mode}, will not work as you expect when you press the @key{Backspace} key.  For this reason, we recommend the @code{keyboard-translate} method, shown above."
-msgstr "とはいえこの手法は推奨しない。これは@key{DEL}を@code{delete-backward-char}にバインドするモードにたいしてのみ問題を解決する。@code{view-mode}モードのように@key{DEL}を別の何かにバインドするモードは、@key{Backspace}キーを押下した際に期待通り動作しないだろう。この理由により、えわたしたちは上述した@code{keyboard-translate}手法をお勧めする。"
+msgstr "とはいえこの手法は推奨しない。これは@key{DEL}を@code{delete-backward-char}にバインドするモードにたいしてのみ問題を解決する。@code{view-mode}モードのように@key{DEL}を別の何かにバインドするモードは、@key{Backspace}キーを押下した際に期待通り動作しないだろう。この理由により、わたしたちは上述した@code{keyboard-translate}手法をお勧めする。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:3986
@@ -8216,7 +8216,7 @@ msgstr "ヘルプ用として他に人気のあるキーバインディングは
 #. type: itemize
 #: ../../../../misc/efaq.texi:3990
 msgid "Don't try to bind @key{DEL} to @code{help-command}, because there are many modes that have local bindings of @key{DEL} that will interfere."
-msgstr "@key{DEL}にたいしてローカルバインディングをもちモードが多数あり、それらと干渉するかもしれないので、@key{DEL}に@code{help-command}をバインドしようとしてはならない。"
+msgstr "@key{DEL}にたいしてローカルバインディングをもつモードが多数あり、それらと干渉するかもしれないので、@key{DEL}に@code{help-command}をバインドしようとしてはならない。"
 
 #. type: Plain text
 #: ../../../../misc/efaq.texi:3996
@@ -8420,7 +8420,7 @@ msgstr "多くのキーボードでは、@key{Alt}キーは@key{Meta}のよう�
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4081
 msgid "Instead of typing @kbd{M-a}, you can type @kbd{@key{ESC} a}.  In fact, Emacs converts @kbd{M-a} internally into @kbd{@key{ESC} a} anyway (depending on the value of @code{meta-prefix-char}).  Note that you press @key{Meta} and @kbd{a} together, but with @key{ESC}, you press @key{ESC}, release it, and then press @kbd{a}."
-msgstr "@kbd{M-a}のかわりに@kbd{@key{ESC} a}とタイプすることができます。実際のところ、いずれにせよEmacsｈｓ内部で@kbd{M-a}を@kbd{@key{ESC} a}に変換しています(@code{meta-prefix-char}の値による)。@key{Meta}と@kbd{a}は一緒に押しますが、@key{ESC}の場合には@key{ESC}を押して、離した後に@kbd{a}を押下することに注意してください。"
+msgstr "@kbd{M-a}のかわりに@kbd{@key{ESC} a}とタイプすることができます。実際のところ、いずれにせよEmacsは内部で@kbd{M-a}を@kbd{@key{ESC} a}に変換しています(@code{meta-prefix-char}の値による)。@key{Meta}と@kbd{a}は一緒に押しますが、@key{ESC}の場合には@key{ESC}を押して離した後に@kbd{a}を押下することに注意してください。"
 
 #. type: cindex
 #: ../../../../misc/efaq.texi:4082 ../../../../misc/efaq.texi:4084
@@ -8449,7 +8449,7 @@ msgstr "Escape key, lacking"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4092
 msgid "Type @kbd{C-[} instead.  This should send @acronym{ASCII} code 27 just like an Escape key would.  @kbd{C-3} may also work on some terminal (but not under X).  For many terminals (notably DEC terminals) @key{F11} generates @key{ESC}.  If not, the following form can be used to bind it:"
-msgstr "かわりに@kbd{C-[}をタイプしてください。これはエスケープキーのように@acronym{ASCII}コードの27を送信するはずです。@kbd{C-3}でも機能する端末もあります(X配下でないこと)。多くの端末(特にDEC)では、@key{F11}が@key{ESC}を生成します。そうでなければ、以下のフォームを使用してこれをバインドできます:"
+msgstr "かわりに@kbd{C-[}をタイプしてください。これはエスケープキーのように@acronym{ASCII}コードの27を送信するはずです。@kbd{C-3}でも機能する端末もあります(X配下でないこと)。多くの端末(特にDEC)では、@key{F11}が@key{ESC}を生成します。そうでなければ以下のフォームを使用してこれをバインドできます:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4096
@@ -8488,7 +8488,7 @@ msgstr "@key{Meta}, using @key{Compose Character} for"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4107
 msgid "On a dumb terminal such as a VT220, no.  It is rumored that certain VT220 clones could have their @key{Compose} key configured this way.  If you're using X, you might be able to do this with the @code{xmodmap} command."
-msgstr "VT220のようなダム端末ではできません。噂では特定のVT220クローンは、この方法で設定することによって独自に@key{Compose}キーをもてるようです。Xを使用していれば、@code{xmodmap}コマンドでこれを行うことができるかもしれません。"
+msgstr "VT220のようなダム端末ではできません。噂では特定のVT220クローンは、この方法で設定することによって独自に@key{Compose}キーをもてるようです。Xを使用していれば@code{xmodmap}コマンドでこれを行うことができるかもしれません。"
 
 #. type: node
 #: ../../../../misc/efaq.texi:4108
@@ -8539,7 +8539,7 @@ msgstr "ここで@samp{?\\C-x}は文字@kbd{C-x}にたいするLisp文字定数�
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4130
 msgid "You can use the modifier keys @key{Control}, @key{Meta}, @key{Hyper}, @key{Super}, @key{Alt}, and @key{Shift} with function keys.  To represent these modifiers, prepend the strings @samp{C-}, @samp{M-}, @samp{H-}, @samp{s-}, @samp{A-}, and @samp{S-} to the symbol name.  Here is how to make @kbd{H-M-RIGHT} move forward a word:"
-msgstr "ファンクションキーとともに@key{Control}、@key{Meta}、@key{Hyper}、@key{Super}、@key{Alt}、@key{Shift}の修飾キーが使用できます。これらの修飾キーを表現するにはシンボル名の前に@samp{C-}、@samp{M-}、@samp{H-}、@samp{s-}、@samp{A-}@samp{S-}を前置します。以下は@kbd{H-M-RIGHT}を単語1つ前方に移動にする方法です:"
+msgstr "ファンクションキーとともに@key{Control}、@key{Meta}、@key{Hyper}、@key{Super}、@key{Alt}、@key{Shift}の修飾キーが使用できます。これらの修飾キーを表現するにはシンボル名の前に@samp{C-}、@samp{M-}、@samp{H-}、@samp{s-}、@samp{A-}、@samp{S-}を前置します。以下は@kbd{H-M-RIGHT}を単語1つ前方に移動にする方法です:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4133
@@ -8594,12 +8594,12 @@ msgstr "Emacsマニュアルのアドバイスが失敗した場合には、更�
 #. type: itemize
 #: ../../../../misc/efaq.texi:4163
 msgid "You may have big problems using @code{mwm} as your window manager.  (Does anyone know a good generic solution to allow the use of the @key{Meta} key in Emacs with @file{mwm}?)"
-msgstr "ウィンドウマネージャーに@code{mwm}を使用することによって大きな問題を抱えているのかもしれない(@file{mwm}のEmacsで@key{Meta}キーが使用できるようにする汎用的で優れた解決策を知る人は居ないだろうか?)。"
+msgstr "ウィンドウマネージャーに@code{mwm}を使用することによって大きな問題を抱えているのかもしれない(@file{mwm}のEmacsで@key{Meta}キーが使用できるようにする汎用的で優れた解決策を知る人は居るのだろうか?)。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4171
 msgid "For X11: Make sure it really is a @key{Meta} key.  Use @code{xev} to find out what keysym your @key{Meta} key generates.  It should be either @code{Meta_L} or @code{Meta_R}.  If it isn't, use @file{xmodmap} to fix the situation.  If @key{Meta} does generate @code{Meta_L} or @code{Meta_R}, but @kbd{M-x} produces a non-@acronym{ASCII} character, put this in your @file{~/.Xdefaults} file:"
-msgstr "X11ではそれが本当に@key{Meta}キーなのか確認してほしい。あなたの@key{Meta}キーがどんなを生成するかを確認するには@code{xev}を使用する。@code{Meta_L}か@code{Meta_R}のいずれかのはずだが、もし違うならこの状況を修整するために@file{xmodmap}を使用できる。@key{Meta}は@code{Meta_L}や@code{Meta_R}を生成しないものの@kbd{M-x}は非@acronym{ASCII}文字を生成するようなら、以下を@file{~/.Xdefaults}ファイルに記述する:"
+msgstr "X11ではそれが本当に@key{Meta}キーなのか確認してほしい。あなたの@key{Meta}キーがどんなkeysymを生成するか確認するには@code{xev}を使用する。@code{Meta_L}か@code{Meta_R}のいずれかのはずだが、もし違うならこの状況を修整するために@file{xmodmap}を使用できる。@key{Meta}は@code{Meta_L}や@code{Meta_R}を生成せず、@kbd{M-x}は非@acronym{ASCII}文字を生成するようなら以下を@file{~/.Xdefaults}ファイルに記述する:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:4175
@@ -8614,12 +8614,12 @@ msgstr ""
 #. type: itemize
 #: ../../../../misc/efaq.texi:4182
 msgid "Make sure the @code{pty} the @code{xterm} is using is passing 8 bit characters.  @samp{stty -a} (or @samp{stty everything}) should show @samp{cs8} somewhere.  If it shows @samp{cs7} instead, use @samp{stty cs8 -istrip} (or @samp{stty pass8}) to fix it."
-msgstr "@code{xterm}が使用している@code{pty}は8ビット文字を通すか確認すること。@samp{stty -a} (あるいは@samp{stty everything})がどこかに@samp{cs8}と表示するはずである。かわりに@samp{cs7}が表示されたら、これを修整するために@samp{stty cs8 -istrip} (あるいは@samp{stty pass8})を使用する。"
+msgstr "@code{xterm}が使用している@code{pty}が8ビット文字を通すか確認すること。@samp{stty -a} (あるいは@samp{stty everything})がどこかに@samp{cs8}と表示するはずである。かわりに@samp{cs7}が表示されたら、これを修整するために@samp{stty cs8 -istrip} (あるいは@samp{stty pass8})を使用する。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4187
 msgid "If there is an @code{rlogin} connection between @code{xterm} and Emacs, the @samp{-8} argument may need to be given to rlogin to make it pass all 8 bits of every character."
-msgstr "@code{xterm}とEmacsの間に@code{rlogin}接続が存在する場合には、各文字の8ビット目をすべて渡すように、rloginに@samp{-8}引数を与える必要があるかもしれない。"
+msgstr "@code{xterm}とEmacsの間に@code{rlogin}接続が存在する場合には、各文字の8ビット目をすべて渡すようにrloginに@samp{-8}引数を与える必要があるかもしれない。"
 
 #. type: itemize
 #: ../../../../misc/efaq.texi:4191
@@ -8695,7 +8695,7 @@ msgstr "HP-UX, the @key{ExtendChar} key"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4229
 msgid "This is a result of an internationalization extension in X11R4 and the fact that HP is now using this extension.  Emacs assumes that the @code{XLookupString} function returns the same result regardless of the @key{Meta} key state which is no longer necessarily true.  Until Emacs is fixed, the temporary kludge is to run this command after each time the X server is started but preferably before any xterm clients are:"
-msgstr "これはX11R4における国際家拡張の結果であるとともに、HPが現在はこの拡張を使用しているという事実を示しています。Emacsは@key{Meta}キーの状態に関わらず@code{XLookupString}関数が同じ結果をリターンするという、もはや必ずしも真とは言えない前提にもとづいています。Emacsが修整されるまでは、その場しのぎの一時的な修整ですがXサーバー起動後に毎回、できればxtermクライアント開始前に以下のコマンドを実行してください:"
+msgstr "これはX11R4における国際化拡張の結果であるとともに、HPが現在はこの拡張を使用しているという事実を示しています。Emacsは@key{Meta}キーの状態に関わらず@code{XLookupString}関数が同じ結果をリターンするという、もはや必ずしも真とは言えない前提にもとづいています。Emacsが修整されるまでは、その場しのぎの一時的な修整ですがXサーバー起動後に毎回、できればxtermクライアント開始前に以下のコマンドを実行してください:"
 
 #. type: example
 #: ../../../../misc/efaq.texi:4232
@@ -8728,7 +8728,7 @@ msgstr "Emacs 22.1から@kbd{SPC}はミニバッファーでファイル名の�
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4250
 msgid "You can get the old behavior by binding @kbd{SPC} to @code{minibuffer-complete-word} in the minibuffer, as follows:"
-msgstr "以下のようにミニバッファーで@kbd{SPC}を@code{minibuffer-complete-word}にバインドすることによって古い挙動を取り戻すことができます:"
+msgstr "以下のようにミニバッファーで@kbd{SPC}を@code{minibuffer-complete-word}にバインドすることによって古い挙動に戻すことができます:"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4254
@@ -9444,7 +9444,7 @@ msgstr "Rmail, replying to the sender of a message in"
 #. type: Plain text
 #: ../../../../misc/efaq.texi:4579
 msgid "Ron Isaacson says: When you hit @kbd{r} to reply in Rmail, by default it Ccs all of the original recipients (everyone on the original @samp{To} and @samp{CC} lists). With a prefix argument (i.e., typing @kbd{C-u} before @kbd{r}), it replies only to the sender.  However, going through the whole @kbd{C-u} business every time you want to reply is a pain.  This is the best fix I've been able to come up with:"
-msgstr "Ron Isaacsonは述べています: Rmailで返信するために@kbd{r}をタイプすると、デフォルトでは元の受信者すべて(元の@samp{To}と@samp{CC}のリスト全員)にCCされます。(@kbd{r}の前に@kbd{C-u}をタイプして)プレフィクス引数を指定すると、送信者だけに返信します。とはいえ返信したいときに全体を通して@kbd{C-u}作業を行うのは苦痛です。以下はわたしがこれに対処した中では最良の修整です。"
+msgstr "Ron Isaacson(訳注: Texinfoファイルには\"isaacson@@seas.upenn.edu\"とコメントされていました)は述べています: Rmailで返信するために@kbd{r}をタイプするとデフォルトでは元の受信者すべて(元の@samp{To}と@samp{CC}のリスト全員)にCCされます。(@kbd{r}の前に@kbd{C-u}をタイプして)プレフィクス引数を指定すると送信者だけに返信します。とはいえ返信したいときに全体を通して@kbd{C-u}作業を行うのは苦痛です。以下はわたしがこれに対処した中では最良の修整です。"
 
 #. type: lisp
 #: ../../../../misc/efaq.texi:4585

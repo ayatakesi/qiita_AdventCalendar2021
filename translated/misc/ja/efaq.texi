@@ -293,7 +293,7 @@ cost)''ではなく``自由(freedom)''を意図した単語です。GPLの対象
 @cindex Discussion of the GPL
 
 GNU
-一般公衆利用許諾書、いわゆるGPL(コピーレフト)の真の法的な意味合いは、裁判官がその有効性と範囲を裁定した場合にのみ明らかになります。判例として定められるようなGPLが関与する著作権侵害の訴訟はこれまでに一度もありませんでした。GPL条件への違反によって企業への訴訟が起こされましたが、これまでのところすべてが法廷外で(原告に有利に)和解されています。この問題に関しての議論は、どうかこの問題について盛大に罵り合うために作成されたニュースグループ@uref{news:gnu.misc.discuss}で行うようお願いします。
+一般公衆利用許諾書、いわゆるGPL(コピーレフト)の真の法的な意味合いは、裁判官がその有効性と範囲を裁定した場合にのみ明らかになります。判例として定められるようなGPLが関与する著作権侵害の訴訟はこれまでに一度もありませんでした。GPL条件への違反によって企業への訴訟が起こされましたが、これまでのところすべてが法廷外で(原告に有利に)和解されています。この問題に関しての議論は、どうかこの問題について盛大に言い合うために作成されたニュースグループ@uref{news:gnu.misc.discuss}で行うようお願いします。
 
 RMSは記しています:
 
@@ -316,7 +316,7 @@ Savannah page}に記述があります。それらのうちのいくつかはニ
 Emacsプログラム全般に関する議論はニュースグループ@uref{news:comp.emacs}、@uref{news:gnu.emacs.help}はGNU
 Emacsに特化したニュースグループです。したがってある問いにたいして適切なニュースグループは1つだけなので、両方のグループへの多重投稿には意味がありません。
 
-問題について派手に罵り合うために作成された@uref{news:gnu.misc.discuss}を除いて、``非フリー(non-free)''なソフトウェアを推奨するようなメッセージは@code{gnu.*}ニュースグループのすべてにおいて受け入れ難いものとみなされます。``非フリー''なソフトウェアにはエンドユーザーが自由にソースコードを改変したり拡張機能の取り替えができないすべてのソフトウェアが含まれます。そのようなソフトウェアを推奨するフォローアップを投稿する際には、@samp{Newsgroups:}行から@code{gnu.*}グループを削除するよう注意してください。
+問題について派手に言い合うために作成された@uref{news:gnu.misc.discuss}を除いて、``非フリー(non-free)''なソフトウェアを推奨するようなメッセージは@code{gnu.*}ニュースグループのすべてにおいて受け入れ難いものとみなされます。``非フリー''なソフトウェアにはエンドユーザーが自由にソースコードを改変したり拡張機能の取り替えができないすべてのソフトウェアが含まれます。そのようなソフトウェアを推奨するフォローアップを投稿する際には、@samp{Newsgroups:}行から@code{gnu.*}グループを削除するよう注意してください。
 
 @uref{news:gnu.emacs.bug}ではバグレポートを目にしますが、このニュースグループに直接バグレポートを投稿することは避けてください(@ref{Reporting
 bugs}を参照)。
@@ -1401,7 +1401,7 @@ abbrev-mode}を使用します。デフォルトですべてのバッファー�
 (setq-default abbrev-mode t)
 @end lisp
 
-@noindent To turn it on in a specific mode, use:
+@noindent 特定のモードでオンにするには以下を使用してください:
 
 @lisp
 (add-hook '@var{mymode}-mode-hook
@@ -1409,7 +1409,7 @@ abbrev-mode}を使用します。デフォルトですべてのバッファー�
            (setq abbrev-mode t)))
 @end lisp
 
-@noindent If your Emacs version is older then 22.1, you will also need to use:
+@noindent Emacsのバージョンが22.1より古ければ、以下も使う必要があるでしょう:
 
 @lisp
 (condition-case ()
@@ -1681,7 +1681,7 @@ f()
 @}
 @end example
 
-@noindent To achieve this, add the following line to your @file{.emacs}:
+@noindent これを行うには以下を@file{.emacs}ファイルに追加してください:
 
 @lisp
 (c-set-offset 'case-label '+)
@@ -1853,16 +1853,16 @@ that do not come with Emacs}を参照)。手引きとして``fill''、および`
 任意のEmacsフレーム上端にあるEmacsメニューバーの@samp{Options}メニューからオプション@samp{Paren Match
 Highlighting}を選択してこのモードを有効にすることもできます。
 
-このようなモードの代替案手段としては以下が含まれます:
+このようなモードの代替となる手段として以下が含まれます:
 
 @itemize @bullet
 
 @item
-右カッコ(または大カッコや角カッコ)に着目していたら、それを削除してからしで挿入する。Emacsは瞬時の間、マッチするカッコにカーソル和移動するだろう。
+あなたが右カッコ(または大カッコや角カッコ)に着目していたら、それを削除してから再度挿入する。Emacsは瞬時の間、マッチするカッコにカーソルを移動するだろう。
 
 @item
 @kbd{C-M-f} (@code{forward-sexp})および@kbd{C-M-b}
-(@code{backward-sexp})はバランスのとれたカッコを1セット分スキップするので、どのカッコがマッチするか確認できる(構文テーブルを修整してバランスのとれた大カッコおよび角カッコもスキップするよう洗練することも可能)。
+(@code{backward-sexp})は釣り合いのとれたカッコを1セット分スキップするので、どのカッコがマッチするか確認できる(構文テーブルを修整して釣り合いのとれた大カッコおよび角カッコもスキップするよう洗練することも可能)。
 
 @cindex Show matching paren as in @code{vi}
 @item
@@ -1892,7 +1892,7 @@ Lispコード。更にカーソルがカッコ上になければ通常通り単�
 @cindex Selectively displaying @code{#ifdef} code
 
 @kbd{M-x hide-ifdef-mode}
-(マイナーモード)です。Emacsに同梱されている@file{cpp.el}も調査したいと思うかもしれません。
+(マイナーモード)です。Emacsに同梱されている@file{cpp.el}も調べてみたいと思うかもしれません。
 
 @node Repeating commands
 @section できるだけ沢山コマンドを繰り返すには?
@@ -1904,13 +1904,14 @@ Lispコード。更にカーソルがカッコ上になければ通常通り単�
 z})を使用します。プレフィクス引数を前置すると、そのプレフィクスは繰り返すコマンドに適用されます。
 
 引数を取得するためにミニバッファーを使用するコマンドは、@kbd{C-x @key{ESC} @key{ESC}}
-(@code{repeat-complex-command})とタイプしても再呼び出しができます。@code{repeat-complex-command}では@kbd{M-p}と@kbd{M-n}(キーボードにあれば上矢印と下矢印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたものを走査することができます。
+(@code{repeat-complex-command})とタイプしても再呼び出しができます。@code{repeat-complex-command}では@kbd{M-p}と@kbd{M-n}
+(キーボードにあれば上矢印と下矢印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたものを走査することができます。
 
 一連のコマンドを繰り返すにはキーボードマクロを使用します。コマンドを呼び出すキーボードマクロの作成には@kbd{C-x (}と@kbd{C-x
 )}を使い、その後に@kbd{C-x e}とタイプします。@ref{Keyboard Macros,,, emacs, The GNU Emacs
 Manual}を参照してください。
 
-最後の挿入/削除を再実行する@code{vi}の@code{.}コマンドが本当に欲しくて堪らなければ、それをサポートしているよう思われる、VIPERというEmacsに同梱の@code{vi}エミュレーションモードを使ってください。
+最後の挿入/削除を再実行する@code{vi}の@code{.}コマンドが本当に欲しくて堪らなければ、それをサポートしているよう思われるVIPERというEmacsに同梱の@code{vi}エミュレーションモードを使ってください。
 
 @node Valid X resources
 @section 有効なXリソース(.Xdefaults内の項目)は?
@@ -1946,7 +1947,7 @@ Emacsを実行する際に毎回評価させたければ、ホームディレク
 
 @item
 @kbd{M-:}または@kbd{M-x
-eval-expression}とタイプすることによりミニバッファーでLispフォームをタイプして、@key{RET}の押下することでそれが1回評価される。
+eval-expression}とタイプすることによりミニバッファーでタイプしたLispフォームが、@key{RET}押下により1回評価される。
 
 @item
 ファイル内のすべてのLispフォームをEmacsにすべて評価させるには@kbd{M-x
@@ -1987,7 +1988,7 @@ string-insert-rectangle @key{RET}}とタイプしてください。バッファ�
 string-insert-rectangle @key{RET}}とタイプします。
 
 yankしたメールメッセージにプレフィクスとして@samp{>}の付加を試みているなら、変数@code{mail-yank-prefix}をセットしたいと思うかもしれません。Messageバッファーではyankしたメッセージのメッセージの引用に@kbd{M-;}
-(こはリージョンのコメントアウトという汎用目的のためのメカニズムである関数@code{comment-region}を実行する)を使うことさえできます(@ref{Changing
+(これはリージョンのコメントアウトという汎用用途メカニズムである関数@code{comment-region}を実行する)を使うことさえできます(@ref{Changing
 the included text prefix}を参照)。
 
 @node Forcing the cursor to remain in the same column
@@ -2027,10 +2028,11 @@ emacs, The GNU Emacs Manual}を参照してください。
 @itemize @bullet
 
 @item
-Unixの@file{grep}、@file{sed}などとは異なり文字の補集合(@samp{[^...]})にはマッチしない文字として改行文字(@key{LFD}または@kbd{C-j}あるいは@samp{\n})が記述されていなければ改行文字はマッチする。
+Unixの@file{grep}、@file{sed}などとは異なり、文字の補集合(@samp{[^...]})にマッチしない文字として改行文字(@key{LFD}、@kbd{C-j}、
+または@samp{\n})が記述されていなければ改行文字にマッチする。
 
 @item
-文字構文のregexp(たとえば@samp{\sw})は文字セットにたいするregexp(たとえば@samp{[aeiou]})の内部では意味をもたない(これは実際にはregexp構文として典型的)。
+文字構文のregexp(たとえば@samp{\sw})は文字セットにたいするregexp(たとえば@samp{[aeiou]})の内部では意味をもたない(これは実際はregexp構文として典型的)。
 
 @end itemize
 
@@ -2042,7 +2044,7 @@ Unixの@file{grep}、@file{sed}などとは異なり文字の補集合(@samp{[^.
 @cindex Recursive search/replace operations
 
 Diredモード(@kbd{M-x dired @key{RET}}または@kbd{C-x
-d})はコマンド@code{dired-do-find-regexp-and-replace}
+d})は、コマンド@code{dired-do-find-regexp-and-replace}
 (@kbd{Q})をサポートしています。これは複数ファイルにおける正規表現の置換を可能にします。
 
 以下のステップにしたがうことにより、このコマンドで複数ファイルにたいする検索/置換処理を行うことができます:
@@ -2078,9 +2080,9 @@ Search,,, emacs, The GNU Emacs Manual}を参照してください。
 @cindex Backups, disabling
 @cindex Disabling backups
 
-特に何か不幸な出来事が起こったとき等、バックアップ特は役に立つので多分これを行いたいとは思わないでしょう。
+何か不幸な出来事が起こったとき等は、特にバックアップが役立つので多分これを行いたいとは思わないでしょう。
 
-Diredでバックアップファイル(およびその他の``興味がない''ファイル)を目にすることを避けるには、@file{.emacs}ファイルに以下を追加して@code{dired-x}をロードしてください:
+Diredでバックアップファイル(およびその他の``関心がない''ファイル)を目にすることを避けるには、@file{.emacs}ファイルに以下を追加して@code{dired-x}をロードしてください:
 
 @lisp
 (add-hook 'dired-load-hook
@@ -2088,7 +2090,7 @@ Diredでバックアップファイル(およびその他の``興味がない''�
            (require 'dired-x)))
 @end lisp
 
-@code{dired-x}のロードにより、@kbd{M-o}でそれぞれのdiredバッファーでの(興味がないファイルの表示)の省略が切り替わります。以下を@file{.emacs}に記述すれば、新たなdiredバッファーで省略をデフォルトにできます:
+@code{dired-x}のロードにより、@kbd{M-o}でそれぞれのdiredバッファーでの(関心がないファイルの表示)の省略が切り替わります。以下を@file{.emacs}に記述すれば、新たなdiredバッファーで省略をデフォルトにできます:
 
 @lisp
 ; 訳注
@@ -2099,7 +2101,7 @@ Diredでバックアップファイル(およびその他の``興味がない''�
 (add-hook 'dired-mode-hook 'dired-omit-toggle)
 @end lisp
 
-Unixシェルで@samp{ls}するたびにバックアップファイルが目につきうんざりしていたら、@samp{-B}オプションでGNU
+Unixシェルで@samp{ls}するたびにバックアップファイルが目障りでうんざりしていたら、@samp{-B}オプションでGNU
 @code{ls}を試してみてください。GNU @code{ls}はGNU
 Fileutilsパッケージの一部であり、@url{https://ftp.gnu.org}およびそのミラーサイトで利用可能です(@ref{Current
 GNU distributions}を参照)。
@@ -2140,7 +2142,7 @@ Manual}を参照してください。
 もしそうならEmacsからコマンド@kbd{M-x compile}および@kbd{M-x
 recompile}を使用してコンパイルすることで、より効率的にこれを行うことができます。Emacsはコンパイルエラーメッセージを自動的にインターセプトして、@file{*compilation*}と呼ばれる特別なバッファーに挿入ます。あなたはソース内の、各メッセージに対応する場所をvisitできます。問題のある行を1つずつステップスルーするには@kbd{C-x
 `}とタイプします(Emacs 22からは前または次のマッチへ直接移動する@kbd{M-g M-p}および@kbd{M-g
-M-n}でも使用できる。@file{*compilation*}バッファーのメッセージテキスト上で@kbd{mouse-2}をクリックするか@key{RET}を押下することによって、そのメッセージ中に記されている番号の行へ移動します。
+M-n}でも使用できる)。@file{*compilation*}バッファーのメッセージテキスト上で@kbd{mouse-2}をクリックするか@key{RET}を押下することによって、そのメッセージ中に記された行番号へ移動します。
 
 しかし特定のテキスト行へ移動する必要が本当にあるなら@kbd{M-g M-g} (Emacs
 22からは@code{goto-line}関数のデフォルトバインディング)をタイプしてください。Emacsは行番号の入力を求めてその行に移動するでしょう。
@@ -2175,7 +2177,7 @@ Word}アイテムを追加するためには、以下のLispコードが必要�
 
 3行目は1つ目の要素が表示されるタイトル、2つ目の要素がメニューオプション呼び出し時に呼び出される関数であるようなコンスセルです。
 
-既存メニューへの新オプション追加デ新たなメニューを追加するためには新たにキーマップ全体を定義しなければなりません。
+既存メニューへの新オプション追加で新たなメニューを追加するためには、新たにキーマップ全体を定義しなければなりません。
 
 @lisp
 (define-key global-map [menu-bar words]
@@ -2183,8 +2185,8 @@ Word}アイテムを追加するためには、以下のLispコードが必要�
 @end lisp
 
 上記のコードは新たに疎キーマップ(sparse
-keymap)を追加して名前@samp{Words}を付与、それをグローバルメニューバーにアタッチします。したがってこの新メニューへの、@samp{Forward
-Word}アイテム追加には以下のようなコードが必要になるでしょう:
+keymap)を追加して名前@samp{Words}を付与、それをグローバルメニューバーにアタッチしています。したがってこの新メニューへの@samp{Forward
+Word}アイテム追加には、以下のようなコードが必要になるでしょう:
 
 @lisp
 (define-key global-map
@@ -2195,7 +2197,7 @@ Word}アイテム追加には以下のようなコードが必要になるでし
 @noindent
 キーマップが機能する方法により、メニューオプションはより新しく定義されたアイテムがトップになるように表示されることに注意してください。したがってメニューオプション@samp{foo}、@samp{bar}、@samp{baz}を(この順番で)定義するとメニューオプションは@samp{baz}がトップ、@samp{foo}がボトムに表示されます。
 
-これを回避する1つの方法として関数@code{define-key-after}の使用があります。これは@code{define-key}と同様ですが、アイテムが出現しる位置を変更することができます。以下は@samp{Edit}メニューの@samp{Undo}アイテムの直後になるように@samp{Forward
+これを回避する1つの方法として関数@code{define-key-after}の使用があります。これは@code{define-key}と同様ですが、アイテムが出現する位置を変更することができます。以下は@samp{Edit}メニューの@samp{Undo}アイテムの直後になるように、@samp{Forward
 Word}アイテムを挿入します。
 
 @lisp
@@ -2210,7 +2212,7 @@ Word}アイテムを挿入します。
 
 ある場所から別の場所にメニューオプションを移動するには、最後の引数を適切に指定して@code{define-key-after}を評価するだけです。
 
-より詳細な情報、およびメニューオプションの作成と行うより多くの例については、@cite{Emacs Lisp Reference
+より詳細な情報、およびメニューオプションの作成と変更にたいする更に多くの例については、@cite{Emacs Lisp Reference
 Manual}の``Menu Keymaps''にあります(このマニュアル内の情報については@ref{Emacs Lisp
 documentation}を参照)。
 
@@ -2219,14 +2221,14 @@ documentation}を参照)。
 @cindex Deleting menus and menu options
 @cindex Menus, deleting
 
-メニューを削除するもっともシンプルな方法は、そのキーマップに@samp{nil}をセットします。たとえば@samp{Words}メニュー(@ref{Modifying
+メニューを削除するには、そのキーマップに@samp{nil}をセットするのがもっともシンプルな方法です。たとえば@samp{Words}メニュー(@ref{Modifying
 pull-down menus}を参照)を削除するには以下を使用します:
 
 @lisp
 (define-key global-map [menu-bar words] nil)
 @end lisp
 
-同じように、メニューオプションを削除するには、キーマップエントリーを@code{nil}に再定義する必要があります。たとえば@samp{Edit}メニューから(@ref{Modifying
+同じようにメニューオプションを削除するには、キーマップエントリーを@code{nil}に再定義する必要があります。たとえば@samp{Edit}メニューから(@ref{Modifying
 pull-down menus}で追加した)@samp{Forward word}メニューオプションを削除するには以下を使用します:
 
 @lisp
@@ -2241,10 +2243,10 @@ pull-down menus}で追加した)@samp{Forward word}メニューオプション�
 @cindex Colorizing text
 @cindex FAQ, @code{font-lock-mode}
 
-@code{font-lock-mode}はEmacsがカレントバッファーでシンタックスハイライト和行う標準的な方法です。これはEmacs
+@code{font-lock-mode}はEmacsがカレントバッファーでシンタックスハイライトを行う標準的な方法です。これはEmacs
 22.1以降ではデフォルトで有効になっています。
 
-@code{font-lock-mode}をオンに切り替えると、異なるタイプのテキストは違うカラーで表示されます。たとえばプログラミング用のモードでは変数はあるフェイスで、キーワードはそれとは異なるフェイス、コメントは更に違うフェイスで表示されるでしょう。
+@code{font-lock-mode}をオンに切り替えると、異なるタイプのテキストは違うカラーで表示されます。たとえばプログラミング用のモードでは変数はあるフェイス、キーワードはそれとは異なるフェイス、コメントは更に違うフェイスで表示されるでしょう。
 
 既存バッファーで@code{font-lock-mode}をオフに切り替えるには@kbd{M-x font-lock-mode
 @key{RET}}を使用してください。
@@ -2256,17 +2258,17 @@ Emacs
 (global-font-lock-mode 1)
 @end lisp
 
-@code{font-lock-mode}によるバッファーのハイライトにはかなり時間がかかり、苛立たしい表示の遅延を引き起こすので、これに対処するための機能がいくつかあります。
+@code{font-lock-mode}によるバッファーのハイライトにはかなり時間がかかるために、苛立たしい表示の遅延を引き起こすので、これに対処するための機能がいくつかあります。
 
 @cindex Just-In-Time syntax highlighting
 Emacs
 21では@code{font-lock-mode}をオンに切り替えることによって、@code{jit-lock-mode}が提供する新たな@dfn{JITフォント表示(Just-In-Time
-fontification)}が自動的にアクティブになります。@code{jit-lock-mode}はバッファーをユーザーに実際に見せる必要が生じるまで、そのバッファー範囲のフォント表示を遅延させるとともに、EmacsがIdol中にもフォント表示を行えます。これによってバッファーの可視範囲はほとんど瞬時に表示されるようになります。@code{jit-lock-mode}のカスタマイズの詳細については@kbd{C-h
+fontification)}が自動的にアクティブになります。@code{jit-lock-mode}はバッファーをユーザーに実際に見せる必要が生じるまで、そのバッファー範囲のフォント表示を遅延させるとともに、Emacsがアイドル中にもフォント表示を行えます。これによってバッファーの可視範囲はほとんど瞬時に表示されるようになります。@code{jit-lock-mode}のカスタマイズの詳細については@kbd{C-h
 f jit-lock-mode @key{RET}}とタイプしてください。
 
 @cindex Levels of syntax highlighting
 @cindex Decoration level, in @code{font-lock-mode}
-21より前のバージョンのEmacsではささやかなものから派手なものまで、異なるレベルの装飾が利用可能です。より多くの装飾にはバッファーがフォント表示されるまで、より長い時間待機する必要があることを意味しています。バッファーがどのように装飾されるべきかを制御するためには、@file{.emacs}ファイルで@code{font-lock-maximum-decoration}に値をセットします。@code{nil}値はデフォルトの(通常は最低限の)装飾、@code{t}は最大限の装飾をも意味します。できるだけ派手な外観にするには、@file{.emacs}ファイルに以下の行を含めてください。
+21より前のバージョンのEmacsではささやかなものから派手なものまで、異なるレベルの装飾が利用可能です。より多くの装飾にはバッファーがフォント表示されるまで、より長い時間待機する必要があることを意味しています。バッファーがどのように装飾されるべきかを制御するには、@file{.emacs}ファイルで@code{font-lock-maximum-decoration}に値をセットします。@code{nil}値はデフォルトの(通常は最低限の)装飾、@code{t}は最大限の装飾を意味します。できるだけ派手な外観にするには@file{.emacs}ファイルに以下の行を含めてください。
 
 @lisp
 (setq font-lock-maximum-decoration t)
@@ -2278,7 +2280,7 @@ describe-variable
 @key{RET}})で@code{font-lock-maximum-decoration}のドキュメントを確認してください。
 
 更に@kbd{C-h f font-lock-mode} (@kbd{M-x describe-function @key{RET}
-font-lock-mode @key{RET}})で利用できる、関数@code{font-lock-mode}のドキュメントも参照してください。
+font-lock-mode @key{RET}})で利用できる関数@code{font-lock-mode}のドキュメントも参照してください。
 
 バッファーをフェイス(カラーとフォント)付きでそのままプリントするためには、@kbd{M-x
 ps-print-buffer-with-faces}または@kbd{M-x
@@ -2309,7 +2311,7 @@ Scrolling,,, emacs, The GNU Emacs Manual}の説明を参照してください。
 MS-DOS
 (およびWindows)のファイルの検出と処理は透過的に行われます。Unixシステム上でファイルフォーマットについて心配するなくMS-DOSファイルのオープン、編集、保存を行うことができます。
 
-MS-DOS形式ファイルの編集時には、それがDOSファイルであることが示されます。UnixおよびGNU/Linuxシステム、およびMacintoshでもモードライン左端付近に文字列@samp{(DOS)}が表示されるでしょう。DOSのEOLフォーマットをデフォルトとして使用するDOSおよびWindowsでは、モードラインにバックスラッシュ(@samp{\})が表示されます。
+MS-DOS形式ファイルの編集時には、それがDOSファイルであることが示されます。UnixとGNU/Linuxシステム、およびMacintoshでもモードライン左端付近に文字列@samp{(DOS)}が表示されるでしょう。DOSのEOLフォーマットをデフォルトとして使用するDOSおよびWindowsでは、モードラインにバックスラッシュ(@samp{\})が表示されます。
 
 @node Filling paragraphs with a single space
 @section ピリオドごとにその後の単一スペースでパラグラフをフィルするようEmacsに伝えるには?
@@ -2353,7 +2355,7 @@ Emacs
           (lambda () (w32-send-sys-command ?\xF030)))
 @end lisp
 
-Emacsの開始においてデフォルトのフレームサイズからフルスクリーンに拡がる若干惑わされる視覚効果を回避するには、Windowsのレジストリ文字列に@samp{Emacs.Geometry}エントリーを追加できます。@ref{X
+Emacsの開始におけるデフォルトのフレームサイズからフルスクリーンに拡がる、若干惑わされる視覚効果を回避するにはWindowsのレジストリ文字列に@samp{Emacs.Geometry}エントリーを追加できます。@ref{X
 Resources,,, emacs, The GNU Emacs Manual}を参照してください。
 
 幅と高さの正しい値を計算するためには、まずEmacsフレームを最大化してから@kbd{M-:}で@code{(frame-height)}および@code{(frame-width)}を評価してください。
@@ -2393,7 +2395,7 @@ C-p}とタイプしてください。
 @cindex Maximum file size
 @cindex Files, maximum size
 
-Emacsのバッファーサイズには先天的に固定された制限があります。これは同一プラットフォームで他のプログラムがサポートするオブジェクトの最大サイズと比較すると厳しい制限です。
+Emacsのバッファーサイズには固定された固有の制限があります。これは同一プラットフォームで他のプログラムがサポートするオブジェクトの最大サイズと比較すると厳しい制限です。
 
 バッファーの最大サイズはバージョン23.2からは32ビットマシンで512MBです。@code{--with-wide-int}フラグを使用してEmacsをビルドした場合には、バッファーの最大サイズは32ビットマシンで2GBです。
 
@@ -2408,7 +2410,7 @@ Emacsのバッファーサイズには先天的に固定された制限があり
 @cindex Echoed commands in @code{shell-mode}
 
 それらを取り除くには@kbd{M-x comint-strip-ctrl-m
-@key{RET}}を試してください。これが機能しない場合には、いくつかのオプションがあります。
+@key{RET}}を試してください。これが機能しない場合にはいくつかのオプションがあります。
 
 @code{tcsh}では以下を@file{.cshrc} (または@file{.tcshrc})ファイルに記述してください:
 
@@ -2433,14 +2435,14 @@ Shellバッファーで@code{tcsh}のかわりに@code{csh}を使用してくだ
 @end lisp
 
 @noindent
-別の方法としては@file{.cshrc} (または@file{.tcshrc})ファイルでこれを行う方法です:
+別に@file{.cshrc} (または@file{.tcshrc})ファイルでこれを行う方法があります:
 
 @example
 setenv ESHELL /bin/csh
 @end example
 
 @noindent
-(これが効果をもつように環境変数を正しくセットした後にEmacsを再起動しなければなりません。)
+(環境変数を正しくセットした後は、これが効果をもつようにEmacsを再起動しなければなりません。)
 
 以下のLispフォームでEmacs Lispにより@code{ESHELL}環境変数をセットすることもできます:
 
@@ -2448,7 +2450,7 @@ setenv ESHELL /bin/csh
 (setenv "ESHELL" "/bin/csh")
 @end lisp
 
-上記の解決策は最初にシェルが@samp{^M}文字を生成するのを防ぐ試みです。これが不可能(たとえばWindowsシェルを使用している)なら、@file{.emacs}に追加することによって、Emacsにそれらの文字をバッファーから削除させることができます。
+上記の解決策は最初にシェルが@samp{^M}文字を生成するのを防ぐ試みです。これが不可能(たとえばWindowsシェルを使用している)なら、@file{.emacs}に追加することによってEmacsにそれらの文字をバッファーから削除させることができます。
 
 @smalllisp
 (add-hook 'comint-output-filter-functions #'comint-strip-ctrl-m)
@@ -2469,7 +2471,7 @@ stty -icrnl -onlcr -echo susp ^Z
 これはEmacsが間違った場所でシェルを探そうとして起こるかもしれません。シェル実行形式の場所をあなたが知っていたら、@file{.emacs}ファイルで変数@code{explicit-shell-file-name}がそのフルファイル名を指し示すようにセットしてください。
 
 @cindex Antivirus programs, and Shell Mode
-MS-Windows上のShellモードで差し出がましいアンチウイルスソフトウェアによりトラブルに遭う人がいます。このようなケースでは常駐アンチウイルスプログラムを無効にすると問題は解決するでしょう。
+MS-Windows上のShellモードでお節介なアンチウイルスソフトウェアによりトラブルに遭う人がいます。このようなケースでは常駐アンチウイルスプログラムを無効にすると問題は解決するでしょう。
 
 @node Termcap/Terminfo entries for Emacs
 @section 端末タイプ@samp{emacs}用のtermcap/terminfoエントリーはどこ?
@@ -2488,7 +2490,7 @@ emacs:tc=unknown:
 termcap/terminfoエントリーがあってもShellバッファーでのフルスクリーンプログラムの使用は有効になりません。かわりに@kbd{M-x
 term}を使用してください。
 
-termcap/terminfo欠落による問題を回避するためには、シェルのスタートアップファイルで端末タイプを@samp{emacs}から@samp{dumb}か@samp{unknown}に変更します。@code{csh}ユーザーは以下を@file{.cshrc}ファイルに記述できます:
+termcap/terminfo不在による問題を回避するためには、シェルのスタートアップファイルで端末タイプを@samp{emacs}から@samp{dumb}か@samp{unknown}に変更します。@code{csh}ユーザーは以下を@file{.cshrc}ファイルに記述できます:
 
 @example
 if ("$term" == emacs) set term=dumb
@@ -2508,7 +2510,7 @@ if ("$term" == emacs) set term=dumb
 あなたの@file{.emacs}ファイルをデバッグする方法については@ref{Debugging a customization
 file}を参照してください。
 
-まず何らかのパッケージのロードが必要だったり、そあるいはパッケージのロード後に評価されるフックを使用したのかもしれません。これのよくあるケースについては@ref{Terminal
+まず何らかのパッケージのロードが必要だったり、そあるいはパッケージのロード後に評価されるフックを使用したのかもしれません。このよくあるケースについては@ref{Terminal
 setup code works after Emacs has begun}に記述があります。
 
 @node Emacs ignores X resources
@@ -2594,7 +2596,7 @@ Emacsは以下のようにXリソースを検索します:
 @cindex @samp{$} in file names
 @cindex File names containing @samp{$}, editing
 
-ミニバッファーでファイル名を入力する際には、単語の前に@samp{$}があるとEmacsは環境変数としてそれの展開を試みます。この挙動を抑止するには、かわりに@kbd{$$}とタイプしてください。
+ミニバッファーでファイル名を入力する際に単語の前に@samp{$}があると、Emacsは環境変数としてそれの展開を試みます。この挙動を抑止するにはかわりに@kbd{$$}とタイプしてください。
 
 @node Shell mode loses the current directory
 @section Shellモードがシェルのカレントディレクトリーを見失うのはなぜ?
@@ -2602,9 +2604,9 @@ Emacsは以下のようにXリソースを検索します:
 @cindex @code{shell-mode} and current directory
 @cindex Directory, current in @code{shell-mode}
 
-Emacsには実際にシェルが自身のディレクトリーを変更したタイミングを知る手段がありません。これはUnixに内在する制限です。そのためにEmacsは@samp{cd}コマンドを識別して推測を試みます。変数リファレンスを含むディレクトリーが後に続く@kbd{cd}
+Emacsには実際にシェルが自身のディレクトリーを変更したタイミングを知る手段がありません。これはUnixに内部の制限です。そのためにEmacsは@samp{cd}コマンドを識別して推測を試みます。変数リファレンスを含むディレクトリーが後に続く@kbd{cd}
 (@kbd{cd $HOME/bin})やシェルのメタ文字を含むディレクトリー(@kbd{cd
-../lib*})をタイプすると、Emacsはシェルの新たなカレントディレクトリーの正確な推測に失敗するでしょう。Shellモードにおけるこの問題を処理するために、膨大な数の様々な訂正および改善が記述されてきました(@ref{Finding
+../lib*})をタイプすると、Emacsはシェルの新たなカレントディレクトリーの正確な推測に失敗するでしょう。Shellモードにおけるこの問題を処理するために、膨大な数の様々な訂正や改善が記述されてきました(@ref{Finding
 a package with particular functionality}を参照)。
 
 コマンド@kbd{M-x dirs}でシェルのカレントディレクトリーをEmacsに伝えることができます。
@@ -2626,21 +2628,21 @@ Emacsにインストールされた任意のパッケージはEmacs自身のプ�
 list-packages}など)で使用する際には注意を要する。信頼可能なサードパーティだけを使用すること!
 
 @item
-@code{file-local-variable}機能(危険ではあるが容易に変更できる)。
+@code{file-local-variable}機能(確かに危険だが容易に変更できる)。
 
 Emacsにはファイル終端付近に特別にフォーマットされたテキストを含むファイルを編集する際に、変数にたいするローカル値のセットを許す機能がある。この機能にはファイルをvisitする際に任意のEmacs
 Lispコードを評価する能力も含まれる。当然、トロイの木馬がこの機能を悪用する可能性がある。
 
 Emacsにはバージョン22の時点において、セットしても安全だと判っているローカル変数のリストがある。このリスト以外の変数のセットをファイルが試みると、その変数をセットするべきかどうかユーザーに確認を求める。変数@code{enable-local-eval}をセットすることにより、ファイル下部で見つけたEmacs
-Lispコードの評価を許すか否かを▽えまに伝えることもできる。
+Lispコードの評価を許すか否かをEmacsに伝えることもできる。
 
 @ref{File Variables,,, emacs, The GNU Emacs Manual}を参照のこと。
 
 @item
-合成Xイベント(危険であり@samp{MIT-MAGIC-COOKIE-1}以上を使用すること)。
+合成Xイベント(確かに危険なので@samp{MIT-MAGIC-COOKIE-1}以上を使用すること)。
 
 Emacsは@code{SendEvent}リクエストが生成した合成Xイベント(synthetic X
-event)が通常イベントであるかのように受け入れる。結果として簡単なホストベースの認証を使用していると、XワークステーションへのX接続をオープン可能な他のユーザーは、Emacsプロセスに(特権での他プロセス実行を含む)何でも実行させることができる。
+event)を、通常イベントであるかのように受け入れる。結果として簡単なホストベースの認証を使用していると、XワークステーションへのX接続をオープン可能な他のユーザーは、Emacsプロセスに(特権での他プロセス実行を含む)何でも実行させることができる。
 
 他のユーザーによるX接続のオープンができないように防ぐことが、これにたいする唯一の修整である。@samp{MIT-MAGIC-COOKIE-1}のような本物の認証メカニズムを使用することが、これを防ぐ標準的な方法である。@code{xauth}プログラムの使用に何らかの効果があるなら、恐らく@samp{MIT-MAGIC-COOKIE-1}を使用しているだろう。あなたのサイトは上位の認証方式を使用しているかもしれない。システム管理者に尋ねてみて欲しい。
 
@@ -2687,7 +2689,7 @@ Diredはファイル名の先頭を見つけるために正規表現を使用し
 
 @c ------------------------------------------------------------
 @node Compiling and installing Emacs
-@chapter Compiling and installing Emacs
+@chapter Emacsのコンパイルとインストール
 @cindex Compiling and installing Emacs
 
 @menu
@@ -2725,7 +2727,7 @@ distributions}を参照のこと。GNUディストリビューションのメイ
 (@samp{VERSION}は@samp{23.1}のように適切なバージョン番号に置き換えること。)
 
 @item
-次にソースファイルを解凍、抽出する。これには標準ユーティリティー@code{gzip}および@code{tar}が必要。これらがシステムになければ@url{https://ftp.gnu.org}からダウンロードできる。
+次にソースファイルを解凍、抽出する。これには標準ユーティリティー@code{gzip}と@code{tar}が必要。これらがシステムになければ@url{https://ftp.gnu.org}からダウンロードできる。
 
 GNU @code{tar}なら一度に解凍抽出ができる:
 
@@ -2753,7 +2755,7 @@ make install
 @end example
 
 @samp{make
-install}によって@file{/usr/local/bin/emacs}、および@file{/usr/local/share/info/}にあるかもしれないEmacs
+install}によって@file{/usr/local/bin/emacs}や@file{/usr/local/share/info/}にあるかもしれないEmacs
 Infoファイルは上書きされることに注意。
 
 @end itemize
@@ -2810,11 +2812,11 @@ Emacs}、GNUソフトウェアが利用可能なアーカイブサイトのリ�
 @key{RET}}とタイプすれば、文字列@samp{python}を含むすべての関数と変数が一覧されます。
 
 パッケージはシステム上にあってもロードされていない可能性もあります。ロード用に利用できるパッケージを確認するために、あなたのコンピューターのlispディレクトリーを見てみましょう(@ref{File-name
-conventions}を参照)。ほとんどのパッケージのLispソースには、それらをどのようにロード、呼び出し、設定するべきかに関する短い説明が含まれているので、作成者がソースコード内でヒントを提供していたら、Lispパッケージの使用や変更を行う前に確認しましょう。
+conventions}を参照)。ほとんどのパッケージのLispソースには、それらをどのようにロード、呼び出し、設定するべきかに関する短い説明が含まれているので、作成者がソースコード内でヒントを提供していたら、Lispパッケージの使用や変更を行う前にそれを確認しましょう。
 
-コマンド@kbd{C-h p} (@code{finder-by-keyword})でEmacsのパッケージ構成をブラウズできます。
+コマンド@kbd{C-h p} (@code{finder-by-keyword})でEmacsのパッケージ構成を閲覧できます。
 
-Emacsの一部ではない追加パッケージを探す方法についての助言は@ref{Packages that do not come with
+Emacsの一部ではない追加パッケージを探す方法に関する助言は@ref{Packages that do not come with
 Emacs}を参照してください。
 
 @c Note that M-x view-external-packages references this node.
@@ -2830,19 +2832,19 @@ Emacs}を参照してください。
 あなたのEmacsに更に機能を追加するには、コマンド@kbd{M-x
 list-packages}を使用するのがもっとも簡単な方法です。これは@uref{https://elpa.gnu.org, GNU ELPA}
 (``Emacs Lisp Package
-Archive'')サーバーに接続して、それが提案する追加パッケージのリストを取得します。これらはEmacsでの使用が可能ですが、スペース等の理由によりEmacs自体とは別に配布されているGNUパッケージです。コマンドの結果ト得られた@file{*Packages*}を閲覧して何が利用可能なのか確認して、それからあなたが選択したパッケージのダウンロードとインストールを自動的に行います。@ref{Packages,,,
+Archive'')サーバーに接続して、それが提案する追加パッケージのリストを取得します。これらはEmacsでの使用が可能ですが、スペース等の理由によりEmacs自体とは別に配布されているGNUパッケージです。コマンドの結果として得られた@file{*Packages*}を閲覧して何が利用可能なのか確認、それからあなたが選択したパッケージのダウンロードとインストールを自動的に行います。@ref{Packages,,,
 emacs, The GNU Emacs Manual}を参照してください。
 
 Emacs
 Lispパッケージアーカイブは他にもあります。追加アーカイブを使用するには変数@code{package-archives}をカスタマイズしてください。これらのアーカイブはGNU
-Emacsとは提携しておらず、わたしたちはそれらがどのように保守されているかを監視していません。彼らはコードの正確さち安全性に最新の注意を払うかもしれないし、あるいはぞんざいに注意するだけかもしれません。
+Emacsとは提携しておらず、わたしたちはそれらがどのように保守されているかを監視していません。彼らはコードの正確さち安全性に細心の注意を払うかもしれないし、あるいはぞんざいに注意するだけかもしれません。
 
 更にこれらの他のアーカイブでホストされるパッケージは、他の非フリーなプログラムのインストールや使用を推奨、あるいは必須としているかもしれません。パッケージがフリーソフトウェアであり、非フリーなソフトウェアをインストールせずに機能するか検証できないのであれば、あなたの自由を危うくしないために近寄らないことを推奨します。
 
 @uref{news:gnu.emacs.sources, Emacs sources
 newsgroup}にゲートウェイされている@uref{https://lists.gnu.org/mailman/listinfo/gnu-emacs-sources,
 GNU Emacs sources mailing
-list}は、(たとえ2点間の通信が不確かであっても)人々が彼らのEmacs拡張をアナウンスする公の場です。
+list}は、(たとえ2点間の通信が不確かなものであったとしても)人々が彼らのEmacs拡張をアナウンスする公の場です。
 
 @uref{https://emacswiki.org, Emacs
 Wiki}にはいくつかの追加拡張への指標が含まれています。@uref{https://wikemacs.org,
@@ -2864,7 +2866,7 @@ ELPAをチェックした後は、ウェブ検索が結果を見い出す最良�
 @cindex Ispell
 @cindex Enchant
 
-以下を含む様々なスペルチェッカーはEmacsと互換性があります:
+以下を含む様々なスペルチェッカーにはEmacsとの互換性があります:
 
 @table @b
 
@@ -2891,7 +2893,7 @@ ELPAをチェックした後は、ウェブ検索が結果を見い出す最良�
 @cindex Finding current GNU software
 @cindex Official GNU software sites
 
-GNU公式ソフトウェアのほとんどは通常は以下に保持されています 
+GNU公式ソフトウェアのほとんどは通常は以下で保持されています 
 
 @uref{https://ftp.gnu.org/pub/gnu}
 
@@ -2910,9 +2912,9 @@ XEmacsとはもはや活発に開発されなくなったEmacsのブランチバ
 Emacsと呼ばれており、初版はEmacs
 19のプレリリースバージョンから派生しました。このFAQでは公式バージョンにたいしてのみ``Emacs''という名前を使用します。
 
-XEmacsは2009年1月30にリリースされた新バージョンが最新であり、それにはEmacsに存在する多くの重要な機能が欠落していました。過去においては、EmacsパッケージにXEmacsとの互換性のためのコードを含めるのは珍しいことではありませんでした。現在ではたとえそのような互換性コードをまだ保守しているパッケージがあったとしても、より人気のあるビルトインおよびサードパーティーのパッケージのいくつかはXEmacsのサポートを止めるか、あるいはEmacs専用に開発されています。
+XEmacsは2009年1月30に新たにリリースされたバージョンが最新であり、それにはEmacsに存在する多くの重要な機能が欠落していました。過去においては、EmacsパッケージにXEmacsとの互換性のためのコードを含めるのは珍しいことではありませんでした。現在ではたとえそのような互換性コードをまだ保守しているパッケージがあったとしても、より人気のあるビルトインおよびサードパーティーのパッケージのいくつかはXEmacsのサポートを止めるか、あるいはEmacs専用に開発されています。
 
-いくつかのXEmacsコードはEmacsに提供されており、他の部分についてもわたしたちは使用したいと考えていまづが、初期のXEmacsメンテナーは提供されたコードの作成者を常に追跡はしておらず、FSFがそのコードにたいする署名済みのコピーライトペーパーを取得することを不可能にしています(FSFは個別の身元を保つEmacsのコードに正しく統合されていない汎用Cサポートパッケージは除き。Emacsリリースに含まれるすべてのコードにたいしてこれらのペーパーを要求している)。
+いくつかのXEmacsコードはEmacsに提供されており、他の部分についてもわたしたちは使用したいと考えていますが、初期のXEmacsメンテナーは提供されたコードの作成者を常に追跡してはおらず、FSFによるそのコードの署名済みコピーライトペーパー取得を不可能にしています(FSFはEmacsのコードに正しく統合されていない個別に身元を保つ汎用Cサポートパッケージを除き、Emacsリリースに含まれるすべてのコードにたいしてこれらのペーパーを要求している)。
 
 これらの2つのバージョンを区別して議論をする場合には、どうかそれらを``Emacs''および``XEmacs''と呼ぶようにしてください。XEmacsもまたGNUプロジェクトの作業を元としているので、``XEmacs''と``GNU
 Emacs''の対比は誤解を招きかねません。``Emacsen''や``(X)Emacs''のような用語も悪くはありませんが、非常に明快とは言えないので``Emacs
@@ -2924,7 +2926,7 @@ and XEmacs''と記述するほうが良いでしょう。
 @cindex Not enough disk space to install Emacs
 
 GNU ZileはEmacsの軽量クローンです。Zileは@samp{Zile Is Lossy
-Emacs}を短縮したものです。これにはEmacsの基本的な編集機能すべてが含まれています。Zileのバイナリーは通常は約130kBのサイズなので、非常にスペースに制限がある環境で有用かもしれません。詳細は以下で理由できます
+Emacs}を短縮したものです。これにはEmacsの基本的な編集機能がすべて含まれています。Zileのバイナリーは通常は約130kBのサイズなので、非常にスペースに制限がある環境で有用かもしれません。詳細は以下で利用できます
 
 @uref{https://www.gnu.org/software/zile/}
 
@@ -3005,7 +3007,7 @@ Windows}を参照してください。MS-DOSの場合には@ref{Emacs for MS-DOS
 @cindex Keys, binding to commands
 @cindex Commands, binding keys to
 
-対話的、または@file{.emacs}ファイルでキーをコマンドにバインドできます。すべてのモードにたいしてキーを対話的にバインドするには、@kbd{M-x
+対話的に、あるいは@file{.emacs}ファイルでキーをコマンドにバインドできます。すべてのモードにたいしてキーを対話的にバインドするには、@kbd{M-x
 global-set-key @key{RET} @var{key} @var{cmd} @key{RET}}とタイプします。
 
 カレントのメジャーモードだけでキーをバインドするには@kbd{M-x local-set-key @key{RET} @var{key}
@@ -3013,16 +3015,16 @@ global-set-key @key{RET} @var{key} @var{cmd} @key{RET}}とタイプします。
 
 @ref{Key Bindings,,, emacs, The GNU Emacs Manual}を参照してください。
 
-対話的にキーをバインドするプログレを容易にするために、次の``trick''を使用できます:
-@*まず対話的にキーをバインドしてからすぐに@kbd{C-x @key{ESC} @key{ESC} C-a C-k
-C-g}とタイプ、@*これでキーバインドを要するコマンドがkillリングに取り込まれたので@file{.emacs}ファイルにyankできるようになった。@*@*グローバルなキーバインディングの場合には、コマンドの変更は不要です。たとえば、
+対話的にキーをバインドするプロセスを容易にするために次の``trick''を使用できます: @*まず対話的にキーをバインドしてからすぐに@kbd{C-x
+@key{ESC} @key{ESC} C-a C-k
+C-g}とタイプ、@*これでキーバインドを要するコマンドがkillリングに取り込まれたので@file{.emacs}ファイルにyankできるようになった。@*@*グローバルなキーバインディングの場合にはコマンドの変更は不要です。たとえば、
 
 @lisp
 (global-set-key [f1] 'help-for-help)
 @end lisp
 
 @noindent
-これは@file{.emacs}ファイルに直後記述できます。ローカルなキーバインディングの場合には、、コマンドは@samp{add-hook}関数と組み合わせて使用されます。たとえばTeXモードでのローカルバインディングは以下のようになるでしょう
+これは@file{.emacs}ファイルに直接記述できます。ローカルなキーバインディングの場合には、コマンドは@samp{add-hook}関数と組み合わせて使用されます。たとえばTeXモードでのローカルバインディングは以下のようになるでしょう
 
 @lisp
 (add-hook 'tex-mode-hook
@@ -3038,7 +3040,7 @@ killリングからyankしたキーシーケンス内でのコントロール文
 つまり@key{CTRL}は@samp{^}、@key{TAB}はいくつかのスペース(通常は8)で示されるでしょう。これらをベクターや文字列形式に変換したいと思うかもしれません。
 
 @item
-プレフィクスキーとしてある文字シーケンスをバインドする場合に、それがすでにコンプリートキーワードとしてバインドされていたら、新しいバインディングの前にコンプリートキーのバインドを解除しなければならない。たとえば@kbd{ESC
+プレフィクスキーとしてある文字シーケンスをバインドする場合に、それがすでにコンプリートキーとしてバインドされていたら、新しいバインディングの前にコンプリートキーのバインドを解除しなければならない。たとえば@kbd{ESC
 @{}がバインド済みなら:
 
 @lisp
@@ -3075,7 +3077,7 @@ key)}がすでに@dfn{コンプリートキー(complete key)}としてバイン�
 @section Emacs起動後でなければ@file{.emacs}ファイルの[端末やウィンドウシステム]のセットアップコードが機能しないのはなぜ?
 @cindex Terminal setup code in @file{.emacs}
 
-スタートアップの間、Emacsは与えられたコード/ファイルの順番に応じて自身を初期化します。@file{.emacs}ファイルの中のあるコードを、端末またはウィンドウシステムのセットアップコードが実行されるまで延期する必要があるのにセットアップが終わっていないと、この問題を体験することになるでしょう(このコード/ファイルの実行順はスタートアップ後は強制されない)。
+スタートアップの間、Emacsは与えられたコード/ファイルの順番に応じて自身を初期化します。端末またはウィンドウシステムのセットアップコードが実行されるまで、@file{.emacs}ファイル内のあるコードを延期する必要があるのにセットアップが終わっていないと、この問題を体験することになるでしょう(このコード/ファイルの実行順はスタートアップ後は強制されない)。
 
 端末またはウィンドウシステムのセットアップ後までEmacs Lispコードの実行を延期するには、コードを@dfn{lambdaリスト(lambda
 list)}として@code{emacs-startup-hook} (またはEmacs
@@ -3108,7 +3110,7 @@ c}の後にファンクションキーか矢印キーをタイプしてくださ
 @cindex Key translations under X
 @cindex Translations for keys under X
 
-EmacsはデフォルトではXtライブラリーを使用するようには記述されていないので、何の``変換(translation)''もセットされていません(XtとともにEmacsをビルドした場合にそのような変換をどのようにセットするかわたしたちには定かではないので、これを行うことができたらどうか知らせてください!)。
+EmacsはデフォルトではXtライブラリーを使用するように記述されていないので、何の``変換(translation)''もセットされていません(XtとともにEmacsをビルドした場合にそのような変換をどのようにセットするかわたしたちには定かではないので、これを行うことができたらどうか知らせてください!)。
 
 Emacs内でのキーの挙動に影響を与えるには@code{xmodmap} (Emacs外部)、あるいは@code{define-key}
 (Emacs内部)を通じて行う方法だけです。@code{define-key}コマンドは@code{local-function-key-map}と組み合わせて使用する必要があります。たとえば、
@@ -3153,7 +3155,7 @@ TeraTerm)では、セットアップメニューから@key{Backspace}キーが�
 
 @item
 Emacs 21.1以降ではオプション@code{normal-erase-is-backspace-mode}のカスタマイズ、または@kbd{M-x
-normal-erase-is-backspace}呼び出しにより、ダム端末およびウィンドウ化されたディスプレーの両方において、@key{Backspace}キーおよび@key{Delete}キーの効果を制御できる。詳細についてはこれらのシンボルのドキュメントについては、@ref{Emacs
+normal-erase-is-backspace}呼び出しにより、ダム端末およびウィンドウ化されたディスプレーの両方において、@key{Backspace}キーおよび@key{Delete}キーの効果を制御できる。これらのシンボルのドキュメントについては@ref{Emacs
 Lisp documentation}を参照のこと。
 
 @item
@@ -3175,7 +3177,7 @@ Emacs内部では@key{Backspace}キーと@key{DEL}キーを交換できる:
 @code{keyboard-translate}についての詳細は@ref{Swapping keys}を参照のこと。
 
 @item
-別のアプローチとしてはキーバインディングを切り替えて、かわりに@kbd{C-x h}をヘルプにする:
+別のアプローチとしては、キーバインディングを切り替えてかわりに@kbd{C-x h}をヘルプにする:
 
 @lisp
 (global-set-key "\C-h" 'delete-backward-char)
@@ -3185,12 +3187,12 @@ Emacs内部では@key{Backspace}キーと@key{DEL}キーを交換できる:
 @end lisp
 
 @noindent
-とはいえこの手法は推奨しない。これは@key{DEL}を@code{delete-backward-char}にバインドするモードにたいしてのみ問題を解決する。@code{view-mode}モードのように@key{DEL}を別の何かにバインドするモードは、@key{Backspace}キーを押下した際に期待通り動作しないだろう。この理由により、えわたしたちは上述した@code{keyboard-translate}手法をお勧めする。
+とはいえこの手法は推奨しない。これは@key{DEL}を@code{delete-backward-char}にバインドするモードにたいしてのみ問題を解決する。@code{view-mode}モードのように@key{DEL}を別の何かにバインドするモードは、@key{Backspace}キーを押下した際に期待通り動作しないだろう。この理由により、わたしたちは上述した@code{keyboard-translate}手法をお勧めする。
 
 ヘルプ用として他に人気のあるキーバインディングは@kbd{M-?}と@kbd{C-x ?}である。
 @end itemize
 
-@key{DEL}にたいしてローカルバインディングをもちモードが多数あり、それらと干渉するかもしれないので、@key{DEL}に@code{help-command}をバインドしようとしてはならない。
+@key{DEL}にたいしてローカルバインディングをもつモードが多数あり、それらと干渉するかもしれないので、@key{DEL}に@code{help-command}をバインドしようとしてはならない。
 
 @end itemize
 
@@ -3263,8 +3265,8 @@ w}コマンドを試してみることもできます。
 多くのキーボードでは、@key{Alt}キーは@key{Meta}のように振る舞うので試してみてください。
 
 @kbd{M-a}のかわりに@kbd{@key{ESC}
-a}とタイプすることができます。実際のところ、いずれにせよEmacsｈｓ内部で@kbd{M-a}を@kbd{@key{ESC}
-a}に変換しています(@code{meta-prefix-char}の値による)。@key{Meta}と@kbd{a}は一緒に押しますが、@key{ESC}の場合には@key{ESC}を押して、離した後に@kbd{a}を押下することに注意してください。
+a}とタイプすることができます。実際のところ、いずれにせよEmacsは内部で@kbd{M-a}を@kbd{@key{ESC}
+a}に変換しています(@code{meta-prefix-char}の値による)。@key{Meta}と@kbd{a}は一緒に押しますが、@key{ESC}の場合には@key{ESC}を押して離した後に@kbd{a}を押下することに注意してください。
 
 @node No Escape key
 @section @key{Escape}キーがない、どうすれば?
@@ -3272,7 +3274,7 @@ a}に変換しています(@code{meta-prefix-char}の値による)。@key{Meta}�
 @cindex Lacking an Escape key
 @cindex Escape key, lacking
 
-かわりに@kbd{C-[}をタイプしてください。これはエスケープキーのように@acronym{ASCII}コードの27を送信するはずです。@kbd{C-3}でも機能する端末もあります(X配下でないこと)。多くの端末(特にDEC)では、@key{F11}が@key{ESC}を生成します。そうでなければ、以下のフォームを使用してこれをバインドできます:
+かわりに@kbd{C-[}をタイプしてください。これはエスケープキーのように@acronym{ASCII}コードの27を送信するはずです。@kbd{C-3}でも機能する端末もあります(X配下でないこと)。多くの端末(特にDEC)では、@key{F11}が@key{ESC}を生成します。そうでなければ以下のフォームを使用してこれをバインドできます:
 
 @lisp
 ;; DEC端末ではF11はESCの置き換えとドキュメントされている
@@ -3284,7 +3286,7 @@ a}に変換しています(@code{meta-prefix-char}の値による)。@key{Meta}�
 @cindex @key{Compose Character} key, using as @key{Meta}
 @cindex @key{Meta}, using @key{Compose Character} for
 
-VT220のようなダム端末ではできません。噂では特定のVT220クローンは、この方法で設定することによって独自に@key{Compose}キーをもてるようです。Xを使用していれば、@code{xmodmap}コマンドでこれを行うことができるかもしれません。
+VT220のようなダム端末ではできません。噂では特定のVT220クローンは、この方法で設定することによって独自に@key{Compose}キーをもてるようです。Xを使用していれば@code{xmodmap}コマンドでこれを行うことができるかもしれません。
 
 @node Binding combinations of modifiers and function keys
 @section 修飾キーとファンクションキーの組み合わせをバインドするには?
@@ -3301,7 +3303,7 @@ VT220のようなダム端末ではできません。噂では特定のVT220ク�
 @noindent
 ここで@samp{?\C-x}は文字@kbd{C-x}にたいするLisp文字定数です。
 
-ファンクションキーとともに@key{Control}、@key{Meta}、@key{Hyper}、@key{Super}、@key{Alt}、@key{Shift}の修飾キーが使用できます。これらの修飾キーを表現するにはシンボル名の前に@samp{C-}、@samp{M-}、@samp{H-}、@samp{s-}、@samp{A-}@samp{S-}を前置します。以下は@kbd{H-M-RIGHT}を単語1つ前方に移動にする方法です:
+ファンクションキーとともに@key{Control}、@key{Meta}、@key{Hyper}、@key{Super}、@key{Alt}、@key{Shift}の修飾キーが使用できます。これらの修飾キーを表現するにはシンボル名の前に@samp{C-}、@samp{M-}、@samp{H-}、@samp{s-}、@samp{A-}、@samp{S-}を前置します。以下は@kbd{H-M-RIGHT}を単語1つ前方に移動にする方法です:
 
 @lisp
 (global-set-key [H-M-right] 'forward-word)
@@ -3329,10 +3331,10 @@ Emacsマニュアルのアドバイスが失敗した場合には、更なる助
 @itemize @bullet
 
 @item
-ウィンドウマネージャーに@code{mwm}を使用することによって大きな問題を抱えているのかもしれない(@file{mwm}のEmacsで@key{Meta}キーが使用できるようにする汎用的で優れた解決策を知る人は居ないだろうか?)。
+ウィンドウマネージャーに@code{mwm}を使用することによって大きな問題を抱えているのかもしれない(@file{mwm}のEmacsで@key{Meta}キーが使用できるようにする汎用的で優れた解決策を知る人は居るのだろうか?)。
 
 @item
-X11ではそれが本当に@key{Meta}キーなのか確認してほしい。あなたの@key{Meta}キーがどんなを生成するかを確認するには@code{xev}を使用する。@code{Meta_L}か@code{Meta_R}のいずれかのはずだが、もし違うならこの状況を修整するために@file{xmodmap}を使用できる。@key{Meta}は@code{Meta_L}や@code{Meta_R}を生成しないものの@kbd{M-x}は非@acronym{ASCII}文字を生成するようなら、以下を@file{~/.Xdefaults}ファイルに記述する:
+X11ではそれが本当に@key{Meta}キーなのか確認してほしい。あなたの@key{Meta}キーがどんなkeysymを生成するか確認するには@code{xev}を使用する。@code{Meta_L}か@code{Meta_R}のいずれかのはずだが、もし違うならこの状況を修整するために@file{xmodmap}を使用できる。@key{Meta}は@code{Meta_L}や@code{Meta_R}を生成せず、@kbd{M-x}は非@acronym{ASCII}文字を生成するようなら以下を@file{~/.Xdefaults}ファイルに記述する:
 
 @example
  XTerm*eightBitInput:   false
@@ -3340,13 +3342,13 @@ X11ではそれが本当に@key{Meta}キーなのか確認してほしい。あ�
 @end example
 
 @item
-@code{xterm}が使用している@code{pty}は8ビット文字を通すか確認すること。@samp{stty -a}
+@code{xterm}が使用している@code{pty}が8ビット文字を通すか確認すること。@samp{stty -a}
 (あるいは@samp{stty
 everything})がどこかに@samp{cs8}と表示するはずである。かわりに@samp{cs7}が表示されたら、これを修整するために@samp{stty
 cs8 -istrip} (あるいは@samp{stty pass8})を使用する。
 
 @item
-@code{xterm}とEmacsの間に@code{rlogin}接続が存在する場合には、各文字の8ビット目をすべて渡すように、rloginに@samp{-8}引数を与える必要があるかもしれない。
+@code{xterm}とEmacsの間に@code{rlogin}接続が存在する場合には、各文字の8ビット目をすべて渡すようにrloginに@samp{-8}引数を与える必要があるかもしれない。
 
 @item
 UltrixでEmacsを実行しているなら、@code{(set-input-mode t nil)}の評価が助けになると報告されている。
@@ -3380,7 +3382,7 @@ XTerm.VT100.Translations: #override \
 @cindex @key{Meta}, using @key{ExtendChar} for
 @cindex HP-UX, the @key{ExtendChar} key
 
-これはX11R4における国際家拡張の結果であるとともに、HPが現在はこの拡張を使用しているという事実を示しています。Emacsは@key{Meta}キーの状態に関わらず@code{XLookupString}関数が同じ結果をリターンするという、もはや必ずしも真とは言えない前提にもとづいています。Emacsが修整されるまでは、その場しのぎの一時的な修整ですがXサーバー起動後に毎回、できればxtermクライアント開始前に以下のコマンドを実行してください:
+これはX11R4における国際化拡張の結果であるとともに、HPが現在はこの拡張を使用しているという事実を示しています。Emacsは@key{Meta}キーの状態に関わらず@code{XLookupString}関数が同じ結果をリターンするという、もはや必ずしも真とは言えない前提にもとづいています。Emacsが修整されるまでは、その場しのぎの一時的な修整ですがXサーバー起動後に毎回、できればxtermクライアント開始前に以下のコマンドを実行してください:
 
 @example
 xmodmap -e 'remove mod1 = Mode_switch'
@@ -3398,7 +3400,7 @@ xmodmap -e 'remove mod1 = Mode_switch'
 Emacs
 22.1から@kbd{SPC}はミニバッファーでファイル名の補完を行わなくなったので、スペースが埋め込まれたファイル名のタイプにおいてスペースをクォートする必要がなくなりました。
 
-以下のようにミニバッファーで@kbd{SPC}を@code{minibuffer-complete-word}にバインドすることによって古い挙動を取り戻すことができます:
+以下のようにミニバッファーで@kbd{SPC}を@code{minibuffer-complete-word}にバインドすることによって古い挙動に戻すことができます:
 
 @lisp
 (define-key minibuffer-local-filename-completion-map (kbd "SPC")
@@ -3674,8 +3676,9 @@ RMSは記しています:
 @cindex Rmail, replying to the sender of a message in
 
 @c isaacson@@seas.upenn.edu
-Ron Isaacsonは述べています:
-Rmailで返信するために@kbd{r}をタイプすると、デフォルトでは元の受信者すべて(元の@samp{To}と@samp{CC}のリスト全員)にCCされます。(@kbd{r}の前に@kbd{C-u}をタイプして)プレフィクス引数を指定すると、送信者だけに返信します。とはいえ返信したいときに全体を通して@kbd{C-u}作業を行うのは苦痛です。以下はわたしがこれに対処した中では最良の修整です。
+Ron Isaacson(訳注:
+Texinfoファイルには"isaacson@@seas.upenn.edu"とコメントされていました)は述べています:
+Rmailで返信するために@kbd{r}をタイプするとデフォルトでは元の受信者すべて(元の@samp{To}と@samp{CC}のリスト全員)にCCされます。(@kbd{r}の前に@kbd{C-u}をタイプして)プレフィクス引数を指定すると送信者だけに返信します。とはいえ返信したいときに全体を通して@kbd{C-u}作業を行うのは苦痛です。以下はわたしがこれに対処した中では最良の修整です。
 
 @lisp
 (defun rmail-reply-t ()

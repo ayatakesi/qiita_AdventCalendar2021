@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: XXXX-XX.X\n"
-"POT-Creation-Date: 2021-12-02 12:06\n"
-"PO-Revision-Date: 2021-12-04 10:38+0900\n"
+"POT-Creation-Date: 2021-12-05 16:52\n"
+"PO-Revision-Date: 2021-12-05 16:57+0900\n"
 "Last-Translator: XXXX#translator\n"
 "Language-Team: XXXX#translators\n"
 "Language: ja\n"
@@ -139,6 +139,12 @@ msgstr "@section 現在のファイル名をタイトルバーに含めるには
 msgid "@section How do I turn on abbrevs by default just in mode @var{mymode}?"
 msgstr "@section モード@var{mymode}でデフォルトでabbrevをオンにするには?"
 
+msgid "@noindent To turn it on in a specific mode, use:"
+msgstr "@noindent 特定のモードでオンにするには以下を使用してください:"
+
+msgid "@noindent If your Emacs version is older then 22.1, you will also need to use:"
+msgstr "@noindent Emacsのバージョンが22.1より古ければ、以下も使う必要があるでしょう:"
+
 msgid "@section How do I make Emacs use a certain major mode for certain files?"
 msgstr "@section 特定のファイルに特定のモードをEmacsに使用させるには?"
 
@@ -174,6 +180,9 @@ msgstr "@section わたしのコンパイラーの変なエラーメッセージ
 
 msgid "@section How do I change the indentation for @code{switch}?"
 msgstr "@section @code{switch}のインデントを変更するには?"
+
+msgid "@noindent To achieve this, add the following line to your @file{.emacs}:"
+msgstr "@noindent これを行うには以下を@file{.emacs}ファイルに追加してください:"
 
 msgid "@section How to customize indentation in C, C@t{++}, and Java buffers?"
 msgstr "@section C、C@t{++}、Javaのバッファーのインデントをカスタマイズするには?"
@@ -295,8 +304,8 @@ msgstr "@section Emacsにセキュリティリスクはある?"
 msgid "@section Dired says, @samp{no file on this line} when I try to do something."
 msgstr "@section 何かしようとするとDiredが@samp{no file on this line}と言う。"
 
-msgid "@chapter    Compiling and installing Emacs"
-msgstr "@chapter    Emacsのコンパイルとインストール"
+msgid "@chapter Compiling and installing Emacs"
+msgstr "@chapter Emacsのコンパイルとインストール"
 
 msgid "@section How do I install Emacs?"
 msgstr "@section Emacsをインストールするには?"

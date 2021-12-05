@@ -299,7 +299,7 @@ cost)&#8221;ではなく&#8220;自由(freedom)&#8221;を意図した単語です
 <indexterm role="cp"><primary>Discussion of the GPL</primary></indexterm>
 
 <para>GNU
-一般公衆利用許諾書、いわゆるGPL(コピーレフト)の真の法的な意味合いは、裁判官がその有効性と範囲を裁定した場合にのみ明らかになります。判例として定められるようなGPLが関与する著作権侵害の訴訟はこれまでに一度もありませんでした。GPL条件への違反によって企業への訴訟が起こされましたが、これまでのところすべてが法廷外で(原告に有利に)和解されています。この問題に関しての議論は、どうかこの問題について盛大に罵り合うために作成されたニュースグループ<ulink url="news:gnu.misc.discuss">news:gnu.misc.discuss</ulink>で行うようお願いします。
+一般公衆利用許諾書、いわゆるGPL(コピーレフト)の真の法的な意味合いは、裁判官がその有効性と範囲を裁定した場合にのみ明らかになります。判例として定められるようなGPLが関与する著作権侵害の訴訟はこれまでに一度もありませんでした。GPL条件への違反によって企業への訴訟が起こされましたが、これまでのところすべてが法廷外で(原告に有利に)和解されています。この問題に関しての議論は、どうかこの問題について盛大に言い合うために作成されたニュースグループ<ulink url="news:gnu.misc.discuss">news:gnu.misc.discuss</ulink>で行うようお願いします。
 </para>
 <para>RMSは記しています:
 </para>
@@ -321,7 +321,7 @@ Savannah page</ulink>に記述があります。それらのうちのいくつ�
 <para>Emacsプログラム全般に関する議論はニュースグループ<ulink url="news:comp.emacs">news:comp.emacs</ulink>、<ulink url="news:gnu.emacs.help">news:gnu.emacs.help</ulink>はGNU
 Emacsに特化したニュースグループです。したがってある問いにたいして適切なニュースグループは1つだけなので、両方のグループへの多重投稿には意味がありません。
 </para>
-<para>問題について派手に罵り合うために作成された<ulink url="news:gnu.misc.discuss">news:gnu.misc.discuss</ulink>を除いて、&#8220;非フリー(non-free)&#8221;なソフトウェアを推奨するようなメッセージは<literal>gnu.*</literal>ニュースグループのすべてにおいて受け入れ難いものとみなされます。&#8220;非フリー&#8221;なソフトウェアにはエンドユーザーが自由にソースコードを改変したり拡張機能の取り替えができないすべてのソフトウェアが含まれます。そのようなソフトウェアを推奨するフォローアップを投稿する際には、&#8216;<literal>Newsgroups:</literal>&#8217;行から<literal>gnu.*</literal>グループを削除するよう注意してください。
+<para>問題について派手に言い合うために作成された<ulink url="news:gnu.misc.discuss">news:gnu.misc.discuss</ulink>を除いて、&#8220;非フリー(non-free)&#8221;なソフトウェアを推奨するようなメッセージは<literal>gnu.*</literal>ニュースグループのすべてにおいて受け入れ難いものとみなされます。&#8220;非フリー&#8221;なソフトウェアにはエンドユーザーが自由にソースコードを改変したり拡張機能の取り替えができないすべてのソフトウェアが含まれます。そのようなソフトウェアを推奨するフォローアップを投稿する際には、&#8216;<literal>Newsgroups:</literal>&#8217;行から<literal>gnu.*</literal>グループを削除するよう注意してください。
 </para>
 <para><ulink url="news:gnu.emacs.bug">news:gnu.emacs.bug</ulink>ではバグレポートを目にしますが、このニュースグループに直接バグレポートを投稿することは避けてください(<link linkend="Reporting-bugs">Reporting
 bugs</link>を参照)。
@@ -1208,13 +1208,13 @@ abbrev-mode</userinput>を使用します。デフォルトですべてのバッ
 </para>
 <programlisting>(setq-default abbrev-mode t)
 </programlisting>
-<para>To turn it on in a specific mode, use:
+<para>特定のモードでオンにするには以下を使用してください:
 </para>
 <programlisting>(add-hook '<replaceable>mymode</replaceable>-mode-hook
           (lambda ()
            (setq abbrev-mode t)))
 </programlisting>
-<para>If your Emacs version is older then 22.1, you will also need to use:
+<para>Emacsのバージョンが22.1より古ければ、以下も使う必要があるでしょう:
 </para>
 <programlisting>(condition-case ()
    (quietly-read-abbrev-file)
@@ -1460,7 +1460,7 @@ server-edit</userinput>)とタイプしてそれを示すことができる。<l
   }
 }
 </screen>
-<para>To achieve this, add the following line to your <filename>.emacs</filename>:
+<para>これを行うには以下を<filename>.emacs</filename>ファイルに追加してください:
 </para>
 <programlisting>(c-set-offset 'case-label '+)
 </programlisting>
@@ -1611,13 +1611,13 @@ that do not come with Emacs</link>を参照)。手引きとして&#8220;fill&#82
 <para>任意のEmacsフレーム上端にあるEmacsメニューバーの&#8216;<literal>Options</literal>&#8217;メニューからオプション&#8216;<literal>Paren Match
 Highlighting</literal>&#8217;を選択してこのモードを有効にすることもできます。
 </para>
-<para>このようなモードの代替案手段としては以下が含まれます:
+<para>このようなモードの代替となる手段として以下が含まれます:
 </para>
 <itemizedlist>
-<listitem><para>右カッコ(または大カッコや角カッコ)に着目していたら、それを削除してからしで挿入する。Emacsは瞬時の間、マッチするカッコにカーソル和移動するだろう。
+<listitem><para>あなたが右カッコ(または大カッコや角カッコ)に着目していたら、それを削除してから再度挿入する。Emacsは瞬時の間、マッチするカッコにカーソルを移動するだろう。
 </para>
 </listitem><listitem><para><userinput>C-M-f</userinput> (<literal>forward-sexp</literal>)および<userinput>C-M-b</userinput>
-(<literal>backward-sexp</literal>)はバランスのとれたカッコを1セット分スキップするので、どのカッコがマッチするか確認できる(構文テーブルを修整してバランスのとれた大カッコおよび角カッコもスキップするよう洗練することも可能)。
+(<literal>backward-sexp</literal>)は釣り合いのとれたカッコを1セット分スキップするので、どのカッコがマッチするか確認できる(構文テーブルを修整して釣り合いのとれた大カッコおよび角カッコもスキップするよう洗練することも可能)。
 </para>
 </listitem><listitem><indexterm role="cp"><primary>Show matching paren as in <literal>vi</literal></primary></indexterm>
 <para>以下は<literal>vi</literal>のように<userinput>%</userinput>キーでマッチするカッコを表示させるEmacs
@@ -1644,7 +1644,7 @@ Lispコード。更にカーソルがカッコ上になければ通常通り単�
 <indexterm role="cp"><primary>Selectively displaying <literal>#ifdef</literal> code</primary></indexterm>
 
 <para><userinput>M-x hide-ifdef-mode</userinput>
-(マイナーモード)です。Emacsに同梱されている<filename>cpp.el</filename>も調査したいと思うかもしれません。
+(マイナーモード)です。Emacsに同梱されている<filename>cpp.el</filename>も調べてみたいと思うかもしれません。
 </para>
 </sect1>
 <sect1 label="5.27" id="Repeating-commands">
@@ -1657,13 +1657,14 @@ Lispコード。更にカーソルがカッコ上になければ通常通り単�
 z</userinput>)を使用します。プレフィクス引数を前置すると、そのプレフィクスは繰り返すコマンドに適用されます。
 </para>
 <para>引数を取得するためにミニバッファーを使用するコマンドは、<userinput>C-x <keycap>ESC</keycap> <keycap>ESC</keycap></userinput>
-(<literal>repeat-complex-command</literal>)とタイプしても再呼び出しができます。<literal>repeat-complex-command</literal>では<userinput>M-p</userinput>と<userinput>M-n</userinput>(キーボードにあれば上矢印と下矢印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたものを走査することができます。
+(<literal>repeat-complex-command</literal>)とタイプしても再呼び出しができます。<literal>repeat-complex-command</literal>では<userinput>M-p</userinput>と<userinput>M-n</userinput>
+(キーボードにあれば上矢印と下矢印も)をタイプすることにより、様々なcomplexコマンドすべてでタイプしたものを走査することができます。
 </para>
 <para>一連のコマンドを繰り返すにはキーボードマクロを使用します。コマンドを呼び出すキーボードマクロの作成には<userinput>C-x (</userinput>と<userinput>C-x
 )</userinput>を使い、その後に<userinput>C-x e</userinput>とタイプします。section &#8220;Keyboard Macros&#8221; in <citetitle>The GNU Emacs
 Manual</citetitle>を参照してください。
 </para>
-<para>最後の挿入/削除を再実行する<literal>vi</literal>の<literal>.</literal>コマンドが本当に欲しくて堪らなければ、それをサポートしているよう思われる、VIPERというEmacsに同梱の<literal>vi</literal>エミュレーションモードを使ってください。
+<para>最後の挿入/削除を再実行する<literal>vi</literal>の<literal>.</literal>コマンドが本当に欲しくて堪らなければ、それをサポートしているよう思われるVIPERというEmacsに同梱の<literal>vi</literal>エミュレーションモードを使ってください。
 </para>
 </sect1>
 <sect1 label="5.28" id="Valid-X-resources">
@@ -1695,7 +1696,7 @@ Manual</citetitle>を参照してください。
 </listitem><listitem><para>任意のバッファーにおいて<userinput>C-x C-e</userinput>とタイプするとポイント直前にあるLispフォームを評価して、その値をエコーエリアにプリントする。
 </para>
 </listitem><listitem><para><userinput>M-:</userinput>または<userinput>M-x
-eval-expression</userinput>とタイプすることによりミニバッファーでLispフォームをタイプして、<keycap>RET</keycap>の押下することでそれが1回評価される。
+eval-expression</userinput>とタイプすることによりミニバッファーでタイプしたLispフォームが、<keycap>RET</keycap>押下により1回評価される。
 </para>
 </listitem><listitem><para>ファイル内のすべてのLispフォームをEmacsにすべて評価させるには<userinput>M-x
 load-file</userinput>を使用できる(これをLispから行うにはかわりに関数<literal>load</literal>を使う)。
@@ -1734,7 +1735,7 @@ string-insert-rectangle <keycap>RET</keycap></userinput>とタイプしてくだ
 string-insert-rectangle <keycap>RET</keycap></userinput>とタイプします。
 </para>
 <para>yankしたメールメッセージにプレフィクスとして&#8216;<literal>&gt;</literal>&#8217;の付加を試みているなら、変数<literal>mail-yank-prefix</literal>をセットしたいと思うかもしれません。Messageバッファーではyankしたメッセージのメッセージの引用に<userinput>M-;</userinput>
-(こはリージョンのコメントアウトという汎用目的のためのメカニズムである関数<literal>comment-region</literal>を実行する)を使うことさえできます(<link linkend="Changing-the-included-text-prefix">Changing
+(これはリージョンのコメントアウトという汎用用途メカニズムである関数<literal>comment-region</literal>を実行する)を使うことさえできます(<link linkend="Changing-the-included-text-prefix">Changing
 the included text prefix</link>を参照)。
 </para>
 </sect1>
@@ -1774,9 +1775,10 @@ the included text prefix</link>を参照)。
 <para>バックスラッシュを2回記述することに注意してください!
 </para>
 <itemizedlist>
-<listitem><para>Unixの<filename>grep</filename>、<filename>sed</filename>などとは異なり文字の補集合(&#8216;<literal>[^...]</literal>&#8217;)にはマッチしない文字として改行文字(<keycap>LFD</keycap>または<userinput>C-j</userinput>あるいは&#8216;<literal>\n</literal>&#8217;)が記述されていなければ改行文字はマッチする。
+<listitem><para>Unixの<filename>grep</filename>、<filename>sed</filename>などとは異なり、文字の補集合(&#8216;<literal>[^...]</literal>&#8217;)にマッチしない文字として改行文字(<keycap>LFD</keycap>、<userinput>C-j</userinput>、
+または&#8216;<literal>\n</literal>&#8217;)が記述されていなければ改行文字にマッチする。
 </para>
-</listitem><listitem><para>文字構文のregexp(たとえば&#8216;<literal>\sw</literal>&#8217;)は文字セットにたいするregexp(たとえば&#8216;<literal>[aeiou]</literal>&#8217;)の内部では意味をもたない(これは実際にはregexp構文として典型的)。
+</listitem><listitem><para>文字構文のregexp(たとえば&#8216;<literal>\sw</literal>&#8217;)は文字セットにたいするregexp(たとえば&#8216;<literal>[aeiou]</literal>&#8217;)の内部では意味をもたない(これは実際はregexp構文として典型的)。
 </para>
 </listitem></itemizedlist>
 </sect1>
@@ -1788,7 +1790,7 @@ the included text prefix</link>を参照)。
 <indexterm role="cp"><primary>Recursive search/replace operations</primary></indexterm>
 
 <para>Diredモード(<userinput>M-x dired <keycap>RET</keycap></userinput>または<userinput>C-x
-d</userinput>)はコマンド<literal>dired-do-find-regexp-and-replace</literal>
+d</userinput>)は、コマンド<literal>dired-do-find-regexp-and-replace</literal>
 (<userinput>Q</userinput>)をサポートしています。これは複数ファイルにおける正規表現の置換を可能にします。
 </para>
 <para>以下のステップにしたがうことにより、このコマンドで複数ファイルにたいする検索/置換処理を行うことができます:
@@ -1820,15 +1822,15 @@ Search&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してく�
 <indexterm role="cp"><primary>Backups, disabling</primary></indexterm>
 <indexterm role="cp"><primary>Disabling backups</primary></indexterm>
 
-<para>特に何か不幸な出来事が起こったとき等、バックアップ特は役に立つので多分これを行いたいとは思わないでしょう。
+<para>何か不幸な出来事が起こったとき等は、特にバックアップが役立つので多分これを行いたいとは思わないでしょう。
 </para>
-<para>Diredでバックアップファイル(およびその他の&#8220;興味がない&#8221;ファイル)を目にすることを避けるには、<filename>.emacs</filename>ファイルに以下を追加して<literal>dired-x</literal>をロードしてください:
+<para>Diredでバックアップファイル(およびその他の&#8220;関心がない&#8221;ファイル)を目にすることを避けるには、<filename>.emacs</filename>ファイルに以下を追加して<literal>dired-x</literal>をロードしてください:
 </para>
 <programlisting>(add-hook 'dired-load-hook
           (lambda ()
            (require 'dired-x)))
 </programlisting>
-<para><literal>dired-x</literal>のロードにより、<userinput>M-o</userinput>でそれぞれのdiredバッファーでの(興味がないファイルの表示)の省略が切り替わります。以下を<filename>.emacs</filename>に記述すれば、新たなdiredバッファーで省略をデフォルトにできます:
+<para><literal>dired-x</literal>のロードにより、<userinput>M-o</userinput>でそれぞれのdiredバッファーでの(関心がないファイルの表示)の省略が切り替わります。以下を<filename>.emacs</filename>に記述すれば、新たなdiredバッファーで省略をデフォルトにできます:
 </para>
 <programlisting>; 訳注
 ; FAQ執筆時以降実装が更新されているので以下のように読み変えてください。
@@ -1837,7 +1839,7 @@ Search&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してく�
 ;   M-o               -&gt; C-x M-o
 (add-hook 'dired-mode-hook 'dired-omit-toggle)
 </programlisting>
-<para>Unixシェルで&#8216;<literal>ls</literal>&#8217;するたびにバックアップファイルが目につきうんざりしていたら、&#8216;<literal>-B</literal>&#8217;オプションでGNU
+<para>Unixシェルで&#8216;<literal>ls</literal>&#8217;するたびにバックアップファイルが目障りでうんざりしていたら、&#8216;<literal>-B</literal>&#8217;オプションでGNU
 <literal>ls</literal>を試してみてください。GNU <literal>ls</literal>はGNU
 Fileutilsパッケージの一部であり、<ulink url="https://ftp.gnu.org">https://ftp.gnu.org</ulink>およびそのミラーサイトで利用可能です(<link linkend="Current-GNU-distributions">Current
 GNU distributions</link>を参照)。
@@ -1880,7 +1882,7 @@ Manual</citetitle>を参照してください。
 もしそうならEmacsからコマンド<userinput>M-x compile</userinput>および<userinput>M-x
 recompile</userinput>を使用してコンパイルすることで、より効率的にこれを行うことができます。Emacsはコンパイルエラーメッセージを自動的にインターセプトして、<filename>*compilation*</filename>と呼ばれる特別なバッファーに挿入ます。あなたはソース内の、各メッセージに対応する場所をvisitできます。問題のある行を1つずつステップスルーするには<userinput>C-x
 `</userinput>とタイプします(Emacs 22からは前または次のマッチへ直接移動する<userinput>M-g M-p</userinput>および<userinput>M-g
-M-n</userinput>でも使用できる。<filename>*compilation*</filename>バッファーのメッセージテキスト上で<userinput>mouse-2</userinput>をクリックするか<keycap>RET</keycap>を押下することによって、そのメッセージ中に記されている番号の行へ移動します。
+M-n</userinput>でも使用できる)。<filename>*compilation*</filename>バッファーのメッセージテキスト上で<userinput>mouse-2</userinput>をクリックするか<keycap>RET</keycap>を押下することによって、そのメッセージ中に記された行番号へ移動します。
 </para>
 <para>しかし特定のテキスト行へ移動する必要が本当にあるなら<userinput>M-g M-g</userinput> (Emacs
 22からは<literal>goto-line</literal>関数のデフォルトバインディング)をタイプしてください。Emacsは行番号の入力を求めてその行に移動するでしょう。
@@ -1913,14 +1915,14 @@ Word</literal>&#8217;アイテムを追加するためには、以下のLispコ�
 </para>
 <para>3行目は1つ目の要素が表示されるタイトル、2つ目の要素がメニューオプション呼び出し時に呼び出される関数であるようなコンスセルです。
 </para>
-<para>既存メニューへの新オプション追加デ新たなメニューを追加するためには新たにキーマップ全体を定義しなければなりません。
+<para>既存メニューへの新オプション追加で新たなメニューを追加するためには、新たにキーマップ全体を定義しなければなりません。
 </para>
 <programlisting>(define-key global-map [menu-bar words]
   (cons &quot;Words&quot; (make-sparse-keymap &quot;Words&quot;)))
 </programlisting>
 <para>上記のコードは新たに疎キーマップ(sparse
-keymap)を追加して名前&#8216;<literal>Words</literal>&#8217;を付与、それをグローバルメニューバーにアタッチします。したがってこの新メニューへの、&#8216;<literal>Forward
-Word</literal>&#8217;アイテム追加には以下のようなコードが必要になるでしょう:
+keymap)を追加して名前&#8216;<literal>Words</literal>&#8217;を付与、それをグローバルメニューバーにアタッチしています。したがってこの新メニューへの&#8216;<literal>Forward
+Word</literal>&#8217;アイテム追加には、以下のようなコードが必要になるでしょう:
 </para>
 <programlisting>(define-key global-map
   [menu-bar words forward]
@@ -1928,7 +1930,7 @@ Word</literal>&#8217;アイテム追加には以下のようなコードが必�
 </programlisting>
 <para>キーマップが機能する方法により、メニューオプションはより新しく定義されたアイテムがトップになるように表示されることに注意してください。したがってメニューオプション&#8216;<literal>foo</literal>&#8217;、&#8216;<literal>bar</literal>&#8217;、&#8216;<literal>baz</literal>&#8217;を(この順番で)定義するとメニューオプションは&#8216;<literal>baz</literal>&#8217;がトップ、&#8216;<literal>foo</literal>&#8217;がボトムに表示されます。
 </para>
-<para>これを回避する1つの方法として関数<literal>define-key-after</literal>の使用があります。これは<literal>define-key</literal>と同様ですが、アイテムが出現しる位置を変更することができます。以下は&#8216;<literal>Edit</literal>&#8217;メニューの&#8216;<literal>Undo</literal>&#8217;アイテムの直後になるように&#8216;<literal>Forward
+<para>これを回避する1つの方法として関数<literal>define-key-after</literal>の使用があります。これは<literal>define-key</literal>と同様ですが、アイテムが出現する位置を変更することができます。以下は&#8216;<literal>Edit</literal>&#8217;メニューの&#8216;<literal>Undo</literal>&#8217;アイテムの直後になるように、&#8216;<literal>Forward
 Word</literal>&#8217;アイテムを挿入します。
 </para>
 <programlisting>(define-key-after
@@ -1941,7 +1943,7 @@ Word</literal>&#8217;アイテムを挿入します。
 </para>
 <para>ある場所から別の場所にメニューオプションを移動するには、最後の引数を適切に指定して<literal>define-key-after</literal>を評価するだけです。
 </para>
-<para>より詳細な情報、およびメニューオプションの作成と行うより多くの例については、<citetitle>Emacs Lisp Reference
+<para>より詳細な情報、およびメニューオプションの作成と変更にたいする更に多くの例については、<citetitle>Emacs Lisp Reference
 Manual</citetitle>の&#8220;Menu Keymaps&#8221;にあります(このマニュアル内の情報については<link linkend="Emacs-Lisp-documentation">Emacs Lisp
 documentation</link>を参照)。
 </para>
@@ -1951,12 +1953,12 @@ documentation</link>を参照)。
 <indexterm role="cp"><primary>Deleting menus and menu options</primary></indexterm>
 <indexterm role="cp"><primary>Menus, deleting</primary></indexterm>
 
-<para>メニューを削除するもっともシンプルな方法は、そのキーマップに&#8216;<literal>nil</literal>&#8217;をセットします。たとえば&#8216;<literal>Words</literal>&#8217;メニュー(<link linkend="Modifying-pull_002ddown-menus">Modifying
+<para>メニューを削除するには、そのキーマップに&#8216;<literal>nil</literal>&#8217;をセットするのがもっともシンプルな方法です。たとえば&#8216;<literal>Words</literal>&#8217;メニュー(<link linkend="Modifying-pull_002ddown-menus">Modifying
 pull-down menus</link>を参照)を削除するには以下を使用します:
 </para>
 <programlisting>(define-key global-map [menu-bar words] nil)
 </programlisting>
-<para>同じように、メニューオプションを削除するには、キーマップエントリーを<literal>nil</literal>に再定義する必要があります。たとえば&#8216;<literal>Edit</literal>&#8217;メニューから(<link linkend="Modifying-pull_002ddown-menus">Modifying
+<para>同じようにメニューオプションを削除するには、キーマップエントリーを<literal>nil</literal>に再定義する必要があります。たとえば&#8216;<literal>Edit</literal>&#8217;メニューから(<link linkend="Modifying-pull_002ddown-menus">Modifying
 pull-down menus</link>で追加した)&#8216;<literal>Forward word</literal>&#8217;メニューオプションを削除するには以下を使用します:
 </para>
 <programlisting>(define-key global-map [menu-bar edit forward] nil)
@@ -1970,10 +1972,10 @@ pull-down menus</link>で追加した)&#8216;<literal>Forward word</literal>&#82
 <indexterm role="cp"><primary>Colorizing text</primary></indexterm>
 <indexterm role="cp"><primary>FAQ, <literal>font-lock-mode</literal></primary></indexterm>
 
-<para><literal>font-lock-mode</literal>はEmacsがカレントバッファーでシンタックスハイライト和行う標準的な方法です。これはEmacs
+<para><literal>font-lock-mode</literal>はEmacsがカレントバッファーでシンタックスハイライトを行う標準的な方法です。これはEmacs
 22.1以降ではデフォルトで有効になっています。
 </para>
-<para><literal>font-lock-mode</literal>をオンに切り替えると、異なるタイプのテキストは違うカラーで表示されます。たとえばプログラミング用のモードでは変数はあるフェイスで、キーワードはそれとは異なるフェイス、コメントは更に違うフェイスで表示されるでしょう。
+<para><literal>font-lock-mode</literal>をオンに切り替えると、異なるタイプのテキストは違うカラーで表示されます。たとえばプログラミング用のモードでは変数はあるフェイス、キーワードはそれとは異なるフェイス、コメントは更に違うフェイスで表示されるでしょう。
 </para>
 <para>既存バッファーで<literal>font-lock-mode</literal>をオフに切り替えるには<userinput>M-x font-lock-mode
 <keycap>RET</keycap></userinput>を使用してください。
@@ -1983,17 +1985,17 @@ pull-down menus</link>で追加した)&#8216;<literal>Forward word</literal>&#82
 </para>
 <programlisting>(global-font-lock-mode 1)
 </programlisting>
-<para><literal>font-lock-mode</literal>によるバッファーのハイライトにはかなり時間がかかり、苛立たしい表示の遅延を引き起こすので、これに対処するための機能がいくつかあります。
+<para><literal>font-lock-mode</literal>によるバッファーのハイライトにはかなり時間がかかるために、苛立たしい表示の遅延を引き起こすので、これに対処するための機能がいくつかあります。
 </para>
 <indexterm role="cp"><primary>Just-In-Time syntax highlighting</primary></indexterm>
 <para>Emacs
 21では<literal>font-lock-mode</literal>をオンに切り替えることによって、<literal>jit-lock-mode</literal>が提供する新たな<firstterm>JITフォント表示(Just-In-Time
-fontification)</firstterm>が自動的にアクティブになります。<literal>jit-lock-mode</literal>はバッファーをユーザーに実際に見せる必要が生じるまで、そのバッファー範囲のフォント表示を遅延させるとともに、EmacsがIdol中にもフォント表示を行えます。これによってバッファーの可視範囲はほとんど瞬時に表示されるようになります。<literal>jit-lock-mode</literal>のカスタマイズの詳細については<userinput>C-h
+fontification)</firstterm>が自動的にアクティブになります。<literal>jit-lock-mode</literal>はバッファーをユーザーに実際に見せる必要が生じるまで、そのバッファー範囲のフォント表示を遅延させるとともに、Emacsがアイドル中にもフォント表示を行えます。これによってバッファーの可視範囲はほとんど瞬時に表示されるようになります。<literal>jit-lock-mode</literal>のカスタマイズの詳細については<userinput>C-h
 f jit-lock-mode <keycap>RET</keycap></userinput>とタイプしてください。
 </para>
 <indexterm role="cp"><primary>Levels of syntax highlighting</primary></indexterm>
 <indexterm role="cp"><primary>Decoration level, in <literal>font-lock-mode</literal></primary></indexterm>
-<para>21より前のバージョンのEmacsではささやかなものから派手なものまで、異なるレベルの装飾が利用可能です。より多くの装飾にはバッファーがフォント表示されるまで、より長い時間待機する必要があることを意味しています。バッファーがどのように装飾されるべきかを制御するためには、<filename>.emacs</filename>ファイルで<literal>font-lock-maximum-decoration</literal>に値をセットします。<literal>nil</literal>値はデフォルトの(通常は最低限の)装飾、<literal>t</literal>は最大限の装飾をも意味します。できるだけ派手な外観にするには、<filename>.emacs</filename>ファイルに以下の行を含めてください。
+<para>21より前のバージョンのEmacsではささやかなものから派手なものまで、異なるレベルの装飾が利用可能です。より多くの装飾にはバッファーがフォント表示されるまで、より長い時間待機する必要があることを意味しています。バッファーがどのように装飾されるべきかを制御するには、<filename>.emacs</filename>ファイルで<literal>font-lock-maximum-decoration</literal>に値をセットします。<literal>nil</literal>値はデフォルトの(通常は最低限の)装飾、<literal>t</literal>は最大限の装飾を意味します。できるだけ派手な外観にするには<filename>.emacs</filename>ファイルに以下の行を含めてください。
 </para>
 <programlisting>(setq font-lock-maximum-decoration t)
 </programlisting>
@@ -2002,7 +2004,7 @@ describe-variable
 <keycap>RET</keycap></userinput>)で<literal>font-lock-maximum-decoration</literal>のドキュメントを確認してください。
 </para>
 <para>更に<userinput>C-h f font-lock-mode</userinput> (<userinput>M-x describe-function <keycap>RET</keycap>
-font-lock-mode <keycap>RET</keycap></userinput>)で利用できる、関数<literal>font-lock-mode</literal>のドキュメントも参照してください。
+font-lock-mode <keycap>RET</keycap></userinput>)で利用できる関数<literal>font-lock-mode</literal>のドキュメントも参照してください。
 </para>
 <para>バッファーをフェイス(カラーとフォント)付きでそのままプリントするためには、<userinput>M-x
 ps-print-buffer-with-faces</userinput>または<userinput>M-x
@@ -2033,7 +2035,7 @@ Scrolling&#8221; in <citetitle>The GNU Emacs Manual</citetitle>の説明を参�
 <para>MS-DOS
 (およびWindows)のファイルの検出と処理は透過的に行われます。Unixシステム上でファイルフォーマットについて心配するなくMS-DOSファイルのオープン、編集、保存を行うことができます。
 </para>
-<para>MS-DOS形式ファイルの編集時には、それがDOSファイルであることが示されます。UnixおよびGNU/Linuxシステム、およびMacintoshでもモードライン左端付近に文字列&#8216;<literal>(DOS)</literal>&#8217;が表示されるでしょう。DOSのEOLフォーマットをデフォルトとして使用するDOSおよびWindowsでは、モードラインにバックスラッシュ(&#8216;<literal>\</literal>&#8217;)が表示されます。
+<para>MS-DOS形式ファイルの編集時には、それがDOSファイルであることが示されます。UnixとGNU/Linuxシステム、およびMacintoshでもモードライン左端付近に文字列&#8216;<literal>(DOS)</literal>&#8217;が表示されるでしょう。DOSのEOLフォーマットをデフォルトとして使用するDOSおよびWindowsでは、モードラインにバックスラッシュ(&#8216;<literal>\</literal>&#8217;)が表示されます。
 </para>
 </sect1>
 <sect1 label="5.45" id="Filling-paragraphs-with-a-single-space">
@@ -2074,7 +2076,7 @@ ansi-color-for-comint-mode</userinput>とタイプするか、あるいはinit�
 <programlisting>(add-hook 'emacs-startup-hook
           (lambda () (w32-send-sys-command ?\xF030)))
 </programlisting>
-<para>Emacsの開始においてデフォルトのフレームサイズからフルスクリーンに拡がる若干惑わされる視覚効果を回避するには、Windowsのレジストリ文字列に&#8216;<literal>Emacs.Geometry</literal>&#8217;エントリーを追加できます。section &#8220;X
+<para>Emacsの開始におけるデフォルトのフレームサイズからフルスクリーンに拡がる、若干惑わされる視覚効果を回避するにはWindowsのレジストリ文字列に&#8216;<literal>Emacs.Geometry</literal>&#8217;エントリーを追加できます。section &#8220;X
 Resources&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
 </para>
 <para>幅と高さの正しい値を計算するためには、まずEmacsフレームを最大化してから<userinput>M-:</userinput>で<literal>(frame-height)</literal>および<literal>(frame-width)</literal>を評価してください。
@@ -2101,7 +2103,7 @@ C-p</userinput>とタイプしてください。
 <indexterm role="cp"><primary>Maximum file size</primary></indexterm>
 <indexterm role="cp"><primary>Files, maximum size</primary></indexterm>
 
-<para>Emacsのバッファーサイズには先天的に固定された制限があります。これは同一プラットフォームで他のプログラムがサポートするオブジェクトの最大サイズと比較すると厳しい制限です。
+<para>Emacsのバッファーサイズには固定された固有の制限があります。これは同一プラットフォームで他のプログラムがサポートするオブジェクトの最大サイズと比較すると厳しい制限です。
 </para>
 <para>バッファーの最大サイズはバージョン23.2からは32ビットマシンで512MBです。<literal>--with-wide-int</literal>フラグを使用してEmacsをビルドした場合には、バッファーの最大サイズは32ビットマシンで2GBです。
 </para>
@@ -2117,7 +2119,7 @@ C-p</userinput>とタイプしてください。
 <indexterm role="cp"><primary>Echoed commands in <literal>shell-mode</literal></primary></indexterm>
 
 <para>それらを取り除くには<userinput>M-x comint-strip-ctrl-m
-<keycap>RET</keycap></userinput>を試してください。これが機能しない場合には、いくつかのオプションがあります。
+<keycap>RET</keycap></userinput>を試してください。これが機能しない場合にはいくつかのオプションがあります。
 </para>
 <para><literal>tcsh</literal>では以下を<filename>.cshrc</filename> (または<filename>.tcshrc</filename>)ファイルに記述してください:
 </para>
@@ -2135,17 +2137,17 @@ stty -icrnl -onlcr -echo susp ^Z
 </para>
 <programlisting>(setq explicit-shell-file-name &quot;/bin/csh&quot;)
 </programlisting>
-<para>別の方法としては<filename>.cshrc</filename> (または<filename>.tcshrc</filename>)ファイルでこれを行う方法です:
+<para>別に<filename>.cshrc</filename> (または<filename>.tcshrc</filename>)ファイルでこれを行う方法があります:
 </para>
 <screen>setenv ESHELL /bin/csh
 </screen>
-<para>(これが効果をもつように環境変数を正しくセットした後にEmacsを再起動しなければなりません。)
+<para>(環境変数を正しくセットした後は、これが効果をもつようにEmacsを再起動しなければなりません。)
 </para>
 <para>以下のLispフォームでEmacs Lispにより<literal>ESHELL</literal>環境変数をセットすることもできます:
 </para>
 <programlisting>(setenv &quot;ESHELL&quot; &quot;/bin/csh&quot;)
 </programlisting>
-<para>上記の解決策は最初にシェルが&#8216;<literal>^M</literal>&#8217;文字を生成するのを防ぐ試みです。これが不可能(たとえばWindowsシェルを使用している)なら、<filename>.emacs</filename>に追加することによって、Emacsにそれらの文字をバッファーから削除させることができます。
+<para>上記の解決策は最初にシェルが&#8216;<literal>^M</literal>&#8217;文字を生成するのを防ぐ試みです。これが不可能(たとえばWindowsシェルを使用している)なら、<filename>.emacs</filename>に追加することによってEmacsにそれらの文字をバッファーから削除させることができます。
 </para>
 <programlisting>(add-hook 'comint-output-filter-functions #'comint-strip-ctrl-m)
 </programlisting>
@@ -2163,7 +2165,7 @@ stty -icrnl -onlcr -echo susp ^Z
 <para>これはEmacsが間違った場所でシェルを探そうとして起こるかもしれません。シェル実行形式の場所をあなたが知っていたら、<filename>.emacs</filename>ファイルで変数<literal>explicit-shell-file-name</literal>がそのフルファイル名を指し示すようにセットしてください。
 </para>
 <indexterm role="cp"><primary>Antivirus programs, and Shell Mode</primary></indexterm>
-<para>MS-Windows上のShellモードで差し出がましいアンチウイルスソフトウェアによりトラブルに遭う人がいます。このようなケースでは常駐アンチウイルスプログラムを無効にすると問題は解決するでしょう。
+<para>MS-Windows上のShellモードでお節介なアンチウイルスソフトウェアによりトラブルに遭う人がいます。このようなケースでは常駐アンチウイルスプログラムを無効にすると問題は解決するでしょう。
 </para>
 </sect1>
 <sect1 label="6.4" id="Termcap_002fTerminfo-entries-for-Emacs">
@@ -2181,7 +2183,7 @@ stty -icrnl -onlcr -echo susp ^Z
 <para>termcap/terminfoエントリーがあってもShellバッファーでのフルスクリーンプログラムの使用は有効になりません。かわりに<userinput>M-x
 term</userinput>を使用してください。
 </para>
-<para>termcap/terminfo欠落による問題を回避するためには、シェルのスタートアップファイルで端末タイプを&#8216;<literal>emacs</literal>&#8217;から&#8216;<literal>dumb</literal>&#8217;か&#8216;<literal>unknown</literal>&#8217;に変更します。<literal>csh</literal>ユーザーは以下を<filename>.cshrc</filename>ファイルに記述できます:
+<para>termcap/terminfo不在による問題を回避するためには、シェルのスタートアップファイルで端末タイプを&#8216;<literal>emacs</literal>&#8217;から&#8216;<literal>dumb</literal>&#8217;か&#8216;<literal>unknown</literal>&#8217;に変更します。<literal>csh</literal>ユーザーは以下を<filename>.cshrc</filename>ファイルに記述できます:
 </para>
 <screen>if (&quot;$term&quot; == emacs) set term=dumb
 </screen>
@@ -2200,7 +2202,7 @@ term</userinput>を使用してください。
 <para>あなたの<filename>.emacs</filename>ファイルをデバッグする方法については<link linkend="Debugging-a-customization-file">Debugging a customization
 file</link>を参照してください。
 </para>
-<para>まず何らかのパッケージのロードが必要だったり、そあるいはパッケージのロード後に評価されるフックを使用したのかもしれません。これのよくあるケースについては<link linkend="Terminal-setup-code-works-after-Emacs-has-begun">Terminal
+<para>まず何らかのパッケージのロードが必要だったり、そあるいはパッケージのロード後に評価されるフックを使用したのかもしれません。このよくあるケースについては<link linkend="Terminal-setup-code-works-after-Emacs-has-begun">Terminal
 setup code works after Emacs has begun</link>に記述があります。
 </para>
 </sect1>
@@ -2268,7 +2270,7 @@ setup code works after Emacs has begun</link>に記述があります。
 <indexterm role="cp"><primary>&#8216;<literal>$</literal>&#8217; in file names</primary></indexterm>
 <indexterm role="cp"><primary>File names containing &#8216;<literal>$</literal>&#8217;, editing</primary></indexterm>
 
-<para>ミニバッファーでファイル名を入力する際には、単語の前に&#8216;<literal>$</literal>&#8217;があるとEmacsは環境変数としてそれの展開を試みます。この挙動を抑止するには、かわりに<userinput>$$</userinput>とタイプしてください。
+<para>ミニバッファーでファイル名を入力する際に単語の前に&#8216;<literal>$</literal>&#8217;があると、Emacsは環境変数としてそれの展開を試みます。この挙動を抑止するにはかわりに<userinput>$$</userinput>とタイプしてください。
 </para>
 </sect1>
 <sect1 label="6.9" id="Shell-mode-loses-the-current-directory">
@@ -2277,9 +2279,9 @@ setup code works after Emacs has begun</link>に記述があります。
 <indexterm role="cp"><primary><literal>shell-mode</literal> and current directory</primary></indexterm>
 <indexterm role="cp"><primary>Directory, current in <literal>shell-mode</literal></primary></indexterm>
 
-<para>Emacsには実際にシェルが自身のディレクトリーを変更したタイミングを知る手段がありません。これはUnixに内在する制限です。そのためにEmacsは&#8216;<literal>cd</literal>&#8217;コマンドを識別して推測を試みます。変数リファレンスを含むディレクトリーが後に続く<userinput>cd</userinput>
+<para>Emacsには実際にシェルが自身のディレクトリーを変更したタイミングを知る手段がありません。これはUnixに内部の制限です。そのためにEmacsは&#8216;<literal>cd</literal>&#8217;コマンドを識別して推測を試みます。変数リファレンスを含むディレクトリーが後に続く<userinput>cd</userinput>
 (<userinput>cd $HOME/bin</userinput>)やシェルのメタ文字を含むディレクトリー(<userinput>cd
-../lib*</userinput>)をタイプすると、Emacsはシェルの新たなカレントディレクトリーの正確な推測に失敗するでしょう。Shellモードにおけるこの問題を処理するために、膨大な数の様々な訂正および改善が記述されてきました(<link linkend="Finding-a-package-with-particular-functionality">Finding
+../lib*</userinput>)をタイプすると、Emacsはシェルの新たなカレントディレクトリーの正確な推測に失敗するでしょう。Shellモードにおけるこの問題を処理するために、膨大な数の様々な訂正や改善が記述されてきました(<link linkend="Finding-a-package-with-particular-functionality">Finding
 a package with particular functionality</link>を参照)。
 </para>
 <para>コマンド<userinput>M-x dirs</userinput>でシェルのカレントディレクトリーをEmacsに伝えることができます。
@@ -2299,20 +2301,20 @@ a package with particular functionality</link>を参照)。
 <para>Emacsにインストールされた任意のパッケージはEmacs自身のプロセスと同じ権限で任意のコードを実行できる。サードパーティのアーカイブをパッケージシステム(<literal>M-x
 list-packages</literal>など)で使用する際には注意を要する。信頼可能なサードパーティだけを使用すること!
 </para>
-</listitem><listitem><para><literal>file-local-variable</literal>機能(危険ではあるが容易に変更できる)。
+</listitem><listitem><para><literal>file-local-variable</literal>機能(確かに危険だが容易に変更できる)。
 </para>
 <para>Emacsにはファイル終端付近に特別にフォーマットされたテキストを含むファイルを編集する際に、変数にたいするローカル値のセットを許す機能がある。この機能にはファイルをvisitする際に任意のEmacs
 Lispコードを評価する能力も含まれる。当然、トロイの木馬がこの機能を悪用する可能性がある。
 </para>
 <para>Emacsにはバージョン22の時点において、セットしても安全だと判っているローカル変数のリストがある。このリスト以外の変数のセットをファイルが試みると、その変数をセットするべきかどうかユーザーに確認を求める。変数<literal>enable-local-eval</literal>をセットすることにより、ファイル下部で見つけたEmacs
-Lispコードの評価を許すか否かを▽えまに伝えることもできる。
+Lispコードの評価を許すか否かをEmacsに伝えることもできる。
 </para>
 <para>section &#8220;File Variables&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照のこと。
 </para>
-</listitem><listitem><para>合成Xイベント(危険であり&#8216;<literal>MIT-MAGIC-COOKIE-1</literal>&#8217;以上を使用すること)。
+</listitem><listitem><para>合成Xイベント(確かに危険なので&#8216;<literal>MIT-MAGIC-COOKIE-1</literal>&#8217;以上を使用すること)。
 </para>
 <para>Emacsは<literal>SendEvent</literal>リクエストが生成した合成Xイベント(synthetic X
-event)が通常イベントであるかのように受け入れる。結果として簡単なホストベースの認証を使用していると、XワークステーションへのX接続をオープン可能な他のユーザーは、Emacsプロセスに(特権での他プロセス実行を含む)何でも実行させることができる。
+event)を、通常イベントであるかのように受け入れる。結果として簡単なホストベースの認証を使用していると、XワークステーションへのX接続をオープン可能な他のユーザーは、Emacsプロセスに(特権での他プロセス実行を含む)何でも実行させることができる。
 </para>
 <para>他のユーザーによるX接続のオープンができないように防ぐことが、これにたいする唯一の修整である。&#8216;<literal>MIT-MAGIC-COOKIE-1</literal>&#8217;のような本物の認証メカニズムを使用することが、これを防ぐ標準的な方法である。<literal>xauth</literal>プログラムの使用に何らかの効果があるなら、恐らく&#8216;<literal>MIT-MAGIC-COOKIE-1</literal>&#8217;を使用しているだろう。あなたのサイトは上位の認証方式を使用しているかもしれない。システム管理者に尋ねてみて欲しい。
 </para>
@@ -2352,7 +2354,7 @@ event)が通常イベントであるかのように受け入れる。結果と�
 </sect1>
 </chapter>
 <chapter label="7" id="Compiling-and-installing-Emacs">
-<title>Compiling and installing Emacs</title>
+<title>Emacsのコンパイルとインストール</title>
 <indexterm role="cp"><primary>Compiling and installing Emacs</primary></indexterm>
 
 
@@ -2383,7 +2385,7 @@ distributions</link>を参照のこと。GNUディストリビューションの
 </para>
 <para>(&#8216;<literal>VERSION</literal>&#8217;は&#8216;<literal>23.1</literal>&#8217;のように適切なバージョン番号に置き換えること。)
 </para>
-</listitem><listitem><para>次にソースファイルを解凍、抽出する。これには標準ユーティリティー<literal>gzip</literal>および<literal>tar</literal>が必要。これらがシステムになければ<ulink url="https://ftp.gnu.org">https://ftp.gnu.org</ulink>からダウンロードできる。
+</listitem><listitem><para>次にソースファイルを解凍、抽出する。これには標準ユーティリティー<literal>gzip</literal>と<literal>tar</literal>が必要。これらがシステムになければ<ulink url="https://ftp.gnu.org">https://ftp.gnu.org</ulink>からダウンロードできる。
 </para>
 <para>GNU <literal>tar</literal>なら一度に解凍抽出ができる:
 </para>
@@ -2403,7 +2405,7 @@ Emacs</link>を参照)。
 <screen>make install
 </screen>
 <para>&#8216;<literal>make
-install</literal>&#8217;によって<filename>/usr/local/bin/emacs</filename>、および<filename>/usr/local/share/info/</filename>にあるかもしれないEmacs
+install</literal>&#8217;によって<filename>/usr/local/bin/emacs</filename>や<filename>/usr/local/share/info/</filename>にあるかもしれないEmacs
 Infoファイルは上書きされることに注意。
 </para>
 </listitem></itemizedlist>
@@ -2450,11 +2452,11 @@ Emacs</link>、GNUソフトウェアが利用可能なアーカイブサイト�
 <keycap>RET</keycap></userinput>とタイプすれば、文字列&#8216;<literal>python</literal>&#8217;を含むすべての関数と変数が一覧されます。
 </para>
 <para>パッケージはシステム上にあってもロードされていない可能性もあります。ロード用に利用できるパッケージを確認するために、あなたのコンピューターのlispディレクトリーを見てみましょう(<link linkend="File_002dname-conventions">File-name
-conventions</link>を参照)。ほとんどのパッケージのLispソースには、それらをどのようにロード、呼び出し、設定するべきかに関する短い説明が含まれているので、作成者がソースコード内でヒントを提供していたら、Lispパッケージの使用や変更を行う前に確認しましょう。
+conventions</link>を参照)。ほとんどのパッケージのLispソースには、それらをどのようにロード、呼び出し、設定するべきかに関する短い説明が含まれているので、作成者がソースコード内でヒントを提供していたら、Lispパッケージの使用や変更を行う前にそれを確認しましょう。
 </para>
-<para>コマンド<userinput>C-h p</userinput> (<literal>finder-by-keyword</literal>)でEmacsのパッケージ構成をブラウズできます。
+<para>コマンド<userinput>C-h p</userinput> (<literal>finder-by-keyword</literal>)でEmacsのパッケージ構成を閲覧できます。
 </para>
-<para>Emacsの一部ではない追加パッケージを探す方法についての助言は<link linkend="Packages-that-do-not-come-with-Emacs">Packages that do not come with
+<para>Emacsの一部ではない追加パッケージを探す方法に関する助言は<link linkend="Packages-that-do-not-come-with-Emacs">Packages that do not come with
 Emacs</link>を参照してください。
 </para>
 <!-- Note that M-x view-external-packages references this node. -->
@@ -2471,17 +2473,17 @@ Emacs</link>を参照してください。
 <para>あなたのEmacsに更に機能を追加するには、コマンド<userinput>M-x
 list-packages</userinput>を使用するのがもっとも簡単な方法です。これは<ulink url="https://elpa.gnu.org">GNU ELPA</ulink>
 (&#8220;Emacs Lisp Package
-Archive&#8221;)サーバーに接続して、それが提案する追加パッケージのリストを取得します。これらはEmacsでの使用が可能ですが、スペース等の理由によりEmacs自体とは別に配布されているGNUパッケージです。コマンドの結果ト得られた<filename>*Packages*</filename>を閲覧して何が利用可能なのか確認して、それからあなたが選択したパッケージのダウンロードとインストールを自動的に行います。section &#8220;Packages&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
+Archive&#8221;)サーバーに接続して、それが提案する追加パッケージのリストを取得します。これらはEmacsでの使用が可能ですが、スペース等の理由によりEmacs自体とは別に配布されているGNUパッケージです。コマンドの結果として得られた<filename>*Packages*</filename>を閲覧して何が利用可能なのか確認、それからあなたが選択したパッケージのダウンロードとインストールを自動的に行います。section &#8220;Packages&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
 </para>
 <para>Emacs
 Lispパッケージアーカイブは他にもあります。追加アーカイブを使用するには変数<literal>package-archives</literal>をカスタマイズしてください。これらのアーカイブはGNU
-Emacsとは提携しておらず、わたしたちはそれらがどのように保守されているかを監視していません。彼らはコードの正確さち安全性に最新の注意を払うかもしれないし、あるいはぞんざいに注意するだけかもしれません。
+Emacsとは提携しておらず、わたしたちはそれらがどのように保守されているかを監視していません。彼らはコードの正確さち安全性に細心の注意を払うかもしれないし、あるいはぞんざいに注意するだけかもしれません。
 </para>
 <para>更にこれらの他のアーカイブでホストされるパッケージは、他の非フリーなプログラムのインストールや使用を推奨、あるいは必須としているかもしれません。パッケージがフリーソフトウェアであり、非フリーなソフトウェアをインストールせずに機能するか検証できないのであれば、あなたの自由を危うくしないために近寄らないことを推奨します。
 </para>
 <para><ulink url="news:gnu.emacs.sources">Emacs sources
 newsgroup</ulink>にゲートウェイされている<ulink url="https://lists.gnu.org/mailman/listinfo/gnu-emacs-sources">GNU Emacs sources mailing
-list</ulink>は、(たとえ2点間の通信が不確かであっても)人々が彼らのEmacs拡張をアナウンスする公の場です。
+list</ulink>は、(たとえ2点間の通信が不確かなものであったとしても)人々が彼らのEmacs拡張をアナウンスする公の場です。
 </para>
 <para><ulink url="https://emacswiki.org">Emacs
 Wiki</ulink>にはいくつかの追加拡張への指標が含まれています。<ulink url="https://wikemacs.org">WikEmacs</ulink>はEmacs用の代替えwikiです。
@@ -2503,7 +2505,7 @@ ELPAをチェックした後は、ウェブ検索が結果を見い出す最良�
 <indexterm role="cp"><primary>Ispell</primary></indexterm>
 <indexterm role="cp"><primary>Enchant</primary></indexterm>
 
-<para>以下を含む様々なスペルチェッカーはEmacsと互換性があります:
+<para>以下を含む様々なスペルチェッカーにはEmacsとの互換性があります:
 </para>
 <variablelist>
 <varlistentry><term><emphasis role="bold">Hunspell</emphasis>
@@ -2529,7 +2531,7 @@ ELPAをチェックした後は、ウェブ検索が結果を見い出す最良�
 <indexterm role="cp"><primary>Finding current GNU software</primary></indexterm>
 <indexterm role="cp"><primary>Official GNU software sites</primary></indexterm>
 
-<para>GNU公式ソフトウェアのほとんどは通常は以下に保持されています 
+<para>GNU公式ソフトウェアのほとんどは通常は以下で保持されています 
 </para>
 <para><ulink url="https://ftp.gnu.org/pub/gnu">https://ftp.gnu.org/pub/gnu</ulink>
 </para>
@@ -2549,9 +2551,9 @@ ELPAをチェックした後は、ウェブ検索が結果を見い出す最良�
 Emacsと呼ばれており、初版はEmacs
 19のプレリリースバージョンから派生しました。このFAQでは公式バージョンにたいしてのみ&#8220;Emacs&#8221;という名前を使用します。
 </para>
-<para>XEmacsは2009年1月30にリリースされた新バージョンが最新であり、それにはEmacsに存在する多くの重要な機能が欠落していました。過去においては、EmacsパッケージにXEmacsとの互換性のためのコードを含めるのは珍しいことではありませんでした。現在ではたとえそのような互換性コードをまだ保守しているパッケージがあったとしても、より人気のあるビルトインおよびサードパーティーのパッケージのいくつかはXEmacsのサポートを止めるか、あるいはEmacs専用に開発されています。
+<para>XEmacsは2009年1月30に新たにリリースされたバージョンが最新であり、それにはEmacsに存在する多くの重要な機能が欠落していました。過去においては、EmacsパッケージにXEmacsとの互換性のためのコードを含めるのは珍しいことではありませんでした。現在ではたとえそのような互換性コードをまだ保守しているパッケージがあったとしても、より人気のあるビルトインおよびサードパーティーのパッケージのいくつかはXEmacsのサポートを止めるか、あるいはEmacs専用に開発されています。
 </para>
-<para>いくつかのXEmacsコードはEmacsに提供されており、他の部分についてもわたしたちは使用したいと考えていまづが、初期のXEmacsメンテナーは提供されたコードの作成者を常に追跡はしておらず、FSFがそのコードにたいする署名済みのコピーライトペーパーを取得することを不可能にしています(FSFは個別の身元を保つEmacsのコードに正しく統合されていない汎用Cサポートパッケージは除き。Emacsリリースに含まれるすべてのコードにたいしてこれらのペーパーを要求している)。
+<para>いくつかのXEmacsコードはEmacsに提供されており、他の部分についてもわたしたちは使用したいと考えていますが、初期のXEmacsメンテナーは提供されたコードの作成者を常に追跡してはおらず、FSFによるそのコードの署名済みコピーライトペーパー取得を不可能にしています(FSFはEmacsのコードに正しく統合されていない個別に身元を保つ汎用Cサポートパッケージを除き、Emacsリリースに含まれるすべてのコードにたいしてこれらのペーパーを要求している)。
 </para>
 <para>これらの2つのバージョンを区別して議論をする場合には、どうかそれらを&#8220;Emacs&#8221;および&#8220;XEmacs&#8221;と呼ぶようにしてください。XEmacsもまたGNUプロジェクトの作業を元としているので、&#8220;XEmacs&#8221;と&#8220;GNU
 Emacs&#8221;の対比は誤解を招きかねません。&#8220;Emacsen&#8221;や&#8220;(X)Emacs&#8221;のような用語も悪くはありませんが、非常に明快とは言えないので&#8220;Emacs
@@ -2564,7 +2566,7 @@ and XEmacs&#8221;と記述するほうが良いでしょう。
 <indexterm role="cp"><primary>Not enough disk space to install Emacs</primary></indexterm>
 
 <para>GNU ZileはEmacsの軽量クローンです。Zileは&#8216;<literal>Zile Is Lossy
-Emacs</literal>&#8217;を短縮したものです。これにはEmacsの基本的な編集機能すべてが含まれています。Zileのバイナリーは通常は約130kBのサイズなので、非常にスペースに制限がある環境で有用かもしれません。詳細は以下で理由できます
+Emacs</literal>&#8217;を短縮したものです。これにはEmacsの基本的な編集機能がすべて含まれています。Zileのバイナリーは通常は約130kBのサイズなので、非常にスペースに制限がある環境で有用かもしれません。詳細は以下で利用できます
 </para>
 <para><ulink url="https://www.gnu.org/software/zile/">https://www.gnu.org/software/zile/</ulink>
 </para>
@@ -2634,7 +2636,7 @@ Windows</citetitle>を参照してください。MS-DOSの場合には<link link
 <indexterm role="cp"><primary>Keys, binding to commands</primary></indexterm>
 <indexterm role="cp"><primary>Commands, binding keys to</primary></indexterm>
 
-<para>対話的、または<filename>.emacs</filename>ファイルでキーをコマンドにバインドできます。すべてのモードにたいしてキーを対話的にバインドするには、<userinput>M-x
+<para>対話的に、あるいは<filename>.emacs</filename>ファイルでキーをコマンドにバインドできます。すべてのモードにたいしてキーを対話的にバインドするには、<userinput>M-x
 global-set-key <keycap>RET</keycap> <replaceable>key</replaceable> <replaceable>cmd</replaceable> <keycap>RET</keycap></userinput>とタイプします。
 </para>
 <para>カレントのメジャーモードだけでキーをバインドするには<userinput>M-x local-set-key <keycap>RET</keycap> <replaceable>key</replaceable>
@@ -2642,17 +2644,17 @@ global-set-key <keycap>RET</keycap> <replaceable>key</replaceable> <replaceable>
 </para>
 <para>section &#8220;Key Bindings&#8221; in <citetitle>The GNU Emacs Manual</citetitle>を参照してください。
 </para>
-<para>対話的にキーをバインドするプログレを容易にするために、次の&#8220;trick&#8221;を使用できます:
-
-まず対話的にキーをバインドしてからすぐに<userinput>C-x <keycap>ESC</keycap> <keycap>ESC</keycap> C-a C-k
+<para>対話的にキーをバインドするプロセスを容易にするために次の&#8220;trick&#8221;を使用できます: 
+まず対話的にキーをバインドしてからすぐに<userinput>C-x
+<keycap>ESC</keycap> <keycap>ESC</keycap> C-a C-k
 C-g</userinput>とタイプ、
 これでキーバインドを要するコマンドがkillリングに取り込まれたので<filename>.emacs</filename>ファイルにyankできるようになった。
 
-グローバルなキーバインディングの場合には、コマンドの変更は不要です。たとえば、
+グローバルなキーバインディングの場合にはコマンドの変更は不要です。たとえば、
 </para>
 <programlisting>(global-set-key [f1] 'help-for-help)
 </programlisting>
-<para>これは<filename>.emacs</filename>ファイルに直後記述できます。ローカルなキーバインディングの場合には、、コマンドは&#8216;<literal>add-hook</literal>&#8217;関数と組み合わせて使用されます。たとえばTeXモードでのローカルバインディングは以下のようになるでしょう
+<para>これは<filename>.emacs</filename>ファイルに直接記述できます。ローカルなキーバインディングの場合には、コマンドは&#8216;<literal>add-hook</literal>&#8217;関数と組み合わせて使用されます。たとえばTeXモードでのローカルバインディングは以下のようになるでしょう
 </para>
 <programlisting>(add-hook 'tex-mode-hook
   (lambda ()
@@ -2663,7 +2665,7 @@ C-g</userinput>とタイプ、
 <listitem><para>killリングからyankしたキーシーケンス内でのコントロール文字の形式はグラフィック形式 &#8212;
 つまり<keycap>CTRL</keycap>は&#8216;<literal>^</literal>&#8217;、<keycap>TAB</keycap>はいくつかのスペース(通常は8)で示されるでしょう。これらをベクターや文字列形式に変換したいと思うかもしれません。
 </para>
-</listitem><listitem><para>プレフィクスキーとしてある文字シーケンスをバインドする場合に、それがすでにコンプリートキーワードとしてバインドされていたら、新しいバインディングの前にコンプリートキーのバインドを解除しなければならない。たとえば<userinput>ESC
+</listitem><listitem><para>プレフィクスキーとしてある文字シーケンスをバインドする場合に、それがすでにコンプリートキーとしてバインドされていたら、新しいバインディングの前にコンプリートキーのバインドを解除しなければならない。たとえば<userinput>ESC
 {</userinput>がバインド済みなら:
 </para>
 <programlisting>(global-unset-key [?\e ?{])   ;; または
@@ -2694,7 +2696,7 @@ key)</firstterm>がすでに<firstterm>コンプリートキー(complete key)</f
 <title>Emacs起動後でなければ<filename>.emacs</filename>ファイルの[端末やウィンドウシステム]のセットアップコードが機能しないのはなぜ?</title>
 <indexterm role="cp"><primary>Terminal setup code in <filename>.emacs</filename></primary></indexterm>
 
-<para>スタートアップの間、Emacsは与えられたコード/ファイルの順番に応じて自身を初期化します。<filename>.emacs</filename>ファイルの中のあるコードを、端末またはウィンドウシステムのセットアップコードが実行されるまで延期する必要があるのにセットアップが終わっていないと、この問題を体験することになるでしょう(このコード/ファイルの実行順はスタートアップ後は強制されない)。
+<para>スタートアップの間、Emacsは与えられたコード/ファイルの順番に応じて自身を初期化します。端末またはウィンドウシステムのセットアップコードが実行されるまで、<filename>.emacs</filename>ファイル内のあるコードを延期する必要があるのにセットアップが終わっていないと、この問題を体験することになるでしょう(このコード/ファイルの実行順はスタートアップ後は強制されない)。
 </para>
 <para>端末またはウィンドウシステムのセットアップ後までEmacs Lispコードの実行を延期するには、コードを<firstterm>lambdaリスト(lambda
 list)</firstterm>として<literal>emacs-startup-hook</literal> (またはEmacs
@@ -2727,7 +2729,7 @@ c</userinput>の後にファンクションキーか矢印キーをタイプし�
 <indexterm role="cp"><primary>Key translations under X</primary></indexterm>
 <indexterm role="cp"><primary>Translations for keys under X</primary></indexterm>
 
-<para>EmacsはデフォルトではXtライブラリーを使用するようには記述されていないので、何の&#8220;変換(translation)&#8221;もセットされていません(XtとともにEmacsをビルドした場合にそのような変換をどのようにセットするかわたしたちには定かではないので、これを行うことができたらどうか知らせてください!)。
+<para>EmacsはデフォルトではXtライブラリーを使用するように記述されていないので、何の&#8220;変換(translation)&#8221;もセットされていません(XtとともにEmacsをビルドした場合にそのような変換をどのようにセットするかわたしたちには定かではないので、これを行うことができたらどうか知らせてください!)。
 </para>
 <para>Emacs内でのキーの挙動に影響を与えるには<literal>xmodmap</literal> (Emacs外部)、あるいは<literal>define-key</literal>
 (Emacs内部)を通じて行う方法だけです。<literal>define-key</literal>コマンドは<literal>local-function-key-map</literal>と組み合わせて使用する必要があります。たとえば、
@@ -2761,7 +2763,7 @@ TeraTerm)では、セットアップメニューから<keycap>Backspace</keycap>
 </listitem><listitem><para>&#8722; 完全にプログラム可能なキーボードや、任意のキーから別の任意のキーへのリマップをサポートする端末エミュレータを入手できるかもしれない。
 </para>
 </listitem><listitem><para>&#8722; Emacs 21.1以降ではオプション<literal>normal-erase-is-backspace-mode</literal>のカスタマイズ、または<userinput>M-x
-normal-erase-is-backspace</userinput>呼び出しにより、ダム端末およびウィンドウ化されたディスプレーの両方において、<keycap>Backspace</keycap>キーおよび<keycap>Delete</keycap>キーの効果を制御できる。詳細についてはこれらのシンボルのドキュメントについては、<link linkend="Emacs-Lisp-documentation">Emacs
+normal-erase-is-backspace</userinput>呼び出しにより、ダム端末およびウィンドウ化されたディスプレーの両方において、<keycap>Backspace</keycap>キーおよび<keycap>Delete</keycap>キーの効果を制御できる。これらのシンボルのドキュメントについては<link linkend="Emacs-Lisp-documentation">Emacs
 Lisp documentation</link>を参照のこと。
 </para>
 </listitem><listitem><para>&#8722; Emacs内部では<keycap>Backspace</keycap>キーと<keycap>DEL</keycap>キーを交換できる:
@@ -2776,18 +2778,18 @@ Lisp documentation</link>を参照のこと。
 </programlisting>
 <para><literal>keyboard-translate</literal>についての詳細は<link linkend="Swapping-keys">Swapping keys</link>を参照のこと。
 </para>
-</listitem><listitem><para>&#8722; 別のアプローチとしてはキーバインディングを切り替えて、かわりに<userinput>C-x h</userinput>をヘルプにする:
+</listitem><listitem><para>&#8722; 別のアプローチとしては、キーバインディングを切り替えてかわりに<userinput>C-x h</userinput>をヘルプにする:
 </para>
 <programlisting>(global-set-key &quot;\C-h&quot; 'delete-backward-char)
 
 ;; mark-whole-bufferをオーバーライドする
 (global-set-key &quot;\C-xh&quot; 'help-command)
 </programlisting>
-<para>とはいえこの手法は推奨しない。これは<keycap>DEL</keycap>を<literal>delete-backward-char</literal>にバインドするモードにたいしてのみ問題を解決する。<literal>view-mode</literal>モードのように<keycap>DEL</keycap>を別の何かにバインドするモードは、<keycap>Backspace</keycap>キーを押下した際に期待通り動作しないだろう。この理由により、えわたしたちは上述した<literal>keyboard-translate</literal>手法をお勧めする。
+<para>とはいえこの手法は推奨しない。これは<keycap>DEL</keycap>を<literal>delete-backward-char</literal>にバインドするモードにたいしてのみ問題を解決する。<literal>view-mode</literal>モードのように<keycap>DEL</keycap>を別の何かにバインドするモードは、<keycap>Backspace</keycap>キーを押下した際に期待通り動作しないだろう。この理由により、わたしたちは上述した<literal>keyboard-translate</literal>手法をお勧めする。
 </para>
 <para>ヘルプ用として他に人気のあるキーバインディングは<userinput>M-?</userinput>と<userinput>C-x ?</userinput>である。
 </para></listitem></itemizedlist>
-<para><keycap>DEL</keycap>にたいしてローカルバインディングをもちモードが多数あり、それらと干渉するかもしれないので、<keycap>DEL</keycap>に<literal>help-command</literal>をバインドしようとしてはならない。
+<para><keycap>DEL</keycap>にたいしてローカルバインディングをもつモードが多数あり、それらと干渉するかもしれないので、<keycap>DEL</keycap>に<literal>help-command</literal>をバインドしようとしてはならない。
 </para>
 </listitem></itemizedlist>
 <para>ウィンドウ化されたディスプレーでEmacs
@@ -2856,8 +2858,8 @@ w</userinput>コマンドを試してみることもできます。
 <para>多くのキーボードでは、<keycap>Alt</keycap>キーは<keycap>Meta</keycap>のように振る舞うので試してみてください。
 </para>
 <para><userinput>M-a</userinput>のかわりに<userinput><keycap>ESC</keycap>
-a</userinput>とタイプすることができます。実際のところ、いずれにせよEmacsｈｓ内部で<userinput>M-a</userinput>を<userinput><keycap>ESC</keycap>
-a</userinput>に変換しています(<literal>meta-prefix-char</literal>の値による)。<keycap>Meta</keycap>と<userinput>a</userinput>は一緒に押しますが、<keycap>ESC</keycap>の場合には<keycap>ESC</keycap>を押して、離した後に<userinput>a</userinput>を押下することに注意してください。
+a</userinput>とタイプすることができます。実際のところ、いずれにせよEmacsは内部で<userinput>M-a</userinput>を<userinput><keycap>ESC</keycap>
+a</userinput>に変換しています(<literal>meta-prefix-char</literal>の値による)。<keycap>Meta</keycap>と<userinput>a</userinput>は一緒に押しますが、<keycap>ESC</keycap>の場合には<keycap>ESC</keycap>を押して離した後に<userinput>a</userinput>を押下することに注意してください。
 </para>
 </sect1>
 <sect1 label="9.10" id="No-Escape-key">
@@ -2866,7 +2868,7 @@ a</userinput>に変換しています(<literal>meta-prefix-char</literal>の値�
 <indexterm role="cp"><primary>Lacking an Escape key</primary></indexterm>
 <indexterm role="cp"><primary>Escape key, lacking</primary></indexterm>
 
-<para>かわりに<userinput>C-[</userinput>をタイプしてください。これはエスケープキーのように<acronym>ASCII</acronym>コードの27を送信するはずです。<userinput>C-3</userinput>でも機能する端末もあります(X配下でないこと)。多くの端末(特にDEC)では、<keycap>F11</keycap>が<keycap>ESC</keycap>を生成します。そうでなければ、以下のフォームを使用してこれをバインドできます:
+<para>かわりに<userinput>C-[</userinput>をタイプしてください。これはエスケープキーのように<acronym>ASCII</acronym>コードの27を送信するはずです。<userinput>C-3</userinput>でも機能する端末もあります(X配下でないこと)。多くの端末(特にDEC)では、<keycap>F11</keycap>が<keycap>ESC</keycap>を生成します。そうでなければ以下のフォームを使用してこれをバインドできます:
 </para>
 <programlisting>;; DEC端末ではF11はESCの置き換えとドキュメントされている
 (define-key function-key-map [f11] [?\e])
@@ -2877,7 +2879,7 @@ a</userinput>に変換しています(<literal>meta-prefix-char</literal>の値�
 <indexterm role="cp"><primary><keycap>Compose Character</keycap> key, using as <keycap>Meta</keycap></primary></indexterm>
 <indexterm role="cp"><primary><keycap>Meta</keycap>, using <keycap>Compose Character</keycap> for</primary></indexterm>
 
-<para>VT220のようなダム端末ではできません。噂では特定のVT220クローンは、この方法で設定することによって独自に<keycap>Compose</keycap>キーをもてるようです。Xを使用していれば、<literal>xmodmap</literal>コマンドでこれを行うことができるかもしれません。
+<para>VT220のようなダム端末ではできません。噂では特定のVT220クローンは、この方法で設定することによって独自に<keycap>Compose</keycap>キーをもてるようです。Xを使用していれば<literal>xmodmap</literal>コマンドでこれを行うことができるかもしれません。
 </para>
 </sect1>
 <sect1 label="9.12" id="Binding-combinations-of-modifiers-and-function-keys">
@@ -2892,7 +2894,7 @@ a</userinput>に変換しています(<literal>meta-prefix-char</literal>の値�
 </programlisting>
 <para>ここで&#8216;<literal>?\C-x</literal>&#8217;は文字<userinput>C-x</userinput>にたいするLisp文字定数です。
 </para>
-<para>ファンクションキーとともに<keycap>Control</keycap>、<keycap>Meta</keycap>、<keycap>Hyper</keycap>、<keycap>Super</keycap>、<keycap>Alt</keycap>、<keycap>Shift</keycap>の修飾キーが使用できます。これらの修飾キーを表現するにはシンボル名の前に&#8216;<literal>C-</literal>&#8217;、&#8216;<literal>M-</literal>&#8217;、&#8216;<literal>H-</literal>&#8217;、&#8216;<literal>s-</literal>&#8217;、&#8216;<literal>A-</literal>&#8217;&#8216;<literal>S-</literal>&#8217;を前置します。以下は<userinput>H-M-RIGHT</userinput>を単語1つ前方に移動にする方法です:
+<para>ファンクションキーとともに<keycap>Control</keycap>、<keycap>Meta</keycap>、<keycap>Hyper</keycap>、<keycap>Super</keycap>、<keycap>Alt</keycap>、<keycap>Shift</keycap>の修飾キーが使用できます。これらの修飾キーを表現するにはシンボル名の前に&#8216;<literal>C-</literal>&#8217;、&#8216;<literal>M-</literal>&#8217;、&#8216;<literal>H-</literal>&#8217;、&#8216;<literal>s-</literal>&#8217;、&#8216;<literal>A-</literal>&#8217;、&#8216;<literal>S-</literal>&#8217;を前置します。以下は<userinput>H-M-RIGHT</userinput>を単語1つ前方に移動にする方法です:
 </para>
 <programlisting>(global-set-key [H-M-right] 'forward-word)
 </programlisting>
@@ -2914,19 +2916,19 @@ Manual</citetitle>を参照してください。
 <para>Emacsマニュアルのアドバイスが失敗した場合には、更なる助けを求める前に以下の方法すべてを試してみてください:
 </para>
 <itemizedlist>
-<listitem><para>ウィンドウマネージャーに<literal>mwm</literal>を使用することによって大きな問題を抱えているのかもしれない(<filename>mwm</filename>のEmacsで<keycap>Meta</keycap>キーが使用できるようにする汎用的で優れた解決策を知る人は居ないだろうか?)。
+<listitem><para>ウィンドウマネージャーに<literal>mwm</literal>を使用することによって大きな問題を抱えているのかもしれない(<filename>mwm</filename>のEmacsで<keycap>Meta</keycap>キーが使用できるようにする汎用的で優れた解決策を知る人は居るのだろうか?)。
 </para>
-</listitem><listitem><para>X11ではそれが本当に<keycap>Meta</keycap>キーなのか確認してほしい。あなたの<keycap>Meta</keycap>キーがどんなを生成するかを確認するには<literal>xev</literal>を使用する。<literal>Meta_L</literal>か<literal>Meta_R</literal>のいずれかのはずだが、もし違うならこの状況を修整するために<filename>xmodmap</filename>を使用できる。<keycap>Meta</keycap>は<literal>Meta_L</literal>や<literal>Meta_R</literal>を生成しないものの<userinput>M-x</userinput>は非<acronym>ASCII</acronym>文字を生成するようなら、以下を<filename>~/.Xdefaults</filename>ファイルに記述する:
+</listitem><listitem><para>X11ではそれが本当に<keycap>Meta</keycap>キーなのか確認してほしい。あなたの<keycap>Meta</keycap>キーがどんなkeysymを生成するか確認するには<literal>xev</literal>を使用する。<literal>Meta_L</literal>か<literal>Meta_R</literal>のいずれかのはずだが、もし違うならこの状況を修整するために<filename>xmodmap</filename>を使用できる。<keycap>Meta</keycap>は<literal>Meta_L</literal>や<literal>Meta_R</literal>を生成せず、<userinput>M-x</userinput>は非<acronym>ASCII</acronym>文字を生成するようなら以下を<filename>~/.Xdefaults</filename>ファイルに記述する:
 </para>
 <screen> XTerm*eightBitInput:   false
  XTerm*eightBitOutput:  true
 </screen>
-</listitem><listitem><para><literal>xterm</literal>が使用している<literal>pty</literal>は8ビット文字を通すか確認すること。&#8216;<literal>stty -a</literal>&#8217;
+</listitem><listitem><para><literal>xterm</literal>が使用している<literal>pty</literal>が8ビット文字を通すか確認すること。&#8216;<literal>stty -a</literal>&#8217;
 (あるいは&#8216;<literal>stty
 everything</literal>&#8217;)がどこかに&#8216;<literal>cs8</literal>&#8217;と表示するはずである。かわりに&#8216;<literal>cs7</literal>&#8217;が表示されたら、これを修整するために&#8216;<literal>stty
 cs8 -istrip</literal>&#8217; (あるいは&#8216;<literal>stty pass8</literal>&#8217;)を使用する。
 </para>
-</listitem><listitem><para><literal>xterm</literal>とEmacsの間に<literal>rlogin</literal>接続が存在する場合には、各文字の8ビット目をすべて渡すように、rloginに&#8216;<literal>-8</literal>&#8217;引数を与える必要があるかもしれない。
+</listitem><listitem><para><literal>xterm</literal>とEmacsの間に<literal>rlogin</literal>接続が存在する場合には、各文字の8ビット目をすべて渡すようにrloginに&#8216;<literal>-8</literal>&#8217;引数を与える必要があるかもしれない。
 </para>
 </listitem><listitem><para>UltrixでEmacsを実行しているなら、<literal>(set-input-mode t nil)</literal>の評価が助けになると報告されている。
 </para>
@@ -2952,7 +2954,7 @@ W</userinput>を生成させることができる。これはいずれにせよ<
 <indexterm role="cp"><primary><keycap>Meta</keycap>, using <keycap>ExtendChar</keycap> for</primary></indexterm>
 <indexterm role="cp"><primary>HP-UX, the <keycap>ExtendChar</keycap> key</primary></indexterm>
 
-<para>これはX11R4における国際家拡張の結果であるとともに、HPが現在はこの拡張を使用しているという事実を示しています。Emacsは<keycap>Meta</keycap>キーの状態に関わらず<literal>XLookupString</literal>関数が同じ結果をリターンするという、もはや必ずしも真とは言えない前提にもとづいています。Emacsが修整されるまでは、その場しのぎの一時的な修整ですがXサーバー起動後に毎回、できればxtermクライアント開始前に以下のコマンドを実行してください:
+<para>これはX11R4における国際化拡張の結果であるとともに、HPが現在はこの拡張を使用しているという事実を示しています。Emacsは<keycap>Meta</keycap>キーの状態に関わらず<literal>XLookupString</literal>関数が同じ結果をリターンするという、もはや必ずしも真とは言えない前提にもとづいています。Emacsが修整されるまでは、その場しのぎの一時的な修整ですがXサーバー起動後に毎回、できればxtermクライアント開始前に以下のコマンドを実行してください:
 </para>
 <screen>xmodmap -e 'remove mod1 = Mode_switch'
 </screen>
@@ -2969,7 +2971,7 @@ W</userinput>を生成させることができる。これはいずれにせよ<
 <para>Emacs
 22.1から<userinput>SPC</userinput>はミニバッファーでファイル名の補完を行わなくなったので、スペースが埋め込まれたファイル名のタイプにおいてスペースをクォートする必要がなくなりました。
 </para>
-<para>以下のようにミニバッファーで<userinput>SPC</userinput>を<literal>minibuffer-complete-word</literal>にバインドすることによって古い挙動を取り戻すことができます:
+<para>以下のようにミニバッファーで<userinput>SPC</userinput>を<literal>minibuffer-complete-word</literal>にバインドすることによって古い挙動に戻すことができます:
 </para>
 <programlisting>(define-key minibuffer-local-filename-completion-map (kbd &quot;SPC&quot;)
   'minibuffer-complete-word)
@@ -3204,8 +3206,9 @@ a e</userinput> (<userinput>M-x expand-abbrev</userinput>)をタイプして強�
 <indexterm role="cp"><primary>Rmail, replying to the sender of a message in</primary></indexterm>
 
 <!-- isaacson@@seas.upenn.edu -->
-<para>Ron Isaacsonは述べています:
-Rmailで返信するために<userinput>r</userinput>をタイプすると、デフォルトでは元の受信者すべて(元の&#8216;<literal>To</literal>&#8217;と&#8216;<literal>CC</literal>&#8217;のリスト全員)にCCされます。(<userinput>r</userinput>の前に<userinput>C-u</userinput>をタイプして)プレフィクス引数を指定すると、送信者だけに返信します。とはいえ返信したいときに全体を通して<userinput>C-u</userinput>作業を行うのは苦痛です。以下はわたしがこれに対処した中では最良の修整です。
+<para>Ron Isaacson(訳注:
+Texinfoファイルには&quot;isaacson@seas.upenn.edu&quot;とコメントされていました)は述べています:
+Rmailで返信するために<userinput>r</userinput>をタイプするとデフォルトでは元の受信者すべて(元の&#8216;<literal>To</literal>&#8217;と&#8216;<literal>CC</literal>&#8217;のリスト全員)にCCされます。(<userinput>r</userinput>の前に<userinput>C-u</userinput>をタイプして)プレフィクス引数を指定すると送信者だけに返信します。とはいえ返信したいときに全体を通して<userinput>C-u</userinput>作業を行うのは苦痛です。以下はわたしがこれに対処した中では最良の修整です。
 </para>
 <programlisting>(defun rmail-reply-t ()
   &quot;カレントメッセージの送信者だけに返信する(rmail-replyを参照)&quot;

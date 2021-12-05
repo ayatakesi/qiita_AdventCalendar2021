@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: XXXX-XX.X\n"
-"POT-Creation-Date: 2021-12-02 12:06\n"
-"PO-Revision-Date: 2021-12-02 12:06\n"
+"POT-Creation-Date: 2021-12-05 16:52\n"
+"PO-Revision-Date: 2021-12-05 16:52\n"
 "Last-Translator: XXXX#translator\n"
 "Language-Team: XXXX#translators\n"
 "Language: ja\n"
@@ -139,6 +139,12 @@ msgstr ""
 msgid "@section How do I turn on abbrevs by default just in mode @var{mymode}?"
 msgstr ""
 
+msgid "@noindent To turn it on in a specific mode, use:"
+msgstr ""
+
+msgid "@noindent If your Emacs version is older then 22.1, you will also need to use:"
+msgstr ""
+
 msgid "@section How do I make Emacs use a certain major mode for certain files?"
 msgstr ""
 
@@ -173,6 +179,9 @@ msgid "@section How do I make Emacs recognize my compiler's funny error messages
 msgstr ""
 
 msgid "@section How do I change the indentation for @code{switch}?"
+msgstr ""
+
+msgid "@noindent To achieve this, add the following line to your @file{.emacs}:"
 msgstr ""
 
 msgid "@section How to customize indentation in C, C@t{++}, and Java buffers?"
